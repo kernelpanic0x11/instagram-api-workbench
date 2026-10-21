@@ -1,0 +1,2172 @@
+{
+  "app": "tiktok",
+  "evidence_kind": "selected DEX request-factory instruction excerpts",
+  "methods": [
+    {
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "declaring_method": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V",
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 6106896,
+          "opcode": "0x54",
+          "code_units": [
+            30036,
+            5859
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIJJLI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 6106900,
+          "opcode": "0x12",
+          "code_units": [
+            1554
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 6106902,
+          "opcode": "0x12",
+          "code_units": [
+            1042
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 6106904,
+          "opcode": "0x12",
+          "code_units": [
+            4882
+          ]
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 6106906,
+          "opcode": "0x39",
+          "code_units": [
+            1337,
+            132
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 6106910,
+          "opcode": "0x5b",
+          "code_units": [
+            30811,
+            5859
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIJJLI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 6106914,
+          "opcode": "0x38",
+          "code_units": [
+            2104,
+            22
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "dex_byte_offset": 6106918,
+          "opcode": "0x62",
+          "code_units": [
+            98,
+            5871
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJIJIIJI",
+            "Ljava/util/regex/Pattern;"
+          ]
+        },
+        {
+          "code_unit_offset": 13,
+          "dex_byte_offset": 6106922,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            63362,
+            128
+          ],
+          "callee": "Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 6106928,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 6106930,
+          "opcode": "0x6e",
+          "code_units": [
+            4206,
+            63356,
+            1
+          ],
+          "callee": "Ljava/util/regex/Matcher;->find()Z"
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 6106936,
+          "opcode": "0xa",
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 103,
+          "dex_byte_offset": 6107102,
+          "opcode": "0xa",
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 104,
+          "dex_byte_offset": 6107104,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 106,
+          "dex_byte_offset": 6107108,
+          "opcode": "0x27",
+          "code_units": [
+            551
+          ]
+        },
+        {
+          "code_unit_offset": 107,
+          "dex_byte_offset": 6107110,
+          "opcode": "0x5b",
+          "code_units": [
+            31067,
+            5863
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJIFFI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 109,
+          "dex_byte_offset": 6107114,
+          "opcode": "0x22",
+          "code_units": [
+            546,
+            26664
+          ],
+          "referenced_type": "Ljava/util/LinkedHashSet;"
+        },
+        {
+          "code_unit_offset": 111,
+          "dex_byte_offset": 6107118,
+          "opcode": "0x70",
+          "code_units": [
+            4208,
+            62997,
+            2
+          ],
+          "callee": "Ljava/util/LinkedHashSet;-><init>()V"
+        },
+        {
+          "code_unit_offset": 114,
+          "dex_byte_offset": 6107124,
+          "opcode": "0x62",
+          "code_units": [
+            98,
+            5871
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJIJIIJI",
+            "Ljava/util/regex/Pattern;"
+          ]
+        },
+        {
+          "code_unit_offset": 116,
+          "dex_byte_offset": 6107128,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            63362,
+            144
+          ],
+          "callee": "Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"
+        },
+        {
+          "code_unit_offset": 119,
+          "dex_byte_offset": 6107134,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 120,
+          "dex_byte_offset": 6107136,
+          "opcode": "0x6e",
+          "code_units": [
+            4206,
+            63356,
+            1
+          ],
+          "callee": "Ljava/util/regex/Matcher;->find()Z"
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "declaring_method": "Lcom/bytedance/retrofit2/RequestFactory;-><init>(LX/04zq;)V",
+      "instructions": [
+        {
+          "code_unit_offset": 19,
+          "dex_byte_offset": 4847934,
+          "opcode": "0x5b",
+          "code_units": [
+            8283,
+            28975
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "server",
+            "LX/03zu;"
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "dex_byte_offset": 4847938,
+          "opcode": "0x12",
+          "code_units": [
+            274
+          ]
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 4847940,
+          "opcode": "0x5b",
+          "code_units": [
+            8539,
+            28973
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "responseConverter",
+            "LX/054q;"
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 4847944,
+          "opcode": "0x54",
+          "code_units": [
+            12372,
+            5859
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIJJLI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 26,
+          "dex_byte_offset": 4847948,
+          "opcode": "0x5b",
+          "code_units": [
+            8283,
+            28960
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "httpMethod",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 28,
+          "dex_byte_offset": 4847952,
+          "opcode": "0x54",
+          "code_units": [
+            12372,
+            5863
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJIFFI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 4847956,
+          "opcode": "0x5b",
+          "code_units": [
+            8283,
+            28970
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "relativeUrl",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 4847960,
+          "opcode": "0x55",
+          "code_units": [
+            12373,
+            5860
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIL",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 4847964,
+          "opcode": "0x5c",
+          "code_units": [
+            8284,
+            28957
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "hasBody",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 4847968,
+          "opcode": "0x55",
+          "code_units": [
+            12373,
+            5861
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJ",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 4847972,
+          "opcode": "0x5c",
+          "code_units": [
+            8284,
+            28962
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "isFormEncoded",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 4847976,
+          "opcode": "0x55",
+          "code_units": [
+            12373,
+            5862
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJI",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 4847980,
+          "opcode": "0x5c",
+          "code_units": [
+            8284,
+            28964
+          ],
+          "field": [
+            "Lcom/bytedance/retrofit2/RequestFactory;",
+            "isMultipart",
+            "Z"
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "declaring_method": "Lcom/bytedance/retrofit2/RequestFactory;->parseAnnotations(Lcom/bytedance/retrofit2/Retrofit;Ljava/lang/reflect/Method;LX/04z0;)Lcom/bytedance/retrofit2/RequestFactory;",
+      "instructions": [
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 7425356,
+          "opcode": "0x1a",
+          "code_units": [
+            2586,
+            37746
+          ],
+          "string_index": 37746,
+          "string": "POST"
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 7425360,
+          "opcode": "0x1a",
+          "code_units": [
+            2330,
+            37685
+          ],
+          "string_index": 37685,
+          "string": "PATCH"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 7425364,
+          "opcode": "0x1a",
+          "code_units": [
+            2074,
+            6186
+          ],
+          "string_index": 6186,
+          "string": "HEAD"
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 7425368,
+          "opcode": "0x1a",
+          "code_units": [
+            1050,
+            5989
+          ],
+          "string_index": 5989,
+          "string": "GET"
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 7425372,
+          "opcode": "0x1a",
+          "code_units": [
+            794,
+            4908
+          ],
+          "string_index": 4908,
+          "string": "DELETE"
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 7425376,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            201
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 7425380,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 43,
+          "dex_byte_offset": 7425382,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4338
+          ],
+          "referenced_type": "LX/050w;"
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 7425386,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13146,
+            0
+          ],
+          "callee": "LX/050w;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 7425392,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 49,
+          "dex_byte_offset": 7425394,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            28721
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 52,
+          "dex_byte_offset": 7425400,
+          "opcode": "0x63",
+          "code_units": [
+            99,
+            1129
+          ],
+          "field": [
+            "LX/03zI;",
+            "LIZIZ",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 54,
+          "dex_byte_offset": 7425404,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            16
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 7425408,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4375
+          ],
+          "referenced_type": "LX/051X;"
+        },
+        {
+          "code_unit_offset": 58,
+          "dex_byte_offset": 7425412,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            16
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 7425416,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            4375
+          ],
+          "referenced_type": "LX/051X;"
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 7425420,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13221,
+            15
+          ],
+          "callee": "LX/051X;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 65,
+          "dex_byte_offset": 7425426,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 7425428,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 7425430,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            561
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 70,
+          "dex_byte_offset": 7425436,
+          "opcode": "0xd8",
+          "code_units": [
+            3800,
+            270
+          ]
+        },
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 7425440,
+          "opcode": "0x12",
+          "code_units": [
+            1810
+          ]
+        },
+        {
+          "code_unit_offset": 73,
+          "dex_byte_offset": 7425442,
+          "opcode": "0x28",
+          "code_units": [
+            50472
+          ]
+        },
+        {
+          "code_unit_offset": 74,
+          "dex_byte_offset": 7425444,
+          "opcode": "0x12",
+          "code_units": [
+            530
+          ]
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 7425446,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4379
+          ],
+          "referenced_type": "LX/051b;"
+        },
+        {
+          "code_unit_offset": 77,
+          "dex_byte_offset": 7425450,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 79,
+          "dex_byte_offset": 7425454,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            4379
+          ],
+          "referenced_type": "LX/051b;"
+        },
+        {
+          "code_unit_offset": 81,
+          "dex_byte_offset": 7425458,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13230,
+            15
+          ],
+          "callee": "LX/051b;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 84,
+          "dex_byte_offset": 7425464,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 85,
+          "dex_byte_offset": 7425466,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            8257
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 88,
+          "dex_byte_offset": 7425472,
+          "opcode": "0x28",
+          "code_units": [
+            60968
+          ]
+        },
+        {
+          "code_unit_offset": 89,
+          "dex_byte_offset": 7425474,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4380
+          ],
+          "referenced_type": "LX/051c;"
+        },
+        {
+          "code_unit_offset": 91,
+          "dex_byte_offset": 7425478,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 93,
+          "dex_byte_offset": 7425482,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            4380
+          ],
+          "referenced_type": "LX/051c;"
+        },
+        {
+          "code_unit_offset": 95,
+          "dex_byte_offset": 7425486,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13231,
+            15
+          ],
+          "callee": "LX/051c;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 98,
+          "dex_byte_offset": 7425492,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 99,
+          "dex_byte_offset": 7425494,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            8321
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 102,
+          "dex_byte_offset": 7425500,
+          "opcode": "0x28",
+          "code_units": [
+            57384
+          ]
+        },
+        {
+          "code_unit_offset": 103,
+          "dex_byte_offset": 7425502,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4387
+          ],
+          "referenced_type": "LX/051j;"
+        },
+        {
+          "code_unit_offset": 105,
+          "dex_byte_offset": 7425506,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 107,
+          "dex_byte_offset": 7425510,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            4387
+          ],
+          "referenced_type": "LX/051j;"
+        },
+        {
+          "code_unit_offset": 109,
+          "dex_byte_offset": 7425514,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13241,
+            15
+          ],
+          "callee": "LX/051j;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 112,
+          "dex_byte_offset": 7425520,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 113,
+          "dex_byte_offset": 7425522,
+          "opcode": "0x12",
+          "code_units": [
+            4114
+          ]
+        },
+        {
+          "code_unit_offset": 114,
+          "dex_byte_offset": 7425524,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            657
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 117,
+          "dex_byte_offset": 7425530,
+          "opcode": "0x28",
+          "code_units": [
+            53544
+          ]
+        },
+        {
+          "code_unit_offset": 118,
+          "dex_byte_offset": 7425532,
+          "opcode": "0x12",
+          "code_units": [
+            4626
+          ]
+        },
+        {
+          "code_unit_offset": 119,
+          "dex_byte_offset": 7425534,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4292
+          ],
+          "referenced_type": "LX/050C;"
+        },
+        {
+          "code_unit_offset": 121,
+          "dex_byte_offset": 7425538,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 123,
+          "dex_byte_offset": 7425542,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            4292
+          ],
+          "referenced_type": "LX/050C;"
+        },
+        {
+          "code_unit_offset": 125,
+          "dex_byte_offset": 7425546,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13031,
+            15
+          ],
+          "callee": "LX/050C;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 128,
+          "dex_byte_offset": 7425552,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 129,
+          "dex_byte_offset": 7425554,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            8353
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 132,
+          "dex_byte_offset": 7425560,
+          "opcode": "0x28",
+          "code_units": [
+            49704
+          ]
+        },
+        {
+          "code_unit_offset": 133,
+          "dex_byte_offset": 7425562,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            8768
+          ],
+          "referenced_type": "LX/07D6;"
+        },
+        {
+          "code_unit_offset": 135,
+          "dex_byte_offset": 7425566,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 137,
+          "dex_byte_offset": 7425570,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            8768
+          ],
+          "referenced_type": "LX/07D6;"
+        },
+        {
+          "code_unit_offset": 139,
+          "dex_byte_offset": 7425574,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            27202,
+            15
+          ],
+          "callee": "LX/07D6;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 142,
+          "dex_byte_offset": 7425580,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 143,
+          "dex_byte_offset": 7425582,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            8369
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 146,
+          "dex_byte_offset": 7425588,
+          "opcode": "0x28",
+          "code_units": [
+            46120
+          ]
+        },
+        {
+          "code_unit_offset": 147,
+          "dex_byte_offset": 7425590,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            8769
+          ],
+          "referenced_type": "LX/07D7;"
+        },
+        {
+          "code_unit_offset": 149,
+          "dex_byte_offset": 7425594,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 151,
+          "dex_byte_offset": 7425598,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            8769
+          ],
+          "referenced_type": "LX/07D7;"
+        },
+        {
+          "code_unit_offset": 153,
+          "dex_byte_offset": 7425602,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            27203,
+            15
+          ],
+          "callee": "LX/07D7;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 156,
+          "dex_byte_offset": 7425608,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 157,
+          "dex_byte_offset": 7425610,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 158,
+          "dex_byte_offset": 7425612,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            705
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 161,
+          "dex_byte_offset": 7425618,
+          "opcode": "0x28",
+          "code_units": [
+            42280
+          ]
+        },
+        {
+          "code_unit_offset": 162,
+          "dex_byte_offset": 7425620,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            8770
+          ],
+          "referenced_type": "LX/07D8;"
+        },
+        {
+          "code_unit_offset": 164,
+          "dex_byte_offset": 7425624,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            20
+          ]
+        },
+        {
+          "code_unit_offset": 166,
+          "dex_byte_offset": 7425628,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            8770
+          ],
+          "referenced_type": "LX/07D8;"
+        },
+        {
+          "code_unit_offset": 168,
+          "dex_byte_offset": 7425632,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            27205,
+            15
+          ],
+          "callee": "LX/07D8;->method()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 171,
+          "dex_byte_offset": 7425638,
+          "opcode": "0xc",
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 175,
+          "dex_byte_offset": 7425646,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 176,
+          "dex_byte_offset": 7425648,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            27204,
+            15
+          ],
+          "callee": "LX/07D8;->hasBody()Z"
+        },
+        {
+          "code_unit_offset": 179,
+          "dex_byte_offset": 7425654,
+          "opcode": "0xa",
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 180,
+          "dex_byte_offset": 7425656,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            561
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 183,
+          "dex_byte_offset": 7425662,
+          "opcode": "0x28",
+          "code_units": [
+            36648
+          ]
+        },
+        {
+          "code_unit_offset": 184,
+          "dex_byte_offset": 7425664,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            8771
+          ],
+          "referenced_type": "LX/07DA;"
+        },
+        {
+          "code_unit_offset": 186,
+          "dex_byte_offset": 7425668,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            19
+          ]
+        },
+        {
+          "code_unit_offset": 188,
+          "dex_byte_offset": 7425672,
+          "opcode": "0x1f",
+          "code_units": [
+            3871,
+            8771
+          ],
+          "referenced_type": "LX/07DA;"
+        },
+        {
+          "code_unit_offset": 190,
+          "dex_byte_offset": 7425676,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            27207,
+            15
+          ],
+          "callee": "LX/07DA;->value()[Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 193,
+          "dex_byte_offset": 7425682,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 235,
+          "dex_byte_offset": 7425766,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            65371
+          ]
+        },
+        {
+          "code_unit_offset": 237,
+          "dex_byte_offset": 7425770,
+          "opcode": "0x5c",
+          "code_units": [
+            4700,
+            5846
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIIIIZZ",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 239,
+          "dex_byte_offset": 7425774,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65367
+          ]
+        },
+        {
+          "code_unit_offset": 241,
+          "dex_byte_offset": 7425778,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4341
+          ],
+          "referenced_type": "LX/050z;"
+        },
+        {
+          "code_unit_offset": 243,
+          "dex_byte_offset": 7425782,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 245,
+          "dex_byte_offset": 7425786,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 246,
+          "dex_byte_offset": 7425788,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4341
+          ],
+          "referenced_type": "LX/050z;"
+        },
+        {
+          "code_unit_offset": 248,
+          "dex_byte_offset": 7425792,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13151,
+            0
+          ],
+          "callee": "LX/050z;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 251,
+          "dex_byte_offset": 7425798,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 252,
+          "dex_byte_offset": 7425800,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            28737
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 255,
+          "dex_byte_offset": 7425806,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65333
+          ]
+        },
+        {
+          "code_unit_offset": 257,
+          "dex_byte_offset": 7425810,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4342
+          ],
+          "referenced_type": "LX/0510;"
+        },
+        {
+          "code_unit_offset": 259,
+          "dex_byte_offset": 7425814,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 261,
+          "dex_byte_offset": 7425818,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 262,
+          "dex_byte_offset": 7425820,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4342
+          ],
+          "referenced_type": "LX/0510;"
+        },
+        {
+          "code_unit_offset": 264,
+          "dex_byte_offset": 7425824,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13152,
+            0
+          ],
+          "callee": "LX/0510;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 267,
+          "dex_byte_offset": 7425830,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 268,
+          "dex_byte_offset": 7425832,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            28801
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 271,
+          "dex_byte_offset": 7425838,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65317
+          ]
+        },
+        {
+          "code_unit_offset": 273,
+          "dex_byte_offset": 7425842,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4349
+          ],
+          "referenced_type": "LX/0517;"
+        },
+        {
+          "code_unit_offset": 275,
+          "dex_byte_offset": 7425846,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 277,
+          "dex_byte_offset": 7425850,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 278,
+          "dex_byte_offset": 7425852,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4349
+          ],
+          "referenced_type": "LX/0517;"
+        },
+        {
+          "code_unit_offset": 280,
+          "dex_byte_offset": 7425856,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13169,
+            0
+          ],
+          "callee": "LX/0517;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 283,
+          "dex_byte_offset": 7425862,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 284,
+          "dex_byte_offset": 7425864,
+          "opcode": "0x12",
+          "code_units": [
+            4114
+          ]
+        },
+        {
+          "code_unit_offset": 285,
+          "dex_byte_offset": 7425866,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            657
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 288,
+          "dex_byte_offset": 7425872,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65300
+          ]
+        },
+        {
+          "code_unit_offset": 290,
+          "dex_byte_offset": 7425876,
+          "opcode": "0x12",
+          "code_units": [
+            4626
+          ]
+        },
+        {
+          "code_unit_offset": 291,
+          "dex_byte_offset": 7425878,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4353
+          ],
+          "referenced_type": "LX/051B;"
+        },
+        {
+          "code_unit_offset": 293,
+          "dex_byte_offset": 7425882,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 295,
+          "dex_byte_offset": 7425886,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 296,
+          "dex_byte_offset": 7425888,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4353
+          ],
+          "referenced_type": "LX/051B;"
+        },
+        {
+          "code_unit_offset": 298,
+          "dex_byte_offset": 7425892,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13176,
+            0
+          ],
+          "callee": "LX/051B;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 301,
+          "dex_byte_offset": 7425898,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 302,
+          "dex_byte_offset": 7425900,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            8353
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 305,
+          "dex_byte_offset": 7425906,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65283
+          ]
+        },
+        {
+          "code_unit_offset": 307,
+          "dex_byte_offset": 7425910,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4354
+          ],
+          "referenced_type": "LX/051C;"
+        },
+        {
+          "code_unit_offset": 309,
+          "dex_byte_offset": 7425914,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 311,
+          "dex_byte_offset": 7425918,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 312,
+          "dex_byte_offset": 7425920,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4354
+          ],
+          "referenced_type": "LX/051C;"
+        },
+        {
+          "code_unit_offset": 314,
+          "dex_byte_offset": 7425924,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13177,
+            0
+          ],
+          "callee": "LX/051C;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 317,
+          "dex_byte_offset": 7425930,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 318,
+          "dex_byte_offset": 7425932,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            8369
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 321,
+          "dex_byte_offset": 7425938,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65267
+          ]
+        },
+        {
+          "code_unit_offset": 323,
+          "dex_byte_offset": 7425942,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4355
+          ],
+          "referenced_type": "LX/051D;"
+        },
+        {
+          "code_unit_offset": 325,
+          "dex_byte_offset": 7425946,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            15
+          ]
+        },
+        {
+          "code_unit_offset": 327,
+          "dex_byte_offset": 7425950,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 328,
+          "dex_byte_offset": 7425952,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4355
+          ],
+          "referenced_type": "LX/051D;"
+        },
+        {
+          "code_unit_offset": 330,
+          "dex_byte_offset": 7425956,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13178,
+            0
+          ],
+          "callee": "LX/051D;->value()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 333,
+          "dex_byte_offset": 7425962,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 334,
+          "dex_byte_offset": 7425964,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 335,
+          "dex_byte_offset": 7425966,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            705
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 338,
+          "dex_byte_offset": 7425972,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65250
+          ]
+        },
+        {
+          "code_unit_offset": 340,
+          "dex_byte_offset": 7425976,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4356
+          ],
+          "referenced_type": "LX/051E;"
+        },
+        {
+          "code_unit_offset": 342,
+          "dex_byte_offset": 7425980,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            22
+          ]
+        },
+        {
+          "code_unit_offset": 344,
+          "dex_byte_offset": 7425984,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 345,
+          "dex_byte_offset": 7425986,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4356
+          ],
+          "referenced_type": "LX/051E;"
+        },
+        {
+          "code_unit_offset": 347,
+          "dex_byte_offset": 7425990,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13180,
+            0
+          ],
+          "callee": "LX/051E;->method()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 354,
+          "dex_byte_offset": 7426004,
+          "opcode": "0xc",
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 355,
+          "dex_byte_offset": 7426006,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13179,
+            0
+          ],
+          "callee": "LX/051E;->hasBody()Z"
+        },
+        {
+          "code_unit_offset": 358,
+          "dex_byte_offset": 7426012,
+          "opcode": "0xa",
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 359,
+          "dex_byte_offset": 7426014,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            12969,
+            625
+          ],
+          "callee": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 362,
+          "dex_byte_offset": 7426020,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            65226
+          ]
+        },
+        {
+          "code_unit_offset": 364,
+          "dex_byte_offset": 7426024,
+          "opcode": "0x20",
+          "code_units": [
+            61472,
+            4358
+          ],
+          "referenced_type": "LX/051G;"
+        },
+        {
+          "code_unit_offset": 366,
+          "dex_byte_offset": 7426028,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            20
+          ]
+        },
+        {
+          "code_unit_offset": 368,
+          "dex_byte_offset": 7426032,
+          "opcode": "0x7",
+          "code_units": [
+            61447
+          ]
+        },
+        {
+          "code_unit_offset": 369,
+          "dex_byte_offset": 7426034,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            4358
+          ],
+          "referenced_type": "LX/051G;"
+        },
+        {
+          "code_unit_offset": 371,
+          "dex_byte_offset": 7426038,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            13184,
+            0
+          ],
+          "callee": "LX/051G;->value()[Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 530,
+          "dex_byte_offset": 7426356,
+          "opcode": "0x71",
+          "code_units": [
+            16497,
+            2109,
+            1313
+          ],
+          "callee": "LX/03zn;->LJIIIZ(Ljava/lang/reflect/Method;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/RuntimeException;"
+        },
+        {
+          "code_unit_offset": 533,
+          "dex_byte_offset": 7426362,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 534,
+          "dex_byte_offset": 7426364,
+          "opcode": "0x27",
+          "code_units": [
+            39
+          ]
+        },
+        {
+          "code_unit_offset": 535,
+          "dex_byte_offset": 7426366,
+          "opcode": "0x54",
+          "code_units": [
+            4180,
+            5859
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIJJLI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 537,
+          "dex_byte_offset": 7426370,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            181
+          ]
+        },
+        {
+          "code_unit_offset": 539,
+          "dex_byte_offset": 7426374,
+          "opcode": "0x55",
+          "code_units": [
+            4181,
+            5860
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIL",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 541,
+          "dex_byte_offset": 7426378,
+          "opcode": "0x39",
+          "code_units": [
+            57,
+            39
+          ]
+        },
+        {
+          "code_unit_offset": 543,
+          "dex_byte_offset": 7426382,
+          "opcode": "0x55",
+          "code_units": [
+            4181,
+            5848
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIIJ",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 545,
+          "dex_byte_offset": 7426386,
+          "opcode": "0x39",
+          "code_units": [
+            57,
+            35
+          ]
+        },
+        {
+          "code_unit_offset": 547,
+          "dex_byte_offset": 7426390,
+          "opcode": "0x55",
+          "code_units": [
+            4181,
+            5862
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJI",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 612,
+          "dex_byte_offset": 7426520,
+          "opcode": "0x28",
+          "code_units": [
+            59688
+          ]
+        },
+        {
+          "code_unit_offset": 613,
+          "dex_byte_offset": 7426522,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 614,
+          "dex_byte_offset": 7426524,
+          "opcode": "0x28",
+          "code_units": [
+            63016
+          ]
+        },
+        {
+          "code_unit_offset": 615,
+          "dex_byte_offset": 7426526,
+          "opcode": "0x54",
+          "code_units": [
+            4180,
+            5863
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJJIFFI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 617,
+          "dex_byte_offset": 7426530,
+          "opcode": "0x39",
+          "code_units": [
+            57,
+            24
+          ]
+        },
+        {
+          "code_unit_offset": 619,
+          "dex_byte_offset": 7426534,
+          "opcode": "0x55",
+          "code_units": [
+            4181,
+            5857
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIJI",
+            "Z"
+          ]
+        },
+        {
+          "code_unit_offset": 621,
+          "dex_byte_offset": 7426538,
+          "opcode": "0x39",
+          "code_units": [
+            57,
+            20
+          ]
+        },
+        {
+          "code_unit_offset": 623,
+          "dex_byte_offset": 7426542,
+          "opcode": "0x54",
+          "code_units": [
+            4948,
+            5839
+          ],
+          "field": [
+            "LX/04zq;",
+            "LIZIZ",
+            "Ljava/lang/reflect/Method;"
+          ]
+        },
+        {
+          "code_unit_offset": 625,
+          "dex_byte_offset": 7426546,
+          "opcode": "0x12",
+          "code_units": [
+            4114
+          ]
+        },
+        {
+          "code_unit_offset": 626,
+          "dex_byte_offset": 7426548,
+          "opcode": "0x23",
+          "code_units": [
+            547,
+            27695
+          ],
+          "referenced_type": "[Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 628,
+          "dex_byte_offset": 7426552,
+          "opcode": "0x54",
+          "code_units": [
+            4436,
+            5859
+          ],
+          "field": [
+            "LX/04zq;",
+            "LJIJJLI",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 630,
+          "dex_byte_offset": 7426556,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 631,
+          "dex_byte_offset": 7426558,
+          "opcode": "0x4d",
+          "code_units": [
+            333,
+            2
+          ]
+        },
+        {
+          "code_unit_offset": 633,
+          "dex_byte_offset": 7426562,
+          "opcode": "0x1a",
+          "code_units": [
+            282,
+            37013
+          ],
+          "string_index": 37013,
+          "string": "Missing either @%s URL or @Url parameter."
+        },
+        {
+          "code_unit_offset": 635,
+          "dex_byte_offset": 7426566,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 636,
+          "dex_byte_offset": 7426568,
+          "opcode": "0x71",
+          "code_units": [
+            16497,
+            2109,
+            8451
+          ],
+          "callee": "LX/03zn;->LJIIIZ(Ljava/lang/reflect/Method;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/RuntimeException;"
+        },
+        {
+          "code_unit_offset": 639,
+          "dex_byte_offset": 7426574,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Excerpts support manual review. They are not an automatic control-flow or register-dataflow proof.",
+    "The obfuscated selectors are bound to the APK hashes in static-analysis.json and must not be reused on a different version."
+  ]
+}

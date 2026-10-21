@@ -40,3 +40,5 @@ storage-state*.json
 runs/
 apps/instagram/api/target.json
 run-log.txt
+
+.playwright-mcp/

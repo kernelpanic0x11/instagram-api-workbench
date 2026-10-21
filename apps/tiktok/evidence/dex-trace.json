@@ -1,0 +1,1356 @@
+{
+  "app": "tiktok",
+  "targets": [
+    "/aweme/v1/aweme/detail/",
+    "/aweme/v1/notice/count/",
+    "/tiktok/comment/status/batch_get/v1"
+  ],
+  "dex_sources": [
+    {
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "sha256": "0775c07ca782e4e012267a46caca3ac22df3fe6126c310a85a11034e6e35f264"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes10.dex",
+      "sha256": "80cae8e2a3a8e106c9c281e951f23eb24e46d93f75cf09316ffcb18726095edc"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes11.dex",
+      "sha256": "7031c08fe8e328d9c9ce2fbc219740c9d674746ba9ecfd65c4e8c8084f90d219"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes12.dex",
+      "sha256": "f5f7617bdda8bbc19c8cb5582f4e3d93bc2e08d5ca4e54da84c858dccbc8bdb3"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes13.dex",
+      "sha256": "bef0e953f4f45a081fc48e2a6622856ff842e462beaf6f1885e5be9333767896"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes14.dex",
+      "sha256": "01322cc480e653164b23befcc8f1da0574c9fae5865cef131503a904e77d3eae"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes15.dex",
+      "sha256": "34bb8e8337209fd6d314eb539ac2eb91492c2c9d4807b28fc4b42e1c2bf410c1"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes2.dex",
+      "sha256": "0a82512adeef97bfa9e8afb63a9177cb93ee1c6a6f0e88ce4f377149e13fa856"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "sha256": "9130feb4709d54e97be180bd912b6ec977bffc439f6c7eaedd04cb12e0be2053"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes4.dex",
+      "sha256": "b2c53687bda3a58f020d88c4b41aed391e0661b9ff22ab28e52cdc1ec94b81f1"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes5.dex",
+      "sha256": "36b0649fec7d81665a9ac77cf264f110592f508317412beef8530fdfc146fffc"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes6.dex",
+      "sha256": "6a8cb80c927031e222c20878b345f1c21edff712d18c726ef9bc7f795558ac70"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes7.dex",
+      "sha256": "7fbba8173adba33f469499b1624523d73b86263161cf62667a0dd47367489d92"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes8.dex",
+      "sha256": "a091075230e10bc8ca6bbbd63e6d3e3c41ea9a1c9b0da5c2c614977d2f7d4eba"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes9.dex",
+      "sha256": "33218ded0169836839a63066366a601c859f666a329811edad71471d5e28101c"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes.dex",
+      "sha256": "dd0cff29b448f80a6815e4e8335a28862cf81025c9de2c9b3204651727c91b65"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes10.dex",
+      "sha256": "7f4a7f25e5ebf141f8fbc04e02452414ac582f5efe85b5427f8358c0511752e1"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes11.dex",
+      "sha256": "b753ecb194fd45f91c6ccf1336fa7806da65351854bb83a488e9786b03cf02a4"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes12.dex",
+      "sha256": "f4778deb4f9f0ebf92ef64f274eb90c04135cbfcdcd8c7b9758e7877b97934fd"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes13.dex",
+      "sha256": "9033bd408bcefadb728b25ce7abb82af3bf20db29573964548c1e5c70623c765"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes14.dex",
+      "sha256": "b53f521a5f8a06a78960ef72484769d2fbef87854919af6e49912b2a81478af7"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes15.dex",
+      "sha256": "c418551ee74fa11a742b6b36accb7eb0b56b0cdc9d95af5dd22266d6f47debaa"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes16.dex",
+      "sha256": "ff3791bf8c0fb382f664e7e22fd9d27af2e8433b002e86380bddc41357bd53a2"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes17.dex",
+      "sha256": "2b8a6f9c56843e77cc8ca2f154275513a85cb534002006675b827864a8fa8a9b"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes18.dex",
+      "sha256": "35c4225c4b86fde7e3c719e84ee122e3a994809f6c773d6ef135895f142613bd"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes19.dex",
+      "sha256": "c28f0c485804d0072db916e471f2ad937fd797ead1fdf840f74f56b6df90781f"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes2.dex",
+      "sha256": "12eb436948d524e4b24acbb4c06ca3c5a253cda3312e570b0ec9ad0995d713b0"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes20.dex",
+      "sha256": "02127a0a5afd8aea9bb46d2ac5703ec6a724cd19156f62e2fe1a75004a70957d"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes21.dex",
+      "sha256": "16f3037cc552f3774f77862914a8bf7c6eba678d06b18bd13c7588d2414b8f25"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes22.dex",
+      "sha256": "fdb2cc290004ded22798a0ca434218f34c342c83346a63059ff0e1fda717a8ca"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes23.dex",
+      "sha256": "82045e0efe67333b0c6a09501d93f18e3b1eccc7816f2b92aeb1adf4fb26b6fc"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes24.dex",
+      "sha256": "59a50b563fbd0b3a526dc5cb944007ae41a4ea15dd1ecca37d99ab4a045275b6"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes25.dex",
+      "sha256": "4fdb17f851259199ee587bd3087e4cdd85c58d9b8ece03f9b1f6c33fafb99df1"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes26.dex",
+      "sha256": "84751b143f29a75b59eb13b13facd11c536b5a639236c5c1bd7d20c279b35526"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes27.dex",
+      "sha256": "b3ed6470a4e25c3673b236e586b94cd86b080eaace06ad52cb9243af206f1c87"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes28.dex",
+      "sha256": "f04f63602cc3ba3e1e73e8a63119c5ecd31a1b02527379fe26c65cdc43f5206d"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes3.dex",
+      "sha256": "6f770c2b5f728d056d0d900aa467a606471094b6cb39f23e9bd212fbaa734363"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes4.dex",
+      "sha256": "8b8e54d6a48960056a581be8e9dfce9ad08f1e5217acadc4410b0098c5d09570"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes5.dex",
+      "sha256": "97b36d8f2ad1201c20e685956739be95267bc02ade164c18116c5d195929486e"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes6.dex",
+      "sha256": "00a9dcf9616d22d4f50fc4486f90f2f3d6dff3b1e520b2ecc35ba9efc0a3d6a2"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes7.dex",
+      "sha256": "4a4ccd7b66d6c36e88ecee97796998e0b543c1a93f2b739f35faaa8e6c40eeb4"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes8.dex",
+      "sha256": "391a981a5133617190a2d0b1dbf021fea984b491dbb0ba47885269f210ca11ea"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes9.dex",
+      "sha256": "0f0d91afd47aba09e3cd5689638b48a1974299418b4db5803be828860b4ce03e"
+    },
+    {
+      "apk": "split_df_live_cmaf.apk",
+      "dex": "classes.dex",
+      "sha256": "8eed8d89d0eb640fda0fc124a3cbdf4aa7934d4c2200d99aa3b4fbcc7299261f"
+    },
+    {
+      "apk": "split_df_live_p2p.apk",
+      "dex": "classes.dex",
+      "sha256": "ad7be276643b7a06f41017b324b1b06a26429c23359af6a660154bbf6155925e"
+    },
+    {
+      "apk": "split_df_live_quic.apk",
+      "dex": "classes.dex",
+      "sha256": "85a51e9673456c8c1ae0c357e80ee1c5d89056b3fdd5681b5bdeb79ba0767836"
+    },
+    {
+      "apk": "split_df_live_rtmglobal.apk",
+      "dex": "classes.dex",
+      "sha256": "7ce6f1150b165f421130d81abc20aa01c1e9e12603ab8be877856cd3dab99f3a"
+    },
+    {
+      "apk": "split_df_m2_player_combo.apk",
+      "dex": "classes.dex",
+      "sha256": "3a3c1c53b11cb7c54ab03a8ee4a63c615c6eadcb559eabc564e0031b9f8416cb"
+    },
+    {
+      "apk": "split_df_tiktok_font.apk",
+      "dex": "classes.dex",
+      "sha256": "16965468730281f59335a43d38dfde4fe6cb74a24188f515ead5075cc0e3bc38"
+    },
+    {
+      "apk": "split_df_vmsdk.apk",
+      "dex": "classes.dex",
+      "sha256": "42cd4fe50e2dd2b3e267adcbcdf74ff74ac0f4c0e3917845b342b58c7eaca733"
+    }
+  ],
+  "stats": {
+    "decoded_methods_in_target_dex_files": 241578,
+    "referencing_methods": 4,
+    "matching_method_annotations": 3,
+    "decode_errors": 0
+  },
+  "method_annotations": [
+    {
+      "apk": "base.apk",
+      "dex": "classes10.dex",
+      "annotation_byte_offset": 4348557,
+      "declaring_method": "Lcom/ss/android/ugc/aweme/im/common/api/TikTokImApi;->getCommentStatusBatch(Ljava/lang/String;)LX/055d;",
+      "annotation_type": "LX/050z;",
+      "elements": {
+        "value": "/tiktok/comment/status/batch_get/v1"
+      },
+      "target_strings": [
+        "/tiktok/comment/status/batch_get/v1"
+      ],
+      "http_method": null
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes10.dex",
+      "annotation_byte_offset": 4357504,
+      "declaring_method": "Lcom/ss/android/ugc/aweme/notice/repo/api/NotificationApi$INotificationApi;->query(ILjava/lang/String;ZZZ)LX/04qa;",
+      "annotation_type": "LX/050z;",
+      "elements": {
+        "value": "/aweme/v1/notice/count/"
+      },
+      "target_strings": [
+        "/aweme/v1/notice/count/"
+      ],
+      "http_method": null
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes11.dex",
+      "annotation_byte_offset": 2643572,
+      "declaring_method": "Lcom/ss/android/ugc/aweme/detail/api/DetailApi$IDetailApi;->queryAweme(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IIII)LX/04qa;",
+      "annotation_type": "LX/050z;",
+      "elements": {
+        "value": "/aweme/v1/aweme/detail/"
+      },
+      "target_strings": [
+        "/aweme/v1/aweme/detail/"
+      ],
+      "http_method": null
+    }
+  ],
+  "instruction_references": [
+    {
+      "apk": "base.apk",
+      "dex": "classes11.dex",
+      "declaring_method": "LX/0N8t;-><clinit>()V",
+      "target_strings": [
+        "/aweme/v1/aweme/detail/",
+        "/aweme/v1/notice/count/"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 5306090,
+          "opcode": "0x22",
+          "code_units": [
+            34,
+            25203
+          ],
+          "referenced_type": "Lcom/google/gson/Gson;"
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 5306094,
+          "opcode": "0x70",
+          "code_units": [
+            4208,
+            59318,
+            0
+          ],
+          "callee": "Lcom/google/gson/Gson;-><init>()V"
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 5306100,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            16848
+          ],
+          "field": [
+            "LX/0N8t;",
+            "LIZIZ",
+            "Lcom/google/gson/Gson;"
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 5306104,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            42270
+          ],
+          "string_index": 42270,
+          "string": "api_error_full_log"
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 5306108,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            16849
+          ],
+          "field": [
+            "LX/0N8t;",
+            "LIZJ",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "dex_byte_offset": 5306112,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            3282
+          ],
+          "string_index": 3282,
+          "string": "/service/1/update_token/"
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 5306116,
+          "opcode": "0x1a",
+          "code_units": [
+            282,
+            3227
+          ],
+          "string_index": 3227,
+          "string": "/aweme/v1/aweme/detail/"
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 5306120,
+          "opcode": "0x1a",
+          "code_units": [
+            538,
+            3258
+          ],
+          "string_index": 3258,
+          "string": "/aweme/v1/user/"
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 5306124,
+          "opcode": "0x1a",
+          "code_units": [
+            794,
+            3226
+          ],
+          "string_index": 3226,
+          "string": "/aweme/v1/abtest/param/"
+        },
+        {
+          "code_unit_offset": 26,
+          "dex_byte_offset": 5306128,
+          "opcode": "0x1a",
+          "code_units": [
+            1050,
+            3231
+          ],
+          "string_index": 3231,
+          "string": "/aweme/v1/commerce/settings"
+        },
+        {
+          "code_unit_offset": 28,
+          "dex_byte_offset": 5306132,
+          "opcode": "0x1a",
+          "code_units": [
+            1306,
+            3236
+          ],
+          "string_index": 3236,
+          "string": "/aweme/v1/feed/"
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 5306136,
+          "opcode": "0x1a",
+          "code_units": [
+            1562,
+            3252
+          ],
+          "string_index": 3252,
+          "string": "/aweme/v1/settings/"
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 5306140,
+          "opcode": "0x1a",
+          "code_units": [
+            1818,
+            3254
+          ],
+          "string_index": 3254,
+          "string": "/aweme/v1/story/"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 5306144,
+          "opcode": "0x1a",
+          "code_units": [
+            2074,
+            3260
+          ],
+          "string_index": 3260,
+          "string": "/aweme/v1/user/settings/"
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 5306148,
+          "opcode": "0x1a",
+          "code_units": [
+            2330,
+            3240
+          ],
+          "string_index": 3240,
+          "string": "/aweme/v1/im/cloud/token/"
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 5306152,
+          "opcode": "0x1a",
+          "code_units": [
+            2586,
+            3256
+          ],
+          "string_index": 3256,
+          "string": "/aweme/v1/upload/contacts/"
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 5306156,
+          "opcode": "0x1a",
+          "code_units": [
+            2842,
+            3228
+          ],
+          "string_index": 3228,
+          "string": "/aweme/v1/aweme/post/"
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 5306160,
+          "opcode": "0x1a",
+          "code_units": [
+            3098,
+            3258
+          ],
+          "string_index": 3258,
+          "string": "/aweme/v1/user/"
+        },
+        {
+          "code_unit_offset": 44,
+          "dex_byte_offset": 5306164,
+          "opcode": "0x1a",
+          "code_units": [
+            3354,
+            3232
+          ],
+          "string_index": 3232,
+          "string": "/aweme/v1/commit/follow/user/"
+        },
+        {
+          "code_unit_offset": 46,
+          "dex_byte_offset": 5306168,
+          "opcode": "0x1a",
+          "code_units": [
+            3610,
+            3241
+          ],
+          "string_index": 3241,
+          "string": "/aweme/v1/multi/aweme/detail/"
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 5306172,
+          "opcode": "0x1a",
+          "code_units": [
+            3866,
+            3230
+          ],
+          "string_index": 3230,
+          "string": "/aweme/v1/comment/publish/"
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 5306176,
+          "opcode": "0x1a",
+          "code_units": [
+            4122,
+            3238
+          ],
+          "string_index": 3238,
+          "string": "/aweme/v1/general/search/"
+        },
+        {
+          "code_unit_offset": 52,
+          "dex_byte_offset": 5306180,
+          "opcode": "0x1a",
+          "code_units": [
+            4378,
+            3277
+          ],
+          "string_index": 3277,
+          "string": "/passport/user/logout/"
+        },
+        {
+          "code_unit_offset": 54,
+          "dex_byte_offset": 5306184,
+          "opcode": "0x1a",
+          "code_units": [
+            4634,
+            3233
+          ],
+          "string_index": 3233,
+          "string": "/aweme/v1/commit/item/digg/"
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 5306196,
+          "opcode": "0x1a",
+          "code_units": [
+            5402,
+            3234
+          ],
+          "string_index": 3234,
+          "string": "/aweme/v1/create/aweme/"
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 5306200,
+          "opcode": "0x1a",
+          "code_units": [
+            5658,
+            3235
+          ],
+          "string_index": 3235,
+          "string": "/aweme/v1/create/photo/"
+        },
+        {
+          "code_unit_offset": 64,
+          "dex_byte_offset": 5306204,
+          "opcode": "0x1a",
+          "code_units": [
+            5914,
+            3251
+          ],
+          "string_index": 3251,
+          "string": "/aweme/v1/recommend/user/"
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 5306208,
+          "opcode": "0x1a",
+          "code_units": [
+            6170,
+            3261
+          ],
+          "string_index": 3261,
+          "string": "/aweme/v2/comment/list/"
+        },
+        {
+          "code_unit_offset": 68,
+          "dex_byte_offset": 5306212,
+          "opcode": "0x1a",
+          "code_units": [
+            6426,
+            3275
+          ],
+          "string_index": 3275,
+          "string": "/passport/mobile/login/"
+        },
+        {
+          "code_unit_offset": 70,
+          "dex_byte_offset": 5306216,
+          "opcode": "0x1a",
+          "code_units": [
+            6682,
+            3259
+          ],
+          "string_index": 3259,
+          "string": "/aweme/v1/user/follower/list/"
+        },
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 5306220,
+          "opcode": "0x1a",
+          "code_units": [
+            6938,
+            3242
+          ],
+          "string_index": 3242,
+          "string": "/aweme/v1/notice/count/"
+        },
+        {
+          "code_unit_offset": 74,
+          "dex_byte_offset": 5306224,
+          "opcode": "0x1a",
+          "code_units": [
+            7194,
+            3237
+          ],
+          "string_index": 3237,
+          "string": "/aweme/v1/friend/feed/"
+        },
+        {
+          "code_unit_offset": 76,
+          "dex_byte_offset": 5306228,
+          "opcode": "0x1a",
+          "code_units": [
+            7450,
+            3229
+          ],
+          "string_index": 3229,
+          "string": "/aweme/v1/aweme/stats/"
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 5306232,
+          "opcode": "0x1a",
+          "code_units": [
+            7706,
+            3239
+          ],
+          "string_index": 3239,
+          "string": "/aweme/v1/hot/search/list/"
+        },
+        {
+          "code_unit_offset": 80,
+          "dex_byte_offset": 5306236,
+          "opcode": "0x1a",
+          "code_units": [
+            7962,
+            3250
+          ],
+          "string_index": 3250,
+          "string": "/aweme/v1/recommend/challenge/"
+        },
+        {
+          "code_unit_offset": 82,
+          "dex_byte_offset": 5306240,
+          "opcode": "0x25",
+          "code_units": [
+            8229,
+            27628,
+            0
+          ]
+        },
+        {
+          "code_unit_offset": 85,
+          "dex_byte_offset": 5306246,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 86,
+          "dex_byte_offset": 5306248,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            567,
+            0
+          ],
+          "callee": "LX/02qM;->LJ([Ljava/lang/Object;)Ljava/util/ArrayList;"
+        },
+        {
+          "code_unit_offset": 89,
+          "dex_byte_offset": 5306254,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 90,
+          "dex_byte_offset": 5306256,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            16851
+          ],
+          "field": [
+            "LX/0N8t;",
+            "LJ",
+            "Ljava/util/ArrayList;"
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "dex_byte_offset": 5306260,
+          "opcode": "0xe",
+          "code_units": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "declaring_method": "LX/04vh;->LIZ()Ljava/lang/String;",
+      "target_strings": [
+        "/aweme/v1/notice/count/"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4660444,
+          "opcode": "0x71",
+          "code_units": [
+            113,
+            1191,
+            0
+          ],
+          "callee": "LX/03F9;->LJFF()Lcom/ss/android/ugc/aweme/IAccountUserService;"
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4660450,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 4660452,
+          "opcode": "0x72",
+          "code_units": [
+            4210,
+            43700,
+            0
+          ],
+          "callee": "Lcom/ss/android/ugc/aweme/IAccountUserService;->isLogin()Z"
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 4660458,
+          "opcode": "0xa",
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 4660460,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 10,
+          "dex_byte_offset": 4660464,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            2051
+          ],
+          "string_index": 2051,
+          "string": "/aweme/v1/notice/count/"
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 4660468,
+          "opcode": "0x11",
+          "code_units": [
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 13,
+          "dex_byte_offset": 4660470,
+          "opcode": "0x12",
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 4660472,
+          "opcode": "0x11",
+          "code_units": [
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes5.dex",
+      "declaring_method": "Lcom/ss/android/ugc/aweme/feed/spi/AwemeApiNetworkPartner;->LJIIJ(Lcom/bytedance/retrofit2/client/Request;LX/055g;Ljava/lang/Throwable;)V",
+      "target_strings": [
+        "/aweme/v1/aweme/detail/"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 223,
+          "dex_byte_offset": 6520362,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            600,
+            1
+          ],
+          "callee": "LX/02mu;->LIZIZ(Ljava/lang/StringBuilder;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 226,
+          "dex_byte_offset": 6520368,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 227,
+          "dex_byte_offset": 6520370,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            2471,
+            10
+          ],
+          "callee": "LX/04Zt;->LJ(Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 230,
+          "dex_byte_offset": 6520376,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            248
+          ]
+        },
+        {
+          "code_unit_offset": 232,
+          "dex_byte_offset": 6520380,
+          "opcode": "0x6e",
+          "code_units": [
+            16494,
+            52805,
+            8061
+          ],
+          "callee": "Lcom/ss/android/ugc/aweme/feed/spi/AwemeApiNetworkPartner;->LJ(Ljava/lang/String;LX/055g;Ljava/lang/Throwable;)V"
+        },
+        {
+          "code_unit_offset": 235,
+          "dex_byte_offset": 6520386,
+          "opcode": "0x29",
+          "code_units": [
+            41,
+            243
+          ]
+        },
+        {
+          "code_unit_offset": 237,
+          "dex_byte_offset": 6520390,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            2533
+          ],
+          "string_index": 2533,
+          "string": "/aweme/v1/aweme/detail/"
+        },
+        {
+          "code_unit_offset": 239,
+          "dex_byte_offset": 6520394,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            63809,
+            7
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 242,
+          "dex_byte_offset": 6520400,
+          "opcode": "0xa",
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 243,
+          "dex_byte_offset": 6520402,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            235
+          ]
+        },
+        {
+          "code_unit_offset": 245,
+          "dex_byte_offset": 6520406,
+          "opcode": "0x20",
+          "code_units": [
+            12320,
+            26787
+          ],
+          "referenced_type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 247,
+          "dex_byte_offset": 6520410,
+          "opcode": "0x38",
+          "code_units": [
+            56,
+            101
+          ]
+        },
+        {
+          "code_unit_offset": 249,
+          "dex_byte_offset": 6520414,
+          "opcode": "0x6e",
+          "code_units": [
+            4206,
+            44525,
+            14
+          ],
+          "callee": "Lcom/bytedance/retrofit2/client/Request;->getUrl()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 252,
+          "dex_byte_offset": 6520420,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 253,
+          "dex_byte_offset": 6520422,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            44300,
+            0
+          ],
+          "callee": "Lcom/bytedance/mt/protector/impl/UriProtector;->parse(Ljava/lang/String;)Landroid/net/Uri;"
+        },
+        {
+          "code_unit_offset": 256,
+          "dex_byte_offset": 6520428,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 257,
+          "dex_byte_offset": 6520430,
+          "opcode": "0x71",
+          "code_units": [
+            8305,
+            44298,
+            160
+          ],
+          "callee": "Lcom/bytedance/mt/protector/impl/UriProtector;->com_bytedance_mt_protector_impl_UriProtector_com_ss_android_ugc_aweme_lancet_UriLancet_getQueryParameter(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 260,
+          "dex_byte_offset": 6520436,
+          "opcode": "0xc",
+          "code_units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 261,
+          "dex_byte_offset": 6520438,
+          "opcode": "0x22",
+          "code_units": [
+            290,
+            27191
+          ],
+          "referenced_type": "Lorg/json/JSONObject;"
+        },
+        {
+          "code_unit_offset": 263,
+          "dex_byte_offset": 6520442,
+          "opcode": "0x1f",
+          "code_units": [
+            799,
+            26787
+          ],
+          "referenced_type": "Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 265,
+          "dex_byte_offset": 6520446,
+          "opcode": "0x70",
+          "code_units": [
+            8304,
+            65285,
+            49
+          ],
+          "callee": "Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 268,
+          "dex_byte_offset": 6520452,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            59283
+          ],
+          "string_index": 59283,
+          "string": "status_code"
+        },
+        {
+          "code_unit_offset": 270,
+          "dex_byte_offset": 6520456,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            65297,
+            1
+          ],
+          "callee": "Lorg/json/JSONObject;->optInt(Ljava/lang/String;)I"
+        },
+        {
+          "code_unit_offset": 273,
+          "dex_byte_offset": 6520462,
+          "opcode": "0xa",
+          "code_units": [
+            3082
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes11.dex",
+      "declaring_method": "Lcom/ss/android/ugc/aweme/detail/api/DetailApi;-><clinit>()V",
+      "target_strings": [
+        "/aweme/v1/aweme/detail/"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4350444,
+          "opcode": "0x71",
+          "code_units": [
+            113,
+            443,
+            0
+          ],
+          "callee": "LX/02mu;->LIZ()Ljava/lang/StringBuilder;"
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4350450,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 4350452,
+          "opcode": "0x62",
+          "code_units": [
+            610,
+            186
+          ],
+          "field": [
+            "LX/043D;",
+            "LIZJ",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 4350456,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            51639,
+            33
+          ],
+          "callee": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 4350462,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            1802
+          ],
+          "string_index": 1802,
+          "string": "/aweme/v1/aweme/detail/"
+        },
+        {
+          "code_unit_offset": 11,
+          "dex_byte_offset": 4350466,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            51639,
+            1
+          ],
+          "callee": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 4350472,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            444,
+            1
+          ],
+          "callee": "LX/02mu;->LIZIZ(Ljava/lang/StringBuilder;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 4350478,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "dex_byte_offset": 4350480,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            20384
+          ],
+          "field": [
+            "Lcom/ss/android/ugc/aweme/detail/api/DetailApi;",
+            "LIZ",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 4350484,
+          "opcode": "0x71",
+          "code_units": [
+            113,
+            38815,
+            0
+          ],
+          "callee": "Lcom/ss/android/ugc/aweme/framework/services/ServiceManager;->get()Lcom/ss/android/ugc/aweme/framework/services/ServiceManager;"
+        },
+        {
+          "code_unit_offset": 23,
+          "dex_byte_offset": 4350490,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 4350492,
+          "opcode": "0x1c",
+          "code_units": [
+            28,
+            14118
+          ],
+          "referenced_type": "Lcom/ss/android/ugc/aweme/framework/services/IRetrofitService;"
+        },
+        {
+          "code_unit_offset": 26,
+          "dex_byte_offset": 4350496,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            38816,
+            1
+          ],
+          "callee": "Lcom/ss/android/ugc/aweme/framework/services/ServiceManager;->getService(Ljava/lang/Class;)Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 29,
+          "dex_byte_offset": 4350502,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 4350504,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            14118
+          ],
+          "referenced_type": "Lcom/ss/android/ugc/aweme/framework/services/IRetrofitService;"
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 4350508,
+          "opcode": "0x72",
+          "code_units": [
+            8306,
+            38810,
+            32
+          ],
+          "callee": "Lcom/ss/android/ugc/aweme/framework/services/IRetrofitService;->createNewRetrofit(Ljava/lang/String;)Lcom/ss/android/ugc/aweme/framework/services/IRetrofit;"
+        },
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 4350514,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 4350516,
+          "opcode": "0x1c",
+          "code_units": [
+            28,
+            13600
+          ],
+          "referenced_type": "Lcom/ss/android/ugc/aweme/detail/api/DetailApi$IDetailApi;"
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 4350520,
+          "opcode": "0x72",
+          "code_units": [
+            8306,
+            38809,
+            1
+          ],
+          "callee": "Lcom/ss/android/ugc/aweme/framework/services/IRetrofit;->create(Ljava/lang/Class;)Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 4350526,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 4350528,
+          "opcode": "0x1f",
+          "code_units": [
+            31,
+            13600
+          ],
+          "referenced_type": "Lcom/ss/android/ugc/aweme/detail/api/DetailApi$IDetailApi;"
+        },
+        {
+          "code_unit_offset": 44,
+          "dex_byte_offset": 4350532,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            20385
+          ],
+          "field": [
+            "Lcom/ss/android/ugc/aweme/detail/api/DetailApi;",
+            "LIZIZ",
+            "Lcom/ss/android/ugc/aweme/detail/api/DetailApi$IDetailApi;"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Selected literals only, across all installed APKs. Instruction decoding is limited to DEX files containing those literals.",
+    "Neighboring instructions and invokes establish code locations, not same-object dataflow, method/path pairing, or runtime execution.",
+    "Obfuscated annotation types remain unnamed until their semantics are independently traced. No Instagram mappings reused.",
+    "Raw instruction units are retained for checking disassembly; native code and dynamic URL composition remain unresolved.",
+    "No API requests or account data accessed."
+  ]
+}

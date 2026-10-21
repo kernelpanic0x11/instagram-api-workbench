@@ -1,0 +1,144 @@
+{
+  "app": "tiktok",
+  "version": "47.1.4",
+  "review_status": "manually reviewed static client declarations; not runtime verified",
+  "apk_sha256": {
+    "base.apk": "9b61480551703d95626de20245de5ecca0877de69d872af076f02cafbb25725e",
+    "split_config.arm64_v8a.apk": "6b4264bf3797f534aef562460728352a427d6dd570ce93586a4069a4d5392e82",
+    "split_config.en.apk": "1fca25c0e313aeea458c41bde2980ee58bf37f3de8c1c5ec4e6c3d9f4a203e28",
+    "split_config.xxhdpi.apk": "f52f531b3859e39a2f9edccb311a16ecbf5c5ce9b4635e39cea7ce4112f8e545",
+    "split_df_a_dex.apk": "383070f3d5299d1f2efd50be2ee678d686251ecb000f91b0c330b76a6abbbb7d",
+    "split_df_camera_biz.apk": "6741bb37cd56384671b70e6c3258952ec528b85aacadf658791e5c771809c4a1",
+    "split_df_camera_biz.config.arm64_v8a.apk": "5f3e0a66297571018b4812c8e95771e9cf364418cc0ddf82a306c141dbe637e8",
+    "split_df_ccdc_impl_ocr.apk": "9582b68b8f98773f897e89ddafe43dee718c54baf80de38c6378758e8d86d7ae",
+    "split_df_ccdc_impl_ocr.config.arm64_v8a.apk": "5583c32d99575d095cf8e781f3653710f71df68bae9da07162bad356cf26d425",
+    "split_df_ccdc_impl_ocr.config.xxhdpi.apk": "efbd03e7429af537cb3707b7080eda6220d7ff98a50c88054476189333ff583d",
+    "split_df_im_bootfinish.apk": "d1ef52110be6ee1875f272ddad787e935371817c942af7c17b857f11040afc45",
+    "split_df_im_bootfinish.config.arm64_v8a.apk": "161cc0594e29cc75d0e058f9fe0ba331f21a2853d55b53bfe58b483710617ea7",
+    "split_df_kids_mode.apk": "5268d19fa3f30695e09d4e6a058ee6aeaff4310b5942528d7c86541484064ca4",
+    "split_df_kids_mode.config.arm64_v8a.apk": "df3e6dd4e1c50870641a32b84fc1c8c6a28616066029e22e26e17ff379cbdbc6",
+    "split_df_live_cast.apk": "c50fc190549a6fdd6b3aa5a0a95f3b48fe06592388e0cb13e047569ff15d0051",
+    "split_df_live_cast.config.arm64_v8a.apk": "a83eab6078fb1bec8d843e9284e8f9584f979b056bc81f7e0ed78b980cf6b258",
+    "split_df_live_cast.config.en.apk": "9c71eea21a744c44538169c6b6afd09aa3667bc21afd132d3592ff7d2217ebac",
+    "split_df_live_cast.config.xxhdpi.apk": "d6ed9a17afb9e04b5d7cccb79fcb66c6fb45703ef07fcb87ac39a82846addd23",
+    "split_df_live_cmaf.apk": "cfcf87c715f7c33a9dc1cbbc8492ddd0cb1c1c3a604e8974d0ff81a71aeb6017",
+    "split_df_live_cmaf.config.arm64_v8a.apk": "8ea9253d4c172b54967af01b74904be079b45cfc969f2c504609a107319ccc54",
+    "split_df_live_p2p.apk": "8d30a24a4de12ec0bc2407970bb1abee32f50ceb2212cf6e90fa0bdb560d4907",
+    "split_df_live_p2p.config.arm64_v8a.apk": "8d05dfb774dd95689d2f45cc52bd9f67fe248a10787f4d9bfc5a60900f104326",
+    "split_df_live_quic.apk": "d796da9a088e4c4755f61e7df236bdd8f401ec74e2df0a88a7348a292b62eecf",
+    "split_df_live_quic.config.arm64_v8a.apk": "dc7b1a8f45e0b8f502a98a554af325ee2677e6730dd1382a462384d3375fbe72",
+    "split_df_live_rtmglobal.apk": "f62b640b6cd384b30c0215db44f89d9d1cf365790c5741ca444b64d42f761327",
+    "split_df_live_rtmglobal.config.arm64_v8a.apk": "03d2d402b6a04f28200993756759de3af3bf9de8c1c96d074a3f2f4d6a03c116",
+    "split_df_location.apk": "c97d97ce5091f9dd2b87b7fe01010854e6249e674e4b5be4e0237bd7694da19c",
+    "split_df_location.config.arm64_v8a.apk": "279a597b62be17f140697ec2027f53f98a4603b9136a8f370f93aa748c6e391d",
+    "split_df_m2_player_combo.apk": "e74bfb9fccf5ba5691149c8a893ec96ce71d2181f6119c9c9fa72a4343869a5c",
+    "split_df_m2_player_combo.config.arm64_v8a.apk": "1217ec8de203bfa95bafc040d1d8c0063bc44a570a86b55588c3319b52b87a5c",
+    "split_df_music_dsp.apk": "cb6bcffd50baef92bb9362a1dc3813763af72330bb838ff591ba0be950081a82",
+    "split_df_music_dsp.config.arm64_v8a.apk": "81af402d5c43c6a2d78412ec07a118303ea5e8e22b4e6e04aeb09418c64bad0f",
+    "split_df_music_dsp.config.en.apk": "536aacfe43ed6a8e5fd00693cb59d4ce23de6916b29aa64586ff9ef39b56fb49",
+    "split_df_music_dsp.config.xxhdpi.apk": "f77b92e4bc042eeb736c2ad9a37b8d1a4df5361ac9ad9f6d5436873caefbcc82",
+    "split_df_pipo_bnpl.apk": "7685f71ccbc35a29349885c19319aed2a8d6c3b721d046d5484fcb209d7cc86f",
+    "split_df_pipo_bnpl.config.arm64_v8a.apk": "751fae02d6197c92c476f466d3b086116d5f22372e66b930d8b84ea63abe48bf",
+    "split_df_pipo_bnpl.config.xxhdpi.apk": "dfb8849661a923695cd514807025ef83c97202c40cff1eb141086a140f975ccc",
+    "split_df_pipo_external_payments.apk": "e1711f39805c301a963d4537dfc9da8ecb6a7fb9d57b12afd4e2097bdda9854b",
+    "split_df_pipo_external_payments.config.arm64_v8a.apk": "735bf94165d3ccd345c0632169e95032b2aaefaf7d959b9afe48bbbfb32b269f",
+    "split_df_pitaya.apk": "76098631c0e72eddcf4283249b48d8999e67a4f04a326ac17881951361e26de1",
+    "split_df_pitaya.config.arm64_v8a.apk": "0a221e6d7647b3f711a3c6108b69a318dc89a37f2136274fb9258dc93a79260b",
+    "split_df_pns_biz.apk": "a095608b5f62a16fb845919328b3029f14c4593546a2c62c1ec0a4e99f4eb631",
+    "split_df_pns_biz.config.arm64_v8a.apk": "bf142c199b0c995a7a69d28160a67d79982d2212e7ff10b73b25c6c21d63f1be",
+    "split_df_search_biz.apk": "4829dcec5c7e823af20ef7dd7f9b4925ad130d53899b13a9af8e10b1bb93079b",
+    "split_df_search_biz.config.arm64_v8a.apk": "9f85d9b14ce9e6a2ab917cf92d6b6262a23bf17e0956cf363148f59c5b2ccec0",
+    "split_df_ship.apk": "785fcd2e163a135626472c058d077601a1dce30ba51796dad0561100ad8059fd",
+    "split_df_ship.config.arm64_v8a.apk": "f091876826f8f40d27cf8bf49198b53118408b828a0230a635d43e31a0884b79",
+    "split_df_ship.config.en.apk": "b1fd5c39c6ee4cf6686457d0524e65f3205eb7848ca197fff5ceac4311f21ef6",
+    "split_df_tiktok_font.apk": "cbb8c897616efe7d8643808aaf22c0240710115127fe980a1bf12f0b44079551",
+    "split_df_vmsdk.apk": "058c06b27f7341907b133fef7dd6057f985acf9e7d2f8612ababb8c8551c2f86",
+    "split_df_vmsdk.config.arm64_v8a.apk": "496d69ba1aa70e378b6da22fbf6e93947afb9ce4ab50383786f146f58e0702c4",
+    "split_df_wallpaper_main.apk": "20ee6817963187a516402f5fac5ede09fa1f905b0a77a13e873c4dae5314f21a",
+    "split_df_wallpaper_main.config.arm64_v8a.apk": "3a0d0f3e27560dc5b7b168146637fbbcb51e2d543f36270fa1cfd0f7005d7e62"
+  },
+  "annotation_mapping": {
+    "type": "LX/050z;",
+    "http_method": "GET",
+    "path_element": "value"
+  },
+  "evidence_chain": [
+    {
+      "source": "request-factory-trace.json",
+      "method": "Lcom/bytedance/retrofit2/RequestFactory;->parseAnnotations",
+      "dex": "classes3.dex",
+      "observation": "GET is loaded into v4. The LX/050z branch reads annotation.value() and invokes LX/04zq.LIZLLL(v4, value, false).",
+      "annotation_type_test_byte_offset": 7425778,
+      "annotation_value_call_byte_offset": 7425792,
+      "builder_call_byte_offset": 7425800
+    },
+    {
+      "source": "request-factory-trace.json",
+      "method": "LX/04zq;->LIZLLL(Ljava/lang/String;Ljava/lang/String;Z)V",
+      "dex": "classes3.dex",
+      "observation": "The builder stores p1 as LJIJJLI (method) and p2 as LJJIFFI (relative path), rejecting a duplicate method.",
+      "method_store_byte_offset": 6106910,
+      "path_store_byte_offset": 6107110
+    },
+    {
+      "source": "request-factory-trace.json",
+      "method": "Lcom/bytedance/retrofit2/RequestFactory;-><init>(LX/04zq;)V",
+      "dex": "classes3.dex",
+      "observation": "The constructor copies LJIJJLI into httpMethod and LJJIFFI into relativeUrl on the same RequestFactory object.",
+      "http_method_store_byte_offset": 4847948,
+      "relative_url_store_byte_offset": 4847956
+    }
+  ],
+  "declarations": [
+    {
+      "apk": "base.apk",
+      "dex": "classes10.dex",
+      "annotation_byte_offset": 4348557,
+      "declaring_method": "Lcom/ss/android/ugc/aweme/im/common/api/TikTokImApi;->getCommentStatusBatch(Ljava/lang/String;)LX/055d;",
+      "annotation_type": "LX/050z;",
+      "elements": {
+        "value": "/tiktok/comment/status/batch_get/v1"
+      },
+      "target_strings": [
+        "/tiktok/comment/status/batch_get/v1"
+      ],
+      "http_method": "GET",
+      "status": "statically traced annotation declaration"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes10.dex",
+      "annotation_byte_offset": 4357504,
+      "declaring_method": "Lcom/ss/android/ugc/aweme/notice/repo/api/NotificationApi$INotificationApi;->query(ILjava/lang/String;ZZZ)LX/04qa;",
+      "annotation_type": "LX/050z;",
+      "elements": {
+        "value": "/aweme/v1/notice/count/"
+      },
+      "target_strings": [
+        "/aweme/v1/notice/count/"
+      ],
+      "http_method": "GET",
+      "status": "statically traced annotation declaration"
+    },
+    {
+      "apk": "split_df_a_dex.apk",
+      "dex": "classes11.dex",
+      "annotation_byte_offset": 2643572,
+      "declaring_method": "Lcom/ss/android/ugc/aweme/detail/api/DetailApi$IDetailApi;->queryAweme(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;IIII)LX/04qa;",
+      "annotation_type": "LX/050z;",
+      "elements": {
+        "value": "/aweme/v1/aweme/detail/"
+      },
+      "target_strings": [
+        "/aweme/v1/aweme/detail/"
+      ],
+      "http_method": "GET",
+      "status": "statically traced annotation declaration"
+    }
+  ],
+  "limitations": [
+    "The annotation-to-method mapping was reviewed only for these exact APK hashes.",
+    "Only three selected declarations are recorded. This is not an exhaustive extraction or request-dispatch proof.",
+    "No base host, authentication requirements, payload schema, runtime execution or server availability established."
+  ]
+}

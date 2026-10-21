@@ -1,0 +1,972 @@
+{
+  "app": "snapchat",
+  "targets": [
+    "/loq/register_v2",
+    "/snapchat.cameos.minerva.MinervaService/GenerateCaption",
+    "/snapchat.cdp.cof.CircumstancesService/targetingQuery"
+  ],
+  "dex_sources": [
+    {
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "sha256": "c37779c78dbbea631f833e68f8fccf5ee71db540de1d1e82fe1025e694fb637f"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes10.dex",
+      "sha256": "3112a09b93d9cea7d897fb581ecc92226637fbf394333a3ce44bf4874ef3d8a9"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes2.dex",
+      "sha256": "8cfcd73909acb4cd42e60e376dffbd1ed33fa97ef332cbf5e4e15a251669f929"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "sha256": "8569d0e28e06e7685c060c121133597a0a01085e6c29304dd8a6399dee12986d"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes4.dex",
+      "sha256": "98cdf5ff247e67652359ee0b92418228663e32a8f5cda8b357ded0656d18c1cc"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes5.dex",
+      "sha256": "7a3da4720604c9f245af266b3424a6624dfb88bcba891c52176d4bc6486375fb"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes6.dex",
+      "sha256": "f4ea2fdf80444a998c8b880d50863a2351b69aff3f65ec2a2f57351f19cd602d"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes7.dex",
+      "sha256": "993c77f4b81b437dffa2f9c1983bc7a35f1ef89605e5558669015049ff7b4aad"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes8.dex",
+      "sha256": "4e25e47db6d816e9754d79d32111f9dd8d01b2f3a2c0130f2c841f0a5d0ccb45"
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes9.dex",
+      "sha256": "631530d77125c219d42617fcbc2135491b566f2c9682ca7147b4b5dc36acedfd"
+    }
+  ],
+  "stats": {
+    "decoded_methods_in_target_dex_files": 82292,
+    "referencing_methods": 4,
+    "matching_method_annotations": 0,
+    "decode_errors": 0
+  },
+  "method_annotations": [],
+  "instruction_references": [
+    {
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "declaring_method": "Lpf3;->subscribe(Lio/reactivex/rxjava3/core/MaybeEmitter;)V",
+      "target_strings": [
+        "/snapchat.cdp.cof.CircumstancesService/targetingQuery"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 5431036,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            46439,
+            1
+          ],
+          "callee": "LjK1;->a(Lcom/google/protobuf/nano/MessageNano;)Ljava/nio/ByteBuffer;"
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 5431042,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 76,
+          "dex_byte_offset": 5431044,
+          "opcode": "0x22",
+          "code_units": [
+            802,
+            14660
+          ],
+          "referenced_type": "LfK1;"
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 5431048,
+          "opcode": "0x1c",
+          "code_units": [
+            1052,
+            19546
+          ],
+          "referenced_type": "LpY3;"
+        },
+        {
+          "code_unit_offset": 80,
+          "dex_byte_offset": 5431052,
+          "opcode": "0x70",
+          "code_units": [
+            12400,
+            41764,
+            1059
+          ],
+          "callee": "LfK1;-><init>(LOw9;Ljava/lang/Class;)V"
+        },
+        {
+          "code_unit_offset": 83,
+          "dex_byte_offset": 5431058,
+          "opcode": "0x54",
+          "code_units": [
+            84,
+            23665
+          ],
+          "field": [
+            "LVhl;",
+            "a",
+            "Lcom/snapchat/client/grpc/UnifiedGrpcService;"
+          ]
+        },
+        {
+          "code_unit_offset": 85,
+          "dex_byte_offset": 5431062,
+          "opcode": "0x1a",
+          "code_units": [
+            1050,
+            2668
+          ],
+          "string_index": 2668,
+          "string": "/snapchat.cdp.cof.CircumstancesService/targetingQuery"
+        },
+        {
+          "code_unit_offset": 87,
+          "dex_byte_offset": 5431066,
+          "opcode": "0x6e",
+          "code_units": [
+            21358,
+            38377,
+            24896
+          ],
+          "callee": "Lcom/snapchat/client/grpc/UnifiedGrpcService;->unaryCall(Ljava/lang/String;Ljava/nio/ByteBuffer;Lcom/snapchat/client/grpc/CallOptionsBuilder;Lcom/snapchat/client/grpc/UnaryEventHandler;)Lcom/snapchat/client/grpc/GrpcCallHandle;"
+        },
+        {
+          "code_unit_offset": 90,
+          "dex_byte_offset": 5431072,
+          "opcode": "0xe",
+          "code_units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 91,
+          "dex_byte_offset": 5431074,
+          "opcode": "0xd",
+          "code_units": [
+            1549
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "dex_byte_offset": 5431076,
+          "opcode": "0x28",
+          "code_units": [
+            1576
+          ]
+        },
+        {
+          "code_unit_offset": 93,
+          "dex_byte_offset": 5431078,
+          "opcode": "0xd",
+          "code_units": [
+            1549
+          ]
+        },
+        {
+          "code_unit_offset": 94,
+          "dex_byte_offset": 5431080,
+          "opcode": "0x28",
+          "code_units": [
+            1064
+          ]
+        },
+        {
+          "code_unit_offset": 95,
+          "dex_byte_offset": 5431082,
+          "opcode": "0xd",
+          "code_units": [
+            1549
+          ]
+        },
+        {
+          "code_unit_offset": 96,
+          "dex_byte_offset": 5431084,
+          "opcode": "0x28",
+          "code_units": [
+            552
+          ]
+        },
+        {
+          "code_unit_offset": 97,
+          "dex_byte_offset": 5431086,
+          "opcode": "0xd",
+          "code_units": [
+            1549
+          ]
+        },
+        {
+          "code_unit_offset": 98,
+          "dex_byte_offset": 5431088,
+          "opcode": "0x22",
+          "code_units": [
+            34,
+            13357
+          ],
+          "referenced_type": "Lcom/snapchat/client/grpc/Status;"
+        },
+        {
+          "code_unit_offset": 100,
+          "dex_byte_offset": 5431092,
+          "opcode": "0x62",
+          "code_units": [
+            354,
+            35565
+          ],
+          "field": [
+            "Lcom/snapchat/client/grpc/StatusCode;",
+            "INTERNAL",
+            "Lcom/snapchat/client/grpc/StatusCode;"
+          ]
+        },
+        {
+          "code_unit_offset": 102,
+          "dex_byte_offset": 5431096,
+          "opcode": "0x6e",
+          "code_units": [
+            4206,
+            47137,
+            6
+          ],
+          "callee": "Ljava/lang/Throwable;->getMessage()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 105,
+          "dex_byte_offset": 5431102,
+          "opcode": "0xc",
+          "code_units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 106,
+          "dex_byte_offset": 5431104,
+          "opcode": "0x70",
+          "code_units": [
+            12400,
+            38353,
+            1552
+          ],
+          "callee": "Lcom/snapchat/client/grpc/Status;-><init>(Lcom/snapchat/client/grpc/StatusCode;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 109,
+          "dex_byte_offset": 5431110,
+          "opcode": "0x12",
+          "code_units": [
+            1554
+          ]
+        },
+        {
+          "code_unit_offset": 110,
+          "dex_byte_offset": 5431112,
+          "opcode": "0x6e",
+          "code_units": [
+            12398,
+            53894,
+            98
+          ],
+          "callee": "Lof3;->a(Lcom/google/protobuf/nano/MessageNano;Lcom/snapchat/client/grpc/Status;)V"
+        },
+        {
+          "code_unit_offset": 113,
+          "dex_byte_offset": 5431118,
+          "opcode": "0xe",
+          "code_units": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "declaring_method": "LvY3;-><clinit>()V",
+      "target_strings": [
+        "/snapchat.cameos.minerva.MinervaService/GenerateCaption"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 5492238,
+          "opcode": "0x71",
+          "code_units": [
+            8305,
+            47493,
+            33
+          ],
+          "callee": "Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;"
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 5492244,
+          "opcode": "0xc",
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 39,
+          "dex_byte_offset": 5492246,
+          "opcode": "0x5b",
+          "code_units": [
+            347,
+            3890
+          ],
+          "field": [
+            "LDed;",
+            "c",
+            "Ljava/util/Map;"
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 5492250,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            59039
+          ],
+          "field": [
+            "LvY3;",
+            "a",
+            "LDed;"
+          ]
+        },
+        {
+          "code_unit_offset": 43,
+          "dex_byte_offset": 5492254,
+          "opcode": "0x22",
+          "code_units": [
+            34,
+            2606
+          ],
+          "referenced_type": "LGed;"
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 5492258,
+          "opcode": "0x70",
+          "code_units": [
+            4208,
+            7044,
+            0
+          ],
+          "callee": "LGed;-><init>()V"
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 5492264,
+          "opcode": "0x1a",
+          "code_units": [
+            282,
+            2666
+          ],
+          "string_index": 2666,
+          "string": "/snapchat.cameos.minerva.MinervaService/GenerateCaption"
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 5492268,
+          "opcode": "0x5b",
+          "code_units": [
+            347,
+            7438
+          ],
+          "field": [
+            "LGed;",
+            "b",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "dex_byte_offset": 5492272,
+          "opcode": "0x52",
+          "code_units": [
+            338,
+            7437
+          ],
+          "field": [
+            "LGed;",
+            "a",
+            "I"
+          ]
+        },
+        {
+          "code_unit_offset": 54,
+          "dex_byte_offset": 5492276,
+          "opcode": "0x59",
+          "code_units": [
+            857,
+            7439
+          ],
+          "field": [
+            "LGed;",
+            "c",
+            "I"
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 5492280,
+          "opcode": "0xde",
+          "code_units": [
+            478,
+            769
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "dex_byte_offset": 5492284,
+          "opcode": "0x59",
+          "code_units": [
+            345,
+            7437
+          ],
+          "field": [
+            "LGed;",
+            "a",
+            "I"
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 5492288,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            59040
+          ],
+          "field": [
+            "LvY3;",
+            "b",
+            "LGed;"
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 5492292,
+          "opcode": "0x22",
+          "code_units": [
+            34,
+            14790
+          ],
+          "referenced_type": "Lfed;"
+        },
+        {
+          "code_unit_offset": 64,
+          "dex_byte_offset": 5492296,
+          "opcode": "0x70",
+          "code_units": [
+            4208,
+            42126,
+            0
+          ],
+          "callee": "Lfed;-><init>()V"
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 5492302,
+          "opcode": "0x1a",
+          "code_units": [
+            282,
+            2665
+          ],
+          "string_index": 2665,
+          "string": "/snapchat.cameos.minerva.MinervaService/GenerateAICameraMedia"
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 5492306,
+          "opcode": "0x5b",
+          "code_units": [
+            347,
+            39538
+          ],
+          "field": [
+            "Lfed;",
+            "b",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 71,
+          "dex_byte_offset": 5492310,
+          "opcode": "0x52",
+          "code_units": [
+            338,
+            39537
+          ],
+          "field": [
+            "Lfed;",
+            "a",
+            "I"
+          ]
+        },
+        {
+          "code_unit_offset": 73,
+          "dex_byte_offset": 5492314,
+          "opcode": "0x13",
+          "code_units": [
+            531,
+            60
+          ]
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 5492318,
+          "opcode": "0x59",
+          "code_units": [
+            601,
+            39539
+          ],
+          "field": [
+            "Lfed;",
+            "c",
+            "I"
+          ]
+        },
+        {
+          "code_unit_offset": 77,
+          "dex_byte_offset": 5492322,
+          "opcode": "0xde",
+          "code_units": [
+            478,
+            769
+          ]
+        },
+        {
+          "code_unit_offset": 79,
+          "dex_byte_offset": 5492326,
+          "opcode": "0x59",
+          "code_units": [
+            345,
+            39537
+          ],
+          "field": [
+            "Lfed;",
+            "a",
+            "I"
+          ]
+        },
+        {
+          "code_unit_offset": 81,
+          "dex_byte_offset": 5492330,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            59041
+          ],
+          "field": [
+            "LvY3;",
+            "c",
+            "Lfed;"
+          ]
+        },
+        {
+          "code_unit_offset": 83,
+          "dex_byte_offset": 5492334,
+          "opcode": "0x22",
+          "code_units": [
+            34,
+            8242
+          ],
+          "referenced_type": "LUed;"
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "declaring_method": "LTlf;-><clinit>()V",
+      "target_strings": [
+        "/loq/register_v2"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4349820,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            2627
+          ],
+          "string_index": 2627,
+          "string": "/loq/register_v2"
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 4349824,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            47491,
+            0
+          ],
+          "callee": "Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;"
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 4349830,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 4349832,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            21531
+          ],
+          "field": [
+            "LTlf;",
+            "a",
+            "Ljava/util/Set;"
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 4349836,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            2688
+          ],
+          "string_index": 2688,
+          "string": "/snapchat.janus.api/RegistrationService/"
+        },
+        {
+          "code_unit_offset": 10,
+          "dex_byte_offset": 4349840,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            21532
+          ],
+          "field": [
+            "LTlf;",
+            "b",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 4349844,
+          "opcode": "0x1a",
+          "code_units": [
+            26,
+            2672
+          ],
+          "string_index": 2672,
+          "string": "/snapchat.janus.api.LoginService/"
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 4349848,
+          "opcode": "0x69",
+          "code_units": [
+            105,
+            21533
+          ],
+          "field": [
+            "LTlf;",
+            "c",
+            "Ljava/lang/String;"
+          ]
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 4349852,
+          "opcode": "0xe",
+          "code_units": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "apk": "base.apk",
+      "dex": "classes2.dex",
+      "declaring_method": "Lf6l;->apply(Ljava/lang/Object;)Ljava/lang/Object;",
+      "target_strings": [
+        "/snapchat.cameos.minerva.MinervaService/GenerateCaption"
+      ],
+      "instructions": [
+        {
+          "code_unit_offset": 2962,
+          "dex_byte_offset": 5046100,
+          "opcode": "0x7",
+          "code_units": [
+            3079
+          ]
+        },
+        {
+          "code_unit_offset": 2963,
+          "dex_byte_offset": 5046102,
+          "opcode": "0x1f",
+          "code_units": [
+            3103,
+            20007
+          ],
+          "referenced_type": "Lwed;"
+        },
+        {
+          "code_unit_offset": 2965,
+          "dex_byte_offset": 5046106,
+          "opcode": "0x71",
+          "code_units": [
+            4209,
+            35490,
+            11
+          ],
+          "callee": "Lcom/google/protobuf/nano/MessageNano;->toByteArray(Lcom/google/protobuf/nano/MessageNano;)[B"
+        },
+        {
+          "code_unit_offset": 2968,
+          "dex_byte_offset": 5046112,
+          "opcode": "0xc",
+          "code_units": [
+            4108
+          ]
+        },
+        {
+          "code_unit_offset": 2969,
+          "dex_byte_offset": 5046114,
+          "opcode": "0x13",
+          "code_units": [
+            4627,
+            0
+          ]
+        },
+        {
+          "code_unit_offset": 2971,
+          "dex_byte_offset": 5046118,
+          "opcode": "0x13",
+          "code_units": [
+            4883,
+            0
+          ]
+        },
+        {
+          "code_unit_offset": 2973,
+          "dex_byte_offset": 5046122,
+          "opcode": "0x1a",
+          "code_units": [
+            3354,
+            2855
+          ],
+          "string_index": 2855,
+          "string": "/snapchat.cameos.minerva.MinervaService/GenerateCaption"
+        },
+        {
+          "code_unit_offset": 2975,
+          "dex_byte_offset": 5046126,
+          "opcode": "0x16",
+          "code_units": [
+            3606,
+            20
+          ]
+        },
+        {
+          "code_unit_offset": 2977,
+          "dex_byte_offset": 5046130,
+          "opcode": "0x1c",
+          "code_units": [
+            4380,
+            7337
+          ],
+          "referenced_type": "LWZ8;"
+        },
+        {
+          "code_unit_offset": 2979,
+          "dex_byte_offset": 5046134,
+          "opcode": "0x13",
+          "code_units": [
+            5139,
+            112
+          ]
+        },
+        {
+          "code_unit_offset": 2981,
+          "dex_byte_offset": 5046138,
+          "opcode": "0x77",
+          "code_units": [
+            2423,
+            62271,
+            12
+          ],
+          "callee": "Lwed;->a(Lwed;Ljava/lang/String;J[BLjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;"
+        },
+        {
+          "code_unit_offset": 2984,
+          "dex_byte_offset": 5046144,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 2985,
+          "dex_byte_offset": 5046146,
+          "opcode": "0x22",
+          "code_units": [
+            1058,
+            17439
+          ],
+          "referenced_type": "Loed;"
+        },
+        {
+          "code_unit_offset": 2987,
+          "dex_byte_offset": 5046150,
+          "opcode": "0x70",
+          "code_units": [
+            22640,
+            55575,
+            29540
+          ],
+          "callee": "Loed;-><init>(Lqed;Ljava/util/UUID;J)V"
+        },
+        {
+          "code_unit_offset": 2990,
+          "dex_byte_offset": 5046156,
+          "opcode": "0x22",
+          "code_units": [
+            1314,
+            14884
+          ],
+          "referenced_type": "Lio/reactivex/rxjava3/internal/operators/single/SingleMap;"
+        },
+        {
+          "code_unit_offset": 2992,
+          "dex_byte_offset": 5046160,
+          "opcode": "0x70",
+          "code_units": [
+            12400,
+            47887,
+            1029
+          ],
+          "callee": "Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V"
+        },
+        {
+          "code_unit_offset": 2995,
+          "dex_byte_offset": 5046166,
+          "opcode": "0x22",
+          "code_units": [
+            34,
+            17439
+          ],
+          "referenced_type": "Loed;"
+        },
+        {
+          "code_unit_offset": 2997,
+          "dex_byte_offset": 5046170,
+          "opcode": "0x70",
+          "code_units": [
+            22640,
+            55574,
+            30256
+          ],
+          "callee": "Loed;-><init>(Ljava/util/UUID;Lqed;J)V"
+        },
+        {
+          "code_unit_offset": 3000,
+          "dex_byte_offset": 5046176,
+          "opcode": "0x6e",
+          "code_units": [
+            8302,
+            45507,
+            5
+          ],
+          "callee": "Lio/reactivex/rxjava3/core/Single;->o(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;"
+        },
+        {
+          "code_unit_offset": 3003,
+          "dex_byte_offset": 5046182,
+          "opcode": "0xc",
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 3004,
+          "dex_byte_offset": 5046184,
+          "opcode": "0x22",
+          "code_units": [
+            1314,
+            17784
+          ],
+          "referenced_type": "Lped;"
+        },
+        {
+          "code_unit_offset": 3006,
+          "dex_byte_offset": 5046188,
+          "opcode": "0x1",
+          "code_units": [
+            10497
+          ]
+        },
+        {
+          "code_unit_offset": 3007,
+          "dex_byte_offset": 5046190,
+          "opcode": "0x76",
+          "code_units": [
+            1654,
+            56536,
+            5
+          ],
+          "callee": "Lped;-><init>(Lqed;JIZ)V"
+        },
+        {
+          "code_unit_offset": 3010,
+          "dex_byte_offset": 5046196,
+          "opcode": "0x22",
+          "code_units": [
+            546,
+            14865
+          ],
+          "referenced_type": "Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Selected literals only, across all installed APKs. Instruction decoding is limited to DEX files containing those literals.",
+    "Neighboring instructions and invokes establish code locations, not same-object dataflow, method/path pairing, or runtime execution.",
+    "Obfuscated annotation types remain unnamed until their semantics are independently traced. No Instagram mappings reused.",
+    "Raw instruction units are retained for checking disassembly; native code and dynamic URL composition remain unresolved.",
+    "No API requests or account data accessed."
+  ]
+}

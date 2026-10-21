@@ -1,0 +1,45 @@
+name: Validate workbench
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  instagram-validation:
+    name: Instagram tests and public artifact scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/instagram/api/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Instagram build and test dependencies
+        run: npm ci --ignore-scripts --prefix apps/instagram/api
+      - name: Build OpenAPI artifacts
+        run: npm run build --prefix apps/instagram/api
+      - name: Validate OpenAPI artifacts
+        run: npm run validate --prefix apps/instagram/api
+      - name: Test local connection and proxy behavior
+        run: npm test --prefix apps/instagram/api
+      - name: Test DEX extraction with synthetic fixtures
+        run: python3 apps/instagram/api/bulk-trace/test_extract.py
+      - name: Test isolated APK reproduction with synthetic fixtures
+        run: python3 apps/instagram/scripts/test_reproduce.py
+      - name: Test multi-app annotation discovery with synthetic fixtures
+        run: python3 scripts/test_analyze_apks.py
+      - name: Test ARM64 references and APK hash binding
+        run: python3 scripts/test_deep_traces.py
+      - name: Scan publishable files for excluded artifacts and credential patterns
+        run: python3 scripts/check-public.py

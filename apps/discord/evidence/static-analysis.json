@@ -1,0 +1,1476 @@
+{
+  "schema_version": 1,
+  "app": "discord",
+  "package": "com.discord",
+  "version": "350.8 - Stable",
+  "inputs": [
+    {
+      "name": "base.apk",
+      "bytes": 122525167,
+      "sha256": "8a6b7929ff70ee9975533aca7b1bb6fa81547724b3b1c8a2e60ff5beb3ecc91e"
+    },
+    {
+      "name": "split_config.arm64_v8a.apk",
+      "bytes": 73514771,
+      "sha256": "9ce7ed950c9076663a3ff1046460d835fd5313f9dd6a9287da9c487686894e91"
+    },
+    {
+      "name": "split_config.en.apk",
+      "bytes": 70041,
+      "sha256": "0a2d09d775e43e482adcca0f1fc44b78b5ca62c0d98632c0a46df4bf2ad9e007"
+    },
+    {
+      "name": "split_config.xxhdpi.apk",
+      "bytes": 10743898,
+      "sha256": "afc8007cf371f190819aa408c7c537d02bc44969a3bb438657540b0ebd891357"
+    }
+  ],
+  "dex_inventory": [
+    {
+      "apk": "base.apk",
+      "member": "classes.dex",
+      "sha256": "7b14611110551d7f4611347a36877c94755145d64c0f9e9205bd91fee82a0321",
+      "strings": 71030,
+      "method_ids": 65387
+    },
+    {
+      "apk": "base.apk",
+      "member": "classes2.dex",
+      "sha256": "06621b3a224e4007945f20d4c4324c51b066c2491dd249623e661804cc998044",
+      "strings": 613,
+      "method_ids": 413
+    },
+    {
+      "apk": "base.apk",
+      "member": "classes3.dex",
+      "sha256": "49c34a30aafb8b59c6ee9c900b7454191fe33055748574ce75183e592422b75d",
+      "strings": 57531,
+      "method_ids": 65352
+    },
+    {
+      "apk": "base.apk",
+      "member": "classes4.dex",
+      "sha256": "106bd1e44de5f272f74dd0ea718c35181ebb1c69e62266adc4fc3e8dcf2d0288",
+      "strings": 9282,
+      "method_ids": 7698
+    }
+  ],
+  "code_assets": [
+    {
+      "apk": "base.apk",
+      "member": "assets/index.android.bundle",
+      "bytes": 68560437,
+      "representation": "Hermes bytecode"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libNitroModules.so",
+      "bytes": 752640,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "bytes": 10096,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libapng-drawable.so",
+      "bytes": 650360,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libappmodules.so",
+      "bytes": 9130400,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libcrash-reporting.so",
+      "bytes": 57992,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libdiscord.so",
+      "bytes": 13020696,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libdsti.so",
+      "bytes": 1102864,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libfbjni.so",
+      "bytes": 177000,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libgesturehandler.so",
+      "bytes": 81712,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libgifimage.so",
+      "bytes": 318992,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libhermestooling.so",
+      "bytes": 141480,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libhermesvm.so",
+      "bytes": 2474728,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libimagepipeline.so",
+      "bytes": 8760,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libjsi.so",
+      "bytes": 412568,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libkrisp-audio-sdk.so",
+      "bytes": 6960432,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libkv_storage.so",
+      "bytes": 2124096,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/liblibdiscore-rn-jsi-module.so",
+      "bytes": 10538720,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/liblitr-jni.so",
+      "bytes": 253704,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libmmkv.so",
+      "bytes": 597000,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libnative-filters.so",
+      "bytes": 23712,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libnative-imagetranscoder.so",
+      "bytes": 585376,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libplayagerangedeclaration.so",
+      "bytes": 241024,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_RNCSlider.so",
+      "bytes": 182536,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_RNKC.so",
+      "bytes": 127256,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_ReanimatedView.so",
+      "bytes": 81632,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_rngesturehandler_codegen.so",
+      "bytes": 269608,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_rnscreens.so",
+      "bytes": 974248,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_rnsvg.so",
+      "bytes": 654584,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "bytes": 130184,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreact_utilities.so",
+      "bytes": 482296,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreactnative.so",
+      "bytes": 7039128,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libreanimated.so",
+      "bytes": 682880,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/librive-android.so",
+      "bytes": 5336624,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/librive.so",
+      "bytes": 2705288,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/librnscreens.so",
+      "bytes": 93744,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libsentry-android.so",
+      "bytes": 16832,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libsentry.so",
+      "bytes": 723712,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libsizing_util.so",
+      "bytes": 28696,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libstatic-webp.so",
+      "bytes": 501856,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libtimezone-hermes-fix.so",
+      "bytes": 48928,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libucrop.so",
+      "bytes": 1162840,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libworklets.so",
+      "bytes": 378496,
+      "representation": "native ELF"
+    },
+    {
+      "apk": "split_config.arm64_v8a.apk",
+      "member": "lib/arm64-v8a/libzstd-jni-1.5.7-3.so",
+      "bytes": 603960,
+      "representation": "native ELF"
+    }
+  ],
+  "request_declarations": [],
+  "url_candidates": [
+    {
+      "scheme": "http",
+      "host": "ns.adobe.com",
+      "path": "/xap/1.0/\ufffd\ufffd",
+      "raw_string_sha256": "40df8e52ba6051058bd63b36c9b78093d65cdc3c72a408569b58e60f477b1043",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54729,
+      "string_byte_offset": 9422268
+    },
+    {
+      "scheme": "http",
+      "host": "schemas.android.com",
+      "path": "/apk/res/android",
+      "raw_string_sha256": "c46de5b108b0792f21aa862550b557badb1659c7a07c1b9e75c69f970a7c7d19",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54730,
+      "string_byte_offset": 9422300
+    },
+    {
+      "scheme": "http",
+      "host": "xmlpull.org",
+      "path": "/v1/doc/features.html",
+      "raw_string_sha256": "4a40a5b09f84dfb824bfccbe07baf7f46e8065d0f3ff06e917a0957ef30dc107",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54731,
+      "string_byte_offset": 9422344
+    },
+    {
+      "scheme": "https",
+      "host": "%sadrevenue.%s",
+      "path": "/api/v2/generic/v6.17.3/android",
+      "raw_string_sha256": "49191e4f79dde50e48b568169902eed422534f3d36533808f38237c789a82c74",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54738,
+      "string_byte_offset": 9422472
+    },
+    {
+      "scheme": "https",
+      "host": "%sapp.%s",
+      "path": "",
+      "raw_string_sha256": "837db010c311bdcb36f919fd6b2a750f6f78d091e4648d1338233a6478a4bdb3",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54739,
+      "string_byte_offset": 9422535
+    },
+    {
+      "scheme": "https",
+      "host": "%sars.%s",
+      "path": "/api/v2/android/validate_subscription",
+      "raw_string_sha256": "165e8dc920df1b8d036a301fbd69bdbd9f249d51acfc70cc27d7ec2eae633170",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54740,
+      "string_byte_offset": 9422553
+    },
+    {
+      "scheme": "https",
+      "host": "%sars.%s",
+      "path": "/api/v2/android/validate_subscription_v2",
+      "raw_string_sha256": "a9375853e123a43cceaf79d83420d45e6e5e6860f9bf878af2b2b893a9e72223",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54741,
+      "string_byte_offset": 9422616
+    },
+    {
+      "scheme": "https",
+      "host": "%sattr.%s",
+      "path": "/api/v",
+      "raw_string_sha256": "6716fc365501086b998b2557709158fe4447f8f60df78af8875dc71cae784225",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54742,
+      "string_byte_offset": 9422682
+    },
+    {
+      "scheme": "https",
+      "host": "%scdn-%ssettings.%s",
+      "path": "/android/v1/%s/settings",
+      "raw_string_sha256": "dee5d5e31aeab3bbbdf993c544b889e0643cfd6d63657c990c83b4f06092ec1a",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54743,
+      "string_byte_offset": 9422707
+    },
+    {
+      "scheme": "https",
+      "host": "%scdn-%stestsettings.%s",
+      "path": "/android/v1/%s/settings",
+      "raw_string_sha256": "2ba49f3ca155d5dd6ba5e986b6bbb40bdf91c694bb7b335d5f26c169eddf4ccc",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54744,
+      "string_byte_offset": 9422759
+    },
+    {
+      "scheme": "https",
+      "host": "%sconversions.%s",
+      "path": "/api/v",
+      "raw_string_sha256": "ec802b9fd0cdf32b0b77c3a164cb52a37c78c2b5853f56901517356cc5401fad",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54745,
+      "string_byte_offset": 9422815
+    },
+    {
+      "scheme": "https",
+      "host": "%sdlsdk.%s",
+      "path": "/v1.0/android/",
+      "raw_string_sha256": "6c4739d673d7447b6d379fac1a19cbbada2856fd96f51904099ea6dbc5a9121d",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54746,
+      "string_byte_offset": 9422847
+    },
+    {
+      "scheme": "https",
+      "host": "%sgcdsdk.%s",
+      "path": "/install_data/v5.0/",
+      "raw_string_sha256": "7e0016ed5ff19052df1569db1b1c2bad9178063fc90ecdd59c9b6f16a82ad3a2",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54747,
+      "string_byte_offset": 9422881
+    },
+    {
+      "scheme": "https",
+      "host": "%simpression.%s",
+      "path": "",
+      "raw_string_sha256": "a0c226e0dd86f990e2ad95c74478e3d746818d14153ded8130c98695cd200fa1",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54748,
+      "string_byte_offset": 9422921
+    },
+    {
+      "scheme": "https",
+      "host": "%sinapps.%s",
+      "path": "/api/v",
+      "raw_string_sha256": "973a7a63b48ecf8dbe1b4e1561aa9b723212df5869d863bab7847c370c4af17e",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54749,
+      "string_byte_offset": 9422946
+    },
+    {
+      "scheme": "https",
+      "host": "%slaunches.%s",
+      "path": "/api/v",
+      "raw_string_sha256": "b1028059d643a45cab5dc9c51ef6c95cf8f274a3d3958821a95363595e371f05",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54750,
+      "string_byte_offset": 9422973
+    },
+    {
+      "scheme": "https",
+      "host": "%smonitorsdk.%s",
+      "path": "/api/remote-debug/v2.0",
+      "raw_string_sha256": "b6a38e35aa9b7b3c0be0c33135dafa21b8125ab9c933e72bef9ccdd1d5c17c33",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54751,
+      "string_byte_offset": 9423002
+    },
+    {
+      "scheme": "https",
+      "host": "%smonitorsdk.%s",
+      "path": "/remote-debug/exception-manager",
+      "raw_string_sha256": "db65a4aae942e4ef460e527e1bf66c55b380a164b6e238ca7b1cd62249d9b28e",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54752,
+      "string_byte_offset": 9423057
+    },
+    {
+      "scheme": "https",
+      "host": "%sonelink.%s",
+      "path": "/shortlink-sdk/v2",
+      "raw_string_sha256": "3b2fe7489e33c9eb866f563f8ff69572c0d327ee210b220086ac2a53eca49d66",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54753,
+      "string_byte_offset": 9423113
+    },
+    {
+      "scheme": "https",
+      "host": "%spia.%s",
+      "path": "/api/v1.0/pia-android-event",
+      "raw_string_sha256": "862db9391abeb4069a0080052a1ddb6cab6fdf5f7000c322eb6e9c0224574c03",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54754,
+      "string_byte_offset": 9423152
+    },
+    {
+      "scheme": "https",
+      "host": "%sregister.%s",
+      "path": "/api/v",
+      "raw_string_sha256": "c0947183317d1b3d47b54f579b3a4ec47ef3ee3045edbc167b0e70b86469058a",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54755,
+      "string_byte_offset": 9423205
+    },
+    {
+      "scheme": "https",
+      "host": "%ssdk-services.%s",
+      "path": "/validate-android-signature",
+      "raw_string_sha256": "a0c8cc861021b40605e2701428baf4739ddd889fac21702916b6266e98057c10",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54756,
+      "string_byte_offset": 9423234
+    },
+    {
+      "scheme": "https",
+      "host": "%svalidate-and-log.%s",
+      "path": "/api/v4.0/android/one_time_purchase/validateAndLog",
+      "raw_string_sha256": "1a02154a20f973ec00d083417af2cbb9311f0f00c491f5f45e760092d0b01ed3",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54757,
+      "string_byte_offset": 9423288
+    },
+    {
+      "scheme": "https",
+      "host": "%svalidate-and-log.%s",
+      "path": "/api/v4.0/android/subscription/validateAndLog",
+      "raw_string_sha256": "6cf678bc6de0cb349a0d0f0079b843f51272b03273c247c95297c128d4c8e044",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54758,
+      "string_byte_offset": 9423377
+    },
+    {
+      "scheme": "https",
+      "host": "%svalidate.%s",
+      "path": "/api/v",
+      "raw_string_sha256": "6b90b9719fbfc3e32cc26e8c64312c0d5f6886419131041d6f4f13775620d28e",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54759,
+      "string_byte_offset": 9423461
+    },
+    {
+      "scheme": "https",
+      "host": "%sviap.%s",
+      "path": "/api/v1/android/validate_purchase",
+      "raw_string_sha256": "ccbc5f7b8524544d5987019ed4d0a93d917860fd5346577568eb0e62b35f86ac",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54760,
+      "string_byte_offset": 9423490
+    },
+    {
+      "scheme": "https",
+      "host": "%sviap.%s",
+      "path": "/api/v1/android/validate_purchase_v2",
+      "raw_string_sha256": "5a22c3cbbd3c4f6ccfe5b2c22debc05a35c61278fe728449709a176de6891313",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54761,
+      "string_byte_offset": 9423550
+    },
+    {
+      "scheme": "https",
+      "host": "o64374.ingest.sentry.io",
+      "path": "/5992375",
+      "raw_string_sha256": "00328d4633faac04caba3f1ba489a735efbc0e29fd11ace885bac3ced9608461",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54762,
+      "string_byte_offset": 9423613
+    },
+    {
+      "scheme": "https",
+      "host": "o64374.ingest.sentry.io",
+      "path": "/5992375",
+      "raw_string_sha256": "fb01b703179c10317acaf6a42c01e6ab9aa3e80255c0500d119e57b576807e96",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54763,
+      "string_byte_offset": 9423687
+    },
+    {
+      "scheme": "https",
+      "host": "o64374.ingest.sentry.io",
+      "path": "/5992375",
+      "raw_string_sha256": "0939dc4bb110caaeeb6c5ac9da5fde1705408fd1a1e687ddf682ed54faed7ce5",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54764,
+      "string_byte_offset": 9423761
+    },
+    {
+      "scheme": "https",
+      "host": "account.samsung.cn",
+      "path": "",
+      "raw_string_sha256": "2c779eeefc53813dfe28994f6f8d9c666db1ee4eefd815821b9e36817b53ba8e",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54765,
+      "string_byte_offset": 9423835
+    },
+    {
+      "scheme": "https",
+      "host": "account.samsung.com",
+      "path": "",
+      "raw_string_sha256": "aea2d941a513d6d0a22035b3e94b03e70ff786f1e198ff16baf320e015a3470a",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54766,
+      "string_byte_offset": 9423863
+    },
+    {
+      "scheme": "https",
+      "host": "fake-website.com",
+      "path": "/",
+      "raw_string_sha256": "c4705e28c621bfc4bf3f5adc32190704222fa961cdca573c58ce21961812e8e3",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54767,
+      "string_byte_offset": 9423892
+    },
+    {
+      "scheme": "https",
+      "host": "privacy-sandbox.appsflyersdk.com",
+      "path": "/api/trigger",
+      "raw_string_sha256": "59e027c99d5ee110296c322e590f9517a5c3cd201bf819aa8a0047c14ff2ad4d",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54768,
+      "string_byte_offset": 9423919
+    },
+    {
+      "scheme": "https",
+      "host": "us.account.samsung.com",
+      "path": "",
+      "raw_string_sha256": "93e97a69665bfdf38c90dbff7ffd964be819235eebc7824d1ae76a63481d9596",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 54769,
+      "string_byte_offset": 9423973
+    },
+    {
+      "scheme": "http",
+      "host": "10.0.2.2",
+      "path": "/stream",
+      "raw_string_sha256": "6d4cb3c5c6eec61056e33fc68821018b1b3f18f1464fdcebe289f7d8a1165db1",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42567,
+      "string_byte_offset": 8313781
+    },
+    {
+      "scheme": "http",
+      "host": "dashif.org",
+      "path": "/guidelines/last-segment-number",
+      "raw_string_sha256": "74713934690daa00c5810e7b67ca903cb58da8e93dbd341d2e0bad21ab15b859",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42568,
+      "string_byte_offset": 8313810
+    },
+    {
+      "scheme": "http",
+      "host": "dashif.org",
+      "path": "/guidelines/thumbnail_tile",
+      "raw_string_sha256": "243116e39e26fc5d9dabc20505e5c68d7c359f667a0a56c78fa4244b0d93138b",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42569,
+      "string_byte_offset": 8313860
+    },
+    {
+      "scheme": "http",
+      "host": "dashif.org",
+      "path": "/guidelines/trickmode",
+      "raw_string_sha256": "954451673c18163a1136ef35c286615c332fbcde0f11f20f476a95c55d0ce21a",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42570,
+      "string_byte_offset": 8313905
+    },
+    {
+      "scheme": "http",
+      "host": "dashif.org",
+      "path": "/thumbnail_tile",
+      "raw_string_sha256": "dc346fb8fe2d4d4ea09272b1c5fcb71423a93fe31df81d526611ecd2d27556de",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42571,
+      "string_byte_offset": 8313945
+    },
+    {
+      "scheme": "http",
+      "host": "localhost",
+      "path": "/stream",
+      "raw_string_sha256": "df00bf3e990afc8502edd358e21bd21b85105479423fe784a50fb2e483cd5db0",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42572,
+      "string_byte_offset": 8313979
+    },
+    {
+      "scheme": "http",
+      "host": "ns.adobe.com",
+      "path": "/xap/1.0/",
+      "raw_string_sha256": "154312583545532b37f7c6c1f19fd2962c8718f65b4032a6999a610b57c6793d",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42573,
+      "string_byte_offset": 8314009
+    },
+    {
+      "scheme": "http",
+      "host": "schemas.android.com",
+      "path": "/apk/res-auto",
+      "raw_string_sha256": "c98172f9a09bda76032db0e96d8a8dfc0ff61acf12a71a55e7fed04d08c07ab6",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42574,
+      "string_byte_offset": 8314039
+    },
+    {
+      "scheme": "http",
+      "host": "schemas.android.com",
+      "path": "/apk/res/android",
+      "raw_string_sha256": "c46de5b108b0792f21aa862550b557badb1659c7a07c1b9e75c69f970a7c7d19",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42575,
+      "string_byte_offset": 8314080
+    },
+    {
+      "scheme": "http",
+      "host": "schemas.microsoft.com",
+      "path": "/DRM/2007/03/protocols/AcquireLicense",
+      "raw_string_sha256": "2ebcf7b4ec5a315ad7d96bc2fa0fceac783bd6dd4d8f08f6f6f1f303b3dfe593",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42576,
+      "string_byte_offset": 8314124
+    },
+    {
+      "scheme": "http",
+      "host": "www.android.com",
+      "path": "/",
+      "raw_string_sha256": "b514b9d870f193d78a05b13aaa0e66643cc21b90e9dc0c4259536e66318e2d29",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42577,
+      "string_byte_offset": 8314191
+    },
+    {
+      "scheme": "http",
+      "host": "www.google-analytics.com",
+      "path": "",
+      "raw_string_sha256": "71c0d00fc40ec9e9ca2d1d438ef4bb2f59a2db9b41709cedc804237a92793cb1",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42578,
+      "string_byte_offset": 8314216
+    },
+    {
+      "scheme": "http",
+      "host": "www.w3.org",
+      "path": "/ns/ttml",
+      "raw_string_sha256": "df160e87afcd5ef50eb9cae6afe9e5d127e599211063e2743f9ce8219d60d520",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42579,
+      "string_byte_offset": 8314249
+    },
+    {
+      "scheme": "https",
+      "host": "accounts.google.com",
+      "path": "/o/oauth2/revoke",
+      "raw_string_sha256": "51095a572a5e6977af5cfc0116bb3bbdde1b694c8d5e8fb3ecd1e75b9830c84a",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42592,
+      "string_byte_offset": 8314476
+    },
+    {
+      "scheme": "https",
+      "host": "aomedia.org",
+      "path": "/emsg/ID3",
+      "raw_string_sha256": "b0c2cda7b68568b6b18955d2e810a55e8c74cc4a8c6fd1e6c99accfaac55166d",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42593,
+      "string_byte_offset": 8314528
+    },
+    {
+      "scheme": "https",
+      "host": "default.url",
+      "path": "",
+      "raw_string_sha256": "aab5d66a10161e9e911b1e05f9b5d2a4581b7745e22f55e3526cbf262304d63b",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42594,
+      "string_byte_offset": 8314558
+    },
+    {
+      "scheme": "https",
+      "host": "developer.apple.com",
+      "path": "/streaming/emsg-id3",
+      "raw_string_sha256": "24bcf75b29fb13754802f5249613efc1c29b0ccfd119e9691d549a21c2a802ea",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42595,
+      "string_byte_offset": 8314579
+    },
+    {
+      "scheme": "https",
+      "host": "docs.sentry.io",
+      "path": "/platforms/android/troubleshooting/mixed-versions",
+      "raw_string_sha256": "2e376643423f131a44e738d5962f45b625bafef38af1287737d8b3588bb3775b",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42596,
+      "string_byte_offset": 8314627
+    },
+    {
+      "scheme": "https",
+      "host": "docs.sentry.io",
+      "path": "/platforms/java/troubleshooting/mixed-versions",
+      "raw_string_sha256": "ea1a5fe9347fc7cb8d5601943abf8421987fb2b280504c917204e617de8fc92c",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42597,
+      "string_byte_offset": 8314700
+    },
+    {
+      "scheme": "https",
+      "host": "firebaseinstallations.googleapis.com",
+      "path": "/v1/",
+      "raw_string_sha256": "0852b777b447e81f71c2560720eafedcbb398f277162abaca31506d5638ecb7a",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42598,
+      "string_byte_offset": 8314770
+    },
+    {
+      "scheme": "https",
+      "host": "pagead2.googlesyndication.com",
+      "path": "/pagead/gen_204",
+      "raw_string_sha256": "3a86d631dcbc0b107c7893e21e7ff328f5c351471f02c4a39eb3524df9ea75dc",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42599,
+      "string_byte_offset": 8314820
+    },
+    {
+      "scheme": "https",
+      "host": "ssl.google-analytics.com",
+      "path": "",
+      "raw_string_sha256": "4e2098833cf8508b33fb1766764f1725b9366845dea5879b09ffd8908646d943",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42600,
+      "string_byte_offset": 8314887
+    },
+    {
+      "scheme": "https",
+      "host": "www.googleapis.com",
+      "path": "/auth/games",
+      "raw_string_sha256": "699b11082057013f44255fb29e5ca77c52de1ba7d792dd81beae69b72c6ce5a7",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42601,
+      "string_byte_offset": 8314921
+    },
+    {
+      "scheme": "https",
+      "host": "www.googleapis.com",
+      "path": "/auth/games_lite",
+      "raw_string_sha256": "2bfb2c949a695dfee83d12c40dbb378b88f83b6aa12362e2d96f69a67128c2e2",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 42602,
+      "string_byte_offset": 8314960
+    },
+    {
+      "scheme": "http",
+      "host": "schemas.android.com",
+      "path": "/apk/res/android",
+      "raw_string_sha256": "c46de5b108b0792f21aa862550b557badb1659c7a07c1b9e75c69f970a7c7d19",
+      "apk": "base.apk",
+      "dex": "classes4.dex",
+      "string_index": 6925,
+      "string_byte_offset": 811028
+    }
+  ],
+  "route_candidates": [
+    {
+      "path": "/DCIM/Camera/",
+      "raw_string_sha256": "3a4d528ab99ade1ff842e8cc206e2b647f5442a4447f648a44ac0b932d3c37e6",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9257,
+      "string_byte_offset": 7545208,
+      "method": null
+    },
+    {
+      "path": "/DCIM/Screenshots/",
+      "raw_string_sha256": "6fdc704eb22415e58686189ffa6c61b73507d3ba4803055bacdbf8783e9b5372",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9258,
+      "string_byte_offset": 7545223,
+      "method": null
+    },
+    {
+      "path": "/Download/",
+      "raw_string_sha256": "675ed315a13d6e3b9d7d15892ab9aabbcb04ae19344457deb8490fb36529c024",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9259,
+      "string_byte_offset": 7545243,
+      "method": null
+    },
+    {
+      "path": "/Pictures/Screenshots/",
+      "raw_string_sha256": "2110b606ff12b83d2da11a3f36fff58e1ec18b78558e15c60e5848bfa0cff47a",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9260,
+      "string_byte_offset": 7545255,
+      "method": null
+    },
+    {
+      "path": "/android_asset/",
+      "raw_string_sha256": "94d94046dac4a78b96f7d9168b21ce157bbad8f4fe7c4a9b4e94040a80685df5",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9261,
+      "string_byte_offset": 7545279,
+      "method": null
+    },
+    {
+      "path": "/app-icons/",
+      "raw_string_sha256": "7991183e015ad7622c0e3f2586fb05925794a27deb652590212198ef0b5e6849",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9263,
+      "string_byte_offset": 7545319,
+      "method": null
+    },
+    {
+      "path": "/assets/",
+      "raw_string_sha256": "fdf33e30f8bc328c4a07190dc7aa4fe5f602a837431b7254893b625b09daf626",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9264,
+      "string_byte_offset": 7545332,
+      "method": null
+    },
+    {
+      "path": "/attachments/",
+      "raw_string_sha256": "7aec78918ff5ceed82c74c4c2087df50996c8eb8016b0a1d532ecd7ee23f33a7",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9265,
+      "string_byte_offset": 7545342,
+      "method": null
+    },
+    {
+      "path": "/avatars/",
+      "raw_string_sha256": "91708b8b23e16374bc820fd58187bf1647eb6c989ff4f43c1c77c25cf5d9055a",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9266,
+      "string_byte_offset": 7545357,
+      "method": null
+    },
+    {
+      "path": "/billing/orders/external-purchase-id",
+      "raw_string_sha256": "dfff594df00a142a394d3cfe370032e6f0482c16e7348c689d6c678796ffe8f0",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9267,
+      "string_byte_offset": 7545368,
+      "method": null
+    },
+    {
+      "path": "/cache/",
+      "raw_string_sha256": "a32cbca6203ee790d9524081a1063fdd00523c8a262a20fd5aa247a3376f992c",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9268,
+      "string_byte_offset": 7545406,
+      "method": null
+    },
+    {
+      "path": "/channel-icons/",
+      "raw_string_sha256": "10ba0f36e9e9612d9200373567f128c5c7511cd5178ca9d47084b66332485bdc",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9269,
+      "string_byte_offset": 7545415,
+      "method": null
+    },
+    {
+      "path": "/channels/",
+      "raw_string_sha256": "b8857e2e59829846295b94d90aa354fa1c996220a10792b8511047de09944748",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9270,
+      "string_byte_offset": 7545432,
+      "method": null
+    },
+    {
+      "path": "/cpufreq/cpuinfo_max_freq",
+      "raw_string_sha256": "f2bd7d76fc9e10c03bc019cf356554e7a4799bcfbfafb3c8501d512ed076597d",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9272,
+      "string_byte_offset": 7545485,
+      "method": null
+    },
+    {
+      "path": "/emojis/",
+      "raw_string_sha256": "f124fbcebc2cffa079a56260f5a879455e3d7c1d40716ee83063fe28d7c338b5",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9278,
+      "string_byte_offset": 7545646,
+      "method": null
+    },
+    {
+      "path": "/ephemeral-attachments/",
+      "raw_string_sha256": "8046af768f78e136c4c85081668563e2e1a2af65b9030d0bfeacb0c176b4e144",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9279,
+      "string_byte_offset": 7545656,
+      "method": null
+    },
+    {
+      "path": "/etc/pre_install.appsflyer",
+      "raw_string_sha256": "404b996c9fbe51cff4e22133f128da5ec55d166ba1df4f415c2c96363532756e",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9280,
+      "string_byte_offset": 7545681,
+      "method": null
+    },
+    {
+      "path": "/guilds/",
+      "raw_string_sha256": "692fc55183aad92c78f56396ec40610770847a5dcfecaa09315600366571788a",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9281,
+      "string_byte_offset": 7545709,
+      "method": null
+    },
+    {
+      "path": "/icons/",
+      "raw_string_sha256": "170965ba220d1a66e096154bf33e3bd3953de27d70b66b4aa21d985b40ede1f7",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9282,
+      "string_byte_offset": 7545719,
+      "method": null
+    },
+    {
+      "path": "/res/",
+      "raw_string_sha256": "2f7fb0323aee414500b49f3c7cc6f47621834204f4392b1cc021f211876aacd4",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9289,
+      "string_byte_offset": 7545800,
+      "method": null
+    },
+    {
+      "path": "/temp/",
+      "raw_string_sha256": "edd85d6439d406761e82c4ddc55b2f486ad5afad389bcf56f2132d06494661f6",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9302,
+      "string_byte_offset": 7546029,
+      "method": null
+    },
+    {
+      "path": "/tmp/",
+      "raw_string_sha256": "ac351c7174c8f47a9a9056bd96bcd71cfb980c906daee74ab9bce8308c68b811",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9303,
+      "string_byte_offset": 7546037,
+      "method": null
+    },
+    {
+      "path": "/users/",
+      "raw_string_sha256": "3e44fb009899c0f900c1e74cd803b171d70a5d799d2cc933898d78e8d5fc17ca",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9305,
+      "string_byte_offset": 7546061,
+      "method": null
+    },
+    {
+      "path": "/users/@me/headless-sessions",
+      "raw_string_sha256": "1150c0fe3b71df41d8b554fa1556ce5c633be18fec20fdec9a4a44a5bfd41afb",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9306,
+      "string_byte_offset": 7546070,
+      "method": null
+    },
+    {
+      "path": "/users/@me/headless-sessions/delete",
+      "raw_string_sha256": "215a0a28b2d8294a40840ae16f5b8bd85b2e5bf1218dab0d22573cce9558e527",
+      "apk": "base.apk",
+      "dex": "classes.dex",
+      "string_index": 9307,
+      "string_byte_offset": 7546100,
+      "method": null
+    },
+    {
+      "path": "/android_asset/",
+      "raw_string_sha256": "94d94046dac4a78b96f7d9168b21ce157bbad8f4fe7c4a9b4e94040a80685df5",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5086,
+      "string_byte_offset": 7230244,
+      "method": null
+    },
+    {
+      "path": "/app/",
+      "raw_string_sha256": "5722d6e8e4733209b8a986dd9caf2edb6ec75f5f07e2376d9cd0a0ddda9d3818",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5087,
+      "string_byte_offset": 7230261,
+      "method": null
+    },
+    {
+      "path": "/collections/Collection",
+      "raw_string_sha256": "ed056947af4e4a7f1c5a55b45b38153316a572b916b2b95d7d68dc1543359879",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5092,
+      "string_byte_offset": 7230318,
+      "method": null
+    },
+    {
+      "path": "/collections/Iterable",
+      "raw_string_sha256": "8f5f16bc82ec31164baec665f97117fa534190aeee3a143f72cedb9dd1f7b497",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5093,
+      "string_byte_offset": 7230343,
+      "method": null
+    },
+    {
+      "path": "/collections/Iterator",
+      "raw_string_sha256": "244c5394a98d49e14258294ec2ca01e4b05e07998d71579dea253c5a08ed43b1",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5094,
+      "string_byte_offset": 7230366,
+      "method": null
+    },
+    {
+      "path": "/collections/List",
+      "raw_string_sha256": "25c8033964ab3bb07437c50b4726a656ac3d9e2d4de9a7dcc3a4af40e049062b",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5095,
+      "string_byte_offset": 7230389,
+      "method": null
+    },
+    {
+      "path": "/collections/ListIterator",
+      "raw_string_sha256": "f069ea7e49c3d67b3f485a6b411720cdb2feba53d2a73347ca4e3729d19035c0",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5096,
+      "string_byte_offset": 7230408,
+      "method": null
+    },
+    {
+      "path": "/collections/Map",
+      "raw_string_sha256": "3b7554c3b20571d6b80e7c4c951835b995d836b58a456f840d61aea993ba3cdd",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5097,
+      "string_byte_offset": 7230435,
+      "method": null
+    },
+    {
+      "path": "/collections/Map.Entry",
+      "raw_string_sha256": "1e70e9e1e6139f2fa95b84ba48818c15fb1d80f1283178abb536eab1cced7407",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5098,
+      "string_byte_offset": 7230453,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableCollection",
+      "raw_string_sha256": "36a0909e1378acf41736482fa9f2276466fbd06d54b0edc61e40c3374d9fb21a",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5099,
+      "string_byte_offset": 7230477,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableIterable",
+      "raw_string_sha256": "b01b910ac54e4dc0470257e28132253288b22ca1d5ab477f84d1412fd8a6e28f",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5100,
+      "string_byte_offset": 7230509,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableIterator",
+      "raw_string_sha256": "ad0816799faa95150f90b46b431b94e13f442fa5c13e3909f2c7fdf5d301f9ef",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5101,
+      "string_byte_offset": 7230539,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableList",
+      "raw_string_sha256": "bdbcf9e47ba07564628b0d14df258acc717844ef1edca1168fa166eda15024a0",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5102,
+      "string_byte_offset": 7230569,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableListIterator",
+      "raw_string_sha256": "5e613b12c1ca6066c0a07a4933746f7e896f08f6a7efb94c39915be3b1e74327",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5103,
+      "string_byte_offset": 7230595,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableMap",
+      "raw_string_sha256": "682072d9ecffbfbfee7bd380c861d5ca4c86715a59477afc95ea28f1735574f7",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5104,
+      "string_byte_offset": 7230629,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableMap.MutableEntry",
+      "raw_string_sha256": "d36cbf9a62fc85b0c135d4835f41b66b1cc18b31fa218b033fa4cafd47360187",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5105,
+      "string_byte_offset": 7230654,
+      "method": null
+    },
+    {
+      "path": "/collections/MutableSet",
+      "raw_string_sha256": "d66dcb18c2e58daa5e8e521d949cce5dd4b4c0f9506f5eeed1a1af6b1aa9ddd1",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5106,
+      "string_byte_offset": 7230692,
+      "method": null
+    },
+    {
+      "path": "/collections/Set",
+      "raw_string_sha256": "19a51e0317e944e2b8933eafae220da06775ebe86abe53916f94271aa3e1eb5b",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5107,
+      "string_byte_offset": 7230717,
+      "method": null
+    },
+    {
+      "path": "/envelope/",
+      "raw_string_sha256": "07a1eb058df4f0fd5dd5d72f46040d8edfddd5ba0870d871e7fa803d741045fd",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5119,
+      "string_byte_offset": 7231014,
+      "method": null
+    },
+    {
+      "path": "/files/phenotype/",
+      "raw_string_sha256": "fcc3dfb8d1d14387ad66bffe38d020faa15af6b5f3a1aa4948aa16915d0183aa",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5120,
+      "string_byte_offset": 7231026,
+      "method": null
+    },
+    {
+      "path": "/installations/",
+      "raw_string_sha256": "42069e38033a60c0098f5a901c28a9d52e38ef2efe33d63d14704fa5ad258013",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5122,
+      "string_byte_offset": 7231061,
+      "method": null
+    },
+    {
+      "path": "/jvm/functions/Function",
+      "raw_string_sha256": "f360d40fabf4bc530f0faaa82d68303ae3b8a3b283b8f16eabfac47189dbad0c",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5123,
+      "string_byte_offset": 7231078,
+      "method": null
+    },
+    {
+      "path": "/jvm/internal/",
+      "raw_string_sha256": "1974656bfdac2cda660599f5be939f07baad4d4be9461440d516686827b21dce",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5124,
+      "string_byte_offset": 7231103,
+      "method": null
+    },
+    {
+      "path": "/mnt/",
+      "raw_string_sha256": "a9e5ed9db2e44a54e99bd194111eb8efc823815121dda54794a0e71b8eb0b9a0",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5127,
+      "string_byte_offset": 7231149,
+      "method": null
+    },
+    {
+      "path": "/native-libs/",
+      "raw_string_sha256": "88690168296cfb161df8ec199f2070af6c9d8916552297eca542da3471e296b1",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5128,
+      "string_byte_offset": 7231156,
+      "method": null
+    },
+    {
+      "path": "/raw/",
+      "raw_string_sha256": "7708dad6437a0daccfddc898798867f184e3a6d0ae62e0a83a6af4c8861c8606",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5136,
+      "string_byte_offset": 7231269,
+      "method": null
+    },
+    {
+      "path": "/reflect/KFunction",
+      "raw_string_sha256": "22501cddf15829554198606818edf4cda9ba92a52b1d4d4f5391fa8306191162",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5138,
+      "string_byte_offset": 7231309,
+      "method": null
+    },
+    {
+      "path": "/sbin/su",
+      "raw_string_sha256": "db7dc6fa69876171d63e0f3a192c74ab140d0acfb83cddd28977be606b965d34",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5139,
+      "string_byte_offset": 7231329,
+      "method": null
+    },
+    {
+      "path": "/su/bin",
+      "raw_string_sha256": "119988deb7029ff4ffd78e618e41c814d00b5401d8977570243c849aa7e046e1",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5140,
+      "string_byte_offset": 7231339,
+      "method": null
+    },
+    {
+      "path": "/su/bin/su",
+      "raw_string_sha256": "ae88e42cd530600eccd4f9d9833bafb7e5168eae5e8720b6386fe2bf30588fe5",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5141,
+      "string_byte_offset": 7231348,
+      "method": null
+    },
+    {
+      "path": "/temp/",
+      "raw_string_sha256": "edd85d6439d406761e82c4ddc55b2f486ad5afad389bcf56f2132d06494661f6",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5153,
+      "string_byte_offset": 7231608,
+      "method": null
+    },
+    {
+      "path": "/topics/",
+      "raw_string_sha256": "c0482b544213f2b387e3ee69d5cfb11e76af9ec51bd3c70104ef6794461057dc",
+      "apk": "base.apk",
+      "dex": "classes3.dex",
+      "string_index": 5154,
+      "string_byte_offset": 7231616,
+      "method": null
+    },
+    {
+      "path": "/topics/",
+      "raw_string_sha256": "c0482b544213f2b387e3ee69d5cfb11e76af9ec51bd3c70104ef6794461057dc",
+      "apk": "base.apk",
+      "dex": "classes4.dex",
+      "string_index": 353,
+      "string_byte_offset": 669900,
+      "method": null
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "apk_files": 4,
+    "dex_files": 4,
+    "dex_strings": 138456,
+    "request_declarations": 0,
+    "distinct_literal_method_paths": 0,
+    "url_candidates": 60,
+    "route_candidates": 58,
+    "errors": 0
+  },
+  "limitations": [
+    "Annotations establish declarations, not invocation, server behavior, authentication, or working endpoints.",
+    "Relative paths are not bound to a host or base path. Empty paths require dynamic URL analysis.",
+    "Third-party libraries and unused code are included; declarations are not all first-party app APIs.",
+    "DEX annotation and literal URL scan only. Native, JavaScript/Hermes, generated and server-driven routes remain untraced.",
+    "No HTTP methods inferred from URL strings. No API requests or account access performed.",
+    "Query strings, fragments and userinfo are omitted from URL candidate output."
+  ]
+}

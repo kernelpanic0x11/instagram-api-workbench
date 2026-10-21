@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a reproducible problem with the workbench.
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic examples. Remove cookies, tokens, account responses, device identifiers, and local machine paths. Report security issues privately; see SECURITY.md."
+  - type: input
+    id: app_version
+    attributes:
+      label: App and analyzed version
+      placeholder: Instagram 451.0.0.53.80
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node/Python versions, and repository commit.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Command and reproduction steps
+      description: Include your working directory relative to the repository root.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and redacted error
+    validations:
+      required: true

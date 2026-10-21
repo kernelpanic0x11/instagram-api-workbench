@@ -1,0 +1,33 @@
+name: Setup question or research request
+description: Ask how to use the project or propose research.
+body:
+  - type: markdown
+    attributes:
+      value: "Only Instagram is implemented today. Other app directories are placeholders. Do not include credentials, private account data, APKs, or device identifiers."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Request type
+      options:
+        - Setup or usage question
+        - Research or feature request
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App and version
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Include the guide or step you followed, exact command if relevant, and redacted errors.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence or expected result
+      description: Link to public evidence where available. Keep observations and guesses distinct.
