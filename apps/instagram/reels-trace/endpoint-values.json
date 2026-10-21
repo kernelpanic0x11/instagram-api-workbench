@@ -1,0 +1,52 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_eda4992d5f454319ffaaf76dd2c80964d4b313767fc0f528e36ce1da3213b533",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0bm8",
+      "method": {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      "overload_count": 1,
+      "representation": "smali",
+      "body_status": "available",
+      "fell_back": true,
+      "markers": [
+        "static_initializer_disassembly"
+      ],
+      "source": {
+        "status": "complete",
+        "text": ".method public static constructor <clinit>()V\n    .registers 46\n\n    new-instance v23, LX/0auv;\n\n    invoke-direct/range {v23 .. v23}, LX/0auv;-><init>()V\n\n    sput-object v23, LX/0bm8;->A0L:LX/0bm8;\n\n    new-instance v24, LX/0aut;\n\n    invoke-direct/range {v24 .. v24}, LX/0aut;-><init>()V\n\n    sput-object v24, LX/0bm8;->A08:LX/0bm8;\n\n    const/4 v3, 0x2\n\n    const-string v2, \"media/configure_sidecar/\"\n\n    const-string v1, \"SIDECAR\"\n\n    new-instance v22, LX/0bm8;\n\n    move-object/from16 v0, v22\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v22, LX/0bm8;->A0J:LX/0bm8;\n\n    const/4 v3, 0x3\n\n    const-string v2, \"media/configure_sidecar_children/\"\n\n    const-string v1, \"SIDECAR_CHILDREN\"\n\n    new-instance v21, LX/0bm8;\n\n    move-object/from16 v0, v21\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v21, LX/0bm8;->A0K:LX/0bm8;\n\n    const/4 v3, 0x4\n\n    const-string v2, \"media/configure_to_nametag/\"\n\n    const-string v1, \"NAMETAG\"\n\n    new-instance v20, LX/0bm8;\n\n    move-object/from16 v0, v20\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v20, LX/0bm8;->A0D:LX/0bm8;\n\n    const/4 v3, 0x5\n\n    const-string v2, \"media/configure/\"\n\n    const-string v1, \"FEED\"\n\n    new-instance v19, LX/0bm8;\n\n    move-object/from16 v0, v19\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v19, LX/0bm8;->A09:LX/0bm8;\n\n    const/4 v3, 0x6\n\n    const-string v2, \"media/upload_finish/\"\n\n    const-string v1, \"FINISH\"\n\n    new-instance v18, LX/0bm8;\n\n    move-object/from16 v0, v18\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v18, LX/0bm8;->A0A:LX/0bm8;\n\n    const/4 v3, 0x7\n\n    const-string v2, \"media/update_media_with_pdq_hash_info/\"\n\n    const-string v1, \"PDQ_HASH_REPORT\"\n\n    new-instance v17, LX/0bm8;\n\n    move-object/from16 v0, v17\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v17, LX/0bm8;->A0G:LX/0bm8;\n\n    const/16 v3, 0x8\n\n    const-string v2, \"media/configure_to_clips/\"\n\n    const-string v1, \"CLIPS\"\n\n    new-instance v16, LX/0bm8;\n\n    move-object/from16 v0, v16\n\n    invoke-direct {v0, v1, v3, v2}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v16, LX/0bm8;->A04:LX/0bm8;\n\n    new-instance v32, LX/0auu;\n\n    invoke-direct/range {v32 .. v32}, LX/0auu;-><init>()V\n\n    sput-object v32, LX/0bm8;->A0B:LX/0bm8;\n\n    const/16 v2, 0xa\n\n    const-string v1, \"media/configure_to_comment/\"\n\n    const-string v0, \"COMMENT_MEDIA\"\n\n    new-instance v15, LX/0bm8;\n\n    invoke-direct {v15, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v15, LX/0bm8;->A06:LX/0bm8;\n\n    const/16 v2, 0xb\n\n    const-string v1, \"media/configure_to_media_kit_cover/\"\n\n    const-string v0, \"MEDIA_KIT\"\n\n    new-instance v14, LX/0bm8;\n\n    invoke-direct {v14, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v14, LX/0bm8;->A0C:LX/0bm8;\n\n    const/16 v2, 0xc\n\n    const-string v1, \"media/configure_text_only_post/\"\n\n    const-string v0, \"TEXT_ONLY\"\n\n    new-instance v13, LX/0bm8;\n\n    invoke-direct {v13, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v13, LX/0bm8;->A0P:LX/0bm8;\n\n    const/16 v2, 0xd\n\n    const-string v1, \"media/configure_text_post_app_feed/\"\n\n    const-string v0, \"TEXT_APP_FEED\"\n\n    new-instance v12, LX/0bm8;\n\n    invoke-direct {v12, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v12, LX/0bm8;->A0N:LX/0bm8;\n\n    const/16 v2, 0xe\n\n    const-string v1, \"media/configure_text_post_app_sidecar/\"\n\n    const-string v0, \"TEXT_APP_SIDECAR\"\n\n    new-instance v11, LX/0bm8;\n\n    invoke-direct {v11, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v11, LX/0bm8;->A0O:LX/0bm8;\n\n    const/16 v2, 0xf\n\n    const-string v1, \"direct_v2/threads/broadcast/raven_attachment/\"\n\n    const-string v0, \"RAVEN\"\n\n    new-instance v10, LX/0bm8;\n\n    invoke-direct {v10, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v10, LX/0bm8;->A0I:LX/0bm8;\n\n    const/16 v2, 0x10\n\n    const-string v1, \"media/configure_to_open_carousel/\"\n\n    const-string v0, \"OPEN_CAROUSEL_SUBMISSION\"\n\n    new-instance v9, LX/0bm8;\n\n    invoke-direct {v9, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v9, LX/0bm8;->A0F:LX/0bm8;\n\n    const/16 v2, 0x11\n\n    const-string v1, \"media/configure_to_cutout_sticker/\"\n\n    const-string v0, \"CUTOUT_STICKER\"\n\n    new-instance v8, LX/0bm8;\n\n    invoke-direct {v8, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v8, LX/0bm8;->A07:LX/0bm8;\n\n    const/16 v2, 0x12\n\n    const-string v1, \"media/configure_to_story_template_asset/\"\n\n    const-string v0, \"STORY_TEMPLATE_ASSET\"\n\n    new-instance v7, LX/0bm8;\n\n    invoke-direct {v7, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v7, LX/0bm8;->A0M:LX/0bm8;\n\n    const/16 v2, 0x13\n\n    const-string v1, \"media/configure_to_reusable_template_assets/\"\n\n    const-string v0, \"CLIPS_TEMPLATE_REUSABLE_ASSETS\"\n\n    new-instance v6, LX/0bm8;\n\n    invoke-direct {v6, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v6, LX/0bm8;->A05:LX/0bm8;\n\n    const/16 v2, 0x14\n\n    const-string v1, \"media/manage_submitted_sub_post/\"\n\n    const-string v0, \"OPEN_CAROUSEL_ACCEPTANCE\"\n\n    new-instance v5, LX/0bm8;\n\n    invoke-direct {v5, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v5, LX/0bm8;->A0E:LX/0bm8;\n\n    const/16 v2, 0x15\n\n    const-string v1, \"media/configure_to_quick_snap/\"\n\n    const-string v0, \"QUICKSNAP\"\n\n    new-instance v4, LX/0bm8;\n\n    invoke-direct {v4, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v4, LX/0bm8;->A0H:LX/0bm8;\n\n    const/16 v2, 0x16\n\n    const-string v1, \"media/configure_to_basel_elements/\"\n\n    const-string v0, \"BASEL_TEMPLATE\"\n\n    new-instance v3, LX/0bm8;\n\n    invoke-direct {v3, v0, v2, v1}, LX/0bm8;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v3, LX/0bm8;->A03:LX/0bm8;\n\n    move-object/from16 v36, v12\n\n    move-object/from16 v37, v11\n\n    move-object/from16 v38, v10\n\n    move-object/from16 v39, v9\n\n    move-object/from16 v40, v8\n\n    move-object/from16 v41, v7\n\n    move-object/from16 v42, v6\n\n    move-object/from16 v43, v5\n\n    move-object/from16 v44, v4\n\n    move-object/from16 v45, v3\n\n    move-object/from16 v26, v21\n\n    move-object/from16 v27, v20\n\n    move-object/from16 v28, v19\n\n    move-object/from16 v29, v18\n\n    move-object/from16 v30, v17\n\n    move-object/from16 v31, v16\n\n    move-object/from16 v33, v15\n\n    move-object/from16 v34, v14\n\n    move-object/from16 v35, v13\n\n    move-object/from16 v25, v22\n\n    filled-new-array/range {v23 .. v45}, [LX/0bm8;\n\n    move-result-object v0\n\n    sput-object v0, LX/0bm8;->A02:[LX/0bm8;\n\n    invoke-static {v0}, LX/05r3;->A00([Ljava/lang/Enum;)LX/05r4;\n\n    move-result-object v0\n\n    sput-object v0, LX/0bm8;->A01:Lkotlin/enums/EnumEntries;\n\n    return-void\n.end method",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

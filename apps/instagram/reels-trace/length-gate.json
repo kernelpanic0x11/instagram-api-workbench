@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_d38e4965eb07cab96c98a714cb8752fc84d926c60d1db78de77dd0f58dc5db0b",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0aGN",
+      "method": {
+        "name": "A02",
+        "reported_signature": "A02(com.instagram.common.session.UserSession, java.lang.Integer, java.util.List, kotlin.jvm.functions.Function0): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;Ljava/util/List;Lkotlin/jvm/functions/Function0;)Ljava/lang/Integer;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public final Integer A02(UserSession userSession, Integer num, List list, Function0 function0) {\n        C0GAZ c0gaz;\n        C0Jop c0Jop;\n        Boolean boolCuj;\n        Integer numCut;\n        Integer numCut2;\n        C05s2.A0V(userSession, 0);\n        C04Sh c04ShA0A = C021R.A0A(userSession, C0K9D.A00);\n        boolean zA0o = C000H.A0o(C01ox.A02(userSession, false), 36325828367240773L);\n        C02gr c02grA00 = C02gr.A00(userSession);\n        if (zA0o) {\n            c0gaz = A02;\n            c0Jop = A03[1];\n        } else {\n            c0gaz = A01;\n            c0Jop = A03[0];\n        }\n        boolean zA0n = C000H.A0n(c0gaz.DuR(c02grA00, c0Jop));\n        if (!zA0n) {\n            C0D9e c0D9e = c04ShA0A.A01;\n            if (AnonymousClass0061.A0P(c0D9e) == C02AA.PrivacyStatusPublic && ((numCut2 = c0D9e.Cut(1930610808)) == null || numCut2.intValue() == 0)) {\n                return AnonymousClass0009.A00;\n            }\n        }\n        if (zA0o && !zA0n) {\n            C0D9e c0D9e2 = c04ShA0A.A01;\n            if (AnonymousClass0061.A0P(c0D9e2) == C02AA.PrivacyStatusPublic && (numCut = c0D9e2.Cut(1930610808)) != null && numCut.intValue() > 0) {\n                return AnonymousClass0009.A01;\n            }\n        }\n        if (!AnonymousClass0127.A1Y(C021R.A0e(userSession, 0), C0XnY.A00, C0XnY.A01, 0) && C000H.A0l(c04ShA0A.A01, new C0G9g(c04ShA0A, 154), -1474908074) && num != null && num.intValue() > C0DZv.A04.A00.A01) {\n            C0G7K c0g7k = C0G7K.A00;\n            if (C000H.A0o(C01ox.A02(userSession, false), 36314914855653848L) && !c0g7k.A01(userSession, list)) {\n                return AnonymousClass0009.A0C;\n            }\n        }\n        if (!C000H.A0o(C01ox.A02(userSession, false), 36315718014342568L) || !C000H.A0o(C01ox.A02(userSession, false), 36315718016112052L)) {\n            return null;\n        }\n        C01lf.A01(180225);\n        C03oe.A01(\"android_purge_26_q2_TranslationsCreationSettingsHelper_getHasSeenVoiceTranslationsConsentNux\");\n        C0D9e c0D9eCux = C01F4.A0W(userSession, C0K7D.A00).Cux(-1838505370);\n        if (((c0D9eCux == null || (boolCuj = c0D9eCux.Cuj(816461467)) == null) ? AnonymousClass0127.A1Y(C021R.A0e(userSession, 0), C04MF.A01, C04MF.A02, 0) : boolCuj.booleanValue()) || ((C03vO) C01lf.A01(180225)).A05(userSession) || ((C03vO) C01lf.A01(180225)).A06(userSession, AnonymousClass0009.A00) || C01F4.A0B(C021R.A0e(userSession, 0), C0ZgW.A00, C0ZgW.A01, 0) >= 3 || !C000H.A0t(function0)) {\n            return null;\n        }\n        C02gr c02grA0e = C021R.A0e(userSession, 0);\n        C0GAZ c0gaz2 = C0ZgL.A00;\n        C0Jop[] c0JopArr = C0ZgL.A01;\n        int iA0B = C01F4.A0B(c02grA0e, c0gaz2, c0JopArr, 0);\n        C02gr c02grA01 = C02gr.A00(userSession);\n        if (iA0B == 0) {\n            C0ZgL.A00(c02grA01, 3);\n            return AnonymousClass0009.A0N;\n        }\n        C05s2.A0V(c02grA01, 0);\n        C0ZgL.A00(c02grA01, C01F4.A0B(c02grA01, c0gaz2, c0JopArr, 0) - 1);\n        return null;\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

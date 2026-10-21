@@ -1,0 +1,53 @@
+---
+import Button from '~/components/ui/Button.astro';
+import type { StickyCTA as Props } from '~/types';
+
+// A bar fixed to the bottom of the viewport that slides in once the
+// visitor has scrolled past `showAfter` pixels. Mobile-only by default,
+// where the hero button is long gone by the time the reader decides.
+
+const { text, href, label, target, icon = 'tabler:arrow-right', showAfter = 600, mobileOnly = true, id } = Astro.props;
+---
+
+<aw-sticky-cta
+  id={id}
+  data-show-after={showAfter}
+  class:list={[
+    'fixed inset-x-0 bottom-0 z-40 translate-y-full transition-transform duration-300 motion-reduce:transition-none',
+    mobileOnly ? 'md:hidden' : '',
+  ]}
+  hidden
+>
+  <div
+    class="mx-auto flex max-w-3xl items-center justify-between gap-4 border-t border-gray-200 bg-page/95 px-4 py-3 shadow-[0_-8px_24px_rgb(0_0_0/0.08)] backdrop-blur dark:border-slate-700"
+  >
+    {label && <p class="text-sm font-medium text-heading">{label}</p>}
+    <Button variant="primary" text={text} href={href} target={target} icon={icon} class="shrink-0 !py-2.5 !px-5" />
+  </div>
+</aw-sticky-cta>
+
+<script>
+  class AwStickyCta extends HTMLElement {
+    connectedCallback() {
+      const threshold = Number(this.dataset.showAfter ?? 600);
+      let ticking = false;
+      const update = () => {
+        this.classList.toggle('translate-y-full', window.scrollY < threshold);
+        ticking = false;
+      };
+      this.hidden = false;
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(update);
+          }
+        },
+        { passive: true }
+      );
+      update();
+    }
+  }
+  if (!customElements.get('aw-sticky-cta')) customElements.define('aw-sticky-cta', AwStickyCta);
+</script>

@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_bef52dad1140c4dd384d3561e4f54e0ef264f0543085609b8e84d58b0077e181",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C01xX",
+      "method": {
+        "name": "A00",
+        "reported_signature": "A00(java.lang.Integer): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Integer;)Ljava/lang/String;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "/* JADX INFO: renamed from: X.01xX, reason: invalid class name */\n/* JADX INFO: loaded from: classes2.dex */\npublic abstract class C01xX {\n    public static String A00(Integer num) {\n        int iIntValue = num.intValue();\n        if (iIntValue == 1) {\n            return TigonRequest.POST;\n        }\n        if (iIntValue == 2) {\n            return \"PATCH\";\n        }\n        if (iIntValue != 3) {\n            return iIntValue != 4 ? TigonRequest.HEAD : \"DELETE\";\n        }\n        return TigonRequest.GET;\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

@@ -1,0 +1,304 @@
+[
+  {
+    "path": "/users/get_recommendation_status_nudge/",
+    "method": "get",
+    "operation": {
+      "operationId": "getRecommendationStatusNudge",
+      "summary": "Recommendation status display prompt",
+      "tags": [
+        "Account status"
+      ],
+      "description": "HTTP method traced through client request builders and integer-to-verb mapping. Relative path; server/base-path binding and authentication unresolved. Static evidence only. Payload/schema coverage is partial.",
+      "responses": {
+        "default": {
+          "description": "Client response parser identified; HTTP status codes and wire Content-Type unverified.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecommendationStatusNudgeResponse"
+              }
+            }
+          },
+          "x-media-type-status": "inferred from JSON parser"
+        }
+      },
+      "x-method-evidence": [
+        {
+          "path": "evidence/tigon-request.json",
+          "evidence_id": "ev_5dabe38e73c9a5e50761fdd784bcb3abfe7889d3d5ce49c4d8b28250561f65b0"
+        },
+        {
+          "path": "evidence/set-method-resolved.json",
+          "evidence_id": "ev_18eb9d5c5ea15ac3d449186aa49e1a23ab8793927d710232594e4f03853de378"
+        },
+        {
+          "path": "evidence/build-request.json",
+          "evidence_id": "ev_67b3eea180e227a52d63329310189fc3ef0c345b0334975a15bfba26a147c93f"
+        },
+        {
+          "path": "evidence/http-finalize.json",
+          "evidence_id": "ev_0ca3afe4b10b11b6d89d2d010e6a0c83cb519c9faf2c7fedc54b04a5a55d14f7"
+        },
+        {
+          "path": "evidence/http-request-init.json",
+          "evidence_id": "ev_c9881a0fb24f7941a1d2fa3843ec24eb01a74b43f8521d51f065893a8032729e"
+        },
+        {
+          "path": "evidence/integer-enum.json",
+          "evidence_id": "ev_ebe58b85320b654991934dc84e5997d6127b8926dc285a8079753d299724c609"
+        },
+        {
+          "path": "evidence/http-method-map.json",
+          "evidence_id": "ev_bef52dad1140c4dd384d3561e4f54e0ef264f0543085609b8e84d58b0077e181"
+        },
+        {
+          "path": "evidence/builder-helper.json",
+          "evidence_id": "ev_ed46c03c73ec4268fa0d55936a7ff666d116a549e00c116493fb7750c072eaaa"
+        },
+        {
+          "path": "evidence/nudge-finalize.json",
+          "evidence_id": "ev_1514b646a36273a6096c4c464826ff1728eb75d883ab5f60ae1c19d146d553ad"
+        },
+        {
+          "path": "../visibility/recommendation-nudge-request.json",
+          "evidence_id": "ev_71e6165474a3ff626610d79c6ad20b56c7a421c69403b97d64c265c23f5aa63f"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/media/configure_to_clips/",
+    "method": "post",
+    "operation": {
+      "operationId": "configureToClips",
+      "summary": "Configure uploaded media as a Reel",
+      "tags": [
+        "Reels"
+      ],
+      "description": "HTTP method traced through client request builders and integer-to-verb mapping. Relative path; server/base-path binding and authentication unresolved. Static evidence only. Payload/schema coverage is partial.",
+      "responses": {
+        "default": {
+          "description": "Client response parser identified; HTTP status codes and wire Content-Type unverified.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublishResponse"
+              }
+            }
+          },
+          "x-media-type-status": "inferred from JSON parser"
+        }
+      },
+      "x-method-evidence": [
+        {
+          "path": "evidence/tigon-request.json",
+          "evidence_id": "ev_5dabe38e73c9a5e50761fdd784bcb3abfe7889d3d5ce49c4d8b28250561f65b0"
+        },
+        {
+          "path": "evidence/set-method-resolved.json",
+          "evidence_id": "ev_18eb9d5c5ea15ac3d449186aa49e1a23ab8793927d710232594e4f03853de378"
+        },
+        {
+          "path": "evidence/build-request.json",
+          "evidence_id": "ev_67b3eea180e227a52d63329310189fc3ef0c345b0334975a15bfba26a147c93f"
+        },
+        {
+          "path": "evidence/http-finalize.json",
+          "evidence_id": "ev_0ca3afe4b10b11b6d89d2d010e6a0c83cb519c9faf2c7fedc54b04a5a55d14f7"
+        },
+        {
+          "path": "evidence/http-request-init.json",
+          "evidence_id": "ev_c9881a0fb24f7941a1d2fa3843ec24eb01a74b43f8521d51f065893a8032729e"
+        },
+        {
+          "path": "evidence/integer-enum.json",
+          "evidence_id": "ev_ebe58b85320b654991934dc84e5997d6127b8926dc285a8079753d299724c609"
+        },
+        {
+          "path": "evidence/http-method-map.json",
+          "evidence_id": "ev_bef52dad1140c4dd384d3561e4f54e0ef264f0543085609b8e84d58b0077e181"
+        },
+        {
+          "path": "evidence/configure-builder.json",
+          "evidence_id": "ev_5049f38b794bab9ad2cfc8ac8b0bdea5d6c909a880f6098290405d8141eed0b9"
+        },
+        {
+          "path": "evidence/post-helper.json",
+          "evidence_id": "ev_be365c496a43e501d27688d4451b7f78937882ff14f1c5b49a9c4533ad9be263"
+        },
+        {
+          "path": "../reels-trace/endpoint-values.json",
+          "evidence_id": "ev_eda4992d5f454319ffaaf76dd2c80964d4b313767fc0f528e36ce1da3213b533"
+        },
+        {
+          "path": "../reels-trace/configure-request.json",
+          "evidence_id": "ev_c96077cc7fdf3e002a2be26ecc7b0d10a5209a07bfede6a78b63b7ef77d85caf"
+        }
+      ],
+      "x-request-model": {
+        "$ref": "#/components/schemas/ConfigureRequestTrialFields"
+      },
+      "x-request-model-note": "Logical partial fields only. Transport may serialize/sign/wrap parameters; no requestBody encoding asserted."
+    }
+  },
+  {
+    "path": "/bloks/apps/{arg1}/",
+    "method": "post",
+    "operation": {
+      "operationId": "bloks_apps",
+      "summary": "Load Bloks application",
+      "tags": [
+        "Bloks"
+      ],
+      "description": "HTTP method traced through client request builders and integer-to-verb mapping. Relative path; server/base-path binding and authentication unresolved. Static evidence only. Payload/schema coverage is partial.",
+      "responses": {
+        "default": {
+          "description": "Client response parser identified; HTTP status codes and wire Content-Type unverified."
+        }
+      },
+      "x-method-evidence": [
+        {
+          "path": "evidence/tigon-request.json",
+          "evidence_id": "ev_5dabe38e73c9a5e50761fdd784bcb3abfe7889d3d5ce49c4d8b28250561f65b0"
+        },
+        {
+          "path": "evidence/set-method-resolved.json",
+          "evidence_id": "ev_18eb9d5c5ea15ac3d449186aa49e1a23ab8793927d710232594e4f03853de378"
+        },
+        {
+          "path": "evidence/build-request.json",
+          "evidence_id": "ev_67b3eea180e227a52d63329310189fc3ef0c345b0334975a15bfba26a147c93f"
+        },
+        {
+          "path": "evidence/http-finalize.json",
+          "evidence_id": "ev_0ca3afe4b10b11b6d89d2d010e6a0c83cb519c9faf2c7fedc54b04a5a55d14f7"
+        },
+        {
+          "path": "evidence/http-request-init.json",
+          "evidence_id": "ev_c9881a0fb24f7941a1d2fa3843ec24eb01a74b43f8521d51f065893a8032729e"
+        },
+        {
+          "path": "evidence/integer-enum.json",
+          "evidence_id": "ev_ebe58b85320b654991934dc84e5997d6127b8926dc285a8079753d299724c609"
+        },
+        {
+          "path": "evidence/http-method-map.json",
+          "evidence_id": "ev_bef52dad1140c4dd384d3561e4f54e0ef264f0543085609b8e84d58b0077e181"
+        },
+        {
+          "path": "../visibility/bloks-http-request.json",
+          "evidence_id": "ev_a3f32edbc264eef7bcbd9847d099ef7e0e042dcaae08fa960eaa1af516540bf2"
+        },
+        {
+          "path": "../visibility/bloks-async-dispatch.json",
+          "evidence_id": "ev_990e76334055f35956e3a023d12cadce272b3e0b18792cf266b7ff122ae9accc"
+        },
+        {
+          "path": "../visibility/bloks-request-dispatch.json",
+          "evidence_id": "ev_29ccf04f50b6a1bb1c53134d6cd5f283fd3ae1a8f283df3e109a2578cca81631"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "arg1",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "Bloks application identifier; dynamic legacy HTTP branch, not all Bloks calls."
+        }
+      ],
+      "x-request-fields": {
+        "bloks_versioning_id": {
+          "type": "string"
+        },
+        "bk_client_context": {
+          "type": "string",
+          "description": "JSON-serialized client context"
+        },
+        "additional_map_entries": "Dynamic strings; not exhaustively recovered"
+      }
+    }
+  },
+  {
+    "path": "/bloks/async_action/{arg1}/",
+    "method": "post",
+    "operation": {
+      "operationId": "bloks_async_action",
+      "summary": "Dispatch Bloks async action",
+      "tags": [
+        "Bloks"
+      ],
+      "description": "HTTP method traced through client request builders and integer-to-verb mapping. Relative path; server/base-path binding and authentication unresolved. Static evidence only. Payload/schema coverage is partial.",
+      "responses": {
+        "default": {
+          "description": "Client response parser identified; HTTP status codes and wire Content-Type unverified."
+        }
+      },
+      "x-method-evidence": [
+        {
+          "path": "evidence/tigon-request.json",
+          "evidence_id": "ev_5dabe38e73c9a5e50761fdd784bcb3abfe7889d3d5ce49c4d8b28250561f65b0"
+        },
+        {
+          "path": "evidence/set-method-resolved.json",
+          "evidence_id": "ev_18eb9d5c5ea15ac3d449186aa49e1a23ab8793927d710232594e4f03853de378"
+        },
+        {
+          "path": "evidence/build-request.json",
+          "evidence_id": "ev_67b3eea180e227a52d63329310189fc3ef0c345b0334975a15bfba26a147c93f"
+        },
+        {
+          "path": "evidence/http-finalize.json",
+          "evidence_id": "ev_0ca3afe4b10b11b6d89d2d010e6a0c83cb519c9faf2c7fedc54b04a5a55d14f7"
+        },
+        {
+          "path": "evidence/http-request-init.json",
+          "evidence_id": "ev_c9881a0fb24f7941a1d2fa3843ec24eb01a74b43f8521d51f065893a8032729e"
+        },
+        {
+          "path": "evidence/integer-enum.json",
+          "evidence_id": "ev_ebe58b85320b654991934dc84e5997d6127b8926dc285a8079753d299724c609"
+        },
+        {
+          "path": "evidence/http-method-map.json",
+          "evidence_id": "ev_bef52dad1140c4dd384d3561e4f54e0ef264f0543085609b8e84d58b0077e181"
+        },
+        {
+          "path": "../visibility/bloks-http-request.json",
+          "evidence_id": "ev_a3f32edbc264eef7bcbd9847d099ef7e0e042dcaae08fa960eaa1af516540bf2"
+        },
+        {
+          "path": "../visibility/bloks-async-dispatch.json",
+          "evidence_id": "ev_990e76334055f35956e3a023d12cadce272b3e0b18792cf266b7ff122ae9accc"
+        },
+        {
+          "path": "../visibility/bloks-request-dispatch.json",
+          "evidence_id": "ev_29ccf04f50b6a1bb1c53134d6cd5f283fd3ae1a8f283df3e109a2578cca81631"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "arg1",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "description": "Bloks application identifier; dynamic legacy HTTP branch, not all Bloks calls."
+        }
+      ],
+      "x-request-fields": {
+        "bloks_versioning_id": {
+          "type": "string"
+        },
+        "bk_client_context": {
+          "type": "string",
+          "description": "JSON-serialized client context"
+        },
+        "additional_map_entries": "Dynamic strings; not exhaustively recovered"
+      }
+    }
+  }
+]

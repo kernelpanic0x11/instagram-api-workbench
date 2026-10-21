@@ -1,0 +1,105 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from '~/components/common/Image.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Timeline as Props } from '~/types';
+
+// Dated timeline for a company history, a product roadmap or a changelog.
+// `vertical`: one column with the date beside each entry. `alternate`:
+// entries zig-zag around a centre line on large screens. `ghost` entries
+// (something uncertain, what comes next) are faded, with a dashed marker.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  layout = 'vertical',
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const alternate = layout === 'alternate';
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <ol class:list={['relative list-none', alternate ? 'lg:grid lg:grid-cols-2' : 'max-w-3xl mx-auto']}>
+    <div
+      class:list={[
+        'absolute top-0 bottom-0 w-px bg-black/10 dark:bg-slate-400/40',
+        alternate ? 'left-5 lg:left-1/2 lg:-translate-x-px' : 'left-5',
+      ]}
+      aria-hidden="true"
+    >
+    </div>
+    {
+      items.map(({ date, title: itemTitle, description, icon, image, highlight, ghost }, index) => (
+        <li
+          class:list={[
+            'relative pl-14 pb-10 last:pb-0 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade',
+            ghost ? 'opacity-80' : '',
+            // An entry with nothing but a marker still keeps some room around it.
+            !date && !itemTitle && !description && !image ? 'min-h-20' : '',
+            alternate
+              ? index % 2 === 0
+                ? 'lg:col-start-1 lg:pl-0 lg:pr-16 lg:text-right'
+                : 'lg:col-start-2 lg:pl-16'
+              : '',
+            alternate && index % 2 === 1 ? 'lg:mt-24' : '',
+          ]}
+        >
+          <span
+            class:list={[
+              'absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-full border-2 bg-page',
+              ghost
+                ? 'border-dashed border-slate-400/70 text-muted'
+                : highlight
+                  ? 'border-primary bg-primary text-white'
+                  : 'border-primary/40 text-primary',
+              alternate ? (index % 2 === 0 ? 'lg:left-auto lg:-right-5' : 'lg:-left-5') : '',
+            ]}
+            aria-hidden="true"
+          >
+            <Icon name={icon || (ghost ? 'tabler:dots' : 'tabler:point-filled')} class="h-5 w-5" />
+          </span>
+          {date && (
+            <time
+              class:list={[
+                'block text-sm font-semibold uppercase tracking-wide',
+                ghost ? 'text-muted' : 'text-primary',
+              ]}
+            >
+              {date}
+            </time>
+          )}
+          {itemTitle && (
+            <h3 class:list={['mt-1 text-xl font-bold', ghost ? 'text-muted italic' : 'text-heading']}>{itemTitle}</h3>
+          )}
+          {description && <p class="mt-2 text-muted text-pretty" set:html={description} />}
+          {image &&
+            (typeof image === 'string' ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class:list={['mt-4 rounded-lg shadow-md', alternate && index % 2 === 0 ? 'lg:ml-auto' : '']}
+                widths={[400, 640]}
+                sizes="(max-width: 1023px) 100vw, 480px"
+                width={480}
+                height={300}
+                layout="constrained"
+                format="webp"
+                alt={itemTitle ?? ''}
+                {...image}
+              />
+            ))}
+        </li>
+      ))
+    }
+  </ol>
+</WidgetWrapper>

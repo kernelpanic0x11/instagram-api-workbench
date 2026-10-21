@@ -1,0 +1,52 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_9c2dcd0b92409df55a409c173662c4cf64217bf085eddbb479c17bac5b488bdb",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C03hU",
+      "method": {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      "overload_count": 1,
+      "representation": "smali",
+      "body_status": "available",
+      "fell_back": true,
+      "markers": [
+        "static_initializer_disassembly"
+      ],
+      "source": {
+        "status": "complete",
+        "text": ".method public static constructor <clinit>()V\n    .registers 45\n\n    const-string v2, \"default\"\n\n    const-string v1, \"DEFAULT\"\n\n    const/4 v9, 0x0\n\n    new-instance v25, LX/03hU;\n\n    move-object/from16 v0, v25\n\n    invoke-direct {v0, v1, v9, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v25, LX/03hU;->A08:LX/03hU;\n\n    const/4 v3, 0x1\n\n    const-string v2, \"besties\"\n\n    const-string v1, \"CLOSE_FRIENDS\"\n\n    new-instance v24, LX/03hU;\n\n    move-object/from16 v0, v24\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v24, LX/03hU;->A05:LX/03hU;\n\n    const/4 v3, 0x2\n\n    const-string v2, \"fan_club\"\n\n    const-string v1, \"FAN_CLUB\"\n\n    new-instance v23, LX/03hU;\n\n    move-object/from16 v0, v23\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v23, LX/03hU;->A09:LX/03hU;\n\n    const/4 v3, 0x3\n\n    const-string v2, \"followers_only_rollcall\"\n\n    const-string v1, \"ROLL_CALL_FOLLOWERS\"\n\n    new-instance v22, LX/03hU;\n\n    move-object/from16 v0, v22\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v22, LX/03hU;->A0J:LX/03hU;\n\n    const/4 v3, 0x4\n\n    const-string/jumbo v2, \"mutual_followers_rollcall\"\n\n    const-string v1, \"ROLL_CALL_MUTUALS\"\n\n    new-instance v21, LX/03hU;\n\n    move-object/from16 v0, v21\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v21, LX/03hU;->A0K:LX/03hU;\n\n    const/4 v3, 0x5\n\n    const-string v2, \"custom\"\n\n    const-string v1, \"CUSTOM\"\n\n    new-instance v20, LX/03hU;\n\n    move-object/from16 v0, v20\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v20, LX/03hU;->A07:LX/03hU;\n\n    const/4 v3, 0x6\n\n    const-string v2, \"followers_only\"\n\n    const-string v1, \"FOLLOWERS_ONLY\"\n\n    new-instance v19, LX/03hU;\n\n    move-object/from16 v0, v19\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v19, LX/03hU;->A0A:LX/03hU;\n\n    const/4 v3, 0x7\n\n    const-string v2, \"friend_list\"\n\n    const-string v1, \"FRIEND_LIST\"\n\n    new-instance v18, LX/03hU;\n\n    move-object/from16 v0, v18\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v18, LX/03hU;->A0B:LX/03hU;\n\n    const/16 v3, 0x8\n\n    const-string/jumbo v2, \"public_chat\"\n\n    const-string v1, \"PUBLIC_CHAT\"\n\n    new-instance v17, LX/03hU;\n\n    move-object/from16 v0, v17\n\n    invoke-direct {v0, v1, v3, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v17, LX/03hU;->A0H:LX/03hU;\n\n    const/16 v2, 0x9\n\n    const-string/jumbo v1, \"hallpass\"\n\n    const-string v0, \"HALLPASS\"\n\n    new-instance v14, LX/03hU;\n\n    invoke-direct {v14, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v14, LX/03hU;->A0C:LX/03hU;\n\n    const/16 v2, 0xa\n\n    const-string/jumbo v1, \"share_to_direct_preview\"\n\n    const-string v0, \"SHARE_TO_DIRECT_PREVIEW\"\n\n    new-instance v13, LX/03hU;\n\n    invoke-direct {v13, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v13, LX/03hU;->A0L:LX/03hU;\n\n    const/16 v2, 0xb\n\n    const-string/jumbo v1, \"opal\"\n\n    const-string v0, \"OPAL\"\n\n    new-instance v12, LX/03hU;\n\n    invoke-direct {v12, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v12, LX/03hU;->A0G:LX/03hU;\n\n    const/16 v2, 0xc\n\n    const-string/jumbo v1, \"mutual_followers\"\n\n    const-string v0, \"MUTUAL_FOLLOWERS\"\n\n    new-instance v11, LX/03hU;\n\n    invoke-direct {v11, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v11, LX/03hU;->A0E:LX/03hU;\n\n    const/16 v2, 0xd\n\n    const-string/jumbo v1, \"reply_control\"\n\n    const-string v0, \"REPLY_CONTROL\"\n\n    new-instance v10, LX/03hU;\n\n    invoke-direct {v10, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v10, LX/03hU;->A0I:LX/03hU;\n\n    const/16 v2, 0xe\n\n    const-string/jumbo v1, \"shortcut\"\n\n    const-string v0, \"SHORTCUT\"\n\n    new-instance v8, LX/03hU;\n\n    invoke-direct {v8, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v8, LX/03hU;->A0M:LX/03hU;\n\n    const/16 v2, 0xf\n\n    const-string/jumbo v1, \"only_me\"\n\n    const-string v0, \"ONLY_ME\"\n\n    new-instance v7, LX/03hU;\n\n    invoke-direct {v7, v0, v2, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v7, LX/03hU;->A0F:LX/03hU;\n\n    const-string/jumbo v1, \"internal_mutual_followers\"\n\n    const-string v0, \"INTERNAL_MUTUAL_FOLLOWERS\"\n\n    const/16 v6, 0x10\n\n    new-instance v5, LX/03hU;\n\n    invoke-direct {v5, v0, v6, v1}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v5, LX/03hU;->A0D:LX/03hU;\n\n    const/16 v0, 0x11\n\n    const-string v2, \"aura\"\n\n    const-string v1, \"AURA\"\n\n    new-instance v4, LX/03hU;\n\n    invoke-direct {v4, v1, v0, v2}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v4, LX/03hU;->A04:LX/03hU;\n\n    const/16 v1, 0x12\n\n    const-string/jumbo v0, \"threads_buddies\"\n\n    const-string v2, \"THREADS_BUDDIES\"\n\n    new-instance v3, LX/03hU;\n\n    invoke-direct {v3, v2, v1, v0}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v3, LX/03hU;->A0N:LX/03hU;\n\n    const/16 v1, 0x13\n\n    const-string v16, \"community_members_only\"\n\n    const-string v0, \"COMMUNITY_MEMBERS_ONLY\"\n\n    new-instance v15, LX/03hU;\n\n    move-object v2, v0\n\n    move-object/from16 v0, v16\n\n    invoke-direct {v15, v2, v1, v0}, LX/03hU;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v15, LX/03hU;->A06:LX/03hU;\n\n    move-object/from16 v36, v12\n\n    move-object/from16 v37, v11\n\n    move-object/from16 v38, v10\n\n    move-object/from16 v39, v8\n\n    move-object/from16 v40, v7\n\n    move-object/from16 v41, v5\n\n    move-object/from16 v42, v4\n\n    move-object/from16 v43, v3\n\n    move-object/from16 v44, v15\n\n    move-object/from16 v27, v23\n\n    move-object/from16 v28, v22\n\n    move-object/from16 v29, v21\n\n    move-object/from16 v30, v20\n\n    move-object/from16 v31, v19\n\n    move-object/from16 v32, v18\n\n    move-object/from16 v33, v17\n\n    move-object/from16 v34, v14\n\n    move-object/from16 v35, v13\n\n    move-object/from16 v26, v24\n\n    filled-new-array/range {v25 .. v44}, [LX/03hU;\n\n    move-result-object v0\n\n    sput-object v0, LX/03hU;->A03:[LX/03hU;\n\n    invoke-static {v0}, LX/05r3;->A00([Ljava/lang/Enum;)LX/05r4;\n\n    move-result-object v0\n\n    sput-object v0, LX/03hU;->A02:Lkotlin/enums/EnumEntries;\n\n    invoke-static {}, LX/03hU;->values()[LX/03hU;\n\n    move-result-object v4\n\n    array-length v3, v4\n\n    invoke-static {v3}, LX/05q4;->A0M(I)I\n\n    move-result v0\n\n    if-ge v0, v6, :cond_15b\n\n    const/16 v0, 0x10\n\n    :cond_15b\n    new-instance v2, Ljava/util/LinkedHashMap;\n\n    invoke-direct {v2, v0}, Ljava/util/LinkedHashMap;-><init>(I)V\n\n    :goto_160\n    if-ge v9, v3, :cond_16c\n\n    aget-object v1, v4, v9\n\n    iget-object v0, v1, LX/03hU;->A00:Ljava/lang/String;\n\n    invoke-virtual {v2, v0, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;\n\n    add-int/lit8 v9, v9, 0x1\n\n    goto :goto_160\n\n    :cond_16c\n    sput-object v2, LX/03hU;->A01:Ljava/util/Map;\n\n    return-void\n.end method",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

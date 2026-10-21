@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_5049f38b794bab9ad2cfc8ac8b0bdea5d6c909a880f6098290405d8141eed0b9",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0kBV",
+      "method": {
+        "name": "A00",
+        "reported_signature": "A00(X.06up, com.instagram.common.session.UserSession, X.0bm8, com.instagram.unifieddatamodel.gallery.MediaUploadMetadata, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, boolean): X.02sB",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/06up;Lcom/instagram/common/session/UserSession;LX/0bm8;Lcom/instagram/unifieddatamodel/gallery/MediaUploadMetadata;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZZZZ)LX/02sB;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public static final C02sB A00(C06up c06up, UserSession userSession, C0bm8 c0bm8, MediaUploadMetadata mediaUploadMetadata, Integer num, Integer num2, String str, String str2, String str3, String str4, List list, boolean z, boolean z2, boolean z3, boolean z4) throws JSONException {\n        C05s2.A0M(str3);\n        C0kBV c0kBV = A00;\n        C02sB c02sBA0J = AnonymousClass0221.A0J(C02rm.A01, C0ZMX.A00, userSession);\n        c02sBA0J.A0U = true;\n        StringBuilder sbA0V = AnonymousClass0020.A0V();\n        c0bm8.A00(c02sBA0J, userSession, sbA0V);\n        if (z) {\n            sbA0V.append(\"?video=1\");\n        }\n        c02sBA0J.A0H = sbA0V.toString();\n        String str5 = mediaUploadMetadata.A07;\n        String str6 = mediaUploadMetadata.A05;\n        A06(c02sBA0J, userSession, str5, str6);\n        c0kBV.A0K(c02sBA0J, num, num2, str, str2, str6, mediaUploadMetadata.A06, mediaUploadMetadata.A0T, mediaUploadMetadata.A0P, mediaUploadMetadata.A0M, list, z, z2);\n        c02sBA0J.AQE(AnonymousClass0235.A02(), str3);\n        if (c06up != null) {\n            c02sBA0J.A0C(\"camera_entry_point\", (int) c06up.A00);\n        }\n        if (C000H.A0o(C01ox.A01(userSession), 36310533988679854L)) {\n            c02sBA0J.AOz(\"X-IG-EU-CONFIGURE-DISABLED\", \"true\");\n        }\n        if (z4) {\n            c02sBA0J.AOz(\"X-IG-App-ID\", AnonymousClass0000.A00(FilterIds.SUBTLE_COOL));\n        }\n        if (c0bm8 == C0bm8.A0O) {\n            c02sBA0J.AOz(\"X-THUMBNAIL-VIEWPORT-HEIGHT\", String.valueOf((int) (245.0f * C01F4.A02(AnonymousClass0064.A0E(userSession)))));\n        }\n        if (str6 != null && !C05t8.A10(str6)) {\n            A07(c02sBA0J, userSession, mediaUploadMetadata.A0S, str6);\n        }\n        A0A(c02sBA0J, mediaUploadMetadata);\n        if (z3) {\n            c02sBA0J.A0C(\"is_ads_mode\", 1);\n        }\n        if (str4 != null) {\n            c02sBA0J.AQE(\"publish_id\", str4);\n        }\n        if (C000H.A0o(C01ox.A01(userSession), 36332116199434362L)) {\n            c02sBA0J.A07 = C02mu.MediaUpload;\n        }\n        return c02sBA0J;\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

@@ -1,0 +1,516 @@
+{
+  "endpoint-values": {
+    "evidence_id": "ev_eda4992d5f454319ffaaf76dd2c80964d4b313767fc0f528e36ce1da3213b533",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0bm8",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "source_file": "endpoint-values.smali",
+    "representation": "smali",
+    "source_status": "complete",
+    "markers": [
+      "static_initializer_disassembly"
+    ]
+  },
+  "share-gate-class": {
+    "evidence_id": "ev_493e0e2d74082cdf3f1da8168eb85176507575481b620c5774e6f2d579abfc07",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0RCJ"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "publish-response-parser-class": {
+    "evidence_id": "ev_a79def0781c444e0c7a5be06b86e2455913d9e0dcdf73d57864294a4da436b1d",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0ZMX"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "trial-serializer-class": {
+    "evidence_id": "ev_36b565f979d2791ffd8b8c59ccaab3e2e7007d615c2f0cc462c1f7f178dc9ff4",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0Zjf"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "duration-limit-config": {
+    "evidence_id": "ev_0d89c64e46e4e0e27b0ec3d723a59ac5003002dd56d0d10d75b438b9c98ddda6",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0DZu",
+      "method_name": "A01",
+      "overload_index": 0
+    },
+    "source_file": "duration-limit-config.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "duration-extractor": {
+    "evidence_id": "ev_f1bed3c336d091419a9d15f2caf2799297c105c9d99177f3ca0c5198401096c5",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0aWQ",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_file": "duration-extractor.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "endpoint-enum-class": {
+    "evidence_id": "ev_4e8980471603ada0196cb548338b2ceecf0ddd89b2a23772a7463095200d8dbb",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0bm8"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "length-pref-search": {
+    "evidence_id": "ev_9770393c89d6153c711d62d89056520fd1b40ee0c6d562a65f266a89d7e6a7c6",
+    "operation": "search_android_classes",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "query": "XnY"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "trial-strategy-class": {
+    "evidence_id": "ev_6d4a80e9b7732eaad449e38ba20749f7017760b096d4959fb1df8119bd18fb94",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0TMY"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "long-reel-limit-class": {
+    "evidence_id": "ev_0f4205ddb10ebcde1c6f725dfef98bedd573e72e386b6d0a318f1d448c2d5a26",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0DZv"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "trial-serializer": {
+    "evidence_id": "ev_9dabb9e5d22c12068bbab4b8c6afc4c9ce8ed9fb10112d7374d78d6924b56a41",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0Zjf",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_file": "trial-serializer.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "trial-strategy-values": {
+    "evidence_id": "ev_a57966bea2a3fb8e8996cd175b4dd2928200beede42deaf8fd010fbd726ed11a",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0TMY",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "source_file": "trial-strategy-values.smali",
+    "representation": "smali",
+    "source_status": "complete",
+    "markers": [
+      "static_initializer_disassembly"
+    ]
+  },
+  "publish-response-parser": {
+    "evidence_id": "ev_514e38a2d02fd35df7b20171d5ae9dde00f218f77671ca7c12a6b700fb7ee9ef",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0ZMX",
+      "method_name": "unsafeParseFromJson",
+      "overload_index": 0
+    },
+    "source_file": "publish-response-parser.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "warning-click-class": {
+    "evidence_id": "ev_492a527e5e6c3a974f099f666ddbe84ca45278970294934fac1394120b579614",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0afq"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "length-gate": {
+    "evidence_id": "ev_d38e4965eb07cab96c98a714cb8752fc84d926c60d1db78de77dd0f58dc5db0b",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0aGN",
+      "method_name": "A02",
+      "overload_index": 0
+    },
+    "source_file": "length-gate.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "duration-extractor-class": {
+    "evidence_id": "ev_e2d06dff3bed2bd6d87c48860a3d84eb337c05d332a4c5e4ad7acf97fb009684",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0aWQ"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "duration-limit-values": {
+    "evidence_id": "ev_7954b0058748974683ce7f5532a7a307318be0cb644dc147a2dacdff4046067c",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0DZv",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "source_file": "duration-limit-values.smali",
+    "representation": "smali",
+    "source_status": "complete",
+    "markers": [
+      "static_initializer_disassembly"
+    ]
+  },
+  "share-gate-search": {
+    "evidence_id": "ev_2e11ce3f6ab3e94d1b3a79fad135d61046fce96705454f1466ec3bba5102af54",
+    "operation": "search_android_classes",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "query": "RCJ"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "trial-params-class": {
+    "evidence_id": "ev_4b67cb07a4447fe16b53823100aab014b1401055f40918588221c7744be897fd",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0ROZ"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "length-gate-search": {
+    "evidence_id": "ev_55292d651611ff27d17d58978c4a2ec185e8f752131ac890140c1ceacec0dcc8",
+    "operation": "search_android_classes",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "query": "aGN"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "distribution-threshold-class": {
+    "evidence_id": "ev_5417f2c549015791b20a9173694b9e4ca3a098e3722f6988c7b2add3b19e4d06",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0G7K"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "warning-click-search": {
+    "evidence_id": "ev_8ac7b32df507f11b6ee4fdea8e16897e80be581e4e8f2171c2f12c51af32707d",
+    "operation": "search_android_classes",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "query": "afq"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "duration-limit-select": {
+    "evidence_id": "ev_e9ec30ff2800adae7670d6373fb5bcbdef4ed5831e608a53f21f103fedeeeb9e",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0DZu",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_file": "duration-limit-select.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "audience-enum-class": {
+    "evidence_id": "ev_442992c3e55c77dd8700083f1c7029db9342053eeea177461b7e93343ca5ba89",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C03hU"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "configure-request-class": {
+    "evidence_id": "ev_8859e5f3b9d8604cd35a9f76c3ea0bc6e2bc4afc2961cce5c5502cfdb8130a3a",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C09Eb"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "distribution-duration": {
+    "evidence_id": "ev_37274d549f0e49e948f65f1adc42d0c38154babad51a3e5926f8bc253742630f",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0G7K",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_file": "distribution-duration.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "configure-request": {
+    "evidence_id": "ev_c96077cc7fdf3e002a2be26ecc7b0d10a5209a07bfede6a78b63b7ef77d85caf",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C09Eb",
+      "method_name": "B2a",
+      "overload_index": 0
+    },
+    "source_file": "configure-request.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "distribution-speed-condition": {
+    "evidence_id": "ev_543ddf7e3155e48ce563c33a052f4c7552e986abe2bbd576e94325f8c404f7c9",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0G7K",
+      "method_name": "A01",
+      "overload_index": 0
+    },
+    "source_file": "distribution-speed-condition.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "duration-config-class": {
+    "evidence_id": "ev_d70c2ce4dca21e6ba9294562e3be71e686687c9b87ef2c734bc3e7cb2d1bb106",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0DZu"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "configure-response-class": {
+    "evidence_id": "ev_6cb81d7324af58ba78b1ecb49d954e7edf7a9fa41dbd01d7b8f5113e42f48a8f",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0mBM"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "trial-builder-class": {
+    "evidence_id": "ev_2f459080e4724e35e1e2f3c2fc30d39b5160d2a25b6f825e786aefce234026dc",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0Eby"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "audience-values": {
+    "evidence_id": "ev_9c2dcd0b92409df55a409c173662c4cf64217bf085eddbb479c17bac5b488bdb",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C03hU",
+      "method_name": "<clinit>",
+      "overload_index": 0
+    },
+    "source_file": "audience-values.smali",
+    "representation": "smali",
+    "source_status": "complete",
+    "markers": [
+      "static_initializer_disassembly"
+    ]
+  },
+  "trial-params": {
+    "evidence_id": "ev_d7219f2006bfb4d4e77cfe7f1878f88ca56703a9fe073a7078c15fda36b68d93",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0ROZ",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_file": "trial-params.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "distribution-warning": {
+    "evidence_id": "ev_f421c1cd479d288319690c9a19a17e7e317e2e8e1c020213b408c86cf3782870",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0RCJ",
+      "method_name": "A0Q",
+      "overload_index": 0
+    },
+    "source_file": "distribution-warning.smali",
+    "representation": "smali",
+    "source_status": "complete",
+    "markers": [
+      "Code decompiled incorrectly, please refer to instructions dump"
+    ]
+  },
+  "warning-click": {
+    "evidence_id": "ev_fbdf880da9973f86d39c34818a843814eeef27338e7e3854cc13696435815802",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0afq",
+      "method_name": "onClick",
+      "overload_index": 0
+    },
+    "source_file": "warning-click.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "configure-response": {
+    "evidence_id": "ev_c13ff5a1277c3fd7a73601a5d36a60f600c78d68d263d13236194d9c5c647eac",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0mBM",
+      "method_name": "GaG",
+      "overload_index": 0
+    },
+    "source_file": "configure-response.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  },
+  "trial-model-class": {
+    "evidence_id": "ev_06a72421a414fb44e2c38f389dcb27380ff074d0deed9cbc8f57e3509e301024",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0P8u"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "length-gate-class": {
+    "evidence_id": "ev_8da410bf9858f08964f9e1bff3d59bf9afee567cc6937983c822885a33db55ea",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0aGN"
+    },
+    "source_file": null,
+    "representation": null,
+    "source_status": null,
+    "markers": []
+  },
+  "share-gate": {
+    "evidence_id": "ev_47d2893fbf7b5cecaf1d28210fbe9b0f55c79b4424f2e71c6d771d7331d9ff2b",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0RCJ",
+      "method_name": "A0S",
+      "overload_index": 0
+    },
+    "source_file": "share-gate.java",
+    "representation": "java",
+    "source_status": "complete",
+    "markers": []
+  }
+}

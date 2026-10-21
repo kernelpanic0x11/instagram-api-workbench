@@ -1,0 +1,24 @@
+{
+  "scope": "All local APK resources.arsc tables; target IDs only. String pools UTF8/UTF16; sparse, offset16 and standard type entry offsets supported; simple values supported, complex entries marked. Config bytes retained verbatim.",
+  "stats": {
+    "arsc_files": 2,
+    "type_chunks": 322,
+    "entries": 64154
+  },
+  "wanted": [
+    "0x7f134f36",
+    "0x7f134f37",
+    "0x7f134f38",
+    "0x7f136204",
+    "0x7f136205",
+    "0x7f136206",
+    "0x7f136207",
+    "0x7f136208",
+    "0x7f136209",
+    "0x7f13620a",
+    "0x7f13620b",
+    "0x7f137827"
+  ],
+  "hits": [],
+  "errors": []
+}

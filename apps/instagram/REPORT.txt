@@ -1,0 +1,142 @@
+INSTAGRAM ANDROID — REVERSE-ENGINEERING BASELINE
+Generated 2026-10-16T16:16:04.528450+00:00
+
+Scope: broad static survey of the Instagram installation copied from the connected phone, plus selected method decompilation. This is not a complete reconstruction or a runtime security audit.
+
+TARGET AND EVIDENCE
+Package: com.instagram.android | Version: 451.0.0.53.80 (385713116)
+Base APK SHA-256: 4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b
+Android SDK declarations: minimum 28; target 36
+Acquired: 13 APKs, 560,971,270 bytes. All source paths and SHA-256 values are in evidence/acquisition.json.
+All 13 copied APKs passed a SHA-256 comparison against acquisition records and ZIP CRC checks; see evidence/integrity-check.json. Publisher signatures remain unverified.
+REA CLI 6.5.0; JADX headless MCP 0.7.1. Engine JAR digest verified against the cloned REA documentation.
+Package Evidence ID: ev_a30ce4bc8fd285f9e76ecc61be6339322518d0cd56eb995c2d8fa9ed23718317
+
+PACKAGE STRUCTURE
+Direct archive scan: 18,004 members; 23 standard classes*.dex members; 209,883 unique raw DEX class definitions.
+JADX reports 183,237 classes and 10,423 resources. These are different counting scopes; the difference is not reconciled and is not evidence that all classes were decompiled.
+189,292 raw class descriptors are in the obfuscated X namespace (about 90%). Readable names provide discovery leads, not full feature coverage.
+20 directly stored .so members, all under arm64-v8a. The base also carries assets/lib/libs.spo and metadata naming 67 packed native-library entries; these have not been unpacked or decompiled.
+Packed library metadata includes libscrollmerged.so, librtc.so, libstartup.so, libeffectsmerged.so, libtorchmerged.so, libmediamerged.so and libpytorchjnimerged.so. Their names suggest roles but do not prove runtime use.
+Both Helium and Helium experimental libraries are installed (roughly 144 MB and 151 MB); selection at runtime is unknown.
+assets/Ig4aBundle.js.hbc.spk.xz and its hash companion are present, alongside React-related classes. The packed Hermes bytecode has not been decoded.
+
+MANIFEST AND DEVICE PERMISSIONS
+The base manifest declares 81 permissions and 746 components: 535 activity, 24 activity-alias, 100 service, 24 provider, 63 receiver.
+109 components explicitly declare exported=true. Exported status alone does not establish exploitability; permissions and runtime input checks need separate review.
+Exported declarations: 109 true, 617 false and 20 unspecified. Defaults, enabled states, alias targets, URI rules and code-level checks require review. Of the explicitly exported entries, 15 carry a component permission attribute and 94 do not; this alone does not prove accessibility.
+Application class: com.instagram.app.InstagramAppShell. debuggable=false; allowBackup=true with custom backup/data-extraction rules. Backup exposure is not established by allowBackup alone.
+Manifest references @xml/fb_network_security_config. Trust anchors, cleartext rules and certificate pinning have not been evaluated.
+Device-specific runtime permission grants are omitted from the public export.
+
+FEATURE MAP — NAME-BASED CANDIDATES
+These groups overlap; counts reflect names matching documented patterns, not all code implementing each feature.
+Feed and caching: 119 candidates
+  com.instagram.feed.media.MediaCache
+  com.instagram.mainfeed.network.MainFeedCacheDataSource
+  com.instagram.mainfeed.network.ColdStartFeedCache
+  com.instagram.mainfeed.network.FeedMediaCache
+Reels and drafts: 574 candidates
+  com.instagram.creation.drafts.data.repository.ClipsDraftPreviewItemRepository
+  com.instagram.creation.drafts.data.datasource.IgClipsDraftDataSource
+  com.instagram.creation.persistence.CreationDatabase
+  com.instagram.creation.drafts.asset.ClipsDraftAssetRepository
+Stories: 137 candidates
+  com.instagram.reels.midcards.ayu.data.AyuMidcardApi
+  com.instagram.urlhandlers.stories.StoriesUrlHandlerActivity
+  instagram.features.stories.recentlydeleted.ReelRecentlyDeletedViewerControllerLifecycleUtil
+  instagram.features.stories.recentlydeleted.ReelRecentlyDeletedViewerController
+Messaging and calls: 1,842 candidates
+  com.instagram.realtimeclient.requeststream.SubscriptionHandler
+  com.instagram.realtimeclient.RealtimeClientManager
+  com.instagram.realtimeclient.RealtimeClientManager$Companion
+  com.instagram.direct.store.impl.sqlite.DirectSQLiteDiskIO
+Networking and GraphQL: 864 candidates
+  com.facebook.pando.TreeJNI
+  com.facebook.pando.PandoConsistencyServiceJNI
+  com.facebook.pando.PandoConsistencyStackJNI
+  com.facebook.pando.TreeUpdaterJNI
+Ads and analytics: 114 candidates
+  com.facebook.analytics.appstatelogger.foregroundstate.EntityAppState$ForegroundInit
+  com.facebook.analytics.memory.AddressSpace
+  com.facebook.xanalytics.XAnalyticsAdapterHolder
+  com.instagram.analytics.analytics2.IGAnalytics2HandlerThreadFactory
+Session-name candidates, including login: 43 candidates
+  com.instagram.common.session.UserSession
+  com.facebook.wearable.mediastream.sessionx.session.intf.IDeviceStateListener
+  com.instagram.creation.base.session.PhotoSession
+  com.instagram.creation.base.session.CreationSession
+Browser and Bloks: 315 candidates
+  com.facebook.browser.helium.content.SandboxedProcessService
+  com.facebook.browser.helium.content.SandboxedProcessService0
+  com.facebook.browser.helium.content.SandboxedProcessService1
+  com.facebook.browser.helium.preload.AppZygoteWarmerService
+AI and wearables: 3,368 candidates
+  com.meta.wearable.warp.core.utils.logging.WarpLog
+  com.meta.wearable.warp.core.utils.logging.WarpLog$Companion
+  com.facebook.wearable.common.comms.hera.shared.host.mwa.MwaExistance
+  com.meta.wearable.web.WowWebViewActivity
+Storage and upload: 237 candidates
+  com.instagram.pendingmedia.service.impl.PendingMediaManager
+  com.instagram.pendingmedia.model.ShareTargetHelper
+  androidx.room.TriggerBasedInvalidationTracker
+  androidx.room.ObservedTableVersions
+All 7,613 feature-group records originate from base.apk. Split and packed-native internals are outside this name-based map. Session-name matches also include photo, media and wearable sessions, not only login.
+Full candidate lists, APK names and DEX offsets: evidence/feature-map.json.
+
+NETWORK SURFACE
+1,178,767 DEX string records indexed with APK, DEX, string index and byte offset in evidence/all-dex-strings.jsonl.gz.
+799 feature-route candidates in evidence/feature-route-candidates.jsonl. This is heuristic matching, not a complete endpoint specification.
+1,858 URL-bearing string records are retained in evidence/url-strings.jsonl; host candidates in evidence/domain-candidates.json.
+Observed literal examples include i.instagram.com, www.instagram.com, www.facebook.com, and /api/v1/wwwgraphql/ig/query/. Named code includes Pando GraphQL, MQTT, Tigon and realtime clients.
+Routes include feed, upload, direct messaging, Stories, accounts, advertising, and creator products. Documentation links and inactive code also contribute strings. No endpoint was contacted to test these candidates.
+
+SELECTED CODE ANALYSIS
+realtime-class.json: ev_ff058066890ff330839399b84c0b19e30c098113487418ea8ea327fd3a269a37
+  com.instagram.realtimeclient.RealtimeClientManager: 93 method records.
+realtime-subscription.json: ev_25a20c6b1eb7f45cb16d59bf4cd48a8d8b57742dd5d34e808f3aad9d9426f5aa
+  Decompiled source status: available; engine-reported coverage of this individual method excerpt: complete
+realtime-appstate.json: ev_55672da2566119a1be3db47990119127b6732137c9eac3a7f7038c4d2ce9e247
+  Decompiled source status: available; engine-reported coverage of this individual method excerpt: complete
+feed-cache-class.json: ev_816ecaa3544cf9d4f57c54ece9c351b05490bd5561ef647ba778a5798f7cc767
+  com.instagram.mainfeed.network.MainFeedCacheDataSource: 19 method records.
+feed-cache-method.json: ev_2f412bdb1c4d52f54ace0fd266dbb77a2f7826addc6b380cce82582cbe1af182
+  Decompiled source status: available; engine-reported coverage of this individual method excerpt: complete
+realtime-skywalker.json: ev_0970e0841edfd29707feb5bfd5a1879fe4ed1b90625a14b050e1728a826aabd7
+  Decompiled source status: available; engine-reported coverage of this individual method excerpt: complete
+RealtimeClientManager.sendRealtimeSubscription: converts each nonempty input list to a HashSet of subscription strings, then passes deduplicated lists to sendSkywalkerCommand. Subscription formatting receives getMqttAnalyticsLoggingEnabled() and false. This establishes a local code path; it does not establish an active connection or the server response.
+
+COVERAGE AND NEXT INVESTIGATIONS
+Completed: acquisition and hashes; archive inventory across all 13 APKs; standard DEX class and string indexing; base manifest decoding; current permission snapshot; subsystem discovery; selected REA class and method inspection.
+Not completed: full class decompilation; native Superpack extraction; native-library analysis; Hermes bundle reconstruction; validation of signatures; complete split resource analysis; per-component exploitability; dynamic call graphs; TLS/pinning verification; live traffic; account-data storage review; runtime experiments.
+Selected feed method A0E delegates to MainFeedCacheDataSource$addItems$1 through a coroutine launch. The coroutine body and database writes are not traced.
+RealtimeClientManager.updateAppStateInternal schedules a runnable when mqttClient exists; that runnable rechecks the client and calls its obfuscated HlT method with the provided boolean and a negated session-derived predicate. The predicate semantics are unresolved.
+RealtimeClientManager.sendSkywalkerCommand checks mqttClient, serializes a SkywalkerCommand containing the two lists to JSON, and calls publish with the topic argument and final boolean true; IOException becomes IllegalStateException. Delivery and server handling are unverified.
+Server-side feed ranking, moderation, experiments, recommendation weights and backend source are not recoverable in full from this client APK. Bundled wearable/AI code does not prove those features are enabled for this account.
+Next investigations, in order:
+  1. Feed/Reels: trace request builders, response models, caches and pagination; separate client sorting from server ranking.
+  2. Messaging: trace Skywalker command serialization, subscriptions, connection lifecycle and encryption boundaries.
+  3. Privacy: follow analytics sampling/upload code and read resolved network/backup rules.
+  4. Entry points: inspect the 109 explicitly exported components and their input validation/permissions.
+  5. Native/JS: unpack Superpack and Hermes artifacts before claiming coverage of camera, ML, browser or media internals.
+  6. Runtime: correlate a narrowly defined interaction with logs/traffic where device access permits.
+
+REPRODUCTION AND FILES
+./rea-local is a local launcher using the pinned npm-cache installation and verified JAR. It depends on that npm cache path remaining present.
+inventory.py, index_strings.py, summarize.py, manifest.py and build_report.py reproduce the derived indexes and this report.
+Canonical successful REA output: evidence/package-verified.json, evidence/realtime-class.json and the named method/class evidence above.
+The older evidence/rea-package.json was affected by overlapping sandboxed/retried output and must not be treated as canonical JSON. Older rea-* error outputs are diagnostic only. Successful output was regenerated into separate files.
+Sandboxed runs left temporary workspaces rea-android-pPsTaK and rea-android-WgPIK3 under the macOS temporary directory. Process inspection confirmed no REA/JADX helpers remained; retained temporary copies are not part of this report’s evidence.
+No app installation, rooting, patching, account action or account-content extraction was performed.
+
+FOLLOW-UP: RECOMMENDATION RESTRICTIONS
+See visibility/TRACE.txt for the traced recommendation-status nudge request,
+required show_recommendation_status_nudge response field, conditional Bloks
+display, Account Status screen arguments and general enforcement-dialog parser.
+Correction: is_recommendable belongs to GroupMetadata, not a demonstrated
+account-wide recommendation flag. No account-specific restriction was established.
+
+FOLLOW-UP: REEL PUBLISHING
+See reels-trace/TRACE.txt for one-time duration notice vs configurable distribution
+warning vs upload cap, publish audience/trial metadata, and publishing response
+delegation to the shared restriction parser. No reliable reach boost established.

@@ -1,0 +1,43 @@
+    public static final C02sB A00(C06up c06up, UserSession userSession, C0bm8 c0bm8, MediaUploadMetadata mediaUploadMetadata, Integer num, Integer num2, String str, String str2, String str3, String str4, List list, boolean z, boolean z2, boolean z3, boolean z4) throws JSONException {
+        C05s2.A0M(str3);
+        C0kBV c0kBV = A00;
+        C02sB c02sBA0J = AnonymousClass0221.A0J(C02rm.A01, C0ZMX.A00, userSession);
+        c02sBA0J.A0U = true;
+        StringBuilder sbA0V = AnonymousClass0020.A0V();
+        c0bm8.A00(c02sBA0J, userSession, sbA0V);
+        if (z) {
+            sbA0V.append("?video=1");
+        }
+        c02sBA0J.A0H = sbA0V.toString();
+        String str5 = mediaUploadMetadata.A07;
+        String str6 = mediaUploadMetadata.A05;
+        A06(c02sBA0J, userSession, str5, str6);
+        c0kBV.A0K(c02sBA0J, num, num2, str, str2, str6, mediaUploadMetadata.A06, mediaUploadMetadata.A0T, mediaUploadMetadata.A0P, mediaUploadMetadata.A0M, list, z, z2);
+        c02sBA0J.AQE(AnonymousClass0235.A02(), str3);
+        if (c06up != null) {
+            c02sBA0J.A0C("camera_entry_point", (int) c06up.A00);
+        }
+        if (C000H.A0o(C01ox.A01(userSession), 36310533988679854L)) {
+            c02sBA0J.AOz("X-IG-EU-CONFIGURE-DISABLED", "true");
+        }
+        if (z4) {
+            c02sBA0J.AOz("X-IG-App-ID", AnonymousClass0000.A00(FilterIds.SUBTLE_COOL));
+        }
+        if (c0bm8 == C0bm8.A0O) {
+            c02sBA0J.AOz("X-THUMBNAIL-VIEWPORT-HEIGHT", String.valueOf((int) (245.0f * C01F4.A02(AnonymousClass0064.A0E(userSession)))));
+        }
+        if (str6 != null && !C05t8.A10(str6)) {
+            A07(c02sBA0J, userSession, mediaUploadMetadata.A0S, str6);
+        }
+        A0A(c02sBA0J, mediaUploadMetadata);
+        if (z3) {
+            c02sBA0J.A0C("is_ads_mode", 1);
+        }
+        if (str4 != null) {
+            c02sBA0J.AQE("publish_id", str4);
+        }
+        if (C000H.A0o(C01ox.A01(userSession), 36332116199434362L)) {
+            c02sBA0J.A07 = C02mu.MediaUpload;
+        }
+        return c02sBA0J;
+    }

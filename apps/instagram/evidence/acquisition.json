@@ -1,0 +1,71 @@
+{
+  "acquired_at_utc": "2026-10-16T16:06:31.389095+00:00",
+  "package": "com.instagram.android",
+  "files": [
+    {
+      "file": "base.apk",
+      "bytes": 240567565,
+      "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+    },
+    {
+      "file": "split_arservicesforpersonsegmentation.apk",
+      "bytes": 53777,
+      "sha256": "cd97964083f3f5d78043ebf2763392bd59f5e8c29fb3acadee5a682d789bcbeb"
+    },
+    {
+      "file": "split_config.xxhdpi.apk",
+      "bytes": 6997160,
+      "sha256": "9e01c872c229270775f972d12d83105177364f2e67a875e898dea6beb3bfef90"
+    },
+    {
+      "file": "split_executorch.apk",
+      "bytes": 1417510,
+      "sha256": "cf3a309a74e80708ece5233a64214e94898abe23933fe0fb5a749e4a8cf19dde"
+    },
+    {
+      "file": "split_heliumcore.apk",
+      "bytes": 15467728,
+      "sha256": "b9f54761051e62c78b6d5b28d2fbda895cf13f1c681046d6d00e2c4e7784b10b"
+    },
+    {
+      "file": "split_heliumiab.apk",
+      "bytes": 144101764,
+      "sha256": "c9c38e62fec2d9096de786ec7d5c7f3925841a74be576ddeb10989e37ae2f519"
+    },
+    {
+      "file": "split_heliumiabexp.apk",
+      "bytes": 151114125,
+      "sha256": "1b5482332435ef15b57858f0fe33263ef2414d2bbd43b3a7305b2a697fca5fc4"
+    },
+    {
+      "file": "split_horizon.apk",
+      "bytes": 393649,
+      "sha256": "b03cf6aed06bc0b3d3f453c66f9c17d62626eeb9217b4dfe88080dd471f068a9"
+    },
+    {
+      "file": "split_jumpcut.apk",
+      "bytes": 70065,
+      "sha256": "fa2cc41e5638490637987b772072e28af180b8679be1fd21486ee5f9d9f552c7"
+    },
+    {
+      "file": "split_pytorch.apk",
+      "bytes": 16679,
+      "sha256": "ff76d3d71f76b803aaad7cd006864085b73c8ffe2e999c0c9e2532332222b843"
+    },
+    {
+      "file": "split_slam.apk",
+      "bytes": 487706,
+      "sha256": "3b4000eeebd2e6b8e813807fe0d4e646deec909bf59be01ede1b74fe6cbf4d50"
+    },
+    {
+      "file": "split_spm.apk",
+      "bytes": 90529,
+      "sha256": "247fc0d27edafc1f7854ee784022dedd1cd5c6b6b744bc6010ec8d9d56f9dc5a"
+    },
+    {
+      "file": "split_supmediastreamcontroller.apk",
+      "bytes": 193013,
+      "sha256": "ea66ecd93c23d35d17b70bf7bed1f364f72b09bbe3d8a3354dc36048c155e6a7"
+    }
+  ]
+}

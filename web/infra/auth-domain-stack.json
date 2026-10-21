@@ -1,0 +1,83 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "REA custom Cognito login domain and DNS-validated TLS certificate (deploy in us-east-1).",
+  "Parameters": {
+    "UserPoolId": {
+      "Type": "String"
+    },
+    "HostedZoneId": {
+      "Type": "String"
+    },
+    "DomainName": {
+      "Type": "String",
+      "Default": "auth.re.beehivewebstudio.com"
+    }
+  },
+  "Resources": {
+    "Certificate": {
+      "Type": "AWS::CertificateManager::Certificate",
+      "Properties": {
+        "DomainName": {
+          "Ref": "DomainName"
+        },
+        "ValidationMethod": "DNS",
+        "DomainValidationOptions": [
+          {
+            "DomainName": {
+              "Ref": "DomainName"
+            },
+            "HostedZoneId": {
+              "Ref": "HostedZoneId"
+            }
+          }
+        ]
+      }
+    },
+    "CustomDomain": {
+      "Type": "AWS::Cognito::UserPoolDomain",
+      "Properties": {
+        "Domain": {
+          "Ref": "DomainName"
+        },
+        "UserPoolId": {
+          "Ref": "UserPoolId"
+        },
+        "ManagedLoginVersion": 2,
+        "CustomDomainConfig": {
+          "CertificateArn": {
+            "Ref": "Certificate"
+          }
+        }
+      }
+    },
+    "LoginDns": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "HostedZoneId": {
+          "Ref": "HostedZoneId"
+        },
+        "Name": {
+          "Ref": "DomainName"
+        },
+        "Type": "A",
+        "AliasTarget": {
+          "HostedZoneId": "Z2FDTNDATAQYW2",
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CustomDomain",
+              "CloudFrontDistribution"
+            ]
+          },
+          "EvaluateTargetHealth": false
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "CognitoDomain": {
+      "Value": {
+        "Fn::Sub": "https://${DomainName}"
+      }
+    }
+  }
+}

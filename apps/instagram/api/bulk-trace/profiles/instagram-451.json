@@ -1,0 +1,108 @@
+{
+  "name": "Instagram Android 451.0.0.53.80",
+  "package": "com.instagram.android",
+  "version": "451.0.0.53.80",
+  "apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "provenance": "Verified static helper/enum semantics in api/evidence and api/bulk-trace/validation-samples.json. These signatures apply only to this exact base APK.",
+  "helpers": [
+    {
+      "signature": [
+        "LX/0221;",
+        "A0J",
+        "(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+      ],
+      "method": "POST"
+    },
+    {
+      "signature": [
+        "LX/0221;",
+        "A0K",
+        "(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+      ],
+      "method": "GET"
+    },
+    {
+      "signature": [
+        "LX/0221;",
+        "A0I",
+        "(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+      ],
+      "method": "POST"
+    },
+    {
+      "signature": [
+        "LX/0225;",
+        "A0L",
+        "(Lcom/instagram/common/session/UserSession;)LX/02sB;"
+      ],
+      "method": "POST"
+    },
+    {
+      "signature": [
+        "LX/0064;",
+        "A0Q",
+        "(Lcom/instagram/common/session/UserSession;)LX/02sB;"
+      ],
+      "method": "POST"
+    }
+  ],
+  "method_helpers": [
+    {
+      "signature": [
+        "LX/020p;",
+        "A1U",
+        "(LX/04x6;)V"
+      ],
+      "method": "GET"
+    },
+    {
+      "signature": [
+        "LX/0465;",
+        "A1O",
+        "(LX/04x6;)V"
+      ],
+      "method": "POST"
+    }
+  ],
+  "path_helpers": [
+    [
+      "LX/020p;",
+      "A0K",
+      "(LX/04x5;Ljava/lang/String;)LX/02sG;"
+    ]
+  ],
+  "enum": [
+    {
+      "signature": [
+        "LX/0009;",
+        "A01",
+        "Ljava/lang/Integer;"
+      ],
+      "method": "POST"
+    },
+    {
+      "signature": [
+        "LX/0009;",
+        "A0N",
+        "Ljava/lang/Integer;"
+      ],
+      "method": "GET"
+    }
+  ],
+  "set_method": [
+    "LX/04x6;",
+    "A07",
+    "(Ljava/lang/Integer;)V"
+  ],
+  "route_field": [
+    "LX/04x6;",
+    "A0H",
+    "Ljava/lang/String;"
+  ],
+  "method_field": [
+    "LX/04x6;",
+    "A0A",
+    "Ljava/lang/Integer;"
+  ],
+  "status": "validated"
+}

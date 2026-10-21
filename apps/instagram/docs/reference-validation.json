@@ -1,0 +1,107 @@
+{
+  "target": {
+    "package": "com.instagram.android",
+    "version": "451.0.0.53.80",
+    "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+    "identity_status": "known digest profile"
+  },
+  "inputs": [
+    {
+      "name": "base.apk",
+      "bytes": 240567565,
+      "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+    },
+    {
+      "name": "split_arservicesforpersonsegmentation.apk",
+      "bytes": 53777,
+      "sha256": "cd97964083f3f5d78043ebf2763392bd59f5e8c29fb3acadee5a682d789bcbeb"
+    },
+    {
+      "name": "split_config.xxhdpi.apk",
+      "bytes": 6997160,
+      "sha256": "9e01c872c229270775f972d12d83105177364f2e67a875e898dea6beb3bfef90"
+    },
+    {
+      "name": "split_executorch.apk",
+      "bytes": 1417510,
+      "sha256": "cf3a309a74e80708ece5233a64214e94898abe23933fe0fb5a749e4a8cf19dde"
+    },
+    {
+      "name": "split_heliumcore.apk",
+      "bytes": 15467728,
+      "sha256": "b9f54761051e62c78b6d5b28d2fbda895cf13f1c681046d6d00e2c4e7784b10b"
+    },
+    {
+      "name": "split_heliumiab.apk",
+      "bytes": 144101764,
+      "sha256": "c9c38e62fec2d9096de786ec7d5c7f3925841a74be576ddeb10989e37ae2f519"
+    },
+    {
+      "name": "split_heliumiabexp.apk",
+      "bytes": 151114125,
+      "sha256": "1b5482332435ef15b57858f0fe33263ef2414d2bbd43b3a7305b2a697fca5fc4"
+    },
+    {
+      "name": "split_horizon.apk",
+      "bytes": 393649,
+      "sha256": "b03cf6aed06bc0b3d3f453c66f9c17d62626eeb9217b4dfe88080dd471f068a9"
+    },
+    {
+      "name": "split_jumpcut.apk",
+      "bytes": 70065,
+      "sha256": "fa2cc41e5638490637987b772072e28af180b8679be1fd21486ee5f9d9f552c7"
+    },
+    {
+      "name": "split_pytorch.apk",
+      "bytes": 16679,
+      "sha256": "ff76d3d71f76b803aaad7cd006864085b73c8ffe2e999c0c9e2532332222b843"
+    },
+    {
+      "name": "split_slam.apk",
+      "bytes": 487706,
+      "sha256": "3b4000eeebd2e6b8e813807fe0d4e646deec909bf59be01ede1b74fe6cbf4d50"
+    },
+    {
+      "name": "split_spm.apk",
+      "bytes": 90529,
+      "sha256": "247fc0d27edafc1f7854ee784022dedd1cd5c6b6b744bc6010ec8d9d56f9dc5a"
+    },
+    {
+      "name": "split_supmediastreamcontroller.apk",
+      "bytes": 193013,
+      "sha256": "ea66ecd93c23d35d17b70bf7bed1f364f72b09bbe3d8a3354dc36048c155e6a7"
+    }
+  ],
+  "mode": "profile-traced",
+  "mapping_profile_sha256": "b29b2e6085322d887aeb4da6fb74d123149dcfc034bd77672d139d372fbabf08",
+  "reference_manual_traces_included": true,
+  "paths": 1456,
+  "operations": 679,
+  "tooling_sha256": {
+    "inventory.py": "91417c64bdfb17f7cdb54008eb85845b62c23051cf2b13c467d9169271176c99",
+    "index_strings.py": "c4e0f75021b5899ac1bd186bc868eb9f3f235bdd0642fbf8c6297d011710c0db",
+    "scripts/reproduce.py": "1b3675bf4a2f664779a730fd39ea313e7ada9d195adae72c8b689747b44d3377",
+    "api/extraction/extract.py": "b0ef71569e80af134389b9b2dbeb822e2f5c33bc019fb5ca555e2ad4d4c5aff4",
+    "api/bulk-trace/extract.py": "ac7da30b27a8b32e743d73ad9ac73d507abcefc955cb2f6f18362093089a8789",
+    "api/build.mjs": "c9657f6ccd9c5ec566e9cdc4d433e7fb26471c6a2faf4d8b30b4886b49c189c2",
+    "api/validate.mjs": "1c475e0ca942268611f533cce54a23fa84d335a6ac18a895175f414fb4a96b4d"
+  },
+  "decode_errors": 0,
+  "tool_versions": {
+    "python": "3.14.7",
+    "node": "v26.7.0"
+  },
+  "outputs": {
+    "api/openapi.json": "987de942966c1d54b70f765e0ce7a9ed1ae240b89b7da86d46e574e26c315d31",
+    "api/openapi.yaml": "fb9b47cd95d0a5c46e52254aff9260db866b35c49df69373a44bca2c8c6617f0",
+    "api/extraction/catalog.json": "a2faaecb2096fd4b36dc83232bd0c66b2e50cb50c8c74af3d0ba780f92e4c7c7",
+    "api/bulk-trace/operations.json": "1ff7f12b531a8efa63ffdae5c70de2451dbd60c767e5b40853b8520e07a630d3"
+  },
+  "checked_at_utc": "2026-10-17T15:49:41.635091+00:00",
+  "tests": {
+    "javascript": 24,
+    "dex_scanner": 8,
+    "developer_workflow": 10
+  },
+  "note": "MacOS clean-export verification; no credentials, APK binaries, local paths or raw device state are included. Output hashes describe the generated reproduction run, not the older reference snapshot."
+}

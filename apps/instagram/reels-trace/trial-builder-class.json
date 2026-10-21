@@ -1,0 +1,179 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_2f459080e4724e35e1e2f3c2fc30d39b5160d2a25b6f825e786aefce234026dc",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0Eby",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(androidx.work.impl.WorkDatabase_Impl): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(Landroidx/work/impl/WorkDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.facebook.odin.features.persistence.room.ig4a.IgRoomExampleDatabase_Impl): void",
+          "overload_index": 1,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/facebook/odin/features/persistence/room/ig4a/IgRoomExampleDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.facebook.odin.signals.persistence.roomimpl.ig4a.RoomSignalsDatabase_Impl): void",
+          "overload_index": 2,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/facebook/odin/signals/persistence/roomimpl/ig4a/RoomSignalsDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.creation.persistence.CreationDatabase_Impl): void",
+          "overload_index": 3,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/creation/persistence/CreationDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.direct.inbox.notes.persistence.NotesRoomDb_Impl): void",
+          "overload_index": 4,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/direct/inbox/notes/persistence/NotesRoomDb_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.flashcache.persistence.MediaDatabase_Impl): void",
+          "overload_index": 5,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/flashcache/persistence/MediaDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.mainactivity.appentry.appreset.mediator.database.SessionHistoryDatabase_Impl): void",
+          "overload_index": 6,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/mainactivity/appentry/appreset/mediator/database/SessionHistoryDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.mainfeed.network.persistence.OneCacheDatabase_Impl): void",
+          "overload_index": 7,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/mainfeed/network/persistence/OneCacheDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.mainfeed.network.persistence.OneCacheStoriesTrayDatabase_Impl): void",
+          "overload_index": 8,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/mainfeed/network/persistence/OneCacheStoriesTrayDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.odml.p13n.room.UseCaseRoomDatabase_Impl): void",
+          "overload_index": 9,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/odml/p13n/room/UseCaseRoomDatabase_Impl;)V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(com.instagram.sponsored.asyncads.pool.persistence.SponsoredPoolItemDatabase_Impl): void",
+          "overload_index": 10,
+          "is_constructor": true,
+          "dex_descriptor": "(Lcom/instagram/sponsored/asyncads/pool/persistence/SponsoredPoolItemDatabase_Impl;)V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(java.lang.Object, java.util.AbstractCollection): java.util.LinkedHashSet",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/util/AbstractCollection;)Ljava/util/LinkedHashSet;"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(X.0ouq): X.01C5",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0ouq;)LX/01C5;"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "A04",
+          "reported_signature": "A04(X.0ouq): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0ouq;)V"
+        },
+        {
+          "name": "A05",
+          "reported_signature": "A05(X.0ouq): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0ouq;)V"
+        },
+        {
+          "name": "A06",
+          "reported_signature": "A06(X.0ouq): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0ouq;)V"
+        },
+        {
+          "name": "A07",
+          "reported_signature": "A07(X.0ouq): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0ouq;)V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "$t",
+          "reported_type": "int"
+        },
+        {
+          "name": "A00",
+          "reported_type": "java.lang.Object"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

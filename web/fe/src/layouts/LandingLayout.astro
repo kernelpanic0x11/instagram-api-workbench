@@ -1,0 +1,39 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+
+import { headerData } from '~/navigation';
+import type { MetaData } from '~/types';
+
+export interface Props {
+  metadata?: MetaData;
+}
+
+const { metadata } = Astro.props;
+
+// Landing pages show a reduced header: only the "Landing" dropdown from the
+// main navigation (looked up by label so reordering navigation.ts is safe).
+const landingMenu = headerData?.links?.find((link) => link.text === 'Landing');
+---
+
+<PageLayout metadata={metadata}>
+  <Fragment slot="announcement">
+    <slot name="announcement" />
+  </Fragment>
+  <Fragment slot="header">
+    <slot name="header">
+      <Header
+        links={landingMenu ? [landingMenu] : undefined}
+        actions={[
+          {
+            text: 'Download',
+            href: 'https://github.com/arthelokyo/astrowind',
+          },
+        ]}
+        showToggleTheme
+        position="right"
+      />
+    </slot>
+  </Fragment>
+  <slot />
+</PageLayout>

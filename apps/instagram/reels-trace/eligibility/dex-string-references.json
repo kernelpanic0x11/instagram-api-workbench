@@ -1,0 +1,1884 @@
+{
+  "scope": "base.apk root classes*.dex; correctly decoded instruction boundaries; const-string and const-string/jumbo only",
+  "stats": {
+    "dex_files": 23,
+    "matching_strings": 5,
+    "methods_with_code": 807462,
+    "decoded_methods": 807462
+  },
+  "hits": [
+    {
+      "dex": "classes14.dex",
+      "method_index": 27431,
+      "method": "LX/0XnY;-><clinit>()V",
+      "code_unit_offset": 18,
+      "dex_byte_offset": 4332928,
+      "string_index": 49171,
+      "value": "has_seen_long_reels_restricted_distribution_nux"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 34857,
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 242,
+      "dex_byte_offset": 12919264,
+      "string_index": 3446,
+      "value": "DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 35009,
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 310,
+      "dex_byte_offset": 12922748,
+      "string_index": 3446,
+      "value": "DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 35009,
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 855,
+      "dex_byte_offset": 12923838,
+      "string_index": 3447,
+      "value": "DISTRIBUTION_LIMIT_WARNING_SHARE_TAPPED"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28766,
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 95,
+      "dex_byte_offset": 3452870,
+      "string_index": 40310,
+      "value": "MBS_INSIGHTS_RECOMMENDATION_ELIGIBILITY"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 4847,
+      "method": "LX/056P;-><clinit>()V",
+      "code_unit_offset": 18,
+      "dex_byte_offset": 2299716,
+      "string_index": 4757,
+      "value": "HAS_SEEN_LONG_REELS_DIALOG_NUX"
+    }
+  ],
+  "calls": [
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0XnY;-><clinit>()V",
+      "callee": "LX/020p;->A0s(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)LX/05s5;",
+      "code_unit_offset": 7,
+      "dex_byte_offset": 4332906
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0XnY;-><clinit>()V",
+      "callee": "LX/05Mj;->A06(Ljava/lang/String;Z)LX/05My;",
+      "code_unit_offset": 20,
+      "dex_byte_offset": 4332932
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0064;->A1E(Ljava/lang/Object;)V",
+      "code_unit_offset": 7,
+      "dex_byte_offset": 12918794
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 18,
+      "dex_byte_offset": 12918816
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0ArG;->A14(Lcom/instagram/common/session/UserSession;)LX/08yb;",
+      "code_unit_offset": 28,
+      "dex_byte_offset": 12918836
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0Zir;->A01(LX/0Zir;)LX/043C;",
+      "code_unit_offset": 32,
+      "dex_byte_offset": 12918844
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0Zir;->A00(LX/0Zir;)J",
+      "code_unit_offset": 36,
+      "dex_byte_offset": 12918852
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/06lj;->A08(LX/00wq;)LX/06lj;",
+      "code_unit_offset": 42,
+      "dex_byte_offset": 12918864
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0020;->A1Z(LX/00wv;)Z",
+      "code_unit_offset": 46,
+      "dex_byte_offset": 12918872
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/00wv;->A0s(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 56,
+      "dex_byte_offset": 12918892
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/00wv;->A0s(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 63,
+      "dex_byte_offset": 12918906
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/08yb;->A00(LX/06lj;LX/08yb;)V",
+      "code_unit_offset": 66,
+      "dex_byte_offset": 12918912
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/06lj;->A0w()V",
+      "code_unit_offset": 69,
+      "dex_byte_offset": 12918918
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0127;->A16(LX/06lj;LX/05Fa;)V",
+      "code_unit_offset": 72,
+      "dex_byte_offset": 12918924
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/06lj;->A1O(LX/043C;)V",
+      "code_unit_offset": 75,
+      "dex_byte_offset": 12918930
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;",
+      "code_unit_offset": 78,
+      "dex_byte_offset": 12918936
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/00wv;->A0r(Ljava/lang/String;Ljava/lang/Long;)V",
+      "code_unit_offset": 84,
+      "dex_byte_offset": 12918948
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/06lj;->A0v()V",
+      "code_unit_offset": 87,
+      "dex_byte_offset": 12918954
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0xbo;->FAV()V",
+      "code_unit_offset": 95,
+      "dex_byte_offset": 12918970
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0BS3;->A1X(LX/0Jzl;)V",
+      "code_unit_offset": 112,
+      "dex_byte_offset": 12919004
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 122,
+      "dex_byte_offset": 12919024
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0Beg;->A12()V",
+      "code_unit_offset": 132,
+      "dex_byte_offset": 12919044
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/08xv;->A0O(LX/0bhR;LX/0TQn;LX/0Dxj;Ljava/lang/String;)V",
+      "code_unit_offset": 155,
+      "dex_byte_offset": 12919090
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0G7w;->A00(LX/0G7w;)Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 163,
+      "dex_byte_offset": 12919106
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/05s2;->A0R(Ljava/lang/Object;)V",
+      "code_unit_offset": 171,
+      "dex_byte_offset": 12919122
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/05s2;->A0S(Ljava/lang/Object;)V",
+      "code_unit_offset": 174,
+      "dex_byte_offset": 12919128
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0123;->A0X(Lcom/instagram/common/session/UserSession;)LX/08yj;",
+      "code_unit_offset": 177,
+      "dex_byte_offset": 12919134
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0G7w;->A00(LX/0G7w;)Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 188,
+      "dex_byte_offset": 12919156
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/05s2;->A0R(Ljava/lang/Object;)V",
+      "code_unit_offset": 196,
+      "dex_byte_offset": 12919172
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/05s2;->A0S(Ljava/lang/Object;)V",
+      "code_unit_offset": 199,
+      "dex_byte_offset": 12919178
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0123;->A0X(Lcom/instagram/common/session/UserSession;)LX/08yj;",
+      "code_unit_offset": 202,
+      "dex_byte_offset": 12919184
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/08yj;->A0n(LX/06up;LX/0Dxj;Ljava/lang/String;)V",
+      "code_unit_offset": 208,
+      "dex_byte_offset": 12919196
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0a8L;->A00(Lcom/instagram/common/session/UserSession;Z)V",
+      "code_unit_offset": 217,
+      "dex_byte_offset": 12919214
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 225,
+      "dex_byte_offset": 12919230
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 237,
+      "dex_byte_offset": 12919254
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0BQa;->A1R(LX/0H0c;LX/08xz;Ljava/lang/String;)V",
+      "code_unit_offset": 244,
+      "dex_byte_offset": 12919268
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0NcW;->Gr3()V",
+      "code_unit_offset": 254,
+      "dex_byte_offset": 12919288
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/020p;->A0y()V",
+      "code_unit_offset": 277,
+      "dex_byte_offset": 12919334
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0002;->createAndThrow()LX/0002;",
+      "code_unit_offset": 280,
+      "dex_byte_offset": 12919340
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0gej;->A00(LX/0TRm;)V",
+      "code_unit_offset": 287,
+      "dex_byte_offset": 12919354
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0fxM;-><init>(LX/0APE;)V",
+      "code_unit_offset": 292,
+      "dex_byte_offset": 12919364
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/02bo;->A01(Ljava/lang/Runnable;)V",
+      "code_unit_offset": 295,
+      "dex_byte_offset": 12919370
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0NcW;->Gr3()V",
+      "code_unit_offset": 300,
+      "dex_byte_offset": 12919380
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "callee": "LX/0ANf;->A02(LX/0DMj;LX/08u8;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V",
+      "code_unit_offset": 319,
+      "dex_byte_offset": 12919418
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0064;->A1E(Ljava/lang/Object;)V",
+      "code_unit_offset": 15,
+      "dex_byte_offset": 12922158
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 23,
+      "dex_byte_offset": 12922174
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lcom/instagram/user/model/User;->A7D()Ljava/lang/String;",
+      "code_unit_offset": 31,
+      "dex_byte_offset": 12922190
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05B6;->getBaseAnalyticsModule()LX/0Eto;",
+      "code_unit_offset": 35,
+      "dex_byte_offset": 12922198
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0aLt;->A04(LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V",
+      "code_unit_offset": 39,
+      "dex_byte_offset": 12922206
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Ljava/util/List;->add(Ljava/lang/Object;)Z",
+      "code_unit_offset": 44,
+      "dex_byte_offset": 12922216
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 47,
+      "dex_byte_offset": 12922222
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05B6;->getBaseAnalyticsModule()LX/0Eto;",
+      "code_unit_offset": 51,
+      "dex_byte_offset": 12922230
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lcom/instagram/user/model/User;->A7D()Ljava/lang/String;",
+      "code_unit_offset": 55,
+      "dex_byte_offset": 12922238
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0aLt;->A01(LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V",
+      "code_unit_offset": 59,
+      "dex_byte_offset": 12922246
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0226;->A1M(LX/0Y0J;)V",
+      "code_unit_offset": 62,
+      "dex_byte_offset": 12922252
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 67,
+      "dex_byte_offset": 12922262
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05B6;->getBaseAnalyticsModule()LX/0Eto;",
+      "code_unit_offset": 71,
+      "dex_byte_offset": 12922270
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 77,
+      "dex_byte_offset": 12922282
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0127;->A0p(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;",
+      "code_unit_offset": 85,
+      "dex_byte_offset": 12922298
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0LEK;->A04(LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/Map;)V",
+      "code_unit_offset": 89,
+      "dex_byte_offset": 12922306
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0RKH;->A02(LX/0RKH;)V",
+      "code_unit_offset": 96,
+      "dex_byte_offset": 12922320
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05B6;->getBaseAnalyticsModule()LX/0Eto;",
+      "code_unit_offset": 108,
+      "dex_byte_offset": 12922344
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V",
+      "code_unit_offset": 115,
+      "dex_byte_offset": 12922358
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lcom/instagram/brandedcontent/disclosure/BrandedContentDisclosureBaseViewModel;->A14()V",
+      "code_unit_offset": 124,
+      "dex_byte_offset": 12922376
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lcom/instagram/brandedcontent/disclosure/BrandedContentDisclosureBaseViewModel;->A12()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 127,
+      "dex_byte_offset": 12922382
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/04aF;->A00(LX/05Dd;)LX/04aF;",
+      "code_unit_offset": 131,
+      "dex_byte_offset": 12922390
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Ljava/lang/Object;-><init>()V",
+      "code_unit_offset": 137,
+      "dex_byte_offset": 12922402
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/04aF;->A01(LX/0vtO;)V",
+      "code_unit_offset": 144,
+      "dex_byte_offset": 12922416
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0465;->A0A(LX/0Fml;Ljava/lang/String;II)LX/0olj;",
+      "code_unit_offset": 157,
+      "dex_byte_offset": 12922442
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0D9e;->DH2(I)Ljava/lang/String;",
+      "code_unit_offset": 165,
+      "dex_byte_offset": 12922458
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00mb;->A00(LX/00fh;)LX/00pi;",
+      "code_unit_offset": 175,
+      "dex_byte_offset": 12922478
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0haQ;->A01(Ljava/lang/Object;Ljava/lang/String;LX/0oqi;I)V",
+      "code_unit_offset": 180,
+      "dex_byte_offset": 12922488
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Ljava/util/List;->isEmpty()Z",
+      "code_unit_offset": 185,
+      "dex_byte_offset": 12922498
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BXD;->A1Q(Ljava/util/List;I)Ljava/lang/Object;",
+      "code_unit_offset": 193,
+      "dex_byte_offset": 12922514
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lcom/instagram/brandedcontent/disclosure/BrandedContentDisclosureBaseViewModel;->A12()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 203,
+      "dex_byte_offset": 12922534
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V",
+      "code_unit_offset": 209,
+      "dex_byte_offset": 12922546
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/02di;->A01(LX/0Eto;LX/05Dd;)LX/02di;",
+      "code_unit_offset": 212,
+      "dex_byte_offset": 12922552
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/02di;->AMz(Ljava/lang/String;)LX/00ws;",
+      "code_unit_offset": 218,
+      "dex_byte_offset": 12922564
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/020R;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 224,
+      "dex_byte_offset": 12922576
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00ws;->AQu(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 228,
+      "dex_byte_offset": 12922584
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00ws;->AQu(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 233,
+      "dex_byte_offset": 12922594
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00ws;->AQu(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 238,
+      "dex_byte_offset": 12922604
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00ws;->Ei8()V",
+      "code_unit_offset": 241,
+      "dex_byte_offset": 12922610
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/08xv;->A0O(LX/0bhR;LX/0TQn;LX/0Dxj;Ljava/lang/String;)V",
+      "code_unit_offset": 257,
+      "dex_byte_offset": 12922642
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0G7w;->A00(LX/0G7w;)Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 268,
+      "dex_byte_offset": 12922664
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0R(Ljava/lang/Object;)V",
+      "code_unit_offset": 276,
+      "dex_byte_offset": 12922680
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0S(Ljava/lang/Object;)V",
+      "code_unit_offset": 279,
+      "dex_byte_offset": 12922686
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0123;->A0X(Lcom/instagram/common/session/UserSession;)LX/08yj;",
+      "code_unit_offset": 282,
+      "dex_byte_offset": 12922692
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/08yj;->A0n(LX/06up;LX/0Dxj;Ljava/lang/String;)V",
+      "code_unit_offset": 288,
+      "dex_byte_offset": 12922704
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 305,
+      "dex_byte_offset": 12922738
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BQa;->A1R(LX/0H0c;LX/08xz;Ljava/lang/String;)V",
+      "code_unit_offset": 312,
+      "dex_byte_offset": 12922752
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 321,
+      "dex_byte_offset": 12922770
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/021R;->A0v(Ljava/lang/Object;)Ljava/lang/String;",
+      "code_unit_offset": 327,
+      "dex_byte_offset": 12922782
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05B6;->getBaseAnalyticsModule()LX/0Eto;",
+      "code_unit_offset": 331,
+      "dex_byte_offset": 12922790
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0aLt;->A03(LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V",
+      "code_unit_offset": 335,
+      "dex_byte_offset": 12922798
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 340,
+      "dex_byte_offset": 12922808
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05B6;->getBaseAnalyticsModule()LX/0Eto;",
+      "code_unit_offset": 344,
+      "dex_byte_offset": 12922816
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y0J;->A08()Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 350,
+      "dex_byte_offset": 12922828
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0127;->A0p(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;",
+      "code_unit_offset": 358,
+      "dex_byte_offset": 12922844
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0LEK;->A04(LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/Map;)V",
+      "code_unit_offset": 362,
+      "dex_byte_offset": 12922852
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00dQ;->A0R(Landroid/view/View;I)V",
+      "code_unit_offset": 377,
+      "dex_byte_offset": 12922882
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/020p;->A0Q(LX/0Jzl;)Lcom/instagram/common/session/UserSession;",
+      "code_unit_offset": 382,
+      "dex_byte_offset": 12922892
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Y5A;->A00(Lcom/instagram/common/session/UserSession;)LX/0Y5A;",
+      "code_unit_offset": 386,
+      "dex_byte_offset": 12922900
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroidx/fragment/app/Fragment;->requireContext()Landroid/content/Context;",
+      "code_unit_offset": 390,
+      "dex_byte_offset": 12922908
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroidx/loader/app/LoaderManager;->A00(LX/000Y;)LX/00py;",
+      "code_unit_offset": 394,
+      "dex_byte_offset": 12922916
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0a(Ljava/lang/String;)V",
+      "code_unit_offset": 404,
+      "dex_byte_offset": 12922936
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0002;->createAndThrow()LX/0002;",
+      "code_unit_offset": 407,
+      "dex_byte_offset": 12922942
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0SFE;-><init>(LX/0SDw;)V",
+      "code_unit_offset": 414,
+      "dex_byte_offset": 12922956
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lcom/instagram/feed/media/Media;->AU4(Ljava/lang/String;I)LX/0D9e;",
+      "code_unit_offset": 424,
+      "dex_byte_offset": 12922976
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V",
+      "code_unit_offset": 429,
+      "dex_byte_offset": 12922986
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V",
+      "code_unit_offset": 432,
+      "dex_byte_offset": 12922992
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0061;->A08(LX/0D9e;II)LX/0D9e;",
+      "code_unit_offset": 439,
+      "dex_byte_offset": 12923006
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0D9e;->Cux(I)LX/0D9e;",
+      "code_unit_offset": 446,
+      "dex_byte_offset": 12923020
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0799;->A11(LX/0D9e;)Ljava/lang/String;",
+      "code_unit_offset": 452,
+      "dex_byte_offset": 12923032
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0221;->A0J(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;",
+      "code_unit_offset": 464,
+      "dex_byte_offset": 12923056
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/000H;->A0L(LX/0D9e;)Ljava/lang/String;",
+      "code_unit_offset": 468,
+      "dex_byte_offset": 12923064
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BUH;->A1D(LX/04x6;Ljava/lang/Object;)V",
+      "code_unit_offset": 472,
+      "dex_byte_offset": 12923072
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0222;->A0q(LX/0D9e;)Ljava/lang/String;",
+      "code_unit_offset": 477,
+      "dex_byte_offset": 12923082
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/04x6;->AQE(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 481,
+      "dex_byte_offset": 12923090
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/04x6;->AQE(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 486,
+      "dex_byte_offset": 12923100
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/04x6;->A0G(Ljava/lang/String;Z)V",
+      "code_unit_offset": 491,
+      "dex_byte_offset": 12923110
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0000;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 496,
+      "dex_byte_offset": 12923120
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0221;->A0V(LX/04x5;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;",
+      "code_unit_offset": 502,
+      "dex_byte_offset": 12923132
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Ah1;-><init>(Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 508,
+      "dex_byte_offset": 12923144
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/09AD;->A09(LX/05BI;)V",
+      "code_unit_offset": 515,
+      "dex_byte_offset": 12923158
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/02uh;->A00(Landroid/content/Context;Landroidx/loader/app/LoaderManager;LX/0oke;)I",
+      "code_unit_offset": 518,
+      "dex_byte_offset": 12923164
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Jzl;->getValue()Ljava/lang/Object;",
+      "code_unit_offset": 528,
+      "dex_byte_offset": 12923184
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A09(Ljava/lang/Object;)V",
+      "code_unit_offset": 540,
+      "dex_byte_offset": 12923208
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0D4X;-><init>(Ljava/lang/String;I)V",
+      "code_unit_offset": 549,
+      "dex_byte_offset": 12923226
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0ynL;->getValue()Ljava/lang/Object;",
+      "code_unit_offset": 554,
+      "dex_byte_offset": 12923236
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 558,
+      "dex_byte_offset": 12923244
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0ynL;->HUn(Ljava/lang/Object;)V",
+      "code_unit_offset": 562,
+      "dex_byte_offset": 12923252
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0QI0;->A01(LX/0UEF;LX/0ynL;)Z",
+      "code_unit_offset": 567,
+      "dex_byte_offset": 12923262
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroid/content/DialogInterface;->dismiss()V",
+      "code_unit_offset": 573,
+      "dex_byte_offset": 12923274
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroid/content/DialogInterface;->dismiss()V",
+      "code_unit_offset": 577,
+      "dex_byte_offset": 12923282
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0ArG;->A11()LX/0AUg;",
+      "code_unit_offset": 592,
+      "dex_byte_offset": 12923312
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0IFz;->A00(LX/0DDx;LX/0IFy;LX/0DDy;LX/0AUg;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 596,
+      "dex_byte_offset": 12923320
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0YHi;->A00(LX/0IFy;LX/0YHi;Ljava/lang/String;)V",
+      "code_unit_offset": 607,
+      "dex_byte_offset": 12923342
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0aGS;->A07(Landroid/content/Context;LX/0UIN;Lcom/instagram/common/session/UserSession;Z)V",
+      "code_unit_offset": 623,
+      "dex_byte_offset": 12923374
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0ZiY;->A00(LX/0IFy;LX/0ZiY;Ljava/lang/String;)V",
+      "code_unit_offset": 634,
+      "dex_byte_offset": 12923396
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BRD;->A0m()LX/06ls;",
+      "code_unit_offset": 646,
+      "dex_byte_offset": 12923420
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BSI;->A1S(LX/0DDy;Lcom/facebook/graphql/calls/GraphQlCallInput;)V",
+      "code_unit_offset": 652,
+      "dex_byte_offset": 12923432
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BSI;->A1R(LX/0DDx;Lcom/facebook/graphql/calls/GraphQlCallInput;)V",
+      "code_unit_offset": 659,
+      "dex_byte_offset": 12923446
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/02MW;->A0I(LX/06ls;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V",
+      "code_unit_offset": 664,
+      "dex_byte_offset": 12923456
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroidx/fragment/app/Fragment;->requireContext()Landroid/content/Context;",
+      "code_unit_offset": 671,
+      "dex_byte_offset": 12923470
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0aGS;->A07(Landroid/content/Context;LX/0UIN;Lcom/instagram/common/session/UserSession;Z)V",
+      "code_unit_offset": 675,
+      "dex_byte_offset": 12923478
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0ZiY;->A00(LX/0IFy;LX/0ZiY;Ljava/lang/String;)V",
+      "code_unit_offset": 686,
+      "dex_byte_offset": 12923500
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroidx/fragment/app/Fragment;->requireContext()Landroid/content/Context;",
+      "code_unit_offset": 698,
+      "dex_byte_offset": 12923524
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0aGS;->A07(Landroid/content/Context;LX/0UIN;Lcom/instagram/common/session/UserSession;Z)V",
+      "code_unit_offset": 706,
+      "dex_byte_offset": 12923540
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Ale;-><init>(Ljava/lang/Object;)V",
+      "code_unit_offset": 728,
+      "dex_byte_offset": 12923584
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/00iq;->A0A(Ljava/lang/Object;)V",
+      "code_unit_offset": 731,
+      "dex_byte_offset": 12923590
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0Bj8;->A05(LX/0WEL;Ljava/lang/String;Z)V",
+      "code_unit_offset": 750,
+      "dex_byte_offset": 12923628
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/08xv;->A0P(Ljava/lang/Integer;Ljava/lang/String;)V",
+      "code_unit_offset": 775,
+      "dex_byte_offset": 12923678
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 785,
+      "dex_byte_offset": 12923698
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/08xz;->A1D(LX/043C;Ljava/lang/String;)V",
+      "code_unit_offset": 795,
+      "dex_byte_offset": 12923718
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/05s2;->A0R(Ljava/lang/Object;)V",
+      "code_unit_offset": 799,
+      "dex_byte_offset": 12923726
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 806,
+      "dex_byte_offset": 12923740
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BQa;->A1R(LX/0H0c;LX/08xz;Ljava/lang/String;)V",
+      "code_unit_offset": 813,
+      "dex_byte_offset": 12923754
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 820,
+      "dex_byte_offset": 12923768
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0064;->A1E(Ljava/lang/Object;)V",
+      "code_unit_offset": 826,
+      "dex_byte_offset": 12923780
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 833,
+      "dex_byte_offset": 12923794
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0064;->A1E(Ljava/lang/Object;)V",
+      "code_unit_offset": 843,
+      "dex_byte_offset": 12923814
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0123;->A0W(Lcom/instagram/common/session/UserSession;)LX/08xz;",
+      "code_unit_offset": 850,
+      "dex_byte_offset": 12923828
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0BQa;->A1R(LX/0H0c;LX/08xz;Ljava/lang/String;)V",
+      "code_unit_offset": 857,
+      "dex_byte_offset": 12923842
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Linstagram/features/direct/fragment/recipientpicker/controller/DirectPrivateStoryRecipientController;->A0A(Lcom/instagram/model/direct/DirectShareTarget;Linstagram/features/direct/fragment/recipientpicker/controller/DirectPrivateStoryRecipientController;)V",
+      "code_unit_offset": 869,
+      "dex_byte_offset": 12923866
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "Linstagram/features/direct/fragment/recipientpicker/controller/DirectPrivateStoryRecipientController;->A0E(Linstagram/features/direct/fragment/recipientpicker/controller/DirectPrivateStoryRecipientController;)V",
+      "code_unit_offset": 875,
+      "dex_byte_offset": 12923878
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0gej;->A00(LX/0TRm;)V",
+      "code_unit_offset": 895,
+      "dex_byte_offset": 12923918
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/0fvN;-><init>(LX/0SDM;)V",
+      "code_unit_offset": 900,
+      "dex_byte_offset": 12923928
+    },
+    {
+      "dex": "classes14.dex",
+      "caller": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "callee": "LX/02bo;->A01(Ljava/lang/Runnable;)V",
+      "code_unit_offset": 903,
+      "dex_byte_offset": 12923934
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 9,
+      "dex_byte_offset": 3452698
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 23,
+      "dex_byte_offset": 3452726
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 37,
+      "dex_byte_offset": 3452754
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 51,
+      "dex_byte_offset": 3452782
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 63,
+      "dex_byte_offset": 3452806
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 75,
+      "dex_byte_offset": 3452830
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 87,
+      "dex_byte_offset": 3452854
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 99,
+      "dex_byte_offset": 3452878
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 112,
+      "dex_byte_offset": 3452904
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 125,
+      "dex_byte_offset": 3452930
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 138,
+      "dex_byte_offset": 3452956
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 152,
+      "dex_byte_offset": 3452984
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 165,
+      "dex_byte_offset": 3453010
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 179,
+      "dex_byte_offset": 3453038
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 193,
+      "dex_byte_offset": 3453066
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 206,
+      "dex_byte_offset": 3453092
+    },
+    {
+      "dex": "classes18.dex",
+      "caller": "LX/0gkb;-><clinit>()V",
+      "callee": "LX/0gkb;-><init>(Ljava/lang/String;ILjava/lang/String;)V",
+      "code_unit_offset": 219,
+      "dex_byte_offset": 3453118
+    },
+    {
+      "dex": "classes9.dex",
+      "caller": "LX/056P;-><clinit>()V",
+      "callee": "LX/020p;->A0s(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)LX/05s5;",
+      "code_unit_offset": 7,
+      "dex_byte_offset": 2299694
+    },
+    {
+      "dex": "classes9.dex",
+      "caller": "LX/056P;-><clinit>()V",
+      "callee": "LX/05Mj;->A06(Ljava/lang/String;Z)LX/05My;",
+      "code_unit_offset": 20,
+      "dex_byte_offset": 2299720
+    }
+  ],
+  "nearby_method_strings": [
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0XnY;-><clinit>()V",
+      "code_unit_offset": 1,
+      "value": "hasSeenLongReelsRestrictedDistributionNux"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0XnY;-><clinit>()V",
+      "code_unit_offset": 3,
+      "value": "getHasSeenLongReelsRestrictedDistributionNux(Lcom/instagram/preferences/user/UserPreferences;)Z"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0XnY;-><clinit>()V",
+      "code_unit_offset": 18,
+      "value": "has_seen_long_reels_restricted_distribution_nux"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 52,
+      "value": "PRE_RELEASE_NOTIFICATION_SELECTION_SHEET"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 54,
+      "value": "entity"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 59,
+      "value": "DISMISS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 61,
+      "value": "nux_step"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 82,
+      "value": "audio_cluster_id"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 169,
+      "value": "DISMISS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 194,
+      "value": "DISMISS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 230,
+      "value": "MAX_UPLOAD_LIMIT_EXCEEDED_CLOSE_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 242,
+      "value": "DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 264,
+      "value": "inactive_state_dialog"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 266,
+      "value": "share_on_surface_dialog"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 315,
+      "value": "inactive_state_dialog"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0adL;->onCancel(Landroid/content/DialogInterface;)V",
+      "code_unit_offset": 317,
+      "value": "story_settings"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 9,
+      "value": "dismiss"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 65,
+      "value": "continue"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 83,
+      "value": "action_type"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 112,
+      "value": "ad_toggle"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 155,
+      "value": "itas-android"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 216,
+      "value": "instagram_bc_boost_code_access_token_disable"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 231,
+      "value": "media_id"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 236,
+      "value": "sponsor_igid"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 249,
+      "value": "Save draft"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 274,
+      "value": "CANCEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 297,
+      "value": "continue"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 310,
+      "value": "DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 338,
+      "value": "cancel"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 356,
+      "value": "action_type"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 402,
+      "value": "editMedia"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 422,
+      "value": "itas-android"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 458,
+      "value": ""
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 475,
+      "value": "title"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 484,
+      "value": "caption_text"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 489,
+      "value": "igtv_ads_toggled_on"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 500,
+      "value": "0"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 662,
+      "value": "UPSELL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 748,
+      "value": "ig_replace_captions"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 762,
+      "value": "Cancel"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 773,
+      "value": "OK"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 789,
+      "value": "LINKED_MEDIA_UNLINK_DIALOG_CANCEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 810,
+      "value": "RESUME_DRAFT_EXIT_DIALOG_DISCARD_EDITS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 838,
+      "value": "MAX_UPLOAD_LIMIT_EXCEEDED_DRAFT_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 855,
+      "value": "DISTRIBUTION_LIMIT_WARNING_SHARE_TAPPED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method": "LX/0afq;->onClick(Landroid/content/DialogInterface;I)V",
+      "code_unit_offset": 883,
+      "value": "dismiss"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 1,
+      "value": "click"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 3,
+      "value": "CLICK"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 15,
+      "value": "impression"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 17,
+      "value": "IMPRESSION"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 29,
+      "value": "ig_only_impression"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 31,
+      "value": "IG_ONLY_IMPRESSION"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 43,
+      "value": "metric_impression"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 45,
+      "value": "METRIC_IMPRESSION"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 57,
+      "value": "metric_driven_engagement"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 59,
+      "value": "METRIC_DRIVEN_ENGAGEMENT"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 69,
+      "value": "lwi_upsell_eligibility_failure"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 71,
+      "value": "LWI_UPSELL_ELIGIBILITY_FAILURE"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 81,
+      "value": "lwi_upsell_creation_success"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 83,
+      "value": "LWI_UPSELL_CREATION_SUCCESS"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 93,
+      "value": "mbs_insights_eligibility"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 95,
+      "value": "MBS_INSIGHTS_RECOMMENDATION_ELIGIBILITY"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 106,
+      "value": "ig_insights_ad_upsell"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 108,
+      "value": "IG_INSIGHTS_AD_UPSELL"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 119,
+      "value": "ss_experiment_storage_gk_exposure_check"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 121,
+      "value": "SS_EXP_STORAGE_GK_EXPOSURE_CHECK"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 132,
+      "value": "ss_experiment_qe_exposure_log"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 134,
+      "value": "SS_EXP_QE_EXPOSURE_LOG"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 145,
+      "value": "view_insights_failure"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 148,
+      "value": "VIEW_INSIGHTS_QUERY_FAILURE"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 159,
+      "value": "async_metric_logging_failure"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 161,
+      "value": "ASYNC_METRIC_LOGGING_FAILURE"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 172,
+      "value": "view_insights_performance_button_click_log_failure"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 175,
+      "value": "VIEW_INSIGHTS_PERFORMANCE_BUTTON_CLICK_LOG_FAILURE"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 186,
+      "value": "view_insights_performance_button_click"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 189,
+      "value": "VIEW_INSIGHTS_PERFORMANCE_BUTTON_CLICK"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 200,
+      "value": "prodash_eligibility_checked"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 202,
+      "value": "PRODASH_ELIGIBILITY_CHECKED"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 213,
+      "value": "render_attempt"
+    },
+    {
+      "dex": "classes18.dex",
+      "method": "LX/0gkb;-><clinit>()V",
+      "code_unit_offset": 215,
+      "value": "RENDER_ATTEMPT"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/056P;-><clinit>()V",
+      "code_unit_offset": 1,
+      "value": "hasSeenLongReelsDialogNux"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/056P;-><clinit>()V",
+      "code_unit_offset": 3,
+      "value": "getHasSeenLongReelsDialogNux(Lcom/instagram/preferences/user/UserPreferences;)Z"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/056P;-><clinit>()V",
+      "code_unit_offset": 18,
+      "value": "HAS_SEEN_LONG_REELS_DIALOG_NUX"
+    }
+  ],
+  "errors": []
+}

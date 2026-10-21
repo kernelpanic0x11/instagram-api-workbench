@@ -1,0 +1,3006 @@
+{
+  "scope": "base.apk root classes*.dex; correctly decoded instruction boundaries; const-string and const-string/jumbo only",
+  "stats": {
+    "dex_files": 23,
+    "matching_strings": 122,
+    "methods_with_code": 807462,
+    "decoded_methods": 807462
+  },
+  "hits": [
+    {
+      "dex": "classes.dex",
+      "method_index": 0,
+      "method": "LX/0000;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 10787,
+      "dex_byte_offset": 3815546,
+      "string_index": 48547,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 0,
+      "method": "LX/0000;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 13842,
+      "dex_byte_offset": 3821656,
+      "string_index": 40208,
+      "value": "PREFERENCE_REELS_AUTO_RECOMMEND_ON_FACEBOOK_LAST_CHANGED_MS"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 14716,
+      "method": "LX/03bv;->A04(Landroid/app/Activity;LX/02yV;LX/03bv;LX/02qe;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V",
+      "code_unit_offset": 419,
+      "dex_byte_offset": 5727738,
+      "string_index": 48547,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 29532,
+      "method": "LX/06up;-><clinit>()V",
+      "code_unit_offset": 10869,
+      "dex_byte_offset": 3699658,
+      "string_index": 6388,
+      "value": "BEST_PRACTICE_TRIAL_REELS"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 29532,
+      "method": "LX/06up;-><clinit>()V",
+      "code_unit_offset": 11424,
+      "dex_byte_offset": 3700768,
+      "string_index": 43065,
+      "value": "TRIAL_REEL_GALLERY_VIEW"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 32460,
+      "method": "LX/07qw;->GpE(Lcom/instagram/pendingmedia/model/CreationFailure;LX/03oB;)V",
+      "code_unit_offset": 46,
+      "dex_byte_offset": 8258184,
+      "string_index": 59270,
+      "value": "is_high_quality_upload_on"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33012,
+      "method": "LX/07vj;->A00(LX/07xb;LX/07vj;)LX/02iO;",
+      "code_unit_offset": 28,
+      "dex_byte_offset": 8322732,
+      "string_index": 40212,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33137,
+      "method": "LX/07xa;->A01()I",
+      "code_unit_offset": 2,
+      "dex_byte_offset": 8338020,
+      "string_index": 40212,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33137,
+      "method": "LX/07xa;->A01()I",
+      "code_unit_offset": 11,
+      "dex_byte_offset": 8338038,
+      "string_index": 40213,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33146,
+      "method": "LX/07xa;->A0A(Z)V",
+      "code_unit_offset": 9,
+      "dex_byte_offset": 8338630,
+      "string_index": 40214,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33146,
+      "method": "LX/07xa;->A0A(Z)V",
+      "code_unit_offset": 19,
+      "dex_byte_offset": 8338650,
+      "string_index": 40211,
+      "value": "PREFERENCE_REELS_IS_AUTO_RECOMMEND_ON_FACEBOOK_ENABLED"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33146,
+      "method": "LX/07xa;->A0A(Z)V",
+      "code_unit_offset": 35,
+      "dex_byte_offset": 8338682,
+      "string_index": 40208,
+      "value": "PREFERENCE_REELS_AUTO_RECOMMEND_ON_FACEBOOK_LAST_CHANGED_MS"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33147,
+      "method": "LX/07xa;->A0B(Z)V",
+      "code_unit_offset": 6,
+      "dex_byte_offset": 8338736,
+      "string_index": 40216,
+      "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 33148,
+      "method": "LX/07xa;->A0C()Z",
+      "code_unit_offset": 11,
+      "dex_byte_offset": 8338794,
+      "string_index": 40211,
+      "value": "PREFERENCE_REELS_IS_AUTO_RECOMMEND_ON_FACEBOOK_ENABLED"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 36129,
+      "method": "LX/08ww;->A0C(Ljava/lang/String;)LX/03hU;",
+      "code_unit_offset": 162,
+      "dex_byte_offset": 8712200,
+      "string_index": 12187,
+      "value": "FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 10658,
+      "method": "LX/0Fw7;->A00(Ljava/lang/String;LX/0Pmx;I)Ljava/lang/Object;",
+      "code_unit_offset": 114,
+      "dex_byte_offset": 5570476,
+      "string_index": 43210,
+      "value": "xdt_user_trial_reels_graphql"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 40143,
+      "method": "Lcom/instagram/direct/request/DirectThreadApi;->A06(Lcom/instagram/common/session/UserSession;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;IZ)LX/02sG;",
+      "code_unit_offset": 47,
+      "dex_byte_offset": 2722118,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 13381,
+      "method": "LX/0HEI;->Hhh(LX/02at;)Ljava/util/Map;",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 3910936,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14228,
+      "method": "LX/0HPW;->Ger()LX/02wl;",
+      "code_unit_offset": 41,
+      "dex_byte_offset": 3695230,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14268,
+      "method": "LX/0HPu;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "code_unit_offset": 344,
+      "dex_byte_offset": 4840364,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14418,
+      "method": "LX/0HQs;->A0E(LX/0HQs;)V",
+      "code_unit_offset": 198,
+      "dex_byte_offset": 5230924,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14939,
+      "method": "LX/0HSs;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 46,
+      "dex_byte_offset": 4079484,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14947,
+      "method": "LX/0HSt;->A03(Lcom/instagram/common/session/UserSession;LX/0MFQ;Lcom/instagram/direct/messagethread/nullstate/threaddata/theme/ThemeViewModelDelegate;Lcom/instagram/model/direct/DirectThreadKey;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;[IIIZZ)LX/0HSt;",
+      "code_unit_offset": 39,
+      "dex_byte_offset": 4284470,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14949,
+      "method": "LX/0HSt;->A05(LX/0HSt;Lcom/instagram/direct/model/DirectThreadThemeInfo;Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V",
+      "code_unit_offset": 38,
+      "dex_byte_offset": 5079128,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 14989,
+      "method": "LX/0HSt;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 83,
+      "dex_byte_offset": 4870262,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 15021,
+      "method": "LX/0HSu;->Ger()LX/02wl;",
+      "code_unit_offset": 38,
+      "dex_byte_offset": 3695376,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 15026,
+      "method": "LX/0HSu;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 89,
+      "dex_byte_offset": 4099978,
+      "string_index": 31517,
+      "value": "direct_emoji_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 15292,
+      "method": "LX/0HTt;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 174,
+      "dex_byte_offset": 5498040,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 15780,
+      "method": "LX/0HdF;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 46,
+      "dex_byte_offset": 4871564,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 16102,
+      "method": "LX/0HqH;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "code_unit_offset": 26,
+      "dex_byte_offset": 4090580,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 16929,
+      "method": "LX/0HtF;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 103,
+      "dex_byte_offset": 5319710,
+      "string_index": 31725,
+      "value": "direct_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 17145,
+      "method": "LX/0Hu5;->A00(Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IIIIZZZZZ)LX/0Hu5;",
+      "code_unit_offset": 53,
+      "dex_byte_offset": 4283090,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 17264,
+      "method": "LX/0HvB;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 204,
+      "dex_byte_offset": 5469096,
+      "string_index": 3865,
+      "value": "DirectThreadMemberPickFragment.AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 17391,
+      "method": "LX/0HwV;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 178,
+      "dex_byte_offset": 4899536,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 18148,
+      "method": "LX/0IKa;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 78,
+      "dex_byte_offset": 3282020,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 18497,
+      "method": "LX/0ISv;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 35,
+      "dex_byte_offset": 3294794,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 19046,
+      "method": "LX/0J0x;->A00(LX/04s2;Lcom/instagram/direct/model/DirectForwardingParams;Z)V",
+      "code_unit_offset": 93,
+      "dex_byte_offset": 3759098,
+      "string_index": 32537,
+      "value": "forwarded_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 19047,
+      "method": "LX/0J0x;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 238,
+      "dex_byte_offset": 4734884,
+      "string_index": 32537,
+      "value": "forwarded_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 19575,
+      "method": "LX/0JJR;->A02()LX/00fh;",
+      "code_unit_offset": 26,
+      "dex_byte_offset": 4170276,
+      "string_index": 31725,
+      "value": "direct_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 19576,
+      "method": "LX/0JJX;->A02()LX/00fh;",
+      "code_unit_offset": 197,
+      "dex_byte_offset": 4895698,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 21295,
+      "method": "LX/0L8s;->A00(Lcom/instagram/common/session/UserSession;Lcom/instagram/direct/capabilities/Capabilities;Lcom/instagram/model/direct/DirectThreadKey;LX/01rv;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IIIZZ)LX/0L8s;",
+      "code_unit_offset": 66,
+      "dex_byte_offset": 4284852,
+      "string_index": 31517,
+      "value": "direct_emoji_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 23832,
+      "method": "LX/0O2C;->A02(LX/0MK1;LX/0MN9;Lcom/instagram/model/direct/DirectThreadKey;II)V",
+      "code_unit_offset": 26,
+      "dex_byte_offset": 4409196,
+      "string_index": 31725,
+      "value": "direct_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 24021,
+      "method": "LX/0OFQ;->A00(Landroid/content/Context;Landroidx/fragment/app/FragmentActivity;Lcom/instagram/common/session/UserSession;LX/0VA3;Lcom/instagram/direct/messagethread/nullstate/threaddata/theme/ThemeViewModelDelegate;Lcom/instagram/model/direct/DirectThreadKey;Ljava/lang/String;IIZ)V",
+      "code_unit_offset": 60,
+      "dex_byte_offset": 5072388,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 25878,
+      "method": "LX/0PZY;->A02(Landroid/content/Context;LX/0Eto;Lcom/instagram/common/session/UserSession;LX/0FyI;Ljava/lang/String;)V",
+      "code_unit_offset": 103,
+      "dex_byte_offset": 5072942,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 26488,
+      "method": "LX/0PkY;->A01(Landroid/content/Context;Landroidx/fragment/app/FragmentActivity;LX/0Eto;Lcom/instagram/common/session/UserSession;LX/0FyI;LX/0BVS;Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;)V",
+      "code_unit_offset": 413,
+      "dex_byte_offset": 5493558,
+      "string_index": 3865,
+      "value": "DirectThreadMemberPickFragment.AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 26973,
+      "method": "LX/0PpO;->onClick(Landroid/view/View;)V",
+      "code_unit_offset": 739,
+      "dex_byte_offset": 5547446,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 27052,
+      "method": "LX/0Pqh;->onClick(Landroid/view/View;)V",
+      "code_unit_offset": 3523,
+      "dex_byte_offset": 5861870,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 27100,
+      "method": "LX/0Pqt;->onClick(Landroid/view/View;)V",
+      "code_unit_offset": 3324,
+      "dex_byte_offset": 5851500,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 27907,
+      "method": "LX/0Pzr;->Ger()LX/02wl;",
+      "code_unit_offset": 35,
+      "dex_byte_offset": 3701462,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 29694,
+      "method": "LX/0Qif;->Ex4(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V",
+      "code_unit_offset": 269,
+      "dex_byte_offset": 5086098,
+      "string_index": 31470,
+      "value": "direct_channel_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 29947,
+      "method": "LX/0Qjy;->FPz(Landroid/view/View;Landroid/view/View;Lcom/instagram/model/direct/messageid/MessageIdentifier;Z)V",
+      "code_unit_offset": 178,
+      "dex_byte_offset": 5187380,
+      "string_index": 31517,
+      "value": "direct_emoji_thread_audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 30008,
+      "method": "LX/0Qkl;->A00(LX/02CY;LX/0Qkl;)V",
+      "code_unit_offset": 250,
+      "dex_byte_offset": 5231728,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 31284,
+      "method": "LX/0Qzz;->B2B(Landroid/os/Bundle;Landroidx/fragment/app/FragmentActivity;Lcom/instagram/common/session/UserSession;LX/04L6;)V",
+      "code_unit_offset": 63,
+      "dex_byte_offset": 4283690,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 33701,
+      "method": "LX/0Sni;->run()V",
+      "code_unit_offset": 43,
+      "dex_byte_offset": 4118358,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 35514,
+      "method": "LX/0Uax;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 772,
+      "dex_byte_offset": 5955636,
+      "string_index": 3542,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 35524,
+      "method": "LX/0Ubb;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 25,
+      "dex_byte_offset": 3865278,
+      "string_index": 30175,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 35564,
+      "method": "LX/0Ubu;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 462,
+      "dex_byte_offset": 5569716,
+      "string_index": 32499,
+      "value": "followers_only_toggled"
+    },
+    {
+      "dex": "classes12.dex",
+      "method_index": 41787,
+      "method": "Lcom/instagram/urlhandlers/live/LiveExternalUrlHandlerActivity;->A2V(Landroid/os/Bundle;Landroid/os/Bundle;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 102,
+      "dex_byte_offset": 4430088,
+      "string_index": 28550,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes12.dex",
+      "method_index": 21776,
+      "method": "LX/0PLW;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 678,
+      "dex_byte_offset": 4727112,
+      "string_index": 28550,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes12.dex",
+      "method_index": 23399,
+      "method": "LX/0QeM;->A00(Landroid/app/Activity;Landroid/net/Uri;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 5,
+      "dex_byte_offset": 5347926,
+      "string_index": 28550,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes12.dex",
+      "method_index": 23399,
+      "method": "LX/0QeM;->A00(Landroid/app/Activity;Landroid/net/Uri;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 77,
+      "dex_byte_offset": 5348070,
+      "string_index": 35508,
+      "value": "show_audience_type_selector"
+    },
+    {
+      "dex": "classes12.dex",
+      "method_index": 24395,
+      "method": "LX/0RfQ;->A04(Landroidx/fragment/app/FragmentActivity;Lcom/instagram/common/session/UserSession;LX/0Eto;Ljava/lang/String;Ljava/lang/String;)LX/0JWe;",
+      "code_unit_offset": 121,
+      "dex_byte_offset": 4088906,
+      "string_index": 34507,
+      "value": "recommend_on_facebook_primer"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19165,
+      "method": "LX/0RCK;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 492,
+      "dex_byte_offset": 12381660,
+      "string_index": 1614,
+      "value": "ARG_CLIPS_SHARE_SHEET_IS_TRIAL_REEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19785,
+      "method": "LX/0REZ;->A00(LX/0TMM;LX/0DDx;LX/0DDy;Lcom/instagram/share/facebook/model/FBReelsAudienceType;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)LX/0REZ;",
+      "code_unit_offset": 32,
+      "dex_byte_offset": 12063176,
+      "string_index": 48236,
+      "value": "fb_reels_audience_type_arg"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19785,
+      "method": "LX/0REZ;->A00(LX/0TMM;LX/0DDx;LX/0DDy;Lcom/instagram/share/facebook/model/FBReelsAudienceType;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)LX/0REZ;",
+      "code_unit_offset": 41,
+      "dex_byte_offset": 12063194,
+      "string_index": 56885,
+      "value": "threads_reels_audience_type_arg"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19788,
+      "method": "LX/0REZ;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "code_unit_offset": 92,
+      "dex_byte_offset": 12409036,
+      "string_index": 56885,
+      "value": "threads_reels_audience_type_arg"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19788,
+      "method": "LX/0REZ;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "code_unit_offset": 130,
+      "dex_byte_offset": 12409112,
+      "string_index": 48236,
+      "value": "fb_reels_audience_type_arg"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19819,
+      "method": "LX/0REq;->A00(Landroid/content/Context;LX/000Y;LX/0REq;)V",
+      "code_unit_offset": 14,
+      "dex_byte_offset": 5800688,
+      "string_index": 53031,
+      "value": "instagram://education_hub?referrer=trials_page&start_tab=TRIAL_REELS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 19914,
+      "method": "LX/0RFY;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "code_unit_offset": 341,
+      "dex_byte_offset": 12393426,
+      "string_index": 6046,
+      "value": "IS_TRIAL_REEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 21040,
+      "method": "LX/0RJN;->A13(Landroid/content/Context;LX/0TFo;)V",
+      "code_unit_offset": 66,
+      "dex_byte_offset": 11952552,
+      "string_index": 53031,
+      "value": "instagram://education_hub?referrer=trials_page&start_tab=TRIAL_REELS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 22548,
+      "method": "LX/0Rys;->A0Q(Ljava/util/List;)V",
+      "code_unit_offset": 168,
+      "dex_byte_offset": 12749648,
+      "string_index": 33186,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 22548,
+      "method": "LX/0Rys;->A0Q(Ljava/util/List;)V",
+      "code_unit_offset": 272,
+      "dex_byte_offset": 12749856,
+      "string_index": 33186,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 23449,
+      "method": "LX/0SZa;->A0B(LX/0SZa;)V",
+      "code_unit_offset": 103,
+      "dex_byte_offset": 12498282,
+      "string_index": 33189,
+      "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 23449,
+      "method": "LX/0SZa;->A0B(LX/0SZa;)V",
+      "code_unit_offset": 110,
+      "dex_byte_offset": 12498296,
+      "string_index": 33185,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER_IMPRESSION_COUNT"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 23931,
+      "method": "LX/0TCM;-><clinit>()V",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 4259604,
+      "string_index": 4602,
+      "value": "FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 24295,
+      "method": "LX/0TGL;-><clinit>()V",
+      "code_unit_offset": 20,
+      "dex_byte_offset": 4270404,
+      "string_index": 33287,
+      "value": "PUBLIC_ACCOUNT_FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 24749,
+      "method": "LX/0TMK;-><clinit>()V",
+      "code_unit_offset": 20,
+      "dex_byte_offset": 4285364,
+      "string_index": 2779,
+      "value": "CREATE_NEW_TRIAL_REEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 24906,
+      "method": "LX/0TOB;-><clinit>()V",
+      "code_unit_offset": 209,
+      "dex_byte_offset": 4404510,
+      "string_index": 4603,
+      "value": "FOLLOWERS_ONLY_AUDIENCE_SELECTED"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 25048,
+      "method": "LX/0TQJ;-><clinit>()V",
+      "code_unit_offset": 37,
+      "dex_byte_offset": 4293618,
+      "string_index": 57029,
+      "value": "trial_reels"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 25048,
+      "method": "LX/0TQJ;-><clinit>()V",
+      "code_unit_offset": 39,
+      "dex_byte_offset": 4293622,
+      "string_index": 34453,
+      "value": "TRIAL_REELS"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 26855,
+      "method": "LX/0Wt1;->A00(LX/06up;LX/06up;Lcom/instagram/common/session/UserSession;LX/03hU;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;ZZZZZZZ)LX/0RCK;",
+      "code_unit_offset": 165,
+      "dex_byte_offset": 12064930,
+      "string_index": 1614,
+      "value": "ARG_CLIPS_SHARE_SHEET_IS_TRIAL_REEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 35208,
+      "method": "LX/0ajY;->onClick(Landroid/view/View;)V",
+      "code_unit_offset": 1752,
+      "dex_byte_offset": 13064332,
+      "string_index": 33185,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER_IMPRESSION_COUNT"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 35208,
+      "method": "LX/0ajY;->onClick(Landroid/view/View;)V",
+      "code_unit_offset": 2002,
+      "dex_byte_offset": 13064832,
+      "string_index": 33185,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER_IMPRESSION_COUNT"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 50675,
+      "method": "Linstagram/features/clips/edit/ClipsEditMetadataController;->A0B(Lcom/instagram/feed/media/Media;Linstagram/features/clips/edit/ClipsEditMetadataController;)V",
+      "code_unit_offset": 872,
+      "dex_byte_offset": 12872064,
+      "string_index": 6046,
+      "value": "IS_TRIAL_REEL"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 50710,
+      "method": "Linstagram/features/clips/edit/ClipsEditMetadataController;->onDestroyView()V",
+      "code_unit_offset": 107,
+      "dex_byte_offset": 11991102,
+      "string_index": 6046,
+      "value": "IS_TRIAL_REEL"
+    },
+    {
+      "dex": "classes15.dex",
+      "method_index": 10180,
+      "method": "LX/0E98;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 569,
+      "dex_byte_offset": 3481706,
+      "string_index": 31485,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_SHOULD_SHOW_CONSUMPTION_UPSELL"
+    },
+    {
+      "dex": "classes15.dex",
+      "method_index": 10180,
+      "method": "LX/0E98;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 588,
+      "dex_byte_offset": 3481744,
+      "string_index": 31484,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_REUSE_ORIGINAL_AUDIO"
+    },
+    {
+      "dex": "classes15.dex",
+      "method_index": 10180,
+      "method": "LX/0E98;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 607,
+      "dex_byte_offset": 3481782,
+      "string_index": 31486,
+      "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_INCENTIVES_CREATION_PRIMER"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 7190,
+      "method": "LX/0BSG;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 3393,
+      "dex_byte_offset": 3284594,
+      "string_index": 46796,
+      "value": "channel_education_audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 7190,
+      "method": "LX/0BSG;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 3450,
+      "dex_byte_offset": 3284708,
+      "string_index": 4346,
+      "value": "DirectThreadInviteLinkSettingsFragment.ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 9252,
+      "method": "LX/0D6T;->A05(LX/0bgW;LX/0I8R;LX/0bc9;LX/0TRn;LX/0bXN;LX/0bSN;LX/0beY;LX/0TOf;LX/0bcA;LX/0bgU;LX/0bgU;LX/0bcw;LX/0D6T;LX/0I9h;LX/0bHL;LX/05UL;LX/05UL;LX/05UL;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V",
+      "code_unit_offset": 436,
+      "dex_byte_offset": 3637596,
+      "string_index": 46285,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 9252,
+      "method": "LX/0D6T;->A05(LX/0bgW;LX/0I8R;LX/0bc9;LX/0TRn;LX/0bXN;LX/0bSN;LX/0beY;LX/0TOf;LX/0bcA;LX/0bgU;LX/0bgU;LX/0bcw;LX/0D6T;LX/0I9h;LX/0bHL;LX/05UL;LX/05UL;LX/05UL;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V",
+      "code_unit_offset": 590,
+      "dex_byte_offset": 3637904,
+      "string_index": 54236,
+      "value": "previous_audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 9252,
+      "method": "LX/0D6T;->A05(LX/0bgW;LX/0I8R;LX/0bc9;LX/0TRn;LX/0bXN;LX/0bSN;LX/0beY;LX/0TOf;LX/0bcA;LX/0bgU;LX/0bgU;LX/0bcw;LX/0D6T;LX/0I9h;LX/0bHL;LX/05UL;LX/05UL;LX/05UL;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V",
+      "code_unit_offset": 608,
+      "dex_byte_offset": 3637940,
+      "string_index": 44767,
+      "value": "active_audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 16370,
+      "method": "LX/0QR2;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 166,
+      "dex_byte_offset": 8198620,
+      "string_index": 46285,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 16370,
+      "method": "LX/0QR2;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 327,
+      "dex_byte_offset": 8198942,
+      "string_index": 46796,
+      "value": "channel_education_audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 28971,
+      "method": "LX/0ZIJ;->A02()LX/00fh;",
+      "code_unit_offset": 14,
+      "dex_byte_offset": 6126164,
+      "string_index": 46285,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 35024,
+      "method": "LX/0ghs;->A00(LX/0gYQ;LX/0obi;Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)LX/0YIr;",
+      "code_unit_offset": 35,
+      "dex_byte_offset": 5958494,
+      "string_index": 46285,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 47662,
+      "method": "LX/0nwf;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 890,
+      "dex_byte_offset": 8560448,
+      "string_index": 4346,
+      "value": "DirectThreadInviteLinkSettingsFragment.ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 42164,
+      "method": "Lcom/aiplatform/processors/stickeranything/ig/VideoStickerAnythingProcessor;->G7B(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 21,
+      "dex_byte_offset": 4214454,
+      "string_index": 47126,
+      "value": "media/configure_to_cutout_sticker/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 42167,
+      "method": "Lcom/aiplatform/processors/stickeranything/ig/VideoStickerAnythingProcessorV2;->G7B(Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 27,
+      "dex_byte_offset": 4214602,
+      "string_index": 47126,
+      "value": "media/configure_to_cutout_sticker/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 21628,
+      "method": "LX/0a49;->A03(Ljava/lang/Object;)V",
+      "code_unit_offset": 637,
+      "dex_byte_offset": 5854350,
+      "string_index": 47124,
+      "value": "media/configure_to_clips_cover_image/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 22360,
+      "method": "LX/0auu;-><init>()V",
+      "code_unit_offset": 4,
+      "dex_byte_offset": 4081784,
+      "string_index": 47127,
+      "value": "media/configure_to_longform/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 22361,
+      "method": "LX/0auv;-><init>()V",
+      "code_unit_offset": 3,
+      "dex_byte_offset": 3969778,
+      "string_index": 47133,
+      "value": "media/configure_to_story/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 15,
+      "dex_byte_offset": 2965950,
+      "string_index": 47117,
+      "value": "media/configure_sidecar/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 29,
+      "dex_byte_offset": 2965978,
+      "string_index": 47118,
+      "value": "media/configure_sidecar_children/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 43,
+      "dex_byte_offset": 2966006,
+      "string_index": 47129,
+      "value": "media/configure_to_nametag/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 57,
+      "dex_byte_offset": 2966034,
+      "string_index": 47116,
+      "value": "media/configure/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 100,
+      "dex_byte_offset": 2966120,
+      "string_index": 47123,
+      "value": "media/configure_to_clips/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 122,
+      "dex_byte_offset": 2966164,
+      "string_index": 47125,
+      "value": "media/configure_to_comment/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 135,
+      "dex_byte_offset": 2966190,
+      "string_index": 47128,
+      "value": "media/configure_to_media_kit_cover/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 148,
+      "dex_byte_offset": 2966216,
+      "string_index": 47119,
+      "value": "media/configure_text_only_post/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 161,
+      "dex_byte_offset": 2966242,
+      "string_index": 47120,
+      "value": "media/configure_text_post_app_feed/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 174,
+      "dex_byte_offset": 2966268,
+      "string_index": 47121,
+      "value": "media/configure_text_post_app_sidecar/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 200,
+      "dex_byte_offset": 2966320,
+      "string_index": 47130,
+      "value": "media/configure_to_open_carousel/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 213,
+      "dex_byte_offset": 2966346,
+      "string_index": 47126,
+      "value": "media/configure_to_cutout_sticker/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 226,
+      "dex_byte_offset": 2966372,
+      "string_index": 47134,
+      "value": "media/configure_to_story_template_asset/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 239,
+      "dex_byte_offset": 2966398,
+      "string_index": 47132,
+      "value": "media/configure_to_reusable_template_assets/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 265,
+      "dex_byte_offset": 2966450,
+      "string_index": 47131,
+      "value": "media/configure_to_quick_snap/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24415,
+      "method": "LX/0bm8;-><clinit>()V",
+      "code_unit_offset": 278,
+      "dex_byte_offset": 2966476,
+      "string_index": 47122,
+      "value": "media/configure_to_basel_elements/"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 25988,
+      "method": "LX/0flA;-><clinit>()V",
+      "code_unit_offset": 30,
+      "dex_byte_offset": 3024424,
+      "string_index": 41466,
+      "value": "clips_has_seen_public_account_followers_only_bottomsheet_tooltip"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 32388,
+      "method": "LX/0mBM;->GaG(LX/04s3;)LX/0NZz;",
+      "code_unit_offset": 26,
+      "dex_byte_offset": 4601344,
+      "string_index": 41898,
+      "value": "configure_to_clips returned an unparseable response"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 26706,
+      "method": "LX/0ffe;-><clinit>()V",
+      "code_unit_offset": 124,
+      "dex_byte_offset": 3430988,
+      "string_index": 47513,
+      "value": "TRIAL_REELS"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28078,
+      "method": "LX/0gSo;-><clinit>()V",
+      "code_unit_offset": 135,
+      "dex_byte_offset": 3427802,
+      "string_index": 47513,
+      "value": "TRIAL_REELS"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28406,
+      "method": "LX/0gfT;-><clinit>()V",
+      "code_unit_offset": 214,
+      "dex_byte_offset": 3482144,
+      "string_index": 44632,
+      "value": "RECOMMEND_ON_FACEBOOK"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28454,
+      "method": "LX/0gg8;-><clinit>()V",
+      "code_unit_offset": 11,
+      "dex_byte_offset": 3594402,
+      "string_index": 53165,
+      "value": "audience_type_opal"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28454,
+      "method": "LX/0gg8;-><clinit>()V",
+      "code_unit_offset": 13,
+      "dex_byte_offset": 3594406,
+      "string_index": 4151,
+      "value": "AUDIENCE_TYPE_OPAL"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 69,
+      "method": "LX/0005;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 4454,
+      "dex_byte_offset": 4352572,
+      "string_index": 76555,
+      "value": "share_to_fb_destination_audience_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 69,
+      "method": "LX/0005;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 6148,
+      "dex_byte_offset": 4355960,
+      "string_index": 74672,
+      "value": "recommend_on_facebook"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 9984,
+      "method": "LX/01hy;-><clinit>()V",
+      "code_unit_offset": 736,
+      "dex_byte_offset": 3922560,
+      "string_index": 74672,
+      "value": "recommend_on_facebook"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 9984,
+      "method": "LX/01hy;-><clinit>()V",
+      "code_unit_offset": 739,
+      "dex_byte_offset": 3922566,
+      "string_index": 52916,
+      "value": "RECOMMEND_ON_FACEBOOK"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 10821,
+      "method": "LX/01pO;->A02(LX/04s2;LX/01pQ;)V",
+      "code_unit_offset": 918,
+      "dex_byte_offset": 5754844,
+      "string_index": 59551,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 11497,
+      "method": "LX/01sJ;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 759,
+      "dex_byte_offset": 5865822,
+      "string_index": 59551,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 62609,
+      "method": "Lcom/instagram/quickpromotion/intf/QPTooltipAnchor;-><clinit>()V",
+      "code_unit_offset": 988,
+      "dex_byte_offset": 4013732,
+      "string_index": 74793,
+      "value": "reels_share_sheet_recommend_on_facebook_row"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 62609,
+      "method": "Lcom/instagram/quickpromotion/intf/QPTooltipAnchor;-><clinit>()V",
+      "code_unit_offset": 991,
+      "dex_byte_offset": 4013738,
+      "string_index": 53052,
+      "value": "REELS_SHARE_SHEET_RECOMMEND_ON_FACEBOOK_ROW"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 18023,
+      "method": "LX/03hU;-><clinit>()V",
+      "code_unit_offset": 43,
+      "dex_byte_offset": 4100946,
+      "string_index": 64853,
+      "value": "followers_only_rollcall"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 18023,
+      "method": "LX/03hU;-><clinit>()V",
+      "code_unit_offset": 86,
+      "dex_byte_offset": 4101032,
+      "string_index": 64852,
+      "value": "followers_only"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 18023,
+      "method": "LX/03hU;-><clinit>()V",
+      "code_unit_offset": 88,
+      "dex_byte_offset": 4101036,
+      "string_index": 11800,
+      "value": "FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 18703,
+      "method": "LX/03nZ;->A03(LX/04s2;LX/03oB;)V",
+      "code_unit_offset": 1570,
+      "dex_byte_offset": 6560596,
+      "string_index": 76555,
+      "value": "share_to_fb_destination_audience_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 18706,
+      "method": "LX/03nZ;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 4205,
+      "dex_byte_offset": 6580186,
+      "string_index": 76555,
+      "value": "share_to_fb_destination_audience_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 19030,
+      "method": "LX/03qE;-><clinit>()V",
+      "code_unit_offset": 41,
+      "dex_byte_offset": 4110446,
+      "string_index": 76555,
+      "value": "share_to_fb_destination_audience_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 24015,
+      "method": "LX/04pB;->A01()Ljava/lang/String;",
+      "code_unit_offset": 0,
+      "dex_byte_offset": 7219300,
+      "string_index": 15735,
+      "value": "INSERT OR REPLACE INTO `drafts` (`id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`audio_Track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`existing_fundraiser_to_attach`,`fundraiser_user_id`,`new_fundraiser_model`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`branded_content_tags_model`,`clips_shopping_metadata`,`has_published_clip`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`is_auto_resharing_to_story`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`reel_linked_longform`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`is_early_access`,`linked_series_id`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`basel_kit_id`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`background_color`,`mutation_clock`,`import_fallbacks`,`extension_drops`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 24016,
+      "method": "LX/04pB;->A05(LX/0RJ7;Ljava/lang/Object;)V",
+      "code_unit_offset": 663,
+      "dex_byte_offset": 7220650,
+      "string_index": 11800,
+      "value": "FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 40939,
+      "method": "LX/08vR;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 560,
+      "dex_byte_offset": 9396904,
+      "string_index": 52414,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 42958,
+      "method": "LX/0A5n;-><clinit>()V",
+      "code_unit_offset": 589,
+      "dex_byte_offset": 4335370,
+      "string_index": 74672,
+      "value": "recommend_on_facebook"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 42958,
+      "method": "LX/0A5n;-><clinit>()V",
+      "code_unit_offset": 592,
+      "dex_byte_offset": 4335376,
+      "string_index": 52916,
+      "value": "RECOMMEND_ON_FACEBOOK"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23586,
+      "method": "LX/0dlY;-><clinit>()V",
+      "code_unit_offset": 630,
+      "dex_byte_offset": 2858124,
+      "string_index": 51146,
+      "value": "graduate_trial_reel"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23586,
+      "method": "LX/0dlY;-><clinit>()V",
+      "code_unit_offset": 632,
+      "dex_byte_offset": 2858128,
+      "string_index": 14298,
+      "value": "GRADUATE_TRIAL_REEL"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23586,
+      "method": "LX/0dlY;-><clinit>()V",
+      "code_unit_offset": 786,
+      "dex_byte_offset": 2858436,
+      "string_index": 53566,
+      "value": "opt_in_auto_graduate_trial_reel"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23586,
+      "method": "LX/0dlY;-><clinit>()V",
+      "code_unit_offset": 788,
+      "dex_byte_offset": 2858440,
+      "string_index": 35415,
+      "value": "OPT_IN_AUTO_GRADUATE_TRIAL_REEL"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23586,
+      "method": "LX/0dlY;-><clinit>()V",
+      "code_unit_offset": 798,
+      "dex_byte_offset": 2858460,
+      "string_index": 53567,
+      "value": "opt_out_auto_graduate_trial_reel"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23586,
+      "method": "LX/0dlY;-><clinit>()V",
+      "code_unit_offset": 800,
+      "dex_byte_offset": 2858464,
+      "string_index": 35416,
+      "value": "OPT_OUT_AUTO_GRADUATE_TRIAL_REEL"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 24455,
+      "method": "LX/0hLC;->A0R(IS)Ljava/lang/String;",
+      "code_unit_offset": 8885,
+      "dex_byte_offset": 4926282,
+      "string_index": 32656,
+      "value": "NAVIGATION_CLIPS_AUDIENCE_CONTROL_FRAGMENT"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 2710,
+      "method": "LX/016q;->BnY(Landroid/content/Context;)LX/0F0o;",
+      "code_unit_offset": 378,
+      "dex_byte_offset": 4678424,
+      "string_index": 51099,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 3836,
+      "method": "LX/01JI;->Ger()LX/02wl;",
+      "code_unit_offset": 205,
+      "dex_byte_offset": 4882074,
+      "string_index": 51099,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 19598,
+      "method": "LX/05ZM;->A00(LX/04s2;LX/05ZZ;)V",
+      "code_unit_offset": 36,
+      "dex_byte_offset": 6558520,
+      "string_index": 51099,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 19602,
+      "method": "LX/05ZN;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 30,
+      "dex_byte_offset": 6559924,
+      "string_index": 51099,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 19675,
+      "method": "LX/05d9;->A02(LX/0Ka5;)Ljava/util/Map;",
+      "code_unit_offset": 13,
+      "dex_byte_offset": 6564338,
+      "string_index": 51099,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 23348,
+      "method": "LX/07EJ;->A00(Lcom/instagram/common/session/UserSession;)Ljava/util/LinkedHashMap;",
+      "code_unit_offset": 307,
+      "dex_byte_offset": 6956010,
+      "string_index": 44555,
+      "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 26995,
+      "method": "LX/08HH;-><clinit>()V",
+      "code_unit_offset": 47,
+      "dex_byte_offset": 3764858,
+      "string_index": 55609,
+      "value": "followers_only"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 26995,
+      "method": "LX/08HH;-><clinit>()V",
+      "code_unit_offset": 49,
+      "dex_byte_offset": 3764862,
+      "string_index": 11518,
+      "value": "FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 30064,
+      "method": "LX/09Eb;->B2a(Landroid/content/Context;LX/06up;Lcom/instagram/common/session/UserSession;Lcom/instagram/pendingmedia/model/constants/ShareType;Lcom/instagram/unifieddatamodel/gallery/MediaUploadMetadata;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;JZZZZ)LX/02sB;",
+      "code_unit_offset": 5094,
+      "dex_byte_offset": 7713276,
+      "string_index": 53096,
+      "value": "configure_to_clips"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 215,
+      "method": "LX/005P;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 3687,
+      "dex_byte_offset": 3987070,
+      "string_index": 67105,
+      "value": "trial_params"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 62427,
+      "method": "Lcom/instagram/feed/media/mediaoption/MediaOption$Option;-><clinit>()V",
+      "code_unit_offset": 2019,
+      "dex_byte_offset": 3715394,
+      "string_index": 11587,
+      "value": "GRADUATE_TRIAL_REEL"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 21727,
+      "method": "LX/08DV;-><clinit>()V",
+      "code_unit_offset": 5870,
+      "dex_byte_offset": 3763192,
+      "string_index": 67106,
+      "value": "trial_reel_learn_more"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 21727,
+      "method": "LX/08DV;-><clinit>()V",
+      "code_unit_offset": 5873,
+      "dex_byte_offset": 3763198,
+      "string_index": 45800,
+      "value": "TRIAL_REEL_LEARN_MORE"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 31849,
+      "method": "LX/0CsL;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 461,
+      "dex_byte_offset": 7212822,
+      "string_index": 67105,
+      "value": "trial_params"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 31998,
+      "method": "LX/0Cyq;-><clinit>()V",
+      "code_unit_offset": 12475,
+      "dex_byte_offset": 3873178,
+      "string_index": 45799,
+      "value": "TRIAL_REEL"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 31998,
+      "method": "LX/0Cyq;-><clinit>()V",
+      "code_unit_offset": 12488,
+      "dex_byte_offset": 3873204,
+      "string_index": 45801,
+      "value": "TRIAL_REEL_PANO"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 31998,
+      "method": "LX/0Cyq;-><clinit>()V",
+      "code_unit_offset": 12501,
+      "dex_byte_offset": 3873230,
+      "string_index": 45802,
+      "value": "TRIAL_REEL_PRISM"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 35308,
+      "method": "LX/0Eby;->A01(LX/0ouq;)LX/01C5;",
+      "code_unit_offset": 2004,
+      "dex_byte_offset": 7613276,
+      "string_index": 67105,
+      "value": "trial_params"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 35311,
+      "method": "LX/0Eby;->A04(LX/0ouq;)V",
+      "code_unit_offset": 121,
+      "dex_byte_offset": 7619062,
+      "string_index": 6478,
+      "value": "CREATE TABLE IF NOT EXISTS `drafts` (`id` TEXT NOT NULL, `clips_creation_type` TEXT NOT NULL, `last_user_save_time` INTEGER NOT NULL DEFAULT -1, `last_save_time` INTEGER NOT NULL DEFAULT -1, `created_at_time` INTEGER NOT NULL DEFAULT -1, `last_pre_capture_save_time` INTEGER NOT NULL DEFAULT -1, `was_last_save_user_initiated` INTEGER NOT NULL DEFAULT 0, `name` TEXT, `video_segments` TEXT NOT NULL, `video_overlay_segments` TEXT, `retake_video_segments` TEXT, `audio_Track` TEXT, `attriubtion_only_audio_track` TEXT, `pending_media_key` TEXT, `post_capture_media_edits` TEXT, `logging_info` TEXT, `remix_info` TEXT, `original_destination_type` TEXT, `caption` TEXT NOT NULL DEFAULT '', `cover_photo_file_uri` TEXT, `cover_photo_asset` TEXT, `is_share_to_feed` INTEGER NOT NULL DEFAULT 1, `funded_content_deal_id` TEXT, `people_tags` TEXT NOT NULL, `comment_poll` TEXT, `comment_quiz` TEXT, `audience` TEXT, `collaborator_id` TEXT, `collaborator_ids` TEXT NOT NULL, `entry_point` TEXT, `location` TEXT, `original_audio_title` TEXT, `multiple_audio_tracks` TEXT NOT NULL, `clips_sound_effects` TEXT NOT NULL, `clips_template_info` TEXT, `template_disabled` INTEGER NOT NULL, `clips_multiple_audio_segments` TEXT NOT NULL, `upcoming_event` TEXT, `linked_highlight_id` TEXT, `highlight_media_id` TEXT, `existing_fundraiser_to_attach` TEXT, `fundraiser_user_id` TEXT, `new_fundraiser_model` TEXT, `media_id` TEXT, `voice_effect` TEXT, `audio_enhancement_effect` TEXT, `clips_draft_info_version` INTEGER, `has_published_clip` INTEGER NOT NULL DEFAULT 0, `branded_content_tags_model` TEXT, `clips_shopping_metadata` TEXT, `is_comment_disabled` INTEGER NOT NULL DEFAULT 0, `is_caption_enabled` INTEGER NOT NULL DEFAULT 0, `is_like_and_view_counts_disabled` INTEGER NOT NULL DEFAULT 0, `is_share_count_disabled` INTEGER NOT NULL DEFAULT 0, `is_gifts_allowed` INTEGER NOT NULL DEFAULT 1, `is_auto_resharing_to_story` INTEGER, `interest_topics` TEXT NOT NULL, `stacked_timeline_actions` TEXT NOT NULL, `org_cta_type` TEXT, `max_duration_in_ms` INTEGER NOT NULL DEFAULT 0, `hide_from_profile_grid` INTEGER NOT NULL DEFAULT 0, `meta_verified_added_link` TEXT, `meta_verified_request_original_content_review` INTEGER NOT NULL DEFAULT 0, `metagallery_media_id` TEXT, `bio_product` TEXT, `content_scheduling_metadata` TEXT, `trial_params` TEXT, `has_comment_prompt` INTEGER NOT NULL, `linked_media` TEXT, `reel_linked_longform` TEXT, `gen_ai_detection_method` TEXT, `is_pinned` INTEGER NOT NULL, `third_party_downloads_enabled` INTEGER NOT NULL, `archive_only` INTEGER NOT NULL, `audio_fade_effects` TEXT NOT NULL, `share_only_to_profile` INTEGER NOT NULL DEFAULT 0, `is_internal_only` INTEGER NOT NULL, `encoding_settings` TEXT, `draft_origin` TEXT, `is_share_to_facebook` INTEGER, `is_share_to_barcelona` INTEGER, `guessable_secret_code` TEXT, `guessable_code_optional_hint` TEXT, `cover_photo_metadata` TEXT, `recent_color_list` TEXT, `basel_video_composition_model` TEXT, `basel_video_elements` TEXT, `basel_template_overlay_elements` TEXT, `basel_kit_id` TEXT, `reframe_item_metadata` TEXT, `last_export_time` INTEGER NOT NULL DEFAULT -1, `clips_timeline_settings` TEXT, `draft_save_apps` TEXT NOT NULL, `is_early_access` INTEGER, `linked_series_id` TEXT, `video_element_metadata` TEXT, `deleted_at_time` INTEGER NOT NULL DEFAULT -1, `teleprompter_script` TEXT, `output_aspect_ratio` TEXT, `background_color` INTEGER, `mutation_clock` TEXT NOT NULL, `import_fallbacks` TEXT, `extension_drops` TEXT, `cropcords_cropLeft` REAL, `cropcords_cropTop` REAL, `cropcords_cropRight` REAL, `cropcords_cropBottom` REAL, `feedmetadata_title` TEXT, `feedmetadata_previewCropCoordinates` TEXT, `feedmetadata_isInternal` INTEGER, `feedmetadata_shareToFacebook` INTEGER, `feedmetadata_seriesId` TEXT, `feedmetadata_shoppingMetadata` TEXT, `feedmetadata_isUnifiedvideo` INTEGER, `feedmetadata_coverIsCustom` INTEGER, `feedmetadata_coverWidth` INTEGER, `feedmetadata_coverHeight` INTEGER, `feedmetadata_coverFromVideoTimeMs` INTEGER, `feedmetadata_coverIsFromVideoEdited` INTEGER, `feedmetadata_areCaptionsEnabled` INTEGER, `feedmetadata_areCommentsDisabled` INTEGER, `feedmetadata_isFundedContentDeal` INTEGER, `feedmetadata_isPaidPartnership` INTEGER, `feedmetadata_brandedContentTags` TEXT, `feedmetadata_partnerBoostEnabled` INTEGER, `feedmetadata_isLikeAndViewCountsDisabled` INTEGER, `feedmetadata_filterId` INTEGER, `feedmetadata_filterStrength` INTEGER, `feedmetadata_postCropAspectRatio` REAL, `feedmetadata_isLandscape` INTEGER, `videocrop_width` INTEGER, `videocrop_height` INTEGER, `videocrop_rectF` TEXT, `mediadraft_version` INTEGER NOT NULL DEFAULT 0, `mediadraft_stickers` TEXT, `mediadraft_unschematized_compositions` TEXT NOT NULL DEFAULT '', `mediadraft_media_type` INTEGER NOT NULL DEFAULT 2, PRIMARY KEY(`id`))"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 35325,
+      "method": "LX/0Ec2;->A01(LX/0ylk;)V",
+      "code_unit_offset": 429,
+      "dex_byte_offset": 7625702,
+      "string_index": 6477,
+      "value": "CREATE TABLE IF NOT EXISTS `drafts_new` (`id` TEXT NOT NULL, `clips_creation_type` TEXT NOT NULL, `last_user_save_time` INTEGER NOT NULL DEFAULT -1, `last_save_time` INTEGER NOT NULL DEFAULT -1, `created_at_time` INTEGER NOT NULL DEFAULT -1, `last_pre_capture_save_time` INTEGER NOT NULL DEFAULT -1, `was_last_save_user_initiated` INTEGER NOT NULL DEFAULT 0, `name` TEXT, `video_segments` TEXT NOT NULL, `video_overlay_segments` TEXT, `retake_video_segments` TEXT, `audio_Track` TEXT, `attriubtion_only_audio_track` TEXT, `pending_media_key` TEXT, `post_capture_media_edits` TEXT, `logging_info` TEXT, `remix_info` TEXT, `original_destination_type` TEXT, `caption` TEXT NOT NULL DEFAULT '', `cover_photo_file_uri` TEXT, `cover_photo_asset` TEXT, `is_share_to_feed` INTEGER NOT NULL DEFAULT 1, `funded_content_deal_id` TEXT, `people_tags` TEXT NOT NULL, `comment_poll` TEXT, `comment_quiz` TEXT, `audience` TEXT, `collaborator_id` TEXT, `collaborator_ids` TEXT NOT NULL, `entry_point` TEXT, `location` TEXT, `original_audio_title` TEXT, `multiple_audio_tracks` TEXT NOT NULL, `clips_sound_effects` TEXT NOT NULL, `clips_template_info` TEXT, `template_disabled` INTEGER NOT NULL, `clips_multiple_audio_segments` TEXT NOT NULL, `upcoming_event` TEXT, `linked_highlight_id` TEXT, `highlight_media_id` TEXT, `media_id` TEXT, `voice_effect` TEXT, `audio_enhancement_effect` TEXT, `clips_draft_info_version` INTEGER, `has_published_clip` INTEGER NOT NULL DEFAULT 0, `branded_content_tags_model` TEXT, `clips_shopping_metadata` TEXT, `is_comment_disabled` INTEGER NOT NULL DEFAULT 0, `is_caption_enabled` INTEGER NOT NULL DEFAULT 0, `is_like_and_view_counts_disabled` INTEGER NOT NULL DEFAULT 0, `is_share_count_disabled` INTEGER NOT NULL DEFAULT 0, `is_gifts_allowed` INTEGER NOT NULL DEFAULT 1, `interest_topics` TEXT NOT NULL, `stacked_timeline_actions` TEXT NOT NULL, `org_cta_type` TEXT, `max_duration_in_ms` INTEGER NOT NULL DEFAULT 0, `hide_from_profile_grid` INTEGER NOT NULL DEFAULT 0, `meta_verified_added_link` TEXT, `meta_verified_request_original_content_review` INTEGER NOT NULL DEFAULT 0, `metagallery_media_id` TEXT, `bio_product` TEXT, `content_scheduling_metadata` TEXT, `trial_params` TEXT, `has_comment_prompt` INTEGER NOT NULL, `linked_media` TEXT, `gen_ai_detection_method` TEXT, `is_pinned` INTEGER NOT NULL, `third_party_downloads_enabled` INTEGER NOT NULL, `archive_only` INTEGER NOT NULL, `audio_fade_effects` TEXT NOT NULL, `share_only_to_profile` INTEGER NOT NULL DEFAULT 0, `is_internal_only` INTEGER NOT NULL, `encoding_settings` TEXT, `draft_origin` TEXT, `is_share_to_facebook` INTEGER, `is_share_to_barcelona` INTEGER, `guessable_secret_code` TEXT, `guessable_code_optional_hint` TEXT, `cover_photo_metadata` TEXT, `recent_color_list` TEXT, `basel_video_composition_model` TEXT, `basel_video_elements` TEXT, `basel_template_overlay_elements` TEXT, `reframe_item_metadata` TEXT, `last_export_time` INTEGER NOT NULL DEFAULT -1, `clips_timeline_settings` TEXT, `draft_save_apps` TEXT NOT NULL, `is_early_access` INTEGER, `linked_series_id` TEXT, `video_element_metadata` TEXT, `deleted_at_time` INTEGER NOT NULL DEFAULT -1, `teleprompter_script` TEXT, `output_aspect_ratio` TEXT, `mutation_clock` TEXT NOT NULL, `import_fallbacks` TEXT, `cropcords_cropLeft` REAL, `cropcords_cropTop` REAL, `cropcords_cropRight` REAL, `cropcords_cropBottom` REAL, `feedmetadata_title` TEXT, `feedmetadata_previewCropCoordinates` TEXT, `feedmetadata_isInternal` INTEGER, `feedmetadata_shareToFacebook` INTEGER, `feedmetadata_seriesId` TEXT, `feedmetadata_shoppingMetadata` TEXT, `feedmetadata_isUnifiedvideo` INTEGER, `feedmetadata_coverIsCustom` INTEGER, `feedmetadata_coverWidth` INTEGER, `feedmetadata_coverHeight` INTEGER, `feedmetadata_coverFromVideoTimeMs` INTEGER, `feedmetadata_coverIsFromVideoEdited` INTEGER, `feedmetadata_areCaptionsEnabled` INTEGER, `feedmetadata_areCommentsDisabled` INTEGER, `feedmetadata_isFundedContentDeal` INTEGER, `feedmetadata_isPaidPartnership` INTEGER, `feedmetadata_brandedContentTags` TEXT, `feedmetadata_partnerBoostEnabled` INTEGER, `feedmetadata_isLikeAndViewCountsDisabled` INTEGER, `feedmetadata_filterId` INTEGER, `feedmetadata_filterStrength` INTEGER, `feedmetadata_postCropAspectRatio` REAL, `feedmetadata_isLandscape` INTEGER, `videocrop_width` INTEGER, `videocrop_height` INTEGER, `videocrop_rectF` TEXT, `mediadraft_version` INTEGER NOT NULL DEFAULT 0, `mediadraft_stickers` TEXT, `mediadraft_unschematized_compositions` TEXT NOT NULL DEFAULT '', `mediadraft_media_type` INTEGER NOT NULL DEFAULT 2, PRIMARY KEY(`id`))"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 35325,
+      "method": "LX/0Ec2;->A01(LX/0ylk;)V",
+      "code_unit_offset": 434,
+      "dex_byte_offset": 7625712,
+      "string_index": 13662,
+      "value": "INSERT INTO `drafts_new` (`id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`retake_video_segments`,`audio_Track`,`attriubtion_only_audio_track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`original_destination_type`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`clips_draft_info_version`,`has_published_clip`,`branded_content_tags_model`,`clips_shopping_metadata`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`is_early_access`,`linked_series_id`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`mutation_clock`,`import_fallbacks`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`feedmetadata_title`,`feedmetadata_previewCropCoordinates`,`feedmetadata_isInternal`,`feedmetadata_shareToFacebook`,`feedmetadata_seriesId`,`feedmetadata_shoppingMetadata`,`feedmetadata_isUnifiedvideo`,`feedmetadata_coverIsCustom`,`feedmetadata_coverWidth`,`feedmetadata_coverHeight`,`feedmetadata_coverFromVideoTimeMs`,`feedmetadata_coverIsFromVideoEdited`,`feedmetadata_areCaptionsEnabled`,`feedmetadata_areCommentsDisabled`,`feedmetadata_isFundedContentDeal`,`feedmetadata_isPaidPartnership`,`feedmetadata_brandedContentTags`,`feedmetadata_partnerBoostEnabled`,`feedmetadata_isLikeAndViewCountsDisabled`,`feedmetadata_filterId`,`feedmetadata_filterStrength`,`feedmetadata_postCropAspectRatio`,`feedmetadata_isLandscape`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type`) SELECT `id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`retake_video_segments`,`audio_Track`,`attriubtion_only_audio_track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`original_destination_type`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`clips_draft_info_version`,`has_published_clip`,`branded_content_tags_model`,`clips_shopping_metadata`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`is_early_access`,`linked_series_id`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`mutation_clock`,`import_fallbacks`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`feedmetadata_title`,`feedmetadata_previewCropCoordinates`,`feedmetadata_isInternal`,`feedmetadata_shareToFacebook`,`feedmetadata_seriesId`,`feedmetadata_shoppingMetadata`,`feedmetadata_isUnifiedvideo`,`feedmetadata_coverIsCustom`,`feedmetadata_coverWidth`,`feedmetadata_coverHeight`,`feedmetadata_coverFromVideoTimeMs`,`feedmetadata_coverIsFromVideoEdited`,`feedmetadata_areCaptionsEnabled`,`feedmetadata_areCommentsDisabled`,`feedmetadata_isFundedContentDeal`,`feedmetadata_isPaidPartnership`,`feedmetadata_brandedContentTags`,`feedmetadata_partnerBoostEnabled`,`feedmetadata_isLikeAndViewCountsDisabled`,`feedmetadata_filterId`,`feedmetadata_filterStrength`,`feedmetadata_postCropAspectRatio`,`feedmetadata_isLandscape`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type` FROM `drafts`"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 35327,
+      "method": "LX/0EcJ;->A01(LX/0ylk;)V",
+      "code_unit_offset": 698,
+      "dex_byte_offset": 7628772,
+      "string_index": 3376,
+      "value": "ALTER TABLE`drafts` ADD COLUMN `trial_params` TEXT DEFAULT NULL"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 35427,
+      "method": "LX/0Edj;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 426,
+      "dex_byte_offset": 7680528,
+      "string_index": 67105,
+      "value": "trial_params"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 38850,
+      "method": "LX/0Gz1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 493,
+      "dex_byte_offset": 8114090,
+      "string_index": 67105,
+      "value": "trial_params"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 38850,
+      "method": "LX/0Gz1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 3548,
+      "dex_byte_offset": 8120200,
+      "string_index": 67105,
+      "value": "trial_params"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 44553,
+      "method": "LX/0Kzy;-><clinit>()V",
+      "code_unit_offset": 19,
+      "dex_byte_offset": 3943402,
+      "string_index": 60331,
+      "value": "has_seen_self_trial_reel_insight_entry_point_tooltip"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 29885,
+      "method": "LX/0DOO;->A00(LX/0Pmx;)Ljava/lang/Object;",
+      "code_unit_offset": 124,
+      "dex_byte_offset": 5917004,
+      "string_index": 63452,
+      "value": "xdt_user_trial_reels_graphql"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 33246,
+      "method": "LX/0FGz;->A01(Lcom/instagram/common/session/UserSession;)Z",
+      "code_unit_offset": 84,
+      "dex_byte_offset": 6347964,
+      "string_index": 47348,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_SHOULD_SHOW_CONSUMPTION_UPSELL"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 45078,
+      "method": "LX/0LcV;->A00(Ljava/lang/Object;JLjava/lang/Object;)V",
+      "code_unit_offset": 74,
+      "dex_byte_offset": 8098008,
+      "string_index": 47347,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 45078,
+      "method": "LX/0LcV;->A00(Ljava/lang/Object;JLjava/lang/Object;)V",
+      "code_unit_offset": 135,
+      "dex_byte_offset": 8098130,
+      "string_index": 47347,
+      "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 23402,
+      "method": "LX/0ELj;-><clinit>()V",
+      "code_unit_offset": 268,
+      "dex_byte_offset": 3892312,
+      "string_index": 53794,
+      "value": "followers_only"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 23402,
+      "method": "LX/0ELj;-><clinit>()V",
+      "code_unit_offset": 270,
+      "dex_byte_offset": 3892316,
+      "string_index": 41889,
+      "value": "PUBLIC_ACCOUNTS_FOLLOWERS_ONLY"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 25037,
+      "method": "LX/0FXP;->A01(LX/04s2;LX/0Ozc;)V",
+      "code_unit_offset": 2493,
+      "dex_byte_offset": 7121074,
+      "string_index": 48923,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 27744,
+      "method": "LX/0Gtq;->A00(LX/04s2;Lcom/instagram/direct/model/thread/CreatorBroadcastThreadInfo;)V",
+      "code_unit_offset": 35,
+      "dex_byte_offset": 7441210,
+      "string_index": 48923,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 27745,
+      "method": "LX/0Gtq;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 178,
+      "dex_byte_offset": 7441720,
+      "string_index": 48923,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 40992,
+      "method": "LX/0MKi;-><clinit>()V",
+      "code_unit_offset": 31,
+      "dex_byte_offset": 4096474,
+      "string_index": 16024,
+      "value": "INVALID_OR_MISSING_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 40992,
+      "method": "LX/0MKi;-><clinit>()V",
+      "code_unit_offset": 33,
+      "dex_byte_offset": 4096478,
+      "string_index": 16025,
+      "value": "INVALID_OR_MISSING_DESTINATION_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 41924,
+      "method": "LX/0NSc;->A01(LX/02at;LX/0Pjk;)Ljava/util/Map;",
+      "code_unit_offset": 42,
+      "dex_byte_offset": 9134740,
+      "string_index": 48923,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 41925,
+      "method": "LX/0NSd;->A00(LX/0TRk;LX/0DMz;LX/0DDx;LX/0H1B;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V",
+      "code_unit_offset": 153,
+      "dex_byte_offset": 9547578,
+      "string_index": 53446,
+      "value": "fb_audience_type"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 44575,
+      "method": "LX/0Nsh;->EJL(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 75,
+      "dex_byte_offset": 9904182,
+      "string_index": 48923,
+      "value": "audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 1083,
+      "method": "LX/032R;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 3099,
+      "dex_byte_offset": 866010,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 1083,
+      "method": "LX/032R;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 3121,
+      "dex_byte_offset": 866054,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 7189,
+      "method": "LX/0FKJ;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 13,
+      "dex_byte_offset": 1053934,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 7189,
+      "method": "LX/0FKJ;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 49,
+      "dex_byte_offset": 1054006,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 7189,
+      "method": "LX/0FKJ;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 57,
+      "dex_byte_offset": 1054022,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 7195,
+      "method": "LX/0FMQ;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 13,
+      "dex_byte_offset": 1054078,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 7195,
+      "method": "LX/0FMQ;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 49,
+      "dex_byte_offset": 1054150,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes8.dex",
+      "method_index": 7195,
+      "method": "LX/0FMQ;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 57,
+      "dex_byte_offset": 1054166,
+      "string_index": 7275,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 1139,
+      "method": "LX/020R;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 126,
+      "dex_byte_offset": 2337988,
+      "string_index": 39427,
+      "value": "trial_reel_gallery_view"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 1139,
+      "method": "LX/020R;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 2262,
+      "dex_byte_offset": 2342260,
+      "string_index": 3004,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 1139,
+      "method": "LX/020R;->A00(I)Ljava/lang/String;",
+      "code_unit_offset": 3465,
+      "dex_byte_offset": 2344666,
+      "string_index": 34001,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 9526,
+      "method": "LX/0DPZ;->A06(LX/0DPZ;)V",
+      "code_unit_offset": 53,
+      "dex_byte_offset": 4378582,
+      "string_index": 34325,
+      "value": "is_pronouns_followers_only"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 11203,
+      "method": "LX/0Dq8;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "code_unit_offset": 294,
+      "dex_byte_offset": 3899444,
+      "string_index": 39427,
+      "value": "trial_reel_gallery_view"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 13900,
+      "method": "LX/0EmG;->A0k(Ljava/lang/Object;)V",
+      "code_unit_offset": 290,
+      "dex_byte_offset": 5192548,
+      "string_index": 3004,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 34385,
+      "method": "Lcom/instagram/api/schemas/IGCreatorIncentiveProgramFetchEntryPoint;-><clinit>()V",
+      "code_unit_offset": 126,
+      "dex_byte_offset": 2278696,
+      "string_index": 36974,
+      "value": "promo_dialog_audience_type"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 34385,
+      "method": "Lcom/instagram/api/schemas/IGCreatorIncentiveProgramFetchEntryPoint;-><clinit>()V",
+      "code_unit_offset": 128,
+      "dex_byte_offset": 2278700,
+      "string_index": 23184,
+      "value": "PROMO_DIALOG_AUDIENCE_TYPE"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 19773,
+      "method": "LX/0KFf;->A01(LX/0GuS;Ljava/lang/Integer;)V",
+      "code_unit_offset": 127,
+      "dex_byte_offset": 5718054,
+      "string_index": 34001,
+      "value": "interest_based_channel_implicit_audience_type"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 20060,
+      "method": "LX/0KLb;->A00(Lcom/instagram/common/session/UserSession;LX/0CT2;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 142,
+      "dex_byte_offset": 4573028,
+      "string_index": 34325,
+      "value": "is_pronouns_followers_only"
+    },
+    {
+      "dex": "classes9.dex",
+      "method_index": 29066,
+      "method": "LX/0OeF;->invoke()Ljava/lang/Object;",
+      "code_unit_offset": 2364,
+      "dex_byte_offset": 5585664,
+      "string_index": 3004,
+      "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+    }
+  ],
+  "calls": [],
+  "nearby_method_strings": [
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 4,
+      "value": "_messages"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 36,
+      "value": "message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 46,
+      "value": "error_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 55,
+      "value": "error_source"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 77,
+      "value": "error_body"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 86,
+      "value": "error_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 97,
+      "value": "client_facing_error_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 102,
+      "value": "is_epd_error"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 112,
+      "value": "can_see_notes"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 121,
+      "value": "can_see_broadcast_chats"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 134,
+      "value": "logout_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 144,
+      "value": "checkpoint_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 153,
+      "value": "challenge"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 165,
+      "value": "consent_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 177,
+      "value": "status"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 196,
+      "value": "lock"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 204,
+      "value": "feedback_required"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 215,
+      "value": "feedback_title"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 224,
+      "value": "feedback_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 233,
+      "value": "feedback_appeal_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 242,
+      "value": "feedback_ignore_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 251,
+      "value": "feedback_action"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 260,
+      "value": "feedback_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 278,
+      "value": "is_spam"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 286,
+      "value": "sentry_block_restriction_dialogue_unification_enabled"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 298,
+      "value": "restriction_detail_use_case"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 308,
+      "value": "restriction_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 318,
+      "value": "enrollment_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 327,
+      "value": "expiration_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 336,
+      "value": "restriction_extra_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 346,
+      "value": "dialogue_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 355,
+      "value": "responsible_policy"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 367,
+      "value": "category"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 378,
+      "value": "error_code"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 387,
+      "value": "reasons_thrown"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 393,
+      "value": "news_url_is_regulated"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 8,
+      "value": "is_spam"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 24,
+      "value": "restriction_extra_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 63,
+      "value": "feedback_ignore_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 80,
+      "value": "responsible_policy"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 98,
+      "value": "error_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 115,
+      "value": "error_code"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 133,
+      "value": "error_body"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 150,
+      "value": "news_url_is_regulated"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 166,
+      "value": "challenge"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 195,
+      "value": "checkpoint_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 212,
+      "value": "sentry_block_restriction_dialogue_unification_enabled"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 228,
+      "value": "message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 241,
+      "value": "reasons_thrown"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 259,
+      "value": "feedback_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 276,
+      "value": "expiration_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 293,
+      "value": "restriction_detail_use_case"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 311,
+      "value": "feedback_appeal_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 328,
+      "value": "error_source"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 345,
+      "value": "error_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 362,
+      "value": "logout_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 380,
+      "value": "category"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 397,
+      "value": "lock"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 413,
+      "value": "is_epd_error"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 430,
+      "value": "feedback_title"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 447,
+      "value": "can_see_broadcast_chats"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 463,
+      "value": "_messages"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 512,
+      "value": "can_see_notes"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 528,
+      "value": "restriction_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 546,
+      "value": "client_facing_error_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 585,
+      "value": "status"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 603,
+      "value": "dialogue_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 620,
+      "value": "feedback_required"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 635,
+      "value": "feedback_action"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 652,
+      "value": "consent_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 681,
+      "value": "feedback_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 698,
+      "value": "enrollment_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 33,
+      "value": "last_user_restriction_sentry_block_event"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 51,
+      "value": ""
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 87,
+      "value": ""
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 92,
+      "value": "restriction_detail_use_case"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 104,
+      "value": "restriction_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 116,
+      "value": "enrollment_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 127,
+      "value": "expiration_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 138,
+      "value": "dialogue_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 149,
+      "value": "responsible_policy"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 161,
+      "value": "category"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 172,
+      "value": "error_code"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 183,
+      "value": "restriction_extra_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 195,
+      "value": "reasons_thrown"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 212,
+      "value": "com.bloks.www.instagram.igwb.exp.enforcement.dialog"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 280,
+      "value": "true"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 293,
+      "value": "com.instagram.challenge.navigation.take_challenge"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 3,
+      "value": "admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 27,
+      "value": "blocked_user_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 51,
+      "value": "can_post"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 62,
+      "value": "channel_admin_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 71,
+      "value": "chat_thread_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 76,
+      "value": "group_fbid"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 83,
+      "value": "group_pk"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 101,
+      "value": "has_pending_admin_invite"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 116,
+      "value": "hidden"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 121,
+      "value": "is_group"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 128,
+      "value": "is_group_full"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 135,
+      "value": "is_group_notes_allowed"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 142,
+      "value": "is_recommendable"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 149,
+      "value": "is_viewer_admin"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 156,
+      "value": "is_viewer_in_chat_thread"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 163,
+      "value": "is_viewer_invited"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 178,
+      "value": "mandatory_approvals_expire_at"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 183,
+      "value": "num_admins"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 190,
+      "value": "num_blocked_users"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 197,
+      "value": "num_pending_follow_requests"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 204,
+      "value": "num_pending_invites"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 211,
+      "value": "num_pending_notes"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 218,
+      "value": "num_pending_notes_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 225,
+      "value": "num_pending_posts"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 232,
+      "value": "num_pending_posts_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 239,
+      "value": "pending_admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 267,
+      "value": "ring_spec"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 72,
+      "value": "is_viewer_invited"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 74,
+      "value": "num_pending_follow_requests"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 76,
+      "value": "group_fbid"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 84,
+      "value": "num_admins"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 86,
+      "value": "num_pending_notes_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 88,
+      "value": "group_pk"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 90,
+      "value": "is_viewer_in_chat_thread"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 92,
+      "value": "is_group"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 94,
+      "value": "num_pending_posts"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 96,
+      "value": "num_pending_notes"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 98,
+      "value": "can_post"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 100,
+      "value": "is_viewer_admin"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 102,
+      "value": "is_group_notes_allowed"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 104,
+      "value": "num_pending_invites"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 106,
+      "value": "is_group_full"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 108,
+      "value": "pending_admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 110,
+      "value": "blocked_user_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 112,
+      "value": "num_blocked_users"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 114,
+      "value": "admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 116,
+      "value": "GroupMetadataImpl"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 135,
+      "value": "has_pending_admin_invite"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 142,
+      "value": "is_recommendable"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 151,
+      "value": "mandatory_approvals_expire_at"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 168,
+      "value": "num_pending_posts_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 240,
+      "value": "ring_spec"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 329,
+      "value": "chat_thread_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 385,
+      "value": "hidden"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 395,
+      "value": "channel_admin_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 585,
+      "value": "is_recommendable"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 595,
+      "value": "has_pending_admin_invite"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 598,
+      "value": "num_pending_posts_by_viewer"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 14,
+      "value": "location"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 33,
+      "value": "viewer_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 40,
+      "value": "enforcement_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 55,
+      "value": "trigger_session_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 75,
+      "value": "com.bloks.www.ig.ixt.triggers.screen.ig_account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A01(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 21,
+      "value": "entry_point"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A01(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 30,
+      "value": "viewer_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 0,
+      "value": "app_start"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 34,
+      "value": "location"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 39,
+      "value": "analytics_module"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 60,
+      "value": "users/get_recommendation_status_nudge/"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 24,
+      "value": "https://www.facebook.com/payments/offsite/demo/"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 32,
+      "value": "https://www.facebook.com/payments/offsite/meta_checkout"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 68,
+      "value": "https://www.threads.com/settings/account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 76,
+      "value": "https://www.threads.com/settings/account_status/"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 102,
+      "value": "location"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 176,
+      "value": "com.bloks.www.bloks.screen_query.th.account_status.home"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 264,
+      "value": "trigger_event_type"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 266,
+      "value": "ig_open_account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 272,
+      "value": "trigger_session_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 282,
+      "value": "com.bloks.www.ig.ixt.triggers.screen.ig_account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 363,
+      "value": "eclipse"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 439,
+      "value": "android.intent.action.VIEW"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 466,
+      "value": "https"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 490,
+      "value": "barcelona"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 521,
+      "value": "com.instagram.barcelona"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 560,
+      "value": "/mainfeed"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 622,
+      "value": "com.instagram.url.extra.SHOULD_RETURN_TO_SENDING_ACTIVITY"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 651,
+      "value": "Opening FOA URL "
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 653,
+      "value": " was unsuccessful."
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 659,
+      "value": "BKBloksActionNavigationOpenUrlImpl"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 672,
+      "value": "whatsapp"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 717,
+      "value": "com.facebook.stella"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 726,
+      "value": "basel"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 824,
+      "value": "download/redirect"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 838,
+      "value": "tifu"
+    }
+  ],
+  "errors": []
+}

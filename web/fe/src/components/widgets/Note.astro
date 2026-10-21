@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  icon?: string;
+  title?: string;
+  description?: string;
+  /** Colour and default icon: `info` (default), `success`, `warning`. */
+  variant?: 'info' | 'success' | 'warning';
+}
+
+const variants = {
+  info: { icon: 'tabler:info-square', classes: 'bg-blue-50 dark:bg-slate-800' },
+  success: { icon: 'tabler:circle-check', classes: 'bg-emerald-50 dark:bg-emerald-950/40' },
+  warning: { icon: 'tabler:alert-triangle', classes: 'bg-amber-50 dark:bg-amber-950/40' },
+} as const;
+
+const { variant = 'info' } = Astro.props;
+
+const {
+  icon = variants[variant].icon,
+  title = await Astro.slots.render('title'),
+  description = await Astro.slots.render('description'),
+} = Astro.props;
+---
+
+<section class:list={['not-prose', variants[variant].classes]}>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
+    <Icon name={icon} class="w-5 h-5 inline-block align-text-bottom mr-1.5 rtl:mr-0 rtl:ml-1.5" />
+    {title && <span class="font-bold mr-1 rtl:mr-0 rtl:ml-1" set:html={title} />}
+    <Fragment set:html={description} />
+  </div>
+</section>

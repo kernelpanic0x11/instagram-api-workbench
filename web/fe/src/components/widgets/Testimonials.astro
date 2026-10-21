@@ -1,0 +1,119 @@
+---
+import { Icon } from 'astro-icon/components';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
+import { getColumnsClass } from '~/utils/utils';
+import type { Testimonials as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  testimonials = [],
+  callToAction,
+  layout = 'grid',
+  columns = 3,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+// `grid` keeps every card the same height per row; `masonry` lets cards of
+// different length pack together (CSS columns), the usual "wall of love".
+const gridClass = layout === 'masonry' ? undefined : getColumnsClass(columns, '');
+const masonryClass =
+  columns === 4
+    ? 'columns-1 sm:columns-2 lg:columns-4'
+    : columns === 2
+      ? 'columns-1 sm:columns-2'
+      : 'columns-1 sm:columns-2 lg:columns-3';
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <div class:list={layout === 'masonry' ? [masonryClass, 'gap-6'] : ['grid gap-6', gridClass]}>
+    {
+      testimonials &&
+        testimonials.map(({ title, testimonial, name, job, image, rating, logo }) => (
+          <div
+            class:list={[
+              'flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter',
+              { 'mb-6 break-inside-avoid': layout === 'masonry' },
+            ]}
+          >
+            <div class="flex w-full flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
+              {(rating || logo) && (
+                <div class="flex items-center justify-between gap-4 pb-4">
+                  {rating ? (
+                    <div class="flex gap-0.5" role="img" aria-label={`${rating} out of 5 stars`}>
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <Icon
+                          name="tabler:star-filled"
+                          class:list={[
+                            'w-4 h-4',
+                            star <= Math.round(rating) ? 'text-amber-400' : 'text-gray-300 dark:text-slate-600',
+                          ]}
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <span />
+                  )}
+                  {logo &&
+                    (typeof logo === 'string' ? (
+                      <Icon name={logo} class="h-6 w-auto text-muted" />
+                    ) : (
+                      <Image class="h-6 w-auto" height={24} layout="fixed" format="webp" {...logo} />
+                    ))}
+                </div>
+              )}
+              {title && <h3 class="text-lg font-medium leading-6 pb-4">{title}</h3>}
+              {testimonial && (
+                <blockquote class="flex-auto">
+                  <p class="text-muted before:content-['“'] after:content-['”']">{testimonial}</p>
+                </blockquote>
+              )}
+
+              <hr class="border-slate-200 dark:border-slate-600 my-4" />
+
+              <div class="flex items-center">
+                {image && (
+                  <div class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600">
+                    {typeof image === 'string' ? (
+                      <Fragment set:html={image} />
+                    ) : (
+                      <Image
+                        class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
+                        width={40}
+                        height={40}
+                        layout="fixed"
+                        format="webp"
+                        {...image}
+                      />
+                    )}
+                  </div>
+                )}
+
+                <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
+                  {name && <p class="text-base font-semibold">{name}</p>}
+                  {job && <p class="text-xs text-muted">{job}</p>}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+    }
+  </div>
+  {
+    callToAction && (
+      <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
+        <Button {...callToAction} />
+      </div>
+    )
+  }
+</WidgetWrapper>

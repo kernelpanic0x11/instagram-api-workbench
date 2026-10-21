@@ -1,0 +1,2739 @@
+[
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1636,
+    "offset": 1914661,
+    "value": ",CellHighWaterMarkDeltaMs="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1637,
+    "offset": 1914689,
+    "value": ",CellLowWaterMarkMultiplier="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1638,
+    "offset": 1914719,
+    "value": ",CellMaxLowWaterMarkMs="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1639,
+    "offset": 1914744,
+    "value": ",CellMinLowWaterMarkMs="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1644,
+    "offset": 1914799,
+    "value": ",WaterMarkHighMultipler="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1645,
+    "offset": 1914825,
+    "value": ",WaterMarkLowMultipler="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1646,
+    "offset": 1914850,
+    "value": ",WifiHighWaterMarkDeltaMs="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1647,
+    "offset": 1914878,
+    "value": ",WifiLowWaterMarkMultiplier="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 1648,
+    "offset": 1914908,
+    "value": ",WifiMaxLowWaterMarkMs="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 6388,
+    "offset": 2007911,
+    "value": "BEST_PRACTICE_TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 7689,
+    "offset": 2027148,
+    "value": "CLIPS_MIDCARD_MUSIC_RECOMMENDATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 7804,
+    "offset": 2030746,
+    "value": "CLIPS_VIEWER_ORIGINALITY_COMMENT_HEADER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 7805,
+    "offset": 2030787,
+    "value": "CLIPS_VIEWER_ORIGINALITY_LABEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36913,
+    "offset": 2519908,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36914,
+    "offset": 2519965,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36915,
+    "offset": 2520010,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36916,
+    "offset": 2520059,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 38395,
+    "offset": 2587842,
+    "value": "MAX_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 38924,
+    "offset": 2600282,
+    "value": "MemProcWatermarkReader"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40208,
+    "offset": 2635618,
+    "value": "PREFERENCE_REELS_AUTO_RECOMMEND_ON_FACEBOOK_LAST_CHANGED_MS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40211,
+    "offset": 2635795,
+    "value": "PREFERENCE_REELS_IS_AUTO_RECOMMEND_ON_FACEBOOK_ENABLED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40212,
+    "offset": 2635851,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40213,
+    "offset": 2635918,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40214,
+    "offset": 2635998,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40216,
+    "offset": 2636144,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 43065,
+    "offset": 2712750,
+    "value": "TRIAL_REEL_GALLERY_VIEW"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 44915,
+    "offset": 2759132,
+    "value": "WARMUP_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 45073,
+    "offset": 2764442,
+    "value": "WifiMinLowWaterMarkMs="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 59270,
+    "offset": 3095092,
+    "value": "is_high_quality_upload_on"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 61527,
+    "offset": 3140954,
+    "value": "mem_high_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 61528,
+    "offset": 3140974,
+    "value": "mem_low_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 61529,
+    "offset": 3140993,
+    "value": "mem_min_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 62838,
+    "offset": 3167964,
+    "value": "non_follower"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 64044,
+    "offset": 3206830,
+    "value": "originality_info"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 71909,
+    "offset": 3374127,
+    "value": "watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes10.dex",
+    "string_index": 43210,
+    "offset": 2438892,
+    "value": "xdt_user_trial_reels_graphql"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 33605,
+    "offset": 2059937,
+    "value": "ig_creators_originality_comment_header_impression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 24734,
+    "offset": 1702815,
+    "value": "ORIGINALITY_PIVOT_PAGE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 24755,
+    "offset": 1703410,
+    "value": "OriginalityPivotPageFragment"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27637,
+    "offset": 1777785,
+    "value": "android_purge_26_q2_ClipsFragmentFactoryImpl_newOriginalityPivotPageFragment"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27638,
+    "offset": 1777863,
+    "value": "android_purge_26_q2_ClipsFragmentFactoryImpl_newOriginalityPivotPageFragmentArguments"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27705,
+    "offset": 1782484,
+    "value": "android_purge_26_q2_ClipsPivotPageLoggerUtil_reportOriginalityPivotPageImpression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27718,
+    "offset": 1783352,
+    "value": "android_purge_26_q2_ClipsPluginImpl_launchOriginalityPivotPage"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27913,
+    "offset": 1797196,
+    "value": "android_purge_26_q2_OriginalityPivotPageApiResponse_getClipsItemsOrEmpty"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27914,
+    "offset": 1797270,
+    "value": "android_purge_26_q2_OriginalityPivotPageApiUtil_createFetchRequest"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27915,
+    "offset": 1797338,
+    "value": "android_purge_26_q2_OriginalityPivotPageApiUtil_createFetchRequestForImmersiveViewer"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27916,
+    "offset": 1797424,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_configureActionBar"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27917,
+    "offset": 1797493,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_getCtaText"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27918,
+    "offset": 1797554,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_logPageImpression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27919,
+    "offset": 1797622,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onCreate"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27920,
+    "offset": 1797681,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onCreateView"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27921,
+    "offset": 1797744,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onCtaTapped"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27922,
+    "offset": 1797806,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onResume"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27923,
+    "offset": 1797865,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onTipImpression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27924,
+    "offset": 1797931,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onTipTapped"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27925,
+    "offset": 1797993,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onUsernameTapped"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27926,
+    "offset": 1798060,
+    "value": "android_purge_26_q2_OriginalityPivotPageFragment_onViewCreated"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27927,
+    "offset": 1798124,
+    "value": "android_purge_26_q2_OriginalityPivotPageRepository_fetch"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27928,
+    "offset": 1798182,
+    "value": "android_purge_26_q2_OriginalityPivotPageRepository_getClipsItemFlow"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27929,
+    "offset": 1798251,
+    "value": "android_purge_26_q2_OriginalityPivotPageViewModel_fetch"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 28283,
+    "offset": 1821802,
+    "value": "android_purge_26_q3_ClipsOriginalityPivotPageDataSource_getHeadFetchRequest"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 28284,
+    "offset": 1821879,
+    "value": "android_purge_26_q3_ClipsOriginalityPivotPageDataSource_getTailFetchRequest"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 29112,
+    "offset": 1843811,
+    "value": "clips/originality/attribution_feed/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 29113,
+    "offset": 1843848,
+    "value": "clips/originality/ol_pivot_page/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 29140,
+    "offset": 1844568,
+    "value": "clips_blend_recommender_igids"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 29165,
+    "offset": 1845161,
+    "value": "clips_originality_pivot"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 29166,
+    "offset": 1845186,
+    "value": "clips_originality_pivot_page"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33270,
+    "offset": 1952430,
+    "value": "non_follower_benchmark_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33271,
+    "offset": 1952459,
+    "value": "non_follower_current_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33272,
+    "offset": 1952486,
+    "value": "non_followers_view_count"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33273,
+    "offset": 1952512,
+    "value": "non_followers_view_percentage"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33840,
+    "offset": 1978823,
+    "value": "originality_label_pivot_page"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33841,
+    "offset": 1978853,
+    "value": "originality_pivot_page"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 35554,
+    "offset": 2290496,
+    "value": "OriginalityInfoUiState(deliveryClassName="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 42116,
+    "offset": 2542701,
+    "value": "android_purge_26_q3_OriginalityInfoComponent_render"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 1331,
+    "offset": 2150833,
+    "value": "ACCOUNT_NON_FOLLOWER_VIEWS_OVER_TIME"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 1614,
+    "offset": 2155973,
+    "value": "ARG_CLIPS_SHARE_SHEET_IS_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 2779,
+    "offset": 2176226,
+    "value": "CREATE_NEW_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 6046,
+    "offset": 2228169,
+    "value": "IS_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32559,
+    "offset": 2580450,
+    "value": "MEDIA_ORGANIC_POST_OVERVIEW_VIEWS_NON_FOLLOWERS_TAB"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32568,
+    "offset": 2580853,
+    "value": "MEDIA_ORGANIC_REEL_OVERVIEW_VIEWS_NON_FOLLOWERS_TAB"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32786,
+    "offset": 2585629,
+    "value": "NON_FOLLOWERS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32787,
+    "offset": 2585644,
+    "value": "NON_FOLLOWER_VIEWS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33185,
+    "offset": 2595753,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER_IMPRESSION_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33186,
+    "offset": 2595826,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33189,
+    "offset": 2596040,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33846,
+    "offset": 2612592,
+    "value": "SERIES_OVERVIEW_VIEWS_NON_FOLLOWERS_TAB"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 34453,
+    "offset": 2626532,
+    "value": "TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 37629,
+    "offset": 2686969,
+    "value": "account_non_follower_views_over_time"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 38445,
+    "offset": 2731953,
+    "value": "android_purge_26_q3_ClipsDownloadUtil_saveVideoWithWatermarkToDevice"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 48699,
+    "offset": 3680690,
+    "value": "getHasSeenLongReelsRestrictedDistributionNux(Lcom/instagram/preferences/user/UserPreferences;)Z"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 49139,
+    "offset": 3692677,
+    "value": "hasSeenLongReelsRestrictedDistributionNux"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 49171,
+    "offset": 3693774,
+    "value": "has_seen_long_reels_restricted_distribution_nux"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 49850,
+    "offset": 3715538,
+    "value": "insights.unit.account.unified.non_follower_views_over_time"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53031,
+    "offset": 4124540,
+    "value": "instagram://education_hub?referrer=trials_page&start_tab=TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53803,
+    "offset": 4145043,
+    "value": "media_organic_post_overview_views_non_followers_tab"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53812,
+    "offset": 4145446,
+    "value": "media_organic_reel_overview_views_non_followers_tab"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 55843,
+    "offset": 4202750,
+    "value": "series_overview_views_non_followers_tab"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 57029,
+    "offset": 4227663,
+    "value": "trial_reels"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 57057,
+    "offset": 4228334,
+    "value": "typical_non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 169,
+    "offset": 1864950,
+    "value": " watermarked:"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 6241,
+    "offset": 1955858,
+    "value": "Generation succeeded but one of the url is null nonwatermarked:"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 31484,
+    "offset": 2369960,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_REUSE_ORIGINAL_AUDIO"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 31485,
+    "offset": 2370021,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_SHOULD_SHOW_CONSUMPTION_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 31486,
+    "offset": 2370092,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_INCENTIVES_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 40287,
+    "offset": 2684039,
+    "value": "non_follower_percentage"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 40288,
+    "offset": 2684064,
+    "value": "non_follower_views"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 5553,
+    "offset": 2113346,
+    "value": "FETCH_CLIPS_RECOMMEND_ON_FB_SETTINGS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 8143,
+    "offset": 2151280,
+    "value": "IG_CLIPS_MUSIC_RECOMMENDATION_MIDCARD"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 42761,
+    "offset": 2676218,
+    "value": "UPDATE_CLIPS_RECOMMEND_ON_FB_SETTINGS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 45174,
+    "offset": 2726809,
+    "value": "android_purge_26_q2_ClipsPluginImpl_createRecommendOnFacebookPrimerBottomSheet"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 45175,
+    "offset": 2726889,
+    "value": "android_purge_26_q2_ClipsPluginImpl_maybeFetchRecommendOnFbSettings"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 53847,
+    "offset": 3039608,
+    "value": "originality_remove_label_fail"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 3946,
+    "offset": 1862583,
+    "value": "CLIPS_MIDCARD_MUSIC_RECOMMENDATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 35321,
+    "offset": 2411936,
+    "value": "REELS_RECOMMENDATIONS_QUERY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 35502,
+    "offset": 2415573,
+    "value": "Recording without a watermark: %s"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 36806,
+    "offset": 2452794,
+    "value": "TV_DISCOVERY_SERVER_REELS_RECOMMENDATIONS_QUERY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39781,
+    "offset": 2522175,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_convertFileToPendingMedia"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39782,
+    "offset": 2522257,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_createWatermarkRenderParams"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39783,
+    "offset": 2522341,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_dismissDialogAndShowToast"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39784,
+    "offset": 2522423,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_downloadAndSaveAudio"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39785,
+    "offset": 2522500,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_getClipSegments"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39786,
+    "offset": 2522572,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_onComplete"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39787,
+    "offset": 2522639,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_onFailed"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39788,
+    "offset": 2522704,
+    "value": "android_purge_26_q2_ClipsDownloadWithWatermarkCallback_onResponseStarted"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39853,
+    "offset": 2527200,
+    "value": "android_purge_26_q2_ClipsVideoShareTarget_onDistributionComplete"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39855,
+    "offset": 2527339,
+    "value": "android_purge_26_q2_ClipsWatermarkRenderCallback_cleanup"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39856,
+    "offset": 2527397,
+    "value": "android_purge_26_q2_ClipsWatermarkRenderCallback_maybeRemoveVideoFileOrDirectory"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39857,
+    "offset": 2527479,
+    "value": "android_purge_26_q2_ClipsWatermarkRenderCallback_onFail"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39858,
+    "offset": 2527536,
+    "value": "android_purge_26_q2_ClipsWatermarkRenderCallback_onFinish"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39859,
+    "offset": 2527595,
+    "value": "android_purge_26_q2_ClipsWatermarkRenderCallback_onSuccess"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 49639,
+    "offset": 2780876,
+    "value": "reels_recommendations_query"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 52191,
+    "offset": 2832884,
+    "value": "tv_discovery_server_reels_recommendations_query"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 52894,
+    "offset": 2847342,
+    "value": "watermark_render_failed"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 9480,
+    "offset": 2113811,
+    "value": "ClipsAssetRecommendationInfoImpl"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 9481,
+    "offset": 2113845,
+    "value": "ClipsAssetRecommendationMetadataImpl"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 38147,
+    "offset": 2513190,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 38148,
+    "offset": 2513247,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 38149,
+    "offset": 2513308,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 38150,
+    "offset": 2513357,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 38151,
+    "offset": 2513413,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 40310,
+    "offset": 2629831,
+    "value": "MBS_INSIGHTS_RECOMMENDATION_ELIGIBILITY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44607,
+    "offset": 2729740,
+    "value": "RECOMMENDED_CLIPS_BLEND_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44608,
+    "offset": 2729771,
+    "value": "RECOMMENDED_CLIPS_CARRERA_CHAINING"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44609,
+    "offset": 2729807,
+    "value": "RECOMMENDED_CLIPS_CHAINING_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44610,
+    "offset": 2729841,
+    "value": "RECOMMENDED_CLIPS_NOTIFICATIONS_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44616,
+    "offset": 2730048,
+    "value": "RECOMMENDED_END_OF_FEED_RECS_REELS_UNIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44619,
+    "offset": 2730152,
+    "value": "RECOMMENDED_EXPLORE_CHAINING_REELS_UNIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44622,
+    "offset": 2730273,
+    "value": "RECOMMENDED_EXPLORE_REELS_COVER_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44623,
+    "offset": 2730312,
+    "value": "RECOMMENDED_FEED_REELS_COVER_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44627,
+    "offset": 2730419,
+    "value": "RECOMMENDED_IN_FEED_RECS_REELS_UNIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44628,
+    "offset": 2730456,
+    "value": "RECOMMENDED_MUSIC_FEED_REELS_COVER_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44631,
+    "offset": 2730539,
+    "value": "RECOMMENDED_STORIES_REELS_COVER_MODEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 47513,
+    "offset": 2793965,
+    "value": "TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 49517,
+    "offset": 2840908,
+    "value": "XDTClipsAssetRecommendationMetadata"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 50923,
+    "offset": 2873318,
+    "value": "[Lcom/instagram/api/schemas/OriginalityFollowButtonInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 50924,
+    "offset": 2873380,
+    "value": "[Lcom/instagram/api/schemas/OriginalityInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 50925,
+    "offset": 2873430,
+    "value": "[Lcom/instagram/api/schemas/OriginalitySourceMediaInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 55235,
+    "offset": 3028120,
+    "value": "default_recommended_duration_in_days"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62840,
+    "offset": 3206115,
+    "value": "recommended_clips_blend_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62841,
+    "offset": 3206146,
+    "value": "recommended_clips_carrera_chaining"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62842,
+    "offset": 3206182,
+    "value": "recommended_clips_chaining_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62843,
+    "offset": 3206216,
+    "value": "recommended_clips_notifications_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62846,
+    "offset": 3206310,
+    "value": "recommended_end_of_feed_recs_reels_unit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62848,
+    "offset": 3206387,
+    "value": "recommended_explore_chaining_reels_unit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62851,
+    "offset": 3206508,
+    "value": "recommended_explore_reels_cover_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62852,
+    "offset": 3206547,
+    "value": "recommended_feed_reels_cover_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62856,
+    "offset": 3206694,
+    "value": "recommended_in_feed_recs_reels_unit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62857,
+    "offset": 3206731,
+    "value": "recommended_music_feed_reels_cover_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62860,
+    "offset": 3206814,
+    "value": "recommended_stories_reels_cover_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 667,
+    "offset": 2003593,
+    "value": "\n        #extension GL_OES_EGL_image_external : require\n        precision highp float;\n        varying vec2 vTextureCoord;\n        varying highp vec2 vPixel;\n        uniform samplerExternalOES sTexture;\n        uniform sampler2D uTile;\n        uniform sampler2D uSigns;\n        uniform vec2 uSignGrid;\n        uniform float uHeight;\n        uniform float uTileScale;\n        uniform float uStrength;\n        uniform vec4 uRegion;\n        void main() {\n          vec4 base = texture2D(sTexture, vTextureCoord);\n          // GL puts the origin bottom left and the reference indexes rows from the top. Without\n          // this flip the tile and the sign grid are both mirrored vertically, and the correlation\n          // the server computes is against a pattern that was never embedded.\n          float px = floor(vPixel.x);\n          float py = uHeight - 1.0 - floor(vPixel.y);\n          // Outside the watermarked region the frame is written through untouched.\n          if (px < uRegion.x || py < uRegion.y || px >= uRegion.z || py >= uRegion.w) {\n            gl_FragColor = base;\n            return;\n          }\n          // Indexed from the region's origin, not the frame's, which is what the reference does.\n          vec2 pixel = vec2(px - uRegion.x, py - uRegion.y);\n          vec2 tileUV = (mod(pixel, "
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 4834,
+    "offset": 2118316,
+    "value": "AwDecodeResult(watermarkDetected="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 6774,
+    "offset": 2168071,
+    "value": "Could not compile the watermark shader: "
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 6784,
+    "offset": 2168503,
+    "value": "Could not draw a watermarked frame"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 6798,
+    "offset": 2169104,
+    "value": "Could not install the video watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 6805,
+    "offset": 2169379,
+    "value": "Could not link the watermark program: "
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 36299,
+    "offset": 2825624,
+    "value": "No pipe output size; recording without a video watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 41286,
+    "offset": 2964349,
+    "value": "WATERMARK_TIMESTAMP_MS_FIELD_NUMBER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 41372,
+    "offset": 2966493,
+    "value": "Watermark bridge step failed"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 41373,
+    "offset": 2966523,
+    "value": "WatermarkedVideoSource"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 57793,
+    "offset": 3385346,
+    "value": "scp-video-watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 59249,
+    "offset": 3414722,
+    "value": "smartcapture_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 61250,
+    "offset": 3455290,
+    "value": "watermarkDetected"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 61251,
+    "offset": 3455309,
+    "value": "watermarkTimestampMs_"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 4045,
+    "offset": 2276046,
+    "value": "AUDIO_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 6746,
+    "offset": 2316240,
+    "value": "CONTIGUOUS_WATERMARK_BLOCKED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 15735,
+    "offset": 2485663,
+    "value": "INSERT OR REPLACE INTO `drafts` (`id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`audio_Track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`existing_fundraiser_to_attach`,`fundraiser_user_id`,`new_fundraiser_model`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`branded_content_tags_model`,`clips_shopping_metadata`,`has_published_clip`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`is_auto_resharing_to_story`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`reel_linked_longform`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`is_early_access`,`linked_series_id`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`basel_kit_id`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`background_color`,`mutation_clock`,`import_fallbacks`,`extension_drops`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 16116,
+    "offset": 2503116,
+    "value": "INVISIBLE_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51451,
+    "offset": 3104822,
+    "value": "NON_FOLLOWERS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 52054,
+    "offset": 3123335,
+    "value": "ORIGINALITY_INFO_LABEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 52414,
+    "offset": 3131585,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 52980,
+    "offset": 3146828,
+    "value": "REELS_END_OF_FEED_RECOMMENDATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 53010,
+    "offset": 3147680,
+    "value": "REELS_IN_FEED_RECOMMENDATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 53052,
+    "offset": 3148712,
+    "value": "REELS_SHARE_SHEET_RECOMMEND_ON_FACEBOOK_ROW"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 55081,
+    "offset": 3203850,
+    "value": "UPLOAD_QUALITY_CLASS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 59601,
+    "offset": 3323151,
+    "value": "audio_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 62965,
+    "offset": 3444381,
+    "value": "deletion_watermark_ms"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 68648,
+    "offset": 3585035,
+    "value": "invisible_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 72193,
+    "offset": 3677020,
+    "value": "non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 74793,
+    "offset": 3761927,
+    "value": "reels_share_sheet_recommend_on_facebook_row"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 78887,
+    "offset": 3849767,
+    "value": "watermark_timestamp_us"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 809,
+    "offset": 1847830,
+    "value": ", filePathWatermarked="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 829,
+    "offset": 1848209,
+    "value": ", generatedFilePathWithoutWatermark="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 7736,
+    "offset": 1958759,
+    "value": "Failed to move watermarked video"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 34010,
+    "offset": 2422855,
+    "value": "Stitch unwatermarked failed"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 34011,
+    "offset": 2422884,
+    "value": "Stitch watermarked failed"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 34060,
+    "offset": 2424287,
+    "value": "Success(filePathUnwatermarked="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 50430,
+    "offset": 2811806,
+    "value": "return_unwatermarked"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 53431,
+    "offset": 2873833,
+    "value": "temp_file_path_unwatermarked"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 53432,
+    "offset": 2873863,
+    "value": "temp_file_path_watermarked"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 54788,
+    "offset": 2902666,
+    "value": "watermark_timestamp_ms"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes21.dex",
+    "string_index": 11587,
+    "offset": 881750,
+    "value": "non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 12053,
+    "offset": 1304952,
+    "value": "FB4A_CREATION_GENAI_MME_GEN_AI_WATERMARK_ERROR"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 12555,
+    "offset": 1326703,
+    "value": "FB_CREATOR_MESSAGING_NON_FOLLOWER_UPDATE_PAGE_SETTINGS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 14298,
+    "offset": 1381385,
+    "value": "GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 16525,
+    "offset": 1454797,
+    "value": "IG_ANDROID_HIGH_QUALITY_UPLOAD_OPTION_TURN_OFF"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 16526,
+    "offset": 1454845,
+    "value": "IG_ANDROID_HIGH_QUALITY_UPLOAD_OPTION_TURN_ON"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 18017,
+    "offset": 1511340,
+    "value": "IG_REELS_IG_REELS_TIME_TO_LOAD_MUSIC_RECOMMENDATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 19167,
+    "offset": 1553241,
+    "value": "INTERACTION_CLIPS_SHARE_SHEET_AUDIENCE_AND_DISTRIBUTION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 34556,
+    "offset": 2022511,
+    "value": "NO_WATERMARKED_MEDIA"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 35415,
+    "offset": 2053288,
+    "value": "OPT_IN_AUTO_GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 35416,
+    "offset": 2053321,
+    "value": "OPT_OUT_AUTO_GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 36193,
+    "offset": 2076028,
+    "value": "PMP_ENTITY_ORIGINALITY_VIOLATOR_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 36194,
+    "offset": 2076067,
+    "value": "PMP_ENTITY_ORIGINALITY_VIOLATOR_VOD"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 36195,
+    "offset": 2076104,
+    "value": "PMP_ENTITY_ORIGINALITY_VIOLATOR_YA"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 38071,
+    "offset": 2139374,
+    "value": "REMOVE_ORIGINALITY_LABEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 43747,
+    "offset": 2326524,
+    "value": "WATERMARK_TIMESTAMP_MS_FIELD_NUMBER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 43748,
+    "offset": 2326561,
+    "value": "WATERMARK_TIMESTAMP_US_FIELD_NUMBER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 47155,
+    "offset": 2464676,
+    "value": "[Lcom/instagram/api/schemas/ImmutablePandoOriginalityFollowButtonInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 47156,
+    "offset": 2464748,
+    "value": "[Lcom/instagram/api/schemas/ImmutablePandoOriginalitySourceMediaInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 50850,
+    "offset": 2568357,
+    "value": "getLastReadWatermarkTimestampMs"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 51146,
+    "offset": 2574947,
+    "value": "graduate_trial_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 53566,
+    "offset": 2629926,
+    "value": "opt_in_auto_graduate_trial_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 53567,
+    "offset": 2629959,
+    "value": "opt_out_auto_graduate_trial_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 54248,
+    "offset": 2642512,
+    "value": "remove_originality_label"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 55731,
+    "offset": 2674098,
+    "value": "watermarkTimestampMs_"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 55732,
+    "offset": 2674121,
+    "value": "watermarkTimestampUs_"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 979,
+    "offset": 1809063,
+    "value": ", highWatermarkUs:"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 1073,
+    "offset": 1811056,
+    "value": ", lowWatermarkUs:"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 45769,
+    "offset": 2382952,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoOriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 47578,
+    "offset": 2481013,
+    "value": "META_INVISIBLE_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 47845,
+    "offset": 2489515,
+    "value": "NON_FOLLOWERS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 51752,
+    "offset": 2589648,
+    "value": "__tn__,_rticket,_sm_au_,_t,_tr_,ab,ab_version,absolute_url_processed,ac,ac2,access_token,action,adobe_mc,aid,apiVersion,appsecret_proof,appsecret_time,asid,asrs,auto,autoplay,bbb,cb,cbk,ccb,cdn_override,cfs,ch,channel,cid,cmd,consumerUri,controls,cquick,cquick_token,crop,ctarget,ctp,d,device_id,dl,dpi,dpr,ef,entity_id,entity_type,errmsg,etag,ext,fallback,fbclid,fit,fl,fm,fmts,for,format,genfbtitle,h,hash,height,i,id,iid,ilog,imagerefresh,info,is-pending-load,isAdvertisingEnabled,is_active,is_my_cn,is_photo,lang,language,lastmod,locale,location,logcdn,lvh,m,manual_redirect,mc-api,mc-ccv,mc-dsov,mc-mlsv,mc-mv,mcc_mnc,mdk,mdktag,method,miuiStable,mobile-app-version,mode,modestbranding,ms,muted,mw,nometa,noredirect,notif_t,o,original_domain,output-format,output-quality,ovreferer,paid,photo_id,photobox_upload_source,player_origin,playsinline,pn,policy,preview,prime,prime_vts,q,quality,rand,random,refid,rel,resolution,rnd,rsd,s,salt,sanity_cache_breaker,sdl,showinfo,signature,source,ssmix,stp,strip,tag,time,timestamp,title,tlangs,trace_id,trim,ts,type,u,uid,upscale,url,v,vc,ver,version,vs,vts_mn,vtsbc,w,wa_ush,watermark,width,x,y,zc,zoom,markers,name,variant,size,density,ab_b,ab_page,ab_entry,cfg"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 51834,
+    "offset": 2592007,
+    "value": "above_high_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 53040,
+    "offset": 2622952,
+    "value": "buffer_draining_above_low_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 53561,
+    "offset": 2634000,
+    "value": "clipsRecommenderDebugOverlayEnabled"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 53588,
+    "offset": 2634797,
+    "value": "clips_originality_follow"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 54462,
+    "offset": 2658986,
+    "value": "debug_clips_recommender_overlay_enabled"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 54659,
+    "offset": 2663816,
+    "value": "dev_options_image_upload_quality_override_enabled"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 56708,
+    "offset": 2710719,
+    "value": "getClipsRecommenderDebugOverlayEnabled()Z"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 57139,
+    "offset": 2722111,
+    "value": "getIntentBasedLowWatermarkUs"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 58628,
+    "offset": 2759228,
+    "value": "image_upload_quality"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 61513,
+    "offset": 2836107,
+    "value": "mOverridingPlayerWarmUpWatermarkMs"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 61514,
+    "offset": 2836143,
+    "value": "mOverridingPlayerWatermarkBeforePlayedMs"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 61611,
+    "offset": 2837936,
+    "value": "mWatermarkInPauseMs"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 63415,
+    "offset": 2885301,
+    "value": "originality_label_pivot_page"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 764,
+    "offset": 2156836,
+    "value": ", filePathWithWatermark="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 1490,
+    "offset": 2172316,
+    "value": ", unwatermarkVideoAsset="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 1524,
+    "offset": 2172934,
+    "value": ", videoPathWithWatermark="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 6280,
+    "offset": 2233698,
+    "value": "CLIPS_ORIGINALITY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 6281,
+    "offset": 2233717,
+    "value": "CLIPS_ORIGINALITY_INTERNAL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 12793,
+    "offset": 2337770,
+    "value": "GenAIImageToVideoMetadata(videoPathWithoutWatermark="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41274,
+    "offset": 2721641,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoOriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41381,
+    "offset": 2727761,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41382,
+    "offset": 2727818,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41383,
+    "offset": 2727879,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41384,
+    "offset": 2727924,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41385,
+    "offset": 2727973,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41386,
+    "offset": 2728029,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 43381,
+    "offset": 2831421,
+    "value": "META_INVISIBLE_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44295,
+    "offset": 2854794,
+    "value": "ORIGINALITY_COMMENT_HEADER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44296,
+    "offset": 2854822,
+    "value": "ORIGINALITY_INFO_LABEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44555,
+    "offset": 2860490,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 48619,
+    "offset": 2956128,
+    "value": "XDTOriginalityFollowButtonInfo"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 48620,
+    "offset": 2956160,
+    "value": "XDTOriginalityInfo"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 48642,
+    "offset": 2956709,
+    "value": "XDTROriginalitySourceMediaInfo"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 51761,
+    "offset": 3044961,
+    "value": "can_remove_originality_label"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 52168,
+    "offset": 3053394,
+    "value": "clips_originality"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 52169,
+    "offset": 3053413,
+    "value": "clips_originality_internal"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 52217,
+    "offset": 3054753,
+    "value": "clips_watermark_client_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 54628,
+    "offset": 3143901,
+    "value": "enable_higher_rank_for_originality_label"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 54648,
+    "offset": 3144563,
+    "value": "enable_originality_comment_sheet_header"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 62419,
+    "offset": 3399005,
+    "value": "meta_invisible_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 64163,
+    "offset": 3460398,
+    "value": "originality_comment_header"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 64164,
+    "offset": 3460426,
+    "value": "originality_info_label"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 69033,
+    "offset": 3563526,
+    "value": "unwatermarkVideoAsset"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 69034,
+    "offset": 3563549,
+    "value": "unwatermark_video_asset"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 3376,
+    "offset": 2129917,
+    "value": "ALTER TABLE`drafts` ADD COLUMN `trial_params` TEXT DEFAULT NULL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 6086,
+    "offset": 2165886,
+    "value": "CLIPS_ORIGINALITY_FOLLOW"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 6087,
+    "offset": 2165912,
+    "value": "CLIPS_ORIGINALITY_PIVOT_PAGE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 6477,
+    "offset": 2182184,
+    "value": "CREATE TABLE IF NOT EXISTS `drafts_new` (`id` TEXT NOT NULL, `clips_creation_type` TEXT NOT NULL, `last_user_save_time` INTEGER NOT NULL DEFAULT -1, `last_save_time` INTEGER NOT NULL DEFAULT -1, `created_at_time` INTEGER NOT NULL DEFAULT -1, `last_pre_capture_save_time` INTEGER NOT NULL DEFAULT -1, `was_last_save_user_initiated` INTEGER NOT NULL DEFAULT 0, `name` TEXT, `video_segments` TEXT NOT NULL, `video_overlay_segments` TEXT, `retake_video_segments` TEXT, `audio_Track` TEXT, `attriubtion_only_audio_track` TEXT, `pending_media_key` TEXT, `post_capture_media_edits` TEXT, `logging_info` TEXT, `remix_info` TEXT, `original_destination_type` TEXT, `caption` TEXT NOT NULL DEFAULT '', `cover_photo_file_uri` TEXT, `cover_photo_asset` TEXT, `is_share_to_feed` INTEGER NOT NULL DEFAULT 1, `funded_content_deal_id` TEXT, `people_tags` TEXT NOT NULL, `comment_poll` TEXT, `comment_quiz` TEXT, `audience` TEXT, `collaborator_id` TEXT, `collaborator_ids` TEXT NOT NULL, `entry_point` TEXT, `location` TEXT, `original_audio_title` TEXT, `multiple_audio_tracks` TEXT NOT NULL, `clips_sound_effects` TEXT NOT NULL, `clips_template_info` TEXT, `template_disabled` INTEGER NOT NULL, `clips_multiple_audio_segments` TEXT NOT NULL, `upcoming_event` TEXT, `linked_highlight_id` TEXT, `highlight_media_id` TEXT, `media_id` TEXT, `voice_effect` TEXT, `audio_enhancement_effect` TEXT, `clips_draft_info_version` INTEGER, `has_published_clip` INTEGER NOT NULL DEFAULT 0, `branded_content_tags_model` TEXT, `clips_shopping_metadata` TEXT, `is_comment_disabled` INTEGER NOT NULL DEFAULT 0, `is_caption_enabled` INTEGER NOT NULL DEFAULT 0, `is_like_and_view_counts_disabled` INTEGER NOT NULL DEFAULT 0, `is_share_count_disabled` INTEGER NOT NULL DEFAULT 0, `is_gifts_allowed` INTEGER NOT NULL DEFAULT 1, `interest_topics` TEXT NOT NULL, `stacked_timeline_actions` TEXT NOT NULL, `org_cta_type` TEXT, `max_duration_in_ms` INTEGER NOT NULL DEFAULT 0, `hide_from_profile_grid` INTEGER NOT NULL DEFAULT 0, `meta_verified_added_link` TEXT, `meta_verified_request_original_content_review` INTEGER NOT NULL DEFAULT 0, `metagallery_media_id` TEXT, `bio_product` TEXT, `content_scheduling_metadata` TEXT, `trial_params` TEXT, `has_comment_prompt` INTEGER NOT NULL, `linked_media` TEXT, `gen_ai_detection_method` TEXT, `is_pinned` INTEGER NOT NULL, `third_party_downloads_enabled` INTEGER NOT NULL, `archive_only` INTEGER NOT NULL, `audio_fade_effects` TEXT NOT NULL, `share_only_to_profile` INTEGER NOT NULL DEFAULT 0, `is_internal_only` INTEGER NOT NULL, `encoding_settings` TEXT, `draft_origin` TEXT, `is_share_to_facebook` INTEGER, `is_share_to_barcelona` INTEGER, `guessable_secret_code` TEXT, `guessable_code_optional_hint` TEXT, `cover_photo_metadata` TEXT, `recent_color_list` TEXT, `basel_video_composition_model` TEXT, `basel_video_elements` TEXT, `basel_template_overlay_elements` TEXT, `reframe_item_metadata` TEXT, `last_export_time` INTEGER NOT NULL DEFAULT -1, `clips_timeline_settings` TEXT, `draft_save_apps` TEXT NOT NULL, `is_early_access` INTEGER, `linked_series_id` TEXT, `video_element_metadata` TEXT, `deleted_at_time` INTEGER NOT NULL DEFAULT -1, `teleprompter_script` TEXT, `output_aspect_ratio` TEXT, `mutation_clock` TEXT NOT NULL, `import_fallbacks` TEXT, `cropcords_cropLeft` REAL, `cropcords_cropTop` REAL, `cropcords_cropRight` REAL, `cropcords_cropBottom` REAL, `feedmetadata_title` TEXT, `feedmetadata_previewCropCoordinates` TEXT, `feedmetadata_isInternal` INTEGER, `feedmetadata_shareToFacebook` INTEGER, `feedmetadata_seriesId` TEXT, `feedmetadata_shoppingMetadata` TEXT, `feedmetadata_isUnifiedvideo` INTEGER, `feedmetadata_coverIsCustom` INTEGER, `feedmetadata_coverWidth` INTEGER, `feedmetadata_coverHeight` INTEGER, `feedmetadata_coverFromVideoTimeMs` INTEGER, `feedmetadata_coverIsFromVideoEdited` INTEGER, `feedmetadata_areCaptionsEnabled` INTEGER, `feedmetadata_areCommentsDisabled` INTEGER, `feedmetadata_isFundedContentDeal` INTEGER, `feedmetadata_isPaidPartnership` INTEGER, `feedmetadata_brandedContentTags` TEXT, `feedmetadata_partnerBoostEnabled` INTEGER, `feedmetadata_isLikeAndViewCountsDisabled` INTEGER, `feedmetadata_filterId` INTEGER, `feedmetadata_filterStrength` INTEGER, `feedmetadata_postCropAspectRatio` REAL, `feedmetadata_isLandscape` INTEGER, `videocrop_width` INTEGER, `videocrop_height` INTEGER, `videocrop_rectF` TEXT, `mediadraft_version` INTEGER NOT NULL DEFAULT 0, `mediadraft_stickers` TEXT, `mediadraft_unschematized_compositions` TEXT NOT NULL DEFAULT '', `mediadraft_media_type` INTEGER NOT NULL DEFAULT 2, PRIMARY KEY(`id`))"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 6478,
+    "offset": 2186760,
+    "value": "CREATE TABLE IF NOT EXISTS `drafts` (`id` TEXT NOT NULL, `clips_creation_type` TEXT NOT NULL, `last_user_save_time` INTEGER NOT NULL DEFAULT -1, `last_save_time` INTEGER NOT NULL DEFAULT -1, `created_at_time` INTEGER NOT NULL DEFAULT -1, `last_pre_capture_save_time` INTEGER NOT NULL DEFAULT -1, `was_last_save_user_initiated` INTEGER NOT NULL DEFAULT 0, `name` TEXT, `video_segments` TEXT NOT NULL, `video_overlay_segments` TEXT, `retake_video_segments` TEXT, `audio_Track` TEXT, `attriubtion_only_audio_track` TEXT, `pending_media_key` TEXT, `post_capture_media_edits` TEXT, `logging_info` TEXT, `remix_info` TEXT, `original_destination_type` TEXT, `caption` TEXT NOT NULL DEFAULT '', `cover_photo_file_uri` TEXT, `cover_photo_asset` TEXT, `is_share_to_feed` INTEGER NOT NULL DEFAULT 1, `funded_content_deal_id` TEXT, `people_tags` TEXT NOT NULL, `comment_poll` TEXT, `comment_quiz` TEXT, `audience` TEXT, `collaborator_id` TEXT, `collaborator_ids` TEXT NOT NULL, `entry_point` TEXT, `location` TEXT, `original_audio_title` TEXT, `multiple_audio_tracks` TEXT NOT NULL, `clips_sound_effects` TEXT NOT NULL, `clips_template_info` TEXT, `template_disabled` INTEGER NOT NULL, `clips_multiple_audio_segments` TEXT NOT NULL, `upcoming_event` TEXT, `linked_highlight_id` TEXT, `highlight_media_id` TEXT, `existing_fundraiser_to_attach` TEXT, `fundraiser_user_id` TEXT, `new_fundraiser_model` TEXT, `media_id` TEXT, `voice_effect` TEXT, `audio_enhancement_effect` TEXT, `clips_draft_info_version` INTEGER, `has_published_clip` INTEGER NOT NULL DEFAULT 0, `branded_content_tags_model` TEXT, `clips_shopping_metadata` TEXT, `is_comment_disabled` INTEGER NOT NULL DEFAULT 0, `is_caption_enabled` INTEGER NOT NULL DEFAULT 0, `is_like_and_view_counts_disabled` INTEGER NOT NULL DEFAULT 0, `is_share_count_disabled` INTEGER NOT NULL DEFAULT 0, `is_gifts_allowed` INTEGER NOT NULL DEFAULT 1, `is_auto_resharing_to_story` INTEGER, `interest_topics` TEXT NOT NULL, `stacked_timeline_actions` TEXT NOT NULL, `org_cta_type` TEXT, `max_duration_in_ms` INTEGER NOT NULL DEFAULT 0, `hide_from_profile_grid` INTEGER NOT NULL DEFAULT 0, `meta_verified_added_link` TEXT, `meta_verified_request_original_content_review` INTEGER NOT NULL DEFAULT 0, `metagallery_media_id` TEXT, `bio_product` TEXT, `content_scheduling_metadata` TEXT, `trial_params` TEXT, `has_comment_prompt` INTEGER NOT NULL, `linked_media` TEXT, `reel_linked_longform` TEXT, `gen_ai_detection_method` TEXT, `is_pinned` INTEGER NOT NULL, `third_party_downloads_enabled` INTEGER NOT NULL, `archive_only` INTEGER NOT NULL, `audio_fade_effects` TEXT NOT NULL, `share_only_to_profile` INTEGER NOT NULL DEFAULT 0, `is_internal_only` INTEGER NOT NULL, `encoding_settings` TEXT, `draft_origin` TEXT, `is_share_to_facebook` INTEGER, `is_share_to_barcelona` INTEGER, `guessable_secret_code` TEXT, `guessable_code_optional_hint` TEXT, `cover_photo_metadata` TEXT, `recent_color_list` TEXT, `basel_video_composition_model` TEXT, `basel_video_elements` TEXT, `basel_template_overlay_elements` TEXT, `basel_kit_id` TEXT, `reframe_item_metadata` TEXT, `last_export_time` INTEGER NOT NULL DEFAULT -1, `clips_timeline_settings` TEXT, `draft_save_apps` TEXT NOT NULL, `is_early_access` INTEGER, `linked_series_id` TEXT, `video_element_metadata` TEXT, `deleted_at_time` INTEGER NOT NULL DEFAULT -1, `teleprompter_script` TEXT, `output_aspect_ratio` TEXT, `background_color` INTEGER, `mutation_clock` TEXT NOT NULL, `import_fallbacks` TEXT, `extension_drops` TEXT, `cropcords_cropLeft` REAL, `cropcords_cropTop` REAL, `cropcords_cropRight` REAL, `cropcords_cropBottom` REAL, `feedmetadata_title` TEXT, `feedmetadata_previewCropCoordinates` TEXT, `feedmetadata_isInternal` INTEGER, `feedmetadata_shareToFacebook` INTEGER, `feedmetadata_seriesId` TEXT, `feedmetadata_shoppingMetadata` TEXT, `feedmetadata_isUnifiedvideo` INTEGER, `feedmetadata_coverIsCustom` INTEGER, `feedmetadata_coverWidth` INTEGER, `feedmetadata_coverHeight` INTEGER, `feedmetadata_coverFromVideoTimeMs` INTEGER, `feedmetadata_coverIsFromVideoEdited` INTEGER, `feedmetadata_areCaptionsEnabled` INTEGER, `feedmetadata_areCommentsDisabled` INTEGER, `feedmetadata_isFundedContentDeal` INTEGER, `feedmetadata_isPaidPartnership` INTEGER, `feedmetadata_brandedContentTags` TEXT, `feedmetadata_partnerBoostEnabled` INTEGER, `feedmetadata_isLikeAndViewCountsDisabled` INTEGER, `feedmetadata_filterId` INTEGER, `feedmetadata_filterStrength` INTEGER, `feedmetadata_postCropAspectRatio` REAL, `feedmetadata_isLandscape` INTEGER, `videocrop_width` INTEGER, `videocrop_height` INTEGER, `videocrop_rectF` TEXT, `mediadraft_version` INTEGER NOT NULL DEFAULT 0, `mediadraft_stickers` TEXT, `mediadraft_unschematized_compositions` TEXT NOT NULL DEFAULT '', `mediadraft_media_type` INTEGER NOT NULL DEFAULT 2, PRIMARY KEY(`id`))"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 11587,
+    "offset": 2268037,
+    "value": "GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 13662,
+    "offset": 2288811,
+    "value": "INSERT INTO `drafts_new` (`id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`retake_video_segments`,`audio_Track`,`attriubtion_only_audio_track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`original_destination_type`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`clips_draft_info_version`,`has_published_clip`,`branded_content_tags_model`,`clips_shopping_metadata`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`is_early_access`,`linked_series_id`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`mutation_clock`,`import_fallbacks`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`feedmetadata_title`,`feedmetadata_previewCropCoordinates`,`feedmetadata_isInternal`,`feedmetadata_shareToFacebook`,`feedmetadata_seriesId`,`feedmetadata_shoppingMetadata`,`feedmetadata_isUnifiedvideo`,`feedmetadata_coverIsCustom`,`feedmetadata_coverWidth`,`feedmetadata_coverHeight`,`feedmetadata_coverFromVideoTimeMs`,`feedmetadata_coverIsFromVideoEdited`,`feedmetadata_areCaptionsEnabled`,`feedmetadata_areCommentsDisabled`,`feedmetadata_isFundedContentDeal`,`feedmetadata_isPaidPartnership`,`feedmetadata_brandedContentTags`,`feedmetadata_partnerBoostEnabled`,`feedmetadata_isLikeAndViewCountsDisabled`,`feedmetadata_filterId`,`feedmetadata_filterStrength`,`feedmetadata_postCropAspectRatio`,`feedmetadata_isLandscape`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type`) SELECT `id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`retake_video_segments`,`audio_Track`,`attriubtion_only_audio_track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`original_destination_type`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`clips_draft_info_version`,`has_published_clip`,`branded_content_tags_model`,`clips_shopping_metadata`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`is_early_access`,`linked_series_id`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`mutation_clock`,`import_fallbacks`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`feedmetadata_title`,`feedmetadata_previewCropCoordinates`,`feedmetadata_isInternal`,`feedmetadata_shareToFacebook`,`feedmetadata_seriesId`,`feedmetadata_shoppingMetadata`,`feedmetadata_isUnifiedvideo`,`feedmetadata_coverIsCustom`,`feedmetadata_coverWidth`,`feedmetadata_coverHeight`,`feedmetadata_coverFromVideoTimeMs`,`feedmetadata_coverIsFromVideoEdited`,`feedmetadata_areCaptionsEnabled`,`feedmetadata_areCommentsDisabled`,`feedmetadata_isFundedContentDeal`,`feedmetadata_isPaidPartnership`,`feedmetadata_brandedContentTags`,`feedmetadata_partnerBoostEnabled`,`feedmetadata_isLikeAndViewCountsDisabled`,`feedmetadata_filterId`,`feedmetadata_filterStrength`,`feedmetadata_postCropAspectRatio`,`feedmetadata_isLandscape`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type` FROM `drafts`"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41684,
+    "offset": 2635513,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoOriginalityFollowButtonInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41685,
+    "offset": 2635584,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoOriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41686,
+    "offset": 2635643,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoOriginalitySourceMediaInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41769,
+    "offset": 2640424,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41770,
+    "offset": 2640481,
+    "value": "Lcom/instagram/api/schemas/OriginalityFollowButtonInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41771,
+    "offset": 2640542,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41772,
+    "offset": 2640587,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41773,
+    "offset": 2640636,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41774,
+    "offset": 2640692,
+    "value": "Lcom/instagram/api/schemas/OriginalitySourceMediaInfoImpl;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 43739,
+    "offset": 2723446,
+    "value": "ORIGINALITY_INFO"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 43740,
+    "offset": 2723464,
+    "value": "ORIGINALITY_LABEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 43810,
+    "offset": 2725418,
+    "value": "OriginalityInfo(originalityUiState="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 44568,
+    "offset": 2742745,
+    "value": "REMOVE_ORIGINALITY_INFO"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45799,
+    "offset": 2771743,
+    "value": "TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45800,
+    "offset": 2771755,
+    "value": "TRIAL_REEL_LEARN_MORE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45801,
+    "offset": 2771778,
+    "value": "TRIAL_REEL_PANO"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45802,
+    "offset": 2771795,
+    "value": "TRIAL_REEL_PRISM"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 47366,
+    "offset": 2803977,
+    "value": "XDTClipsAssetRecommendationInfo"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 49206,
+    "offset": 2881687,
+    "value": "android_purge_26_q2_ClipsExploreApiUtil_createClipsRecommendRequestTask"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 50801,
+    "offset": 2995669,
+    "value": "android_purge_26_q2_ClipsViewerLoggerUtil_logClipsOriginalityLabelImpression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 50802,
+    "offset": 2995747,
+    "value": "android_purge_26_q2_ClipsViewerLoggerUtil_logClipsOriginalityLabelTap"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 53147,
+    "offset": 3167034,
+    "value": "android_purge_26_q3_ClipsOriginalityInternalFeedDataSource_getHeadFetchRequest"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 53148,
+    "offset": 3167114,
+    "value": "android_purge_26_q3_ClipsOriginalityInternalFeedDataSource_getTailFetchRequest"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 53176,
+    "offset": 3168913,
+    "value": "android_purge_26_q3_ClipsRecommenderDebugOverlayComponent_render"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 53177,
+    "offset": 3168979,
+    "value": "android_purge_26_q3_ClipsRecommenderDebugOverlayUseCase_getUiState"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 54897,
+    "offset": 3294078,
+    "value": "android_purge_26_q3_OriginalityInfoActionHandler_handleOriginalityInfoClick"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 54898,
+    "offset": 3294155,
+    "value": "android_purge_26_q3_OriginalityInfoActionHandler_setOriginalityInfoAction"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 54899,
+    "offset": 3294230,
+    "value": "android_purge_26_q3_OriginalityInfoNavigator_launchOriginalityInfoOriginalContent"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 54900,
+    "offset": 3294313,
+    "value": "android_purge_26_q3_OriginalityInfoUseCase_getActionHandler"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 54901,
+    "offset": 3294374,
+    "value": "android_purge_26_q3_OriginalityInfoUseCase_getUiState"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 56811,
+    "offset": 3377909,
+    "value": "clips/originality/internal_unoriginal_content_feed/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 56812,
+    "offset": 3377962,
+    "value": "clips/recommend_label/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 56960,
+    "offset": 3382598,
+    "value": "clips_originality_follow"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 56961,
+    "offset": 3382624,
+    "value": "clips_originality_pivot_page"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 57128,
+    "offset": 3388278,
+    "value": "clips_viewer_feed_recommendation_chain"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 57129,
+    "offset": 3388318,
+    "value": "clips_viewer_feed_recommendation_chain_mixed_unconnected"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 60331,
+    "offset": 3467553,
+    "value": "has_seen_self_trial_reel_insight_entry_point_tooltip"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 61735,
+    "offset": 3505677,
+    "value": "launchOriginalityInfoOriginalContent"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 61736,
+    "offset": 3505716,
+    "value": "launchOriginalityInfoOriginalContent(Linstagram/features/clips/viewer/feature/clipsitem/feature/mediainfo/feature/authorinfo/feature/subtitle/feature/originality/domain/OriginalityInfoActionsLaunchOriginalityInfoOriginalContentSocketCompat;Lcom/facebook/analytics/structuredlogger/enums/InstagramDeliveryClassNames;)V"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 63747,
+    "offset": 3567503,
+    "value": "originality_label"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 64502,
+    "offset": 3582900,
+    "value": "recommended_clips_blend_model"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 64776,
+    "offset": 3590115,
+    "value": "remove_originality_label"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 67105,
+    "offset": 3641194,
+    "value": "trial_params"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 67106,
+    "offset": 3641208,
+    "value": "trial_reel_learn_more"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 47347,
+    "offset": 2717064,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 47348,
+    "offset": 2717144,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_SHOULD_SHOW_CONSUMPTION_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 56963,
+    "offset": 2990409,
+    "value": "ig_creators_originality_comment_header_click"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 56964,
+    "offset": 2990455,
+    "value": "ig_creators_originality_comment_header_profile_click"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 58884,
+    "offset": 3036766,
+    "value": "non_follower_view_count"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 63452,
+    "offset": 3146211,
+    "value": "xdt_user_trial_reels_graphql"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 5666,
+    "offset": 2224097,
+    "value": "AUDIO_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 5667,
+    "offset": 2224114,
+    "value": "AUDIO_WATERMARKING_CLIENT_ANDROID"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 6164,
+    "offset": 2235016,
+    "value": "AudioWatermarkMediaEffect"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 6165,
+    "offset": 2235043,
+    "value": "AudioWatermarkSgAttributedDevice"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 7737,
+    "offset": 2255250,
+    "value": "CLIPS_MIDCARD_MUSIC_RECOMMENDATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 7793,
+    "offset": 2256800,
+    "value": "CLIPS_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 8968,
+    "offset": 2291242,
+    "value": "Couldn't create temp image for watermark image"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 11841,
+    "offset": 2341954,
+    "value": "FB_REELS_ORIGINALITY_REVIEW_PAGE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 15881,
+    "offset": 2407402,
+    "value": "IMAGE_WITH_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 16033,
+    "offset": 2410627,
+    "value": "INVISIBLE_WATERMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 16329,
+    "offset": 2419549,
+    "value": "InvisibleWatermarkSgAttributedDevice"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 47528,
+    "offset": 3126855,
+    "value": "[Lcom/instagram/api/schemas/ImmutablePandoOriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48527,
+    "offset": 3161814,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_draw"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48528,
+    "offset": 3161865,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_moveWatermarkLocation"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48529,
+    "offset": 3161933,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_setAlpha"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48530,
+    "offset": 3161988,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_setColorFilter"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48531,
+    "offset": 3162049,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_setFrameTimeMs"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48532,
+    "offset": 3162110,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_shouldTransitionAnimationStates"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48533,
+    "offset": 3162188,
+    "value": "android_purge_26_q2_ClipsWatermarkDrawableV2_transitionAnimationStates"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48534,
+    "offset": 3162260,
+    "value": "android_purge_26_q2_ClipsWatermarkStickerClientModel_init"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48565,
+    "offset": 3164461,
+    "value": "android_purge_26_q3_ClipsWatermarkUtil_createClipsWatermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 49062,
+    "offset": 3177094,
+    "value": "audio_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 49063,
+    "offset": 3177111,
+    "value": "audio_watermarking"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 50505,
+    "offset": 3211023,
+    "value": "clips_midcard_music_recommendation"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 50586,
+    "offset": 3213297,
+    "value": "clips_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 53629,
+    "offset": 3300967,
+    "value": "file_path_with_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 53630,
+    "offset": 3300993,
+    "value": "file_path_without_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 56972,
+    "offset": 3382591,
+    "value": "invisible_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 63718,
+    "offset": 3541684,
+    "value": "sg_invisible_watermarked_media"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 65252,
+    "offset": 3573206,
+    "value": "time_sticker_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 66473,
+    "offset": 3599489,
+    "value": "video_path_with_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 66474,
+    "offset": 3599516,
+    "value": "video_path_without_watermark"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 66760,
+    "offset": 3605595,
+    "value": "watermarkStrength"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes8.dex",
+    "string_index": 6458,
+    "offset": 410963,
+    "value": "android_purge_26_q2_ClipsRecommenderDebugOverlayComponentPluginImpl_enable"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 5080,
+    "offset": 1352622,
+    "value": "IGSundialOriginalityRemoveLabelMutationQuery"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 21159,
+    "offset": 1553665,
+    "value": "Lcom/instagram/api/schemas/OriginalityInfo;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 26431,
+    "offset": 1728809,
+    "value": "android_purge_26_q2_ClipsViewerLoggerUtil_logClipsOriginalityLabelDirectReplaceClick"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 26432,
+    "offset": 1728895,
+    "value": "android_purge_26_q2_ClipsViewerLoggerUtil_logClipsOriginalityLabelDirectReplaceImpression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 32313,
+    "offset": 1915323,
+    "value": "high_quality_upload_off"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 32314,
+    "offset": 1915348,
+    "value": "high_quality_upload_on"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 32922,
+    "offset": 1940514,
+    "value": "ig.reels_and_remix.SetReelsRecommendation"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 33068,
+    "offset": 1945901,
+    "value": "ig_creators_originality_dr_toast_click"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 33069,
+    "offset": 1945941,
+    "value": "ig_creators_originality_dr_toast_impression"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 35584,
+    "offset": 2013710,
+    "value": "non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 39427,
+    "offset": 2114770,
+    "value": "trial_reel_gallery_view"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 40123,
+    "offset": 2131140,
+    "value": "watermark_ts_ms"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 40231,
+    "offset": 2133489,
+    "value": "xdt_remove_originality_label_from_media"
+  }
+]

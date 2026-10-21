@@ -1,0 +1,22 @@
+{
+  "{http://schemas.android.com/apk/res/android}theme": "@style/Theme.Instagram.Splash",
+  "{http://schemas.android.com/apk/res/android}label": "@string/_name_removed__res_0x7f130009",
+  "{http://schemas.android.com/apk/res/android}icon": "@mipmap/icon",
+  "{http://schemas.android.com/apk/res/android}name": "com.instagram.app.InstagramAppShell",
+  "{http://schemas.android.com/apk/res/android}debuggable": "false",
+  "{http://schemas.android.com/apk/res/android}allowTaskReparenting": "true",
+  "{http://schemas.android.com/apk/res/android}backupAgent": "com.instagram.backup.KeyValueBackupAgent",
+  "{http://schemas.android.com/apk/res/android}allowBackup": "true",
+  "{http://schemas.android.com/apk/res/android}hardwareAccelerated": "true",
+  "{http://schemas.android.com/apk/res/android}largeHeap": "true",
+  "{http://schemas.android.com/apk/res/android}supportsRtl": "true",
+  "{http://schemas.android.com/apk/res/android}fullBackupOnly": "true",
+  "{http://schemas.android.com/apk/res/android}extractNativeLibs": "true",
+  "{http://schemas.android.com/apk/res/android}fullBackupContent": "@xml/backup_rules",
+  "{http://schemas.android.com/apk/res/android}resizeableActivity": "true",
+  "{http://schemas.android.com/apk/res/android}networkSecurityConfig": "@xml/fb_network_security_config",
+  "{http://schemas.android.com/apk/res/android}appComponentFactory": "com.instagram.process.instagram.Ig4aAppComponentFactory",
+  "{http://schemas.android.com/apk/res/android}requestLegacyExternalStorage": "true",
+  "{http://schemas.android.com/apk/res/android}dataExtractionRules": "@xml/data_extraction_rules",
+  "{http://schemas.android.com/apk/res/android}allowCrossUidActivitySwitchFromBelow": "false"
+}

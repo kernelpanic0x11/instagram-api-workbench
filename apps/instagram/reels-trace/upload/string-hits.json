@@ -1,0 +1,856 @@
+[
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 6388,
+    "offset": 2007911,
+    "value": "BEST_PRACTICE_TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 12187,
+    "offset": 2135507,
+    "value": "FOLLOWERS_ONLY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40208,
+    "offset": 2635618,
+    "value": "PREFERENCE_REELS_AUTO_RECOMMEND_ON_FACEBOOK_LAST_CHANGED_MS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40211,
+    "offset": 2635795,
+    "value": "PREFERENCE_REELS_IS_AUTO_RECOMMEND_ON_FACEBOOK_ENABLED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40212,
+    "offset": 2635851,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40213,
+    "offset": 2635918,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40214,
+    "offset": 2635998,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 40216,
+    "offset": 2636144,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 43065,
+    "offset": 2712750,
+    "value": "TRIAL_REEL_GALLERY_VIEW"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 48547,
+    "offset": 2851930,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 59270,
+    "offset": 3095092,
+    "value": "is_high_quality_upload_on"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes10.dex",
+    "string_index": 43210,
+    "offset": 2438892,
+    "value": "xdt_user_trial_reels_graphql"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 3542,
+    "offset": 1508907,
+    "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 3865,
+    "offset": 1523665,
+    "value": "DirectThreadMemberPickFragment.AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 30175,
+    "offset": 1964973,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31470,
+    "offset": 1998194,
+    "value": "direct_channel_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31517,
+    "offset": 1999836,
+    "value": "direct_emoji_thread_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31725,
+    "offset": 2006497,
+    "value": "direct_thread_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 32499,
+    "offset": 2024975,
+    "value": "followers_only_toggled"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 32537,
+    "offset": 2025732,
+    "value": "forwarded_thread_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 28550,
+    "offset": 1831939,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 34507,
+    "offset": 1991615,
+    "value": "recommend_on_facebook_primer"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 35508,
+    "offset": 2014883,
+    "value": "show_audience_type_selector"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 1614,
+    "offset": 2155973,
+    "value": "ARG_CLIPS_SHARE_SHEET_IS_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 2779,
+    "offset": 2176226,
+    "value": "CREATE_NEW_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 4602,
+    "offset": 2206127,
+    "value": "FOLLOWERS_ONLY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 4603,
+    "offset": 2206143,
+    "value": "FOLLOWERS_ONLY_AUDIENCE_SELECTED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 6046,
+    "offset": 2228169,
+    "value": "IS_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33185,
+    "offset": 2595753,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER_IMPRESSION_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33186,
+    "offset": 2595826,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_ENABLED_CONSECUTIVE_SHARE_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33189,
+    "offset": 2596040,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33287,
+    "offset": 2599092,
+    "value": "PUBLIC_ACCOUNT_FOLLOWERS_ONLY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 34453,
+    "offset": 2626532,
+    "value": "TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 48236,
+    "offset": 3668501,
+    "value": "fb_reels_audience_type_arg"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53031,
+    "offset": 4124540,
+    "value": "instagram://education_hub?referrer=trials_page&start_tab=TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 56885,
+    "offset": 4224632,
+    "value": "threads_reels_audience_type_arg"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 57029,
+    "offset": 4227663,
+    "value": "trial_reels"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 31484,
+    "offset": 2369960,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_REUSE_ORIGINAL_AUDIO"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 31485,
+    "offset": 2370021,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_SHOULD_SHOW_CONSUMPTION_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 31486,
+    "offset": 2370092,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_INCENTIVES_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 4346,
+    "offset": 2096351,
+    "value": "DirectThreadInviteLinkSettingsFragment.ARGUMENT_AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 44767,
+    "offset": 2711322,
+    "value": "active_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 46285,
+    "offset": 2787279,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 46796,
+    "offset": 2798646,
+    "value": "channel_education_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 54236,
+    "offset": 3047908,
+    "value": "previous_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 41466,
+    "offset": 2570509,
+    "value": "clips_has_seen_public_account_followers_only_bottomsheet_tooltip"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 41898,
+    "offset": 2588170,
+    "value": "configure_to_clips returned an unparseable response"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47116,
+    "offset": 2715315,
+    "value": "media/configure/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47117,
+    "offset": 2715333,
+    "value": "media/configure_sidecar/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47118,
+    "offset": 2715359,
+    "value": "media/configure_sidecar_children/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47119,
+    "offset": 2715394,
+    "value": "media/configure_text_only_post/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47120,
+    "offset": 2715427,
+    "value": "media/configure_text_post_app_feed/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47121,
+    "offset": 2715464,
+    "value": "media/configure_text_post_app_sidecar/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47122,
+    "offset": 2715504,
+    "value": "media/configure_to_basel_elements/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47123,
+    "offset": 2715540,
+    "value": "media/configure_to_clips/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47124,
+    "offset": 2715567,
+    "value": "media/configure_to_clips_cover_image/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47125,
+    "offset": 2715606,
+    "value": "media/configure_to_comment/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47126,
+    "offset": 2715635,
+    "value": "media/configure_to_cutout_sticker/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47127,
+    "offset": 2715671,
+    "value": "media/configure_to_longform/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47128,
+    "offset": 2715701,
+    "value": "media/configure_to_media_kit_cover/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47129,
+    "offset": 2715738,
+    "value": "media/configure_to_nametag/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47130,
+    "offset": 2715767,
+    "value": "media/configure_to_open_carousel/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47131,
+    "offset": 2715802,
+    "value": "media/configure_to_quick_snap/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47132,
+    "offset": 2715834,
+    "value": "media/configure_to_reusable_template_assets/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47133,
+    "offset": 2715880,
+    "value": "media/configure_to_story/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 47134,
+    "offset": 2715907,
+    "value": "media/configure_to_story_template_asset/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 4151,
+    "offset": 2031207,
+    "value": "AUDIENCE_TYPE_OPAL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 44632,
+    "offset": 2730578,
+    "value": "RECOMMEND_ON_FACEBOOK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 47513,
+    "offset": 2793965,
+    "value": "TRIAL_REELS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 53165,
+    "offset": 2978177,
+    "value": "audience_type_opal"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 4388,
+    "offset": 2105221,
+    "value": "AUDIENCE_TYPE_FIELD_NUMBER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 11800,
+    "offset": 2414474,
+    "value": "FOLLOWERS_ONLY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 15735,
+    "offset": 2485663,
+    "value": "INSERT OR REPLACE INTO `drafts` (`id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`audio_Track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`existing_fundraiser_to_attach`,`fundraiser_user_id`,`new_fundraiser_model`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`branded_content_tags_model`,`clips_shopping_metadata`,`has_published_clip`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`is_auto_resharing_to_story`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`reel_linked_longform`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`is_early_access`,`linked_series_id`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`basel_kit_id`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`background_color`,`mutation_clock`,`import_fallbacks`,`extension_drops`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 52414,
+    "offset": 3131585,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_COMMENT_DISCLOSURE_VERSION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 52916,
+    "offset": 3145722,
+    "value": "RECOMMEND_ON_FACEBOOK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 53052,
+    "offset": 3148712,
+    "value": "REELS_SHARE_SHEET_RECOMMEND_ON_FACEBOOK_ROW"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 59551,
+    "offset": 3322300,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 64852,
+    "offset": 3487430,
+    "value": "followers_only"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 64853,
+    "offset": 3487446,
+    "value": "followers_only_rollcall"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 74672,
+    "offset": 3758864,
+    "value": "recommend_on_facebook"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 74793,
+    "offset": 3761927,
+    "value": "reels_share_sheet_recommend_on_facebook_row"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 76555,
+    "offset": 3799162,
+    "value": "share_to_fb_destination_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 14298,
+    "offset": 1381385,
+    "value": "GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 32656,
+    "offset": 1950928,
+    "value": "NAVIGATION_CLIPS_AUDIENCE_CONTROL_FRAGMENT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 35415,
+    "offset": 2053288,
+    "value": "OPT_IN_AUTO_GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 35416,
+    "offset": 2053321,
+    "value": "OPT_OUT_AUTO_GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 51146,
+    "offset": 2574947,
+    "value": "graduate_trial_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 53566,
+    "offset": 2629926,
+    "value": "opt_in_auto_graduate_trial_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 53567,
+    "offset": 2629959,
+    "value": "opt_out_auto_graduate_trial_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 11518,
+    "offset": 2319923,
+    "value": "FOLLOWERS_ONLY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44555,
+    "offset": 2860490,
+    "value": "PREFERENCE_REELS_SHOULD_SHOW_RECOMMEND_ON_FACEBOOK_CREATION_PRIMER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 51099,
+    "offset": 3030844,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 53096,
+    "offset": 3107013,
+    "value": "configure_to_clips"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 55609,
+    "offset": 3166245,
+    "value": "followers_only"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 3376,
+    "offset": 2129917,
+    "value": "ALTER TABLE`drafts` ADD COLUMN `trial_params` TEXT DEFAULT NULL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 6477,
+    "offset": 2182184,
+    "value": "CREATE TABLE IF NOT EXISTS `drafts_new` (`id` TEXT NOT NULL, `clips_creation_type` TEXT NOT NULL, `last_user_save_time` INTEGER NOT NULL DEFAULT -1, `last_save_time` INTEGER NOT NULL DEFAULT -1, `created_at_time` INTEGER NOT NULL DEFAULT -1, `last_pre_capture_save_time` INTEGER NOT NULL DEFAULT -1, `was_last_save_user_initiated` INTEGER NOT NULL DEFAULT 0, `name` TEXT, `video_segments` TEXT NOT NULL, `video_overlay_segments` TEXT, `retake_video_segments` TEXT, `audio_Track` TEXT, `attriubtion_only_audio_track` TEXT, `pending_media_key` TEXT, `post_capture_media_edits` TEXT, `logging_info` TEXT, `remix_info` TEXT, `original_destination_type` TEXT, `caption` TEXT NOT NULL DEFAULT '', `cover_photo_file_uri` TEXT, `cover_photo_asset` TEXT, `is_share_to_feed` INTEGER NOT NULL DEFAULT 1, `funded_content_deal_id` TEXT, `people_tags` TEXT NOT NULL, `comment_poll` TEXT, `comment_quiz` TEXT, `audience` TEXT, `collaborator_id` TEXT, `collaborator_ids` TEXT NOT NULL, `entry_point` TEXT, `location` TEXT, `original_audio_title` TEXT, `multiple_audio_tracks` TEXT NOT NULL, `clips_sound_effects` TEXT NOT NULL, `clips_template_info` TEXT, `template_disabled` INTEGER NOT NULL, `clips_multiple_audio_segments` TEXT NOT NULL, `upcoming_event` TEXT, `linked_highlight_id` TEXT, `highlight_media_id` TEXT, `media_id` TEXT, `voice_effect` TEXT, `audio_enhancement_effect` TEXT, `clips_draft_info_version` INTEGER, `has_published_clip` INTEGER NOT NULL DEFAULT 0, `branded_content_tags_model` TEXT, `clips_shopping_metadata` TEXT, `is_comment_disabled` INTEGER NOT NULL DEFAULT 0, `is_caption_enabled` INTEGER NOT NULL DEFAULT 0, `is_like_and_view_counts_disabled` INTEGER NOT NULL DEFAULT 0, `is_share_count_disabled` INTEGER NOT NULL DEFAULT 0, `is_gifts_allowed` INTEGER NOT NULL DEFAULT 1, `interest_topics` TEXT NOT NULL, `stacked_timeline_actions` TEXT NOT NULL, `org_cta_type` TEXT, `max_duration_in_ms` INTEGER NOT NULL DEFAULT 0, `hide_from_profile_grid` INTEGER NOT NULL DEFAULT 0, `meta_verified_added_link` TEXT, `meta_verified_request_original_content_review` INTEGER NOT NULL DEFAULT 0, `metagallery_media_id` TEXT, `bio_product` TEXT, `content_scheduling_metadata` TEXT, `trial_params` TEXT, `has_comment_prompt` INTEGER NOT NULL, `linked_media` TEXT, `gen_ai_detection_method` TEXT, `is_pinned` INTEGER NOT NULL, `third_party_downloads_enabled` INTEGER NOT NULL, `archive_only` INTEGER NOT NULL, `audio_fade_effects` TEXT NOT NULL, `share_only_to_profile` INTEGER NOT NULL DEFAULT 0, `is_internal_only` INTEGER NOT NULL, `encoding_settings` TEXT, `draft_origin` TEXT, `is_share_to_facebook` INTEGER, `is_share_to_barcelona` INTEGER, `guessable_secret_code` TEXT, `guessable_code_optional_hint` TEXT, `cover_photo_metadata` TEXT, `recent_color_list` TEXT, `basel_video_composition_model` TEXT, `basel_video_elements` TEXT, `basel_template_overlay_elements` TEXT, `reframe_item_metadata` TEXT, `last_export_time` INTEGER NOT NULL DEFAULT -1, `clips_timeline_settings` TEXT, `draft_save_apps` TEXT NOT NULL, `is_early_access` INTEGER, `linked_series_id` TEXT, `video_element_metadata` TEXT, `deleted_at_time` INTEGER NOT NULL DEFAULT -1, `teleprompter_script` TEXT, `output_aspect_ratio` TEXT, `mutation_clock` TEXT NOT NULL, `import_fallbacks` TEXT, `cropcords_cropLeft` REAL, `cropcords_cropTop` REAL, `cropcords_cropRight` REAL, `cropcords_cropBottom` REAL, `feedmetadata_title` TEXT, `feedmetadata_previewCropCoordinates` TEXT, `feedmetadata_isInternal` INTEGER, `feedmetadata_shareToFacebook` INTEGER, `feedmetadata_seriesId` TEXT, `feedmetadata_shoppingMetadata` TEXT, `feedmetadata_isUnifiedvideo` INTEGER, `feedmetadata_coverIsCustom` INTEGER, `feedmetadata_coverWidth` INTEGER, `feedmetadata_coverHeight` INTEGER, `feedmetadata_coverFromVideoTimeMs` INTEGER, `feedmetadata_coverIsFromVideoEdited` INTEGER, `feedmetadata_areCaptionsEnabled` INTEGER, `feedmetadata_areCommentsDisabled` INTEGER, `feedmetadata_isFundedContentDeal` INTEGER, `feedmetadata_isPaidPartnership` INTEGER, `feedmetadata_brandedContentTags` TEXT, `feedmetadata_partnerBoostEnabled` INTEGER, `feedmetadata_isLikeAndViewCountsDisabled` INTEGER, `feedmetadata_filterId` INTEGER, `feedmetadata_filterStrength` INTEGER, `feedmetadata_postCropAspectRatio` REAL, `feedmetadata_isLandscape` INTEGER, `videocrop_width` INTEGER, `videocrop_height` INTEGER, `videocrop_rectF` TEXT, `mediadraft_version` INTEGER NOT NULL DEFAULT 0, `mediadraft_stickers` TEXT, `mediadraft_unschematized_compositions` TEXT NOT NULL DEFAULT '', `mediadraft_media_type` INTEGER NOT NULL DEFAULT 2, PRIMARY KEY(`id`))"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 6478,
+    "offset": 2186760,
+    "value": "CREATE TABLE IF NOT EXISTS `drafts` (`id` TEXT NOT NULL, `clips_creation_type` TEXT NOT NULL, `last_user_save_time` INTEGER NOT NULL DEFAULT -1, `last_save_time` INTEGER NOT NULL DEFAULT -1, `created_at_time` INTEGER NOT NULL DEFAULT -1, `last_pre_capture_save_time` INTEGER NOT NULL DEFAULT -1, `was_last_save_user_initiated` INTEGER NOT NULL DEFAULT 0, `name` TEXT, `video_segments` TEXT NOT NULL, `video_overlay_segments` TEXT, `retake_video_segments` TEXT, `audio_Track` TEXT, `attriubtion_only_audio_track` TEXT, `pending_media_key` TEXT, `post_capture_media_edits` TEXT, `logging_info` TEXT, `remix_info` TEXT, `original_destination_type` TEXT, `caption` TEXT NOT NULL DEFAULT '', `cover_photo_file_uri` TEXT, `cover_photo_asset` TEXT, `is_share_to_feed` INTEGER NOT NULL DEFAULT 1, `funded_content_deal_id` TEXT, `people_tags` TEXT NOT NULL, `comment_poll` TEXT, `comment_quiz` TEXT, `audience` TEXT, `collaborator_id` TEXT, `collaborator_ids` TEXT NOT NULL, `entry_point` TEXT, `location` TEXT, `original_audio_title` TEXT, `multiple_audio_tracks` TEXT NOT NULL, `clips_sound_effects` TEXT NOT NULL, `clips_template_info` TEXT, `template_disabled` INTEGER NOT NULL, `clips_multiple_audio_segments` TEXT NOT NULL, `upcoming_event` TEXT, `linked_highlight_id` TEXT, `highlight_media_id` TEXT, `existing_fundraiser_to_attach` TEXT, `fundraiser_user_id` TEXT, `new_fundraiser_model` TEXT, `media_id` TEXT, `voice_effect` TEXT, `audio_enhancement_effect` TEXT, `clips_draft_info_version` INTEGER, `has_published_clip` INTEGER NOT NULL DEFAULT 0, `branded_content_tags_model` TEXT, `clips_shopping_metadata` TEXT, `is_comment_disabled` INTEGER NOT NULL DEFAULT 0, `is_caption_enabled` INTEGER NOT NULL DEFAULT 0, `is_like_and_view_counts_disabled` INTEGER NOT NULL DEFAULT 0, `is_share_count_disabled` INTEGER NOT NULL DEFAULT 0, `is_gifts_allowed` INTEGER NOT NULL DEFAULT 1, `is_auto_resharing_to_story` INTEGER, `interest_topics` TEXT NOT NULL, `stacked_timeline_actions` TEXT NOT NULL, `org_cta_type` TEXT, `max_duration_in_ms` INTEGER NOT NULL DEFAULT 0, `hide_from_profile_grid` INTEGER NOT NULL DEFAULT 0, `meta_verified_added_link` TEXT, `meta_verified_request_original_content_review` INTEGER NOT NULL DEFAULT 0, `metagallery_media_id` TEXT, `bio_product` TEXT, `content_scheduling_metadata` TEXT, `trial_params` TEXT, `has_comment_prompt` INTEGER NOT NULL, `linked_media` TEXT, `reel_linked_longform` TEXT, `gen_ai_detection_method` TEXT, `is_pinned` INTEGER NOT NULL, `third_party_downloads_enabled` INTEGER NOT NULL, `archive_only` INTEGER NOT NULL, `audio_fade_effects` TEXT NOT NULL, `share_only_to_profile` INTEGER NOT NULL DEFAULT 0, `is_internal_only` INTEGER NOT NULL, `encoding_settings` TEXT, `draft_origin` TEXT, `is_share_to_facebook` INTEGER, `is_share_to_barcelona` INTEGER, `guessable_secret_code` TEXT, `guessable_code_optional_hint` TEXT, `cover_photo_metadata` TEXT, `recent_color_list` TEXT, `basel_video_composition_model` TEXT, `basel_video_elements` TEXT, `basel_template_overlay_elements` TEXT, `basel_kit_id` TEXT, `reframe_item_metadata` TEXT, `last_export_time` INTEGER NOT NULL DEFAULT -1, `clips_timeline_settings` TEXT, `draft_save_apps` TEXT NOT NULL, `is_early_access` INTEGER, `linked_series_id` TEXT, `video_element_metadata` TEXT, `deleted_at_time` INTEGER NOT NULL DEFAULT -1, `teleprompter_script` TEXT, `output_aspect_ratio` TEXT, `background_color` INTEGER, `mutation_clock` TEXT NOT NULL, `import_fallbacks` TEXT, `extension_drops` TEXT, `cropcords_cropLeft` REAL, `cropcords_cropTop` REAL, `cropcords_cropRight` REAL, `cropcords_cropBottom` REAL, `feedmetadata_title` TEXT, `feedmetadata_previewCropCoordinates` TEXT, `feedmetadata_isInternal` INTEGER, `feedmetadata_shareToFacebook` INTEGER, `feedmetadata_seriesId` TEXT, `feedmetadata_shoppingMetadata` TEXT, `feedmetadata_isUnifiedvideo` INTEGER, `feedmetadata_coverIsCustom` INTEGER, `feedmetadata_coverWidth` INTEGER, `feedmetadata_coverHeight` INTEGER, `feedmetadata_coverFromVideoTimeMs` INTEGER, `feedmetadata_coverIsFromVideoEdited` INTEGER, `feedmetadata_areCaptionsEnabled` INTEGER, `feedmetadata_areCommentsDisabled` INTEGER, `feedmetadata_isFundedContentDeal` INTEGER, `feedmetadata_isPaidPartnership` INTEGER, `feedmetadata_brandedContentTags` TEXT, `feedmetadata_partnerBoostEnabled` INTEGER, `feedmetadata_isLikeAndViewCountsDisabled` INTEGER, `feedmetadata_filterId` INTEGER, `feedmetadata_filterStrength` INTEGER, `feedmetadata_postCropAspectRatio` REAL, `feedmetadata_isLandscape` INTEGER, `videocrop_width` INTEGER, `videocrop_height` INTEGER, `videocrop_rectF` TEXT, `mediadraft_version` INTEGER NOT NULL DEFAULT 0, `mediadraft_stickers` TEXT, `mediadraft_unschematized_compositions` TEXT NOT NULL DEFAULT '', `mediadraft_media_type` INTEGER NOT NULL DEFAULT 2, PRIMARY KEY(`id`))"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 11587,
+    "offset": 2268037,
+    "value": "GRADUATE_TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 13662,
+    "offset": 2288811,
+    "value": "INSERT INTO `drafts_new` (`id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`retake_video_segments`,`audio_Track`,`attriubtion_only_audio_track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`original_destination_type`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`clips_draft_info_version`,`has_published_clip`,`branded_content_tags_model`,`clips_shopping_metadata`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`is_early_access`,`linked_series_id`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`mutation_clock`,`import_fallbacks`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`feedmetadata_title`,`feedmetadata_previewCropCoordinates`,`feedmetadata_isInternal`,`feedmetadata_shareToFacebook`,`feedmetadata_seriesId`,`feedmetadata_shoppingMetadata`,`feedmetadata_isUnifiedvideo`,`feedmetadata_coverIsCustom`,`feedmetadata_coverWidth`,`feedmetadata_coverHeight`,`feedmetadata_coverFromVideoTimeMs`,`feedmetadata_coverIsFromVideoEdited`,`feedmetadata_areCaptionsEnabled`,`feedmetadata_areCommentsDisabled`,`feedmetadata_isFundedContentDeal`,`feedmetadata_isPaidPartnership`,`feedmetadata_brandedContentTags`,`feedmetadata_partnerBoostEnabled`,`feedmetadata_isLikeAndViewCountsDisabled`,`feedmetadata_filterId`,`feedmetadata_filterStrength`,`feedmetadata_postCropAspectRatio`,`feedmetadata_isLandscape`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type`) SELECT `id`,`clips_creation_type`,`last_user_save_time`,`last_save_time`,`created_at_time`,`last_pre_capture_save_time`,`was_last_save_user_initiated`,`name`,`video_segments`,`video_overlay_segments`,`retake_video_segments`,`audio_Track`,`attriubtion_only_audio_track`,`pending_media_key`,`post_capture_media_edits`,`logging_info`,`remix_info`,`original_destination_type`,`caption`,`cover_photo_file_uri`,`cover_photo_asset`,`is_share_to_feed`,`funded_content_deal_id`,`people_tags`,`comment_poll`,`comment_quiz`,`audience`,`collaborator_id`,`collaborator_ids`,`entry_point`,`location`,`original_audio_title`,`multiple_audio_tracks`,`clips_sound_effects`,`clips_template_info`,`template_disabled`,`clips_multiple_audio_segments`,`upcoming_event`,`linked_highlight_id`,`highlight_media_id`,`media_id`,`voice_effect`,`audio_enhancement_effect`,`clips_draft_info_version`,`has_published_clip`,`branded_content_tags_model`,`clips_shopping_metadata`,`is_comment_disabled`,`is_caption_enabled`,`is_like_and_view_counts_disabled`,`is_share_count_disabled`,`is_gifts_allowed`,`interest_topics`,`stacked_timeline_actions`,`org_cta_type`,`max_duration_in_ms`,`hide_from_profile_grid`,`meta_verified_added_link`,`meta_verified_request_original_content_review`,`metagallery_media_id`,`bio_product`,`content_scheduling_metadata`,`trial_params`,`has_comment_prompt`,`linked_media`,`gen_ai_detection_method`,`is_pinned`,`third_party_downloads_enabled`,`archive_only`,`audio_fade_effects`,`share_only_to_profile`,`is_internal_only`,`encoding_settings`,`draft_origin`,`is_share_to_facebook`,`is_share_to_barcelona`,`guessable_secret_code`,`guessable_code_optional_hint`,`cover_photo_metadata`,`recent_color_list`,`basel_video_composition_model`,`basel_video_elements`,`basel_template_overlay_elements`,`reframe_item_metadata`,`last_export_time`,`clips_timeline_settings`,`draft_save_apps`,`is_early_access`,`linked_series_id`,`video_element_metadata`,`deleted_at_time`,`teleprompter_script`,`output_aspect_ratio`,`mutation_clock`,`import_fallbacks`,`cropcords_cropLeft`,`cropcords_cropTop`,`cropcords_cropRight`,`cropcords_cropBottom`,`feedmetadata_title`,`feedmetadata_previewCropCoordinates`,`feedmetadata_isInternal`,`feedmetadata_shareToFacebook`,`feedmetadata_seriesId`,`feedmetadata_shoppingMetadata`,`feedmetadata_isUnifiedvideo`,`feedmetadata_coverIsCustom`,`feedmetadata_coverWidth`,`feedmetadata_coverHeight`,`feedmetadata_coverFromVideoTimeMs`,`feedmetadata_coverIsFromVideoEdited`,`feedmetadata_areCaptionsEnabled`,`feedmetadata_areCommentsDisabled`,`feedmetadata_isFundedContentDeal`,`feedmetadata_isPaidPartnership`,`feedmetadata_brandedContentTags`,`feedmetadata_partnerBoostEnabled`,`feedmetadata_isLikeAndViewCountsDisabled`,`feedmetadata_filterId`,`feedmetadata_filterStrength`,`feedmetadata_postCropAspectRatio`,`feedmetadata_isLandscape`,`videocrop_width`,`videocrop_height`,`videocrop_rectF`,`mediadraft_version`,`mediadraft_stickers`,`mediadraft_unschematized_compositions`,`mediadraft_media_type` FROM `drafts`"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45799,
+    "offset": 2771743,
+    "value": "TRIAL_REEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45800,
+    "offset": 2771755,
+    "value": "TRIAL_REEL_LEARN_MORE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45801,
+    "offset": 2771778,
+    "value": "TRIAL_REEL_PANO"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 45802,
+    "offset": 2771795,
+    "value": "TRIAL_REEL_PRISM"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 60331,
+    "offset": 3467553,
+    "value": "has_seen_self_trial_reel_insight_entry_point_tooltip"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 67105,
+    "offset": 3641194,
+    "value": "trial_params"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 67106,
+    "offset": 3641208,
+    "value": "trial_reel_learn_more"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 47347,
+    "offset": 2717064,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_CONSUMPTION_DISCLOSURE_IMPRESSION_COUNT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 47348,
+    "offset": 2717144,
+    "value": "PREFERENCE_REELS_RECOMMEND_ON_FACEBOOK_SHOULD_SHOW_CONSUMPTION_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 63452,
+    "offset": 3146211,
+    "value": "xdt_user_trial_reels_graphql"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 16024,
+    "offset": 2410394,
+    "value": "INVALID_OR_MISSING_AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 16025,
+    "offset": 2410428,
+    "value": "INVALID_OR_MISSING_DESTINATION_AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 41889,
+    "offset": 3002683,
+    "value": "PUBLIC_ACCOUNTS_FOLLOWERS_ONLY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 48923,
+    "offset": 3173793,
+    "value": "audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 53446,
+    "offset": 3296134,
+    "value": "fb_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 53794,
+    "offset": 3304034,
+    "value": "followers_only"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes8.dex",
+    "string_index": 7275,
+    "offset": 431081,
+    "value": "interest_based_channel_implicit_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 3004,
+    "offset": 1315353,
+    "value": "DirectFragment.DIRECT_FRAGMENT_ARGUMENT_AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 23184,
+    "offset": 1647097,
+    "value": "PROMO_DIALOG_AUDIENCE_TYPE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 34001,
+    "offset": 1974506,
+    "value": "interest_based_channel_implicit_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 34325,
+    "offset": 1981866,
+    "value": "is_pronouns_followers_only"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 36974,
+    "offset": 2058480,
+    "value": "promo_dialog_audience_type"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 39427,
+    "offset": 2114770,
+    "value": "trial_reel_gallery_view"
+  }
+]

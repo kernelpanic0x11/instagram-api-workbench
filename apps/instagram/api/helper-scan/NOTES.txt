@@ -1,0 +1,18 @@
+Ten candidate helper methods for independent REA verification
+
+Numbers count distinct methods containing a route candidate literal and invoking this helper. This is co-occurrence, not proof of route/verb association.
+
+153 LX/0225;->A0L(Lcom/instagram/common/session/UserSession;)LX/02sB;
+187 LX/021X;->A0T(LX/04x5;Ljava/lang/String;Ljava/lang/String;)LX/02sG;
+64 LX/021R;->A0T(LX/04x5;Z)LX/02sG;
+61 LX/0221;->A0I(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;
+50 LX/020p;->A0K(LX/04x5;Ljava/lang/String;)LX/02sG;
+48 LX/0221;->A0V(LX/04x5;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;
+43 LX/020p;->A1U(LX/04x6;)V
+41 LX/0064;->A0Q(Lcom/instagram/common/session/UserSession;)LX/02sB;
+40 LX/0465;->A1O(LX/04x6;)V
+36 LX/0465;->A0N(LX/04x5;Ljava/lang/String;Ljava/lang/String;)LX/02sG;
+
+Raw decoded callsites: route-method-calls.json. Ranked callsites with route provenance: ranked-helpers.json.
+Scan coverage: 23 DEX files, 807462 decoded methods, zero instruction errors, 2039 direct const-string route references. Only existing lexical route catalog candidates are considered.
+No HTTP methods inferred; parent must verify helper implementations before use.

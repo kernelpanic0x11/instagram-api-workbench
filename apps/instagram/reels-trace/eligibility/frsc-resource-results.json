@@ -1,0 +1,564 @@
+{
+  "scope": "Sparse FRSC locale asset range tables interpreted as little-endian uint16 start/count/base index and uint32 string offsets; target resource IDs only. Base default.frsc.spo not fully decoded: its XZ streams decode but use custom ST dictionary/token representation. No default English target text recovered.",
+  "files": [
+    {
+      "asset": "assets/strings/af.frsc",
+      "ranges": 345,
+      "offset_table": 2084
+    },
+    {
+      "asset": "assets/strings/am.frsc",
+      "ranges": 88,
+      "offset_table": 540
+    },
+    {
+      "asset": "assets/strings/ar.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/ar_XB.frsc",
+      "ranges": 27,
+      "offset_table": 176
+    },
+    {
+      "asset": "assets/strings/as.frsc",
+      "ranges": 347,
+      "offset_table": 2096
+    },
+    {
+      "asset": "assets/strings/az.frsc",
+      "ranges": 128,
+      "offset_table": 780
+    },
+    {
+      "asset": "assets/strings/be.frsc",
+      "ranges": 111,
+      "offset_table": 680
+    },
+    {
+      "asset": "assets/strings/bg.frsc",
+      "ranges": 300,
+      "offset_table": 1812
+    },
+    {
+      "asset": "assets/strings/bn.frsc",
+      "ranges": 301,
+      "offset_table": 1820
+    },
+    {
+      "asset": "assets/strings/bs.frsc",
+      "ranges": 129,
+      "offset_table": 788
+    },
+    {
+      "asset": "assets/strings/ca.frsc",
+      "ranges": 142,
+      "offset_table": 864
+    },
+    {
+      "asset": "assets/strings/cb.frsc",
+      "ranges": 66,
+      "offset_table": 408
+    },
+    {
+      "asset": "assets/strings/cs.frsc",
+      "ranges": 303,
+      "offset_table": 1832
+    },
+    {
+      "asset": "assets/strings/cx.frsc",
+      "ranges": 26,
+      "offset_table": 168
+    },
+    {
+      "asset": "assets/strings/da.frsc",
+      "ranges": 310,
+      "offset_table": 1872
+    },
+    {
+      "asset": "assets/strings/de.frsc",
+      "ranges": 314,
+      "offset_table": 1896
+    },
+    {
+      "asset": "assets/strings/el.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/en_AU.frsc",
+      "ranges": 24,
+      "offset_table": 156
+    },
+    {
+      "asset": "assets/strings/en_CA.frsc",
+      "ranges": 24,
+      "offset_table": 156
+    },
+    {
+      "asset": "assets/strings/en_GB.frsc",
+      "ranges": 201,
+      "offset_table": 1220
+    },
+    {
+      "asset": "assets/strings/en_IN.frsc",
+      "ranges": 24,
+      "offset_table": 156
+    },
+    {
+      "asset": "assets/strings/en_XA.frsc",
+      "ranges": 27,
+      "offset_table": 176
+    },
+    {
+      "asset": "assets/strings/en_XC.frsc",
+      "ranges": 24,
+      "offset_table": 156
+    },
+    {
+      "asset": "assets/strings/es.frsc",
+      "ranges": 298,
+      "offset_table": 1800
+    },
+    {
+      "asset": "assets/strings/es_AR.frsc",
+      "ranges": 1,
+      "offset_table": 20
+    },
+    {
+      "asset": "assets/strings/es_ES.frsc",
+      "ranges": 251,
+      "offset_table": 1520
+    },
+    {
+      "asset": "assets/strings/es_US.frsc",
+      "ranges": 56,
+      "offset_table": 348
+    },
+    {
+      "asset": "assets/strings/et.frsc",
+      "ranges": 141,
+      "offset_table": 860
+    },
+    {
+      "asset": "assets/strings/eu.frsc",
+      "ranges": 55,
+      "offset_table": 344
+    },
+    {
+      "asset": "assets/strings/fa.frsc",
+      "ranges": 301,
+      "offset_table": 1820
+    },
+    {
+      "asset": "assets/strings/fb.frsc",
+      "ranges": 244,
+      "offset_table": 1476
+    },
+    {
+      "asset": "assets/strings/fb_LS.frsc",
+      "ranges": 180,
+      "offset_table": 1092
+    },
+    {
+      "asset": "assets/strings/fi.frsc",
+      "ranges": 303,
+      "offset_table": 1832
+    },
+    {
+      "asset": "assets/strings/fr.frsc",
+      "ranges": 315,
+      "offset_table": 1904
+    },
+    {
+      "asset": "assets/strings/fr_CA.frsc",
+      "ranges": 351,
+      "offset_table": 2120
+    },
+    {
+      "asset": "assets/strings/gl.frsc",
+      "ranges": 55,
+      "offset_table": 344
+    },
+    {
+      "asset": "assets/strings/gn.frsc",
+      "ranges": 26,
+      "offset_table": 168
+    },
+    {
+      "asset": "assets/strings/gu.frsc",
+      "ranges": 299,
+      "offset_table": 1808
+    },
+    {
+      "asset": "assets/strings/ha.frsc",
+      "ranges": 125,
+      "offset_table": 764
+    },
+    {
+      "asset": "assets/strings/hi.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/hr.frsc",
+      "ranges": 304,
+      "offset_table": 1836
+    },
+    {
+      "asset": "assets/strings/hu.frsc",
+      "ranges": 306,
+      "offset_table": 1848
+    },
+    {
+      "asset": "assets/strings/hy.frsc",
+      "ranges": 122,
+      "offset_table": 744
+    },
+    {
+      "asset": "assets/strings/in.frsc",
+      "ranges": 310,
+      "offset_table": 1872
+    },
+    {
+      "asset": "assets/strings/is.frsc",
+      "ranges": 121,
+      "offset_table": 740
+    },
+    {
+      "asset": "assets/strings/it.frsc",
+      "ranges": 303,
+      "offset_table": 1832
+    },
+    {
+      "asset": "assets/strings/iw.frsc",
+      "ranges": 301,
+      "offset_table": 1820
+    },
+    {
+      "asset": "assets/strings/ja.frsc",
+      "ranges": 301,
+      "offset_table": 1820
+    },
+    {
+      "asset": "assets/strings/jv.frsc",
+      "ranges": 77,
+      "offset_table": 476
+    },
+    {
+      "asset": "assets/strings/ka.frsc",
+      "ranges": 132,
+      "offset_table": 804
+    },
+    {
+      "asset": "assets/strings/kk.frsc",
+      "ranges": 112,
+      "offset_table": 684
+    },
+    {
+      "asset": "assets/strings/km.frsc",
+      "ranges": 149,
+      "offset_table": 908
+    },
+    {
+      "asset": "assets/strings/kn.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/ko.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/ku.frsc",
+      "ranges": 54,
+      "offset_table": 336
+    },
+    {
+      "asset": "assets/strings/ky.frsc",
+      "ranges": 112,
+      "offset_table": 684
+    },
+    {
+      "asset": "assets/strings/lo.frsc",
+      "ranges": 118,
+      "offset_table": 720
+    },
+    {
+      "asset": "assets/strings/lt.frsc",
+      "ranges": 144,
+      "offset_table": 876
+    },
+    {
+      "asset": "assets/strings/lv.frsc",
+      "ranges": 128,
+      "offset_table": 780
+    },
+    {
+      "asset": "assets/strings/mg.frsc",
+      "ranges": 24,
+      "offset_table": 156
+    },
+    {
+      "asset": "assets/strings/mk.frsc",
+      "ranges": 139,
+      "offset_table": 848
+    },
+    {
+      "asset": "assets/strings/ml.frsc",
+      "ranges": 312,
+      "offset_table": 1884
+    },
+    {
+      "asset": "assets/strings/mn.frsc",
+      "ranges": 137,
+      "offset_table": 836
+    },
+    {
+      "asset": "assets/strings/mr.frsc",
+      "ranges": 299,
+      "offset_table": 1808
+    },
+    {
+      "asset": "assets/strings/ms.frsc",
+      "ranges": 304,
+      "offset_table": 1836
+    },
+    {
+      "asset": "assets/strings/my.frsc",
+      "ranges": 157,
+      "offset_table": 956
+    },
+    {
+      "asset": "assets/strings/nb.frsc",
+      "ranges": 308,
+      "offset_table": 1860
+    },
+    {
+      "asset": "assets/strings/ne.frsc",
+      "ranges": 318,
+      "offset_table": 1920
+    },
+    {
+      "asset": "assets/strings/nl.frsc",
+      "ranges": 312,
+      "offset_table": 1884
+    },
+    {
+      "asset": "assets/strings/om.frsc",
+      "ranges": 17,
+      "offset_table": 116
+    },
+    {
+      "asset": "assets/strings/or.frsc",
+      "ranges": 324,
+      "offset_table": 1956
+    },
+    {
+      "asset": "assets/strings/pa.frsc",
+      "ranges": 301,
+      "offset_table": 1820
+    },
+    {
+      "asset": "assets/strings/pl.frsc",
+      "ranges": 305,
+      "offset_table": 1844
+    },
+    {
+      "asset": "assets/strings/ps.frsc",
+      "ranges": 62,
+      "offset_table": 384
+    },
+    {
+      "asset": "assets/strings/pt.frsc",
+      "ranges": 268,
+      "offset_table": 1620
+    },
+    {
+      "asset": "assets/strings/pt_BR.frsc",
+      "ranges": 55,
+      "offset_table": 344
+    },
+    {
+      "asset": "assets/strings/pt_PT.frsc",
+      "ranges": 303,
+      "offset_table": 1832
+    },
+    {
+      "asset": "assets/strings/qz.frsc",
+      "ranges": 97,
+      "offset_table": 596
+    },
+    {
+      "asset": "assets/strings/ro.frsc",
+      "ranges": 307,
+      "offset_table": 1856
+    },
+    {
+      "asset": "assets/strings/ru.frsc",
+      "ranges": 300,
+      "offset_table": 1812
+    },
+    {
+      "asset": "assets/strings/rw.frsc",
+      "ranges": 23,
+      "offset_table": 152
+    },
+    {
+      "asset": "assets/strings/si.frsc",
+      "ranges": 221,
+      "offset_table": 1340
+    },
+    {
+      "asset": "assets/strings/sk.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/sl.frsc",
+      "ranges": 165,
+      "offset_table": 1004
+    },
+    {
+      "asset": "assets/strings/sn.frsc",
+      "ranges": 54,
+      "offset_table": 336
+    },
+    {
+      "asset": "assets/strings/so.frsc",
+      "ranges": 55,
+      "offset_table": 344
+    },
+    {
+      "asset": "assets/strings/sq.frsc",
+      "ranges": 131,
+      "offset_table": 800
+    },
+    {
+      "asset": "assets/strings/sr.frsc",
+      "ranges": 333,
+      "offset_table": 2012
+    },
+    {
+      "asset": "assets/strings/sv.frsc",
+      "ranges": 307,
+      "offset_table": 1856
+    },
+    {
+      "asset": "assets/strings/sw.frsc",
+      "ranges": 250,
+      "offset_table": 1512
+    },
+    {
+      "asset": "assets/strings/ta.frsc",
+      "ranges": 299,
+      "offset_table": 1808
+    },
+    {
+      "asset": "assets/strings/te.frsc",
+      "ranges": 315,
+      "offset_table": 1904
+    },
+    {
+      "asset": "assets/strings/tg.frsc",
+      "ranges": 49,
+      "offset_table": 308
+    },
+    {
+      "asset": "assets/strings/th.frsc",
+      "ranges": 300,
+      "offset_table": 1812
+    },
+    {
+      "asset": "assets/strings/tl.frsc",
+      "ranges": 328,
+      "offset_table": 1980
+    },
+    {
+      "asset": "assets/strings/tr.frsc",
+      "ranges": 300,
+      "offset_table": 1812
+    },
+    {
+      "asset": "assets/strings/uk.frsc",
+      "ranges": 301,
+      "offset_table": 1820
+    },
+    {
+      "asset": "assets/strings/ur.frsc",
+      "ranges": 324,
+      "offset_table": 1956
+    },
+    {
+      "asset": "assets/strings/uz.frsc",
+      "ranges": 116,
+      "offset_table": 708
+    },
+    {
+      "asset": "assets/strings/vi.frsc",
+      "ranges": 300,
+      "offset_table": 1812
+    },
+    {
+      "asset": "assets/strings/zh_CN.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/zh_HK.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/zh_TW.frsc",
+      "ranges": 302,
+      "offset_table": 1824
+    },
+    {
+      "asset": "assets/strings/zu.frsc",
+      "ranges": 57,
+      "offset_table": 356
+    }
+  ],
+  "hits": [],
+  "default_xz_streams": [
+    {
+      "offset": 132,
+      "decoded_bytes": 644409,
+      "complete_xz_stream": true,
+      "header_hex": "535404001e760f00231a0000b2030000"
+    },
+    {
+      "offset": 212822,
+      "decoded_bytes": 18745,
+      "complete_xz_stream": true,
+      "header_hex": "01030101014748206037369402162701"
+    },
+    {
+      "offset": 228056,
+      "decoded_bytes": 35331,
+      "complete_xz_stream": true,
+      "header_hex": "00000001000000000000000000000000"
+    },
+    {
+      "offset": 232382,
+      "decoded_bytes": 505,
+      "complete_xz_stream": true,
+      "header_hex": "ce041156dd038e01a403e3028b018801"
+    },
+    {
+      "offset": 232948,
+      "decoded_bytes": 505,
+      "complete_xz_stream": true,
+      "header_hex": "0c54dc038c01a303de02890187012c0b"
+    },
+    {
+      "offset": 233514,
+      "decoded_bytes": 2,
+      "complete_xz_stream": true,
+      "header_hex": "aa03"
+    }
+  ]
+}

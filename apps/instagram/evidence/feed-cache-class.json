@@ -1,0 +1,234 @@
+{
+  "evidence_id": "ev_816ecaa3544cf9d4f57c54ece9c351b05490bd5561ef647ba778a5798f7cc767",
+  "subject": {
+    "name": "base.apk",
+    "digest": {
+      "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+    },
+    "format": "apk",
+    "architecture": null
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 4096
+    },
+    "class_name": "com.instagram.mainfeed.network.MainFeedCacheDataSource",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.instagram.common.session.UserSession, boolean): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Lcom/instagram/common/session/UserSession;Z)V"
+      },
+      {
+        "name": "A00",
+        "reported_signature": "A00(X.05qp, com.instagram.mainfeed.network.MainFeedCacheDataSource, java.lang.Integer, X.0Pmx, boolean): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/05qp;Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;Ljava/lang/Integer;LX/0Pmx;Z)Ljava/lang/Object;"
+      },
+      {
+        "name": "A01",
+        "reported_signature": "A01(X.05qp, com.instagram.mainfeed.network.MainFeedCacheDataSource, java.lang.Integer, X.0Pmx, boolean): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/05qp;Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;Ljava/lang/Integer;LX/0Pmx;Z)Ljava/lang/Object;"
+      },
+      {
+        "name": "A02",
+        "reported_signature": "A02(com.instagram.mainfeed.network.MainFeedCacheDataSource, X.0Pmx): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;LX/0Pmx;)Ljava/lang/Object;"
+      },
+      {
+        "name": "A03",
+        "reported_signature": "A03(com.instagram.mainfeed.network.MainFeedCacheDataSource, X.0Pmx): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;LX/0Pmx;)Ljava/lang/Object;"
+      },
+      {
+        "name": "A04",
+        "reported_signature": "A04(com.instagram.mainfeed.network.MainFeedCacheDataSource, X.0Pmx, kotlin.jvm.functions.Function1): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;LX/0Pmx;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;"
+      },
+      {
+        "name": "A05",
+        "reported_signature": "A05(X.0Bfs, com.instagram.mainfeed.network.MainFeedCacheDataSource): X.03dJ",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/0Bfs;Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;)LX/03dJ;"
+      },
+      {
+        "name": "A06",
+        "reported_signature": "A06(X.0Bfs, com.instagram.mainfeed.network.MainFeedCacheDataSource): X.03dJ",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/0Bfs;Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;)LX/03dJ;"
+      },
+      {
+        "name": "A07",
+        "reported_signature": "A07(X.0Bfs, com.instagram.mainfeed.network.MainFeedCacheDataSource): X.01wi",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/0Bfs;Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;)LX/01wi;"
+      },
+      {
+        "name": "A08",
+        "reported_signature": "A08(com.instagram.mainfeed.network.MainFeedCacheDataSource, X.08AJ): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;LX/08AJ;)V"
+      },
+      {
+        "name": "A09",
+        "reported_signature": "A09(com.instagram.mainfeed.network.MainFeedCacheDataSource, X.04kh): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/mainfeed/network/MainFeedCacheDataSource;LX/04kh;)V"
+      },
+      {
+        "name": "A0B",
+        "reported_signature": "A0B(X.0Pmx): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/0Pmx;)Ljava/lang/Object;"
+      },
+      {
+        "name": "A0C",
+        "reported_signature": "A0C(X.06ux): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/06ux;)V"
+      },
+      {
+        "name": "A0D",
+        "reported_signature": "A0D(X.04kh): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/04kh;)V"
+      },
+      {
+        "name": "A0E",
+        "reported_signature": "A0E(java.lang.String, java.util.List, int, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;IZZ)V"
+      },
+      {
+        "name": "onAppBackgrounded",
+        "reported_signature": "onAppBackgrounded(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onAppForegrounded",
+        "reported_signature": "onAppForegrounded(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onSessionWillEnd",
+        "reported_signature": "onSessionWillEnd(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "trim",
+        "reported_signature": "trim(X.03gu): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/03gu;)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "A00",
+        "reported_type": "long"
+      },
+      {
+        "name": "A01",
+        "reported_type": "com.instagram.common.session.UserSession"
+      },
+      {
+        "name": "A02",
+        "reported_type": "com.instagram.mainfeed.network.ColdStartFeedCache"
+      },
+      {
+        "name": "A03",
+        "reported_type": "com.instagram.mainfeed.network.FeedMediaCache"
+      },
+      {
+        "name": "A04",
+        "reported_type": "X.04kq"
+      },
+      {
+        "name": "A05",
+        "reported_type": "java.util.Set"
+      },
+      {
+        "name": "A06",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean"
+      },
+      {
+        "name": "A07",
+        "reported_type": "java.util.concurrent.atomic.AtomicReference"
+      },
+      {
+        "name": "A08",
+        "reported_type": "X.0Jzl"
+      },
+      {
+        "name": "A09",
+        "reported_type": "X.0Jzl"
+      },
+      {
+        "name": "A0A",
+        "reported_type": "X.0Pne"
+      },
+      {
+        "name": "A0B",
+        "reported_type": "X.0oqi"
+      },
+      {
+        "name": "A0C",
+        "reported_type": "X.0oqi"
+      },
+      {
+        "name": "A0D",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "A0E",
+        "reported_type": "java.util.List"
+      },
+      {
+        "name": "A0F",
+        "reported_type": "java.util.concurrent.atomic.AtomicReference"
+      }
+    ],
+    "inner_classes": [
+      "com.instagram.mainfeed.network.MainFeedCacheDataSource.Prewarmable"
+    ]
+  },
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "confidence": "observed"
+}

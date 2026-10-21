@@ -1,0 +1,79 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_719d1faf8b55309337c244f1271d0e41fa00ed6f6cd3b473f83a3fe1c926c9bf",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0LEI",
+      "methods": [
+        {
+          "name": "A00",
+          "reported_signature": "A00(com.instagram.bloks.hosting.IgBloksScreenConfig, X.0LFI): android.os.Bundle",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/instagram/bloks/hosting/IgBloksScreenConfig;LX/0LFI;)Landroid/os/Bundle;"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(com.instagram.bloks.hosting.IgBloksScreenConfig, X.0LFI): X.0SyS",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/instagram/bloks/hosting/IgBloksScreenConfig;LX/0LFI;)LX/0SyS;"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(com.instagram.bloks.hosting.IgBloksScreenConfig, X.0LFI): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Lcom/instagram/bloks/hosting/IgBloksScreenConfig;LX/0LFI;)LX/0StF;"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(X.0LFI, X.01qh): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0LFI;LX/01qh;)LX/0StF;"
+        },
+        {
+          "name": "A04",
+          "reported_signature": "A04(X.01qh, java.lang.String, java.lang.String, java.util.Map): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/01qh;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)LX/0StF;"
+        },
+        {
+          "name": "A05",
+          "reported_signature": "A05(X.01qh, java.lang.String, java.util.Map): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/01qh;Ljava/lang/String;Ljava/util/Map;)LX/0StF;"
+        }
+      ],
+      "fields": [],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

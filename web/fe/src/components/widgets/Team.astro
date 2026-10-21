@@ -1,0 +1,71 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from '~/components/common/Image.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import { getColumnsClass } from '~/utils/utils';
+import type { Team as Props } from '~/types';
+
+// People grid: photo, name, role, optional short bio and social links.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  members = [],
+  columns = 4,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const columnsClass = getColumnsClass(columns, 'sm:grid-cols-2');
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <ul class:list={['grid gap-8 md:gap-10 list-none', columnsClass]}>
+    {
+      members.map(({ name, role, image, bio, socials }) => (
+        <li class="text-center intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+          {image &&
+            (typeof image === 'string' ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class="mx-auto h-32 w-32 rounded-full object-cover shadow-md md:h-36 md:w-36"
+                width={144}
+                height={144}
+                layout="fixed"
+                format="webp"
+                {...image}
+              />
+            ))}
+          {name && <h3 class="mt-4 text-lg font-bold text-heading">{name}</h3>}
+          {role && <p class="text-sm font-medium text-primary">{role}</p>}
+          {bio && <p class="mt-2 text-sm text-muted text-pretty" set:html={bio} />}
+          {socials && socials.length > 0 && (
+            <ul class="mt-3 flex justify-center gap-1">
+              {socials.map(({ icon, href, ariaLabel }) => (
+                <li>
+                  <a
+                    href={href}
+                    aria-label={ariaLabel}
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-lg text-muted transition hover:bg-gray-100 hover:text-primary dark:hover:bg-slate-800"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon name={icon} class="h-5 w-5" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</WidgetWrapper>

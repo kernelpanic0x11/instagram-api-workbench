@@ -1,0 +1,151 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_b7473a863ba3a34a12a4761e091fef72496400942e89b8bb708c6451e51d7e57",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C01xO",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(X.0PiU, X.0Plr, java.lang.Integer, java.lang.String, java.util.List, java.util.Map, boolean, boolean, boolean): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(LX/0PiU;LX/0Plr;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;ZZZ)V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(java.lang.String): X.03be",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)LX/03be;"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(java.lang.String, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(java.lang.String, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(java.lang.String): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)Z"
+        },
+        {
+          "name": "toString",
+          "reported_signature": "toString(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "A00",
+          "reported_type": "int"
+        },
+        {
+          "name": "A01",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A02",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A03",
+          "reported_type": "int"
+        },
+        {
+          "name": "A04",
+          "reported_type": "X.0PiU"
+        },
+        {
+          "name": "A05",
+          "reported_type": "X.0Plr"
+        },
+        {
+          "name": "A06",
+          "reported_type": "java.lang.Integer"
+        },
+        {
+          "name": "A07",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A08",
+          "reported_type": "java.net.URI"
+        },
+        {
+          "name": "A09",
+          "reported_type": "java.net.URI"
+        },
+        {
+          "name": "A0A",
+          "reported_type": "java.util.List"
+        },
+        {
+          "name": "A0B",
+          "reported_type": "java.util.Map"
+        },
+        {
+          "name": "A0C",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0D",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0E",
+          "reported_type": "java.net.URI"
+        },
+        {
+          "name": "A0F",
+          "reported_type": "java.util.concurrent.atomic.AtomicInteger"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

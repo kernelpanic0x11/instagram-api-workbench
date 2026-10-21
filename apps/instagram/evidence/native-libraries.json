@@ -1,0 +1,102 @@
+[
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "bytes": 10096
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libarcore_sdk_c.so",
+    "bytes": 68120
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libarcore_sdk_jni.so",
+    "bytes": 117272
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libart_tooling.so",
+    "bytes": 1328360
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libbreakpad.so",
+    "bytes": 484464
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libbreakpad_cpp_helper.so",
+    "bytes": 6168
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libc++_shared.so",
+    "bytes": 425856
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libdextricks-early.so",
+    "bytes": 6072
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libfbunwindstack.so",
+    "bytes": 248064
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libgraphics-core.so",
+    "bytes": 212392
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libimage_processing_util_jni.so",
+    "bytes": 29008
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libsuperattic.so",
+    "bytes": 43936
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libsuperpack-jni.so",
+    "bytes": 256504
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libsurface_util_jni.so",
+    "bytes": 4832
+  },
+  {
+    "apk": "base.apk",
+    "member": "lib/arm64-v8a/libunwindstack_binary.so",
+    "bytes": 10640
+  },
+  {
+    "apk": "split_heliumcore.apk",
+    "member": "lib/arm64-v8a/libhelium_standalone.dex.so",
+    "bytes": 2167288
+  },
+  {
+    "apk": "split_heliumiab.apk",
+    "member": "lib/arm64-v8a/d.libhelium.so",
+    "bytes": 144050760
+  },
+  {
+    "apk": "split_heliumiab.apk",
+    "member": "lib/arm64-v8a/libcrashpad_handler_trampoline.so",
+    "bytes": 6128
+  },
+  {
+    "apk": "split_heliumiabexp.apk",
+    "member": "lib/arm64-v8a/d.libheliumexp.so",
+    "bytes": 151063112
+  },
+  {
+    "apk": "split_heliumiabexp.apk",
+    "member": "lib/arm64-v8a/libcrashpad_handler_trampolineexp.so",
+    "bytes": 6128
+  }
+]

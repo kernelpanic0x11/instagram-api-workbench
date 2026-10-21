@@ -1,0 +1,23 @@
+Upload-related DEX references — static analysis of base.apk
+
+Scanned all 23 root classes*.dex files: 807,462 methods decoded, zero instruction decoder errors. Exact const-string references are in dex-string-references.json. String inventory matches are in string-hits.json.
+
+Highest-value REA target:
+X.09Eb.B2a(...), classes4.dex method 30064: direct configure_to_clips string, trial_params resolved via X.005P.A00(48), share_to_fb_destination_audience_type resolved via X.0005.A00(993). Return type X.02sB; accepts MediaUploadMetadata and ShareType. Candidate publishing request builder; requires decompilation to establish how those values are used.
+
+Other targets:
+X.0bm8.<clinit> classes17 method 24415 declares media/configure_to_clips/ alongside configure route family.
+X.0mBM.GaG(X.04s3), classes17 method 32388 references configure_to_clips returned an unparseable response.
+X.0Zjf.A00(X.0CcK), classes14 returns String and resolves trial_params.
+X.03nZ.A03(X.04s2,X.03oB) and unsafeParseFromJson(X.04s3) resolve trial_params, likely pending-media persistence.
+X.0dvM.B2a(...) resolves share_to_fb_destination_audience_type.
+X.0aGS.A0B(...) and X.0G98.A00(X.0G98) resolve recommend_on_facebook.
+
+Scope cautions:
+The only direct is_high_quality_upload_on reference is X.07qw.GpE(CreationFailure,X.03oB): signature suggests failure reporting; no proof of upload control or reach effect.
+Many direct trial_params references belong to local draft database persistence, including X.0Eby CREATE TABLE statements. Do not equate presence in draft schema with upload or ranking behavior.
+FOLLOWERS_ONLY appears in multiple unrelated enums; audience_type has many direct/broadcast/live references. Do not infer Reel audience semantics from those strings alone.
+
+Resolver method switch tables were inspected in raw DEX: X.005P.A00(48) maps trial_params, X.0005.A00(499) maps recommend_on_facebook, X.0005.A00(993) maps share_to_fb_destination_audience_type. resolver-call-candidates.json locates constant loads followed by relevant invoke-static; all reported examples place the constant immediately before the invoke. The scanner is intentionally incomplete for nonlocal or dynamically computed arguments.
+
+No account access, runtime requests, or ranking-effect inference performed.

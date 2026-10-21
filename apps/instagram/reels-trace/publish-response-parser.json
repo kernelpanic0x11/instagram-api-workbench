@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_514e38a2d02fd35df7b20171d5ae9dde00f218f77671ca7c12a6b700fb7ee9ef",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0ZMX",
+      "method": {
+        "name": "unsafeParseFromJson",
+        "reported_signature": "unsafeParseFromJson(X.04s3): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/04s3;)Ljava/lang/Object;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */\n    /* JADX WARN: Code duplicated, block: B:10:0x002a  */\n    @Override // X.C05Bj\n    public final /* bridge */ /* synthetic */ Object unsafeParseFromJson(C04s3 c04s3) {\n        Media mediaA0A;\n        C05ym c05ym;\n        C01yv c01yv = (C01yv) c04s3;\n        C05s2.A0R(c01yv);\n        C0XvS c0XvS = new C0XvS();\n        if (c01yv.A1d() != C01yl.A0D) {\n            c01yv.A1f();\n            return null;\n        }\n        while (c01yv.A1N() != C01yl.A09) {\n            String strA08 = C01yt.A08(c01yv);\n            switch (strA08.hashCode()) {\n                case -1169670911:\n                    if (!strA08.equals(\"max_cutout_sticker_limit\")) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else {\n                        c0XvS.A04 = AnonymousClass0025.A0H(c01yv);\n                    }\n                    break;\n                case -1078031089:\n                    if (!strA08.equals(\"medias\")) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else if (c01yv.A1d() == C01yl.A0C) {\n                        ArrayList arrayListA0S = C000H.A0S();\n                        while (c01yv.A1N() != C01yl.A08) {\n                            if (c01yv.A1d() != C01yl.A0G) {\n                                AnonymousClass0025.A0N(c01yv, C0ZMV.A00, arrayListA0S);\n                            }\n                        }\n                        c0XvS.A06 = arrayListA0S;\n                    }\n                    break;\n                case -951295677:\n                    if (!strA08.equals(\"cooldown_time_in_seconds\")) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else {\n                        c0XvS.A05 = AnonymousClass0025.A0H(c01yv);\n                    }\n                    break;\n                case -315996171:\n                    if (!strA08.equals(\"retry_entire_upload_flow\")) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else {\n                        c0XvS.A03 = AnonymousClass0025.A0D(c01yv);\n                    }\n                    break;\n                case 103772132:\n                    if (!strA08.equals(\"media\")) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else if (c01yv.A1d() != C01yl.A0G && (mediaA0A = C05vk.A0A(c01yv)) != null) {\n                        c0XvS.A01 = mediaA0A;\n                    }\n                    break;\n                case 106855379:\n                    if (!strA08.equals(\"posts\")) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else if (c01yv.A1d() == C01yl.A0C) {\n                        ArrayList arrayListA0S2 = C000H.A0S();\n                        while (c01yv.A1N() != C01yl.A08) {\n                            if (c01yv.A1d() != C01yl.A0G) {\n                                AnonymousClass0025.A0N(c01yv, C0ZJE.A00, arrayListA0S2);\n                            }\n                        }\n                        c0XvS.A07 = arrayListA0S2;\n                    }\n                    break;\n                case 950398559:\n                    if (!strA08.equals(GraphQLSubscriptionID.INAPP_NOTIFICATION_TYPE_COMMENT)) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else if (c01yv.A1d() != C01yl.A0G && (c05ym = (C05ym) C05wc.A00.parseFromJsonParser(c01yv)) != null) {\n                        c0XvS.A00 = c05ym;\n                    }\n                    break;\n                case 1244892812:\n                    if (!strA08.equals(AnonymousClass0005.A00(904))) {\n                        C01pP.A01(c01yv, c0XvS, strA08);\n                    } else {\n                        c0XvS.A02 = AnonymousClass0025.A0D(c01yv);\n                    }\n                    break;\n                default:\n                    C01pP.A01(c01yv, c0XvS, strA08);\n                    break;\n            }\n            c01yv.A1f();\n        }\n        return c0XvS;\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

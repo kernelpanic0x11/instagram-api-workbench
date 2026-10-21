@@ -1,0 +1,2250 @@
+{
+  "scope": "base.apk root classes*.dex; correctly decoded instruction boundaries; const-string and const-string/jumbo only",
+  "stats": {
+    "dex_files": 23,
+    "matching_strings": 26,
+    "methods_with_code": 807462,
+    "decoded_methods": 807462
+  },
+  "hits": [
+    {
+      "dex": "classes.dex",
+      "method_index": 2959,
+      "method": "LX/00Ow;->A00(LX/002A;Ljava/util/Map;I)Z",
+      "code_unit_offset": 338,
+      "dex_byte_offset": 4137432,
+      "string_index": 40164,
+      "value": "POST"
+    },
+    {
+      "dex": "classes.dex",
+      "method_index": 3742,
+      "method": "LX/00Wk;->run()V",
+      "code_unit_offset": 255,
+      "dex_byte_offset": 4195922,
+      "string_index": 40164,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 2632,
+      "method": "LX/0456;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 362,
+      "dex_byte_offset": 2886184,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 2632,
+      "method": "LX/0456;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 370,
+      "dex_byte_offset": 2886200,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 5092,
+      "method": "LX/096S;->shouldInterceptRequest(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 33,
+      "dex_byte_offset": 3957266,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 5113,
+      "method": "LX/096X;->shouldInterceptRequest(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 24,
+      "dex_byte_offset": 4315252,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 5136,
+      "method": "LX/097S;->shouldInterceptRequest(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 22,
+      "dex_byte_offset": 4299032,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 7121,
+      "method": "LX/0BpI;->A00(Landroid/webkit/WebResourceRequest;LX/0BpI;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 977,
+      "dex_byte_offset": 5291618,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 7121,
+      "method": "LX/0BpI;->A00(Landroid/webkit/WebResourceRequest;LX/0BpI;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 3547,
+      "dex_byte_offset": 5296758,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 7121,
+      "method": "LX/0BpI;->A00(Landroid/webkit/WebResourceRequest;LX/0BpI;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 3671,
+      "dex_byte_offset": 5297006,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 7121,
+      "method": "LX/0BpI;->A00(Landroid/webkit/WebResourceRequest;LX/0BpI;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;",
+      "code_unit_offset": 4268,
+      "dex_byte_offset": 5298200,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 32410,
+      "method": "Lcom/facebook/react/modules/network/NetworkingModule;->sendRequestInternalReal(Ljava/lang/String;Ljava/lang/String;ILcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableMap;Ljava/lang/String;ZIZLjava/lang/String;)V",
+      "code_unit_offset": 551,
+      "dex_byte_offset": 5398642,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 34169,
+      "method": "Lcom/instagram/react/modules/base/IgNetworkingModule;->buildRequest(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableMap;)LX/01xO;",
+      "code_unit_offset": 79,
+      "dex_byte_offset": 4163702,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 34169,
+      "method": "Lcom/instagram/react/modules/base/IgNetworkingModule;->buildRequest(Ljava/lang/String;Ljava/lang/String;Lcom/facebook/react/bridge/ReadableArray;Lcom/facebook/react/bridge/ReadableMap;)LX/01xO;",
+      "code_unit_offset": 120,
+      "dex_byte_offset": 4163784,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 32481,
+      "method": "Lcom/facebook/react/views/webview/ReactWebViewManager;->setSource(Landroid/webkit/WebView;Lcom/facebook/react/bridge/ReadableMap;)V",
+      "code_unit_offset": 168,
+      "dex_byte_offset": 4299536,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 9699,
+      "method": "LX/0ENI;-><clinit>()V",
+      "code_unit_offset": 0,
+      "dex_byte_offset": 2459240,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 9699,
+      "method": "LX/0ENI;-><clinit>()V",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 2459260,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 10335,
+      "method": "LX/0Eqg;-><clinit>()V",
+      "code_unit_offset": 3,
+      "dex_byte_offset": 2479022,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 11289,
+      "method": "LX/0GNU;->A06(Landroid/webkit/WebResourceRequest;)Z",
+      "code_unit_offset": 20,
+      "dex_byte_offset": 4303684,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 11333,
+      "method": "LX/0GOq;->A00(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;",
+      "code_unit_offset": 37,
+      "dex_byte_offset": 4455234,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 11629,
+      "method": "LX/0H9L;->A00(Ljava/lang/Integer;)Ljava/lang/String;",
+      "code_unit_offset": 24,
+      "dex_byte_offset": 3219004,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 11629,
+      "method": "LX/0H9L;->A00(Ljava/lang/Integer;)Ljava/lang/String;",
+      "code_unit_offset": 27,
+      "dex_byte_offset": 3219010,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 11770,
+      "method": "LX/0HMe;->A00(Ljava/lang/String;)Z",
+      "code_unit_offset": 4,
+      "dex_byte_offset": 3971320,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 12173,
+      "method": "LX/0IIQ;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lkotlin/jvm/functions/Function0;IJJZ)V",
+      "code_unit_offset": 4,
+      "dex_byte_offset": 3940504,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13378,
+      "method": "LX/0JLj;->A00(LX/0OwL;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/client/ResponseHandler;[Ljava/lang/String;[Ljava/lang/String;)LX/02sG;",
+      "code_unit_offset": 48,
+      "dex_byte_offset": 4323952,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13378,
+      "method": "LX/0JLj;->A00(LX/0OwL;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/client/ResponseHandler;[Ljava/lang/String;[Ljava/lang/String;)LX/02sG;",
+      "code_unit_offset": 94,
+      "dex_byte_offset": 4324044,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13395,
+      "method": "LX/0JMd;-><clinit>()V",
+      "code_unit_offset": 19,
+      "dex_byte_offset": 2611362,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13395,
+      "method": "LX/0JMd;-><clinit>()V",
+      "code_unit_offset": 28,
+      "dex_byte_offset": 2611380,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13909,
+      "method": "LX/0JYi;-><init>()V",
+      "code_unit_offset": 9,
+      "dex_byte_offset": 3580682,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13914,
+      "method": "LX/0JYi;->A03(Ljava/lang/String;LX/0IS1;)V",
+      "code_unit_offset": 13,
+      "dex_byte_offset": 3971130,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 13914,
+      "method": "LX/0JYi;->A03(Ljava/lang/String;LX/0IS1;)V",
+      "code_unit_offset": 60,
+      "dex_byte_offset": 3971224,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 14068,
+      "method": "LX/0K0Y;->A02(LX/0DNf;LX/0Amq;Ljava/lang/String;Ljava/util/Collection;)V",
+      "code_unit_offset": 76,
+      "dex_byte_offset": 4299976,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 15778,
+      "method": "LX/0KYC;->getMethod()Ljava/lang/String;",
+      "code_unit_offset": 0,
+      "dex_byte_offset": 3083312,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 15930,
+      "method": "LX/0L1K;->Ft1(Ljava/lang/String;)V",
+      "code_unit_offset": 33,
+      "dex_byte_offset": 5091182,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 15936,
+      "method": "LX/0L1Z;->Ft1(Ljava/lang/String;)V",
+      "code_unit_offset": 26,
+      "dex_byte_offset": 5091500,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 30557,
+      "method": "Lcom/facebook/distribgw/experimental/kotlin/client/impl/interceptor/TerminalInterceptor;->G3m(LX/0PmF;LX/0Pmx;)Ljava/lang/Object;",
+      "code_unit_offset": 374,
+      "dex_byte_offset": 5625032,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 34213,
+      "method": "Lcom/instagram/service/http/IGTigonAsyncHttpService;->createHttpRequest(Lcom/facebook/tigon/iface/TigonRequest;[B)LX/01xO;",
+      "code_unit_offset": 138,
+      "dex_byte_offset": 4408252,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 34213,
+      "method": "Lcom/instagram/service/http/IGTigonAsyncHttpService;->createHttpRequest(Lcom/facebook/tigon/iface/TigonRequest;[B)LX/01xO;",
+      "code_unit_offset": 160,
+      "dex_byte_offset": 4408296,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 34535,
+      "method": "Lcom/meta/hatch/discovery/HatchVmWakeClient;->Hro(Ljava/lang/String;Ljava/lang/String;LX/0Pmx;I)Ljava/lang/Object;",
+      "code_unit_offset": 138,
+      "dex_byte_offset": 5620776,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 36604,
+      "method": "Lcom/meta/hatch/ui/chat/actions/HatchActionRepository;->A02(Lcom/meta/hatch/model/VoiceOptionData;LX/0Pmx;)Ljava/lang/Object;",
+      "code_unit_offset": 150,
+      "dex_byte_offset": 5650140,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 19207,
+      "method": "LX/0NEQ;->A01(LX/0G2L;LX/0GMg;)LX/0JZY;",
+      "code_unit_offset": 55,
+      "dex_byte_offset": 5117350,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 19855,
+      "method": "LX/0No2;->run()V",
+      "code_unit_offset": 235,
+      "dex_byte_offset": 5389290,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 19869,
+      "method": "LX/0NoJ;->run()V",
+      "code_unit_offset": 60,
+      "dex_byte_offset": 5028672,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 23055,
+      "method": "LX/0Od8;->EIt(LX/0G2z;)LX/0N9j;",
+      "code_unit_offset": 57,
+      "dex_byte_offset": 5121786,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 23063,
+      "method": "LX/0Oe0;->EIt(LX/0G2z;)LX/0N9j;",
+      "code_unit_offset": 578,
+      "dex_byte_offset": 5123992,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 23070,
+      "method": "LX/0Oe3;->EIt(LX/0G2z;)LX/0N9j;",
+      "code_unit_offset": 59,
+      "dex_byte_offset": 5392862,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 23073,
+      "method": "LX/0Oe4;->EIt(LX/0G2z;)LX/0N9j;",
+      "code_unit_offset": 1384,
+      "dex_byte_offset": 5403576,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 23669,
+      "method": "LX/0OrO;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 341,
+      "dex_byte_offset": 5425046,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 41545,
+      "method": "Lcom/meta/wearable/virtualtryon/data/ModelDownloadManager$downloadModel$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 109,
+      "dex_byte_offset": 5032806,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 23821,
+      "method": "LX/0Ow4;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 935,
+      "dex_byte_offset": 5883210,
+      "string_index": 27068,
+      "value": "POST"
+    },
+    {
+      "dex": "classes10.dex",
+      "method_index": 24125,
+      "method": "LX/0P8A;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;",
+      "code_unit_offset": 1734,
+      "dex_byte_offset": 5812844,
+      "string_index": 8969,
+      "value": "GET"
+    },
+    {
+      "dex": "classes11.dex",
+      "method_index": 22532,
+      "method": "LX/0MI9;-><clinit>()V",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 2300684,
+      "string_index": 26387,
+      "value": "POST"
+    },
+    {
+      "dex": "classes13.dex",
+      "method_index": 22603,
+      "method": "LX/0So9;-><clinit>()V",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 2957080,
+      "string_index": 35678,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 23697,
+      "method": "LX/0Sqi;-><init>()V",
+      "code_unit_offset": 0,
+      "dex_byte_offset": 5851172,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 23956,
+      "method": "LX/0TCp;-><clinit>()V",
+      "code_unit_offset": 0,
+      "dex_byte_offset": 4259996,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 24566,
+      "method": "LX/0TKC;-><clinit>()V",
+      "code_unit_offset": 54,
+      "dex_byte_offset": 4278480,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 25073,
+      "method": "LX/0TQi;-><clinit>()V",
+      "code_unit_offset": 15,
+      "dex_byte_offset": 4294270,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 48192,
+      "method": "Lcom/instagram/aiconsumption/characters/drafts/data/AICharactersDraftsRepository;->A03(LX/0TCp;Ljava/lang/String;LX/0Pmx;)Ljava/lang/Object;",
+      "code_unit_offset": 71,
+      "dex_byte_offset": 12647162,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 36800,
+      "method": "LX/0ckQ;->FiS()V",
+      "code_unit_offset": 18,
+      "dex_byte_offset": 12039536,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 36800,
+      "method": "LX/0ckQ;->FiS()V",
+      "code_unit_offset": 53,
+      "dex_byte_offset": 12039606,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 38945,
+      "method": "LX/0fAl;->GZ0(Landroid/location/Location;J)V",
+      "code_unit_offset": 13,
+      "dex_byte_offset": 13661670,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes14.dex",
+      "method_index": 38995,
+      "method": "LX/0fAm;->GZ0(Landroid/location/Location;J)V",
+      "code_unit_offset": 43,
+      "dex_byte_offset": 12005482,
+      "string_index": 33129,
+      "value": "POST"
+    },
+    {
+      "dex": "classes15.dex",
+      "method_index": 18220,
+      "method": "LX/0RVF;->hashCode()I",
+      "code_unit_offset": 18,
+      "dex_byte_offset": 3846644,
+      "string_index": 31478,
+      "value": "POST"
+    },
+    {
+      "dex": "classes15.dex",
+      "method_index": 18221,
+      "method": "LX/0RVF;->toString()Ljava/lang/String;",
+      "code_unit_offset": 43,
+      "dex_byte_offset": 4185682,
+      "string_index": 31478,
+      "value": "POST"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 26307,
+      "method": "LX/0YLM;->onCreate(Landroid/os/Bundle;)V",
+      "code_unit_offset": 317,
+      "dex_byte_offset": 6583614,
+      "string_index": 40576,
+      "value": "POST"
+    },
+    {
+      "dex": "classes16.dex",
+      "method_index": 32766,
+      "method": "LX/0bOj;-><clinit>()V",
+      "code_unit_offset": 27,
+      "dex_byte_offset": 3257386,
+      "string_index": 40576,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 12539,
+      "method": "LX/0RqX;->onStart()V",
+      "code_unit_offset": 115,
+      "dex_byte_offset": 5458822,
+      "string_index": 8096,
+      "value": "GET"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 12539,
+      "method": "LX/0RqX;->onStart()V",
+      "code_unit_offset": 126,
+      "dex_byte_offset": 5458844,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 23908,
+      "method": "LX/0bee;-><clinit>()V",
+      "code_unit_offset": 15,
+      "dex_byte_offset": 2956190,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24390,
+      "method": "LX/0bm3;-><clinit>()V",
+      "code_unit_offset": 70,
+      "dex_byte_offset": 2961412,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 24727,
+      "method": "LX/0brr;-><clinit>()V",
+      "code_unit_offset": 3,
+      "dex_byte_offset": 2973370,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 27849,
+      "method": "LX/0iuQ;->A00(Landroid/os/Bundle;Landroidx/fragment/app/FragmentActivity;LX/05Dd;)V",
+      "code_unit_offset": 141,
+      "dex_byte_offset": 5785486,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 27992,
+      "method": "LX/0jDL;->A01(LX/0dSP;LX/0ccD;Ljava/lang/Integer;Ljava/net/URI;Ljava/util/Map;)LX/0eBr;",
+      "code_unit_offset": 66,
+      "dex_byte_offset": 6690276,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 27992,
+      "method": "LX/0jDL;->A01(LX/0dSP;LX/0ccD;Ljava/lang/Integer;Ljava/net/URI;Ljava/util/Map;)LX/0eBr;",
+      "code_unit_offset": 102,
+      "dex_byte_offset": 6690348,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 27992,
+      "method": "LX/0jDL;->A01(LX/0dSP;LX/0ccD;Ljava/lang/Integer;Ljava/net/URI;Ljava/util/Map;)LX/0eBr;",
+      "code_unit_offset": 123,
+      "dex_byte_offset": 6690390,
+      "string_index": 8096,
+      "value": "GET"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 29228,
+      "method": "LX/0jt2;->A03(LX/0jt2;Ljava/lang/Exception;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/Map;IJZ)V",
+      "code_unit_offset": 12,
+      "dex_byte_offset": 5683684,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 29228,
+      "method": "LX/0jt2;->A03(LX/0jt2;Ljava/lang/Exception;Ljava/lang/Integer;Ljava/lang/String;Ljava/util/Map;IJZ)V",
+      "code_unit_offset": 61,
+      "dex_byte_offset": 5683782,
+      "string_index": 8096,
+      "value": "GET"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 29229,
+      "method": "LX/0jt2;->A04(Ljava/lang/Exception;Ljava/lang/Integer;Z)V",
+      "code_unit_offset": 25,
+      "dex_byte_offset": 5177890,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 29229,
+      "method": "LX/0jt2;->A04(Ljava/lang/Exception;Ljava/lang/Integer;Z)V",
+      "code_unit_offset": 42,
+      "dex_byte_offset": 5177924,
+      "string_index": 8096,
+      "value": "GET"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 29340,
+      "method": "LX/0jzz;->A01(Ljava/lang/String;)LX/0brr;",
+      "code_unit_offset": 25,
+      "dex_byte_offset": 4468862,
+      "string_index": 34922,
+      "value": "POST"
+    },
+    {
+      "dex": "classes17.dex",
+      "method_index": 36782,
+      "method": "LX/0nhG;->call()Ljava/lang/Object;",
+      "code_unit_offset": 457,
+      "dex_byte_offset": 6696278,
+      "string_index": 8096,
+      "value": "GET"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 26608,
+      "method": "LX/0fdf;-><clinit>()V",
+      "code_unit_offset": 0,
+      "dex_byte_offset": 3378020,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 27878,
+      "method": "LX/0gLv;-><clinit>()V",
+      "code_unit_offset": 61,
+      "dex_byte_offset": 3421042,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28343,
+      "method": "LX/0gef;-><clinit>()V",
+      "code_unit_offset": 20,
+      "dex_byte_offset": 3408328,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28889,
+      "method": "LX/0gmS;-><clinit>()V",
+      "code_unit_offset": 2833,
+      "dex_byte_offset": 3620690,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 28895,
+      "method": "LX/0gmT;-><clinit>()V",
+      "code_unit_offset": 3844,
+      "dex_byte_offset": 3634260,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 29641,
+      "method": "LX/0jMO;->A00(Ljava/lang/Integer;)Ljava/lang/String;",
+      "code_unit_offset": 40,
+      "dex_byte_offset": 5707688,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48553,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLBizAppTabNameSet;-><clinit>()V",
+      "code_unit_offset": 421,
+      "dex_byte_offset": 3715766,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48637,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLFBIconNameSet;-><clinit>()V",
+      "code_unit_offset": 4545,
+      "dex_byte_offset": 3711414,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48643,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLFXCALXPostMediumSet;-><clinit>()V",
+      "code_unit_offset": 2,
+      "dex_byte_offset": 3648856,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48721,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLInstantShoppingActionTypeSet;-><clinit>()V",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 3654300,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48736,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLJobSearchSurfaceEnumSet;-><clinit>()V",
+      "code_unit_offset": 476,
+      "dex_byte_offset": 3714504,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48862,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLPageContentCardTypeSet;-><clinit>()V",
+      "code_unit_offset": 415,
+      "dex_byte_offset": 3720250,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes18.dex",
+      "method_index": 48949,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLSaveContainerCategoryEnumSet;-><clinit>()V",
+      "code_unit_offset": 2,
+      "dex_byte_offset": 3372068,
+      "string_index": 43633,
+      "value": "POST"
+    },
+    {
+      "dex": "classes19.dex",
+      "method_index": 16526,
+      "method": "LX/0iI1;-><clinit>()V",
+      "code_unit_offset": 17,
+      "dex_byte_offset": 3689074,
+      "string_index": 10224,
+      "value": "GET"
+    },
+    {
+      "dex": "classes19.dex",
+      "method_index": 16526,
+      "method": "LX/0iI1;-><clinit>()V",
+      "code_unit_offset": 31,
+      "dex_byte_offset": 3689102,
+      "string_index": 37106,
+      "value": "POST"
+    },
+    {
+      "dex": "classes19.dex",
+      "method_index": 40389,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLMessengerPlatformMediaTypeSet;-><clinit>()V",
+      "code_unit_offset": 14,
+      "dex_byte_offset": 3662680,
+      "string_index": 37106,
+      "value": "POST"
+    },
+    {
+      "dex": "classes19.dex",
+      "method_index": 32217,
+      "method": "LX/1AAM;->run()V",
+      "code_unit_offset": 2144,
+      "dex_byte_offset": 6820096,
+      "string_index": 37106,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 61477,
+      "method": "Lcom/instagram/mainactivity/InstagramMainActivity;->FVm(LX/03oB;)V",
+      "code_unit_offset": 569,
+      "dex_byte_offset": 4743946,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 61477,
+      "method": "Lcom/instagram/mainactivity/InstagramMainActivity;->FVm(LX/03oB;)V",
+      "code_unit_offset": 571,
+      "dex_byte_offset": 4743950,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 3967,
+      "method": "LX/00QR;->A07(Landroid/content/Intent;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 302,
+      "dex_byte_offset": 4909528,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 11426,
+      "method": "LX/01rV;->toString()Ljava/lang/String;",
+      "code_unit_offset": 27,
+      "dex_byte_offset": 5861538,
+      "string_index": 12847,
+      "value": "GET"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 11426,
+      "method": "LX/01rV;->toString()Ljava/lang/String;",
+      "code_unit_offset": 30,
+      "dex_byte_offset": 5861544,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 11840,
+      "method": "LX/01vY;->A00(Ljava/net/URL;Ljava/util/Map;[BIJJZ)Ljava/net/HttpURLConnection;",
+      "code_unit_offset": 216,
+      "dex_byte_offset": 5914228,
+      "string_index": 12847,
+      "value": "GET"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 11840,
+      "method": "LX/01vY;->A00(Ljava/net/URL;Ljava/util/Map;[BIJJZ)Ljava/net/HttpURLConnection;",
+      "code_unit_offset": 219,
+      "dex_byte_offset": 5914234,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 12198,
+      "method": "LX/01xX;->A00(Ljava/lang/Integer;)Ljava/lang/String;",
+      "code_unit_offset": 22,
+      "dex_byte_offset": 5938852,
+      "string_index": 12847,
+      "value": "GET"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 12198,
+      "method": "LX/01xX;->A00(Ljava/lang/Integer;)Ljava/lang/String;",
+      "code_unit_offset": 28,
+      "dex_byte_offset": 5938864,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 19626,
+      "method": "LX/03uV;-><clinit>()V",
+      "code_unit_offset": 30,
+      "dex_byte_offset": 4117832,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 25234,
+      "method": "LX/04zL;->A00(LX/00ez;LX/00ju;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 499,
+      "dex_byte_offset": 7342126,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes2.dex",
+      "method_index": 25234,
+      "method": "LX/04zL;->A00(LX/00ez;LX/00ju;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 535,
+      "dex_byte_offset": 7342198,
+      "string_index": 52384,
+      "value": "POST"
+    },
+    {
+      "dex": "classes20.dex",
+      "method_index": 11369,
+      "method": "LX/0Ux9;->handleMessage(Landroid/os/Message;)V",
+      "code_unit_offset": 217,
+      "dex_byte_offset": 6143166,
+      "string_index": 32807,
+      "value": "POST"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23409,
+      "method": "LX/0dJK;-><clinit>()V",
+      "code_unit_offset": 58,
+      "dex_byte_offset": 2862008,
+      "string_index": 36455,
+      "value": "POST"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 23815,
+      "method": "LX/0fUy;->A00(Landroid/app/Activity;LX/0V3g;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 3,
+      "dex_byte_offset": 5120614,
+      "string_index": 36455,
+      "value": "POST"
+    },
+    {
+      "dex": "classes22.dex",
+      "method_index": 29483,
+      "method": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLEventsLoggerActionTargetSet;-><clinit>()V",
+      "code_unit_offset": 2218,
+      "dex_byte_offset": 3028768,
+      "string_index": 36455,
+      "value": "POST"
+    },
+    {
+      "dex": "classes3.dex",
+      "method_index": 9835,
+      "method": "LX/02i7;->FRn(Ljava/lang/Object;)V",
+      "code_unit_offset": 89,
+      "dex_byte_offset": 4393230,
+      "string_index": 48255,
+      "value": "POST"
+    },
+    {
+      "dex": "classes3.dex",
+      "method_index": 16584,
+      "method": "LX/04Wj;->A04(Landroid/content/Context;Ljava/lang/String;IIJZ)V",
+      "code_unit_offset": 372,
+      "dex_byte_offset": 5255580,
+      "string_index": 9550,
+      "value": "GET"
+    },
+    {
+      "dex": "classes3.dex",
+      "method_index": 21181,
+      "method": "LX/05Oh;-><clinit>()V",
+      "code_unit_offset": 10,
+      "dex_byte_offset": 3145260,
+      "string_index": 9550,
+      "value": "GET"
+    },
+    {
+      "dex": "classes3.dex",
+      "method_index": 21556,
+      "method": "LX/05f0;->A00(Landroid/content/Context;LX/08Mc;Ljava/util/Map;)V",
+      "code_unit_offset": 70,
+      "dex_byte_offset": 5810240,
+      "string_index": 48255,
+      "value": "POST"
+    },
+    {
+      "dex": "classes3.dex",
+      "method_index": 23586,
+      "method": "LX/05y3;->A01(LX/0ISy;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LX/0Pmx;LX/05y3;)Ljava/lang/Object;",
+      "code_unit_offset": 93,
+      "dex_byte_offset": 5995598,
+      "string_index": 9550,
+      "value": "GET"
+    },
+    {
+      "dex": "classes3.dex",
+      "method_index": 41968,
+      "method": "LX/0EAg;->run()V",
+      "code_unit_offset": 173,
+      "dex_byte_offset": 7064886,
+      "string_index": 48255,
+      "value": "POST"
+    },
+    {
+      "dex": "classes4.dex",
+      "method_index": 21813,
+      "method": "LX/06Qp;-><clinit>()V",
+      "code_unit_offset": 41,
+      "dex_byte_offset": 3713334,
+      "string_index": 44505,
+      "value": "POST"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 14431,
+      "method": "LX/04Wv;->A00(LX/0o6J;)Landroidx/fragment/app/Fragment;",
+      "code_unit_offset": 219,
+      "dex_byte_offset": 5597118,
+      "string_index": 44143,
+      "value": "POST"
+    },
+    {
+      "dex": "classes5.dex",
+      "method_index": 14431,
+      "method": "LX/04Wv;->A00(LX/0o6J;)Landroidx/fragment/app/Fragment;",
+      "code_unit_offset": 222,
+      "dex_byte_offset": 5597124,
+      "string_index": 44143,
+      "value": "POST"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 8320,
+      "method": "LX/03I4;->hashCode()I",
+      "code_unit_offset": 210,
+      "dex_byte_offset": 3916196,
+      "string_index": 47312,
+      "value": "POST"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 33968,
+      "method": "LX/0Fp2;->hashCode()I",
+      "code_unit_offset": 111,
+      "dex_byte_offset": 6475162,
+      "string_index": 47312,
+      "value": "POST"
+    },
+    {
+      "dex": "classes6.dex",
+      "method_index": 42196,
+      "method": "LX/0Jra;-><clinit>()V",
+      "code_unit_offset": 32,
+      "dex_byte_offset": 3344784,
+      "string_index": 47312,
+      "value": "POST"
+    },
+    {
+      "dex": "classes7.dex",
+      "method_index": 40726,
+      "method": "LX/0MGj;-><clinit>()V",
+      "code_unit_offset": 55,
+      "dex_byte_offset": 4138902,
+      "string_index": 41720,
+      "value": "POST"
+    }
+  ],
+  "calls": [],
+  "nearby_method_strings": [
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 4,
+      "value": "_messages"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 36,
+      "value": "message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 46,
+      "value": "error_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 55,
+      "value": "error_source"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 77,
+      "value": "error_body"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 86,
+      "value": "error_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 97,
+      "value": "client_facing_error_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 102,
+      "value": "is_epd_error"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 112,
+      "value": "can_see_notes"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 121,
+      "value": "can_see_broadcast_chats"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 134,
+      "value": "logout_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 144,
+      "value": "checkpoint_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 153,
+      "value": "challenge"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 165,
+      "value": "consent_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 177,
+      "value": "status"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 196,
+      "value": "lock"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 204,
+      "value": "feedback_required"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 215,
+      "value": "feedback_title"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 224,
+      "value": "feedback_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 233,
+      "value": "feedback_appeal_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 242,
+      "value": "feedback_ignore_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 251,
+      "value": "feedback_action"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 260,
+      "value": "feedback_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 278,
+      "value": "is_spam"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 286,
+      "value": "sentry_block_restriction_dialogue_unification_enabled"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 298,
+      "value": "restriction_detail_use_case"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 308,
+      "value": "restriction_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 318,
+      "value": "enrollment_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 327,
+      "value": "expiration_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 336,
+      "value": "restriction_extra_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 346,
+      "value": "dialogue_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 355,
+      "value": "responsible_policy"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 367,
+      "value": "category"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 378,
+      "value": "error_code"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 387,
+      "value": "reasons_thrown"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A00(LX/04s2;LX/01y9;)V",
+      "code_unit_offset": 393,
+      "value": "news_url_is_regulated"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 8,
+      "value": "is_spam"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 24,
+      "value": "restriction_extra_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 63,
+      "value": "feedback_ignore_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 80,
+      "value": "responsible_policy"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 98,
+      "value": "error_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 115,
+      "value": "error_code"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 133,
+      "value": "error_body"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 150,
+      "value": "news_url_is_regulated"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 166,
+      "value": "challenge"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 195,
+      "value": "checkpoint_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 212,
+      "value": "sentry_block_restriction_dialogue_unification_enabled"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 228,
+      "value": "message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 241,
+      "value": "reasons_thrown"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 259,
+      "value": "feedback_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 276,
+      "value": "expiration_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 293,
+      "value": "restriction_detail_use_case"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 311,
+      "value": "feedback_appeal_label"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 328,
+      "value": "error_source"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 345,
+      "value": "error_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 362,
+      "value": "logout_reason"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 380,
+      "value": "category"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 397,
+      "value": "lock"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 413,
+      "value": "is_epd_error"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 430,
+      "value": "feedback_title"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 447,
+      "value": "can_see_broadcast_chats"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 463,
+      "value": "_messages"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 512,
+      "value": "can_see_notes"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 528,
+      "value": "restriction_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 546,
+      "value": "client_facing_error_message"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 585,
+      "value": "status"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 603,
+      "value": "dialogue_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 620,
+      "value": "feedback_required"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 635,
+      "value": "feedback_action"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 652,
+      "value": "consent_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 681,
+      "value": "feedback_url"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V",
+      "code_unit_offset": 698,
+      "value": "enrollment_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 33,
+      "value": "last_user_restriction_sentry_block_event"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 51,
+      "value": ""
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 87,
+      "value": ""
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 92,
+      "value": "restriction_detail_use_case"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 104,
+      "value": "restriction_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 116,
+      "value": "enrollment_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 127,
+      "value": "expiration_time"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 138,
+      "value": "dialogue_type"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 149,
+      "value": "responsible_policy"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 161,
+      "value": "category"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 172,
+      "value": "error_code"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 183,
+      "value": "restriction_extra_data"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 195,
+      "value": "reasons_thrown"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 212,
+      "value": "com.bloks.www.instagram.igwb.exp.enforcement.dialog"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 280,
+      "value": "true"
+    },
+    {
+      "dex": "classes2.dex",
+      "method": "LX/08uB;->A0L(Ljava/lang/Object;Ljava/lang/Object;)V",
+      "code_unit_offset": 293,
+      "value": "com.instagram.challenge.navigation.take_challenge"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 3,
+      "value": "admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 27,
+      "value": "blocked_user_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 51,
+      "value": "can_post"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 62,
+      "value": "channel_admin_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 71,
+      "value": "chat_thread_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 76,
+      "value": "group_fbid"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 83,
+      "value": "group_pk"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 101,
+      "value": "has_pending_admin_invite"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 116,
+      "value": "hidden"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 121,
+      "value": "is_group"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 128,
+      "value": "is_group_full"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 135,
+      "value": "is_group_notes_allowed"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 142,
+      "value": "is_recommendable"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 149,
+      "value": "is_viewer_admin"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 156,
+      "value": "is_viewer_in_chat_thread"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 163,
+      "value": "is_viewer_invited"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 178,
+      "value": "mandatory_approvals_expire_at"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 183,
+      "value": "num_admins"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 190,
+      "value": "num_blocked_users"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 197,
+      "value": "num_pending_follow_requests"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 204,
+      "value": "num_pending_invites"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 211,
+      "value": "num_pending_notes"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 218,
+      "value": "num_pending_notes_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 225,
+      "value": "num_pending_posts"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 232,
+      "value": "num_pending_posts_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 239,
+      "value": "pending_admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+      "code_unit_offset": 267,
+      "value": "ring_spec"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 72,
+      "value": "is_viewer_invited"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 74,
+      "value": "num_pending_follow_requests"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 76,
+      "value": "group_fbid"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 84,
+      "value": "num_admins"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 86,
+      "value": "num_pending_notes_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 88,
+      "value": "group_pk"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 90,
+      "value": "is_viewer_in_chat_thread"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 92,
+      "value": "is_group"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 94,
+      "value": "num_pending_posts"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 96,
+      "value": "num_pending_notes"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 98,
+      "value": "can_post"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 100,
+      "value": "is_viewer_admin"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 102,
+      "value": "is_group_notes_allowed"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 104,
+      "value": "num_pending_invites"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 106,
+      "value": "is_group_full"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 108,
+      "value": "pending_admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 110,
+      "value": "blocked_user_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 112,
+      "value": "num_blocked_users"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 114,
+      "value": "admin_ids"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 116,
+      "value": "GroupMetadataImpl"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 135,
+      "value": "has_pending_admin_invite"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 142,
+      "value": "is_recommendable"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 151,
+      "value": "mandatory_approvals_expire_at"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 168,
+      "value": "num_pending_posts_by_viewer"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 240,
+      "value": "ring_spec"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 329,
+      "value": "chat_thread_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 385,
+      "value": "hidden"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 395,
+      "value": "channel_admin_id"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 585,
+      "value": "is_recommendable"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 595,
+      "value": "has_pending_admin_invite"
+    },
+    {
+      "dex": "classes22.dex",
+      "method": "LX/0Y3h;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_unit_offset": 598,
+      "value": "num_pending_posts_by_viewer"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 14,
+      "value": "location"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 33,
+      "value": "viewer_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 40,
+      "value": "enforcement_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 55,
+      "value": "trigger_session_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A00(Landroidx/fragment/app/FragmentActivity;LX/0dIe;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;)LX/0RY3;",
+      "code_unit_offset": 75,
+      "value": "com.bloks.www.ig.ixt.triggers.screen.ig_account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A01(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 21,
+      "value": "entry_point"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A01(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "code_unit_offset": 30,
+      "value": "viewer_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 0,
+      "value": "app_start"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 34,
+      "value": "location"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 39,
+      "value": "analytics_module"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_unit_offset": 60,
+      "value": "users/get_recommendation_status_nudge/"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 24,
+      "value": "https://www.facebook.com/payments/offsite/demo/"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 32,
+      "value": "https://www.facebook.com/payments/offsite/meta_checkout"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 68,
+      "value": "https://www.threads.com/settings/account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 76,
+      "value": "https://www.threads.com/settings/account_status/"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 102,
+      "value": "location"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 176,
+      "value": "com.bloks.www.bloks.screen_query.th.account_status.home"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 264,
+      "value": "trigger_event_type"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 266,
+      "value": "ig_open_account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 272,
+      "value": "trigger_session_id"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 282,
+      "value": "com.bloks.www.ig.ixt.triggers.screen.ig_account_status"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 363,
+      "value": "eclipse"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 439,
+      "value": "android.intent.action.VIEW"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 466,
+      "value": "https"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 490,
+      "value": "barcelona"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 521,
+      "value": "com.instagram.barcelona"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 560,
+      "value": "/mainfeed"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 622,
+      "value": "com.instagram.url.extra.SHOULD_RETURN_TO_SENDING_ACTIVITY"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 651,
+      "value": "Opening FOA URL "
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 653,
+      "value": " was unsuccessful."
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 659,
+      "value": "BKBloksActionNavigationOpenUrlImpl"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 672,
+      "value": "whatsapp"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 717,
+      "value": "com.facebook.stella"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 726,
+      "value": "basel"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 824,
+      "value": "download/redirect"
+    },
+    {
+      "dex": "classes9.dex",
+      "method": "LX/0LTs;->BEO(Landroid/content/Context;LX/02pe;Ljava/lang/Integer;)V",
+      "code_unit_offset": 838,
+      "value": "tifu"
+    }
+  ],
+  "errors": []
+}

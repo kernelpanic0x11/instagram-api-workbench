@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_29ccf04f50b6a1bb1c53134d6cd5f283fd3ae1a8f283df3e109a2578cca81631",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C015E",
+      "method": {
+        "name": "A02",
+        "reported_signature": "A02(X.015E, X.01qh, java.lang.String, java.lang.String, java.util.Map, int, long, boolean): X.0Ajj",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/015E;LX/01qh;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;IJZ)LX/0Ajj;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public static final C0Ajj A02(C015E c015e, C01qh c01qh, String str, String str2, Map map, int i, long j, boolean z) {\n        if (!c015e.A0A(c01qh, str)) {\n            return new C0Sv3(c015e.A06(c01qh, null, str, str2, \"bloks/apps/\", map, C02bn.A00, i, j, z));\n        }\n        C00Nq c00NqA02 = GraphQlCallInput.A02.A02();\n        C00Nq.A00(c00NqA02, str, \"app_id\");\n        C00Nq.A00(c00NqA02, \"8f0f09df419d7d5826957c3f070997a65b6e8d025c84d1e91931768e8b59625e\", \"bloks_versioning_id\");\n        C06ls c06ls = new C06ls();\n        c06ls.A0F(AnonymousClass0367.A02(0, 9, 104), C05Ee.A02.A03(C05Bb.A00()));\n        c00NqA02.A0F(c06ls.A03(), \"infra_params\");\n        if (map != null) {\n            C07py c07py = C07px.A03;\n            C07qc c07qc = c07py.A02;\n            C06tV c06tVA02 = C06tT.A02(String.class);\n            Integer num = AnonymousClass0009.A00;\n            C00Nq.A00(c00NqA02, c07py.A02(map, C06tX.A03(C06tT.A04(new C06tW(num, c06tVA02), new C06tW(num, C06tT.A01(String.class))), c07qc)), \"params\");\n        }\n        C06lq c06lq = new C06lq();\n        C06lq c06lq2 = new C06lq();\n        C06ls c06ls2 = c06lq.A00;\n        c06ls2.A03().A0F(c00NqA02, \"params\");\n        c06lq.A00(C015F.A00(), \"bk_context\");\n        return new C06O8((C0oft) C03fn.A03(c01qh, 131433), C06nw.A00(C04oc.A00(\"itas-android\"), null, \"IGBloksAppRootQuery\", null, \"bloks_app\", new ArrayList(), c06ls2.A04(), c06lq2.A00.A04(), C06O0.A00, 0, false).setMaxToleratedCacheAgeMs(j).setRequestPurpose(i == 3 ? 1 : 2).setFriendlyName(AnonymousClass0003.A0P(\"IGBloksAppRootQuery-\", str)), new C02O0(C00L3.A01));\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

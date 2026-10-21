@@ -1,0 +1,128 @@
+INSTAGRAM RECOMMENDATION-RESTRICTION DISPLAY TRACE
+
+Target: com.instagram.android 451.0.0.53.80; base APK SHA-256
+4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b
+Method: static DEX cross-references and REA/JADX method decompilation.
+No Instagram API requests or phone interactions were performed for this trace.
+
+FINDING
+The client contains a concrete recommendation-status notification path. It asks
+for a required boolean deciding whether to show a nudge, then obtains a Bloks
+payload and hands the result to the Bloks action/UI machinery. This is a
+notification/display mechanism, not a recovered ranking or suppression algorithm.
+
+1. RECOMMENDATION-STATUS REQUEST — ANSWERED AT CLIENT-CODE LEVEL
+X.C0L1j.A02 builds a request using the relative path:
+  users/get_recommendation_status_nudge/
+It binds response parser C0dmv and callback C0EoX with discriminator 2, then
+schedules the request. Its instrumentation labels the module app_start. Caller
+frequency, HTTP verb, complete base URL and actual on-device execution were not
+established; app_start instrumentation alone does not prove every launch calls it.
+
+  recommendation-nudge-request.json: ev_71e6165474a3ff626610d79c6ad20b56c7a421c69403b97d64c265c23f5aa63f
+
+2. RECEIVED FIELD AND DISPLAY GATE — ANSWERED AT CLIENT-CODE LEVEL
+C0dmv.unsafeParseFromJson requires show_recommendation_status_nudge. Missing that
+field takes a parse-error path. A present value is stored in the generated
+XDTRecommendationStatusNudgeResponse model.
+C0EoX.A0k branch 2 reads a boolean using numeric key -2053018862. That
+number exactly matches Java String.hashCode for show_recommendation_status_nudge,
+corroborating the parser-to-callback mapping; the generic accessor internals were
+not traced. A positive response takes
+the nudge path; the false branch can also take it through a local preference
+lookup. That preference's semantic name has not been resolved. An opaque host guard (C01oK.A01)
+must pass before scheduling display. The callback records
+network_request_success and nudge_will_show, or ends its marker without a nudge.
+Decompiled callback has code-duplication and type-inference warnings: this is
+static reconstructed control flow, not a runtime observation.
+
+  nudge-response-parser.json: ev_c78cb2598c384ac19cb5919204f36d6a5a2e3ee8c65783a3af7ddfd713b6c57c
+  nudge-callback.json: ev_ac4f0b9da195e543470aeb108dbc9e797ae46061b9d0ee4c5efe8ef588a84fd5
+
+3. FETCH AND HANDLE THE NUDGE — ANSWERED TO BLOKS EXECUTION BOUNDARY
+The selected app identifier is:
+  com.bloks.www.ig.account_status.nudge.async
+The call carries location, analytics_module=app_start, and a generated
+correlation/session value under an obfuscated key helper. C05uB prevents a second
+request on the same instance while its boolean guard is set, attaches C0EJA and
+schedules the Bloks request. This does not establish a global once-only policy.
+C015E.A03 chooses its transport conditionally. In the legacy endpoint branch,
+com.bloks.www names use bloks/async_action/<app-id>/; an alternate configured
+branch is also present. The endpoint request builder adds bloks_versioning_id,
+bk_client_context, parameters and X-IG-BLOKS-SERIALIZE-PAYLOAD: true.
+C0EJA.A06 handles the returned payload, constructs the session/UI context,
+checks fragment-manager conditions, and passes the payload to C0KYw.A01.
+The returned Bloks payload and exact displayed text were not captured. A true
+nudge flag is not itself proof of a restriction: it controls a prompt and can
+also be overridden by a local preference.
+
+  nudge-bloks-request.json: ev_a5c2cac4ac563e6cec97a7a41ddb72e105f579832467ca837cf94d2b72ef391f
+  bloks-async-dispatch.json: ev_990e76334055f35956e3a023d12cadce272b3e0b18792cf266b7ff122ae9accc
+  bloks-http-request.json: ev_a3f32edbc264eef7bcbd9847d099ef7e0e042dcaae08fa960eaa1af516540bf2
+  nudge-render-callback.json: ev_c58a843e76e1b2e7238912f2fb770aae1604e40f137fc52566fde0aa7242d918
+
+4. ACCOUNT STATUS SCREEN — PARTIALLY ANSWERED
+AccountStatusUrlHandlerActivity.A2V reads the location query parameter and calls
+C0L1j.A00. This launcher creates the Bloks screen identifier:
+  com.bloks.www.ig.ixt.triggers.screen.ig_account_status
+Its map includes location, viewer_id, and an optional enforcement_id supplied by
+the caller. The URL activity passes null for enforcement_id in the inspected
+path, so not every entry is enforcement-specific. It also logs trigger_session_id
+from the shared parameter map. The screen is configured through C0RY3.A03,
+IgBloksScreenConfig and C0LFI, then C0LEI creates a C0StF fragment with those
+arguments and the session binding. The launcher supplies network success/failure
+callbacks and a request_error UI path.
+A generic Bloks app loader supports bloks/apps/<app-id>/ or
+IGBloksAppRootQuery depending on configuration. The final rendered layout,
+restriction-detail navigation and appeal behavior are not recoverable from these
+selected methods without the corresponding payload or further renderer tracing.
+
+  accountstatus-entry.json: ev_60442f6a66fcc7b450d1b80652a7762d8d8ae8016418ac099242e6a8783bd5f8
+  accountstatus-launch.json: ev_cabdcf0e343cfed3f36a25bd01faefaca9cd3e032d8d20df0ee17ddd6739090e
+  bloks-fragment-build.json: ev_e5f1c53cf86b350332a268ce6ab5de59d7994aed0d2bd085e35057c99049164f
+  accountstatus-screen-arguments.json: ev_ad15c5eecd90723a8533dba326c3d4ba717175d06fd82f33d3340dabc06118d5
+  bloks-render-fragment.json: ev_fbfb6667acadbcb0870db60c502adf70a823f52b1e59fcd52eaef4f090302244
+  bloks-request-dispatch.json: ev_29ccf04f50b6a1bb1c53134d6cd5f283fd3ae1a8f283df3e109a2578cca81631
+
+5. GENERAL RESTRICTION/ERROR DISPLAY — SEPARATE, PARTIALLY ANSWERED
+C01pP.A01 parses restriction_type, restriction_detail_use_case,
+responsible_policy, enrollment_time, expiration_time, restriction_extra_data,
+reasons_thrown, feedback_title, feedback_message, feedback_appeal_label,
+feedback_url and other error/challenge fields.
+C08uB.A0L passes similarly named values to:
+  com.bloks.www.instagram.igwb.exp.enforcement.dialog
+It compares a stored last_user_restriction_sentry_block_event, has conditional
+challenge/fallback branches, and persists the event. The reconstructed source has
+multiple duplicated-block warnings; exact suppression and deduplication semantics
+need raw-instruction or runtime corroboration. This shared path is broader than
+recommendation eligibility; do not equate every restriction with a shadow ban.
+
+  restriction-parser.json: ev_14972c80a0571239b4d5572ee060fc5d5b682ea95f7de7a7c0e4aed90ac40747
+  restriction-dialog.json: ev_1cfebd09332bd890fb3cae11e6ad1724ab60b970c19c938fe6f011c6766039a9
+
+CORRECTION TO EARLIER STRING-ONLY FINDINGS
+is_recommendable is used by the GroupMetadata serializer, specifically the
+GroupMetadataImpl.A0O boolean. Neighboring fields include chat_thread_id, group_pk
+and is_viewer_admin. It is not evidence of an account-wide recommendation flag.
+See group-recommendable-field.json and dex-string-references.json.
+
+WHAT REMAINS UNKNOWN
+- Whether this account currently has any recommendation restriction.
+- Why a backend decides to show the nudge; a UI boolean is not a penalty score.
+- Whether every recommendation restriction generates a visible notification.
+- Exact server-supplied wording, affected content, expiry and appeal eligibility.
+- Which conditional transport and UI branches execute on this device.
+- Any effect on ranking, distribution magnitude or recovery time.
+
+NEXT EVIDENCE NEEDED
+An actual Account Status screen/payload would establish account-specific display
+and wording. A controlled runtime observation could validate which requests and
+branches execute. No restriction-triggering actions, account changes or API
+replays were needed for this static trace.
+
+REPRODUCTION
+rea-session.mjs runs the existing pinned REA launcher over local MCP stdio.
+Individual tool results retain complete structured Evidence, parameters, digest,
+limitations and engine metadata. evidence-index.json indexes those records;
+.java files are convenience excerpts, not original source or buildable code.
+dex_refs.py separately supplies exact DEX const-string instruction references.

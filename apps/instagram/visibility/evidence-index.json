@@ -1,0 +1,382 @@
+{
+  "bloks-http-class": {
+    "evidence_id": "ev_35d98becda17b4392fd83dc5faf51ee3f9dd7e13f4db0b0d367e9e718cf09d85",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C015E"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "nudge-bloks-request": {
+    "evidence_id": "ev_a5c2cac4ac563e6cec97a7a41ddb72e105f579832467ca837cf94d2b72ef391f",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C05uB",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "accountstatus-launch": {
+    "evidence_id": "ev_cabdcf0e343cfed3f36a25bd01faefaca9cd3e032d8d20df0ee17ddd6739090e",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0L1j",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-http-request": {
+    "evidence_id": "ev_a3f32edbc264eef7bcbd9847d099ef7e0e042dcaae08fa960eaa1af516540bf2",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C015E",
+      "method_name": "A06",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "nudge-response-class": {
+    "evidence_id": "ev_ac6ca9e137b2345febece7d8bb720d3d544cec187fbfbf313e82afeff112c717",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0dmv"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "bloks-fragment-build": {
+    "evidence_id": "ev_e5f1c53cf86b350332a268ce6ab5de59d7994aed0d2bd085e35057c99049164f",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0RY3",
+      "method_name": "A03",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "nudge-callback": {
+    "evidence_id": "ev_ac4f0b9da195e543470aeb108dbc9e797ae46061b9d0ee4c5efe8ef588a84fd5",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0EoX",
+      "method_name": "A0k",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "nudge-render-callback": {
+    "evidence_id": "ev_c58a843e76e1b2e7238912f2fb770aae1604e40f137fc52566fde0aa7242d918",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0EJA",
+      "method_name": "A06",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-builder-class": {
+    "evidence_id": "ev_bd41d6ab67c4e5ec994c546085f25f96a9efe303933e7148720a4f32d1bb744d",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0RY3"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "bloks-request-dispatch": {
+    "evidence_id": "ev_29ccf04f50b6a1bb1c53134d6cd5f283fd3ae1a8f283df3e109a2578cca81631",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C015E",
+      "method_name": "A02",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "restriction-dialog": {
+    "evidence_id": "ev_1cfebd09332bd890fb3cae11e6ad1724ab60b970c19c938fe6f011c6766039a9",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C08uB",
+      "method_name": "A0L",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-params": {
+    "evidence_id": "ev_d729efb4d4e4c30fc86d1544dd5204e3560eebac8eec68e698b7cc1c5d505e97",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LFI",
+      "method_name": "A03",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "launcher-class": {
+    "evidence_id": "ev_5852b2c87a9f59294710a8938470863ab719e214418fd1c53429e3896e38ddca",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0L1j"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "restriction-parser": {
+    "evidence_id": "ev_14972c80a0571239b4d5572ee060fc5d5b682ea95f7de7a7c0e4aed90ac40747",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C01pP",
+      "method_name": "A01",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "accountstatus-screen-loader": {
+    "evidence_id": "ev_1a146c5bb75949d21507752858b3ba4e97904da269609a72094b02978ad659dd",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LFI",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "accountstatus-class": {
+    "evidence_id": "ev_633727eecdfd3da86731e36c4c38b2741c8d4d739e552567e26e962dc2e5f1f7",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "com.instagram.urlhandlers.accountstatus.AccountStatusUrlHandlerActivity"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "recommendation-nudge-request": {
+    "evidence_id": "ev_71e6165474a3ff626610d79c6ad20b56c7a421c69403b97d64c265c23f5aa63f",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0L1j",
+      "method_name": "A02",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-config": {
+    "evidence_id": "ev_6f932f5cb37e1b102c929e276d79193fc3b2d19a75af12367dc3079784d7f9dd",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LFI",
+      "method_name": "<init>",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-async-request": {
+    "evidence_id": "ev_34e3a699ffdeffc1a3c490a1b6b1cc40f677df03830db2ebea2b320016beebdb",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C015E",
+      "method_name": "A04",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "restriction-parser-search": {
+    "evidence_id": "ev_9e7459f0a2a1b57cfe19458476ef704b3553dc86f932cdd6cb4d48849d4ceb8e",
+    "operation": "search_android_classes",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "query": "1pP"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "nudge-response-parser": {
+    "evidence_id": "ev_c78cb2598c384ac19cb5919204f36d6a5a2e3ee8c65783a3af7ddfd713b6c57c",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0dmv",
+      "method_name": "unsafeParseFromJson",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-payload-class": {
+    "evidence_id": "ev_e33de8c7177cd68f38abbf5c71817aa78f76a346d0d86d33a40b4dfeb549b66c",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LFI"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "nudge-render-callback-class": {
+    "evidence_id": "ev_ca1d99c3132ace092f3efcc9a95803853b898052e9424dafdbdb2003acc97dc9",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0EJA"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "restriction-parser-class": {
+    "evidence_id": "ev_35047e2ce8c07b547dda76d7a7ec3fa60449c2181473abd190b63052bfa5da0f",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C01pP"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "launcher-search": {
+    "evidence_id": "ev_a3e06e141b8b571615faa05f53606220a4cb259ec76d46bc5d43e74aa77b4108",
+    "operation": "search_android_classes",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "query": "L1j"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "nudge-bloks-client-class": {
+    "evidence_id": "ev_d813a62be96ca5ee9714d29680dd4187c56279872c34e881d7d7a37631e7cba3",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C05uB"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "restriction-dialog-class": {
+    "evidence_id": "ev_fb4843ad45f47f4e4a6a7c035ab30a4dde8a5e10324866035664e8e2f300f11a",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C08uB"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "accountstatus-fragment": {
+    "evidence_id": "ev_522f47d78ba4690c32e7f455020a87183f49cffcfb92af5dc44950f67ee08cda",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LFI",
+      "method_name": "A09",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-render-fragment": {
+    "evidence_id": "ev_fbfb6667acadbcb0870db60c502adf70a823f52b1e59fcd52eaef4f090302244",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LEI",
+      "method_name": "A02",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "accountstatus-screen-arguments": {
+    "evidence_id": "ev_ad15c5eecd90723a8533dba326c3d4ba717175d06fd82f33d3340dabc06118d5",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LEI",
+      "method_name": "A00",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "nudge-callback-class": {
+    "evidence_id": "ev_3973b9db4b05abe049a7e227fe3aeb3db4b8d234d33cf24508ef48027d427031",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0EoX"
+    },
+    "source_status": null,
+    "markers": []
+  },
+  "bloks-async-dispatch": {
+    "evidence_id": "ev_990e76334055f35956e3a023d12cadce272b3e0b18792cf266b7ff122ae9accc",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C015E",
+      "method_name": "A03",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "accountstatus-entry": {
+    "evidence_id": "ev_60442f6a66fcc7b450d1b80652a7762d8d8ae8016418ac099242e6a8783bd5f8",
+    "operation": "inspect_android_method",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "com.instagram.urlhandlers.accountstatus.AccountStatusUrlHandlerActivity",
+      "method_name": "A2V",
+      "overload_index": 0
+    },
+    "source_status": "complete",
+    "markers": []
+  },
+  "bloks-render-class": {
+    "evidence_id": "ev_719d1faf8b55309337c244f1271d0e41fa00ed6f6cd3b473f83a3fe1c926c9bf",
+    "operation": "inspect_android_class",
+    "parameters": {
+      "path": "./apks/base.apk",
+      "class_name": "X.C0LEI"
+    },
+    "source_status": null,
+    "markers": []
+  }
+}

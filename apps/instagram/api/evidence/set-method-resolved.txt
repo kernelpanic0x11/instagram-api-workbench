@@ -1,0 +1,4 @@
+    public final void A07(Integer num) {
+        C05s2.A0V(num, 0);
+        this.A0A = num;
+    }

@@ -1,0 +1,616 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_493e0e2d74082cdf3f1da8168eb85176507575481b620c5774e6f2d579abfc07",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0RCJ",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(X.0RCJ): com.instagram.creation.capture.quickcapture.sundial.viewmodel.drafts.ClipsSharingDraftViewModel",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)Lcom/instagram/creation/capture/quickcapture/sundial/viewmodel/drafts/ClipsSharingDraftViewModel;"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(X.0RCJ): X.0fAx",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)LX/0fAx;"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(X.0RCJ): X.0TEb",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)LX/0TEb;"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(): X.0faH",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()LX/0faH;"
+        },
+        {
+          "name": "A04",
+          "reported_signature": "A04(X.0RCJ): X.0YcF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)LX/0YcF;"
+        },
+        {
+          "name": "A05",
+          "reported_signature": "A05(X.0RCJ): X.0SxB",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)LX/0SxB;"
+        },
+        {
+          "name": "A06",
+          "reported_signature": "A06(android.content.Context, com.instagram.common.session.UserSession, java.lang.String): java.lang.Integer",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)Ljava/lang/Integer;"
+        },
+        {
+          "name": "A07",
+          "reported_signature": "A07(X.0F2R, X.0RCJ, X.0Pmx, boolean, boolean, boolean): java.lang.Object",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0F2R;LX/0RCJ;LX/0Pmx;ZZZ)Ljava/lang/Object;"
+        },
+        {
+          "name": "A08",
+          "reported_signature": "A08(X.0CcK, X.0RCJ, X.0Pmx): java.lang.Object",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0CcK;LX/0RCJ;LX/0Pmx;)Ljava/lang/Object;"
+        },
+        {
+          "name": "A09",
+          "reported_signature": "A09(X.0RCJ): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)Ljava/lang/String;"
+        },
+        {
+          "name": "A0A",
+          "reported_signature": "A0A(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "A0B",
+          "reported_signature": "A0B(android.content.Intent, X.0CcK, X.0RCJ, java.lang.String, java.lang.String, boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Intent;LX/0CcK;LX/0RCJ;Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "name": "A0C",
+          "reported_signature": "A0C(android.content.Intent, X.0RCJ, int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Intent;LX/0RCJ;I)V"
+        },
+        {
+          "name": "A0D",
+          "reported_signature": "A0D(X.0G7r, X.0RsQ, boolean, boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0G7r;LX/0RsQ;ZZ)V"
+        },
+        {
+          "name": "A0E",
+          "reported_signature": "A0E(X.0QF5, X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0QF5;LX/0RCJ;)V"
+        },
+        {
+          "name": "A0F",
+          "reported_signature": "A0F(X.03oB, X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/03oB;LX/0RCJ;)V"
+        },
+        {
+          "name": "A0G",
+          "reported_signature": "A0G(X.0CcK, X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0CcK;LX/0RCJ;)V"
+        },
+        {
+          "name": "A0H",
+          "reported_signature": "A0H(X.0CcK, X.0RCJ, java.lang.String, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0CcK;LX/0RCJ;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "name": "A0I",
+          "reported_signature": "A0I(X.0CcK, X.0RCJ, java.lang.String, java.lang.String, boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0CcK;LX/0RCJ;Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "name": "A0J",
+          "reported_signature": "A0J(X.0CcK, X.0RCJ, java.lang.String, java.lang.String, boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0CcK;LX/0RCJ;Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "name": "A0K",
+          "reported_signature": "A0K(X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)V"
+        },
+        {
+          "name": "A0L",
+          "reported_signature": "A0L(X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)V"
+        },
+        {
+          "name": "A0M",
+          "reported_signature": "A0M(X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)V"
+        },
+        {
+          "name": "A0N",
+          "reported_signature": "A0N(X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)V"
+        },
+        {
+          "name": "A0O",
+          "reported_signature": "A0O(X.0RCJ): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)V"
+        },
+        {
+          "name": "A0P",
+          "reported_signature": "A0P(X.0RCJ, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0Q",
+          "reported_signature": "A0Q(X.0RCJ, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;Ljava/lang/String;)V"
+        },
+        {
+          "name": "A0R",
+          "reported_signature": "A0R(X.0RCJ, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;Ljava/lang/String;)V"
+        },
+        {
+          "name": "A0S",
+          "reported_signature": "A0S(X.0RCJ, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;Ljava/lang/String;)V"
+        },
+        {
+          "name": "A0T",
+          "reported_signature": "A0T(X.0RCJ, java.lang.String, java.lang.String, java.lang.String, java.util.List, boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Z)V"
+        },
+        {
+          "name": "A0U",
+          "reported_signature": "A0U(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "A0V",
+          "reported_signature": "A0V(java.lang.String, boolean): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Z)V"
+        },
+        {
+          "name": "A0W",
+          "reported_signature": "A0W(X.0DDx, X.0mzu): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0DDx;LX/0mzu;)Z"
+        },
+        {
+          "name": "A0X",
+          "reported_signature": "A0X(X.0CcK): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0CcK;)Z"
+        },
+        {
+          "name": "A0Y",
+          "reported_signature": "A0Y(X.0RCJ): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)Z"
+        },
+        {
+          "name": "A0Z",
+          "reported_signature": "A0Z(X.0RCJ): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RCJ;)Z"
+        },
+        {
+          "name": "A0a",
+          "reported_signature": "A0a(): com.instagram.common.session.UserSession",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "name": "A0b",
+          "reported_signature": "A0b(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "A0c",
+          "reported_signature": "A0c(java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)V"
+        },
+        {
+          "name": "Ady",
+          "reported_signature": "Ady(X.00lS): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/00lS;)V"
+        },
+        {
+          "name": "getModuleName",
+          "reported_signature": "getModuleName(): java.lang.String",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Ljava/lang/String;"
+        },
+        {
+          "name": "getSession",
+          "reported_signature": "getSession(): X.01qh",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()LX/01qh;"
+        },
+        {
+          "name": "onActivityCreated",
+          "reported_signature": "onActivityCreated(android.os.Bundle): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/os/Bundle;)V"
+        },
+        {
+          "name": "onActivityResult",
+          "reported_signature": "onActivityResult(int, int, android.content.Intent): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(IILandroid/content/Intent;)V"
+        },
+        {
+          "name": "onBackPressed",
+          "reported_signature": "onBackPressed(): boolean",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()Z"
+        },
+        {
+          "name": "onCreate",
+          "reported_signature": "onCreate(android.os.Bundle): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/os/Bundle;)V"
+        },
+        {
+          "name": "onCreateView",
+          "reported_signature": "onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle): android.view.View",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;"
+        },
+        {
+          "name": "onDestroy",
+          "reported_signature": "onDestroy(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "onDestroyView",
+          "reported_signature": "onDestroyView(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "onPause",
+          "reported_signature": "onPause(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "onResume",
+          "reported_signature": "onResume(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "onViewCreated",
+          "reported_signature": "onViewCreated(android.view.View, android.os.Bundle): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/view/View;Landroid/os/Bundle;)V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "A00",
+          "reported_type": "X.00lS"
+        },
+        {
+          "name": "A01",
+          "reported_type": "X.0FT0"
+        },
+        {
+          "name": "A02",
+          "reported_type": "X.0BRM"
+        },
+        {
+          "name": "A03",
+          "reported_type": "com.instagram.model.direct.camera.DirectCameraViewModel"
+        },
+        {
+          "name": "A04",
+          "reported_type": "com.instagram.reels.prompt.model.PromptStickerModel"
+        },
+        {
+          "name": "A05",
+          "reported_type": "X.0Ctw"
+        },
+        {
+          "name": "A06",
+          "reported_type": "X.0SvL"
+        },
+        {
+          "name": "A07",
+          "reported_type": "X.0G2q"
+        },
+        {
+          "name": "A08",
+          "reported_type": "X.0UIu"
+        },
+        {
+          "name": "A09",
+          "reported_type": "java.lang.Integer"
+        },
+        {
+          "name": "A0A",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A0B",
+          "reported_type": "java.util.ArrayList"
+        },
+        {
+          "name": "A0C",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0D",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0E",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0F",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0G",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A0H",
+          "reported_type": "X.0AYA"
+        },
+        {
+          "name": "A0I",
+          "reported_type": "X.063r"
+        },
+        {
+          "name": "A0J",
+          "reported_type": "X.0Eto"
+        },
+        {
+          "name": "A0K",
+          "reported_type": "X.0fad"
+        },
+        {
+          "name": "A0L",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A0M",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A0N",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0O",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0P",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0Q",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0R",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0S",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0T",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0U",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0V",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0W",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0X",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0Y",
+          "reported_type": "X.0GAZ"
+        },
+        {
+          "name": "A0Z",
+          "reported_type": "X.0Rol"
+        },
+        {
+          "name": "A0a",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0b",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0c",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0d",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0e",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0f",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0g",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0h",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0i",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0j",
+          "reported_type": "X.02ph"
+        },
+        {
+          "name": "A0k",
+          "reported_type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        {
+          "name": "A0l",
+          "reported_type": "java.util.concurrent.ConcurrentHashMap"
+        },
+        {
+          "name": "A0m",
+          "reported_type": "X.0Jop[]"
+        },
+        {
+          "name": "__redex_internal_original_name",
+          "reported_type": "java.lang.String"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

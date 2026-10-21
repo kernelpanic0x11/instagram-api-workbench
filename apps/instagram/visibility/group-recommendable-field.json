@@ -1,0 +1,21 @@
+{
+  "method": "LX/0Y3h;->A00(LX/04s2;Lcom/instagram/api/schemas/GroupMetadataImpl;)V",
+  "dex": "classes22.dex",
+  "instructions": [
+    {
+      "code_unit_offset": 142,
+      "opcode": "0x1a",
+      "string": "is_recommendable"
+    },
+    {
+      "code_unit_offset": 144,
+      "opcode": "0x55",
+      "field": "Lcom/instagram/api/schemas/GroupMetadataImpl;->A0O:Z"
+    },
+    {
+      "code_unit_offset": 146,
+      "opcode": "0x6e",
+      "invocation": "LX/04s2;->A0a"
+    }
+  ]
+}

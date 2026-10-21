@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_c58a843e76e1b2e7238912f2fb770aae1604e40f137fc52566fde0aa7242d918",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0EJA",
+      "method": {
+        "name": "A06",
+        "reported_signature": "A06(java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    @Override // X.C0Aji\n    public final /* bridge */ /* synthetic */ void A06(Object obj) {\n        C05eU c05eUA0K;\n        int i = this.$t;\n        C057p c057pA0L = C020p.A0L(obj);\n        if (i != 0) {\n            c05eUA0K = C05eU.A04((Fragment) this.A02, (C0Eto) this.A01, ((C0HNJ) this.A03).A00);\n        } else {\n            if (this.A01 != null) {\n                C03dR.A00().markerPoint(387850546, \"bloks_request_succeeded\");\n            }\n            UserSession userSession = ((C05uB) this.A03).A01;\n            C05B6 c05b6 = (C05B6) this.A00;\n            c05eUA0K = AnonymousClass0220.A0K(c05b6, userSession);\n            Object obj2 = this.A02;\n            if (obj2 != null) {\n                c05eUA0K.A0A(R.id.open_share_sheet_handler, obj2);\n            }\n            C00ez c00ez = c05b6.mFragmentManager;\n            if (C00fA.A00(c00ez) || !C00fA.A01(c00ez)) {\n                return;\n            }\n        }\n        C0KYw.A01(c05eUA0K, c057pA0L);\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

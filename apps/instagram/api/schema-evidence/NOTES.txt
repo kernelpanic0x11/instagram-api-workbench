@@ -1,0 +1,13 @@
+Schema extraction scope
+
+5 OpenAPI 3.1 component schemas / 43 recognized properties derived from saved source evidence.
+
+RecommendationStatusNudgeResponse: required boolean verified by explicit missing-value exception and booleanValue().
+CommonRestrictionResponseFields: named strings (nullable; parser ignores null), explicit _messages array; unknown nested/parser-helper types intentionally unconstrained. No server-required fields.
+PublishResponse: direct recognized literals and array-token checks; nested models and numeric/boolean helper types unresolved. Unknown fields delegate to the common restriction parser. configure-response.java links configure_to_clips response handling to this parser.
+TrialParams: graduation_strategy is emitted as enum.toString(); candidate enum constructor strings retained as x-candidate-enum-values, not a restrictive enum without toString body.
+ConfigureRequestTrialFields: trial_params is serialized JSON text passed to AQU; contentSchema points to TrialParams. Does not establish final HTTP media type or transport serialization.
+
+Evidence is recorded per property with local relative path, line and excerpt. File hashes retained at document root. No speculative endpoint method, auth, status code or server requiredness added.
+
+Validation: parsed JSON, checked all schema refs and all recorded evidence line excerpts against local files.

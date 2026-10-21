@@ -1,0 +1,40 @@
+BROWSER LOGIN (RECOMMENDED FOR LOCAL USE)
+
+Install Google Chrome and run npm ci in api. Open Instagram login creates a
+separate non-persistent Chrome context through optional Playwright 1.64.1.
+Sign in directly on Instagram; the workbench does not collect passwords or OTPs.
+Then Verify authentication and GET my account settings run through same-origin
+browser fetch with the browser's own cookies and CSRF header. Cookies are not
+exported to the Node proxy and storageState is never saved. Closing the browser
+or Disconnect ends this local session. No personal Chrome profile is attached.
+Redirects are not followed by browser API requests. Responses are limited to
+32 MiB and requests to 30 seconds. This text/JSON transport does not support
+binary uploads. API compatibility and Instagram's login acceptance can vary.
+A user login is still needed to complete a live test of this new browser flow.
+
+ADVANCED MANUAL CREDENTIALS
+
+AUTHENTICATION CHECK
+
+Browser mode uses GET /api/v1/accounts/edit/web_form_data/ on www.instagram.com
+with web app headers. Verification requires HTTP 200, JSON status=ok, and private
+form_data containing a username and account-settings fields. Only the username
+is returned: email, phone, birthday and other private fields are discarded.
+This endpoint does not supply a numeric ID, so identityMatch is unavailable.
+An expected numeric ID is not verified in Browser mode.
+
+Android mode uses GET /api/v1/accounts/current_user/?edit=true on i.instagram.com.
+It requires status=ok and a numeric current-account ID and username. When an
+expected ID is available from credentials or explicit input, it must match.
+
+Both modes reject login/challenge responses, arbitrary HTTP 200 responses,
+and public profile data. Up to two canonical redirects are allowed only to
+the same origin and account endpoint. Unknown redirect paths are redacted.
+Checks apply at the recorded time, not indefinitely or to every API permission.
+Reconnect/disconnect clears verification and pending stale results are discarded.
+Credentials remain in process memory only. No credentials are persisted here.
+
+Browser verification was confirmed with a live authenticated settings GET.
+The former browser current_user request returned useragent mismatch; that
+Android endpoint is no longer used to verify browser sessions.
+Tests also cover synthetic successes, failures, redirects and privacy filtering.

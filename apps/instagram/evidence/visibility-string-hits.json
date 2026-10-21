@@ -1,0 +1,1080 @@
+[
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36660,
+    "offset": 2504891,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36661,
+    "offset": 2504944,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 36782,
+    "offset": 2511881,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoFeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 45269,
+    "offset": 2769503,
+    "value": "XDTFeedDemotionControlDict"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 46825,
+    "offset": 2804016,
+    "value": "ad_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 50170,
+    "offset": 2885786,
+    "value": "clips_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 51723,
+    "offset": 2926794,
+    "value": "demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 53192,
+    "offset": 2959657,
+    "value": "explore_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 53573,
+    "offset": 2967662,
+    "value": "feed_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 53600,
+    "offset": 2968343,
+    "value": "feed_recs_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31395,
+    "offset": 1996226,
+    "value": "demoted_collaborator_igids"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31396,
+    "offset": 1996254,
+    "value": "demoted_moderator_igids"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31805,
+    "offset": 2009165,
+    "value": "direct_v2/demote_collaborators_from_broadcast_chat/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31806,
+    "offset": 2009218,
+    "value": "direct_v2/demote_moderators_from_channel/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 31926,
+    "offset": 2013114,
+    "value": "downranked_pks"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 23148,
+    "offset": 1622551,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 33430,
+    "offset": 2202644,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 33431,
+    "offset": 2202697,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 34393,
+    "offset": 2258197,
+    "value": "Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 3446,
+    "offset": 2191227,
+    "value": "DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 3447,
+    "offset": 2191273,
+    "value": "DISTRIBUTION_LIMIT_WARNING_SHARE_TAPPED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 3133,
+    "offset": 2072830,
+    "value": "CORRECTLY_DEMOTED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 3860,
+    "offset": 2086679,
+    "value": "DEMOTE_INFERRED_INTEREST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 3861,
+    "offset": 2086705,
+    "value": "DEMOTE_SUGGESTION_INTEREST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 8493,
+    "offset": 2160040,
+    "value": "INFERRED_PREFERENCE_DEMOTE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 40592,
+    "offset": 2616534,
+    "value": "PREFERENCE_DEMOTE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 43815,
+    "offset": 2694253,
+    "value": "WRONGLY_DEMOTED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 47636,
+    "offset": 2849313,
+    "value": "correctly_demoted"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 48239,
+    "offset": 2864857,
+    "value": "downranked_ids"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 48240,
+    "offset": 2864873,
+    "value": "downranked_user_ids"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 50970,
+    "offset": 2937606,
+    "value": "inferred_preference_demote"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 54181,
+    "offset": 3046560,
+    "value": "preference_demote"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 57987,
+    "offset": 3131070,
+    "value": "wrongly_demoted"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 1597,
+    "offset": 1824343,
+    "value": "ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 30983,
+    "offset": 2211140,
+    "value": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLAlohaAbilityAccountStatusSet;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 39421,
+    "offset": 2511268,
+    "value": "account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 1921,
+    "offset": 1998132,
+    "value": "ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 1922,
+    "offset": 1998148,
+    "value": "ACCOUNT_STATUS_CHANGE_REASON_CODE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 3867,
+    "offset": 2028185,
+    "value": "ARROWS_DEMOTE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 10284,
+    "offset": 2125143,
+    "value": "DEMOTION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 17402,
+    "offset": 2241162,
+    "value": "LINKED_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 37226,
+    "offset": 2456697,
+    "value": "Lcom/crossapp/graphql/facebook/enums/stringdefs/GraphQLAdAccountStatusSet;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 37911,
+    "offset": 2499844,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 40310,
+    "offset": 2629831,
+    "value": "MBS_INSIGHTS_RECOMMENDATION_ELIGIBILITY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 41486,
+    "offset": 2659330,
+    "value": "NEW_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 41728,
+    "offset": 2663941,
+    "value": "NUCLEUS_ARROWS_DEMOTE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 42608,
+    "offset": 2684711,
+    "value": "OLD_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 45171,
+    "offset": 2741499,
+    "value": "RSG_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 46977,
+    "offset": 3151485,
+    "value": "demoted_sync_attachment"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 808,
+    "offset": 2219392,
+    "value": ", currentAccountStatus="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 8021,
+    "offset": 2338843,
+    "value": "DELTADEMOTEINTEROPTHREAD"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 15776,
+    "offset": 2489858,
+    "value": "INSTAGRAM_FOR_ANDROID_ACCOUNT_STATUS_HOME_QP"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 15820,
+    "offset": 2491873,
+    "value": "INSTAGRAM_FOR_IOS_ACCOUNT_STATUS_HOME_QP"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 15896,
+    "offset": 2494960,
+    "value": "INSTAGRAM_MULTI_PLATFORM_ACCOUNT_STATUS_HOME_QP"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 47758,
+    "offset": 2943001,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 47759,
+    "offset": 2943054,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 49356,
+    "offset": 3032125,
+    "value": "Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 54667,
+    "offset": 3190184,
+    "value": "TOMBSTONE_AD_DEMOTION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 58008,
+    "offset": 3268349,
+    "value": "[Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 62741,
+    "offset": 3439370,
+    "value": "currentAccountStatus"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 62751,
+    "offset": 3439618,
+    "value": "current_account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 62998,
+    "offset": 3445081,
+    "value": "deltaDemoteInteropThread"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 73888,
+    "offset": 3739504,
+    "value": "preference_tap_profile_title_tooltip_new_linked_account_status_"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 77882,
+    "offset": 3828263,
+    "value": "tombstone_ad_demotion"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 9859,
+    "offset": 1983043,
+    "value": "IGDemoteGroupThreadAdminsDeltaApplicator"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 9860,
+    "offset": 1983085,
+    "value": "IGDemoteGroupThreadAdminsDeltaApplicatorFactory"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 32125,
+    "offset": 2372389,
+    "value": "Missing thread_igid in IGDemoteGroupThreadAdminsMessagingPayload"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 1359,
+    "offset": 1070453,
+    "value": "ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 1360,
+    "offset": 1070469,
+    "value": "ACCOUNT_STATUS_BOOKMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 1361,
+    "offset": 1070494,
+    "value": "ACCOUNT_STATUS_NUDGE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 1471,
+    "offset": 1073224,
+    "value": "ACT_PRE_DEMOTE_GROUP_PARTICIPANTS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 1475,
+    "offset": 1073342,
+    "value": "ACT_PRE_GROUP_PARTICIPANTS_DEMOTED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 3141,
+    "offset": 1121872,
+    "value": "ARC_ONLY_BORDERLINE_HATE_AND_V_AND_I_DEMOTION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 10043,
+    "offset": 1267519,
+    "value": "DOWNRANKED_PKS_FIELD_NUMBER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 13214,
+    "offset": 1349690,
+    "value": "FEED_DEMOTE_AUTHOR"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 17687,
+    "offset": 1498714,
+    "value": "IG_MISINFO_DEMOTION_NOTIFICATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 17943,
+    "offset": 1508171,
+    "value": "IG_PV_DEMOTION_NOTIFICATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 18873,
+    "offset": 1542283,
+    "value": "INSTAGRAM_ACCOUNT_STATUS_ACCOUNT_STATUS_FUNNEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 18874,
+    "offset": 1542331,
+    "value": "INSTAGRAM_ACCOUNT_STATUS_NUDGE_FUNNEL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 19091,
+    "offset": 1550631,
+    "value": "INTEGRITY_HUB_DEMOTION_DETAILS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 19092,
+    "offset": 1550663,
+    "value": "INTEGRITY_HUB_DEMOTION_NOTIF_DETAILS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 20740,
+    "offset": 1604404,
+    "value": "LOCAL_COMMUNITY_DEMOTE_CONTENT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 20742,
+    "offset": 1604464,
+    "value": "LOCAL_COMMUNITY_MOD_HUB_DEMOTE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 27959,
+    "offset": 1735117,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 27960,
+    "offset": 1735170,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 28064,
+    "offset": 1741709,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoFeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 32861,
+    "offset": 1960561,
+    "value": "NAVIGATION_COM_BLOKS_WWW_BLOKS_SCREEN_IXT_SCREEN_ACCOUNT_STATUS_HOME"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 32862,
+    "offset": 1960631,
+    "value": "NAVIGATION_COM_BLOKS_WWW_BLOKS_SCREEN_IXT_SCREEN_ACCOUNT_STATUS_RESTRICTION_DETAIL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 32863,
+    "offset": 1960715,
+    "value": "NAVIGATION_COM_BLOKS_WWW_BLOKS_SCREEN_IXT_SCREEN_ACCOUNT_STATUS_RESTRICTION_DETAIL_LIST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 32879,
+    "offset": 1961764,
+    "value": "NAVIGATION_COM_BLOKS_WWW_IG_IXT_TRIGGERS_SCREEN_IG_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 36879,
+    "offset": 2101011,
+    "value": "PRODUCT_POLICY_DEMOTION_UNCATEGORIZED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 40025,
+    "offset": 2202990,
+    "value": "SOAP_ACCOUNT_STATUS_BOOKMARK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 41564,
+    "offset": 2251551,
+    "value": "THREADS_3PFC_MISINFO_DEMOTION_NOTIFICATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 47608,
+    "offset": 2490295,
+    "value": "account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 49958,
+    "offset": 2549852,
+    "value": "downrankedPks_"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 50408,
+    "offset": 2559153,
+    "value": "feed_demote_author"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 52254,
+    "offset": 2602287,
+    "value": "is_recommendable"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 45575,
+    "offset": 2370697,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 45576,
+    "offset": 2370750,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 45712,
+    "offset": 2378988,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoFeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 47370,
+    "offset": 2474345,
+    "value": "Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 51942,
+    "offset": 2595216,
+    "value": "account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 56253,
+    "offset": 2700438,
+    "value": "forceShowAccountStatusNudge"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 57031,
+    "offset": 2719359,
+    "value": "getForceShowAccountStatusNudge()Z"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 14849,
+    "offset": 2384614,
+    "value": "Invalid DirectUserAccountStatus format"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41040,
+    "offset": 2707638,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 41041,
+    "offset": 2707691,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 43054,
+    "offset": 2821932,
+    "value": "Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 52525,
+    "offset": 3072406,
+    "value": "com.instagram.urlhandlers.accountstatus.AccountStatusUrlHandlerActivity"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 56312,
+    "offset": 3184178,
+    "value": "getHideMotionSpec"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 59600,
+    "offset": 3312161,
+    "value": "instagram://account_status?location={location}"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 60415,
+    "offset": 3355737,
+    "value": "invalid_user_account_status_format"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65837,
+    "offset": 3494534,
+    "value": "rifu_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 66587,
+    "offset": 3509735,
+    "value": "setHideMotionSpec"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 66588,
+    "offset": 3509754,
+    "value": "setHideMotionSpecResource"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41499,
+    "offset": 2624297,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41500,
+    "offset": 2624350,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 41651,
+    "offset": 2633395,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoFeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 52214,
+    "offset": 3096198,
+    "value": "android_purge_26_q3_ClipsFollowUpBottomSheetManager_getFeedDemotionControlForSurface"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 52218,
+    "offset": 3096504,
+    "value": "android_purge_26_q3_ClipsFollowUpBottomSheetManager_setFeedDemotionControlForSurface"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 54452,
+    "offset": 3261747,
+    "value": "android_purge_26_q3_FollowUpNavigator_setFeedDemotionControlForSurface"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 58827,
+    "offset": 3432222,
+    "value": "fetch_serp_viewer_demotion_control"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 44710,
+    "offset": 2595336,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 44711,
+    "offset": 2595389,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 44828,
+    "offset": 2602244,
+    "value": "Lcom/instagram/api/schemas/ImmutablePandoFeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 50913,
+    "offset": 2798193,
+    "value": "XDTFeedDemotionControlDict"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 59737,
+    "offset": 3065418,
+    "value": "preference_tap_profile_title_tooltip_new_linked_account_status_"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 38415,
+    "offset": 2707043,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 38416,
+    "offset": 2707096,
+    "value": "Lcom/instagram/api/schemas/FeedDemotionControlDictIntf;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 40010,
+    "offset": 2800311,
+    "value": "Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 47454,
+    "offset": 3122039,
+    "value": "[Lcom/instagram/api/schemas/FeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 47492,
+    "offset": 3124459,
+    "value": "[Lcom/instagram/api/schemas/ImmutablePandoFeedDemotionControlDict;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 47690,
+    "offset": 3135673,
+    "value": "[Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 67035,
+    "offset": 3610727,
+    "value": "\u274c Failed to refresh WhatsApp crossposting cache using GQL- unable to verify account status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 1643,
+    "offset": 1286911,
+    "value": "BKBloksActionIgWellbeingOpenAccountStatusImpl$evaluate$module$1"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 2656,
+    "offset": 1309192,
+    "value": "Current Account Status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 2741,
+    "offset": 1310241,
+    "value": "DEMOTION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 5162,
+    "offset": 1354978,
+    "value": "IG_OPEN_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 5732,
+    "offset": 1370213,
+    "value": "LINKS_INTEGRITY_APPEAL_DIALOG_ACCOUNT_STATUS_CLICK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 21740,
+    "offset": 1591649,
+    "value": "Lcom/instagram/urlhandlers/accountstatus/AccountStatusUrlHandlerActivity;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22263,
+    "offset": 1623463,
+    "value": "Llibraries/foa/products/accountswitcher/enums/UserCurrentAccountStatus;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22874,
+    "offset": 1639971,
+    "value": "OPEN_ACCOUNT_STATUS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 24976,
+    "offset": 1691429,
+    "value": "ViewerAffiliatedAccountStatus"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 25827,
+    "offset": 1710270,
+    "value": "account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 25828,
+    "offset": 1710286,
+    "value": "account_status_url_handler"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 27827,
+    "offset": 1778064,
+    "value": "bk.action.ig.wellbeing.OpenAccountStatus"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 27828,
+    "offset": 1778106,
+    "value": "bk.action.ig.wellbeing.OpenAccountStatusDetail"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 29065,
+    "offset": 1816177,
+    "value": "com.bloks.www.bloks.screen_query.th.account_status.home"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 29127,
+    "offset": 1819385,
+    "value": "com.bloks.www.ig.account_status.nudge.async"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 29161,
+    "offset": 1821427,
+    "value": "com.bloks.www.ig.ixt.triggers.screen.ig_account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 32491,
+    "offset": 1923146,
+    "value": "https://www.threads.com/settings/account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 32492,
+    "offset": 1923195,
+    "value": "https://www.threads.com/settings/account_status/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 33233,
+    "offset": 1951247,
+    "value": "ig_open_account_status"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 34673,
+    "offset": 1991527,
+    "value": "links_integrity_appeal_dialog_account_status_click"
+  }
+]

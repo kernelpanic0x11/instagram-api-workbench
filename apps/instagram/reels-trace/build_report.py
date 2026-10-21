@@ -1,0 +1,146 @@
+import json,pathlib
+p=pathlib.Path(__file__).resolve().parent; records={};index={}
+for f in p.glob('*.json'):
+ try:r=(lambda value:value.get('structuredContent',value))(json.loads(f.read_text()))
+ except (ValueError,AttributeError):continue
+ if not r or 'evidence_id' not in r:continue
+ assert r['subject']['digest']['sha256']=='4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b'
+ records[f.stem]=r;n=r['normalized_result'];source=None
+ if 'source' in n:
+  source=f.stem+('.smali' if n.get('representation')=='smali' else '.java');(p/source).write_text(n['source']['text'])
+ index[f.stem]={'evidence_id':r['evidence_id'],'operation':r.get('operation'),'metadata_omitted':[key for key in ('operation','parameters') if key not in r],'parameters':r.get('parameters',{}),'source_file':source,'representation':n.get('representation'),'source_status':n.get('source',{}).get('status'),'markers':n.get('markers',[])}
+(p/'evidence-index.json').write_text(json.dumps(index,indent=2))
+def ev(*names):return '\n'.join('  '+k+': '+records[k]['evidence_id'] for k in names)
+text='''REEL PUBLISHING AND DISTRIBUTION: STATIC TRACE
+
+Target: Instagram Android 451.0.0.53.80, copied base.apk
+SHA-256: 4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b
+REA 6.5.0 / JADX headless 0.7.1. No app changes, uploads, publishing, account
+requests or engagement experiments were performed.
+
+RESULT
+There are concrete client-side diagnostics worth investigating, but this trace
+has not established a reliable method to increase distribution. It distinguishes
+publishing, warnings, audience/Trial parameters, and server-returned errors.
+These are not recovered server-side ranking rules.
+
+PUBLISH FLOW
+Share action -> one-time UX gate -> duration/distribution warning checks ->
+continuation callback -> Reel configure request -> publish response parser ->
+shared error/restriction parser where applicable.
+This is a selected static trace, not a complete call graph of all upload stages.
+
+1. THREE DISTINCT DURATION CHECKS
+A. One-time onboarding: C0aGN.A02 compares a duration input to the 180,000 ms
+constant (C0DZv.A04 = DURATION_180_SEC_IN_MS). It also checks account fields,
+feature configuration, an unseen-notice preference and a list predicate. Earlier
+branches can choose different notices. C0RCJ.A0S creates the selected dialog and
+marks has_seen_long_reels_restricted_distribution_nux as seen. Therefore this
+particular UX notice can stop appearing once seen. That does not remove any
+server-side restriction, nor prove that all Reels over three minutes lose reach.
+
+B. Distribution warning: C0RCJ.A0Q uses a separate threshold read by C0G7K.A00
+from MobileConfig key 36602286822266266. It multiplies seconds by 1,000 and
+compares the Reel duration against it, with additional feature/list conditions.
+The warning formats that threshold in minutes. Its click listeners distinguish
+DISTRIBUTION_LIMIT_WARNING_SHARE_TAPPED and
+DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED. The share case invokes the supplied
+continuation; the edit case invokes a different callback. This supports a
+warning-and-continue flow, not a hard publishing rejection at this branch.
+
+C. Upload cap: C0DZu.A00 selects a separate configurable limit (key
+36602286822331803 when its feature is enabled); the fallback goes through A01,
+which has another configuration branch or a 90-second enum fallback. The A0Q cap
+comparison is through an unresolved helper, so its exact inclusive/exclusive
+boundary is not asserted. Do not interpret fallback constants as this account's
+current limits. Runtime config was not read.
+
+Duration is ordinarily ClipInfo.A05 minus A07; a sentinel path uses a configured
+value. The float-list predicate tests every value against 1.05 and a config-backed
+predicate, but the values' semantics are not established. It is not a supported
+workaround and no ranking consequence has been shown.
+
+'''+ev('length-gate','share-gate','distribution-warning','warning-click','distribution-duration','distribution-speed-condition','duration-limit-select','duration-limit-config','duration-limit-values','duration-extractor')+'''
+
+2. PUBLISH REQUEST AND AUDIENCE/TRIAL PARAMETERS
+C09Eb.B2a builds its request through C0kBV.A00 using C0bm8.A04, whose enum value
+maps to media/configure_to_clips/. The request builder includes caption, audience,
+optional Facebook destination audience metadata, and optional trial_params.
+The shared audience enum includes default, besties (CLOSE_FRIENDS), followers_only
+and other audience names. Presence in that shared enum does not prove every value
+is available or accepted for Reels, nor that default means public.
+
+The trial_params key is resolved from X.005P.A00(48). In the request builder,
+C0ROZ.A00 serializes the trial model to JSON containing graduation_strategy.
+The strategy enum contains manual, ss_performance and time_limit. Those names
+do not reveal the server criteria for promotion or distribution. The same
+serializer is used in draft serialization. This confirms trial metadata
+is a real publish parameter rather than only a draft database column, but does
+not establish server acceptance, account eligibility or a reach advantage.
+
+Facebook destination audience is serialized through the key resolved from
+X.0005.A00(993), share_to_fb_destination_audience_type. This is distinct from an
+Instagram recommendation-eligibility toggle. No mutation or endpoint replay was
+performed.
+
+The large request method has many decompiler code-duplication warnings. The
+specific serializer/key sites are supported by independent exact DEX references;
+not every branch of the reconstructed Java should be treated as reliable source.
+
+'''+ev('configure-request','endpoint-values','audience-values','trial-params','trial-serializer','trial-strategy-values')+'''
+
+3. PUBLISH RESPONSE CONNECTS TO THE SHARED RESTRICTION PARSER
+C0mBM.GaG's configure-to-clips branch delegates to C0ZMX.unsafeParseFromJson;
+a null parse result raises 'configure_to_clips returned an unparseable response'.
+The parser handles media/medias/posts and fields including:
+  cooldown_time_in_seconds
+  retry_entire_upload_flow
+  max_cutout_sticker_limit
+Unknown keys delegate to C01pP.A01, the general error/restriction parser traced
+previously. It can parse restriction_type, responsible_policy, expiration_time,
+feedback_message, feedback_appeal_label and other fields (visibility/TRACE.txt).
+
+This is a concrete connection from publishing responses to restriction/error
+handling. It does not prove these fields are always returned, that their meaning
+is recommendation-specific, or that a successful upload guarantees recommendations.
+The inner media payload and every downstream UI/error consumer were not traced.
+
+'''+ev('configure-response','publish-response-parser')+'''
+
+4. QUALITY, ORIGINALITY AND OTHER LEADS: UNRESOLVED
+The direct is_high_quality_upload_on string reference found by the focused scan
+is in a CreationFailure reporting method. This is not proof that the flag changes
+ranking. The inspected configure builder contains no literal quality/bitrate/
+resolution/boost/recommendation key match, but many keys are obfuscated and the
+actual upload/transcoding pipeline is outside this trace. No negative global
+claim or quality-based growth advice follows from that bounded search.
+Originality/watermark names were inventoried but have not been traced into a
+confirmed recommendation penalty. Shared library references alone are insufficient.
+
+5. UI TEXT LIMITATION
+The precise warning text could not be recovered from ordinary resource tables.
+A format-aware scan of two resources.arsc tables and 104 sparse FRSC locale
+assets did not resolve the selected resource IDs. Default strings use a custom
+packed dictionary format. That codec was not fully decoded. Warning behavior is
+supported by its control flow and explicit click event names, not guessed copy.
+See eligibility/NOTES.txt and its resource decoder outputs for coverage.
+
+WHAT CAN BE CHECKED NEXT
+- A real draft can reveal the live warning and account-specific configured limit.
+- Actual audience and Trial settings can establish what this account can select.
+- Account Status can reveal restrictions the service discloses.
+- A controlled content experiment would be needed to measure any view effect.
+No evidence in this trace promises more views or establishes a hidden boost switch.
+
+EVIDENCE AND REPRODUCTION
+All REA records are bound to the same copied APK digest; evidence-index.json maps
+records, exact parameters, representations, source coverage and warning markers.
+.java files are decompiler excerpts, not original source. Use .smali files where
+the index reports smali; older .java-named convenience files may also contain
+smali. Separate eligibility/ and upload/ scans retain exact DEX instruction sites,
+resolved string keys, scripts and bounded coverage. Each scanned all 807,462
+methods with code in the 23 standard root DEX files without decode errors.
+This does not cover packed native/JS code, backend logic, or runtime behavior.
+'''
+(p/'TRACE.txt').write_text(text)
+print('Validated',len(records),'REA records; wrote TRACE.txt and evidence-index.json')

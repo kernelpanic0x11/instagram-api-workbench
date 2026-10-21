@@ -1,0 +1,1353 @@
+[
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 12231,
+    "offset": 2136262,
+    "value": "FREELS_BLOCK_REELS_AFTER_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 12232,
+    "offset": 2136302,
+    "value": "FREELS_BLOCK_REELS_PLAY_ATTEMPT_AFTER_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 57023,
+    "offset": 3045626,
+    "value": "has_reached_invite_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "string_index": 62838,
+    "offset": 3167964,
+    "value": "non_follower"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 6780,
+    "offset": 1574705,
+    "value": "IG_DIRECT_UNAVAILABLE_COMPOSER_TYPE_CONNECTED_MESSAGE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 6787,
+    "offset": 1575128,
+    "value": "IG_DIRECT_UNAVAILABLE_COMPOSER_TYPE_MESSAGE_REQUESTS_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 6799,
+    "offset": 1575901,
+    "value": "IG_DIRECT_UNREACHABLE_INVITE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 6869,
+    "offset": 1577957,
+    "value": "IG_UNREACHABLE_RESTRICTED_RATED_USER_WITH_TEEN_VIEWER"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 25931,
+    "offset": 1841783,
+    "value": "MESSENGER_UNREACHABLE_INVITE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 26655,
+    "offset": 1862996,
+    "value": "REACH_RATE_LIMITED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 30831,
+    "offset": 1980537,
+    "value": "collaborator_invite_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "string_index": 35153,
+    "offset": 2102250,
+    "value": "moderator_invite_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 825,
+    "offset": 1371119,
+    "value": "ACCOUNT_SPEND_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 25504,
+    "offset": 1722002,
+    "value": "ShowHighlightLimitReachedSnackbar"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 27141,
+    "offset": 1755451,
+    "value": "account_spend_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 31125,
+    "offset": 1896293,
+    "value": "guardian_daily_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 31304,
+    "offset": 1900905,
+    "value": "highlightCreationLimitReached_error"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33084,
+    "offset": 1948311,
+    "value": "multi_pill_frequency_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33270,
+    "offset": 1952430,
+    "value": "non_follower_benchmark_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33271,
+    "offset": 1952459,
+    "value": "non_follower_current_reel"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33272,
+    "offset": 1952486,
+    "value": "non_followers_view_count"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "string_index": 33273,
+    "offset": 1952512,
+    "value": "non_followers_view_percentage"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 1163,
+    "offset": 1798395,
+    "value": ", isPlayerLimitReached="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 35430,
+    "offset": 2287787,
+    "value": "Non-followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "string_index": 38501,
+    "offset": 2354343,
+    "value": "VideoGenReachedLimitC50"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 1331,
+    "offset": 2150833,
+    "value": "ACCOUNT_NON_FOLLOWER_VIEWS_OVER_TIME"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 1779,
+    "offset": 2158639,
+    "value": "Accounts reached from non-followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 3446,
+    "offset": 2191227,
+    "value": "DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 3447,
+    "offset": 2191273,
+    "value": "DISTRIBUTION_LIMIT_WARNING_SHARE_TAPPED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 6311,
+    "offset": 2234217,
+    "value": "LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 31813,
+    "offset": 2545427,
+    "value": "Lcom/instagram/schools/affiliatedaccounts/data/RecommendAccountsSearchDataSource;"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32559,
+    "offset": 2580450,
+    "value": "MEDIA_ORGANIC_POST_OVERVIEW_VIEWS_NON_FOLLOWERS_TAB"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32568,
+    "offset": 2580853,
+    "value": "MEDIA_ORGANIC_REEL_OVERVIEW_VIEWS_NON_FOLLOWERS_TAB"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32786,
+    "offset": 2585629,
+    "value": "NON_FOLLOWERS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32787,
+    "offset": 2585644,
+    "value": "NON_FOLLOWER_VIEWS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 32875,
+    "offset": 2587736,
+    "value": "Non-followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33500,
+    "offset": 2604700,
+    "value": "RATE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 33846,
+    "offset": 2612592,
+    "value": "SERIES_OVERVIEW_VIEWS_NON_FOLLOWERS_TAB"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 34733,
+    "offset": 2634650,
+    "value": "USER_REACHED_ADD_SCHOOL_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 36768,
+    "offset": 2671788,
+    "value": "Views, 15 percent followers and 85 percent non-followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 36771,
+    "offset": 2671904,
+    "value": "Views: 15% followers, 85% non-followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 37629,
+    "offset": 2686969,
+    "value": "account_non_follower_views_over_time"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 45807,
+    "offset": 3481204,
+    "value": "com.instagram.schools.affiliatedaccounts.ui.RecommendAccountsRow (RecommendAccountsRow.kt:33)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 45808,
+    "offset": 3481299,
+    "value": "com.instagram.schools.affiliatedaccounts.ui.RecommendAccountsSearchComponent (RecommendAccountsSearchComponent.kt:40)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 45809,
+    "offset": 3481419,
+    "value": "com.instagram.schools.affiliatedaccounts.ui.RecommendAccountsSearchComponent.<anonymous>.<anonymous>.<anonymous> (RecommendAccountsSearchComponent.kt:100)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 45810,
+    "offset": 3481576,
+    "value": "com.instagram.schools.affiliatedaccounts.ui.RecommendAccountsSearchComponent.<anonymous>.<anonymous>.<anonymous> (RecommendAccountsSearchComponent.kt:75)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 45811,
+    "offset": 3481732,
+    "value": "com.instagram.schools.affiliatedaccounts.ui.RecommendAccountsSearchFragment.onCreateView.<anonymous> (RecommendAccountsSearchFragment.kt:51)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 45812,
+    "offset": 3481874,
+    "value": "com.instagram.schools.affiliatedaccounts.ui.RecommendButton (RecommendButton.kt:18)"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 48699,
+    "offset": 3680690,
+    "value": "getHasSeenLongReelsRestrictedDistributionNux(Lcom/instagram/preferences/user/UserPreferences;)Z"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 49139,
+    "offset": 3692677,
+    "value": "hasSeenLongReelsRestrictedDistributionNux"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 49171,
+    "offset": 3693774,
+    "value": "has_seen_long_reels_restricted_distribution_nux"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 49850,
+    "offset": 3715538,
+    "value": "insights.unit.account.unified.non_follower_views_over_time"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53440,
+    "offset": 4136470,
+    "value": "limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53803,
+    "offset": 4145043,
+    "value": "media_organic_post_overview_views_non_followers_tab"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 53812,
+    "offset": 4145446,
+    "value": "media_organic_reel_overview_views_non_followers_tab"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 55262,
+    "offset": 4189150,
+    "value": "rate_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 55843,
+    "offset": 4202750,
+    "value": "series_overview_views_non_followers_tab"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "string_index": 57057,
+    "offset": 4228334,
+    "value": "typical_non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 40287,
+    "offset": 2684039,
+    "value": "non_follower_percentage"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 40288,
+    "offset": 2684064,
+    "value": "non_follower_views"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 41276,
+    "offset": 2716964,
+    "value": "quick_snap_archive_recap_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "string_index": 41292,
+    "offset": 2717533,
+    "value": "quick_snap_recap_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 3758,
+    "offset": 2084784,
+    "value": "DAILY_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 4831,
+    "offset": 2102167,
+    "value": "ERROR_PREFERENCE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 6270,
+    "offset": 2126972,
+    "value": "FetchTeenAccountV3RecommendedChaptersQuery"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 40519,
+    "offset": 2615207,
+    "value": "PHOTO_RESTYLE_DAILY_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 48555,
+    "offset": 2871544,
+    "value": "error_preference_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "string_index": 52725,
+    "offset": 2991366,
+    "value": "nf_reachability_upsell_limits_post_follow"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 5555,
+    "offset": 1905116,
+    "value": "Daily limit reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 9486,
+    "offset": 1973946,
+    "value": "ITEM_SCAN_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "string_index": 49478,
+    "offset": 2777574,
+    "value": "rate limit reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 1920,
+    "offset": 1998103,
+    "value": "ACCOUNT_SPEND_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 13409,
+    "offset": 2170217,
+    "value": "FREELS_LIMIT_REACHED_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 15974,
+    "offset": 2209767,
+    "value": "IG_NAME_GUARDIAN_EDIT_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 40310,
+    "offset": 2629831,
+    "value": "MBS_INSIGHTS_RECOMMENDATION_ELIGIBILITY"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 46317,
+    "offset": 2767491,
+    "value": "SPEND_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 52033,
+    "offset": 2932266,
+    "value": "account_spend_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 54037,
+    "offset": 2997453,
+    "value": "cart_item_limit_reached_user_error"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62736,
+    "offset": 3203955,
+    "value": "reach_to_max_media_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "string_index": 62737,
+    "offset": 3203981,
+    "value": "reach_to_max_pending_media_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 35694,
+    "offset": 2805953,
+    "value": "Max session limit reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 35695,
+    "offset": 2805980,
+    "value": "Max session limit reached."
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 37907,
+    "offset": 2870460,
+    "value": "Reconnection failed due to timeout limit reached."
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 37939,
+    "offset": 2871926,
+    "value": "Rejected start-call request because the in-flight limit was reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "string_index": 39166,
+    "offset": 2907378,
+    "value": "Start call operation failed due to reachability invite limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 12741,
+    "offset": 2435913,
+    "value": "GAI_KADABRA_COMPOSER_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 12742,
+    "offset": 2435956,
+    "value": "GAI_KADABRA_ERROR_TOAST_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 12743,
+    "offset": 2436002,
+    "value": "GAI_KADABRA_LIGHTBOX_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 12744,
+    "offset": 2436045,
+    "value": "GAI_KADABRA_MOVIE_GEN_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 50008,
+    "offset": 3054851,
+    "value": "META_SUBS_META_AI_WEB_MOVIE_GEN_CHAT_THREAD_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 50009,
+    "offset": 3054917,
+    "value": "META_SUBS_META_AI_WEB_MOVIE_GEN_LIGHTBOX_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 50010,
+    "offset": 3054980,
+    "value": "META_SUBS_META_AI_WEB_MOVIE_GEN_MEDIA_FEED_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 50049,
+    "offset": 3056357,
+    "value": "META_SUBS_VIBES_WEB_MOVIE_GEN_GENERATE_PANEL_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 50050,
+    "offset": 3056424,
+    "value": "META_SUBS_VIBES_WEB_MOVIE_GEN_LIGHTBOX_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51185,
+    "offset": 3094773,
+    "value": "NME_GAI_BASEL_MOVIE_GEN_REACHED_LIMIT_TOAST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51192,
+    "offset": 3095100,
+    "value": "NME_GAI_KADABRA_COMPOSER_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51193,
+    "offset": 3095147,
+    "value": "NME_GAI_KADABRA_ERROR_TOAST_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51194,
+    "offset": 3095197,
+    "value": "NME_GAI_KADABRA_LIGHTBOX_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51195,
+    "offset": 3095244,
+    "value": "NME_GAI_KADABRA_MOVIE_GEN_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51215,
+    "offset": 3096200,
+    "value": "NME_GAI_META_VIEW_MOVIE_GEN_REACHED_LIMIT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 51451,
+    "offset": 3104822,
+    "value": "NON_FOLLOWERS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 52890,
+    "offset": 3145232,
+    "value": "REACHED_AGE_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 65033,
+    "offset": 3491529,
+    "value": "gai_kadabra_composer_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 65034,
+    "offset": 3491572,
+    "value": "gai_kadabra_error_toast_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 65035,
+    "offset": 3491618,
+    "value": "gai_kadabra_lightbox_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 65036,
+    "offset": 3491661,
+    "value": "gai_kadabra_movie_gen_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 66985,
+    "offset": 3536558,
+    "value": "hasReachedDelayLowerLimit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 66986,
+    "offset": 3536585,
+    "value": "hasReachedDelayUpperLimit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 67052,
+    "offset": 3538115,
+    "value": "has_reached_connected_message_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 67054,
+    "offset": 3538178,
+    "value": "has_reached_message_request_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 70953,
+    "offset": 3640417,
+    "value": "meta_subs_meta_ai_web_movie_gen_chat_thread_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 70954,
+    "offset": 3640483,
+    "value": "meta_subs_meta_ai_web_movie_gen_lightbox_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 70955,
+    "offset": 3640546,
+    "value": "meta_subs_meta_ai_web_movie_gen_media_feed_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 70990,
+    "offset": 3641765,
+    "value": "meta_subs_vibes_web_movie_gen_generate_panel_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 70991,
+    "offset": 3641832,
+    "value": "meta_subs_vibes_web_movie_gen_lightbox_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 72025,
+    "offset": 3671601,
+    "value": "nme_gai_basel_movie_gen_reached_limit_toast"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 72034,
+    "offset": 3671972,
+    "value": "nme_gai_meta_view_movie_gen_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 72193,
+    "offset": 3677020,
+    "value": "non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "string_index": 72624,
+    "offset": 3710297,
+    "value": "num_iaa_reach_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 30799,
+    "offset": 2323760,
+    "value": "Limit reached: Ignore notification. Missing limitSize() call?"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 30800,
+    "offset": 2323823,
+    "value": "Limit reached: Ignore notification. Missing logic to discard old notifications from buffer?"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 44131,
+    "offset": 2659265,
+    "value": "hasReachedConnectedMessageLimit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 44132,
+    "offset": 2659298,
+    "value": "hasReachedMessageRequestLimit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 47635,
+    "offset": 2740835,
+    "value": "notifications %d size limit reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 47637,
+    "offset": 2740900,
+    "value": "notifications_store_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 50637,
+    "offset": 2815352,
+    "value": "schedule_for_next_day_wl_va_cannot_reach_limit_today"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 50639,
+    "offset": 2815424,
+    "value": "schedule_for_today_wl_va_daily_limit_not_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "string_index": 50640,
+    "offset": 2815474,
+    "value": "schedule_for_today_wl_va_daily_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes21.dex",
+    "string_index": 597,
+    "offset": 663612,
+    "value": "AP_PLUS_MESSAGING_UNREACHABLE_REQUEST_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes21.dex",
+    "string_index": 9117,
+    "offset": 811572,
+    "value": "UNREACHABLE_INVITE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes21.dex",
+    "string_index": 9119,
+    "offset": 811647,
+    "value": "UNREACHABLE_MESSAGE_REQUESTS_LIMIT_BLOCK"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes21.dex",
+    "string_index": 11587,
+    "offset": 881750,
+    "value": "non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 12555,
+    "offset": 1326703,
+    "value": "FB_CREATOR_MESSAGING_NON_FOLLOWER_UPDATE_PAGE_SETTINGS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 19397,
+    "offset": 1564153,
+    "value": "INTERACTION_GUARDIAN_DAILY_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "string_index": 42752,
+    "offset": 2302785,
+    "value": "UNORIGINAL_CONTENT_AND_PROBLEMATIC_SHARING"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 47845,
+    "offset": 2489515,
+    "value": "NON_FOLLOWERS"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "string_index": 50835,
+    "offset": 2565142,
+    "value": "We are reaching limit of listeners: "
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 11085,
+    "offset": 2309623,
+    "value": "FC_MESSENGER_FETA_DAILY_TIME_LIMIT_REACHED_GUARDIAN_NOTIFICATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44159,
+    "offset": 2851880,
+    "value": "Non-followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44978,
+    "offset": 2871800,
+    "value": "REACHED_DAILY_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 44980,
+    "offset": 2871840,
+    "value": "REACHED_NEAR_DAILY_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 46897,
+    "offset": 2920661,
+    "value": "UNREACHABLE_INVITE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 54039,
+    "offset": 3130127,
+    "value": "direct_saved_image_reply_nux_limit_reached_timestamp"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 60298,
+    "offset": 3352828,
+    "value": "instagram_tag_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 62946,
+    "offset": 3409640,
+    "value": "nf_reachability_upsell_limits"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 62947,
+    "offset": 3409671,
+    "value": "nf_reachability_upsell_limits_direct_thread"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65193,
+    "offset": 3481310,
+    "value": "reached_daily_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65195,
+    "offset": 3481350,
+    "value": "reached_near_daily_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65989,
+    "offset": 3497228,
+    "value": "schedule_for_next_day_cannot_reach_limit_today"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65991,
+    "offset": 3497342,
+    "value": "schedule_for_today_daily_limit_not_reached_not_seen_blocking_reminder"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65992,
+    "offset": 3497413,
+    "value": "schedule_for_today_daily_limit_not_reached_not_seen_reminder"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "string_index": 65993,
+    "offset": 3497475,
+    "value": "schedule_for_today_daily_limit_reached_and_not_seen_reminder"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 9562,
+    "offset": 2243987,
+    "value": "ERROR_REASON_RATE_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 10949,
+    "offset": 2261570,
+    "value": "Failure(isPreferenceLimitReached="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 56811,
+    "offset": 3377909,
+    "value": "clips/originality/internal_unoriginal_content_feed/"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 60329,
+    "offset": 3467481,
+    "value": "has_reached_connected_message_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "string_index": 60330,
+    "offset": 3467518,
+    "value": "has_reached_message_request_limit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 46065,
+    "offset": 2682997,
+    "value": "Limit reached for counter: "
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 53898,
+    "offset": 2922480,
+    "value": "consecutive_ads_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 55458,
+    "offset": 2955018,
+    "value": "foreground_session_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 56656,
+    "offset": 2982995,
+    "value": "hasReachedImpressionLimit"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 57843,
+    "offset": 3012828,
+    "value": "key_last_avatar_convergence_launch_upsells_limit_reached_timestamp"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "string_index": 58884,
+    "offset": 3036766,
+    "value": "non_follower_view_count"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 8396,
+    "offset": 2273560,
+    "value": "Can't add new point, limit reached: points="
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 15587,
+    "offset": 2399175,
+    "value": "IG_EDITS_DAILY_LIMIT_REACHED_TOAST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 45019,
+    "offset": 3076677,
+    "value": "VIDEO_GEN_REACHED_LIMIT_C50"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "string_index": 45020,
+    "offset": 3076706,
+    "value": "VIDEO_GEN_REACHED_LIMIT_KADABRA"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 857,
+    "offset": 1269107,
+    "value": "ADD_QUESTION_MAX_LIMIT_REACHED_FAILURE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 1945,
+    "offset": 1294684,
+    "value": "BusinessLocationFragment.NUM_EDITS_LEFT_BEFORE_REACHING_MULTIPLE_ADDRESSES_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 5115,
+    "offset": 1353395,
+    "value": "IG_EDITS_DAILY_LIMIT_REACHED_TOAST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22468,
+    "offset": 1629121,
+    "value": "MOVIE_GEN_REACHED_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22469,
+    "offset": 1629146,
+    "value": "MOVIE_GEN_REACHED_LIMIT_INELIGIBLE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22470,
+    "offset": 1629182,
+    "value": "MOVIE_GEN_REACHED_LIMIT_TOAST"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22471,
+    "offset": 1629213,
+    "value": "MOVIE_GEN_REACHED_LIMIT_WITHOUT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22472,
+    "offset": 1629253,
+    "value": "MOVIE_GEN_REACHED_LIMIT_WITH_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22474,
+    "offset": 1629329,
+    "value": "MOVIE_GEN_REGENERATION_REACHED_LIMIT_WITHOUT_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22475,
+    "offset": 1629382,
+    "value": "MOVIE_GEN_REGENERATION_REACHED_LIMIT_WITH_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 22891,
+    "offset": 1640413,
+    "value": "OPEN_UNORIGINAL_CONTENT_EDUCATION"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 23416,
+    "offset": 1654412,
+    "value": "REASONING_REACHED_LIMIT"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 23417,
+    "offset": 1654437,
+    "value": "REASONING_REACHED_LIMIT_WITH_UPSELL"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 23497,
+    "offset": 1655938,
+    "value": "REQUEST_LIMIT_REACHED"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 23702,
+    "offset": 1661278,
+    "value": "SELECT_MSGR_QUESTIONS_MAX_LIMIT_REACHED_FAILURE"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 24570,
+    "offset": 1685876,
+    "value": "User was unable to add more questions because icebreaker max limit is reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 24571,
+    "offset": 1685955,
+    "value": "User was unable to select more msgr questions because import max limit is reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 25841,
+    "offset": 1710720,
+    "value": "account_switcher_max_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 29845,
+    "offset": 1851895,
+    "value": "creation_max_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 29846,
+    "offset": 1851923,
+    "value": "creation_message_field_max_character_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 30205,
+    "offset": 1860947,
+    "value": "direct_faq_import_max_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 30208,
+    "offset": 1861047,
+    "value": "direct_frequently_asked_questions_max_limit_reached_error"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 34279,
+    "offset": 1980807,
+    "value": "is_max_limit_reached"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 35537,
+    "offset": 2012856,
+    "value": "nme_gai_meta_view_movie_gen_reached_limit_upsell"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 35584,
+    "offset": 2013710,
+    "value": "non_followers"
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "string_index": 37516,
+    "offset": 2070309,
+    "value": "request_limit_reached"
+  }
+]

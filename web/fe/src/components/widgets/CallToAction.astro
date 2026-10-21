@@ -1,0 +1,77 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { CallToAction, Widget } from '~/types';
+import Headline from '~/components/ui/Headline.astro';
+import Button from '~/components/ui/Button.astro';
+
+interface Props extends Widget {
+  title?: string;
+  subtitle?: string;
+  tagline?: string;
+  callToAction?: CallToAction;
+  actions?: string | CallToAction[];
+  /** `card` (boxed, centred) or `banner` (full-width band on the primary colour). */
+  layout?: 'card' | 'banner';
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  actions = await Astro.slots.render('actions'),
+  layout = 'card',
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <div
+    class:list={[
+      'text-center',
+      layout === 'banner'
+        ? 'mx-auto rounded-2xl bg-primary px-6 py-12 md:py-16 text-white'
+        : 'max-w-3xl mx-auto p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600',
+    ]}
+  >
+    <Headline
+      title={title}
+      subtitle={subtitle}
+      tagline={tagline}
+      classes={{
+        container: 'mb-0 md:mb-0',
+        title: `text-4xl md:text-4xl font-bold tracking-tighter mb-4 font-heading ${layout === 'banner' ? 'text-white' : ''}`,
+        subtitle: layout === 'banner' ? 'text-xl text-white' : 'text-xl text-muted dark:text-slate-400',
+        ...((classes?.headline as Record<string, string>) ?? {}),
+      }}
+    />
+    {
+      actions && (
+        <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
+          {Array.isArray(actions) ? (
+            actions.map((action) => (
+              <div class="flex w-full sm:w-auto">
+                <Button
+                  {...(action || {})}
+                  class:list={[
+                    'w-full sm:mb-0 whitespace-nowrap',
+                    layout === 'banner' && action?.variant === 'primary'
+                      ? 'bg-white text-primary border-white hover:bg-white/90 hover:border-white/90 hover:text-primary dark:bg-white dark:text-primary dark:border-white'
+                      : layout === 'banner'
+                        ? 'text-white border-white/70 hover:bg-white/10 hover:border-white hover:text-white dark:text-white dark:border-white/70'
+                        : '',
+                  ]}
+                />
+              </div>
+            ))
+          ) : (
+            <Fragment set:html={actions} />
+          )}
+        </div>
+      )
+    }
+  </div>
+</WidgetWrapper>

@@ -1,0 +1,160 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_bd41d6ab67c4e5ec994c546085f25f96a9efe303933e7148720a4f32d1bb744d",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0RY3",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(androidx.fragment.app.FragmentActivity, X.0m3m, X.0Eto, com.instagram.common.session.UserSession, X.04N3, X.0hkW, java.lang.Boolean, java.lang.Integer, java.lang.String, java.lang.String, java.util.Map): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(Landroidx/fragment/app/FragmentActivity;LX/0m3m;LX/0Eto;Lcom/instagram/common/session/UserSession;LX/04N3;LX/0hkW;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(X.0U6G, X.0RY3): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0U6G;LX/0RY3;)V"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(X.02Ws, X.0RY3): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/02Ws;LX/0RY3;)V"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(X.0RY3): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0RY3;)V"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()LX/0StF;"
+        },
+        {
+          "name": "A04",
+          "reported_signature": "A04(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "A00",
+          "reported_type": "X.04N3"
+        },
+        {
+          "name": "A01",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A02",
+          "reported_type": "boolean"
+        },
+        {
+          "name": "A03",
+          "reported_type": "androidx.fragment.app.FragmentActivity"
+        },
+        {
+          "name": "A04",
+          "reported_type": "X.0m3m"
+        },
+        {
+          "name": "A05",
+          "reported_type": "X.0Eto"
+        },
+        {
+          "name": "A06",
+          "reported_type": "com.instagram.common.session.UserSession"
+        },
+        {
+          "name": "A07",
+          "reported_type": "X.02AR"
+        },
+        {
+          "name": "A08",
+          "reported_type": "X.0hkW"
+        },
+        {
+          "name": "A09",
+          "reported_type": "java.lang.Boolean"
+        },
+        {
+          "name": "A0A",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A0B",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A0C",
+          "reported_type": "java.util.Map"
+        },
+        {
+          "name": "A0D",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0E",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0F",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0G",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0H",
+          "reported_type": "X.0Jzl"
+        },
+        {
+          "name": "A0I",
+          "reported_type": "X.02di"
+        },
+        {
+          "name": "A0J",
+          "reported_type": "java.lang.Integer"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

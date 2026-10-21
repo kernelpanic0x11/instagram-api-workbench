@@ -1,0 +1,98 @@
+---
+import type { Stats as Props } from '~/types';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import { Icon } from 'astro-icon/components';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline,
+  stats = [],
+  countUp = false,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <aw-stats data-count-up={countUp ? '' : undefined}>
+    <Headline
+      title={title}
+      subtitle={subtitle}
+      tagline={tagline}
+      classes={classes?.headline as Record<string, string>}
+    />
+    <div class="flex flex-wrap justify-center -m-4 text-center">
+      {
+        stats &&
+          stats.map(({ amount, title, icon }) => (
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full min-w-[220px] text-center md:border-r md:border-gray-200 md:last:border-none dark:md:border-slate-500 intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade intersect-quarter">
+              {icon && (
+                <div class="flex items-center justify-center mx-auto mb-4 text-primary">
+                  <Icon name={icon} class="w-10 h-10" />
+                </div>
+              )}
+              {amount && (
+                <div
+                  class="font-heading text-primary text-[2.6rem] font-bold dark:text-white lg:text-5xl xl:text-6xl tabular-nums"
+                  data-aw-amount={countUp ? String(amount) : undefined}
+                >
+                  {amount}
+                </div>
+              )}
+              {title && (
+                <div class="text-sm font-medium uppercase tracking-widest text-gray-800 dark:text-slate-400 lg:text-base">
+                  {title}
+                </div>
+              )}
+            </div>
+          ))
+      }
+    </div>
+  </aw-stats>
+</WidgetWrapper>
+
+<script>
+  // Counts numeric amounts up from 0 the first time the widget is visible.
+  // Prefixes/suffixes such as "+", "K" or "%" are kept as-is.
+  class AwStats extends HTMLElement {
+    connectedCallback() {
+      if (!this.hasAttribute('data-count-up')) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const targets = this.querySelectorAll<HTMLElement>('[data-aw-amount]');
+      if (!targets.length) return;
+      const run = () => {
+        targets.forEach((el) => {
+          const raw = el.dataset.awAmount ?? '';
+          const match = raw.match(/^([^0-9]*)([0-9][0-9.,]*)(.*)$/);
+          if (!match) return;
+          const [, prefix, number, suffix] = match;
+          const decimals = (number.split('.')[1] ?? '').length;
+          const end = parseFloat(number.replace(/,/g, ''));
+          const start = performance.now();
+          const duration = 1200;
+          const tick = (now: number) => {
+            const t = Math.min(1, (now - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            el.textContent = `${prefix}${(end * eased).toFixed(decimals)}${suffix}`;
+            if (t < 1) requestAnimationFrame(tick);
+            else el.textContent = raw;
+          };
+          requestAnimationFrame(tick);
+        });
+      };
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          observer.disconnect();
+          run();
+        }
+      });
+      observer.observe(this);
+    }
+  }
+  if (!customElements.get('aw-stats')) customElements.define('aw-stats', AwStats);
+</script>

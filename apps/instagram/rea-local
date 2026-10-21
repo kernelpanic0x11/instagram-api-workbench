@@ -1,0 +1,6 @@
+#!/bin/sh
+# Provide your own compatible JADX headless MCP JAR and Java runtime.
+set -eu
+: "${REA_JADX_MCP_JAR:?Set REA_JADX_MCP_JAR to your local JADX headless MCP 0.7.1 JAR}"
+export REA_JADX_HEAP_MIB="${REA_JADX_HEAP_MIB:-4096}"
+exec npx --yes rea-agents@6.5.0 "$@"

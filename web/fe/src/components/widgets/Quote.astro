@@ -1,0 +1,82 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from '~/components/common/Image.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Quote as Props } from '~/types';
+
+// A single, large testimonial: one voice, one claim, given the whole width.
+// Use it where a wall of three cards would dilute the message.
+
+const {
+  quote = await Astro.slots.render('quote'),
+  name,
+  job,
+  image,
+  logo,
+  rating,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-4xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <figure
+    class="text-center intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+  >
+    {
+      logo &&
+        (typeof logo === 'string' ? (
+          <Icon name={logo} class="mx-auto mb-8 h-8 w-auto text-muted" />
+        ) : (
+          <Image class="mx-auto mb-8 h-8 w-auto" height={32} layout="fixed" format="webp" {...logo} />
+        ))
+    }
+    {
+      rating && (
+        <div class="mb-6 flex justify-center gap-1" role="img" aria-label={`${rating} out of 5 stars`}>
+          {[1, 2, 3, 4, 5].map((star) => (
+            <Icon
+              name="tabler:star-filled"
+              class:list={[
+                'h-5 w-5',
+                star <= Math.round(rating) ? 'text-amber-400' : 'text-gray-300 dark:text-slate-600',
+              ]}
+            />
+          ))}
+        </div>
+      )
+    }
+    <blockquote>
+      <p
+        class="font-heading text-2xl font-medium leading-snug tracking-tight text-heading text-balance md:text-3xl before:content-['“'] after:content-['”']"
+        set:html={quote}
+      />
+    </blockquote>
+    {
+      (name || job || image) && (
+        <figcaption class="mt-8 flex items-center justify-center gap-4">
+          {image &&
+            (typeof image === 'string' ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class="h-14 w-14 rounded-full border border-slate-200 dark:border-slate-600"
+                width={56}
+                height={56}
+                layout="fixed"
+                format="webp"
+                {...image}
+              />
+            ))}
+          <div class="text-left rtl:text-right">
+            {name && <p class="text-base font-semibold text-heading">{name}</p>}
+            {job && <p class="text-sm text-muted">{job}</p>}
+          </div>
+        </figcaption>
+      )
+    }
+  </figure>
+</WidgetWrapper>

@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_a3f32edbc264eef7bcbd9847d099ef7e0e042dcaae08fa960eaa1af516540bf2",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C015E",
+      "method": {
+        "name": "A06",
+        "reported_signature": "A06(X.01qh, X.02sD, java.lang.String, java.lang.String, java.lang.String, java.util.Map, java.util.Map, int, long, boolean): X.02sG",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/01qh;LX/02sD;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;IJZ)LX/02sG;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    private final C02sG A06(C01qh c01qh, C02sD c02sD, String str, String str2, String str3, Map map, Map map2, int i, long j, boolean z) {\n        String string;\n        boolean z2 = i == 3;\n        String strA0a = AnonymousClass0003.A0a(str3, str, \"/\");\n        C06q3 c06q3A07 = C02rm.A01.A07(z ? C0cbg.A00 : C0SuU.A00, null, c01qh, -2);\n        c06q3A07.AQE(\"bloks_versioning_id\", \"8f0f09df419d7d5826957c3f070997a65b6e8d025c84d1e91931768e8b59625e\");\n        ArrayList arrayListA01 = C014Z.A01(new C0DRa(17));\n        try {\n            StringWriter stringWriter = new StringWriter();\n            C04s2 c04s2A01 = C01xe.A00.A01(stringWriter);\n            C05J6.A00(c04s2A01, arrayListA01);\n            c04s2A01.close();\n            string = stringWriter.toString();\n            C05s2.A0C(string);\n        } catch (IOException unused) {\n            string = \"\";\n        }\n        c06q3A07.AQE(\"bk_client_context\", string);\n        c06q3A07.A06 = z2 ? C03ar.OffScreen : C03ar.OnScreen;\n        c06q3A07.A07 = C02mu.API;\n        if (z2) {\n            c06q3A07.A04();\n        }\n        c06q3A07.A07(AnonymousClass0009.A01);\n        c06q3A07.A0A(strA0a);\n        if (c02sD != null) {\n            ((C04x5) c06q3A07).A00 = c02sD;\n        }\n        boolean z3 = j >= TimeUnit.DAYS.toMillis(1L);\n        if ((c01qh instanceof UserSession) && str2 != null && z3) {\n            c06q3A07.A0C = str2;\n            c06q3A07.A09 = AnonymousClass0009.A0N;\n            ((C04x6) c06q3A07).A01 = j;\n        }\n        if (map != null) {\n            for (Map.Entry entry : map.entrySet()) {\n                c06q3A07.AQE((String) entry.getKey(), (String) entry.getValue());\n            }\n        }\n        C015E c015e = A04;\n        if (c015e.A0B(str)) {\n            ((C04x6) c06q3A07).A03 = null;\n            c06q3A07.A0O = true;\n        }\n        if (c015e.A0C(str)) {\n            ((C04x6) c06q3A07).A04 = null;\n            c06q3A07.A0P = true;\n        }\n        c06q3A07.AOz(\"X-IG-BLOKS-SERIALIZE-PAYLOAD\", \"true\");\n        for (Map.Entry entry2 : map2.entrySet()) {\n            c06q3A07.AOz((String) entry2.getKey(), (String) entry2.getValue());\n        }\n        return c06q3A07.A0K();\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

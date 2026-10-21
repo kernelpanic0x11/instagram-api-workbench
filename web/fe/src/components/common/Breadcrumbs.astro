@@ -1,0 +1,68 @@
+---
+import { Icon } from 'astro-icon/components';
+import { getCanonical } from '~/utils/permalinks';
+
+// Breadcrumb trail with matching BreadcrumbList structured data. The last
+// item is the current page, rendered without a link; with `hideCurrent` it is
+// kept for assistive technology and the JSON-LD but not shown, so a post's
+// trail reads Home › Blog › Category without repeating the title.
+
+export interface Props {
+  /** `icon` replaces the visible text (the text stays for screen readers and structured data). */
+  items: Array<{ text: string; href?: string; icon?: string }>;
+  /** Render inside a band under the header, aligned with the header's container and logo. */
+  bar?: boolean;
+  /** Keep the current page out of sight (it stays for assistive technology and the JSON-LD). */
+  hideCurrent?: boolean;
+  class?: string;
+}
+
+const { items, bar = false, hideCurrent = false, class: className = '' } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map(({ text, href }, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: text,
+    ...(href ? { item: String(getCanonical(href)) } : {}),
+  })),
+};
+---
+
+<nav
+  aria-label="Breadcrumb"
+  class:list={[
+    'text-sm text-muted',
+    bar ? 'max-w-7xl mx-auto w-full px-3 lg:px-6 pt-4 [&>ol]:ml-2 rtl:[&>ol]:ml-0 rtl:[&>ol]:mr-2' : '',
+    className,
+  ]}
+>
+  <ol class="flex flex-wrap items-center gap-1 list-none">
+    {
+      items.map(({ text, href, icon }, index) => (
+        <li class="flex min-w-0 items-center gap-1">
+          {index > 0 && !(hideCurrent && index === items.length - 1) && (
+            <Icon name="tabler:chevron-right" class="h-3.5 w-3.5 shrink-0 opacity-60 rtl:rotate-180" />
+          )}
+          {href && index < items.length - 1 ? (
+            <a
+              href={href}
+              class="inline-flex items-center hover:text-primary hover:underline"
+              aria-label={icon ? text : undefined}
+            >
+              {icon ? <Icon name={icon} class="h-4 w-4" /> : text}
+            </a>
+          ) : (
+            <span aria-current="page" class:list={hideCurrent ? 'sr-only' : 'text-default'}>
+              {text}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />

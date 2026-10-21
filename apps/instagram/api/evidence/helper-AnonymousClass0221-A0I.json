@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_b51bdf8a1ad2e1feff4a288e9435bb2b0136322aac360c194ccbba53f03f26c6",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.AnonymousClass0221",
+      "method": {
+        "name": "A0I",
+        "reported_signature": "A0I(X.02rr, X.0Wvm, com.instagram.common.session.UserSession): X.02sB",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public static C02sB A0I(C02rr c02rr, C0Wvm c0Wvm, UserSession userSession) {\n        C02sB c02sBA02 = c02rr.A02(c0Wvm, c0Wvm, userSession);\n        c02sBA02.A07(AnonymousClass0009.A01);\n        return c02sBA02;\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

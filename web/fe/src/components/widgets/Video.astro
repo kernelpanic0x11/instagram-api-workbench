@@ -1,0 +1,107 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from '~/components/common/Image.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Video as Props } from '~/types';
+
+// A deferred video: only the poster loads with the page. Clicking it
+// swaps in the YouTube/Vimeo player (privacy-enhanced domains) or a native
+// <video>. Without JavaScript the poster links to the video.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  src,
+  youtube,
+  vimeo,
+  poster,
+  caption,
+  videoTitle = 'Video',
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const embed = youtube
+  ? `https://www.youtube-nocookie.com/embed/${youtube}?autoplay=1&rel=0`
+  : vimeo
+    ? `https://player.vimeo.com/video/${vimeo}?autoplay=1&dnt=1`
+    : undefined;
+const watchUrl = youtube ? `https://www.youtube.com/watch?v=${youtube}` : vimeo ? `https://vimeo.com/${vimeo}` : src;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <aw-video data-embed={embed} data-src={src} data-title={videoTitle} class="block">
+    <figure>
+      <a
+        href={watchUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group relative block aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+        aria-label={`Play video: ${videoTitle}`}
+        data-aw-video-trigger
+      >
+        {
+          poster &&
+            (typeof poster === 'string' ? (
+              <Fragment set:html={poster} />
+            ) : (
+              <Image
+                class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                widths={[640, 1024]}
+                sizes="(max-width: 1023px) 100vw, 1024px"
+                width={1024}
+                height={576}
+                layout="cover"
+                format="webp"
+                alt=""
+                {...poster}
+              />
+            ))
+        }
+        <span class="absolute inset-0 flex items-center justify-center">
+          <span
+            class="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-primary shadow-lg transition group-hover:scale-105 md:h-20 md:w-20"
+          >
+            <Icon name="tabler:player-play-filled" class="h-7 w-7 translate-x-0.5 md:h-8 md:w-8" />
+          </span>
+        </span>
+      </a>
+      {caption && <figcaption class="mt-3 text-center text-sm text-muted">{caption}</figcaption>}
+    </figure>
+  </aw-video>
+</WidgetWrapper>
+
+<script>
+  class AwVideo extends HTMLElement {
+    connectedCallback() {
+      const trigger = this.querySelector<HTMLAnchorElement>('[data-aw-video-trigger]');
+      if (!trigger) return;
+      trigger.addEventListener('click', (event) => {
+        const { embed, src, title } = this.dataset;
+        if (!embed && !src) return;
+        event.preventDefault();
+        const player = embed
+          ? Object.assign(document.createElement('iframe'), {
+              src: embed,
+              title: title ?? 'Video',
+              allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+              allowFullscreen: true,
+            })
+          : Object.assign(document.createElement('video'), { src, controls: true, autoplay: true, playsInline: true });
+        player.className = 'absolute inset-0 h-full w-full';
+        const frame = document.createElement('div');
+        frame.className = 'relative aspect-video w-full overflow-hidden rounded-2xl bg-black shadow-lg';
+        frame.appendChild(player);
+        trigger.replaceWith(frame);
+      });
+    }
+  }
+  if (!customElements.get('aw-video')) customElements.define('aw-video', AwVideo);
+</script>

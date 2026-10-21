@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_47d2893fbf7b5cecaf1d28210fbe9b0f55c79b4424f2e71c6d771d7331d9ff2b",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0RCJ",
+      "method": {
+        "name": "A0S",
+        "reported_signature": "A0S(X.0RCJ, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/0RCJ;Ljava/lang/String;)V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public static final void A0S(C0RCJ c0rcj, String str) {\n        String str2;\n        MVLinkInfo mVLinkInfo = A05(c0rcj).A08.A09().A0I;\n        if (mVLinkInfo != null && (str2 = mVLinkInfo.A02) != null && !C05t8.A10(str2)) {\n            C08xi c08xiA03 = C08xf.A03(C020p.A0Q(c0rcj.A0U));\n            UserSession userSessionA0Q = C020p.A0Q(c0rcj.A0U);\n            C06um c06um = ((C05Fb) c08xiA03).A05;\n            C0LBt.A02(userSessionA0Q, new C0CiB(c06um.A09.toString(), \"publish_sheet\", \"publish_media\", c06um.A0R), null, \"publish_media\", \"reel\", \"share\", str2, mVLinkInfo.A01, mVLinkInfo.A03, null);\n        }\n        C0aGN c0aGN = (C0aGN) C01lf.A01(213042);\n        UserSession userSessionA0Q2 = C020p.A0Q(c0rcj.A0U);\n        C0P35 c0p35 = new C0P35(c0rcj, 10);\n        C03oB c03oBA00 = C0FY8.A00(c0rcj);\n        Integer numValueOf = c03oBA00 != null ? Integer.valueOf(C0aWQ.A00(C020p.A0Q(c0rcj.A0U), c03oBA00)) : null;\n        List list = A00(c0rcj).A14().A1b;\n        ArrayList arrayListA0T = C000H.A0T(list);\n        Iterator it = list.iterator();\n        while (it.hasNext()) {\n            arrayListA0T.add(Float.valueOf(C0BQC.A1D(it).A01()));\n        }\n        Integer numA02 = c0aGN.A02(userSessionA0Q2, numValueOf, arrayListA0T, c0p35);\n        if (numA02 == null || C000H.A0s(c0rcj.A0R)) {\n            A0Q(c0rcj, str);\n            return;\n        }\n        C0aGN c0aGN2 = (C0aGN) C01lf.A01(213042);\n        UserSession userSessionA0Q3 = C020p.A0Q(c0rcj.A0U);\n        Context contextRequireContext = c0rcj.requireContext();\n        FragmentActivity fragmentActivityRequireActivity = c0rcj.requireActivity();\n        View view = c0rcj.mView;\n        ViewGroup viewGroup = view instanceof ViewGroup ? (ViewGroup) view : null;\n        C0iaQ c0iaQ = new C0iaQ(str, c0rcj, 26);\n        C0C6U c0c6u = new C0C6U(c0rcj, 27);\n        C0C6U c0c6u2 = new C0C6U(c0rcj, 28);\n        C05s2.A0V(userSessionA0Q3, 0);\n        int iIntValue = numA02.intValue();\n        if (iIntValue == 0) {\n            C03dR.A00().markerStart(17635931);\n            C0dbo c0dbo = new C0dbo(userSessionA0Q3, c0iaQ, 52);\n            C0Dgd c0Dgd = new C0Dgd();\n            c0Dgd.A00 = c0dbo;\n            C04L6 c04l6A0T = C020p.A0T(userSessionA0Q3);\n            c04l6A0T.A0U = c0Dgd;\n            C020p.A1X(c04l6A0T, false);\n            c04l6A0T.A0V = new C0pcy(3);\n            c04l6A0T.A01().A05(contextRequireContext, c0Dgd);\n            C0IFz.A00(C0DDx.A1L, C0IFy.VIEW, C0DDy.A0D, null, userSessionA0Q3);\n            return;\n        }\n        if (iIntValue == 1) {\n            C03dR.A00().markerStart(17635931);\n            C0DMU c0dmu = new C0DMU();\n            c0dmu.A00 = new C0JUx(userSessionA0Q3, c0iaQ);\n            C04L6 c04l6A0V = AnonymousClass0225.A0V(userSessionA0Q3, false);\n            c04l6A0V.A0V = new C0NYv(userSessionA0Q3, 15);\n            c04l6A0V.A01().A05(contextRequireContext, c0dmu);\n            return;\n        }\n        if (iIntValue != 2) {\n            if (iIntValue != 3) {\n                throw AnonymousClass0025.A0L();\n            }\n            if (fragmentActivityRequireActivity.isFinishing() || fragmentActivityRequireActivity.isDestroyed()) {\n                return;\n            }\n            c0aGN2.A03(contextRequireContext, viewGroup, userSessionA0Q3, \"share_button\", new C0jfN(userSessionA0Q3, c0c6u2, 29), C0BRF.A0C(c0iaQ, 1250));\n            C02gr c02grA0e = C021R.A0e(userSessionA0Q3, 0);\n            C0ZgW.A00(c02grA0e, C01F4.A0B(c02grA0e, C0ZgW.A00, C0ZgW.A01, 0) + 1);\n            return;\n        }\n        if (fragmentActivityRequireActivity.isFinishing() || fragmentActivityRequireActivity.isDestroyed()) {\n            return;\n        }\n        C0IIp c0IIpA0U = C020p.A0U(fragmentActivityRequireActivity);\n        c0IIpA0U.A0A(2131971896);\n        c0IIpA0U.A09(2131971895);\n        c0IIpA0U.A0P(new C0afj(c0iaQ, 27), AnonymousClass0009.A0C, 2131982375);\n        c0IIpA0U.A0N(new C0afj(c0c6u, 28), AnonymousClass0009.A00, 2131971894);\n        AnonymousClass0252.A1O(c0IIpA0U, true);\n        C01F4.A1C(C021R.A0e(userSessionA0Q3, 0), C0XnY.A00, C0XnY.A01, 0, true);\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

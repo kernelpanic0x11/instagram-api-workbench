@@ -1,0 +1,12 @@
+**/node_modules/
+**/.env
+be/data/
+be/.test-data/
+*.log
+**/.env.*
+**/*.sqlite*
+**/.astro/
+**/dist/
+**/.openai/
+outputs/
+reference/

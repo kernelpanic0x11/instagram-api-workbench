@@ -1,0 +1,80 @@
+---
+import { Icon } from 'astro-icon/components';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Newsletter as Props } from '~/types';
+
+// One-field signup band. Like the contact Form it ships without a backend:
+// pass `action` (and `method`) to point it at Netlify Forms, Buttondown,
+// Mailchimp, your API… See .agents/skills/configure-contact-form.md.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  placeholder = 'you@example.com',
+  button = 'Subscribe',
+  disclaimer,
+  action,
+  method = 'post',
+  name = 'newsletter',
+  layout = 'band',
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const inputId = `${name}-email`;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <div
+    class:list={[
+      'rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm',
+      layout === 'band'
+        ? 'flex flex-col gap-8 p-8 md:p-10 lg:flex-row lg:items-center lg:justify-between'
+        : 'mx-auto max-w-2xl p-8 text-center',
+    ]}
+  >
+    <div class:list={[layout === 'band' ? 'lg:max-w-xl' : '']}>
+      <Headline
+        title={title}
+        subtitle={subtitle}
+        tagline={tagline}
+        classes={{
+          container:
+            layout === 'band' ? 'mb-0 md:mb-0 text-center lg:text-left rtl:lg:text-right md:mx-0' : 'mb-6 md:mb-6',
+          title: 'text-2xl md:text-3xl',
+          subtitle: 'text-base md:text-lg mt-2',
+          ...((classes?.headline as Record<string, string>) ?? {}),
+        }}
+      />
+    </div>
+    <form
+      class:list={['w-full', layout === 'band' ? 'lg:max-w-md' : 'mx-auto max-w-md']}
+      action={action}
+      method={action ? method : undefined}
+      name={name}
+    >
+      <label for={inputId} class="sr-only">Email</label>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <input
+          id={inputId}
+          type="email"
+          name="email"
+          required
+          autocomplete="email"
+          placeholder={placeholder}
+          class="block w-full flex-1 rounded-full border border-gray-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-5 py-3 text-base text-default placeholder:text-muted focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+        />
+        <button type="submit" class="btn-primary whitespace-nowrap px-6 py-3">
+          {button}
+          <Icon name="tabler:arrow-right" class="ml-1.5 h-5 w-5 rtl:ml-0 rtl:mr-1.5 rtl:rotate-180" />
+        </button>
+      </div>
+      {disclaimer && <p class="mt-3 text-xs text-muted" set:html={disclaimer} />}
+    </form>
+  </div>
+</WidgetWrapper>

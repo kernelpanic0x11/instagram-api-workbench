@@ -1,0 +1,141 @@
+---
+import { Icon } from 'astro-icon/components';
+import Button from '~/components/ui/Button.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Comparison as Props } from '~/types';
+
+// A comparison table: plans side by side (`mode="features"`, the classic
+// pricing matrix) or your product against alternatives (`mode="versus"`,
+// where the highlighted column is you). Values are booleans (check / cross)
+// or short strings. Rows can be grouped under a label. The first column is
+// sticky on narrow screens so labels stay visible while scrolling sideways.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  columns = [],
+  rows = [],
+  mode = 'features',
+  firstColumnLabel = '',
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const groups: Array<{ group?: string; rows: typeof rows }> = [];
+for (const row of rows) {
+  const last = groups[groups.length - 1];
+  if (last && last.group === row.group) last.rows.push(row);
+  else groups.push({ group: row.group, rows: [row] });
+}
+const hasGroups = groups.some((g) => g.group);
+const hasActions = columns.some((c) => c.callToAction);
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-slate-700">
+    <table class="w-full min-w-[40rem] border-collapse text-left text-sm md:text-base">
+      <thead>
+        <tr class="border-b border-gray-200 dark:border-slate-700">
+          <th scope="col" class="sticky left-0 z-10 bg-page w-1/3 px-4 py-4 align-bottom font-semibold text-muted">
+            {firstColumnLabel}
+          </th>
+          {
+            columns.map(({ title: colTitle, subtitle: colSubtitle, highlight }) => (
+              <th
+                scope="col"
+                class:list={[
+                  'px-4 py-4 text-center align-bottom',
+                  highlight ? 'bg-primary/5 dark:bg-primary/10 text-primary' : '',
+                ]}
+              >
+                <span class="block text-lg font-bold font-heading text-heading">{colTitle}</span>
+                {colSubtitle && <span class="block text-sm font-normal text-muted">{colSubtitle}</span>}
+                {mode === 'versus' && highlight && (
+                  <span class="mt-1 inline-block rounded-full bg-primary px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-white">
+                    Recommended
+                  </span>
+                )}
+              </th>
+            ))
+          }
+        </tr>
+      </thead>
+      <tbody>
+        {
+          groups.map(({ group, rows: groupRows }) => (
+            <>
+              {hasGroups && group && (
+                <tr class="bg-gray-50 dark:bg-slate-800/60">
+                  <th
+                    scope="colgroup"
+                    colspan={columns.length + 1}
+                    class="sticky left-0 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-muted"
+                  >
+                    {group}
+                  </th>
+                </tr>
+              )}
+              {groupRows.map(({ label, description, values }) => (
+                <tr class="border-b border-gray-200 last:border-0 dark:border-slate-700">
+                  <th scope="row" class="sticky left-0 z-10 bg-page px-4 py-3 font-medium text-default">
+                    {label}
+                    {description && <span class="block text-xs font-normal text-muted">{description}</span>}
+                  </th>
+                  {columns.map(({ highlight }, index) => {
+                    const value = values[index];
+                    return (
+                      <td class:list={['px-4 py-3 text-center', highlight ? 'bg-primary/5 dark:bg-primary/10' : '']}>
+                        {value === true ? (
+                          <Icon
+                            name="tabler:circle-check-filled"
+                            class="mx-auto h-6 w-6 text-primary"
+                            aria-label="Included"
+                          />
+                        ) : value === false || value === undefined || value === '' ? (
+                          <Icon
+                            name="tabler:minus"
+                            class="mx-auto h-5 w-5 text-gray-300 dark:text-slate-600"
+                            aria-label="Not included"
+                          />
+                        ) : (
+                          <span class="text-default">{value}</span>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </>
+          ))
+        }
+      </tbody>
+      {
+        hasActions && (
+          <tfoot>
+            <tr>
+              <td class="sticky left-0 bg-page px-4 py-4" />
+              {columns.map(({ callToAction, highlight }) => (
+                <td class:list={['px-4 py-4 text-center', highlight ? 'bg-primary/5 dark:bg-primary/10' : '']}>
+                  {callToAction && (
+                    <Button
+                      variant={highlight ? 'primary' : 'secondary'}
+                      {...callToAction}
+                      class="w-full max-w-[12rem]"
+                    />
+                  )}
+                </td>
+              ))}
+            </tr>
+          </tfoot>
+        )
+      }
+    </table>
+  </div>
+</WidgetWrapper>

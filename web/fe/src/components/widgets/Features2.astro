@@ -1,0 +1,61 @@
+---
+import { Icon } from 'astro-icon/components';
+import Button from '~/components/ui/Button.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import { getColumnsClass } from '~/utils/utils';
+import type { Features as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  columns = 3,
+  defaultIcon,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const columnsClass = getColumnsClass(columns);
+
+const cardClass =
+  'relative flex flex-col rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-6 intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade';
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  {
+    items.length > 0 && (
+      <div class:list={['grid gap-4 md:gap-6 gap-x-12', columnsClass]}>
+        {items.map(({ title: itemTitle, description, icon, callToAction, href }) => {
+          // Items with `href` render as a link: the whole card is clickable.
+          const Card = href ? 'a' : 'div';
+          return (
+            <Card
+              href={href}
+              class:list={[
+                cardClass,
+                href &&
+                  'transition hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:border-primary/40',
+              ]}
+            >
+              {(icon || defaultIcon) && <Icon name={icon || defaultIcon} class="mb-6 w-12 h-12 text-primary" />}
+              <h3 class="text-xl font-bold">{itemTitle}</h3>
+              {description && <p class="text-muted mt-2" set:html={description} />}
+              {callToAction && !href && (
+                <div class="mt-2">
+                  <Button {...callToAction} />
+                </div>
+              )}
+            </Card>
+          );
+        })}
+      </div>
+    )
+  }
+</WidgetWrapper>

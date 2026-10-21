@@ -1,0 +1,22 @@
+{
+  "name": "rea-phase-zero-service",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.3"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite --env-file-if-exists=.env server.mjs",
+    "test": "node --experimental-sqlite --test tests/*.test.mjs",
+    "worker:build": "docker build -t rea-analysis:6.7.0 -f worker/Dockerfile worker",
+    "worker:verify": "docker run --rm --network none --read-only --cap-drop ALL --security-opt no-new-privileges --pids-limit 256 --memory 2g --cpus 2 --user 10001:10001 --tmpfs /tmp:rw,noexec,nosuid,size=256m,uid=10001,gid=10001 --tmpfs /work:rw,noexec,nosuid,size=1g,uid=10001,gid=10001 --entrypoint node rea-analysis:6.7.0 /opt/worker/verify.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.1152.0",
+    "@aws-sdk/client-ecs": "^3.1152.0",
+    "@aws-sdk/client-s3": "^3.1152.0",
+    "@aws-sdk/s3-request-presigner": "^3.1152.0",
+    "jose": "^6.2.12",
+    "zod": "^4.6.7"
+  }
+}

@@ -1,0 +1,113 @@
+---
+import Button from '~/components/ui/Button.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { Countdown as Props } from '~/types';
+
+// Counts down to `date` (ISO 8601, ideally with a timezone). Without
+// JavaScript the formatted date is shown; once the date passes,
+// `expiredText` replaces the counter.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  date,
+  labels = { days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' },
+  expiredText = 'We are live!',
+  callToAction,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const target = date ? new Date(date) : undefined;
+const formatted = target
+  ? new Intl.DateTimeFormat('en', { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' }).format(target) + ' UTC'
+  : '';
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-4xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  {
+    target && (
+      <aw-countdown data-date={target.toISOString()} data-expired={expiredText} class="block text-center">
+        <p class="aw-countdown-fallback text-lg text-muted">
+          <time datetime={target.toISOString()}>{formatted}</time>
+        </p>
+        <div
+          class="aw-countdown-units mx-auto hidden max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4"
+          role="timer"
+          aria-live="off"
+        >
+          {(['days', 'hours', 'minutes', 'seconds'] as const).map((unit) => (
+            <div class="rounded-2xl border border-gray-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
+              <span
+                class="block font-heading text-4xl font-bold tabular-nums text-heading md:text-5xl"
+                data-unit={unit}
+              >
+                00
+              </span>
+              <span class="mt-1 block text-xs font-semibold uppercase tracking-wider text-muted">{labels[unit]}</span>
+            </div>
+          ))}
+        </div>
+        <p class="aw-countdown-expired hidden text-2xl font-bold text-heading" />
+      </aw-countdown>
+    )
+  }
+  {
+    callToAction && (
+      <div class="mt-8 flex justify-center">
+        <Button variant="primary" {...callToAction} />
+      </div>
+    )
+  }
+</WidgetWrapper>
+
+<script>
+  class AwCountdown extends HTMLElement {
+    private timer?: number;
+    connectedCallback() {
+      const target = new Date(this.dataset.date ?? '').getTime();
+      if (Number.isNaN(target)) return;
+      const fallback = this.querySelector<HTMLElement>('.aw-countdown-fallback')!;
+      const units = this.querySelector<HTMLElement>('.aw-countdown-units')!;
+      const expired = this.querySelector<HTMLElement>('.aw-countdown-expired')!;
+      const fields = {
+        days: this.querySelector<HTMLElement>('[data-unit="days"]')!,
+        hours: this.querySelector<HTMLElement>('[data-unit="hours"]')!,
+        minutes: this.querySelector<HTMLElement>('[data-unit="minutes"]')!,
+        seconds: this.querySelector<HTMLElement>('[data-unit="seconds"]')!,
+      };
+      const tick = () => {
+        const diff = target - Date.now();
+        if (diff <= 0) {
+          units.classList.add('hidden');
+          fallback.classList.add('hidden');
+          expired.textContent = this.dataset.expired ?? '';
+          expired.classList.remove('hidden');
+          window.clearInterval(this.timer);
+          return;
+        }
+        const s = Math.floor(diff / 1000);
+        fields.days.textContent = String(Math.floor(s / 86400));
+        fields.hours.textContent = String(Math.floor((s % 86400) / 3600)).padStart(2, '0');
+        fields.minutes.textContent = String(Math.floor((s % 3600) / 60)).padStart(2, '0');
+        fields.seconds.textContent = String(s % 60).padStart(2, '0');
+      };
+      tick();
+      fallback.classList.add('hidden');
+      units.classList.remove('hidden');
+      units.classList.add('grid');
+      this.timer = window.setInterval(tick, 1000);
+    }
+    disconnectedCallback() {
+      window.clearInterval(this.timer);
+    }
+  }
+  if (!customElements.get('aw-countdown')) customElements.define('aw-countdown', AwCountdown);
+</script>

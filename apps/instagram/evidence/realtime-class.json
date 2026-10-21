@@ -1,0 +1,919 @@
+{
+  "evidence_id": "ev_ff058066890ff330839399b84c0b19e30c098113487418ea8ea327fd3a269a37",
+  "subject": {
+    "name": "base.apk",
+    "digest": {
+      "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+    },
+    "format": "apk",
+    "architecture": null
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 4096
+    },
+    "class_name": "com.instagram.realtimeclient.RealtimeClientManager",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, com.instagram.common.session.UserSession, com.instagram.realtimeclient.clientconfig.RealtimeClientConfig, com.instagram.realtimeclient.MainRealtimeEventHandler, X.0Jdt): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/common/session/UserSession;Lcom/instagram/realtimeclient/clientconfig/RealtimeClientConfig;Lcom/instagram/realtimeclient/MainRealtimeEventHandler;LX/0Jdt;)V"
+      },
+      {
+        "name": "access$destroyMqttClient",
+        "reported_signature": "access$destroyMqttClient(com.instagram.realtimeclient.RealtimeClientManager): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)V"
+      },
+      {
+        "name": "access$getBackgroundDetectorListener$p",
+        "reported_signature": "access$getBackgroundDetectorListener$p(com.instagram.realtimeclient.RealtimeClientManager): X.0yeo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)LX/0yeo;"
+      },
+      {
+        "name": "access$getCHARSET_UTF8$cp",
+        "reported_signature": "access$getCHARSET_UTF8$cp(): java.nio.charset.Charset",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/nio/charset/Charset;"
+      },
+      {
+        "name": "access$getChannelState",
+        "reported_signature": "access$getChannelState(com.instagram.realtimeclient.RealtimeClientManager): X.07JB",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)LX/07JB;"
+      },
+      {
+        "name": "access$getDelayHandler$p",
+        "reported_signature": "access$getDelayHandler$p(com.instagram.realtimeclient.RealtimeClientManager): android.os.Handler",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Landroid/os/Handler;"
+      },
+      {
+        "name": "access$getDelayStopRunnable$p",
+        "reported_signature": "access$getDelayStopRunnable$p(com.instagram.realtimeclient.RealtimeClientManager): java.lang.Runnable",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Ljava/lang/Runnable;"
+      },
+      {
+        "name": "access$getGraphQLSubscriptionsProvider$cp",
+        "reported_signature": "access$getGraphQLSubscriptionsProvider$cp(): com.instagram.realtimeclient.RealtimeClientManager$GraphQLSubscriptionsProvider",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/instagram/realtimeclient/RealtimeClientManager$GraphQLSubscriptionsProvider;"
+      },
+      {
+        "name": "access$getMqttClient$p",
+        "reported_signature": "access$getMqttClient$p(com.instagram.realtimeclient.RealtimeClientManager): X.0yb6",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)LX/0yb6;"
+      },
+      {
+        "name": "access$getMqttTopicToHandlersMap$p",
+        "reported_signature": "access$getMqttTopicToHandlersMap$p(com.instagram.realtimeclient.RealtimeClientManager): java.util.Map",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Ljava/util/Map;"
+      },
+      {
+        "name": "access$getObservers$p",
+        "reported_signature": "access$getObservers$p(com.instagram.realtimeclient.RealtimeClientManager): java.util.Set",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Ljava/util/Set;"
+      },
+      {
+        "name": "access$getOtherRealtimeEventHandlerProviders$cp",
+        "reported_signature": "access$getOtherRealtimeEventHandlerProviders$cp(): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "access$getPlatformizedMessagingConfigStore$p",
+        "reported_signature": "access$getPlatformizedMessagingConfigStore$p(com.instagram.realtimeclient.RealtimeClientManager): X.0Jdt",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)LX/0Jdt;"
+      },
+      {
+        "name": "access$getPublishes$p",
+        "reported_signature": "access$getPublishes$p(com.instagram.realtimeclient.RealtimeClientManager): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Ljava/util/List;"
+      },
+      {
+        "name": "access$getRawSkywalkerSubscriptions$p",
+        "reported_signature": "access$getRawSkywalkerSubscriptions$p(com.instagram.realtimeclient.RealtimeClientManager): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Ljava/util/List;"
+      },
+      {
+        "name": "access$getRawSkywalkerSubscriptionsProvider$cp",
+        "reported_signature": "access$getRawSkywalkerSubscriptionsProvider$cp(): com.instagram.realtimeclient.RealtimeClientManager$RawSkywalkerSubscriptionsProvider",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/instagram/realtimeclient/RealtimeClientManager$RawSkywalkerSubscriptionsProvider;"
+      },
+      {
+        "name": "access$getRealtimeDelegateProviders$cp",
+        "reported_signature": "access$getRealtimeDelegateProviders$cp(): java.util.Set",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Set;"
+      },
+      {
+        "name": "access$getRealtimeSubscriptions$p",
+        "reported_signature": "access$getRealtimeSubscriptions$p(com.instagram.realtimeclient.RealtimeClientManager): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Ljava/util/List;"
+      },
+      {
+        "name": "access$getTAG$cp",
+        "reported_signature": "access$getTAG$cp(): java.lang.Class",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/Class;"
+      },
+      {
+        "name": "access$getUserSession$p",
+        "reported_signature": "access$getUserSession$p(com.instagram.realtimeclient.RealtimeClientManager): com.instagram.common.session.UserSession",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Lcom/instagram/common/session/UserSession;"
+      },
+      {
+        "name": "access$getZeroStateAsLiveData$p",
+        "reported_signature": "access$getZeroStateAsLiveData$p(com.instagram.realtimeclient.RealtimeClientManager): X.00iq",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)LX/00iq;"
+      },
+      {
+        "name": "access$getZeroTokenChangeListener$p",
+        "reported_signature": "access$getZeroTokenChangeListener$p(com.instagram.realtimeclient.RealtimeClientManager): X.0DaQ",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)LX/0DaQ;"
+      },
+      {
+        "name": "access$get_mqttTargetState$p",
+        "reported_signature": "access$get_mqttTargetState$p(com.instagram.realtimeclient.RealtimeClientManager): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)I"
+      },
+      {
+        "name": "access$initMqttClient",
+        "reported_signature": "access$initMqttClient(com.instagram.realtimeclient.RealtimeClientManager): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)V"
+      },
+      {
+        "name": "access$initMqttClientInBackground",
+        "reported_signature": "access$initMqttClientInBackground(com.instagram.realtimeclient.RealtimeClientManager): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)V"
+      },
+      {
+        "name": "access$isInitializingMqttClient$p",
+        "reported_signature": "access$isInitializingMqttClient$p(com.instagram.realtimeclient.RealtimeClientManager): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)Z"
+      },
+      {
+        "name": "access$onZeroStateChanged",
+        "reported_signature": "access$onZeroStateChanged(com.instagram.realtimeclient.RealtimeClientManager, X.08ri): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;LX/08ri;)V"
+      },
+      {
+        "name": "access$publishWithCallbacksInternal",
+        "reported_signature": "access$publishWithCallbacksInternal(com.instagram.realtimeclient.RealtimeClientManager, com.instagram.realtimeclient.RealtimeClientManager$Publish): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;Lcom/instagram/realtimeclient/RealtimeClientManager$Publish;)I"
+      },
+      {
+        "name": "access$sendRealtimeSubscription",
+        "reported_signature": "access$sendRealtimeSubscription(com.instagram.realtimeclient.RealtimeClientManager, java.lang.String, java.util.List, java.util.List, X.0T22): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;Ljava/lang/String;Ljava/util/List;Ljava/util/List;LX/0T22;)V"
+      },
+      {
+        "name": "access$sendSkywalkerCommand",
+        "reported_signature": "access$sendSkywalkerCommand(com.instagram.realtimeclient.RealtimeClientManager, java.lang.String, java.util.List, java.util.List, X.0T22): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;Ljava/lang/String;Ljava/util/List;Ljava/util/List;LX/0T22;)V"
+      },
+      {
+        "name": "access$setGraphQLSubscriptionsProvider$cp",
+        "reported_signature": "access$setGraphQLSubscriptionsProvider$cp(com.instagram.realtimeclient.RealtimeClientManager$GraphQLSubscriptionsProvider): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$GraphQLSubscriptionsProvider;)V"
+      },
+      {
+        "name": "access$setInitializingMqttClient$p",
+        "reported_signature": "access$setInitializingMqttClient$p(com.instagram.realtimeclient.RealtimeClientManager, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;Z)V"
+      },
+      {
+        "name": "access$setMqttClient$p",
+        "reported_signature": "access$setMqttClient$p(com.instagram.realtimeclient.RealtimeClientManager, X.0yb6): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;LX/0yb6;)V"
+      },
+      {
+        "name": "access$setObserversProvider$cp",
+        "reported_signature": "access$setObserversProvider$cp(com.instagram.realtimeclient.RealtimeClientManager$ObserversProvider): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$ObserversProvider;)V"
+      },
+      {
+        "name": "access$setRawSkywalkerSubscriptionsProvider$cp",
+        "reported_signature": "access$setRawSkywalkerSubscriptionsProvider$cp(com.instagram.realtimeclient.RealtimeClientManager$RawSkywalkerSubscriptionsProvider): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$RawSkywalkerSubscriptionsProvider;)V"
+      },
+      {
+        "name": "access$setRealtimeMqttClientConfig$p",
+        "reported_signature": "access$setRealtimeMqttClientConfig$p(com.instagram.realtimeclient.RealtimeClientManager, com.instagram.realtimeclient.RealtimeMqttClientConfig): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;Lcom/instagram/realtimeclient/RealtimeMqttClientConfig;)V"
+      },
+      {
+        "name": "access$setZeroStateAsLiveData$p",
+        "reported_signature": "access$setZeroStateAsLiveData$p(com.instagram.realtimeclient.RealtimeClientManager, X.00iq): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;LX/00iq;)V"
+      },
+      {
+        "name": "access$setZeroTokenManager$p",
+        "reported_signature": "access$setZeroTokenManager$p(com.instagram.realtimeclient.RealtimeClientManager, X.0rho): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;LX/0rho;)V"
+      },
+      {
+        "name": "access$startMqttClient",
+        "reported_signature": "access$startMqttClient(com.instagram.realtimeclient.RealtimeClientManager): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)V"
+      },
+      {
+        "name": "access$updateAppState",
+        "reported_signature": "access$updateAppState(com.instagram.realtimeclient.RealtimeClientManager, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;Z)V"
+      },
+      {
+        "name": "access$updateAppStateAfterMqttStarted",
+        "reported_signature": "access$updateAppStateAfterMqttStarted(com.instagram.realtimeclient.RealtimeClientManager): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager;)V"
+      },
+      {
+        "name": "addAdditionalObserverWithProvider",
+        "reported_signature": "addAdditionalObserverWithProvider(com.instagram.realtimeclient.RealtimeClientManager$ObserverProvider): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$ObserverProvider;)V"
+      },
+      {
+        "name": "addExternalObservers",
+        "reported_signature": "addExternalObservers(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "addKeepAliveCondition",
+        "reported_signature": "addKeepAliveCondition(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "addObserver",
+        "reported_signature": "addObserver(com.instagram.realtimeclient.RealtimeClientManager$Observer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$Observer;)V"
+      },
+      {
+        "name": "addSkywalkerAndGraphqlSubscriptions",
+        "reported_signature": "addSkywalkerAndGraphqlSubscriptions(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "collectObservers",
+        "reported_signature": "collectObservers(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "createMqttAuthCredentials",
+        "reported_signature": "createMqttAuthCredentials(): X.05PG",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()LX/05PG;"
+      },
+      {
+        "name": "createMqttClient",
+        "reported_signature": "createMqttClient(com.instagram.realtimeclient.RealtimeMqttClientConfig, X.05PG, java.util.Set): X.0yb6",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeMqttClientConfig;LX/05PG;Ljava/util/Set;)LX/0yb6;"
+      },
+      {
+        "name": "destroyMqttClient",
+        "reported_signature": "destroyMqttClient(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "getChannelState",
+        "reported_signature": "getChannelState(): X.07JB",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()LX/07JB;"
+      },
+      {
+        "name": "getDelayDisconnectKeepaliveMs",
+        "reported_signature": "getDelayDisconnectKeepaliveMs(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getGraphQLSubscriptionsProvider",
+        "reported_signature": "getGraphQLSubscriptionsProvider(): com.instagram.realtimeclient.RealtimeClientManager$GraphQLSubscriptionsProvider",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/instagram/realtimeclient/RealtimeClientManager$GraphQLSubscriptionsProvider;"
+      },
+      {
+        "name": "getInstance",
+        "reported_signature": "getInstance(com.instagram.common.session.UserSession): com.instagram.realtimeclient.RealtimeClientManager",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/common/session/UserSession;)Lcom/instagram/realtimeclient/RealtimeClientManager;"
+      },
+      {
+        "name": "getMasterRealtimeEventHandler",
+        "reported_signature": "getMasterRealtimeEventHandler(): com.instagram.realtimeclient.MainRealtimeEventHandler",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/instagram/realtimeclient/MainRealtimeEventHandler;"
+      },
+      {
+        "name": "getMqttChannelStateMap",
+        "reported_signature": "getMqttChannelStateMap(): java.util.Map",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Map;"
+      },
+      {
+        "name": "getMqttChannelStateStringForLogging",
+        "reported_signature": "getMqttChannelStateStringForLogging(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getMqttTargetState",
+        "reported_signature": "getMqttTargetState(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()I"
+      },
+      {
+        "name": "getRawSkywalkerSubscriptionsProvider",
+        "reported_signature": "getRawSkywalkerSubscriptionsProvider(): com.instagram.realtimeclient.RealtimeClientManager$RawSkywalkerSubscriptionsProvider",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Lcom/instagram/realtimeclient/RealtimeClientManager$RawSkywalkerSubscriptionsProvider;"
+      },
+      {
+        "name": "get_mqttTargetState$annotations",
+        "reported_signature": "get_mqttTargetState$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "initMqttClient",
+        "reported_signature": "initMqttClient(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "initMqttClientInBackground",
+        "reported_signature": "initMqttClientInBackground(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "initRealtimeEventHandlers",
+        "reported_signature": "initRealtimeEventHandlers(): java.util.Set",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Ljava/util/Set;"
+      },
+      {
+        "name": "isInitialized",
+        "reported_signature": "isInitialized(com.instagram.common.session.UserSession): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/common/session/UserSession;)Z"
+      },
+      {
+        "name": "isMqttConnected",
+        "reported_signature": "isMqttConnected(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "isReceivingRealtimeAndForeground",
+        "reported_signature": "isReceivingRealtimeAndForeground(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "isSendingAvailable",
+        "reported_signature": "isSendingAvailable(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()Z"
+      },
+      {
+        "name": "maybeCancelPendingPublish",
+        "reported_signature": "maybeCancelPendingPublish(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(I)V"
+      },
+      {
+        "name": "onSessionWillEnd",
+        "reported_signature": "onSessionWillEnd(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "onZeroStateChanged",
+        "reported_signature": "onZeroStateChanged(X.08ri): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/08ri;)V"
+      },
+      {
+        "name": "publish",
+        "reported_signature": "publish(java.lang.String, java.lang.String, X.0T22, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;LX/0T22;Z)V"
+      },
+      {
+        "name": "publish",
+        "reported_signature": "publish(java.lang.String, byte[], X.0T22, X.0xfM): void",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;[BLX/0T22;LX/0xfM;)V"
+      },
+      {
+        "name": "publishWithCallbacks",
+        "reported_signature": "publishWithCallbacks(java.lang.String, byte[], X.0T22, X.0xfM): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;[BLX/0T22;LX/0xfM;)I"
+      },
+      {
+        "name": "publishWithCallbacksInternal",
+        "reported_signature": "publishWithCallbacksInternal(com.instagram.realtimeclient.RealtimeClientManager$Publish): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$Publish;)I"
+      },
+      {
+        "name": "rawSubscribeCommand",
+        "reported_signature": "rawSubscribeCommand(java.util.List): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;)V"
+      },
+      {
+        "name": "rawUnSubscribeCommand",
+        "reported_signature": "rawUnSubscribeCommand(java.util.List): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/util/List;)V"
+      },
+      {
+        "name": "registerRealtimeEventHandler",
+        "reported_signature": "registerRealtimeEventHandler(com.instagram.realtimeclient.RealtimeEventHandler): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeEventHandler;)V"
+      },
+      {
+        "name": "removeAdditionalObserverWithProvider",
+        "reported_signature": "removeAdditionalObserverWithProvider(com.instagram.realtimeclient.RealtimeClientManager$ObserverProvider): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$ObserverProvider;)V"
+      },
+      {
+        "name": "removeKeepAliveCondition",
+        "reported_signature": "removeKeepAliveCondition(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "removeObserver",
+        "reported_signature": "removeObserver(com.instagram.realtimeclient.RealtimeClientManager$Observer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/realtimeclient/RealtimeClientManager$Observer;)V"
+      },
+      {
+        "name": "removeOnInitKeepAliveConditionsIfAvailable",
+        "reported_signature": "removeOnInitKeepAliveConditionsIfAvailable(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "sendCommand",
+        "reported_signature": "sendCommand(java.lang.String, java.lang.String, com.instagram.realtimeclient.RealtimeClientManager$MessageDeliveryCallback): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;Lcom/instagram/realtimeclient/RealtimeClientManager$MessageDeliveryCallback;)V"
+      },
+      {
+        "name": "sendRealtimeSubscription",
+        "reported_signature": "sendRealtimeSubscription(java.lang.String, java.util.List, java.util.List, X.0T22): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;LX/0T22;)V"
+      },
+      {
+        "name": "sendSkywalkerCommand",
+        "reported_signature": "sendSkywalkerCommand(java.lang.String, java.util.List, java.util.List, X.0T22): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/util/List;Ljava/util/List;LX/0T22;)V"
+      },
+      {
+        "name": "setProxy",
+        "reported_signature": "setProxy(java.net.Proxy): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/net/Proxy;)V"
+      },
+      {
+        "name": "startMqttClient",
+        "reported_signature": "startMqttClient(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "stopMqttClient",
+        "reported_signature": "stopMqttClient(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "updateAirMqttHost",
+        "reported_signature": "updateAirMqttHost(X.08ri, java.lang.String, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(LX/08ri;Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "name": "updateAppState",
+        "reported_signature": "updateAppState(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)V"
+      },
+      {
+        "name": "updateAppStateAfterMqttStarted",
+        "reported_signature": "updateAppStateAfterMqttStarted(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      {
+        "name": "updateAppStateInternal",
+        "reported_signature": "updateAppStateInternal(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Z)V"
+      },
+      {
+        "name": "updateMqttHost",
+        "reported_signature": "updateMqttHost(java.lang.String, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/String;Ljava/lang/String;)V"
+      }
+    ],
+    "fields": [
+      {
+        "name": "CHARSET_UTF8",
+        "reported_type": "java.nio.charset.Charset"
+      },
+      {
+        "name": "CLIENT_TYPE",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "CONDITION_ON_APP_FOREGROUND",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "CONDITION_ON_INBOX_NAVIGATION",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "CONDITION_ON_INSTANCE_CREATION",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.instagram.realtimeclient.RealtimeClientManager$Companion"
+      },
+      {
+        "name": "DEFAULT_MQTT_FALLBACK_HOST_NAME",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "DEFAULT_MQTT_HOST_NAME",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "MQTT_CONNECTION_STATE",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "MQTT_DISCONNECTION_REASON",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "MQTT_LAST_CONNECT_MS",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "MQTT_LAST_DISCONNECT_MS",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "MQTT_STATE_DESTROYED",
+        "reported_type": "int"
+      },
+      {
+        "name": "MQTT_STATE_STARTED",
+        "reported_type": "int"
+      },
+      {
+        "name": "MQTT_STATE_STOPPED",
+        "reported_type": "int"
+      },
+      {
+        "name": "MQTT_STATE_UNSET",
+        "reported_type": "int"
+      },
+      {
+        "name": "SANDBOX_HOST_FB_SUFFIX_STR",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "SANDBOX_HOST_IG_SUFFIX_STR",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "SANDBOX_OD_UNIXNAME_STR",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "TAG",
+        "reported_type": "java.lang.Class"
+      },
+      {
+        "name": "_mqttTargetState",
+        "reported_type": "int"
+      },
+      {
+        "name": "additionalObserverProviders",
+        "reported_type": "java.util.Set"
+      },
+      {
+        "name": "backgroundDetectorListener",
+        "reported_type": "X.0yeo"
+      },
+      {
+        "name": "connectionKeepAliveConditions",
+        "reported_type": "java.util.Set"
+      },
+      {
+        "name": "context",
+        "reported_type": "android.content.Context"
+      },
+      {
+        "name": "delayHandler",
+        "reported_type": "android.os.Handler"
+      },
+      {
+        "name": "delayStopRunnable",
+        "reported_type": "java.lang.Runnable"
+      },
+      {
+        "name": "graphQLSubscriptionsProvider",
+        "reported_type": "com.instagram.realtimeclient.RealtimeClientManager$GraphQLSubscriptionsProvider"
+      },
+      {
+        "name": "isInitializingMqttClient",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "masterRealtimeEventHandler",
+        "reported_type": "com.instagram.realtimeclient.MainRealtimeEventHandler"
+      },
+      {
+        "name": "mqttChannelStateChangeListeners",
+        "reported_type": "java.util.List"
+      },
+      {
+        "name": "mqttChannelStateListener",
+        "reported_type": "X.0Jbg"
+      },
+      {
+        "name": "mqttClient",
+        "reported_type": "X.0yb6"
+      },
+      {
+        "name": "mqttPublishArrivedListener",
+        "reported_type": "X.0Jbh"
+      },
+      {
+        "name": "mqttTopicToHandlersMap",
+        "reported_type": "java.util.Map"
+      },
+      {
+        "name": "observers",
+        "reported_type": "java.util.Set"
+      },
+      {
+        "name": "observersProvider",
+        "reported_type": "com.instagram.realtimeclient.RealtimeClientManager$ObserversProvider"
+      },
+      {
+        "name": "otherRealtimeEventHandlerProviders",
+        "reported_type": "java.util.List"
+      },
+      {
+        "name": "platformizedMessagingConfigStore",
+        "reported_type": "X.0Jdt"
+      },
+      {
+        "name": "proxy",
+        "reported_type": "java.net.Proxy"
+      },
+      {
+        "name": "publishes",
+        "reported_type": "java.util.List"
+      },
+      {
+        "name": "qplLogger",
+        "reported_type": "com.instagram.realtimeclient.MqttQplLogger"
+      },
+      {
+        "name": "rawSkywalkerSubscriptions",
+        "reported_type": "java.util.List"
+      },
+      {
+        "name": "rawSkywalkerSubscriptionsProvider",
+        "reported_type": "com.instagram.realtimeclient.RealtimeClientManager$RawSkywalkerSubscriptionsProvider"
+      },
+      {
+        "name": "realtimeClientConfig",
+        "reported_type": "com.instagram.realtimeclient.clientconfig.RealtimeClientConfig"
+      },
+      {
+        "name": "realtimeDelegateProviders",
+        "reported_type": "java.util.Set"
+      },
+      {
+        "name": "realtimeEventHandlers",
+        "reported_type": "java.util.concurrent.CopyOnWriteArraySet"
+      },
+      {
+        "name": "realtimeMqttClientConfig",
+        "reported_type": "com.instagram.realtimeclient.RealtimeMqttClientConfig"
+      },
+      {
+        "name": "realtimeSubscriptions",
+        "reported_type": "java.util.List"
+      },
+      {
+        "name": "userSession",
+        "reported_type": "com.instagram.common.session.UserSession"
+      },
+      {
+        "name": "zeroStateAsLiveData",
+        "reported_type": "X.00iq"
+      },
+      {
+        "name": "zeroTokenChangeListener",
+        "reported_type": "X.0DaQ"
+      },
+      {
+        "name": "zeroTokenManager",
+        "reported_type": "X.0rho"
+      }
+    ],
+    "inner_classes": [
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass2",
+      "com.instagram.realtimeclient.RealtimeClientManager.Companion",
+      "com.instagram.realtimeclient.RealtimeClientManager.GraphQLSubscriptionsProvider",
+      "com.instagram.realtimeclient.RealtimeClientManager.IgnoredMqttTopicsHandler",
+      "com.instagram.realtimeclient.RealtimeClientManager.MessageDeliveryCallback",
+      "com.instagram.realtimeclient.RealtimeClientManager.Observer",
+      "com.instagram.realtimeclient.RealtimeClientManager.ObserverProvider",
+      "com.instagram.realtimeclient.RealtimeClientManager.ObserversProvider",
+      "com.instagram.realtimeclient.RealtimeClientManager.Publish",
+      "com.instagram.realtimeclient.RealtimeClientManager.RawSkywalkerSubscriptionsProvider",
+      "com.instagram.realtimeclient.RealtimeClientManager.WhenMappings",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass2",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass2",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1",
+      "com.instagram.realtimeclient.RealtimeClientManager.AnonymousClass1"
+    ]
+  },
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "confidence": "observed"
+}

@@ -1,0 +1,226 @@
+{
+  "synthetic_regressions": {
+    "count": 8,
+    "status": "passed",
+    "script": "api/bulk-trace/test_extract.py"
+  },
+  "actual_dex_samples": [
+    {
+      "path": "/users/reel_settings/",
+      "raw_path": "users/reel_settings/",
+      "method": "GET",
+      "confidence": "static-same-receiver-basic-block",
+      "evidence": [
+        {
+          "dex": "classes.dex",
+          "caller": "LX/04a0;->A03(Lcom/instagram/common/session/UserSession;Ljava/lang/String;I)LX/02sG;",
+          "method_index": 17962,
+          "code_unit_offset": 21,
+          "dex_byte_offset": 6104898,
+          "operation": "iput-object-route",
+          "field": "LX/04x6;->A0HLjava/lang/String;",
+          "receiver_register": 1,
+          "string_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/04a0;->A03(Lcom/instagram/common/session/UserSession;Ljava/lang/String;I)LX/02sG;",
+            "method_index": 17962,
+            "code_unit_offset": 18,
+            "dex_byte_offset": 6104892,
+            "operation": "const-string",
+            "string_index": 71386,
+            "value": "users/reel_settings/"
+          }
+        },
+        {
+          "dex": "classes.dex",
+          "caller": "LX/04a0;->A03(Lcom/instagram/common/session/UserSession;Ljava/lang/String;I)LX/02sG;",
+          "method_index": 17962,
+          "code_unit_offset": 15,
+          "dex_byte_offset": 6104886,
+          "operation": "set-http-method",
+          "callee": "LX/04x6;->A07(Ljava/lang/Integer;)V",
+          "receiver_register": 1,
+          "enum_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/04a0;->A03(Lcom/instagram/common/session/UserSession;Ljava/lang/String;I)LX/02sG;",
+            "method_index": 17962,
+            "code_unit_offset": 13,
+            "dex_byte_offset": 6104882,
+            "operation": "sget-object",
+            "field": "LX/0009;->A0NLjava/lang/Integer;",
+            "http_method": "GET"
+          }
+        }
+      ],
+      "receiver_identity": "0:15:1",
+      "basic_block_start": 0,
+      "dispatch_verified": false
+    },
+    {
+      "path": "/users/set_reel_settings/",
+      "raw_path": "users/set_reel_settings/",
+      "method": "POST",
+      "confidence": "static-same-receiver-basic-block",
+      "evidence": [
+        {
+          "dex": "classes.dex",
+          "caller": "LX/04a0;->A01(Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;)LX/02sG;",
+          "method_index": 17960,
+          "code_unit_offset": 17,
+          "dex_byte_offset": 6104598,
+          "operation": "iput-object-route",
+          "field": "LX/04x6;->A0HLjava/lang/String;",
+          "receiver_register": 2,
+          "string_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/04a0;->A01(Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;)LX/02sG;",
+            "method_index": 17960,
+            "code_unit_offset": 14,
+            "dex_byte_offset": 6104592,
+            "operation": "const-string",
+            "string_index": 71387,
+            "value": "users/set_reel_settings/"
+          }
+        },
+        {
+          "dex": "classes.dex",
+          "caller": "LX/04a0;->A01(Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;)LX/02sG;",
+          "method_index": 17960,
+          "code_unit_offset": 11,
+          "dex_byte_offset": 6104586,
+          "operation": "set-http-method",
+          "callee": "LX/04x6;->A07(Ljava/lang/Integer;)V",
+          "receiver_register": 2,
+          "enum_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/04a0;->A01(Lcom/instagram/common/session/UserSession;Ljava/lang/Integer;)LX/02sG;",
+            "method_index": 17960,
+            "code_unit_offset": 9,
+            "dex_byte_offset": 6104582,
+            "operation": "sget-object",
+            "field": "LX/0009;->A01Ljava/lang/Integer;",
+            "http_method": "POST"
+          }
+        }
+      ],
+      "receiver_identity": "0:11:2",
+      "basic_block_start": 0,
+      "dispatch_verified": false
+    },
+    {
+      "path": "/attestation/upload_android_keystore_key/",
+      "raw_path": "attestation/upload_android_keystore_key/",
+      "method": "POST",
+      "confidence": "static-same-receiver-basic-block",
+      "evidence": [
+        {
+          "dex": "classes.dex",
+          "caller": "LX/02tj;->A00(LX/02tj;Ljava/lang/String;Ljava/lang/String;)LX/02sG;",
+          "method_index": 13305,
+          "code_unit_offset": 25,
+          "dex_byte_offset": 5595138,
+          "operation": "iput-object-route",
+          "field": "LX/04x6;->A0HLjava/lang/String;",
+          "receiver_register": 1,
+          "string_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/02tj;->A00(LX/02tj;Ljava/lang/String;Ljava/lang/String;)LX/02sG;",
+            "method_index": 13305,
+            "code_unit_offset": 23,
+            "dex_byte_offset": 5595134,
+            "operation": "const-string",
+            "string_index": 48520,
+            "value": "attestation/upload_android_keystore_key/"
+          }
+        },
+        {
+          "dex": "classes.dex",
+          "caller": "LX/02tj;->A00(LX/02tj;Ljava/lang/String;Ljava/lang/String;)LX/02sG;",
+          "method_index": 13305,
+          "code_unit_offset": 20,
+          "dex_byte_offset": 5595128,
+          "operation": "set-http-method",
+          "callee": "LX/04x6;->A07(Ljava/lang/Integer;)V",
+          "receiver_register": 1,
+          "enum_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/02tj;->A00(LX/02tj;Ljava/lang/String;Ljava/lang/String;)LX/02sG;",
+            "method_index": 13305,
+            "code_unit_offset": 18,
+            "dex_byte_offset": 5595124,
+            "operation": "sget-object",
+            "field": "LX/0009;->A01Ljava/lang/Integer;",
+            "http_method": "POST"
+          }
+        }
+      ],
+      "receiver_identity": "0:20:1",
+      "basic_block_start": 0,
+      "dispatch_verified": false
+    },
+    {
+      "path": "/feed/timeline/",
+      "raw_path": "feed/timeline/",
+      "method": "POST",
+      "confidence": "static-same-receiver-basic-block",
+      "evidence": [
+        {
+          "dex": "classes.dex",
+          "caller": "LX/02rf;->A01(LX/0TbR;LX/03af;IZ)LX/0A0r;",
+          "method_index": 13019,
+          "code_unit_offset": 131,
+          "dex_byte_offset": 5546742,
+          "operation": "iput-object-route",
+          "field": "LX/04x6;->A0HLjava/lang/String;",
+          "receiver_register": 9,
+          "string_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/02rf;->A01(LX/0TbR;LX/03af;IZ)LX/0A0r;",
+            "method_index": 13019,
+            "code_unit_offset": 129,
+            "dex_byte_offset": 5546738,
+            "operation": "const-string",
+            "string_index": 53552,
+            "value": "feed/timeline/"
+          }
+        },
+        {
+          "dex": "classes.dex",
+          "caller": "LX/02rf;->A01(LX/0TbR;LX/03af;IZ)LX/0A0r;",
+          "method_index": 13019,
+          "code_unit_offset": 126,
+          "dex_byte_offset": 5546732,
+          "operation": "set-http-method",
+          "callee": "LX/04x6;->A07(Ljava/lang/Integer;)V",
+          "receiver_register": 9,
+          "enum_origin": {
+            "dex": "classes.dex",
+            "caller": "LX/02rf;->A01(LX/0TbR;LX/03af;IZ)LX/0A0r;",
+            "method_index": 13019,
+            "code_unit_offset": 124,
+            "dex_byte_offset": 5546728,
+            "operation": "sget-object",
+            "field": "LX/0009;->A01Ljava/lang/Integer;",
+            "http_method": "POST"
+          }
+        }
+      ],
+      "receiver_identity": "114:126:9",
+      "basic_block_start": 114,
+      "dispatch_verified": false
+    }
+  ],
+  "note": "Actual samples are direct DEX evidence for independent REA review; not live request tests.",
+  "independent_rea_validation": [
+    {
+      "path": "/users/reel_settings/",
+      "method": "GET",
+      "evidence": "api/evidence/helper-C04a0-A03.json"
+    },
+    {
+      "path": "/users/set_reel_settings/",
+      "method": "POST",
+      "evidence": "api/evidence/helper-C04a0-A01.json"
+    }
+  ]
+}

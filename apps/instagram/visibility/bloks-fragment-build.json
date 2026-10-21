@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_e5f1c53cf86b350332a268ce6ab5de59d7994aed0d2bd085e35057c99049164f",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0RY3",
+      "method": {
+        "name": "A03",
+        "reported_signature": "A03(): X.0StF",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()LX/0StF;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public final C0StF A03() {\n        IgBloksScreenConfig igBloksScreenConfig = new IgBloksScreenConfig(this.A06);\n        igBloksScreenConfig.A05 = new C0RXS(this);\n        igBloksScreenConfig.A0T = this.A05.getModuleName();\n        C0m3m c0m3m = this.A04;\n        if (c0m3m != null) {\n            igBloksScreenConfig.A03 = c0m3m;\n        }\n        return C0LEI.A02(igBloksScreenConfig, C0LFI.A03(this.A0A, this.A0C));\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

@@ -1,0 +1,152 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from '~/components/common/Image.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import type { FeatureTabs as Props } from '~/types';
+
+// Features presented as tabs: the list of tabs on one side, the image of the
+// selected tab on the other. Keyboard-accessible (arrow keys, Home/End) with
+// proper tablist/tab/tabpanel roles. Without JavaScript the first tab's panel
+// is shown and the rest stay hidden, so the section still reads correctly.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  orientation = 'vertical',
+  isReversed = false,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const uid = id ?? `tabs-${Math.random().toString(36).slice(2, 8)}`;
+const vertical = orientation === 'vertical';
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <aw-tabs class:list={['block', vertical ? 'lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center' : '']}>
+    <div
+      role="tablist"
+      aria-orientation={vertical ? 'vertical' : 'horizontal'}
+      class:list={[
+        vertical
+          ? ['flex flex-col gap-2 lg:col-span-5', isReversed ? 'lg:order-2' : '']
+          : 'mb-8 flex flex-wrap justify-center gap-2',
+      ]}
+    >
+      {
+        items.map(({ title: tabTitle, description, icon }, index) => (
+          <button
+            type="button"
+            role="tab"
+            id={`${uid}-tab-${index}`}
+            aria-controls={`${uid}-panel-${index}`}
+            aria-selected={index === 0 ? 'true' : 'false'}
+            tabindex={index === 0 ? 0 : -1}
+            class:list={[
+              'group text-left rounded-lg border transition outline-offset-2',
+              vertical
+                ? 'flex gap-4 p-4 border-transparent aria-selected:border-gray-200 aria-selected:bg-white aria-selected:shadow-md dark:aria-selected:border-slate-700 dark:aria-selected:bg-slate-900 hover:bg-gray-50 dark:hover:bg-slate-800/60'
+                : 'flex items-center gap-2 px-4 py-2 border-gray-200 dark:border-slate-700 aria-selected:bg-primary aria-selected:border-primary aria-selected:text-white hover:border-primary/50',
+            ]}
+          >
+            {icon && (
+              <Icon
+                name={icon}
+                class:list={[
+                  'shrink-0',
+                  vertical ? 'mt-0.5 h-7 w-7 text-primary' : 'h-5 w-5 text-primary group-aria-selected:text-white',
+                ]}
+              />
+            )}
+            <span>
+              <span class:list={['block font-bold', vertical ? 'text-lg text-heading' : 'text-sm']}>{tabTitle}</span>
+              {vertical && description && <span class="mt-1 block text-muted" set:html={description} />}
+            </span>
+          </button>
+        ))
+      }
+    </div>
+
+    <div class:list={[vertical ? ['lg:col-span-7', isReversed ? 'lg:order-1' : ''] : '']}>
+      {
+        items.map(({ title: tabTitle, description, image }, index) => (
+          <div
+            role="tabpanel"
+            id={`${uid}-panel-${index}`}
+            aria-labelledby={`${uid}-tab-${index}`}
+            tabindex="0"
+            hidden={index !== 0}
+            class="outline-offset-4"
+          >
+            {image && (
+              <div class="relative overflow-hidden rounded-lg shadow-lg bg-gray-100 dark:bg-slate-800">
+                {typeof image === 'string' ? (
+                  <Fragment set:html={image} />
+                ) : (
+                  <Image
+                    class="w-full"
+                    widths={[400, 768, 1024]}
+                    sizes="(max-width: 1023px) 100vw, 720px"
+                    width={720}
+                    height={480}
+                    layout="constrained"
+                    format="webp"
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                    alt={tabTitle ?? ''}
+                    {...image}
+                  />
+                )}
+              </div>
+            )}
+            {!vertical && description && (
+              <p class="mx-auto mt-6 max-w-3xl text-center text-muted" set:html={description} />
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </aw-tabs>
+</WidgetWrapper>
+
+<script>
+  class AwTabs extends HTMLElement {
+    connectedCallback() {
+      const tabs = [...this.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+      const panels = [...this.querySelectorAll<HTMLElement>('[role="tabpanel"]')];
+      const select = (index: number, focus = false) => {
+        tabs.forEach((tab, i) => {
+          const active = i === index;
+          tab.setAttribute('aria-selected', String(active));
+          tab.tabIndex = active ? 0 : -1;
+          panels[i].hidden = !active;
+        });
+        if (focus) tabs[index].focus();
+      };
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => select(index));
+        tab.addEventListener('keydown', (event) => {
+          const keys: Record<string, number> = {
+            ArrowRight: index + 1,
+            ArrowDown: index + 1,
+            ArrowLeft: index - 1,
+            ArrowUp: index - 1,
+            Home: 0,
+            End: tabs.length - 1,
+          };
+          if (!(event.key in keys)) return;
+          event.preventDefault();
+          select((keys[event.key] + tabs.length) % tabs.length, true);
+        });
+      });
+    }
+  }
+  if (!customElements.get('aw-tabs')) customElements.define('aw-tabs', AwTabs);
+</script>

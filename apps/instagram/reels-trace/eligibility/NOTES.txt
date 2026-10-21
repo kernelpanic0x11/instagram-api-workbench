@@ -1,0 +1,30 @@
+Static candidate trace: long-Reel distribution warning
+Scope: base.apk root classes*.dex only. All 807,462 code methods across 23 DEX files decoded without instruction errors. No runtime or server behavior established.
+
+Direct string references:
+classes14.dex LX/0XnY;-><clinit>()V pc=18 byte=4332928: has_seen_long_reels_restricted_distribution_nux
+classes14.dex LX/0adL;->onCancel(Landroid/content/DialogInterface;)V pc=242 byte=12919264: DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED
+classes14.dex LX/0afq;->onClick(Landroid/content/DialogInterface;I)V pc=310 byte=12922748: DISTRIBUTION_LIMIT_WARNING_EDIT_DRAFT_TAPPED
+classes14.dex LX/0afq;->onClick(Landroid/content/DialogInterface;I)V pc=855 byte=12923838: DISTRIBUTION_LIMIT_WARNING_SHARE_TAPPED
+classes18.dex LX/0gkb;-><clinit>()V pc=95 byte=3452870: MBS_INSIGHTS_RECOMMENDATION_ELIGIBILITY
+classes9.dex LX/056P;-><clinit>()V pc=18 byte=2299716: HAS_SEEN_LONG_REELS_DIALOG_NUX
+
+Priority decompilation candidates:
+X.0aGN.A02(UserSession,Integer,List,Function0):Integer — reads restricted-distribution preference field at code units 111/113.
+X.0RCJ.A0S(X.0RCJ,String):void — references preference at 313/315; nearby constants publish_media, publish_sheet, reel, share, share_button.
+X.0RCJ.A0Q(X.0RCJ,String):void — constructs shared onClick/onCancel listener classes; nearby share-sheet entity impression analytics.
+X.0afq.onClick(DialogInterface,int):void — edit-draft and share warning event labels; shared method is likely synthetic multi-case listener, so do not infer all neighboring calls apply to one event.
+X.0adL.onCancel(DialogInterface):void — edit-draft warning label.
+X.0kZM.onClick(View):void — both long-Reels-dialog and restricted-distribution preference fields; likely synthetic shared listener.
+
+Raw JSON provenance: dex-string-references.json, warning-class-references.json. Each stores DEX identity, method signature, instruction-unit and DEX-byte offsets. Scripts retain inherited DEX opcode width decoder and extend const-string matching with field and invoke references. Related strings are search candidates only.
+
+Follow-up: resource strings and duration review
+- resource_decode.py traversed resources.arsc in 2 APKs, 322 type chunks and 64,154 entries. No target IDs matched. Base string type contains only 590 IDs, below requested 0x6204 index.
+- frsc_decode.py examined range tables in all 104 assets/strings/*.frsc locale assets; no target IDs matched. These are sparse overrides.
+- assets/strings/default.frsc.spo contains six complete decompressible XZ streams. The main decompressed stream starts ST version 4 and appears dictionary/token encoded. This custom representation was NOT decoded; exact default English UI text remains unresolved. Do not invent titles/button labels from resource IDs. Raw coverage/results in resource-strings.json and frsc-resource-results.json.
+- length-gate.java: the one-time onboarding gate compares input duration strictly > C0DZv.A04.A00.A01. Enum smali identifies A04 as DURATION_180_SEC_IN_MS, 180000ms. It additionally checks seen preference, account field, feature flag and negated C0G7K.A01 list predicate. share-gate.java writes seen preference after showing dialog. This is client UX gating, not proof of server eligibility.
+- distribution-warning.java A0Q has a separate distribution threshold: C0G7K.A00 user MobileConfig key 36602286822266266, seconds multiplied by 1000, strict greater-than duration comparison plus boolean config. Dialog format argument is configured seconds divided by 60. No live resolved value known.
+- A0Q separately consults upload cap from C0DZu.A00; config key 36602286822331803 multiplied by 1000 when enabled; otherwise A01 fallback. A01's configurable threshold uses 36602286822200729 and fixed enum fallback is 90 seconds (or 60 seconds when z=true). Exact upload comparator delegated to X.0127.A1R(II), pending parent inspection.
+- Duration extractor X.0aWQ.A00 reads ClipInfo.A05 minus A07 or uses configured max duration for a sentinel ClipInfo. Does not validate final rendered/transcoded duration here.
+- distribution-speed-condition.java checks a nonempty list where each float passes abs(f)<=Float.MAX_VALUE and !(f<=1.05), then a config callback. Despite filename, values' semantics are unresolved. The checks do not explicitly exclude NaN. Do not treat this as a supported reach hack, nor infer manipulating client values changes server ranking.

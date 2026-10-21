@@ -1,0 +1,26 @@
+{
+  "code": "cleanup_incomplete",
+  "category": "execution_failure",
+  "message": "Provider cleanup could not be fully confirmed. Review the reported local resources before opening another target.",
+  "retryable": false,
+  "remediation": {
+    "action": "Provider cleanup could not be fully confirmed. Review the reported local resources before opening another target."
+  },
+  "details": {
+    "provider_id": "jadx",
+    "operation": "close_binary",
+    "cleanup": "incomplete",
+    "resources": [
+      "a3685992-be22-445a-8a35-48a65b3838d3",
+      "<temporary-path>"
+    ],
+    "diagnostics": {
+      "previous_error": null,
+      "reason": "Provider jadx adapter failed during close_binary",
+      "provider_cleanup": {
+        "reason": "process table could not be inspected: spawn EPERM"
+      }
+    },
+    "execution_failure": "execution_failure"
+  }
+}

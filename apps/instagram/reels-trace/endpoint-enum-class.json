@@ -1,0 +1,177 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_4e8980471603ada0196cb548338b2ceecf0ddd89b2a23772a7463095200d8dbb",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0bm8",
+      "methods": [
+        {
+          "name": "<clinit>",
+          "reported_signature": "<clinit>(): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()V"
+        },
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(java.lang.String, int, java.lang.String): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(Ljava/lang/String;ILjava/lang/String;)V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(X.02sB, com.instagram.common.session.UserSession, java.lang.StringBuilder): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/02sB;Lcom/instagram/common/session/UserSession;Ljava/lang/StringBuilder;)V"
+        },
+        {
+          "name": "valueOf",
+          "reported_signature": "valueOf(java.lang.String): X.0bm8",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)LX/0bm8;"
+        },
+        {
+          "name": "values",
+          "reported_signature": "values(): X.0bm8[]",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "()[LX/0bm8;"
+        }
+      ],
+      "fields": [
+        {
+          "name": "A00",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A01",
+          "reported_type": "kotlin.enums.EnumEntries"
+        },
+        {
+          "name": "A02",
+          "reported_type": "X.0bm8[]"
+        },
+        {
+          "name": "A03",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A04",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A05",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A06",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A07",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A08",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A09",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0A",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0B",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0C",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0D",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0E",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0F",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0G",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0H",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0I",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0J",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0K",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0L",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0M",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0N",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0O",
+          "reported_type": "X.0bm8"
+        },
+        {
+          "name": "A0P",
+          "reported_type": "X.0bm8"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

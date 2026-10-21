@@ -1,0 +1,93 @@
+[
+  {
+    "question": "Installed artifact identity",
+    "status": "answered",
+    "evidence": [
+      "acquisition.json",
+      "integrity-check.json",
+      "package-verified.json"
+    ],
+    "limitations": "Publisher signatures not verified."
+  },
+  {
+    "question": "Manifest and declared components",
+    "status": "answered",
+    "evidence": [
+      "AndroidManifest.xml",
+      "components.json"
+    ],
+    "limitations": "Base manifest only; declarations are not runtime enforcement."
+  },
+  {
+    "question": "Current primary-user permission grants",
+    "status": "answered",
+    "evidence": [
+      "primary-user-permissions.json",
+      "package-dump.txt"
+    ],
+    "limitations": "Point-in-time snapshot."
+  },
+  {
+    "question": "Managed code and strings",
+    "status": "partially answered",
+    "evidence": [
+      "classes.jsonl",
+      "all-dex-strings.jsonl.gz",
+      "feature-map.json"
+    ],
+    "limitations": "Indexed raw DEX; only selected methods decompiled."
+  },
+  {
+    "question": "Feed and Reels behavior",
+    "status": "partially answered",
+    "evidence": [
+      "feed-cache-class.json",
+      "feed-cache-method.json"
+    ],
+    "limitations": "Only cache dispatch traced; ranking, request and persistence flow unresolved."
+  },
+  {
+    "question": "Messaging behavior",
+    "status": "partially answered",
+    "evidence": [
+      "realtime-class.json",
+      "realtime-subscription.json",
+      "realtime-skywalker.json",
+      "realtime-appstate.json"
+    ],
+    "limitations": "Subscription formatting/dispatch traced; transport and encryption unresolved."
+  },
+  {
+    "question": "Network endpoints and privacy",
+    "status": "partially answered",
+    "evidence": [
+      "domain-candidates.json",
+      "feature-route-candidates.jsonl"
+    ],
+    "limitations": "Static candidates; no observed traffic or collection behavior."
+  },
+  {
+    "question": "Native and Hermes implementation",
+    "status": "unresolved",
+    "evidence": [
+      "archive-inventory.json",
+      "native-libraries.json",
+      "assets_lib_metadata.txt"
+    ],
+    "limitations": "Packed native and JS payloads not decoded."
+  },
+  {
+    "question": "Exported component security",
+    "status": "unresolved",
+    "evidence": [
+      "components.json"
+    ],
+    "limitations": "No vulnerability claim; input checks not traced."
+  },
+  {
+    "question": "Backend algorithms and server source",
+    "status": "unresolved",
+    "evidence": [],
+    "limitations": "Cannot fully recover from client APK."
+  }
+]

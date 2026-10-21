@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_c35082ede034d4e6fb0a7dae2684e12f5825e3a2346e5e99245c64c77df8207c",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C04a0",
+      "method": {
+        "name": "A03",
+        "reported_signature": "A03(com.instagram.common.session.UserSession, java.lang.String, int): X.02sG",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Lcom/instagram/common/session/UserSession;Ljava/lang/String;I)LX/02sG;"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    public static final C02sG A03(UserSession userSession, String str, int i) {\n        C05s2.A0V(userSession, 0);\n        C02sB c02sBA04 = C02rm.A01.A04(C0Jr8.A00, userSession, -2);\n        c02sBA04.A07(AnonymousClass0009.A0N);\n        c02sBA04.A0H = \"users/reel_settings/\";\n        if (i > 0) {\n            c02sBA04.A0C(\"blocked_reels_page_size\", i);\n        }\n        c02sBA04.A0F(\"blocked_reels_max_id\", str);\n        return c02sBA04.A0K();\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

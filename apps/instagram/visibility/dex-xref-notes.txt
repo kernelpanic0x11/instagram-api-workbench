@@ -1,0 +1,40 @@
+Focused DEX cross-reference findings
+
+Scope: all 23 root classes*.dex members in copied base.apk. 807,462 method code items decoded, zero instruction-width/decode failures. Scanner recognizes variable-width switch/array payloads, const-string, const-string/jumbo and selected invoke targets. Results are static sites, not observed execution. No phone, account, or server traffic inspected. Excludes native code, packed assets, dynamic code, string construction, and server-rendered responses.
+
+Account status launcher:
+X.0L1j.A00(FragmentActivity,X.0dIe,X.0Eto,UserSession,String,String):X.0RY3
+  Direct strings: location, viewer_id, enforcement_id, trigger_session_id,
+  com.bloks.www.ig.ixt.triggers.screen.ig_account_status.
+  Callers include AccountStatusUrlHandlerActivity.A2V, X.0IC8.A00,
+  X.0IC9.A00, X.0LJu.onClick, X.0NFF.B3T and X.0NXo.Ey7.
+X.0L1j.A02(Context,X.05B6,UserSession):void
+  Direct strings app_start, location, analytics_module,
+  users/get_recommendation_status_nudge/.
+This supplies a concrete network-route lead. Decompilation/dataflow still needed to establish exact request construction and response handling.
+
+General restriction-dialog lead:
+X.01pP.A00/A01 serialize/parse restriction_detail_use_case alongside
+restriction_type, enrollment_time, expiration_time, restriction_extra_data,
+dialogue_type, responsible_policy, category, error_code, reasons_thrown and
+feedback appeal/message/title fields. This is a broadly reused parser; its
+presence alone does not identify recommendation-specific enforcement.
+X.08uB.A0L(Object,Object):void contains the same restriction fields plus
+last_user_restriction_sentry_block_event and
+com.bloks.www.instagram.igwb.exp.enforcement.dialog.
+
+Correction to previous inference:
+All direct is_recommendable string references found belong to GroupMetadata
+serialization/parsing/map conversion, not an account-status response proven here.
+In X.0Y3h.A00(X.04s2,GroupMetadataImpl):void, code-unit 142 loads the literal,
+144 reads boolean GroupMetadataImpl.A0O, and 146 invokes X.04s2.A0a.
+Neighboring keys include group_fbid, group_pk, chat_thread_id, is_group,
+is_group_full, is_group_notes_allowed and is_viewer_admin. The exact field is
+therefore a group metadata boolean. Do not describe this literal as evidence
+of an account-level recommendation eligibility flag.
+
+Reproduction and evidence:
+  dex_refs.py -- focused parser and collector
+  dex-string-references.json -- all matching string sites, selected invocation
+    sites, nearby strings from focused methods, counts and decode errors
+  group-recommendable-field.json -- exact three-instruction field provenance

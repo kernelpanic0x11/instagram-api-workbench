@@ -1,0 +1,163 @@
+[
+  {
+    "apk": "base.apk",
+    "dex": "classes.dex",
+    "strings": 72709,
+    "defined_classes": 8424,
+    "method_ids": 59965
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes10.dex",
+    "strings": 43344,
+    "defined_classes": 9480,
+    "method_ids": 43308
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes11.dex",
+    "strings": 39187,
+    "defined_classes": 9745,
+    "method_ids": 42376
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes12.dex",
+    "strings": 36733,
+    "defined_classes": 9062,
+    "method_ids": 42943
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes13.dex",
+    "strings": 51947,
+    "defined_classes": 10957,
+    "method_ids": 49058
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes14.dex",
+    "strings": 57727,
+    "defined_classes": 12354,
+    "method_ids": 51530
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes15.dex",
+    "strings": 43527,
+    "defined_classes": 11146,
+    "method_ids": 52763
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes16.dex",
+    "strings": 58212,
+    "defined_classes": 11699,
+    "method_ids": 56742
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes17.dex",
+    "strings": 53172,
+    "defined_classes": 10941,
+    "method_ids": 51392
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes18.dex",
+    "strings": 67161,
+    "defined_classes": 11890,
+    "method_ids": 61110
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes19.dex",
+    "strings": 61634,
+    "defined_classes": 15132,
+    "method_ids": 57652
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes2.dex",
+    "strings": 79293,
+    "defined_classes": 9649,
+    "method_ids": 65504
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes20.dex",
+    "strings": 55054,
+    "defined_classes": 11159,
+    "method_ids": 57875
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes21.dex",
+    "strings": 16310,
+    "defined_classes": 2555,
+    "method_ids": 45574
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes22.dex",
+    "strings": 55953,
+    "defined_classes": 3464,
+    "method_ids": 53672
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes23.dex",
+    "strings": 328,
+    "defined_classes": 53,
+    "method_ids": 85
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes3.dex",
+    "strings": 68289,
+    "defined_classes": 7650,
+    "method_ids": 63324
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes4.dex",
+    "strings": 69867,
+    "defined_classes": 9838,
+    "method_ids": 65454
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes5.dex",
+    "strings": 67872,
+    "defined_classes": 11129,
+    "method_ids": 65503
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes6.dex",
+    "strings": 64739,
+    "defined_classes": 10172,
+    "method_ids": 65505
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes7.dex",
+    "strings": 67045,
+    "defined_classes": 10991,
+    "method_ids": 65486
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes8.dex",
+    "strings": 8226,
+    "defined_classes": 3041,
+    "method_ids": 10068
+  },
+  {
+    "apk": "base.apk",
+    "dex": "classes9.dex",
+    "strings": 40438,
+    "defined_classes": 9352,
+    "method_ids": 38376
+  }
+]

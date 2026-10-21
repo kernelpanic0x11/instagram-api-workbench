@@ -1,0 +1,67 @@
+[
+  {
+    "file": "base.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_arservicesforpersonsegmentation.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_config.xxhdpi.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_executorch.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_heliumcore.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_heliumiab.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_heliumiabexp.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_horizon.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_jumpcut.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_pytorch.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_slam.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_spm.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  },
+  {
+    "file": "split_supmediastreamcontroller.apk",
+    "sha256_matches_acquisition": true,
+    "zip_crc_error_member": null
+  }
+]

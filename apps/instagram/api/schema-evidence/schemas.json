@@ -1,0 +1,703 @@
+{
+  "components": {
+    "schemas": {
+      "RecommendationStatusNudgeResponse": {
+        "type": "object",
+        "description": "Partial client response model. The parser throws if show_recommendation_status_nudge is absent or unresolved; this is a display prompt flag, not a reach score.",
+        "properties": {
+          "show_recommendation_status_nudge": {
+            "description": "Client Boolean is unboxed; missing value causes parser failure.",
+            "x-evidence": [
+              {
+                "path": "visibility/nudge-response-parser.java",
+                "line": 10,
+                "excerpt": "boolA0c = C0C9W.A0c(c04s3, c01y9A0M, boolA0c, \"show_recommendation_status_nudge\");"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          "show_recommendation_status_nudge"
+        ]
+      },
+      "CommonRestrictionResponseFields": {
+        "type": "object",
+        "description": "Partial common response/error fields. General enforcement and challenges, not exclusively recommendations. Fields are not claimed present on every endpoint.",
+        "properties": {
+          "enrollment_time": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 40,
+                "excerpt": "if (str.equals(\"enrollment_time\") && (strA08 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "feedback_url": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 46,
+                "excerpt": "if (str.equals(\"feedback_url\") && (strA09 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "consent_data": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 52,
+                "excerpt": "if (str.equals(\"consent_data\") && c04s3.A1d() != C01yl.A0G && (c06ki = (C06KI) C0Kbt.A00.parseFromJsonParser(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "feedback_action": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 58,
+                "excerpt": "if (str.equals(\"feedback_action\") && (strA010 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "feedback_required": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 64,
+                "excerpt": "if (str.equals(\"feedback_required\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "dialogue_type": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 69,
+                "excerpt": "if (str.equals(\"dialogue_type\") && (strA011 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "client_facing_error_message": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 87,
+                "excerpt": "if (str.equals(\"client_facing_error_message\") && (strA014 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "restriction_type": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 93,
+                "excerpt": "if (str.equals(\"restriction_type\") && (strA015 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "can_see_notes": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 99,
+                "excerpt": "if (str.equals(\"can_see_notes\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "_messages": {
+            "description": "Array token explicitly checked; non-null elements delegated to X.0Kbr parser. Element schema unresolved.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 104,
+                "excerpt": "if (str.equals(\"_messages\") && c04s3.A1d() == C01yl.A0C) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": "array",
+            "items": {}
+          },
+          "can_see_broadcast_chats": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 116,
+                "excerpt": "if (str.equals(\"can_see_broadcast_chats\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "feedback_title": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 121,
+                "excerpt": "if (str.equals(\"feedback_title\") && (strA016 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_epd_error": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 127,
+                "excerpt": "if (str.equals(\"is_epd_error\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "lock": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 132,
+                "excerpt": "if (str.equals(\"lock\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "category": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 137,
+                "excerpt": "if (str.equals(\"category\") && (strA017 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "logout_reason": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 143,
+                "excerpt": "if (str.equals(\"logout_reason\") && (strA018 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "error_reason": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 149,
+                "excerpt": "if (str.equals(\"error_reason\") && (strA019 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "error_source": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 155,
+                "excerpt": "if (str.equals(\"error_source\") && (strA020 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "feedback_appeal_label": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 161,
+                "excerpt": "if (str.equals(\"feedback_appeal_label\") && (strA021 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "restriction_detail_use_case": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 167,
+                "excerpt": "if (str.equals(\"restriction_detail_use_case\") && (strA022 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expiration_time": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 173,
+                "excerpt": "if (str.equals(\"expiration_time\") && (strA023 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "feedback_message": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 179,
+                "excerpt": "if (str.equals(\"feedback_message\") && (strA024 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reasons_thrown": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 185,
+                "excerpt": "if (str.equals(\"reasons_thrown\") && (strA025 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sentry_block_restriction_dialogue_unification_enabled": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 196,
+                "excerpt": "if (str.equals(\"sentry_block_restriction_dialogue_unification_enabled\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "checkpoint_url": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 201,
+                "excerpt": "if (str.equals(\"checkpoint_url\") && (strA026 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "challenge": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 207,
+                "excerpt": "if (str.equals(\"challenge\") && c04s3.A1d() != C01yl.A0G && (c06kh = (C06KH) C0Kbs.A00.parseFromJsonParser(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "news_url_is_regulated": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 213,
+                "excerpt": "if (str.equals(\"news_url_is_regulated\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "error_body": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 218,
+                "excerpt": "if (str.equals(\"error_body\") && (strA027 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "error_code": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 224,
+                "excerpt": "if (str.equals(\"error_code\") && (strA028 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "error_type": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 230,
+                "excerpt": "if (str.equals(\"error_type\") && (strA029 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "responsible_policy": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 236,
+                "excerpt": "if (str.equals(\"responsible_policy\") && (strA030 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "feedback_ignore_label": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 242,
+                "excerpt": "if (str.equals(\"feedback_ignore_label\") && (strA031 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "restriction_extra_data": {
+            "description": "Parsed to Java String; null values are ignored. No timestamp/URI format or requiredness inferred.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 254,
+                "excerpt": "if (str.equals(\"restriction_extra_data\") && (strA033 = C01yt.A07(c04s3)) != null) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_spam": {
+            "description": "Field recognized by common response parser; delegated parser or accessor wire type not independently verified.",
+            "x-evidence": [
+              {
+                "path": "visibility/restriction-parser.java",
+                "line": 260,
+                "excerpt": "if (str.equals(\"is_spam\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          }
+        },
+        "additionalProperties": true,
+        "x-unknowns": [
+          "Obfuscated field names and symbolic constants not independently resolved are omitted.",
+          "A12 boolean-like accessors were not separately decoded; corresponding property types intentionally omitted.",
+          "Nested consent_data/challenge/message schemas and server requiredness are unresolved."
+        ]
+      },
+      "PublishResponse": {
+        "type": "object",
+        "description": "Partial response parsed by X.0ZMX into X.0XvS. Unknown fields delegated to common response parser X.01pP.A01. No server-required fields established.",
+        "properties": {
+          "max_cutout_sticker_limit": {
+            "description": "Recognized by client publish-response parser; optional presence in this parser.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/publish-response-parser.java",
+                "line": 18,
+                "excerpt": "if (!strA08.equals(\"max_cutout_sticker_limit\")) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "x-unknowns": [
+              "X.0025.A0H helper return type not independently decoded."
+            ]
+          },
+          "cooldown_time_in_seconds": {
+            "description": "Recognized by client publish-response parser; optional presence in this parser.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/publish-response-parser.java",
+                "line": 38,
+                "excerpt": "if (!strA08.equals(\"cooldown_time_in_seconds\")) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "x-unknowns": [
+              "X.0025.A0H helper return type not independently decoded; numeric-sounding name alone does not establish type."
+            ]
+          },
+          "retry_entire_upload_flow": {
+            "description": "Recognized by client publish-response parser; optional presence in this parser.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/publish-response-parser.java",
+                "line": 45,
+                "excerpt": "if (!strA08.equals(\"retry_entire_upload_flow\")) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "x-unknowns": [
+              "X.0025.A0D helper return type not independently decoded; boolean-sounding name alone does not establish type."
+            ]
+          },
+          "media": {
+            "description": "Delegated to Media parser. Nested schema and permitted wire token types unresolved.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/publish-response-parser.java",
+                "line": 52,
+                "excerpt": "if (!strA08.equals(\"media\")) {"
+              }
+            ],
+            "x-confidence": "observed"
+          },
+          "medias": {
+            "description": "JSON array token explicitly checked; element parser schema unresolved.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/publish-response-parser.java",
+                "line": 25,
+                "excerpt": "if (!strA08.equals(\"medias\")) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": "array",
+            "items": {}
+          },
+          "posts": {
+            "description": "JSON array token explicitly checked; element parser schema unresolved.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/publish-response-parser.java",
+                "line": 59,
+                "excerpt": "if (!strA08.equals(\"posts\")) {"
+              }
+            ],
+            "x-confidence": "observed",
+            "type": "array",
+            "items": {}
+          }
+        },
+        "additionalProperties": true,
+        "x-evidence": [
+          {
+            "path": "reels-trace/configure-response.java",
+            "line": 6,
+            "excerpt": "C05BK c05bk = (C05BK) C0ZMX.A00.parseFromJsonParser(c04s3);"
+          }
+        ],
+        "x-unknowns": [
+          "Symbolic comment field constant not independently resolved; omitted.",
+          "Obfuscated field X.0005.A00(904) omitted.",
+          "No HTTP status codes or auth requirements established."
+        ]
+      },
+      "TrialParams": {
+        "type": "object",
+        "description": "Serialized inner JSON object from X.0ROZ.A00. Request builder serializes this to text before attaching trial_params.",
+        "properties": {
+          "graduation_strategy": {
+            "description": "Serializer writes enum.toString(); emitted unconditionally when serializing this object. Server requiredness unknown.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/trial-params.java",
+                "line": 3,
+                "excerpt": "c04s2.A0Z(\"graduation_strategy\", c0P8u.A00.toString());"
+              },
+              {
+                "path": "reels-trace/trial-strategy-values.smali",
+                "line": 16,
+                "excerpt": "const-string v1, \"manual\""
+              }
+            ],
+            "x-confidence": "observed",
+            "type": "string",
+            "x-candidate-enum-values": [
+              "manual",
+              "ss_performance",
+              "time_limit",
+              "UNSET_OR_UNRECOGNIZED_ENUM_VALUE"
+            ],
+            "x-unknowns": [
+              "Enum constructor strings observed; toString body not available in saved sources, so a closed wire enum is not asserted."
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "x-client-emits": [
+          "graduation_strategy"
+        ]
+      },
+      "ConfigureRequestTrialFields": {
+        "type": "object",
+        "description": "Partial request-builder fields only; do not treat this as the complete configure payload.",
+        "properties": {
+          "trial_params": {
+            "description": "JSON-serialized TrialParams text is passed to request builder AQU. Final media type and transport encoding not established here.",
+            "x-evidence": [
+              {
+                "path": "reels-trace/configure-request.java",
+                "line": 1601,
+                "excerpt": "c02sBA00.AQU(C005P.A00(48), string17);"
+              },
+              {
+                "path": "reels-trace/upload/NOTES.txt",
+                "line": 21,
+                "excerpt": "Resolver method switch tables were inspected in raw DEX: X.005P.A00(48) maps trial_params, X.0005.A00(499) maps recommend_on_facebook, X.0005.A00(993) maps share_to_fb_destination_audience_type. resolver-call-candidates.json locates constant loads followed by relevant invoke-static; all reported examples place the constant immediately before the invoke. The scanner is intentionally incomplete for nonlocal or dynamically computed arguments."
+              }
+            ],
+            "x-confidence": "observed",
+            "type": "string",
+            "contentMediaType": "application/json",
+            "contentSchema": {
+              "$ref": "#/components/schemas/TrialParams"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "x-notes": [
+    "OpenAPI 3.1-compatible schema fragment; all objects permit unobserved fields.",
+    "Static client observations only. No API calls, live verification, authentication claims, methods, or HTTP statuses supplied.",
+    "Client decoded value types can differ from permissive parser wire coercions. Null explicitly allowed for ignored String fields.",
+    "Only recommendation nudge requiredness is asserted, because its parser throws.",
+    "trial-serializer.java is the entire draft persistence serializer; it is not treated as a network request schema."
+  ],
+  "x-source-files": {
+    "visibility/nudge-response-parser.java": {
+      "sha256": "0cda6af5296ff5dc9b16d6b5fba4c968c412255bf448069839d257722856cfef"
+    },
+    "visibility/restriction-parser.java": {
+      "sha256": "9434b72e47292f42cb6f93e2fc81fbda0bb7760f4282efa96b88159681a8f56e"
+    },
+    "reels-trace/publish-response-parser.java": {
+      "sha256": "543545b145a013d6ecca2950a62d1379d230d002d19b3c50438c36fae49acde3"
+    },
+    "reels-trace/configure-response.java": {
+      "sha256": "d77c63fa92207db5aff7c24b6ab2a939479b6920df2dde76ca229ec0f117b60d"
+    },
+    "reels-trace/trial-params.java": {
+      "sha256": "05d427a65b47e71cda43959a7205168852d98602ad5777d7afb229a001fb1261"
+    },
+    "reels-trace/trial-strategy-values.smali": {
+      "sha256": "673791cc337b642dc72d1b227749320ac41dda1e58d184e475fbae6f580c46c7"
+    },
+    "reels-trace/configure-request.java": {
+      "sha256": "68281ac0ece72e233d267631905b2c0e5a51b807dba800ab53e8739afcacf489"
+    },
+    "reels-trace/upload/NOTES.txt": {
+      "sha256": "4796145f46924be22d412520666ccb592e9db01387154eca3228fa7d3710d54d"
+    }
+  }
+}

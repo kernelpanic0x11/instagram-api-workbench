@@ -1,0 +1,132 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "REA Cognito managed sign-in. Application uses authorization code + PKCE and server-side sessions.",
+  "Parameters": {
+    "AppOrigin": {
+      "Type": "String",
+      "Default": "http://127.0.0.1:8787",
+      "AllowedPattern": "https://[a-zA-Z0-9.-]+(?::[0-9]+)?|http://(?:127\\.0\\.0\\.1|localhost):[0-9]+"
+    }
+  },
+  "Resources": {
+    "UserPool": {
+      "Type": "AWS::Cognito::UserPool",
+      "Properties": {
+        "UserPoolName": {
+          "Fn::Sub": "${AWS::StackName}-users"
+        },
+        "UsernameAttributes": ["email"],
+        "AutoVerifiedAttributes": ["email"],
+        "UsernameConfiguration": {
+          "CaseSensitive": false
+        },
+        "Schema": [
+          {
+            "Name": "email",
+            "Required": true,
+            "Mutable": true
+          },
+          {
+            "Name": "name",
+            "Required": false,
+            "Mutable": true
+          }
+        ],
+        "Policies": {
+          "PasswordPolicy": {
+            "MinimumLength": 12,
+            "RequireLowercase": true,
+            "RequireUppercase": true,
+            "RequireNumbers": true,
+            "RequireSymbols": true
+          }
+        },
+        "AccountRecoverySetting": {
+          "RecoveryMechanisms": [
+            {
+              "Name": "verified_email",
+              "Priority": 1
+            }
+          ]
+        },
+        "DeletionProtection": "ACTIVE",
+        "UserPoolTier": "ESSENTIALS"
+      },
+      "DeletionPolicy": "Retain",
+      "UpdateReplacePolicy": "Retain"
+    },
+    "Client": {
+      "Type": "AWS::Cognito::UserPoolClient",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "UserPool"
+        },
+        "ClientName": "REA web",
+        "GenerateSecret": false,
+        "SupportedIdentityProviders": ["COGNITO"],
+        "AllowedOAuthFlowsUserPoolClient": true,
+        "AllowedOAuthFlows": ["code"],
+        "AllowedOAuthScopes": ["openid", "email", "profile"],
+        "CallbackURLs": [
+          {
+            "Fn::Sub": "${AppOrigin}/auth/callback"
+          }
+        ],
+        "LogoutURLs": [
+          {
+            "Fn::Sub": "${AppOrigin}/"
+          }
+        ],
+        "AccessTokenValidity": 60,
+        "IdTokenValidity": 60,
+        "TokenValidityUnits": {
+          "AccessToken": "minutes",
+          "IdToken": "minutes"
+        },
+        "PreventUserExistenceErrors": "ENABLED",
+        "EnableTokenRevocation": true
+      }
+    },
+    "Domain": {
+      "Type": "AWS::Cognito::UserPoolDomain",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "UserPool"
+        },
+        "Domain": {
+          "Fn::Sub": "rea-${AWS::AccountId}-${AWS::Region}"
+        },
+        "ManagedLoginVersion": 2
+      }
+    },
+    "Branding": {
+      "Type": "AWS::Cognito::ManagedLoginBranding",
+      "Properties": {
+        "UserPoolId": {
+          "Ref": "UserPool"
+        },
+        "ClientId": {
+          "Ref": "Client"
+        },
+        "UseCognitoProvidedValues": true
+      }
+    }
+  },
+  "Outputs": {
+    "CognitoDomain": {
+      "Value": {
+        "Fn::Sub": "https://${Domain}.auth.${AWS::Region}.amazoncognito.com"
+      }
+    },
+    "CognitoUserPoolId": {
+      "Value": {
+        "Ref": "UserPool"
+      }
+    },
+    "CognitoClientId": {
+      "Value": {
+        "Ref": "Client"
+      }
+    }
+  }
+}

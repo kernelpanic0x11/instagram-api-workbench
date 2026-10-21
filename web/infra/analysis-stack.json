@@ -1,0 +1,387 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "REA isolated Fargate static-analysis workers. No task role, private artifacts, restricted worker egress.",
+  "Parameters": {
+    "WorkerImage": {
+      "Type": "String",
+      "Description": "Pinned ECR image URI including immutable tag or digest."
+    },
+    "VpcId": {
+      "Type": "AWS::EC2::VPC::Id"
+    },
+    "SubnetId": {
+      "Type": "AWS::EC2::Subnet::Id",
+      "Description": "Subnet with S3 access and an internet route for initial ECR access; task egress is restricted below."
+    },
+    "S3PrefixListId": {
+      "Type": "String",
+      "AllowedPattern": "pl-[a-f0-9]+",
+      "Description": "AWS managed S3 prefix list for this region."
+    }
+  },
+  "Resources": {
+    "Bucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        },
+        "OwnershipControls": {
+          "Rules": [
+            {
+              "ObjectOwnership": "BucketOwnerEnforced"
+            }
+          ]
+        },
+        "LifecycleConfiguration": {
+          "Rules": [
+            {
+              "Id": "CleanInterruptedJobs",
+              "Status": "Enabled",
+              "Prefix": "transient/",
+              "ExpirationInDays": 1,
+              "AbortIncompleteMultipartUpload": {
+                "DaysAfterInitiation": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "BucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "Bucket"
+        },
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Deny",
+              "Principal": "*",
+              "Action": "s3:*",
+              "Resource": [
+                {
+                  "Fn::GetAtt": ["Bucket", "Arn"]
+                },
+                {
+                  "Fn::Sub": "${Bucket.Arn}/*"
+                }
+              ],
+              "Condition": {
+                "Bool": {
+                  "aws:SecureTransport": "false"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Cluster": {
+      "Type": "AWS::ECS::Cluster",
+      "Properties": {
+        "ClusterName": {
+          "Fn::Sub": "${AWS::StackName}-analysis"
+        }
+      }
+    },
+    "Logs": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "RetentionInDays": 7
+      }
+    },
+    "TaskSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "REA worker: no ingress; HTTPS to S3 and private AWS endpoints only.",
+        "VpcId": {
+          "Ref": "VpcId"
+        },
+        "SecurityGroupEgress": [
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "DestinationPrefixListId": {
+              "Ref": "S3PrefixListId"
+            }
+          }
+        ]
+      }
+    },
+    "EndpointSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Private ECR and CloudWatch endpoints",
+        "VpcId": {
+          "Ref": "VpcId"
+        },
+        "SecurityGroupIngress": [
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "SourceSecurityGroupId": {
+              "Ref": "TaskSecurityGroup"
+            }
+          }
+        ],
+        "SecurityGroupEgress": [
+          {
+            "IpProtocol": "tcp",
+            "FromPort": 443,
+            "ToPort": 443,
+            "CidrIp": "127.0.0.1/32"
+          }
+        ]
+      }
+    },
+    "EndpointEgress": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "Properties": {
+        "GroupId": {
+          "Ref": "TaskSecurityGroup"
+        },
+        "IpProtocol": "tcp",
+        "FromPort": 443,
+        "ToPort": 443,
+        "DestinationSecurityGroupId": {
+          "Ref": "EndpointSecurityGroup"
+        }
+      }
+    },
+    "ExecutionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "PullImageAndWriteLogs",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": "ecr:GetAuthorizationToken",
+                  "Resource": "*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "ecr:BatchCheckLayerAvailability",
+                    "ecr:GetDownloadUrlForLayer",
+                    "ecr:BatchGetImage"
+                  ],
+                  "Resource": {
+                    "Fn::Sub": "arn:${AWS::Partition}:ecr:${AWS::Region}:${AWS::AccountId}:repository/rea-analysis"
+                  }
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": ["logs:CreateLogStream", "logs:PutLogEvents"],
+                  "Resource": {
+                    "Fn::Sub": "${Logs.Arn}:*"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "Task": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "Family": {
+          "Fn::Sub": "${AWS::StackName}-analysis"
+        },
+        "RequiresCompatibilities": ["FARGATE"],
+        "NetworkMode": "awsvpc",
+        "Cpu": "1024",
+        "Memory": "2048",
+        "ExecutionRoleArn": {
+          "Fn::GetAtt": ["ExecutionRole", "Arn"]
+        },
+        "RuntimePlatform": {
+          "CpuArchitecture": "X86_64",
+          "OperatingSystemFamily": "LINUX"
+        },
+        "Volumes": [
+          {
+            "Name": "work"
+          },
+          {
+            "Name": "tmp"
+          }
+        ],
+        "ContainerDefinitions": [
+          {
+            "Name": "analysis",
+            "Image": {
+              "Ref": "WorkerImage"
+            },
+            "Essential": true,
+            "User": "10001:10001",
+            "ReadonlyRootFilesystem": true,
+            "LinuxParameters": {
+              "Capabilities": {
+                "Drop": ["ALL"]
+              }
+            },
+            "MountPoints": [
+              {
+                "SourceVolume": "work",
+                "ContainerPath": "/work",
+                "ReadOnly": false
+              },
+              {
+                "SourceVolume": "tmp",
+                "ContainerPath": "/tmp",
+                "ReadOnly": false
+              }
+            ],
+            "LogConfiguration": {
+              "LogDriver": "awslogs",
+              "Options": {
+                "awslogs-group": {
+                  "Ref": "Logs"
+                },
+                "awslogs-region": {
+                  "Ref": "AWS::Region"
+                },
+                "awslogs-stream-prefix": "analysis"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "EcrApiEndpoint": {
+      "Type": "AWS::EC2::VPCEndpoint",
+      "Properties": {
+        "VpcId": {
+          "Ref": "VpcId"
+        },
+        "VpcEndpointType": "Interface",
+        "ServiceName": {
+          "Fn::Sub": "com.amazonaws.${AWS::Region}.ecr.api"
+        },
+        "SubnetIds": [
+          {
+            "Ref": "SubnetId"
+          }
+        ],
+        "SecurityGroupIds": [
+          {
+            "Ref": "EndpointSecurityGroup"
+          }
+        ],
+        "PrivateDnsEnabled": true
+      }
+    },
+    "EcrDockerEndpoint": {
+      "Type": "AWS::EC2::VPCEndpoint",
+      "Properties": {
+        "VpcId": {
+          "Ref": "VpcId"
+        },
+        "VpcEndpointType": "Interface",
+        "ServiceName": {
+          "Fn::Sub": "com.amazonaws.${AWS::Region}.ecr.dkr"
+        },
+        "SubnetIds": [
+          {
+            "Ref": "SubnetId"
+          }
+        ],
+        "SecurityGroupIds": [
+          {
+            "Ref": "EndpointSecurityGroup"
+          }
+        ],
+        "PrivateDnsEnabled": true
+      }
+    },
+    "CloudWatchEndpoint": {
+      "Type": "AWS::EC2::VPCEndpoint",
+      "Properties": {
+        "VpcId": {
+          "Ref": "VpcId"
+        },
+        "VpcEndpointType": "Interface",
+        "ServiceName": {
+          "Fn::Sub": "com.amazonaws.${AWS::Region}.logs"
+        },
+        "SubnetIds": [
+          {
+            "Ref": "SubnetId"
+          }
+        ],
+        "SecurityGroupIds": [
+          {
+            "Ref": "EndpointSecurityGroup"
+          }
+        ],
+        "PrivateDnsEnabled": true
+      }
+    }
+  },
+  "Outputs": {
+    "WorkerBucket": {
+      "Value": {
+        "Ref": "Bucket"
+      }
+    },
+    "WorkerCluster": {
+      "Value": {
+        "Ref": "Cluster"
+      }
+    },
+    "WorkerTaskDefinition": {
+      "Value": {
+        "Ref": "Task"
+      }
+    },
+    "WorkerSubnet": {
+      "Value": {
+        "Ref": "SubnetId"
+      }
+    },
+    "WorkerSecurityGroup": {
+      "Value": {
+        "Ref": "TaskSecurityGroup"
+      }
+    },
+    "ExecutionRoleArn": {
+      "Value": {
+        "Fn::GetAtt": ["ExecutionRole", "Arn"]
+      }
+    }
+  }
+}

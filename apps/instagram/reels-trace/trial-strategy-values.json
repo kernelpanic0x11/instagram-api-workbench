@@ -1,0 +1,52 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_a57966bea2a3fb8e8996cd175b4dd2928200beede42deaf8fd010fbd726ed11a",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0TMY",
+      "method": {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "()V"
+      },
+      "overload_count": 1,
+      "representation": "smali",
+      "body_status": "available",
+      "fell_back": true,
+      "markers": [
+        "static_initializer_disassembly"
+      ],
+      "source": {
+        "status": "complete",
+        "text": ".method public static constructor <clinit>()V\n    .registers 7\n\n    const-string v1, \"UNSET_OR_UNRECOGNIZED_ENUM_VALUE\"\n\n    const/4 v0, 0x0\n\n    new-instance v6, LX/0TMY;\n\n    invoke-direct {v6, v1, v0, v1}, LX/0TMY;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v6, LX/0TMY;->A05:LX/0TMY;\n\n    const/4 v2, 0x1\n\n    const-string v1, \"manual\"\n\n    const-string v0, \"MANUAL\"\n\n    new-instance v5, LX/0TMY;\n\n    invoke-direct {v5, v0, v2, v1}, LX/0TMY;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v5, LX/0TMY;->A03:LX/0TMY;\n\n    const/4 v2, 0x2\n\n    const-string v1, \"ss_performance\"\n\n    const-string v0, \"SS_PERFORMANCE\"\n\n    new-instance v4, LX/0TMY;\n\n    invoke-direct {v4, v0, v2, v1}, LX/0TMY;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    sput-object v4, LX/0TMY;->A04:LX/0TMY;\n\n    const/4 v3, 0x3\n\n    const-string v2, \"time_limit\"\n\n    const-string v1, \"TIME_LIMIT\"\n\n    new-instance v0, LX/0TMY;\n\n    invoke-direct {v0, v1, v3, v2}, LX/0TMY;-><init>(Ljava/lang/String;ILjava/lang/String;)V\n\n    filled-new-array {v6, v5, v4, v0}, [LX/0TMY;\n\n    move-result-object v0\n\n    sput-object v0, LX/0TMY;->A02:[LX/0TMY;\n\n    invoke-static {v0}, LX/05r3;->A00([Ljava/lang/Enum;)LX/05r4;\n\n    move-result-object v0\n\n    sput-object v0, LX/0TMY;->A01:Lkotlin/enums/EnumEntries;\n\n    return-void\n.end method",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

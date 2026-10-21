@@ -1,0 +1,105 @@
+---
+import { Icon } from 'astro-icon/components';
+import Image from '~/components/common/Image.astro';
+import Button from '~/components/ui/Button.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import { getColumnsClass } from '~/utils/utils';
+import type { Projects as Props } from '~/types';
+
+// Cards for a portfolio, a list of case studies or "our work": image, tags,
+// title, short description, an optional measurable result and a link.
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  columns = 3,
+  callToAction,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+const columnsClass = getColumnsClass(columns, '');
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <ul class:list={['grid gap-6 md:gap-8 list-none', columnsClass]}>
+    {
+      items.map(({ title: itemTitle, description, image, tags, href, result, linkText }) => {
+        const Card = href ? 'a' : 'div';
+        return (
+          <li class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+            <Card
+              href={href}
+              class:list={[
+                'group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-slate-700 dark:bg-slate-900 shadow-sm',
+                href ? 'transition hover:-translate-y-0.5 hover:shadow-lg hover:border-primary/40' : '',
+              ]}
+            >
+              {image &&
+                (typeof image === 'string' ? (
+                  <Fragment set:html={image} />
+                ) : (
+                  <div class="overflow-hidden">
+                    <Image
+                      class="aspect-[16/10] w-full object-cover transition group-hover:scale-[1.03]"
+                      widths={[400, 640]}
+                      sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 400px"
+                      width={400}
+                      height={250}
+                      layout="cover"
+                      format="webp"
+                      alt={itemTitle ?? ''}
+                      {...image}
+                    />
+                  </div>
+                ))}
+              <div class="flex flex-1 flex-col p-6">
+                {tags && tags.length > 0 && (
+                  <ul class="mb-3 flex flex-wrap gap-1.5 list-none">
+                    {tags.map((tag) => (
+                      <li class="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-muted dark:bg-slate-800">
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {itemTitle && <h3 class="text-xl font-bold text-heading">{itemTitle}</h3>}
+                {description && <p class="mt-2 text-muted text-pretty" set:html={description} />}
+                {result && (
+                  <p class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                    <Icon name="tabler:trending-up" class="h-4 w-4" />
+                    {result}
+                  </p>
+                )}
+                {href && (
+                  <span class="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-medium text-primary">
+                    {linkText ?? 'View project'}
+                    <Icon
+                      name="tabler:arrow-right"
+                      class="h-4 w-4 transition group-hover:translate-x-0.5 rtl:rotate-180"
+                    />
+                  </span>
+                )}
+              </div>
+            </Card>
+          </li>
+        );
+      })
+    }
+  </ul>
+  {
+    callToAction && (
+      <div class="mt-8 flex justify-center md:mt-12">
+        <Button {...callToAction} />
+      </div>
+    )
+  }
+</WidgetWrapper>

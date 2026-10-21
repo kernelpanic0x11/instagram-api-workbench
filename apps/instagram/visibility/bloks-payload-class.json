@@ -1,0 +1,198 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_e33de8c7177cd68f38abbf5c71817aa78f76a346d0d86d33a40b4dfeb549b66c",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0LFI",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(java.lang.String, java.util.Map, java.util.Map): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig, X.0LFI): X.0TOw",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;LX/0LFI;)LX/0TOw;"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig, X.0LFI, java.util.Map): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;LX/0LFI;Ljava/util/Map;)LX/0StF;"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(java.lang.String): X.0LFI",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;)LX/0LFI;"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(java.lang.String, java.util.Map): X.0LFI",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;)LX/0LFI;"
+        },
+        {
+          "name": "A04",
+          "reported_signature": "A04(java.lang.String, java.util.Map, java.util.Map): X.0LFI",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)LX/0LFI;"
+        },
+        {
+          "name": "A05",
+          "reported_signature": "A05(java.lang.String, java.util.Map, java.util.Map): X.0LFI",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)LX/0LFI;"
+        },
+        {
+          "name": "A06",
+          "reported_signature": "A06(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig, X.0LFI): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;LX/0LFI;)V"
+        },
+        {
+          "name": "A07",
+          "reported_signature": "A07(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig, java.lang.String, java.util.Map, java.util.Map): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;)V"
+        },
+        {
+          "name": "A08",
+          "reported_signature": "A08(X.0LFI, int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/0LFI;I)V"
+        },
+        {
+          "name": "A09",
+          "reported_signature": "A09(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig): X.0StF",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;)LX/0StF;"
+        },
+        {
+          "name": "A0A",
+          "reported_signature": "A0A(long): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(J)V"
+        },
+        {
+          "name": "A0B",
+          "reported_signature": "A0B(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;)V"
+        },
+        {
+          "name": "A0C",
+          "reported_signature": "A0C(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;)V"
+        },
+        {
+          "name": "A0D",
+          "reported_signature": "A0D(android.content.Context, com.instagram.bloks.hosting.IgBloksScreenConfig): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroid/content/Context;Lcom/instagram/bloks/hosting/IgBloksScreenConfig;)V"
+        },
+        {
+          "name": "A0E",
+          "reported_signature": "A0E(java.util.Map): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/util/Map;)V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "A00",
+          "reported_type": "int"
+        },
+        {
+          "name": "A01",
+          "reported_type": "long"
+        },
+        {
+          "name": "A02",
+          "reported_type": "android.util.SparseArray"
+        },
+        {
+          "name": "A03",
+          "reported_type": "X.0Amq"
+        },
+        {
+          "name": "A04",
+          "reported_type": "X.0Amq"
+        },
+        {
+          "name": "A05",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A06",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A07",
+          "reported_type": "java.util.Map"
+        },
+        {
+          "name": "A08",
+          "reported_type": "java.lang.String"
+        },
+        {
+          "name": "A09",
+          "reported_type": "java.util.List"
+        },
+        {
+          "name": "A0A",
+          "reported_type": "java.util.Map"
+        },
+        {
+          "name": "A0B",
+          "reported_type": "java.util.Map"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

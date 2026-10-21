@@ -1,0 +1,50 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_ac4f0b9da195e543470aeb108dbc9e797ae46061b9d0ee4c5efe8ef588a84fd5",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C0EoX",
+      "method": {
+        "name": "A0k",
+        "reported_signature": "A0k(java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": "(Ljava/lang/Object;)V"
+      },
+      "overload_count": 1,
+      "representation": "java",
+      "body_status": "available",
+      "fell_back": false,
+      "markers": [],
+      "source": {
+        "status": "complete",
+        "text": "    /* JADX WARN: Code duplicated, block: B:36:0x0156  */\n    /* JADX WARN: Code duplicated, block: B:38:0x0166  */\n    /* JADX WARN: Multi-variable type inference failed */\n    /* JADX WARN: Type inference failed for: r11v0, types: [X.0JQr] */\n    @Override // X.C05BI\n    public final /* bridge */ /* synthetic */ void A0k(Object obj) {\n        int iA03;\n        int i;\n        C05B6 c05b6;\n        String str;\n        String str2;\n        int i2;\n        int i3 = this.$t;\n        if (i3 == 0) {\n            iA03 = C05VE.A03(-320948054);\n            C0aui c0aui = (C0aui) obj;\n            int iA02 = C000H.A02(c0aui, -223769500);\n            C04Sf c04Sf = (C04Sf) c0aui.A00;\n            boolean zA1Y = AnonymousClass0020.A1Y(c04Sf.innerData.DH2(1331174208).length());\n            C0RIG c0rig = (C0RIG) this.A02;\n            C0RIG.A02(c0rig, zA1Y ? c04Sf.innerData.DH2(1331174208) : null, this.A03, this.A04, true);\n            if (zA1Y) {\n                Context contextRequireContext = c0rig.requireContext();\n                String strDH2 = c04Sf.innerData.DH2(-1466137445);\n                String strDH3 = c04Sf.innerData.DH2(2053365130);\n                C05s2.A0V(strDH2, 1);\n                C05s2.A0J(strDH3);\n                C0IIp c0IIpA0Y = AnonymousClass0224.A0Y(contextRequireContext, strDH3, strDH2);\n                c0IIpA0Y.A0D(new DialogInterface.OnClickListener() { // from class: X.0LHG\n                    @Override // android.content.DialogInterface.OnClickListener\n                    public final void onClick(DialogInterface dialogInterface, int i4) {\n                        dialogInterface.dismiss();\n                    }\n                });\n                C021X.A1Q(c0IIpA0Y);\n            } else {\n                ((C0OtX) this.A00).GSf();\n            }\n            C05VE.A0A(16261721, iA02);\n            i = -1146340038;\n        } else if (i3 == 1) {\n            iA03 = C05VE.A03(586964380);\n            int iA04 = C000H.A02(obj, -1412888564);\n            C05BI c05bi = (C05BI) this.A00;\n            if (c05bi != null) {\n                c05bi.A0k(obj);\n            }\n            C05VE.A0A(-2036493202, iA04);\n            i = 1879241187;\n        } else if (i3 != 2) {\n            iA03 = C05VE.A03(847212115);\n            ClipsItemDictIntf clipsItemDictIntf = (ClipsItemDictIntf) obj;\n            int iA05 = C05VE.A03(-1854710774);\n            C05s2.A0V(clipsItemDictIntf, 0);\n            super.A0k(clipsItemDictIntf);\n            Media mediaCgb = clipsItemDictIntf.Cgb();\n            if (mediaCgb.A6s() != null) {\n                C01jc.A0D(\"IGMediaActionComposerLauncher\", \"ig_media_action composer CTA resolved to expiring media\");\n                C0Ir7.A01((Context) this.A00, \"meta_ai_media_action_composer_expiring\", 2131972989, 0);\n                i2 = -394203081;\n            } else {\n                String str3 = this.A03;\n                if (\"remix\".equals(str3)) {\n                    C0Bca c0Bca = (C0Bca) C01lf.A01(114719);\n                    FragmentActivity fragmentActivity = (FragmentActivity) this.A00;\n                    List listA10 = AnonymousClass0224.A10(fragmentActivity);\n                    C05s2.A0C(listA10);\n                    Fragment fragment = (Fragment) C0BXD.A1N(listA10);\n                    if (fragment == null) {\n                        C01jc.A0D(\"IGMediaActionComposerLauncher\", \"No fragment to host the remix options sheet; opening the remix camera directly\");\n                        c0Bca.A00(fragmentActivity, fragmentActivity, C06up.A4Q, ((C0KSB) this.A02).A00, null, mediaCgb);\n                    } else {\n                        c0Bca.A01(fragment, fragmentActivity, C06up.A4Q, C02bQ.A01(\"direct_thread\", true, false), ((C0KSB) this.A02).A00, mediaCgb, null);\n                    }\n                } else if (\"template\".equals(str3)) {\n                    C0KSB c0ksb = (C0KSB) this.A02;\n                    C0D9e c0D9eAU4 = mediaCgb.AU4(\"itas-android\", 1368656848);\n                    C0Bqw c0Bqw = new C0Bqw(AnonymousClass0224.A0J(c0D9eAU4, \"itas-android\", 0, 1368656848), c0D9eAU4);\n                    String str4 = this.A04;\n                    Context context = (Context) this.A00;\n                    if (C049D.A02(c0ksb.A00, ConstantsKt.CAMERA_ID_FRONT)) {\n                        String str5 = (String) AnonymousClass0064.A0g(c0Bqw.A01, c0Bqw, 168);\n                        if (str5 != null) {\n                            str4 = str5;\n                        }\n                        C0KV0.A0I(context, C049D.A00(C06up.A4Q, str4), false);\n                    } else {\n                        C01jc.A0D(\"IGMediaActionComposerLauncher\", \"ig_media_action template CTA needs Edits installed\");\n                        C0Ir7.A01(context, \"meta_ai_media_action_template_no_edits\", 2131972989, 0);\n                    }\n                }\n                i2 = -143172633;\n            }\n            C05VE.A0A(i2, iA05);\n            i = 525096545;\n        } else {\n            iA03 = C05VE.A03(-1161786413);\n            C0Flo c0Flo = (C0Flo) obj;\n            int iA06 = C05VE.A03(-1814287329);\n            C05s2.A0V(c0Flo, 0);\n            final UserSession userSession = (UserSession) this.A00;\n            C03dR.A00().markerPoint(387850546, \"network_request_success\");\n            if (C021X.A0J(c0Flo, \"ig4a-instagram-schema\", 2117425378, 0).DGk(-2053018862)) {\n                c05b6 = (C05B6) this.A02;\n                str = this.A03;\n                str2 = this.A04;\n                if (C01oK.A01(c05b6)) {\n                    C03dR.A00().markerPoint(387850546, \"nudge_will_show\");\n                    new C05uB(userSession).A00(c05b6, null, new Object() { // from class: X.0JQr\n                    }, \"com.bloks.www.ig.account_status.nudge.async\", AnonymousClass0225.A0z(AnonymousClass0234.A00(), str2, C000H.A0Z(\"location\", str), C000H.A0Z(\"analytics_module\", \"app_start\")));\n                }\n            } else {\n                C05Nh c05NhA01 = C05Nh.A6Y.A01((Context) this.A01);\n                if (AnonymousClass0127.A1Y(c05NhA01, c05NhA01.A2M, C05Nh.A6a, 175)) {\n                    c05b6 = (C05B6) this.A02;\n                    str = this.A03;\n                    str2 = this.A04;\n                    if (C01oK.A01(c05b6)) {\n                        C03dR.A00().markerPoint(387850546, \"nudge_will_show\");\n                        new C05uB(userSession).A00(c05b6, null, new Object() { // from class: X.0JQr\n                        }, \"com.bloks.www.ig.account_status.nudge.async\", AnonymousClass0225.A0z(AnonymousClass0234.A00(), str2, C000H.A0Z(\"location\", str), C000H.A0Z(\"analytics_module\", \"app_start\")));\n                    }\n                } else {\n                    C03dR.A00().markerEnd(387850546, (short) 2);\n                }\n            }\n            C05VE.A0A(-1409198850, iA06);\n            i = 238852141;\n        }\n        C05VE.A0A(i, iA03);\n    }",
+        "reported_total_bytes": null
+      }
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "derived"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

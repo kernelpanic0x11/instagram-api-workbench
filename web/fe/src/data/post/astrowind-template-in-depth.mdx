@@ -1,0 +1,69 @@
+---
+publishDate: 2026-07-27T00:00:00Z
+title: How the AstroWind Astro Template Works Under the Hood
+excerpt: How the AstroWind template works internally. The config integration, permalinks and base path, the blog pipeline, image handling, metadata and the build.
+image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+imageAlt: The inside of a mechanical watch movement
+category: Documentation
+tags:
+  - astro
+  - tailwind css
+  - front-end
+---
+
+You can use AstroWind for months without opening anything outside `src/pages`, `src/data/post` and `config.yaml`. This post is for the day you want to know why something works the way it does: you are debugging a URL, adding a content source, or deciding how far to trust the template before building on it. It follows a request from configuration to the built HTML. If you are still setting up, the [getting started guide](/get-started-website-with-astro-tailwind-css) comes first.
+
+## The integration and `astrowind:config`
+
+`vendor/integration/index.ts` is a small Astro integration registered in `astro.config.ts`. When the config is set up it reads `src/config.yaml`, normalizes it and exposes the result as a virtual module:
+
+```ts
+import { SITE, METADATA, APP_BLOG, I18N, UI } from 'astrowind:config';
+```
+
+Any component can import these constants; there is no runtime lookup and no prop drilling. The same integration pushes `site`, `base` and `trailingSlash` from the YAML into Astro's own config, so the sitemap, the RSS feed and canonical URLs all agree with one source, and after the build it points `robots.txt` at the generated sitemap.
+
+## Permalinks and the base path
+
+Every internal link in the template goes through `src/utils/permalinks.ts`. `getPermalink(slug, type)` builds the path for a page, a post, a category, a tag or an asset, prefixes the `base` from the config and applies the `trailingSlash` policy. This is what makes deploying under a sub-folder mostly a configuration change: set `base: '/handbook'` and every link, image and feed moves with it. The `deploy-with-base-path` skill covers the few values that must not go through `getPermalink()` twice.
+
+Post URLs come from the `apps.blog.post.permalink` pattern in `config.yaml`. The default `/%slug%` puts posts at the root; `/blog/%year%/%month%/%slug%` or `/%category%/%slug%` work too, because the pattern is expanded per post when the collection is loaded. The list, category and tag paths are configurable in the same block, and each route can be disabled or marked `noindex` individually.
+
+## The blog pipeline: from Markdown to pages
+
+Posts are an Astro content collection defined in `src/content.config.ts`: a `glob` loader over `src/data/post/*.md` and `*.mdx` with a schema for the front matter.
+
+`src/utils/blog.ts` loads the collection once per build, normalizes each entry (slugified category and tags, the permalink from the pattern above, the reading time computed during Markdown processing), sorts by date and drops drafts. The route files in `src/pages/[...blog]/` call helpers from the same module to generate the list with pagination, every post, and the category and tag pages. Related posts are chosen by shared tags and category. The blog is always prerendered.
+
+Markdown goes through two small plugins declared in `astro.config.ts`: one adds the reading time to the front matter, the other wraps tables so they scroll horizontally on narrow screens instead of breaking the layout. Code blocks are highlighted by Shiki with two themes, one for light and one for dark mode.
+
+## Images: how Astro optimizes local and remote files
+
+`src/components/common/Image.astro` is the one image component used everywhere, and it takes two paths depending on the source:
+
+- **Local images** (`~/assets/images/...` or an ESM import) are handed to Astro's `<Image />` from `astro:assets`. Sharp resizes them at build time into the `widths` you request, converts them to WebP (the template's default; `format` can ask for AVIF) and writes them to `dist/_astro/` with hashed names.
+- **Remote images** on a known CDN (Unsplash, Cloudinary, Imgix and the other providers `unpic` understands) are not downloaded. The component rewrites the URL with the CDN's own resizing parameters and builds a `srcset` from them, so the browser fetches the right size straight from the CDN.
+
+`src/utils/images.ts` resolves string paths to imported assets and prepares the Open Graph images, which need absolute URLs and fixed dimensions.
+
+## Metadata: how titles, canonicals and Open Graph are built
+
+`src/components/common/Metadata.astro` merges three layers: the defaults from `config.yaml`, the `metadata` object a page passes to its layout, and for posts the front matter. The merged result goes to `astro-seo`, which prints the title (with the `%s — Site` template), description, robots directives, canonical link, Open Graph and Twitter tags; posts add `article:published_time`, `article:modified_time`, section and tags. `getCanonical()` derives the canonical URL from the page path, so pages should not hardcode one unless the content also lives elsewhere.
+
+Structured data comes in three flavors: every post emits `BlogPosting` and `BreadcrumbList` JSON-LD; the `FAQs` widget emits `FAQPage` when given `schema`; anything else (Organization, Product, HowTo) is a small script in the page, placed through the layout's `head` slot as described in `.agents/skills/add-structured-data.md`.
+
+## The layout and the client
+
+`src/layouts/Layout.astro` is the HTML shell. In order: the fonts (self-hosted through Astro's Fonts API), the palette from `CustomStyles.astro`, an inline script that sets the `dark` class before the first paint from `localStorage` or the `ui.theme` setting, the metadata, site verification and analytics (Google Analytics, off until you set an id; a Partytown integration is wired up but disabled by default), and `<ClientRouter />` for view transitions.
+
+The template ships very little JavaScript, and what it ships is written as custom elements so it survives client-side navigation without manual re-initialization. The header keeps its state between pages and is swapped when a page brings its own menu; the reveal-on-scroll animations behind the `intersect-*` utility classes are one small observer; each interactive widget (tabs, pricing toggle, gallery lightbox, countdown, video, sticky call to action) ships as its own custom element of a few dozen lines, with a static fallback when scripts do not run. The FAQ accordion needs no script at all: it is a native `<details>` group.
+
+## Styling: Tailwind v4 tokens and `CustomStyles.astro`
+
+Tailwind CSS 4 is configured in CSS, not JavaScript: `src/assets/styles/tailwind.css` re-exports the `--aw-*` palette from `CustomStyles.astro` as Tailwind tokens, declares the `dark` and `intersect` variants, the button utilities and the typography plugin for post content. `shadcn.css`, imported from it, maps the same variables to the token names shadcn/ui components expect. How to change the palette, the fonts and the logo is the subject of the [customization guide](/how-to-customize-astrowind-to-your-brand).
+
+## The build: what Astro emits
+
+`npm run build` runs Astro's static build. The sitemap integration writes `sitemap-index.xml` with every page (search engines decide what to index from each page's robots meta tag); `rss.xml.ts` writes the feed from the same post list the blog uses; the HTML, CSS and JavaScript are minified; the integration updates `robots.txt`. The result in `dist/` is plain files, with no server component and no environment variables required.
+
+If you want to change how any of this works, the places to look are `vendor/integration/` for configuration, `src/utils/` for permalinks, posts and images, and `src/layouts/Layout.astro` for what every page loads. Everything else is a widget, and an [AI coding assistant](/build-websites-with-ai) that has read `AGENTS.md` knows this map too.

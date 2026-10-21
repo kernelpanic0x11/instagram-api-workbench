@@ -1,0 +1,312 @@
+{
+  "structuredContent": {
+    "evidence_id": "ev_fb4843ad45f47f4e4a6a7c035ab30a4dde8a5e10324866035664e8e2f300f11a",
+    "subject": {
+      "name": "base.apk",
+      "digest": {
+        "sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+      },
+      "format": "apk",
+      "architecture": null
+    },
+    "normalized_result": {
+      "engine": {
+        "name": "jadx-headless-mcp",
+        "version": "0.7.1",
+        "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+        "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+        "worker_count": 1,
+        "heap_limit_mib": 4096
+      },
+      "class_name": "X.C08uB",
+      "methods": [
+        {
+          "name": "<init>",
+          "reported_signature": "<init>(java.lang.Object, int): void",
+          "overload_index": 0,
+          "is_constructor": true,
+          "dex_descriptor": "(Ljava/lang/Object;I)V"
+        },
+        {
+          "name": "A00",
+          "reported_signature": "A00(int, java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(ILjava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A01",
+          "reported_signature": "A01(androidx.fragment.app.Fragment, X.00H1, int, int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Landroidx/fragment/app/Fragment;LX/00H1;II)V"
+        },
+        {
+          "name": "A02",
+          "reported_signature": "A02(X.00kM, int, int, int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(LX/00kM;III)V"
+        },
+        {
+          "name": "A03",
+          "reported_signature": "A03(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A04",
+          "reported_signature": "A04(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A05",
+          "reported_signature": "A05(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A06",
+          "reported_signature": "A06(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A07",
+          "reported_signature": "A07(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A08",
+          "reported_signature": "A08(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A09",
+          "reported_signature": "A09(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0A",
+          "reported_signature": "A0A(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0B",
+          "reported_signature": "A0B(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0C",
+          "reported_signature": "A0C(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0D",
+          "reported_signature": "A0D(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0E",
+          "reported_signature": "A0E(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0F",
+          "reported_signature": "A0F(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0G",
+          "reported_signature": "A0G(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0H",
+          "reported_signature": "A0H(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0I",
+          "reported_signature": "A0I(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0J",
+          "reported_signature": "A0J(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0K",
+          "reported_signature": "A0K(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0L",
+          "reported_signature": "A0L(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0M",
+          "reported_signature": "A0M(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0N",
+          "reported_signature": "A0N(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0O",
+          "reported_signature": "A0O(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0P",
+          "reported_signature": "A0P(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0Q",
+          "reported_signature": "A0Q(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0R",
+          "reported_signature": "A0R(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0S",
+          "reported_signature": "A0S(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0T",
+          "reported_signature": "A0T(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0U",
+          "reported_signature": "A0U(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0V",
+          "reported_signature": "A0V(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0W",
+          "reported_signature": "A0W(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0X",
+          "reported_signature": "A0X(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0Y",
+          "reported_signature": "A0Y(java.lang.Object, java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "name": "A0Z",
+          "reported_signature": "A0Z(java.lang.Object, java.lang.Object, int): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;Ljava/lang/Object;I)V"
+        },
+        {
+          "name": "FRn",
+          "reported_signature": "FRn(java.lang.Object): void",
+          "overload_index": 0,
+          "is_constructor": false,
+          "dex_descriptor": "(Ljava/lang/Object;)V"
+        }
+      ],
+      "fields": [
+        {
+          "name": "$t",
+          "reported_type": "int"
+        },
+        {
+          "name": "A00",
+          "reported_type": "java.lang.Object"
+        }
+      ],
+      "inner_classes": []
+    },
+    "limitations": [
+      "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+      "Method signatures use provider display types; DEX prototypes come from frozen JADX metadata. Display names may be aliases, and overload indices are local to this engine and artifact.",
+      "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+      "Incoming reference totals count JADX using nodes. Direct invoke entries within a using method report raw DEX code-unit offsets and method indexes, but coverage is limited to those nodes and directly matched invokes; it does not establish every possible dynamic or reflective call site.",
+      "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+    ],
+    "confidence": "observed"
+  },
+  "x-public-export": "REA normalized evidence; raw provider transcript and local process/device metadata omitted."
+}

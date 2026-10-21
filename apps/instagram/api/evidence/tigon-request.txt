@@ -1,0 +1,164 @@
+    /* JADX WARN: Code duplicated, block: B:136:0x02b2  */
+    /* JADX WARN: Code duplicated, block: B:8:0x0021  */
+    /* JADX WARN: Code duplicated, block: B:98:0x01d9  */
+    public final TigonRequest makeTigonRequest(C01xO c01xO, C01xD c01xD, int i) {
+        String string;
+        HashMap map;
+        boolean z;
+        C00DO c00do;
+        String strA0l;
+        List listA0w;
+        boolean z2;
+        C05s2.A0V(c01xO, 0);
+        C05s2.A0V(c01xD, 1);
+        boolean z3 = c01xO.A0C;
+        if (!this.igTigonConfig.requireExplicitReplaySafe) {
+            Integer num = c01xO.A06;
+            if (num != AnonymousClass0009.A0N) {
+                z2 = num == AnonymousClass0009.A00;
+            }
+            z3 = z3 || (z2 && c01xO.A05 == null);
+        }
+        C0PiU c0PiU = c01xO.A04;
+        IGTigonAuthHandler iGTigonAuthHandler = c0PiU != null ? new IGTigonAuthHandler(c0PiU, this.tigonUnexpectedErrorReporter) : null;
+        Map mapUnmodifiableMap = Collections.unmodifiableMap(c01xD.A09.A00);
+        C01Ah c01Ah = new C01Ah();
+        c01Ah.A00 = new LinkedHashMap(mapUnmodifiableMap);
+        String strA04 = C03ck.A00.A04();
+        String str = (strA04 == null || (strA0l = C05t8.A0l(strA04, InbandTelemetryBweEstimate.COMPACT_DEBUG_STR_DELIMITER_LEVEL_1, strA04)) == null || (listA0w = C05t8.A0w(strA0l, new String[]{":"}, 0)) == null) ? null : (String) C0BXD.A1Q(listA0w, 1);
+        TigonPropertyContainer tigonPropertyContainer = c01xD.A0A;
+        C00DN c00dn = C00zY.A0A;
+        Object obj = tigonPropertyContainer.properties.get(25);
+        Object obj2 = (!(obj instanceof C00DO) || (c00do = (C00DO) obj) == null) ? null : c00do.A01;
+        if (!(obj2 instanceof String)) {
+            obj2 = null;
+        }
+        String str2 = (String) obj2;
+        if (str2 == null) {
+            str2 = "";
+        }
+        String strA0P = str2.length() == 0 ? TAG : AnonymousClass0003.A0P(str2, "::TigonServiceLayer");
+        String str3 = (String) this.networkTypeProvider.invoke();
+        int iOrdinal = c01xD.A00().ordinal();
+        C00DL c00dl = iOrdinal != 1 ? iOrdinal != 2 ? C00DL.NONE : C00DL.FETCH : C00DL.PREFETCH;
+        C01xB c01xB = c01xD.A0D;
+        String str4 = c01xB != null ? c01xB.A0C : null;
+        if (str4 != null) {
+            Map mapA0N = C05q4.A0N(new C05nX("videoId", str4));
+            C05s2.A0V(mapA0N, 0);
+            c01Ah.A00.putAll(mapA0N);
+        }
+        if (this.logAppStartApplicationTags) {
+            C05Db c05Db = C05Dc.A00;
+            if (C01qr.A03(c05Db).A04 != null) {
+                StringBuilder sb = new StringBuilder();
+                C03hb c03hb = C01qr.A03(c05Db).A04;
+                C02oA c02oA = c03hb != null ? c03hb.A0N : null;
+                StringBuilder sb2 = new StringBuilder("{\"app_start_tag\":\"");
+                sb2.append(c02oA);
+                sb.append(sb2.toString());
+                C01Ai c01Ai = c01xD.A0B;
+                if ((c01Ai != null && c01Ai.A04) || (c01xB != null && c01xB.A08)) {
+                    sb.append(":is_first_media");
+                }
+                sb.append("\"}");
+                string = sb.toString();
+            } else {
+                string = "";
+            }
+        } else {
+            string = "";
+        }
+        C02dq c02dq = new C02dq();
+        if (c01xB != null) {
+            c02dq.put("videoId", c01xB.A0C);
+            c02dq.put("videoStreamType", c01xB.A06);
+            c02dq.put("isFirstVideo", c01xB.A08 ? "1" : ConstantsKt.CAMERA_ID_FRONT);
+            c02dq.put("videoIsFullLengthFetch", "OFFLINE".equals(c01xB.A07) ? "true" : "false");
+            Integer num2 = c01xB.A03;
+            if (num2 != null) {
+                c02dq.put("videoBufferDurationMs", String.valueOf(num2.intValue()));
+            }
+            String str5 = c01xB.A04;
+            if (str5 != null) {
+                c02dq.put("videoFormatId", str5);
+            }
+            String str6 = c01xB.A05;
+            if (str6 != null) {
+                c02dq.put("videoQualityLabel", str6);
+            }
+        }
+        C02dq c02dqA06 = c02dq.A06();
+        String strA00 = C01xX.A00(c01xO.A06);
+        String string2 = c01xO.A09.toString();
+        C05s2.A0C(string2);
+        TigonRequestBuilder tigonRequestBuilder = new TigonRequestBuilder(strA00, string2);
+        List<C03be> list = c01xO.A0A;
+        ArrayList arrayList = new ArrayList(C05p9.A0K(list, 10));
+        for (C03be c03be : list) {
+            String str7 = c03be.A00;
+            if (str7 == null) {
+                C05s2.A07();
+                throw AnonymousClass0002.createAndThrow();
+            }
+            String str8 = c03be.A01;
+            if (str8 == null) {
+                C05s2.A07();
+                throw AnonymousClass0002.createAndThrow();
+            }
+            arrayList.add(new C05nX(str7, str8));
+        }
+        tigonRequestBuilder.addHeaders(C01qc.A06(arrayList));
+        tigonRequestBuilder.setRequestCategory(C01yV.A00(c01xD));
+        tigonRequestBuilder.purpose = c00dl;
+        tigonRequestBuilder.setFriendlyNameAndTags(getFriendlyName(c01xD), string, "");
+        tigonRequestBuilder.addLayerInformation(C00HV.A00, new C01yY(new C01yX("", null), c02dqA06));
+        tigonRequestBuilder.addLayerInformation(C00HV.A01, c01Ah);
+        tigonRequestBuilder.startupStatusOnAdded = C01yZ.A00(c01xD.A04);
+        tigonRequestBuilder.retryable = c01xO.A0D;
+        tigonRequestBuilder.replaySafe = z3;
+        tigonRequestBuilder.authHandler = iGTigonAuthHandler;
+        tigonPropertyContainer.copyPropertiesTo(tigonRequestBuilder);
+        tigonRequestBuilder.setProperty(C00zY.A0I, c01xD.A0H);
+        tigonRequestBuilder.setProperty(c00dn, strA0P);
+        if (str != null) {
+            tigonRequestBuilder.setProperty(C00zY.A08, str);
+        }
+        if (str3.length() > 0) {
+            tigonRequestBuilder.setProperty(C00zY.A09, str3);
+        }
+        long j = c01xD.A02;
+        if (j > 0) {
+            tigonRequestBuilder.setIdleTimeoutMS(j);
+        }
+        if (this.performanceLogger.useXplatMNSQPLObserver) {
+            tigonRequestBuilder.setProperty(C00zY.A0B, i);
+            if (!this.performanceLogger.mnsQplObserverOwnsMarker) {
+                tigonRequestBuilder.setProperty(C00zY.A07, true);
+            }
+        }
+        synchronized (c01xD) {
+            Map map2 = c01xD.A0I;
+            map = map2 != null ? new HashMap(map2) : null;
+        }
+        if (map != null) {
+            tigonRequestBuilder.setProperty(C00zY.A0C, map);
+        }
+        long j2 = c01xB != null ? c01xB.A00 : -1L;
+        boolean z4 = c01xD.A08 == C00DL.PREFETCH;
+        if (c01xB != null) {
+            z = "DASH_AUDIO".equals(c01xB.A06);
+        }
+        if (j2 > 0) {
+            IGTigonConfig iGTigonConfig = this.igTigonConfig;
+            if (iGTigonConfig.enableAbrBweInPriorityHeader && ((!z4 || iGTigonConfig.enablePrefetchAbrBweInPriorityHeader) && ((c01xB == null || !c01xB.A09) && (!z || iGTigonConfig.enableAudioAbrBweInPriorityHeader)))) {
+                long j3 = (long) (j2 * (z4 ? iGTigonConfig.prefetchRequiredBpsScaleFactor : iGTigonConfig.requiredBpsScaleFactor));
+                if (j3 > 0) {
+                    tigonRequestBuilder.setProperty(C00zY.A00, j3);
+                }
+            }
+        }
+        tigonRequestBuilder.httpPriority = new C00DI((byte) c01xO.A00, c01xO.A02);
+        tigonRequestBuilder.httpPriorityContext = IGHttpPriorityContext.A00(c01xD, this.session);
+        return tigonRequestBuilder.build();
+    }

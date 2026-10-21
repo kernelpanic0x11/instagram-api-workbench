@@ -1,0 +1,3115 @@
+// [jadx java-decompile failed → smali]
+// target: X.04x6.A02
+// markers: Code decompiled incorrectly, please refer to instructions dump
+// (Java body was an anti-decompile stub; showing smali. Pass smali_fallback=false for the partial Java.)
+
+.method public final A02()LX/02uC;
+    .registers 29
+
+    move-object/from16 v7, p0
+
+    iget-object v6, v7, LX/04x6;->A0c:LX/05Dd;
+
+    invoke-static {v6}, LX/03cf;->A01(LX/05Dd;)Ljava/lang/String;
+
+    move-result-object v20
+
+    iget-object v0, v7, LX/04x6;->A09:Ljava/lang/Integer;
+
+    sget-object v8, LX/0009;->A00:Ljava/lang/Integer;
+
+    if-eq v0, v8, :cond_1a
+
+    instance-of v0, v6, Lcom/instagram/common/session/UserSession;
+
+    if-nez v0, :cond_1a
+
+    const-string v0, "Must have a logged in session object in order to cache an API response"
+
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    :cond_19
+    throw v1
+
+    :cond_1a
+    const-wide/16 v16, 0x1
+
+    invoke-static/range {v16 .. v17}, Lcom/facebook/systrace/Systrace;->A0F(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2a
+
+    const v1, 0x542eab44    # 3.0007907E12f
+
+    const-string v0, "buildHttpRequest"
+
+    invoke-static {v0, v1}, LX/01kc;->A01(Ljava/lang/String;I)V
+
+    :cond_2a
+    :try_start_2a
+    const-string v23, "%.3f"
+
+    iget-object v2, v7, LX/04x6;->A0H:Ljava/lang/String;
+
+    if-eqz v2, :cond_b30
+
+    iget-object v3, v7, LX/04x6;->A0A:Ljava/lang/Integer;
+
+    if-eqz v3, :cond_b2a
+
+    iget-object v0, v7, LX/04x6;->A0K:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    const/4 v5, 0x0
+
+    const/16 v22, 0x0
+
+    if-nez v0, :cond_e2
+
+    iget-object v11, v7, LX/04x6;->A0K:Ljava/util/List;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v14
+
+    const/4 v13, 0x0
+
+    :goto_4b
+    invoke-interface {v14}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_80
+
+    invoke-interface {v14}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v9, 0x0
+
+    :goto_5a
+    invoke-virtual {v10}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-ge v9, v0, :cond_7a
+
+    invoke-virtual {v10, v9}, Ljava/lang/String;->charAt(I)C
+
+    move-result v1
+
+    iget-object v12, v7, LX/04x6;->A0e:Ljava/util/Set;
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v0
+
+    invoke-interface {v12, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_77
+
+    const/16 v0, 0x2a
+
+    if-eq v1, v0, :cond_7c
+
+    add-int/lit8 v13, v13, 0x1
+
+    goto :goto_7c
+
+    :cond_77
+    add-int/lit8 v9, v9, 0x1
+
+    goto :goto_5a
+
+    :cond_7a
+    const/16 v1, 0x2a
+
+    :cond_7c
+    :goto_7c
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto :goto_4b
+
+    :cond_80
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v9
+
+    if-lez v9, :cond_a5
+
+    iget-object v4, v7, LX/04x6;->A0a:LX/0Pct;
+
+    const v1, 0x99127e
+
+    const-string v0, "IGAPI path with encoded chars found."
+
+    invoke-interface {v4, v0, v1}, LX/0Pct;->AXU(Ljava/lang/String;I)LX/0opw;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_9e
+
+    invoke-interface {v0}, LX/0opw;->report()V
+
+    :cond_9e
+    invoke-interface {v11}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    invoke-direct {v7, v2, v0, v9, v10}, LX/04x6;->A01(Ljava/lang/String;IILjava/lang/String;)V
+
+    :cond_a5
+    iget-object v0, v7, LX/04x6;->A0K:Ljava/util/List;
+
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_b0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_cb
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "UTF-8"
+
+    invoke-static {v1, v0}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    invoke-virtual {v4, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_b0
+
+    :cond_cb
+    iget-object v2, v7, LX/04x6;->A0G:Ljava/lang/String;
+
+    if-eqz v2, :cond_fa
+
+    new-array v0, v5, [Ljava/lang/Object;
+
+    invoke-virtual {v4, v0}, Ljava/util/AbstractCollection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v1
+
+    array-length v0, v1
+
+    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_de
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    :cond_e2
+    sget-object v19, LX/05Dc;->A00:LX/05Db;
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    const/16 v18, 0x0
+
+    const-string v10, "feed/timeline/"
+
+    invoke-virtual {v2, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_fd
+
+    const-string v0, "feed/text_post_app_timeline/"
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_ff
+
+    goto :goto_fd
+
+    :cond_fa
+    move-object/from16 v0, v22
+
+    goto :goto_de
+
+    :cond_fd
+    :goto_fd
+    const/16 v18, 0x1
+
+    :cond_ff
+    if-eqz v18, :cond_10c
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    move-result-object v4
+
+    const-string v1, "FEED_REQUEST_BUILD_START"
+
+    iget-object v0, v4, LX/01qr;->A00:Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;
+
+    invoke-virtual {v4, v0, v1}, LX/01qr;->A0W(Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;Ljava/lang/String;)V
+
+    :cond_10c
+    const-string v9, "DeviceStatusApiUtil"
+    :try_end_10e
+    .catchall {:try_start_2a .. :try_end_10e} :catchall_b3f
+
+    :try_start_10e
+    iget-object v4, v7, LX/04x6;->A0H:Ljava/lang/String;
+
+    if-eqz v4, :cond_1d2
+
+    sget-boolean v0, LX/02sJ;->A00:Z
+
+    if-eqz v0, :cond_1e0
+
+    const-string v0, "clips/"
+
+    invoke-static {v4, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_134
+
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v11
+
+    const-wide v0, 0x8105df00031b41L
+
+    check-cast v11, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v11, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_134
+
+    :cond_12f
+    :goto_12f
+    sget-object v4, LX/02W6;->A00:LX/02W6;
+
+    monitor-enter v4
+
+    goto/16 :goto_1bc
+
+    :cond_134
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v11
+
+    const-wide v0, 0x8105df00001b3eL
+
+    check-cast v11, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v11, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-nez v0, :cond_12f
+
+    const-string v0, "feed/reels_media"
+
+    invoke-static {v4, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_15f
+
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v11
+
+    const-wide v0, 0x8105df00021b40L
+
+    check-cast v11, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v11, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_15f
+
+    goto :goto_12f
+
+    :cond_15f
+    invoke-static {v4, v10, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-nez v0, :cond_16d
+
+    const-string v0, "feed/user"
+
+    invoke-static {v4, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_17f
+
+    :cond_16d
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v10
+
+    const-wide v0, 0x8105df00011b3fL
+
+    check-cast v10, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v10, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_17f
+
+    goto :goto_12f
+
+    :cond_17f
+    const-string v0, "discover/"
+
+    invoke-static {v4, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_199
+
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v10
+
+    const-wide v0, 0x8105df00041b42L
+
+    check-cast v10, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v10, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_199
+
+    goto :goto_12f
+
+    :cond_199
+    const-string v0, "ads/async_ads/"
+
+    invoke-static {v4, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1a9
+
+    const-string v0, "feed/injected_reels_media/"
+
+    invoke-static {v4, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1e0
+
+    :cond_1a9
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v4
+
+    const-wide v0, 0x8105df00051b43L
+
+    check-cast v4, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v4, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1e0
+
+    goto/16 :goto_12f
+    :try_end_1bc
+    .catch Ljava/lang/Exception; {:try_start_10e .. :try_end_1bc} :catch_1da
+    .catchall {:try_start_10e .. :try_end_1bc} :catchall_b3f
+
+    :goto_1bc
+    :try_start_1bc
+    sget-boolean v0, LX/02W6;->A02:Z
+
+    if-nez v0, :cond_1c6
+
+    const/4 v0, 0x1
+
+    sput-boolean v0, LX/02W6;->A02:Z
+
+    invoke-static {v6}, LX/02W6;->A00(LX/05Dd;)V
+
+    :cond_1c6
+    sget-object v1, LX/02W6;->A01:Ljava/lang/String;
+    :try_end_1c8
+    .catchall {:try_start_1bc .. :try_end_1c8} :catchall_1cf
+
+    :try_start_1c8
+    monitor-exit v4
+
+    const-string v0, "device_status"
+
+    invoke-virtual {v7, v0, v1}, LX/04x6;->AQE(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_1e0
+    :try_end_1cf
+    .catch Ljava/lang/Exception; {:try_start_1c8 .. :try_end_1cf} :catch_1da
+    .catchall {:try_start_1c8 .. :try_end_1cf} :catchall_b3f
+
+    :catchall_1cf
+    move-exception v1
+
+    :try_start_1d0
+    monitor-exit v4
+
+    goto :goto_1d9
+    :try_end_1d2
+    .catchall {:try_start_1d0 .. :try_end_1d2} :catchall_1cf
+
+    :cond_1d2
+    :try_start_1d2
+    const-string v0, "path is null"
+
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    :goto_1d9
+    throw v1
+    :try_end_1da
+    .catch Ljava/lang/Exception; {:try_start_1d2 .. :try_end_1da} :catch_1da
+    .catchall {:try_start_1d2 .. :try_end_1da} :catchall_b3f
+
+    :catch_1da
+    :try_start_1da
+    move-exception v1
+
+    const-string v0, "error in add param"
+
+    invoke-static {v9, v1, v0}, LX/01jc;->A0L(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    :cond_1e0
+    :goto_1e0
+    iget-object v0, v7, LX/04x6;->A05:Lcom/google/common/base/Supplier;
+
+    const-string v1, "Required value was null."
+
+    if-eqz v0, :cond_1f8
+
+    iget-object v9, v7, LX/04x6;->A0b:LX/03ao;
+
+    invoke-interface {v0}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_b24
+
+    check-cast v4, LX/03ao;
+
+    invoke-static {v4, v5}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    move-object/from16 v0, v22
+
+    invoke-virtual {v9, v4, v0}, LX/03ao;->A04(LX/03ao;Ljava/util/Set;)V
+
+    :cond_1f8
+    sget-object v0, LX/0009;->A01:Ljava/lang/Integer;
+
+    if-ne v3, v0, :cond_21a
+
+    sget-object v4, LX/05Ee;->A02:LX/05Ee;
+
+    invoke-static {}, LX/05Bb;->A00()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, LX/05Ee;->A03(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v10
+
+    iget-object v9, v7, LX/04x6;->A0b:LX/03ao;
+
+    iget-boolean v4, v7, LX/04x6;->A0U:Z
+
+    if-eqz v20, :cond_21a
+
+    const-string v0, "_uuid"
+
+    invoke-virtual {v9, v0, v10}, LX/03ao;->A05(Ljava/lang/String;Ljava/lang/String;)V
+
+    if-eqz v4, :cond_21a
+
+    const-string v4, "_uid"
+
+    move-object/from16 v0, v20
+
+    invoke-virtual {v9, v4, v0}, LX/03ao;->A05(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_21a
+    new-instance v0, LX/06pi;
+
+    invoke-direct {v0, v6}, LX/06pi;-><init>(LX/05Dd;)V
+
+    new-instance v4, LX/01xM;
+
+    invoke-direct {v4, v0}, LX/01xM;-><init>(LX/0PiU;)V
+
+    iput-object v3, v4, LX/01xM;->A01:Ljava/lang/Integer;
+
+    iget-object v9, v7, LX/04x6;->A0C:Ljava/lang/String;
+
+    if-eqz v9, :cond_245
+
+    iget-object v0, v7, LX/04x6;->A0b:LX/03ao;
+
+    invoke-virtual {v0, v9, v5}, LX/03ao;->A02(Ljava/lang/String;Z)Ljava/lang/String;
+
+    move-result-object v13
+
+    :goto_230
+    iget-object v12, v7, LX/04x6;->A0b:LX/03ao;
+
+    const/4 v9, 0x1
+
+    invoke-virtual {v12, v2, v9}, LX/03ao;->A02(Ljava/lang/String;Z)Ljava/lang/String;
+
+    move-result-object v14
+
+    move-object v11, v12
+
+    iget-boolean v0, v7, LX/04x6;->A0U:Z
+
+    if-eqz v0, :cond_262
+
+    iget-object v2, v7, LX/04x6;->A0M:Ljava/util/Set;
+
+    iget-object v0, v7, LX/04x6;->A0d:Ljava/util/Map;
+
+    invoke-static {v12, v0, v2}, LX/01k4;->A00(LX/03ao;Ljava/util/Map;Ljava/util/Set;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_248
+
+    :cond_245
+    move-object/from16 v13, v22
+
+    goto :goto_230
+    :try_end_248
+    .catchall {:try_start_1da .. :try_end_248} :catchall_b3f
+
+    :goto_248
+    :try_start_248
+    new-instance v11, LX/03ao;
+
+    invoke-direct {v11}, LX/03ao;-><init>()V
+
+    filled-new-array {v0}, [Ljava/lang/Object;
+
+    move-result-object v2
+
+    const-string v0, "SIGNATURE.%s"
+
+    invoke-static {v0, v2}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string/jumbo v0, "signed_body"
+
+    invoke-virtual {v11, v0, v2}, LX/03ao;->A05(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_25d
+    .catch Ljava/lang/UnsatisfiedLinkError; {:try_start_248 .. :try_end_25d} :catch_b36
+    .catchall {:try_start_248 .. :try_end_25d} :catchall_b3f
+
+    :try_start_25d
+    iget-object v0, v7, LX/04x6;->A0M:Ljava/util/Set;
+
+    invoke-virtual {v11, v12, v0}, LX/03ao;->A04(LX/03ao;Ljava/util/Set;)V
+
+    :cond_262
+    iget-boolean v0, v7, LX/04x6;->A0N:Z
+
+    const-string v15, "/"
+
+    if-eqz v0, :cond_271
+
+    invoke-static {v15, v14}, LX/0003;->A0P(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    :goto_26c
+    iget-object v0, v7, LX/04x6;->A0F:Ljava/lang/String;
+
+    if-eqz v0, :cond_284
+
+    goto :goto_283
+
+    :cond_271
+    iget-boolean v0, v7, LX/04x6;->A0R:Z
+
+    if-eqz v0, :cond_27c
+
+    const-string v0, "/api/v2/"
+
+    invoke-static {v0, v14}, LX/0003;->A0P(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_26c
+
+    :cond_27c
+    const-string v0, "/api/v1/"
+
+    invoke-static {v0, v14}, LX/0003;->A0P(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_26c
+
+    :goto_283
+    move-object v2, v14
+
+    :cond_284
+    invoke-static {v2, v9}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    if-nez v0, :cond_28d
+
+    invoke-static {}, LX/03yq;->A00()Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_28d
+    filled-new-array {v0, v2}, [Ljava/lang/Object;
+
+    move-result-object v2
+
+    const-string v0, "https://%s%s"
+
+    invoke-static {v0, v2}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v10}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
+
+    move-result-object v2
+
+    invoke-static {v10}, LX/04i9;->A03(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_b1e
+
+    const-string v1, " "
+
+    invoke-static {v0, v1, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v1
+
+    if-nez v1, :cond_b10
+
+    iget-boolean v1, v7, LX/04x6;->A0S:Z
+
+    if-nez v1, :cond_2c6
+
+    invoke-virtual {v0, v15}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2c6
+
+    const-string v2, "API path: \'"
+
+    const-string v1, "\' must end with \'/\'"
+
+    invoke-static {v2, v0, v1}, LX/0003;->A0a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v2, LX/07j0;
+
+    invoke-direct {v2, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    goto/16 :goto_b3e
+
+    :cond_2c6
+    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
+
+    move-result v1
+
+    if-eq v1, v9, :cond_2e1
+
+    const/4 v0, 0x3
+
+    if-eq v1, v0, :cond_2d9
+
+    const/4 v0, 0x4
+
+    if-eq v1, v0, :cond_2d9
+
+    new-instance v2, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {v2}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    goto/16 :goto_b3e
+
+    :cond_2d9
+    invoke-virtual {v11, v10}, LX/03ao;->A01(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v0}, LX/01xM;->A02(Ljava/lang/String;)V
+
+    goto :goto_2f8
+
+    :cond_2e1
+    invoke-virtual {v4, v10}, LX/01xM;->A02(Ljava/lang/String;)V
+
+    invoke-virtual {v11, v9}, LX/03ao;->A00(Z)LX/0Plr;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2f8
+
+    iget-boolean v0, v7, LX/04x6;->A0Y:Z
+
+    if-eqz v0, :cond_2f6
+
+    new-instance v0, LX/03gQ;
+
+    invoke-direct {v0, v1}, LX/03gQ;-><init>(LX/0Plr;)V
+
+    :goto_2f3
+    iput-object v0, v4, LX/01xM;->A00:LX/0Plr;
+
+    goto :goto_2f8
+
+    :cond_2f6
+    move-object v0, v1
+
+    goto :goto_2f3
+
+    :cond_2f8
+    :goto_2f8
+    if-nez v13, :cond_2fd
+
+    iget-object v0, v7, LX/04x6;->A09:Ljava/lang/Integer;
+
+    goto :goto_304
+
+    :cond_2fd
+    instance-of v0, v6, Lcom/instagram/common/session/UserSession;
+
+    if-eqz v0, :cond_306
+
+    iget-object v0, v7, LX/04x6;->A09:Ljava/lang/Integer;
+
+    goto :goto_308
+
+    :goto_304
+    if-eq v0, v8, :cond_30a
+
+    :cond_306
+    const/4 v3, 0x0
+
+    goto :goto_30b
+
+    :goto_308
+    if-eq v0, v8, :cond_306
+
+    :cond_30a
+    const/4 v3, 0x1
+
+    :goto_30b
+    const-string v1, "Misconfigured cache information for request with path: %s"
+
+    iget-object v0, v7, LX/04x6;->A0H:Ljava/lang/String;
+
+    invoke-static {v0, v1, v3}, LX/01lo;->A0A(Ljava/lang/Object;Ljava/lang/String;Z)V
+
+    if-eqz v13, :cond_315
+
+    goto :goto_318
+
+    :cond_315
+    move-object/from16 v21, v22
+
+    goto :goto_31c
+
+    :goto_318
+    invoke-static {v6, v13}, LX/02uC;->A00(LX/05Dd;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v21
+
+    :goto_31c
+    iget-boolean v0, v7, LX/04x6;->A0X:Z
+
+    iput-boolean v0, v4, LX/01xM;->A04:Z
+
+    iget-boolean v0, v7, LX/04x6;->A0W:Z
+
+    if-eqz v0, :cond_326
+
+    iput-boolean v9, v4, LX/01xM;->A03:Z
+
+    :cond_326
+    iget-object v1, v7, LX/04x6;->A0E:Ljava/lang/String;
+
+    if-nez v1, :cond_32b
+
+    move-object v1, v14
+
+    :cond_32b
+    const-string v0, "IgApi: "
+
+    invoke-static {v0, v1}, LX/0003;->A0P(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    const-string v0, "max_id"
+
+    iget-object v1, v12, LX/03ao;->A00:Ljava/util/Map;
+
+    invoke-interface {v1, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_341
+
+    const-string v0, "_tail"
+
+    invoke-static {v10, v0}, LX/0003;->A0P(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    :cond_341
+    const-string v0, "mobileconfigsessionless"
+
+    invoke-interface {v1, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_34f
+
+    const-string v0, "sessionless"
+
+    invoke-static {v10, v0}, LX/0003;->A0P(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v10
+
+    :cond_34f
+    invoke-virtual {v2}, Ljava/net/URI;->getHost()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Lcom/facebook/tigon/requestdomainhelpers/TigonRequestDomainHelpers;->isFirstPartySecure(Ljava/net/URI;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_aaf
+
+    iget-object v0, v7, LX/04x6;->A0L:Ljava/util/List;
+
+    if-eqz v0, :cond_376
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :goto_361
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_376
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, LX/03be;
+
+    invoke-static {v1, v5}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    iget-object v0, v4, LX/01xM;->A06:Ljava/util/List;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_361
+
+    :cond_376
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    if-eqz v18, :cond_386
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    move-result-object v3
+
+    const-string v1, "FEED_REQUEST_LOCALE_HEADER_START"
+
+    iget-object v0, v3, LX/01qr;->A00:Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;
+
+    invoke-virtual {v3, v0, v1}, LX/01qr;->A0W(Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;Ljava/lang/String;)V
+
+    :cond_386
+    sget-boolean v0, LX/01qt;->A04:Z
+
+    const v12, 0x30c022ae
+
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v11
+
+    if-nez v0, :cond_3ad
+
+    sget-object v3, LX/0009;->A0Y:Ljava/lang/Integer;
+
+    sget-object v1, LX/02aI;->A00:LX/0Pct;
+
+    const-string v0, "Locale failed"
+
+    invoke-interface {v1, v11, v0, v12, v5}, LX/0Pct;->AXW(Ljava/lang/Boolean;Ljava/lang/String;II)LX/0opw;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3a9
+
+    invoke-interface {v1}, LX/0opw;->isSampled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3a9
+
+    invoke-static {v1, v3}, LX/02aI;->A00(LX/0opw;Ljava/lang/Integer;)V
+
+    invoke-interface {v1}, LX/0opw;->report()V
+
+    :cond_3a9
+    :goto_3a9
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    goto :goto_3fe
+
+    :cond_3ad
+    invoke-static {}, LX/04AL;->A01()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    const-string v0, "X-IG-App-Locale"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {}, LX/04AL;->A02()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    const-string v0, "X-IG-Device-Locale"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_3cd
+    .catchall {:try_start_25d .. :try_end_3cd} :catchall_b3f
+
+    :try_start_3cd
+    invoke-static {}, LX/04AL;->A01()Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/03ws;->A01(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v1
+    :try_end_3d5
+    .catch Ljava/lang/Exception; {:try_start_3cd .. :try_end_3d5} :catch_3e1
+    .catchall {:try_start_3cd .. :try_end_3d5} :catchall_b3f
+
+    :try_start_3d5
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_3a9
+
+    const-string v0, "X-IG-Mapped-Locale"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_3a9
+
+    :catch_3e1
+    move-exception v8
+
+    sget-object v3, LX/0009;->A0Y:Ljava/lang/Integer;
+
+    sget-object v1, LX/02aI;->A00:LX/0Pct;
+
+    const-string v0, "Mapped locale failed"
+
+    invoke-interface {v1, v11, v0, v12, v5}, LX/0Pct;->AXW(Ljava/lang/Boolean;Ljava/lang/String;II)LX/0opw;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3a9
+
+    invoke-interface {v0}, LX/0opw;->isSampled()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3a9
+
+    invoke-interface {v0, v8}, LX/0opw;->H1L(Ljava/lang/Throwable;)V
+
+    invoke-static {v0, v3}, LX/02aI;->A00(LX/0opw;Ljava/lang/Integer;)V
+
+    invoke-interface {v0}, LX/0opw;->report()V
+
+    goto :goto_3a9
+
+    :goto_3fe
+    if-eqz v18, :cond_40b
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    move-result-object v3
+
+    const-string v1, "FEED_REQUEST_LOCALE_HEADER_END"
+
+    iget-object v0, v3, LX/01qr;->A00:Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;
+
+    invoke-virtual {v3, v0, v1}, LX/01qr;->A0W(Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;Ljava/lang/String;)V
+
+    :cond_40b
+    iget-object v0, v7, LX/04x6;->A0I:Ljava/lang/String;
+
+    const-string v1, "X-Pigeon-Session-Id"
+
+    if-eqz v0, :cond_435
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_414
+    :goto_414
+    invoke-static {v6}, LX/02qm;->A00(LX/05Dd;)LX/0Bem;
+
+    move-result-object v0
+
+    invoke-interface {v0}, LX/0XaR;->D0L()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_423
+
+    const-string v0, "X-Pigeon-Rawclienttime"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_423
+    sget-object v11, LX/02lp;->A0E:LX/02lr;
+
+    invoke-virtual {v11}, LX/02lr;->A01()LX/02lp;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_443
+
+    invoke-virtual {v0}, LX/02lp;->A00()D
+
+    move-result-wide v0
+
+    double-to-float v3, v0
+
+    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    goto :goto_445
+
+    :cond_435
+    invoke-static {v6}, LX/02qm;->A00(LX/05Dd;)LX/0Bem;
+
+    move-result-object v0
+
+    invoke-interface {v0}, LX/0XaR;->D0M()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_414
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_414
+
+    :cond_443
+    move-object/from16 v0, v22
+    :try_end_445
+    .catchall {:try_start_3d5 .. :try_end_445} :catchall_b3f
+
+    :goto_445
+    :try_start_445
+    const-string v1, "X-IG-Bandwidth-Speed-KBPS"
+
+    filled-new-array {v0}, [Ljava/lang/Object;
+
+    move-result-object v3
+
+    move-object/from16 v0, v23
+
+    invoke-static {v0, v3}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, LX/03wk;->A02:LX/03wk;
+
+    if-eqz v0, :cond_46e
+
+    const-string v3, "X-IG-Bandwidth-Speed-KBPS-Sensitive"
+
+    iget-wide v0, v0, LX/03wk;->A00:J
+
+    long-to-float v8, v0
+
+    invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    filled-new-array {v0}, [Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object/from16 v0, v23
+
+    invoke-static {v0, v1}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v3, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_46e
+    .catch Ljava/lang/Exception; {:try_start_445 .. :try_end_46e} :catch_46e
+    .catchall {:try_start_445 .. :try_end_46e} :catchall_b3f
+
+    :catch_46e
+    :cond_46e
+    :try_start_46e
+    invoke-virtual {v11}, LX/02lr;->A01()LX/02lp;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_520
+
+    invoke-virtual {v0}, LX/02lp;->A02()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    :goto_47c
+    filled-new-array {v0}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "%d"
+
+    invoke-static {v1, v0}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v0, "X-IG-Bandwidth-TotalBytes-B"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v11}, LX/02lr;->A01()LX/02lp;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_499
+
+    invoke-virtual {v0}, LX/02lp;->A03()J
+
+    move-result-wide v11
+
+    invoke-static {v11, v12}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v22
+
+    :cond_499
+    filled-new-array/range {v22 .. v22}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, LX/03cs;->A05(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-IG-Bandwidth-TotalTime-MS"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object v0, v7, LX/04x6;->A0B:Ljava/lang/Integer;
+
+    if-eqz v0, :cond_4b7
+
+    const-string v1, "X-IG-Prefetch-Request"
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v3
+
+    if-eq v3, v9, :cond_51d
+
+    const-string v0, "background"
+
+    :goto_4b4
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_4b7
+    iget-object v0, v7, LX/04x6;->A08:Ljava/lang/Integer;
+
+    if-eqz v0, :cond_4c8
+
+    invoke-static {v0}, LX/08Xi;->A00(Ljava/lang/Integer;)I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-AC-Request-Priority"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_4c8
+    instance-of v8, v6, Lcom/instagram/common/session/UserSession;
+
+    const-string/jumbo v3, "true"
+
+    if-eqz v8, :cond_4e6
+
+    move-object v0, v6
+
+    check-cast v0, Lcom/instagram/common/session/UserSession;
+
+    invoke-static {v0}, LX/00OZ;->A00(Lcom/instagram/common/session/UserSession;)LX/00OZ;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, LX/00OZ;->A03()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4e6
+
+    const-string v0, "X-IG-Low-Data-Mode-Image"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "X-IG-Low-Data-Mode-Video"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_4e6
+    const-string v1, "X-Bloks-Version-Id"
+
+    const-string v0, "8f0f09df419d7d5826957c3f070997a65b6e8d025c84d1e91931768e8b59625e"
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v2}, LX/00EQ;->A01(Ljava/net/URI;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_504
+
+    iget-boolean v0, v7, LX/04x6;->A0Q:Z
+
+    if-eqz v0, :cond_504
+
+    invoke-static {v6}, LX/02od;->A00(LX/05Dd;)LX/02od;
+
+    move-result-object v0
+
+    const-string v1, "Authorization-Others"
+
+    invoke-virtual {v0}, LX/02od;->A03()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_504
+    invoke-static {v2}, LX/00EQ;->A01(Ljava/net/URI;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_531
+
+    const-string v12, "0"
+
+    const-string v11, "X-IG-WWW-Claim"
+
+    if-eqz v8, :cond_56e
+
+    invoke-static {v6}, LX/01oc;->A00(LX/05Dd;)LX/01oc;
+
+    move-result-object v1
+
+    iget-boolean v0, v1, LX/01oc;->A07:Z
+
+    if-nez v0, :cond_524
+
+    invoke-virtual {v1}, LX/01oc;->A02()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_526
+
+    :cond_51d
+    const-string v0, "foreground"
+
+    goto :goto_4b4
+
+    :cond_520
+    move-object/from16 v0, v22
+
+    goto/16 :goto_47c
+
+    :cond_524
+    iget-object v0, v1, LX/01oc;->A06:Ljava/lang/String;
+
+    :goto_526
+    if-eqz v0, :cond_56e
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_56e
+
+    invoke-virtual {v4, v11, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_531
+    :goto_531
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    const-string v0, "com.bloks.www"
+
+    invoke-static {v1, v0, v5}, LX/05t8;->A19(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5be
+
+    const-string/jumbo v12, "svcscm."
+
+    sget-object v13, LX/05Nh;->A6Y:LX/05Ng;
+
+    invoke-virtual {v13}, LX/05Ng;->A00()LX/05Nh;
+
+    move-result-object v2
+
+    iget-object v1, v2, LX/05Nh;->A3h:LX/0GAZ;
+
+    sget-object v11, LX/05Nh;->A6a:[LX/0Jop;
+
+    const/16 v0, 0x145
+
+    aget-object v0, v11, v0
+
+    invoke-interface {v1, v2, v0}, LX/0GAZ;->DuR(Ljava/lang/Object;LX/0Jop;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5be
+
+    invoke-virtual {v13}, LX/05Ng;->A00()LX/05Nh;
+
+    move-result-object v2
+
+    iget-object v1, v2, LX/05Nh;->A01:LX/0GAZ;
+
+    const/16 v0, 0x144
+
+    aget-object v0, v11, v0
+
+    invoke-interface {v1, v2, v0}, LX/0GAZ;->DuR(Ljava/lang/Object;LX/0Jop;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    goto :goto_572
+
+    :cond_56e
+    invoke-virtual {v4, v11, v12}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_531
+    :try_end_572
+    .catchall {:try_start_46e .. :try_end_572} :catchall_b3f
+
+    :goto_572
+    :try_start_572
+    new-instance v11, Lorg/json/JSONObject;
+
+    invoke-direct {v11}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v1, "host"
+
+    const/16 v0, 0x156
+
+    invoke-static {v0}, LX/0000;->A00(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v12, v2, v0}, LX/0003;->A0a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v1, "port"
+
+    const/16 v0, 0x50
+
+    invoke-virtual {v11, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    const-string v0, "disable_timeouts"
+
+    invoke-virtual {v11, v0, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+
+    const-string v1, "blocked_tiers"
+
+    new-instance v0, Lorg/json/JSONArray;
+
+    invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
+
+    invoke-virtual {v11, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string v2, "service_tiers"
+
+    const-string v1, "[\"instagram.fbwww.xstack_graphql\"]"
+
+    new-instance v0, Lorg/json/JSONArray;
+
+    invoke-direct {v0, v1}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v11, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    new-instance v1, Lorg/json/JSONObject;
+
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
+
+    const-string/jumbo v0, "www"
+
+    invoke-virtual {v1, v0, v11}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_5be
+    :try_end_5b9
+    .catch Lorg/json/JSONException; {:try_start_572 .. :try_end_5b9} :catch_5be
+    .catchall {:try_start_572 .. :try_end_5b9} :catchall_b3f
+
+    :try_start_5b9
+    const-string v0, "X-IG-Cross-Repo-Setup"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :catch_5be
+    :cond_5be
+    const-string v0, "X-IG-BLOKS-SERIALIZE-PAYLOAD"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {}, LX/02sM;->A05()LX/02sO;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-Bloks-Prism-Button-Version"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v1, "X-Bloks-Prism-Indigo-Link-Version"
+
+    const-string v0, "1"
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, LX/00QT;->A01:LX/0FaU;
+
+    invoke-interface {v0}, LX/0FaU;->EZ1()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-Bloks-Prism-Colors-Enabled"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "X-Bloks-Prism-Font-Enabled"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "X-Bloks-Prism-Extended-Palette-Indigo"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, LX/00QT;->A01:LX/0FaU;
+
+    invoke-interface {v0}, LX/0FaU;->EZ7()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-Bloks-Prism-Extended-Palette-Gray"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "X-Bloks-Prism-Extended-Palette-Red"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "X-Bloks-Prism-Extended-Palette-Rest-Of-Colors"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, LX/00QT;->A01:LX/0FaU;
+
+    invoke-interface {v0}, LX/0FaU;->EZ2()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-Bloks-Prism-Extended-Palette-Polish-Enabled"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {}, LX/01ox;->A00()LX/0yb5;
+
+    move-result-object v2
+
+    const-wide v0, 0x2041037e00040d9bL    # 2.537870686582607E-153
+
+    check-cast v2, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v2, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_69b
+
+    new-instance v2, Lorg/json/JSONArray;
+
+    invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
+
+    iget-boolean v0, v7, LX/04x6;->A0O:Z
+
+    if-eqz v0, :cond_654
+
+    iget-object v1, v7, LX/04x6;->A03:LX/0Cia;
+
+    if-nez v1, :cond_642
+
+    const v0, 0x2003c
+
+    invoke-static {v0}, LX/01lf;->A01(I)Ljava/lang/Object;
+
+    sget-object v1, LX/0KYT;->A00:LX/0Cia;
+
+    iput-object v1, v7, LX/04x6;->A03:LX/0Cia;
+
+    if-eqz v1, :cond_654
+
+    :cond_642
+    const v0, 0x2003c
+
+    invoke-static {v0}, LX/01lf;->A01(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LX/0KYT;
+
+    invoke-virtual {v0, v1}, LX/0KYT;->A00(LX/0Cia;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_654
+
+    invoke-virtual {v2, v0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    :cond_654
+    iget-boolean v0, v7, LX/04x6;->A0P:Z
+
+    if-eqz v0, :cond_67a
+
+    iget-object v1, v7, LX/04x6;->A04:LX/0CZZ;
+
+    if-nez v1, :cond_668
+
+    const v0, 0x2003c
+
+    invoke-static {v0}, LX/01lf;->A01(I)Ljava/lang/Object;
+
+    sget-object v1, LX/0KYT;->A01:LX/0CZZ;
+
+    iput-object v1, v7, LX/04x6;->A04:LX/0CZZ;
+
+    if-eqz v1, :cond_67a
+
+    :cond_668
+    const v0, 0x2003c
+
+    invoke-static {v0}, LX/01lf;->A01(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LX/0KYT;
+
+    invoke-virtual {v0, v1}, LX/0KYT;->A01(LX/0CZZ;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_67a
+
+    invoke-virtual {v2, v0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    :cond_67a
+    invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_69b
+    :try_end_680
+    .catchall {:try_start_5b9 .. :try_end_680} :catchall_b3f
+
+    :try_start_680
+    new-instance v1, Lorg/json/JSONObject;
+
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
+
+    const/16 v0, 0x84
+
+    invoke-static {v0}, LX/0D9f;->A00(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    const-string v1, "X-IG-Attest-Params"
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_69b
+    .catch Lorg/json/JSONException; {:try_start_680 .. :try_end_69b} :catch_69b
+    .catchall {:try_start_680 .. :try_end_69b} :catchall_b3f
+
+    :catch_69b
+    :cond_69b
+    if-eqz v8, :cond_752
+
+    :try_start_69d
+    move-object v0, v6
+
+    check-cast v0, Lcom/instagram/common/session/UserSession;
+
+    invoke-static {v0, v5}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    invoke-static {v0, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v2
+
+    const-wide v0, 0x8108ff000031fdL
+
+    check-cast v2, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v2, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_752
+
+    new-instance v13, Lorg/json/JSONObject;
+
+    invoke-direct {v13}, Lorg/json/JSONObject;-><init>()V
+
+    sget-object v14, LX/00DF;->A01:LX/00DF;
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Landroid/os/LocaleList;->getDefault()Landroid/os/LocaleList;
+
+    move-result-object v11
+
+    invoke-static {v11}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    invoke-virtual {v11}, Landroid/os/LocaleList;->size()I
+
+    move-result v2
+
+    const/4 v1, 0x0
+
+    :goto_6cc
+    if-ge v1, v2, :cond_6e8
+
+    invoke-virtual {v11, v1}, Landroid/os/LocaleList;->get(I)Ljava/util/Locale;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    invoke-virtual {v14, v12, v0}, LX/00DF;->A00(Ljava/lang/StringBuilder;Ljava/util/Locale;)V
+
+    invoke-virtual {v11}, Landroid/os/LocaleList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    if-eq v1, v0, :cond_6e5
+
+    const-string v0, ", "
+
+    invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_6e5
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_6cc
+
+    :cond_6e8
+    invoke-virtual {v12}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    sget-object v1, LX/05Bb;->A00:Landroid/content/Context;
+
+    if-nez v1, :cond_6f4
+
+    invoke-static {}, LX/05Bb;->A00()Landroid/content/Context;
+
+    move-result-object v1
+
+    :cond_6f4
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    :try_end_6f9
+    .catchall {:try_start_69d .. :try_end_6f9} :catchall_b3f
+
+    :try_start_6f9
+    const-string v0, "input_method"
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v0, "null cannot be cast to non-null type android.view.inputmethod.InputMethodManager"
+
+    if-nez v1, :cond_70b
+
+    invoke-static {v1, v0}, LX/05s2;->A0W(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {}, LX/0002;->createAndThrow()LX/0002;
+
+    move-result-object v0
+
+    throw v0
+
+    :cond_70b
+    check-cast v1, Landroid/view/inputmethod/InputMethodManager;
+
+    invoke-virtual {v1}, Landroid/view/inputmethod/InputMethodManager;->getCurrentInputMethodSubtype()Landroid/view/inputmethod/InputMethodSubtype;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_71c
+
+    invoke-virtual {v0}, Landroid/view/inputmethod/InputMethodSubtype;->getLanguageTag()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_71c
+
+    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_end_71c
+    .catch Ljava/lang/Exception; {:try_start_6f9 .. :try_end_71c} :catch_727
+    .catchall {:try_start_6f9 .. :try_end_71c} :catchall_b3f
+
+    :cond_71c
+    :try_start_71c
+    invoke-virtual {v11}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, LX/00DF;->A00:Ljava/lang/String;
+
+    invoke-virtual {v11}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_729
+
+    :catch_727
+    sget-object v1, LX/00DF;->A00:Ljava/lang/String;
+
+    :goto_729
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_735
+
+    const-string/jumbo v0, "system_languages"
+
+    invoke-virtual {v13, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    :cond_735
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_740
+
+    const-string v0, "keyboard_language"
+
+    invoke-virtual {v13, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    :cond_740
+    invoke-virtual {v13}, Lorg/json/JSONObject;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_752
+
+    invoke-virtual {v13}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    const-string v0, "X-IG-Device-Languages"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_752
+    iget-boolean v0, v7, LX/04x6;->A0V:Z
+
+    if-eqz v0, :cond_75d
+
+    const-string v1, "X-IG-Transfer-Encoding"
+
+    const-string v0, "chunked"
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_75d
+    const/16 v0, 0xb
+
+    invoke-static {v0}, LX/02sj;->A03(I)Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_779
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    const-string v0, "addHeaders"
+
+    new-instance v2, Ljava/lang/NullPointerException;
+
+    invoke-direct {v2, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    goto/16 :goto_b3e
+
+    :cond_779
+    invoke-static {}, LX/05Bb;->A00()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v0, "accessibility"
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/accessibility/AccessibilityManager;
+
+    if-eqz v2, :cond_798
+
+    invoke-virtual {v2}, Landroid/view/accessibility/AccessibilityManager;->isEnabled()Z
+
+    move-result v0
+
+    if-ne v0, v9, :cond_798
+
+    invoke-virtual {v2}, Landroid/view/accessibility/AccessibilityManager;->isTouchExplorationEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_798
+
+    const-string v0, "X-IG-Fetch-AAT"
+
+    invoke-virtual {v4, v0, v3}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_798
+    invoke-static {v1}, LX/00eB;->A04(Landroid/content/Context;)Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v0, "X-Bloks-Is-Layout-RTL"
+
+    invoke-virtual {v4, v0, v2}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, LX/05Ee;->A02:LX/05Ee;
+
+    invoke-virtual {v0, v1}, LX/05Ee;->A03(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v0, "X-IG-Device-ID"
+
+    invoke-virtual {v4, v0, v2}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v6}, LX/02df;->A00(LX/05Dd;)LX/02df;
+
+    move-result-object v2
+
+    sget-object v0, LX/02dl;->A22:LX/02dl;
+
+    invoke-virtual {v2, v0}, LX/02df;->A04(LX/02dl;)Ljava/lang/String;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_7c1
+
+    const-string v0, "X-IG-Family-Device-ID"
+
+    invoke-virtual {v4, v0, v2}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_7c1
+    invoke-static {v1}, LX/05Ee;->A00(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v0, "X-IG-Android-ID"
+
+    invoke-virtual {v4, v0, v2}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    new-instance v0, LX/04bj;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {v1, v0}, LX/04bk;->A00(Landroid/content/Context;LX/04bj;)LX/04cA;
+
+    move-result-object v22
+    :try_end_7d3
+    .catchall {:try_start_71c .. :try_end_7d3} :catchall_b3f
+
+    :try_start_7d3
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v2
+
+    sget-object v9, LX/02tU;->A00:Ljava/util/concurrent/atomic/AtomicLong;
+
+    invoke-virtual {v9}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+
+    move-result-wide v0
+
+    sub-long v14, v2, v0
+
+    const-wide/32 v12, 0x493e0
+
+    cmp-long v11, v14, v12
+
+    if-ltz v11, :cond_7fb
+
+    invoke-virtual {v9, v0, v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7fb
+
+    invoke-virtual/range {v22 .. v22}, LX/04cA;->A00()Landroid/net/wifi/WifiInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_7f9
+
+    invoke-virtual {v0}, Landroid/net/wifi/WifiInfo;->getBSSID()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_7f6
+    sput-object v0, LX/02tU;->A01:Ljava/lang/String;
+
+    goto :goto_7fb
+
+    :cond_7f9
+    const/4 v0, 0x0
+
+    goto :goto_7f6
+    :try_end_7fb
+    .catchall {:try_start_7d3 .. :try_end_7fb} :catchall_a47
+
+    :cond_7fb
+    :goto_7fb
+    :try_start_7fb
+    sget-object v1, LX/02tU;->A01:Ljava/lang/String;
+
+    if-eqz v1, :cond_804
+
+    const-string v0, "X-Network-Signal"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_804
+    invoke-static {}, LX/03ld;->A00()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-IG-Timezone-Offset"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    if-eqz v8, :cond_83a
+
+    move-object v0, v6
+
+    check-cast v0, Lcom/instagram/common/session/UserSession;
+
+    invoke-static {v0, v5}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    invoke-static {v0, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v2
+
+    const-wide v0, 0x81156a00006eefL
+
+    check-cast v2, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v2, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_83a
+
+    const-string v1, "X-IG-Device-Timezone"
+
+    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/TimeZone;->getID()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    invoke-virtual {v4, v1, v0}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_83a
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    if-eqz v18, :cond_84a
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    move-result-object v2
+
+    const-string v1, "FEED_REQUEST_NAV_CHAIN_HEADER_START"
+
+    iget-object v0, v2, LX/01qr;->A00:Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;
+
+    invoke-virtual {v2, v0, v1}, LX/01qr;->A0W(Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;Ljava/lang/String;)V
+
+    :cond_84a
+    sget-object v0, LX/03ck;->A00:LX/03cl;
+
+    invoke-virtual {v0}, LX/03cl;->A04()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_857
+
+    const-string v0, "X-IG-Nav-Chain"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_857
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    if-eqz v18, :cond_867
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    move-result-object v2
+
+    const-string v1, "FEED_REQUEST_NAV_CHAIN_HEADER_END"
+
+    iget-object v0, v2, LX/01qr;->A00:Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;
+
+    invoke-virtual {v2, v0, v1}, LX/01qr;->A0W(Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;Ljava/lang/String;)V
+
+    :cond_867
+    if-eqz v8, :cond_a34
+
+    move-object v2, v6
+
+    check-cast v2, Lcom/instagram/common/session/UserSession;
+
+    invoke-static {v2, v5}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    invoke-static {v2, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v3
+
+    const-wide v0, 0x810fd400045592L
+
+    check-cast v3, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v3, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_9ec
+
+    invoke-static {v2, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v3
+
+    const-wide v0, 0x810fd400075595L
+
+    check-cast v3, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v3, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v15
+
+    sget-object v1, LX/02tY;->A00:LX/0WHQ;
+
+    const-string v11, ""
+
+    move-object v3, v11
+
+    if-eqz v1, :cond_8ce
+
+    iget-object v9, v1, LX/0WHQ;->A01:Ljava/lang/String;
+
+    if-eqz v9, :cond_8ce
+
+    invoke-virtual {v9}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_8ce
+    :try_end_8a0
+    .catchall {:try_start_7fb .. :try_end_8a0} :catchall_b3f
+
+    :try_start_8a0
+    const-string v0, "UTF-8"
+
+    invoke-static {v9, v0}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v22
+
+    invoke-static/range {v22 .. v22}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_8ac
+    :try_end_8aa
+    .catch Ljava/lang/Exception; {:try_start_8a0 .. :try_end_8aa} :catch_8aa
+    .catchall {:try_start_8a0 .. :try_end_8aa} :catchall_b3f
+
+    :catch_8aa
+    move-object/from16 v22, v9
+
+    :goto_8ac
+    :try_start_8ac
+    iget-object v0, v1, LX/0WHQ;->A02:Ljava/lang/String;
+
+    if-eqz v0, :cond_8b1
+
+    move-object v11, v0
+    :try_end_8b1
+    .catchall {:try_start_8ac .. :try_end_8b1} :catchall_b3f
+
+    :cond_8b1
+    :try_start_8b1
+    const-string v0, "UTF-8"
+
+    invoke-static {v11, v0}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v24
+
+    invoke-static/range {v24 .. v24}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_8bd
+    :try_end_8bb
+    .catch Ljava/lang/Exception; {:try_start_8b1 .. :try_end_8bb} :catch_8bb
+    .catchall {:try_start_8b1 .. :try_end_8bb} :catchall_b3f
+
+    :catch_8bb
+    move-object/from16 v24, v11
+
+    :goto_8bd
+    :try_start_8bd
+    iget-object v0, v1, LX/0WHQ;->A00:Ljava/lang/Long;
+
+    if-eqz v0, :cond_8ee
+
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v26
+
+    :goto_8c5
+    const-string/jumbo v23, "|"
+
+    move-object/from16 v25, v23
+
+    invoke-static/range {v22 .. v27}, LX/0003;->A0s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Ljava/lang/String;
+
+    move-result-object v11
+
+    :cond_8ce
+    sget-object v0, LX/01kB;->A00:LX/00n5;
+
+    move-object v1, v3
+
+    if-eqz v0, :cond_949
+
+    iget-object v0, v0, LX/00n5;->A01:Ljava/util/List;
+
+    if-eqz v0, :cond_949
+
+    invoke-static {v0}, LX/0BXD;->A1N(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LX/00n1;
+
+    if-eqz v0, :cond_949
+
+    iget-object v13, v0, LX/00n1;->A00:LX/00m4;
+
+    if-eqz v13, :cond_949
+
+    iget-object v12, v13, LX/00m4;->A01:Ljava/lang/String;
+
+    if-eqz v12, :cond_949
+
+    invoke-virtual {v12}, Ljava/lang/String;->length()I
+
+    move-result v9
+
+    if-eqz v9, :cond_949
+
+    goto :goto_8f1
+
+    :cond_8ee
+    const-wide/16 v26, 0x0
+
+    goto :goto_8c5
+    :try_end_8f1
+    .catchall {:try_start_8bd .. :try_end_8f1} :catchall_b3f
+
+    :goto_8f1
+    :try_start_8f1
+    const-string v9, "UTF-8"
+
+    invoke-static {v12, v9}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v9}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_8fc
+    :try_end_8fb
+    .catch Ljava/lang/Exception; {:try_start_8f1 .. :try_end_8fb} :catch_8fb
+    .catchall {:try_start_8f1 .. :try_end_8fb} :catchall_b3f
+
+    :catch_8fb
+    move-object v9, v12
+
+    :goto_8fc
+    :try_start_8fc
+    iget-object v12, v13, LX/00m4;->A02:Ljava/lang/String;
+
+    if-nez v12, :cond_901
+
+    move-object v12, v3
+    :try_end_901
+    .catchall {:try_start_8fc .. :try_end_901} :catchall_b3f
+
+    :cond_901
+    :try_start_901
+    const-string v13, "UTF-8"
+
+    invoke-static {v12, v13}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-static {v14}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_90c
+    :try_end_90b
+    .catch Ljava/lang/Exception; {:try_start_901 .. :try_end_90b} :catch_90b
+    .catchall {:try_start_901 .. :try_end_90b} :catchall_b3f
+
+    :catch_90b
+    move-object v14, v12
+
+    :goto_90c
+    :try_start_90c
+    iget-object v12, v0, LX/00n1;->A03:Ljava/lang/String;
+
+    if-eqz v12, :cond_911
+
+    move-object v1, v12
+    :try_end_911
+    .catchall {:try_start_90c .. :try_end_911} :catchall_b3f
+
+    :cond_911
+    :try_start_911
+    const-string v12, "UTF-8"
+
+    invoke-static {v1, v12}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v13}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_91c
+    :try_end_91b
+    .catch Ljava/lang/Exception; {:try_start_911 .. :try_end_91b} :catch_91b
+    .catchall {:try_start_911 .. :try_end_91b} :catchall_b3f
+
+    :catch_91b
+    move-object v13, v1
+
+    :goto_91c
+    :try_start_91c
+    iget-object v0, v0, LX/00n1;->A02:Ljava/lang/Long;
+
+    if-eqz v0, :cond_946
+
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v0
+
+    :goto_924
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v12, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v9, "|"
+
+    invoke-virtual {v12, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v12, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v12, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v12, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v12, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v12}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    goto :goto_94a
+
+    :cond_946
+    const-wide/16 v0, 0x0
+
+    goto :goto_924
+
+    :cond_949
+    move-object v14, v3
+
+    :goto_94a
+    if-eqz v15, :cond_9be
+
+    sget-object v0, LX/01kB;->A00:LX/00n5;
+
+    if-eqz v0, :cond_9be
+
+    iget-object v0, v0, LX/00n5;->A00:Ljava/util/List;
+
+    if-eqz v0, :cond_9be
+
+    invoke-static {v0}, LX/0BXD;->A1N(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LX/0HTa;
+
+    if-eqz v0, :cond_9be
+
+    iget-object v9, v0, LX/0HTa;->A03:Ljava/lang/String;
+
+    if-eqz v9, :cond_9be
+
+    invoke-virtual {v9}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_9be
+
+    iget-object v1, v0, LX/0HTa;->A00:LX/0HTJ;
+
+    if-eqz v1, :cond_9be
+    :try_end_96a
+    .catchall {:try_start_91c .. :try_end_96a} :catchall_b3f
+
+    :try_start_96a
+    const-string v12, "UTF-8"
+
+    invoke-static {v9, v12}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-static {v15}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_975
+    :try_end_974
+    .catch Ljava/lang/Exception; {:try_start_96a .. :try_end_974} :catch_974
+    .catchall {:try_start_96a .. :try_end_974} :catchall_b3f
+
+    :catch_974
+    move-object v15, v9
+
+    :goto_975
+    :try_start_975
+    iget-object v1, v1, LX/0HTJ;->A01:Ljava/lang/String;
+
+    if-nez v1, :cond_97a
+
+    move-object v1, v3
+    :try_end_97a
+    .catchall {:try_start_975 .. :try_end_97a} :catchall_b3f
+
+    :cond_97a
+    :try_start_97a
+    const-string v9, "UTF-8"
+
+    invoke-static {v1, v9}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-static {v13}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_985
+    :try_end_984
+    .catch Ljava/lang/Exception; {:try_start_97a .. :try_end_984} :catch_984
+    .catchall {:try_start_97a .. :try_end_984} :catchall_b3f
+
+    :catch_984
+    move-object v13, v1
+
+    :goto_985
+    :try_start_985
+    iget-object v1, v0, LX/0HTa;->A04:Ljava/lang/String;
+
+    if-eqz v1, :cond_98a
+
+    move-object v3, v1
+    :try_end_98a
+    .catchall {:try_start_985 .. :try_end_98a} :catchall_b3f
+
+    :cond_98a
+    :try_start_98a
+    const-string v1, "UTF-8"
+
+    invoke-static {v3, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v12}, LX/05s2;->A0T(Ljava/lang/Object;)V
+
+    goto :goto_995
+    :try_end_994
+    .catch Ljava/lang/Exception; {:try_start_98a .. :try_end_994} :catch_994
+    .catchall {:try_start_98a .. :try_end_994} :catchall_b3f
+
+    :catch_994
+    move-object v12, v3
+
+    :goto_995
+    :try_start_995
+    iget-object v0, v0, LX/0HTa;->A02:Ljava/lang/Long;
+
+    if-eqz v0, :cond_9fc
+
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v0
+
+    :goto_99d
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v9, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string/jumbo v3, "|"
+
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    :cond_9be
+    invoke-virtual {v11}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-gtz v0, :cond_9d0
+
+    invoke-virtual {v14}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-gtz v0, :cond_9d0
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_9ec
+
+    :cond_9d0
+    const-string/jumbo v9, "~"
+
+    invoke-static {v11, v9, v14}, LX/0003;->A0a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_9e1
+
+    invoke-static {v1, v9, v3}, LX/0003;->A0a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_9e1
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_9ec
+
+    const-string v0, "X-IG-Session-Visitation"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_9ec
+    invoke-static {v2, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v3
+
+    const-wide v0, 0x8102fe00030afaL
+
+    check-cast v3, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v3, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    goto :goto_9ff
+
+    :cond_9fc
+    const-wide/16 v0, 0x0
+
+    goto :goto_99d
+
+    :goto_9ff
+    if-eqz v0, :cond_a0e
+
+    invoke-static {v6}, LX/02xC;->A00(LX/05Dd;)LX/02xC;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, LX/02xC;->BpB()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-DSP-Correlation-Id"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_a0e
+    invoke-static {v2, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v2
+
+    const-wide v0, 0x8110a000035a1cL
+
+    check-cast v2, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v2, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_a34
+
+    invoke-static {v6}, LX/02xB;->A00(LX/05Dd;)LX/02xB;
+
+    move-result-object v2
+
+    invoke-static {v2}, LX/05s2;->A0C(Ljava/lang/Object;)V
+
+    sget-object v0, LX/0009;->A0Y:Ljava/lang/Integer;
+
+    invoke-virtual {v2, v0}, LX/02xB;->A01(Ljava/lang/Integer;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-DSP-Trigger-Id"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v2, v1}, LX/02xB;->A04(Ljava/lang/String;)V
+
+    :cond_a34
+    invoke-static {}, LX/00bh;->A00()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-IG-CLIENT-ENDPOINT"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    sget-object v0, LX/03dR;->A0B:LX/03dR;
+
+    if-nez v0, :cond_a44
+
+    if-eqz v8, :cond_a8f
+
+    goto :goto_a63
+
+    :cond_a44
+    if-eqz v8, :cond_a8f
+
+    goto :goto_a4a
+    :try_end_a47
+    .catchall {:try_start_995 .. :try_end_a47} :catchall_b3f
+
+    :catchall_a47
+    move-exception v2
+
+    goto/16 :goto_b3e
+
+    :goto_a4a
+    :try_start_a4a
+    invoke-static {v6}, LX/07rq;->A00(LX/05Dd;)LX/07rq;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/facebook/quicklog/reliability/UserFlowLoggerImpl;->getOngoingFlows()[I
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/02uB;->A00([I)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_a63
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-eqz v0, :cond_a63
+
+    const-string v0, "X-IG-SALT-IDS"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_a63
+    :goto_a63
+    move-object v0, v6
+
+    check-cast v0, Lcom/instagram/common/session/UserSession;
+
+    invoke-static {v0, v5}, LX/05s2;->A0V(Ljava/lang/Object;I)V
+
+    invoke-static {v0, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v2
+
+    const-wide v0, 0x810701001a234fL
+
+    check-cast v2, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;
+
+    invoke-interface {v2, v0, v1}, Lcom/facebook/mobileconfig/factory/MobileConfigUnsafeContext;->BZL(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_a8f
+
+    sget-object v0, LX/03dR;->A0B:LX/03dR;
+
+    if-eqz v0, :cond_a8f
+
+    invoke-virtual {v0}, LX/03dR;->A14()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_a8f
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lez v0, :cond_a8f
+
+    const-string v0, "X-IG-QPL-ID-MAPPING"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_a8f
+    sget-boolean v0, LX/01nr;->A02:Z
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-IG-Is-Foldable"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-static {v6, v5}, LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;
+
+    move-result-object v1
+
+    sget-boolean v0, LX/01nr;->A00:Z
+
+    if-eqz v0, :cond_afb
+
+    invoke-static {v1}, LX/00DE;->A02(LX/0yb5;)Z
+
+    move-result v0
+
+    :goto_aa6
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v0, "X-IG-Is-Adaptive-UI"
+
+    invoke-virtual {v4, v0, v1}, LX/01xM;->A03(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_aaf
+    invoke-virtual {v4}, LX/01xM;->A00()LX/01xO;
+
+    move-result-object v4
+
+    new-instance v3, LX/01Af;
+
+    invoke-direct {v3}, LX/01Af;-><init>()V
+
+    iget-object v0, v7, LX/04x6;->A07:LX/02mu;
+
+    iput-object v0, v3, LX/01Af;->A06:LX/02mu;
+
+    iget-object v0, v7, LX/04x6;->A06:LX/03ar;
+
+    iput-object v0, v3, LX/01Af;->A05:LX/03ar;
+
+    iget-object v0, v7, LX/04x6;->A0J:Ljava/lang/String;
+
+    iput-object v0, v3, LX/01Af;->A0D:Ljava/lang/String;
+
+    iget-object v0, v7, LX/04x6;->A09:Ljava/lang/Integer;
+
+    invoke-virtual {v3, v0}, LX/01Af;->A02(Ljava/lang/Integer;)V
+
+    iget-wide v0, v7, LX/04x6;->A01:J
+
+    iput-wide v0, v3, LX/01Af;->A01:J
+
+    iget-wide v0, v7, LX/04x6;->A00:J
+
+    iput-wide v0, v3, LX/01Af;->A00:J
+
+    iget-wide v0, v7, LX/04x6;->A02:J
+
+    iput-wide v0, v3, LX/01Af;->A02:J
+
+    move-object/from16 v0, v21
+
+    iput-object v0, v3, LX/01Af;->A09:Ljava/lang/String;
+
+    iget-object v0, v7, LX/04x6;->A0D:Ljava/lang/String;
+
+    iput-object v0, v3, LX/01Af;->A0A:Ljava/lang/String;
+
+    iput-object v10, v3, LX/01Af;->A0B:Ljava/lang/String;
+
+    move-object/from16 v0, v20
+
+    iput-object v0, v3, LX/01Af;->A0C:Ljava/lang/String;
+
+    iget-boolean v1, v7, LX/04x6;->A0Z:Z
+
+    iget-object v2, v3, LX/01Af;->A0I:Lcom/facebook/tigon/iface/TigonPropertyContainer;
+
+    sget-object v0, LX/00zY;->A0J:LX/00DN;
+
+    invoke-virtual {v2, v0, v1}, Lcom/facebook/tigon/iface/TigonPropertyContainer;->setProperty(LX/00DN;Z)V
+
+    iget-boolean v1, v7, LX/04x6;->A0T:Z
+
+    sget-object v0, LX/00zY;->A04:LX/00DN;
+
+    invoke-virtual {v2, v0, v1}, Lcom/facebook/tigon/iface/TigonPropertyContainer;->setProperty(LX/00DN;Z)V
+
+    invoke-virtual {v3}, LX/01Af;->A00()LX/01xD;
+
+    move-result-object v3
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    goto :goto_afd
+
+    :cond_afb
+    const/4 v0, 0x0
+
+    goto :goto_aa6
+
+    :goto_afd
+    if-eqz v18, :cond_b0a
+
+    invoke-static/range {v19 .. v19}, LX/01qr;->A03(LX/05Db;)LX/01qr;
+
+    move-result-object v2
+
+    const-string v1, "FEED_REQUEST_BUILD_END"
+
+    iget-object v0, v2, LX/01qr;->A00:Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;
+
+    invoke-virtual {v2, v0, v1}, LX/01qr;->A0W(Lcom/facebook/quicklog/LightweightQuickPerformanceLogger;Ljava/lang/String;)V
+
+    :cond_b0a
+    new-instance v1, LX/02uC;
+
+    invoke-direct {v1, v4, v3}, LX/02uC;-><init>(LX/01xO;LX/01xD;)V
+
+    goto :goto_b4d
+
+    :cond_b10
+    const-string v2, "API path: \'"
+
+    const-string v1, "\' contains space."
+
+    invoke-static {v2, v0, v1}, LX/0003;->A0a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v2, LX/07iH;
+
+    invoke-direct {v2, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_b3e
+
+    :cond_b1e
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_b3e
+
+    :cond_b24
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_b3e
+
+    :cond_b2a
+    new-instance v2, LX/07j1;
+
+    invoke-direct {v2}, LX/07j1;-><init>()V
+
+    goto :goto_b3e
+
+    :cond_b30
+    new-instance v2, LX/07j3;
+
+    invoke-direct {v2}, LX/07j3;-><init>()V
+
+    goto :goto_b3e
+
+    :catch_b36
+    move-exception v1
+
+    const-string v0, "Can\'t sign request."
+
+    new-instance v2, Ljava/io/IOException;
+
+    invoke-direct {v2, v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :goto_b3e
+    throw v2
+    :try_end_b3f
+    .catchall {:try_start_a4a .. :try_end_b3f} :catchall_b3f
+
+    :catchall_b3f
+    move-exception v1
+
+    invoke-static {}, Lcom/facebook/systrace/Systrace;->A0E()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_19
+
+    const v0, -0x18a1e225
+
+    invoke-static {v0}, LX/01kc;->A00(I)V
+
+    throw v1
+
+    :goto_b4d
+    invoke-static/range {v16 .. v17}, Lcom/facebook/systrace/Systrace;->A0F(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b59
+
+    const v0, -0xee23162
+
+    invoke-static {v0}, LX/01kc;->A00(I)V
+
+    :cond_b59
+    return-object v1
+.end method
