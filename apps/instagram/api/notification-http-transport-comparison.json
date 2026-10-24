@@ -1,0 +1,67 @@
+{
+  "scope": "Same payload object, saved session, application headers, GET URL and parameters; Node fetch versus the HTTP/2 worker. HTTP-client framing, encoding and TLS differ. No login, raw responses, headers values or account values saved.",
+  "checkedAt": "2026-10-24T04:39:45.044556+00:00",
+  "applicationHeaderNames": [
+    "accept",
+    "accept-language",
+    "ig-intended-user-id",
+    "ig-u-ds-user-id",
+    "ig-u-ig-direct-region-hint",
+    "ig-u-rur",
+    "ig-u-shbid",
+    "ig-u-shbts",
+    "priority",
+    "user-agent",
+    "x-bloks-is-layout-rtl",
+    "x-bloks-is-panorama-enabled",
+    "x-bloks-version-id",
+    "x-fb-client-ip",
+    "x-fb-http-engine",
+    "x-fb-server-cluster",
+    "x-ig-android-id",
+    "x-ig-app-id",
+    "x-ig-app-locale",
+    "x-ig-app-startup-country",
+    "x-ig-bandwidth-speed-kbps",
+    "x-ig-bandwidth-totalbytes-b",
+    "x-ig-bandwidth-totaltime-ms",
+    "x-ig-capabilities",
+    "x-ig-connection-type",
+    "x-ig-device-id",
+    "x-ig-device-locale",
+    "x-ig-family-device-id",
+    "x-ig-mapped-locale",
+    "x-ig-nav-chain",
+    "x-ig-timezone-offset",
+    "x-ig-www-claim",
+    "x-meta-usdid",
+    "x-mid",
+    "x-pigeon-rawclienttime",
+    "x-pigeon-session-id",
+    "x-tigon-is-retry"
+  ],
+  "checks": [
+    {
+      "variant": "node-fetch",
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "recognizedHtmlCategory": "unclassified",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false
+    },
+    {
+      "variant": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false
+    }
+  ]
+}

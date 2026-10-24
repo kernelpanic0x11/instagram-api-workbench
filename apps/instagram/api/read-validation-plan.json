@@ -1,0 +1,734 @@
+{
+  "goal": 100,
+  "scope": "Explicitly reviewed GET reads of settings, eligibility, configuration and lists. No mutations, identifiers, searches, pagination or automatic retries. GET alone is not the safety criterion. Current-user uses edit=true; all others start with no endpoint query parameters. Missing required parameters remain a recorded gap.",
+  "targets": [
+    {
+      "path": "/accounts/current_user/",
+      "method": "get",
+      "query": {
+        "edit": "true"
+      },
+      "purpose": "Read current user"
+    },
+    {
+      "path": "/accounts/get_comment_filter_keywords/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get comment filter keywords"
+    },
+    {
+      "path": "/accounts/get_post_filter_keywords/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get post filter keywords"
+    },
+    {
+      "path": "/accounts/get_controls_filtered_media/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get controls filtered media"
+    },
+    {
+      "path": "/address_book/get_ccu_setting/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get ccu setting"
+    },
+    {
+      "path": "/aed/current/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read current"
+    },
+    {
+      "path": "/api/v1/accounts/get_embeds_opt_out/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get embeds opt out"
+    },
+    {
+      "path": "/api/v1/accounts/last_password_change_timestamp/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read last password change timestamp"
+    },
+    {
+      "path": "/api/v1/creators/collaboration/settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read settings"
+    },
+    {
+      "path": "/api/v1/creators/user_pay/insights/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read insights"
+    },
+    {
+      "path": "/api/v1/fan_club/blocked_members/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read blocked members"
+    },
+    {
+      "path": "/api/v1/fan_club/categories_metadata/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read categories metadata"
+    },
+    {
+      "path": "/api/v1/fan_club/creators_subscribed_to/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read creators subscribed to"
+    },
+    {
+      "path": "/api/v1/fan_club/followed_creators_to_susbcribe_to/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read followed creators to susbcribe to"
+    },
+    {
+      "path": "/api/v1/fan_club/unconnected_creators_to_susbcribe_to/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read unconnected creators to susbcribe to"
+    },
+    {
+      "path": "/api/v1/text_feed/ig_bottom_sheet_info/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read ig bottom sheet info"
+    },
+    {
+      "path": "/archive/live/live_archive_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read live archive settings"
+    },
+    {
+      "path": "/archive/live/lives_archived/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read lives archived"
+    },
+    {
+      "path": "/archive/reel/day_shells_paginated/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read day shells paginated"
+    },
+    {
+      "path": "/archive/reel/friends_with_history/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read friends with history"
+    },
+    {
+      "path": "/business/account/get_boost_guidance_content/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get boost guidance content"
+    },
+    {
+      "path": "/business/account/get_business_objectives_connection_methods/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get business objectives connection methods"
+    },
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get content inspiration medias"
+    },
+    {
+      "path": "/business/account/get_invite_friends_subitems/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get invite friends subitems"
+    },
+    {
+      "path": "/business/account/get_linked_whatsapp_account_info/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get linked whatsapp account info"
+    },
+    {
+      "path": "/business/account/get_professional_conversion_nux_configuration/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get professional conversion nux configuration"
+    },
+    {
+      "path": "/business/account/get_profile_media/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get profile media"
+    },
+    {
+      "path": "/business/account/get_suggested_hashtags/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get suggested hashtags"
+    },
+    {
+      "path": "/business/branded_content/bc_pending_tag_megaphone_for_brand/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read bc pending tag megaphone for brand"
+    },
+    {
+      "path": "/business/branded_content/get_pending_approval_requests_for_brand/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get pending approval requests for brand"
+    },
+    {
+      "path": "/business/branded_content/get_pending_approval_requests_for_creator/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get pending approval requests for creator"
+    },
+    {
+      "path": "/business/branded_content/get_whitelist_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get whitelist settings"
+    },
+    {
+      "path": "/business/branded_content/get_whitelist_sponsors/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get whitelist sponsors"
+    },
+    {
+      "path": "/business/eligibility/get_appeals_data/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get appeals data"
+    },
+    {
+      "path": "/business/eligibility/get_monetization_products_onboarding_eligibility_data/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get monetization products onboarding eligibility data"
+    },
+    {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get product violations render data"
+    },
+    {
+      "path": "/clips/autoplay_configs/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read autoplay configs"
+    },
+    {
+      "path": "/clips/clips_info_for_creation/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read clips info for creation"
+    },
+    {
+      "path": "/clips/user/share_to_fb_config/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read share to fb config"
+    },
+    {
+      "path": "/collections/list/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read list"
+    },
+    {
+      "path": "/commerce/bag/count/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read count"
+    },
+    {
+      "path": "/commerce/bag/index/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read index"
+    },
+    {
+      "path": "/commerce/community/featured_products/merchant_management/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read merchant management"
+    },
+    {
+      "path": "/commerce/inbox/prototype/setting/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read setting"
+    },
+    {
+      "path": "/commerce/product_feed/metadata/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read metadata"
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read tagging feed"
+    },
+    {
+      "path": "/commerce/purchase_protection/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read purchase protection"
+    },
+    {
+      "path": "/content_scheduling/get_scheduled_content/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get scheduled content"
+    },
+    {
+      "path": "/creatives/avatar_profile_pic/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read avatar profile pic"
+    },
+    {
+      "path": "/creatives/avatar_sticker_info/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read avatar sticker info"
+    },
+    {
+      "path": "/creatives/get_unlockable_sticker_nux/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get unlockable sticker nux"
+    },
+    {
+      "path": "/creatives/nav_bar_camera_destination/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read nav bar camera destination"
+    },
+    {
+      "path": "/creators/content_appreciation/async_get_content_appreciation_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read async get content appreciation settings"
+    },
+    {
+      "path": "/creators/content_appreciation/async_get_gifts_view/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read async get gifts view"
+    },
+    {
+      "path": "/creators/user_pay/user_pay_summary/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read user pay summary"
+    },
+    {
+      "path": "/direct_v2/get_folders/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get folders"
+    },
+    {
+      "path": "/direct_v2/icebreakers/get_msgr_ibs/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get msgr ibs"
+    },
+    {
+      "path": "/direct_v2/icebreakers/get/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get"
+    },
+    {
+      "path": "/direct_v2/selectable_themes/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read selectable themes"
+    },
+    {
+      "path": "/direct_v2/should_show_ad_responses_tab/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read should show ad responses tab"
+    },
+    {
+      "path": "/direct_v2/suggested_blocks/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read suggested blocks"
+    },
+    {
+      "path": "/direct_v2/welcome_message/get/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get"
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read fetch suggestion details"
+    },
+    {
+      "path": "/discover/non_profiled/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read non profiled"
+    },
+    {
+      "path": "/dyi/check_data_state/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read check data state"
+    },
+    {
+      "path": "/fan_club/content_preview_ids/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read content preview ids"
+    },
+    {
+      "path": "/fan_club/promotional_video/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read promotional video"
+    },
+    {
+      "path": "/fan_club/welcome_video/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read welcome video"
+    },
+    {
+      "path": "/fb_dating/linked_fb_dating_account/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read linked fb dating account"
+    },
+    {
+      "path": "/fbsearch/nullstate_dynamic_sections/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read nullstate dynamic sections"
+    },
+    {
+      "path": "/fbsearch/recent_searches/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read recent searches"
+    },
+    {
+      "path": "/feed/liked/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read liked"
+    },
+    {
+      "path": "/feed/only_me_feed/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read only me feed"
+    },
+    {
+      "path": "/feed/saved/audio/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read audio"
+    },
+    {
+      "path": "/feed/saved/clips/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read clips"
+    },
+    {
+      "path": "/friendships/feed_favorites_suggestions/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read feed favorites suggestions"
+    },
+    {
+      "path": "/friendships/feed_favorites/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read feed favorites"
+    },
+    {
+      "path": "/friendships/pending_follow_requests_count/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read pending follow requests count"
+    },
+    {
+      "path": "/friendships/recent_followers/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read recent followers"
+    },
+    {
+      "path": "/fundraiser/can_create_personal_fundraisers/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read can create personal fundraisers"
+    },
+    {
+      "path": "/ig_fb_xposting/xposting/disclosures/status/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read status"
+    },
+    {
+      "path": "/igtv/igtv_creation_tools/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read igtv creation tools"
+    },
+    {
+      "path": "/interest_nux/user_interests/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read user interests"
+    },
+    {
+      "path": "/loom/fetch_config/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read fetch config"
+    },
+    {
+      "path": "/map/all_saved_locations/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read all saved locations"
+    },
+    {
+      "path": "/map/map_center_fallback/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read map center fallback"
+    },
+    {
+      "path": "/map/search_null_state/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read search null state"
+    },
+    {
+      "path": "/media/blocked/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read blocked"
+    },
+    {
+      "path": "/media/comment/filtering/get_filter_setting/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get filter setting"
+    },
+    {
+      "path": "/media/story_countdowns/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read story countdowns"
+    },
+    {
+      "path": "/mental_well_being/get_daily_limit_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get daily limit settings"
+    },
+    {
+      "path": "/mental_well_being/get_time_tools_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get time tools settings"
+    },
+    {
+      "path": "/music/recent_searches/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read recent searches"
+    },
+    {
+      "path": "/notifications/get_notification_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get notification settings"
+    },
+    {
+      "path": "/notifications/whitelisted_react_native_routes_from_notif/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read whitelisted react native routes from notif"
+    },
+    {
+      "path": "/pro_home/badge_pro_home_entry_point/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read badge pro home entry point"
+    },
+    {
+      "path": "/pro_home/pro_dash_entrypoint_content/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read pro dash entrypoint content"
+    },
+    {
+      "path": "/restrict_action/get_restricted_users/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get restricted users"
+    },
+    {
+      "path": "/scores/bootstrap/users/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read users"
+    },
+    {
+      "path": "/stories/birthday_highlights/birthday_highlights_media/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read birthday highlights media"
+    },
+    {
+      "path": "/stories/end_of_year/get_end_of_year_info/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get end of year info"
+    },
+    {
+      "path": "/stories/hallpass/suggested_users/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read suggested users"
+    },
+    {
+      "path": "/supervision/guardians/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read guardians"
+    },
+    {
+      "path": "/survey/get/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get"
+    },
+    {
+      "path": "/text_feed/ig_text_post_app_new_activity_feed_count/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read ig text post app new activity feed count"
+    },
+    {
+      "path": "/trusted_friend/get_non_expired_requests_info/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get non expired requests info"
+    },
+    {
+      "path": "/upcoming_events/get_event_chaining/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get event chaining"
+    },
+    {
+      "path": "/upcoming_events/list_story_taggable_events/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read list story taggable events"
+    },
+    {
+      "path": "/users/blocked_list/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read blocked list"
+    },
+    {
+      "path": "/users/featureduserinfo/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read featureduserinfo"
+    },
+    {
+      "path": "/users/get_birthday_connections_info/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get birthday connections info"
+    },
+    {
+      "path": "/users/get_birthday_visibility_setting/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get birthday visibility setting"
+    },
+    {
+      "path": "/users/get_is_eligible_restrict_message_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get is eligible restrict message settings"
+    },
+    {
+      "path": "/users/get_limited_interactions_reminder/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get limited interactions reminder"
+    },
+    {
+      "path": "/users/get_limited_interactions_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get limited interactions settings"
+    },
+    {
+      "path": "/users/get_message_settings_v2/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read get message settings v2"
+    },
+    {
+      "path": "/users/get_recommendation_status_nudge/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read Recommendation status display prompt"
+    },
+    {
+      "path": "/users/live_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read live settings"
+    },
+    {
+      "path": "/users/reel_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read reel settings"
+    },
+    {
+      "path": "/video_call/retrieve_user_call_settings/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read retrieve user call settings"
+    },
+    {
+      "path": "/video_call/user/",
+      "method": "get",
+      "query": {},
+      "purpose": "Read user"
+    }
+  ]
+}

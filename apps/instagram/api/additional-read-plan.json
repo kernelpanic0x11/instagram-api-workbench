@@ -1,0 +1,96 @@
+{
+  "goal": 100,
+  "scope": "Reviewed read-only searches/lists. Public literal software and small limits; no private IDs, messages, settings mutations, pagination or automatic retries. Query-key/serialization evidence comes from pinned APK fields. Values are explicit test inputs, not claims of server defaults. Stop after seven new successes reaches 100 total.",
+  "targets": [
+    {
+      "path": "/users/search/",
+      "method": "get",
+      "query": {
+        "q": "software",
+        "count": "3"
+      }
+    },
+    {
+      "path": "/tags/search/",
+      "method": "get",
+      "query": {
+        "q": "software",
+        "count": "3"
+      }
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "method": "get",
+      "query": {
+        "q": "software",
+        "count": "3"
+      }
+    },
+    {
+      "path": "/direct_v2/search_secondary/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/direct_v2/get_presence/",
+      "method": "get",
+      "query": {
+        "suggested_followers_limit": "3"
+      }
+    },
+    {
+      "path": "/direct_v2/get_presence_active_now/",
+      "method": "get",
+      "query": {
+        "recent_thread_limit": "3",
+        "suggested_followers_limit": "3"
+      }
+    },
+    {
+      "path": "/direct_v2/threads/broadcast/activity/",
+      "method": "get",
+      "query": {
+        "thread_limit": "3"
+      }
+    },
+    {
+      "path": "/direct_v2/search_gen_ai_bots/",
+      "method": "get",
+      "query": {
+        "num_ai_bots": "3"
+      }
+    },
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "method": "get",
+      "query": {
+        "count": "3",
+        "top_participants_media_count": "1"
+      }
+    },
+    {
+      "path": "/live/get_live_chaining/",
+      "method": "get",
+      "query": {
+        "include_post_lives": "false"
+      }
+    },
+    {
+      "path": "/map/search/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/fbsearch/reels_serp/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    }
+  ],
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b"
+}

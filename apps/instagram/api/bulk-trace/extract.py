@@ -96,7 +96,41 @@ def load_profile(path):
  return profile
 load_profile(DEFAULT_PROFILE)
 
-def scan(d,mid,code):
+PARAMETER_SETTERS={
+ 'AQE':('(Ljava/lang/String;Ljava/lang/String;)V','string'),
+ 'A0F':('(Ljava/lang/String;Ljava/lang/String;)V','string'),
+ 'A0B':('(Ljava/lang/String;F)V','number'),
+ 'A0C':('(Ljava/lang/String;I)V','integer'),
+ 'A0D':('(Ljava/lang/String;J)V','integer'),
+ 'A0E':('(Ljava/lang/String;Ljava/lang/Boolean;)V','boolean'),
+ 'A0G':('(Ljava/lang/String;Z)V','boolean'),
+ 'A0H':('(Ljava/lang/String;Z)V','boolean'),
+}
+RESPONSE_FACTORIES={
+ ('LX/02rr;','A01','(LX/0opA;LX/0Wvm;LX/0Wvm;Lcom/instagram/common/session/UserSession;I)LX/02sB;'):2,
+ ('LX/02rr;','A02','(LX/0Wvm;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;'):1,
+ ('LX/02rr;','A03','(LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;'):1,
+ ('LX/02rr;','A04','(LX/0Wvm;Lcom/instagram/common/session/UserSession;I)LX/02sB;'):1,
+ ('LX/02rr;','A06','(LX/0Wvm;LX/0Wvm;LX/0ols;LX/05Dd;)LX/06q3;'):1,
+ ('LX/02rr;','A07','(LX/0Wvm;LX/0ols;LX/05Dd;I)LX/06q3;'):1,
+ ('LX/02rr;','A08','(LX/0Wvm;LX/05Dd;)LX/06q3;'):1,
+}
+OBJECT_STRING_HELPER=('LX/021X;','A1L','(LX/04x6;Ljava/lang/Object;Ljava/lang/String;)V')
+FINALIZERS={
+ ('LX/04x5;','A0K','()LX/02sG;'):'current',
+ ('LX/020p;','A0K','(LX/04x5;Ljava/lang/String;)LX/02sG;'):'route',
+ ('LX/0221;','A0T','(LX/04x5;)LX/02sG;'):'signed',
+ ('LX/021R;','A0T','(LX/04x5;Z)LX/02sG;'):'argument',
+ ('LX/021X;','A0T','(LX/04x5;Ljava/lang/String;Ljava/lang/String;)LX/02sG;'):'parameter',
+ ('LX/0465;','A0N','(LX/04x5;Ljava/lang/String;Ljava/lang/String;)LX/02sG;'):'parameter-a0f',
+ ('LX/0064;','A0S','(LX/04x5;Ljava/lang/String;)LX/02sG;'):'max-id',
+ ('LX/0225;','A0R','(LX/04x5;Ljava/lang/String;Ljava/lang/String;)LX/02sG;'):'parameter-signed',
+ ('LX/0221;','A0V','(LX/04x5;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;'):'parameter-argument',
+ ('LX/0221;','A0U','(LX/04x5;LX/05BI;Ljava/lang/String;Ljava/lang/String;)LX/02sG;'):'callback-parameter',
+ ('LX/0224;','A0P','(LX/04x5;Ljava/lang/String;)LX/02sG;'):'route-signed',
+}
+
+def scan(d,mid,code,include_request_fields=False):
  instructions,bounds=d.insns(code);regs={};objs={};pending=None;out=[];block=0
  def evidence(pc,op,**kw):return {'dex':d.name,'caller':sig(d.methods[mid]),'method_index':mid,'code_unit_offset':pc,'dex_byte_offset':code+16+pc*2,'operation':op,**kw}
  def obj(r,pc):
@@ -104,11 +138,26 @@ def scan(d,mid,code):
   if not v or v[0]!='obj':v=('obj',f'{block}:{pc}:{r}');regs[r]=v
   return objs.setdefault(v[1],{'identity':v[1]})
  def put(o,k,v,ev):
+  if include_request_fields and k in ('path','method') and k in o and o[k]!=v:o['request_fields']=[];o['observations']=[]
   o[k]=v;o[k+'_evidence']=ev
   if o.get('path') and o.get('method'):
    raw=o['path']
    if '/' in raw and not any(c.isspace() for c in raw):
-    out.append({'path':raw if raw.startswith('/') else '/'+raw,'raw_path':raw,'method':o['method'],'confidence':'static-same-receiver-basic-block','evidence':[o['path_evidence'],o['method_evidence']],'receiver_identity':o['identity'],'basic_block_start':block,'dispatch_verified':False})
+    record={'path':raw if raw.startswith('/') else '/'+raw,'raw_path':raw,'method':o['method'],'confidence':'static-same-receiver-basic-block','evidence':[o['path_evidence'],o['method_evidence']],'receiver_identity':o['identity'],'basic_block_start':block,'dispatch_verified':False}
+    if include_request_fields:
+     record['request_fields']=o.setdefault('request_fields',[])
+     if o.get('response_parser'):record['response_parser']=o['response_parser']
+     if o.get('error_parser'):record['error_parser']=o['error_parser']
+    out.append(record)
+    if include_request_fields:o.setdefault('observations',[]).append(record)
+ def parameter(o,key,method,pc,receiver):
+  logical=PARAMETER_SETTERS[method[1]][1]
+  presence='omitted-if-null' if method[1] in ('AQE','A0F','A0E') else 'emitted-when-setter-executes'
+  serialization='one-or-zero' if method[1]=='A0H' else 'true-or-false' if method[1] in ('A0E','A0G') else 'string-value'
+  o.setdefault('request_fields',[]).append({'name':key[1],'logical_type':logical,'wire_type':'string',
+   'required_status':'unknown','client_presence':presence,'client_serialization':serialization,
+   'encoding_status':'request parameter collection; final transport unresolved',
+   'evidence':evidence(pc,'request-parameter-setter',callee=sig(method),receiver_register=receiver,key_origin=key[2])})
  for pc,op,lo,w,off in instructions:
   if pc in bounds:regs={};objs={};pending=None;block=pc
   prev=pending;pending=None
@@ -121,7 +170,7 @@ def scan(d,mid,code):
   elif lo in [0x1a,0x1b]:
    idx=d.u16(off+2) if lo==0x1a else d.u32(off+2);regs[a]=('string',d.strings[idx],evidence(pc,'const-string',string_index=idx,value=d.strings[idx]))
   elif lo==0x62:
-   f=d.fields[d.u16(off+2)];regs[a]=('http_method',ENUM[f],evidence(pc,'sget-object',field=sig(f),http_method=ENUM[f])) if f in ENUM else None
+   f=d.fields[d.u16(off+2)];regs[a]=('http_method',ENUM[f],evidence(pc,'sget-object',field=sig(f),http_method=ENUM[f])) if f in ENUM else ('static_field',f,evidence(pc,'sget-object',field=sig(f))) if include_request_fields else None
   elif lo==0x22:regs[a]=('obj',f'{block}:{pc}:new')
   elif lo==0x5b:
    src=a&15;dst=a>>4;f=d.fields[d.u16(off+2)];v=regs.get(src)
@@ -133,14 +182,92 @@ def scan(d,mid,code):
     o=obj(dst,pc)
     if v and v[0]=='http_method':put(o,'method',v[1],evidence(pc,'iput-object-http-method',field=sig(f),receiver_register=dst,enum_origin=v[2]))
     else:o.pop('method',None)
-   elif v and v[0]=='obj':objs.pop(v[1],None)
+   else:
+    receiver=regs.get(dst)
+    if include_request_fields and receiver and receiver[0]=='obj' and receiver[1] in objs:objs[receiver[1]]['transport_safe']=False
+    if v and v[0]=='obj':objs.pop(v[1],None)
+  elif include_request_fields and lo in (0x59,0x5a,0x5c,0x5d,0x5e,0x5f):
+   src=a&15;dst=a>>4;field=d.fields[d.u16(off+2)];receiver=regs.get(dst)
+   if receiver and receiver[0]=='obj' and receiver[1] in objs:
+    o=objs[receiver[1]];value=regs.get(src)
+    if field==('LX/04x6;','A0U','Z') and value and value[0]=='integer' and value[1] in (0,1):
+     o['envelope']='signed' if value[1] else 'plain';o['envelope_evidence']=evidence(pc,'signing-flag-assignment',field=sig(field),enabled=bool(value[1]))
+    else:o['transport_safe']=False
   elif lo in range(0x6e,0x73) or lo in range(0x74,0x79):
    m=d.methods[d.u16(off+2)]
    if lo<=0x72:
     n=op>>12;tail=d.u16(off+4);args=[(tail>>(4*k))&15 for k in range(min(n,4))]+([(op>>8)&15] if n==5 else [])
    else:args=list(range(d.u16(off+4),d.u16(off+4)+a))
-   if m in HELPERS:
-    v=('obj',f'{block}:{pc}:helper');pending=v;o=objs.setdefault(v[1],{'identity':v[1]});put(o,'method',HELPERS[m],evidence(pc,'verified-helper-return',callee=sig(m)))
+   if include_request_fields and m==OBJECT_STRING_HELPER and len(args)==3:
+    receiver=regs.get(args[0]);value=regs.get(args[1]);key=regs.get(args[2])
+    # A tracked builder used as the toString receiver has unknown virtual effects.
+    if value and value[0]=='obj':objs.pop(value[1],None)
+    o=objs.get(receiver[1]) if receiver and receiver[0]=='obj' else None
+    if o is not None and key and key[0]=='string':
+     parameter(o,key,('LX/04x6;','AQE',PARAMETER_SETTERS['AQE'][0]),pc,args[0])
+     field=o['request_fields'][-1]
+     field.update(client_presence='object-toString-must-succeed; null string result omitted',client_serialization='object-toString-then-string-value')
+     field['evidence'].update(operation='reviewed-object-string-parameter-helper',forwarded_setter=field['evidence']['callee'],callee=sig(m))
+   elif include_request_fields and m[0]=='LX/04x6;' and m[1] in PARAMETER_SETTERS and m[2]==PARAMETER_SETTERS[m[1]][0] and len(args)>=3:
+    receiver=regs.get(args[0]);key=regs.get(args[1])
+    if receiver and receiver[0]=='obj' and key and key[0]=='string':
+     o=objs.get(receiver[1])
+     if o is not None:
+      parameter(o,key,m,pc,args[0])
+   elif include_request_fields and m in FINALIZERS and args:
+    receiver=regs.get(args[0]);o=objs.get(receiver[1]) if receiver and receiver[0]=='obj' else None
+    if o:
+     mode=FINALIZERS[m]
+     if mode in ('route','route-signed'):
+      route=regs.get(args[1]) if len(args)>1 else None
+      if route and route[0]=='string':put(o,'path',route[1],evidence(pc,'verified-route-finalizer-helper',callee=sig(m)))
+      else:o['transport_safe']=False
+     if mode in ('signed','parameter-signed','route-signed'):o['envelope']='signed';o['envelope_evidence']=evidence(pc,'signed-finalizer-helper',callee=sig(m))
+     elif mode in ('argument','parameter-argument'):
+      flag_index=3 if mode=='parameter-argument' else 1
+      value=regs.get(args[flag_index]) if len(args)>flag_index else None
+      o['envelope']='signed' if value and value[0]=='integer' and value[1]==1 else 'plain' if value and value[0]=='integer' and value[1]==0 else None
+      o['envelope_evidence']=evidence(pc,'flag-finalizer-helper',callee=sig(m))
+     if mode in ('parameter','parameter-a0f','parameter-signed','parameter-argument','callback-parameter','max-id'):
+      key_index=2 if mode=='callback-parameter' else 1
+      key=('string','max_id',evidence(pc,'reviewed-helper-literal-key',callee=sig(m),value='max_id')) if mode=='max-id' else regs.get(args[key_index]) if len(args)>key_index else None
+      if key and key[0]=='string':
+       setter='A0F' if mode in ('parameter-a0f','max-id') else 'AQE'
+       parameter(o,key,('LX/04x6;',setter,PARAMETER_SETTERS[setter][0]),pc,args[0])
+       field=o['request_fields'][-1]
+       field['evidence'].update(operation='reviewed-finalizer-parameter',forwarded_setter=field['evidence']['callee'],callee=sig(m))
+     if o.get('transport_safe') and o.get('envelope') in ('plain','signed') and o.get('method') in ('GET','POST'):
+      transport={'status':'client-finalization-traced','parameter_location':'query' if o['method']=='GET' else 'form-body',
+       'envelope':o['envelope'],'content_type':None if o['method']=='GET' else 'application/x-www-form-urlencoded; charset=UTF-8',
+       'server_requiredness':'unknown','evidence':[evidence(pc,'request-finalization',callee=sig(m)),o.get('envelope_evidence')]}
+      for observation in o.get('observations',[]):observation['request_transport']=transport
+     objs.pop(receiver[1],None)
+   elif m in HELPERS:
+    v=('obj',f'{block}:{pc}:helper');pending=v;o=objs.setdefault(v[1],{'identity':v[1]})
+    if include_request_fields:o.update(envelope='plain',transport_safe=True,envelope_evidence=evidence(pc,'verified-factory-default-flags',callee=sig(m)))
+    if include_request_fields and m[2].startswith('(LX/02rr;LX/0Wvm;') and len(args)>1:
+     parser=regs.get(args[1])
+     if parser and parser[0]=='static_field':o['response_parser']={'type':parser[1][2],'field':sig(parser[1]),'evidence':parser[2],'factory_evidence':evidence(pc,'verified-parser-factory-argument',callee=sig(m),argument_index=1)}
+     if m[1]=='A0I' and o.get('response_parser'):o['error_parser']={**o['response_parser'],'role':'error'}
+     elif m[1] in ('A0J','A0K'):o['error_parser']={'type':'LX/01pP;','role':'error','evidence':evidence(pc,'verified-factory-common-error-parser',callee=sig(m))}
+    elif include_request_fields and m[0:2] in [('LX/0225;','A0L'),('LX/0064;','A0Q')]:
+     parser_type='LX/01pP;' if m[1]=='A0L' else 'LX/03MB;'
+     o['response_parser']={'type':parser_type,'field':parser_type+'->A00'+parser_type,
+      'evidence':evidence(pc,'verified-helper-fixed-parser',callee=sig(m)),
+      'evidence_path':'api/evidence/helper-AnonymousClass'+('0225-A0L.json' if m[1]=='A0L' else '0064-A0Q.json')}
+     o['error_parser']={**o['response_parser'],'role':'error'}
+    put(o,'method',HELPERS[m],evidence(pc,'verified-helper-return',callee=sig(m)))
+   elif include_request_fields and m in RESPONSE_FACTORIES:
+    v=('obj',f'{block}:{pc}:factory');pending=v;o=objs.setdefault(v[1],{'identity':v[1]})
+    o.update(envelope='plain',transport_safe=True,envelope_evidence=evidence(pc,'verified-factory-default-flags',callee=sig(m)))
+    index=RESPONSE_FACTORIES[m];parser=regs.get(args[index]) if len(args)>index else None
+    if parser and parser[0]=='static_field':o['response_parser']={'type':parser[1][2],'field':sig(parser[1]),'evidence':parser[2],
+     'factory_evidence':evidence(pc,'verified-parser-factory-argument',callee=sig(m),argument_index=index-1)}
+    if m[1] in ('A01','A02','A06'):
+     error_index=index+1;error=regs.get(args[error_index]) if len(args)>error_index else None
+     if error and error[0]=='static_field':o['error_parser']={'type':error[1][2],'field':sig(error[1]),'role':'error','evidence':error[2],
+      'factory_evidence':evidence(pc,'verified-parser-factory-argument',callee=sig(m),argument_index=error_index-1)}
+    else:o['error_parser']={'type':'LX/01pP;','role':'error','evidence':evidence(pc,'verified-factory-common-error-parser',callee=sig(m))}
    elif m in METHOD_HELPERS and len(args)==1:
     o=obj(args[0],pc);put(o,'method',METHOD_HELPERS[m],evidence(pc,'verified-method-helper',callee=sig(m),receiver_register=args[0]))
    elif (m==('LX/04x6;','A0A','(Ljava/lang/String;)V') or m in PATH_HELPERS) and len(args)==2:
@@ -162,7 +289,7 @@ def scan(d,mid,code):
    # Array creation may retain aliases; conservatively discard tracked object facts.
    objs.clear()
   elif lo==0x1f:pass # check-cast preserves identity
-  elif lo in [0x12]:regs[a&15]=None
+  elif lo in [0x12]:regs[a&15]=('integer',((a>>4)^8)-8) if include_request_fields else None
   elif lo in range(0x13,0x1a) or lo in [0x1c,0x20,0x21,0x23] or lo in range(0x2d,0x32) or lo in range(0x44,0x4b) or lo in range(0x52,0x59) or lo in range(0x60,0x67) or lo in range(0x7b,0xe3) or lo in [0xfe,0xff]:
    # All ordinary destination-writing formats: 12x/22c/22s use low destination nibble, remaining formats use full byte.
    dest=(a&15) if lo in [0x20,0x21,0x23] or lo in range(0x52,0x59) or lo in range(0x7b,0x90) or lo in range(0xb0,0xd8) else a

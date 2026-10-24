@@ -1,0 +1,306 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Manual review of ten pinned client constructions. Client presence and encoding are not server requiredness. Only three supported corrections were retested.",
+  "operations": [
+    {
+      "path": "/notifications/get_notification_settings/",
+      "method": "get",
+      "caller": "LX/09h8;->A02(Lcom/instagram/common/session/UserSession;Ljava/lang/String;Z)LX/02sG;",
+      "fields": [
+        {
+          "name": "content_type",
+          "client_presence": "Only when caller string is nonempty",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "enable_ig_new_settings",
+          "client_presence": "Always on this construction path",
+          "encoding": "Boolean serialized as true/false",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Retested with enable_ig_new_settings=false; HTTP 400. Missing fields alone do not explain the remaining failure.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/business/account/get_suggested_hashtags/",
+      "method": "get",
+      "caller": "LX/0Rem;->B4l(Ljava/lang/String;)LX/09AD;",
+      "fields": [
+        {
+          "name": "used_hashtags",
+          "client_presence": "Added after iterating the list, including an empty list",
+          "encoding": "Comma-joined string; empty list produces empty string",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Retested with used_hashtags empty; HTTP 400. No server-requiredness claim.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/map/search_null_state/",
+      "method": "get",
+      "caller": "LX/0AyF;->A03(Lcom/instagram/common/session/UserSession;)V",
+      "fields": [
+        {
+          "name": "signed_body",
+          "client_presence": "Signing-envelope flag true on the traced path",
+          "encoding": "SIGNATURE. prefix plus JSON parameter object in query",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Retested with empty signed envelope; HTTP 400. Shared envelope evidence does not establish other transport requirements.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/accounts/get_controls_filtered_media/",
+      "method": "get",
+      "caller": "LX/0KVY;->A00(Lcom/instagram/common/session/UserSession;Ljava/util/List;Lkotlin/jvm/functions/Function1;)LX/02sG;",
+      "fields": [],
+      "finding": "Constructs a JSON array of objects with m_pk from media IDs. Outer parameter name comes from encoded string helper index 0x140 and remains unresolved. Not retested without a verified outer key and scoped media input.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/address_book/get_ccu_setting/",
+      "method": "get",
+      "caller": "LX/0o8B;->A08(J)V",
+      "fields": [
+        {
+          "name": "phone_id",
+          "client_presence": "Shared A01 helper adds a session/device-derived value",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "A second key/value comes from encoded key and Android device context; A0Y transport flag is caller-dependent. Not retested with fabricated device values.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/music/recent_searches/",
+      "method": "get",
+      "caller": "LX/0hdt;->A01(LX/06Sv;Ljava/lang/String;Z)V",
+      "fields": [
+        {
+          "name": "product",
+          "client_presence": "Always supplied; enum-to-product mapper has an empty-string fallback",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "browse_session_id",
+          "client_presence": "Read from a nonnull caller field",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "search_session_id",
+          "client_presence": "Always on this construction path",
+          "encoding": "Empty string",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Product depends on music surface; browse session comes from caller context. Not retested without that context. Encoded Boolean key is a placeholder, not a real query parameter.",
+      "unresolved_fields": [
+        {
+          "name": "encoded_boolean_key",
+          "client_presence": "Only for two enum branches; key unresolved",
+          "encoding": "true",
+          "server_requiredness": "unknown"
+        }
+      ]
+    },
+    {
+      "path": "/text_feed/ig_text_post_app_new_activity_feed_count/",
+      "method": "get",
+      "caller": "LX/0BeW;->A00(LX/05BI;Lcom/instagram/common/session/UserSession;LX/0JoO;)V",
+      "fields": [
+        {
+          "name": "threads_app_version",
+          "client_presence": "Nullable setter uses installed com.instagram.barcelona version",
+          "encoding": "String query value, omitted if null",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Requires investigation of installed-Threads context and null handling. Not retested with an invented app version.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/users/get_message_settings_v2/",
+      "method": "get",
+      "caller": "LX/0KMQ;->A00(Lcom/instagram/common/session/UserSession;)LX/02sG;",
+      "fields": [],
+      "finding": "Factory, route and 020p.A0K finalizer add no endpoint query fields in this caller. No corrected request identified; original HTTP 400 remains.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/api/v1/accounts/last_password_change_timestamp/",
+      "method": "get",
+      "caller": "LX/0ECh;->onStart()V",
+      "fields": [],
+      "finding": "Sets A0N=true: shared finalizer uses root-relative route rather than prepending /api/v1. Local proxy already preserves this explicit prefix. No path correction identified; not retested.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/api/v1/accounts/get_embeds_opt_out/",
+      "method": "get",
+      "caller": "LX/0Gcc;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V",
+      "fields": [],
+      "finding": "Sets root-relative route mode before 020p.A0K. Local proxy already preserves /api/v1. No endpoint query fields or path correction identified; not retested.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/dynamic_onboarding/get_direct_empty_state/",
+      "method": "get",
+      "caller": "LX/0CBh;->A03(Lcom/instagram/common/session/UserSession;ZZ)LX/02sG;",
+      "fields": [
+        {
+          "name": "user_id",
+          "client_presence": "Always supplied from UserSession.userId",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "should_contain_combined_unit",
+          "client_presence": "Always true in this caller",
+          "encoding": "true",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "should_contain_message_unit",
+          "client_presence": "Caller Boolean argument",
+          "encoding": "true or false",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "should_contain_pending_follow_request_unit",
+          "client_presence": "Caller Boolean argument",
+          "encoding": "true or false",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Caller supplies the signed-in user ID and a constant true combined-unit flag. Corrected request succeeded; private ID used only in memory. Server requiredness and which change caused acceptance remain unproven.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/api/v1/fan_club/category_members/",
+      "method": "get",
+      "caller": "Lcom/instagram/fanclub/memberlist/repository/FanClubMemberListCategoryRepository;->A00(LX/0GsX;LX/0Pmx;ZZ)Ljava/lang/Object;",
+      "fields": [
+        {
+          "name": "category",
+          "client_presence": "Always supplied through enum.toString",
+          "encoding": "Enum wire string; reviewed most_recent",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "limit",
+          "client_presence": "Client uses 30; bounded test used 3",
+          "encoding": "Integer string",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "should_include_unconnected",
+          "client_presence": "Caller Boolean argument",
+          "encoding": "true or false",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "should_include_restricted_countries",
+          "client_presence": "Caller Boolean argument",
+          "encoding": "true or false",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Enum 0GsX.toString returns its wire-value field. Corrected request using most_recent, limit 3 and both flags false succeeded. Individual server requiredness remains unknown.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/media/sticker_tray_section/",
+      "method": "get",
+      "caller": "LX/0PUK;->A00(Lcom/instagram/common/session/UserSession;LX/0Ayv;Ljava/lang/String;)LX/02sB;",
+      "fields": [
+        {
+          "name": "surface",
+          "client_presence": "CLIPS for 0UGw context, STORIES otherwise",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "section_name",
+          "client_presence": "Always custom_stickers; 0122.A00(0x49) resolves key",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "item_cursor",
+          "client_presence": "Only when nonnull; omitted in initial-page test",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Recovered encoded section_name key by reviewing the 0122 switch table at index 0x49. STORIES/custom_stickers initial-page read succeeded; no pagination performed.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/direct_v2/ranked_recipients/",
+      "method": "get",
+      "caller": "LX/0PZD;->A01(Lcom/instagram/common/session/UserSession;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZ)LX/02sG;",
+      "fields": [
+        {
+          "name": "mode",
+          "client_presence": "Caller String argument; supported values not yet traced",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "show_threads",
+          "client_presence": "Always emitted from caller Boolean",
+          "encoding": "true or false",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "max_ig_results",
+          "client_presence": "Caller integer argument",
+          "encoding": "Integer string",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "max_fb_results",
+          "client_presence": "Always zero",
+          "encoding": "Integer string",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "max_ig_bus_results",
+          "client_presence": "Caller integer argument",
+          "encoding": "Integer string",
+          "server_requiredness": "unknown"
+        },
+        {
+          "name": "max_ai_bot_results",
+          "client_presence": "Caller integer argument",
+          "encoding": "Integer string",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Also supports nonempty query, positive max_ibc_results, optional poster_id and fast_typeahead. Deferred retest until mode value and upstream caller context are verified; no guessed mode sent.",
+      "unresolved_fields": []
+    },
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "method": "get",
+      "caller": "LX/0FkF;->A02()LX/00fh;",
+      "fields": [
+        {
+          "name": "entry_point",
+          "client_presence": "Non-null caller field A01 supplied to AQE",
+          "encoding": "String query value",
+          "server_requiredness": "unknown"
+        }
+      ],
+      "finding": "Request finalizes as plain query. Entry-point value is supplied by caller state; deferred retest until a valid upstream value is traced. No fabricated entry point sent.",
+      "unresolved_fields": []
+    }
+  ]
+}

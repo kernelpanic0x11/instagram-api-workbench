@@ -6,7 +6,43 @@ A local JavaScript Swagger UI and an evidence-linked reconstruction of Instagram
 
 **679 HTTP operations · 1,456 normalized paths · 777 unresolved-method route candidates**
 
+Swagger includes all 679 traced operations. The **Operation coverage** panel lists
+every operation, filters by remaining gaps, and links directly to its Swagger
+entry. Offline DEX tracing recovered **788 logical request-field names across
+399 operations**; the remaining request contracts still need investigation.
+Paced [read validation](docs/READ-VALIDATION.md) records successful reads and
+unsuccessful attempts separately. The
+[coverage ledger](api/coverage.json) distinguishes those observations from
+static evidence. No operation is claimed to have a fully recovered contract.
+
+Response tracing now binds **603 normalized operations** to client parsers and
+provides partial ordinary response models for **550 operations** in Swagger. The parser analysis follows
+control flow, a verified shared field dispatcher, and bounded forwarding-parser
+chains. Recognized response keys retain their DEX evidence; unknown value types,
+nullability, nested shapes, server requiredness and exhaustive error responses remain
+explicit gaps. This is not a complete server contract.
+
+Finalized client encoding is traced for **298 operations**, including plain and
+`SIGNATURE.`-prefixed `signed_body` envelopes. **626 operations** have error-parser
+bindings. Shared message parsing distinguishes token shapes and client-required
+`key`/`time` fields in system-message objects. Anonymous read checks also observed
+HTTP 200 with JSON `status: "fail"`; HTTP success alone does not establish API success.
+
 These counts describe recovered client configuration, **not endpoints verified to work against Instagram**. The project does not contain Instagram's server code, ranking algorithm, or a proven way to increase reach.
+
+A [focused comment-keyword contract](docs/COMMENT-KEYWORDS-CONTRACT.md) now
+documents a parameterless read construction, client-required response fields,
+observed wire types, and HTTP-200 failure behavior. Open that GET operation in
+Swagger to try it with your own verified Android connection. The
+[post-keyword contract](docs/POST-KEYWORDS-CONTRACT.md) has also been traced through
+two client callers and checked with a read-only authenticated request.
+
+The optional [mobile HTTP/2 transport](docs/MOBILE-TRANSPORT.md) fixes a reproduced
+case where Node fetch returned HTTP 400. Five formerly failing reads now succeed
+through that backend; the ledger records **120 observed successful operations** after transport retests and reviewed
+read-only searches/lists. The [online-testing audit](docs/ONLINE-TESTING.md)
+distinguishes successes, failures and skipped operations; write-capable calls are
+not executed under the current read-only scope.
 
 ## Run
 
@@ -28,6 +64,8 @@ Everything is on that page:
 - Unresolved routes, GraphQL operation-name candidates, Bloks identifiers, and source evidence.
 
 The JavaScript proxy forwards explicit requests to the connected profile: `https://www.instagram.com` for browser cookies or `https://i.instagram.com` for Android sessions. Relative routes default to `/api/v1`; explicit `api/`, `graphql`, and `rupload_` prefixes are preserved. This is a client routing choice, not a verified host/base-path binding for every candidate.
+
+For browser-free mobile authentication, the optional [instagrapi adapter](api/AUTHENTICATION.txt) handles login and imports the resulting session into the workbench. It needs no APK or connected phone. Instagram may require a fresh two-factor code or account challenge. Saved session settings stay outside the repository in private application storage and can be reused on subsequent runs.
 
 For browser login, install the optional helper once with `cd api && npm ci`, keep Google Chrome installed, and click **Open Instagram login** in Swagger. Sign in directly on Instagram in the separate Chrome window, then click **Verify authentication** and **GET my account settings**. Requests execute in that browser context; the workbench does not export cookies or save a browser storage-state file. Disconnect closes the temporary session. Advanced manual cookie/bearer entry remains available. Login challenges must be completed directly on Instagram. This is local browser automation, not Meta OAuth or a third-party login service.
 
@@ -114,3 +152,5 @@ The server binds only to `127.0.0.1`. Credentials stay in process memory until d
 Original workbench code and analysis scripts are MIT licensed. Third-party Swagger assets keep their upstream licenses. Extracted identifiers, metadata, and decompiler evidence are research material; the MIT license does not grant rights to Instagram software. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 Independent research project; not affiliated with or endorsed by Instagram or Meta.
+
+The complete follow-up review of 37 previously unverified reads, including corrected requests and deferred contexts, is described in [REMAINING-READS.md](docs/REMAINING-READS.md).

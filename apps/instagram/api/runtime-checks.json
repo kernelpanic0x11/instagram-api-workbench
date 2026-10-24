@@ -1,0 +1,8 @@
+{
+  "note": "Bounded read-only observations from one authenticated Android session. Account data, request headers and response values were omitted. These checks do not guarantee future availability or a complete contract.",
+  "checks": [
+    {"path": "/accounts/current_user/", "method": "get", "queryKeys": ["edit"], "httpStatus": 200, "instagramStatus": "ok", "checkedOn": "2026-10-23"},
+    {"path": "/accounts/get_comment_filter_keywords/", "method": "get", "httpStatus": 200, "instagramStatus": "ok", "checkedOn": "2026-10-23"},
+    {"path": "/accounts/get_post_filter_keywords/", "method": "get", "httpStatus": 200, "instagramStatus": "ok", "checkedOn": "2026-10-23"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "bodyKind": "object",
+  "fields": {
+    "status": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "observedItemTypes": [],
+      "empty": true
+    },
+    "disabled": {
+      "type": "integer"
+    }
+  },
+  "instagramStatus": "ok",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "path": "/accounts/get_post_filter_keywords/",
+  "method": "get",
+  "queryKeys": [],
+  "requestBodySent": false,
+  "checkedAt": "2026-10-24T04:12:44.253656+00:00",
+  "rawResponseSaved": false,
+  "personalValuesSaved": false
+}

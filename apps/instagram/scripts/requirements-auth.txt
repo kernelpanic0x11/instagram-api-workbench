@@ -1,0 +1,2 @@
+# Optional browser-free authentication provider; upstream is MIT licensed.
+instagrapi==3.1.0

@@ -1,4 +1,38 @@
-BROWSER LOGIN (RECOMMENDED FOR LOCAL USE)
+OPTIONAL DIRECT MOBILE LOGIN (INSTAGRAPI)
+
+The optional adapter uses https://github.com/subzeroid/instagrapi (MIT) for
+authentication rather than maintaining a second mobile login implementation.
+No APK, phone connection, browser, or Playwright is needed for this adapter.
+Instagram can still require an account challenge or a fresh two-factor code.
+The adapter stops on account challenges rather than resolving them automatically.
+
+From the repository root:
+  python3 -m venv tools/instagrapi-venv
+  tools/instagrapi-venv/bin/python -m pip install -r apps/instagram/scripts/requirements-auth.txt
+  npm start --prefix apps/instagram/api
+
+In another terminal, after setting IG_USERNAME and IG_PASSWORD in ~/.secrets:
+  tools/instagrapi-venv/bin/python apps/instagram/scripts/connect-instagrapi.py
+
+To enter MFA in a local web form instead of the terminal, add --web-mfa.
+Open http://127.0.0.1:8767 and wait until the form requests a code. The form
+accepts one code, keeps it only in memory, and displays the verification result.
+It expires after five minutes waiting for input and closes shortly after login.
+
+Secrets files are parsed as assignments, never executed as shell scripts.
+Two-factor codes are requested with hidden terminal input. The adapter verifies
+the account username before importing its session, then asks the workbench to
+verify the numeric account identity independently. Output omits account details.
+Session settings are saved outside the repository with private permissions.
+On macOS: ~/Library/Application Support/mobile-api-workbench/auth/instagram.json.
+On Linux: $XDG_DATA_HOME/mobile-api-workbench/auth/instagram.json (default
+~/.local/share). These settings contain credentials; do not share them.
+Subsequent runs load those settings and let instagrapi validate/reuse the session.
+The local proxy holds imported credentials only until disconnect or shutdown;
+Disconnect does not delete the adapter's saved session file.
+Live acceptance depends on Instagram; synthetic adapter tests do not prove login.
+
+BROWSER LOGIN (ALTERNATIVE)
 
 Install Google Chrome and run npm ci in api. Open Instagram login creates a
 separate non-persistent Chrome context through optional Playwright 1.64.1.
@@ -38,3 +72,10 @@ Browser verification was confirmed with a live authenticated settings GET.
 The former browser current_user request returned useragent mismatch; that
 Android endpoint is no longer used to verify browser sessions.
 Tests also cover synthetic successes, failures, redirects and privacy filtering.
+
+MOBILE HTTP TRANSPORT
+When tools/instagrapi-venv/bin/python exists, restarting the local server enables
+the optional mobile HTTP/2 worker for Android-profile requests. The worker uses
+connection credentials in memory; it never logs in or saves sessions. Browser
+requests keep their existing transport. See ../docs/MOBILE-TRANSPORT.md for the
+paired HTTP-400/HTTP-200 evidence and limits.

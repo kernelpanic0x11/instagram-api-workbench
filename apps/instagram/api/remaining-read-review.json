@@ -1,0 +1,527 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Frozen review of all 37 previously unverified GET operations. Read-only corrections only. Runtime account and request UUID values are resolved in memory. Static evidence is client construction, not proof of complete server contracts.",
+  "operations": [
+    {
+      "path": "/accounts/get_controls_filtered_media/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0KVY;->A00(Lcom/instagram/common/session/UserSession;Ljava/util/List;Lkotlin/jvm/functions/Function1;)LX/02sG;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0021.A00(0x140) resolves media_infos. Caller serializes a list as JSON objects with m_pk. Test an empty list only; no media identifiers or pagination.",
+      "fields": {
+        "media_infos": "JSON array string; entries have m_pk. Server minimum length unknown."
+      },
+      "correctedQuery": {
+        "media_infos": "[]"
+      }
+    },
+    {
+      "path": "/address_book/get_ccu_setting/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0o8B;->A08(J)V"
+      ],
+      "disposition": "needs-context",
+      "finding": "Caller combines phone_id with an Android-context-derived value and an encoded key through 0o8B.A01. Saved desktop auth does not establish that Android context. No fabricated device identifiers.",
+      "fields": {
+        "phone_id": "Session/device-derived String; additional encoded device key unresolved."
+      }
+    },
+    {
+      "path": "/api/v1/text_feed/ig_bottom_sheet_info/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0OdD;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0OdD recognizes prefollow_notif entrypoint; injected_actor_ids is nullable. Test this recognized entrypoint without injected accounts. Root-path flag A0N is set; the explicit /api/v1 path already preserves the root.",
+      "fields": {
+        "entrypoint": "Caller context String; prefollow_notif explicitly recognized.",
+        "injected_actor_ids": "Nullable caller String; omitted in this bounded test."
+      },
+      "correctedQuery": {
+        "entrypoint": "prefollow_notif"
+      }
+    },
+    {
+      "path": "/archive/live/live_archive_settings/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0cdL;->A01()V"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing same-path GET returned HTML 404; no evidence-backed request correction found. No claim of permanent removal.",
+      "fields": {}
+    },
+    {
+      "path": "/archive/reel/friends_with_history/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "Lcom/instagram/archive/fragment/ArchiveReelPeopleFragment;->onCreate(Landroid/os/Bundle;)V"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed initial caller finalizes without endpoint-specific fields. Existing HTML 404 provides no supported parameter or path correction.",
+      "fields": {}
+    },
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0FkF;->A02()LX/00fh;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0BWF.A05 copies 0ECb.A05 into 0FkF.A01. 0ECb.onCreate explicitly falls back to unknown for absent entry point. Test that actual client fallback.",
+      "fields": {
+        "entry_point": "Nonnull caller String; reviewed fallback unknown."
+      },
+      "correctedQuery": {
+        "entry_point": "unknown"
+      }
+    },
+    {
+      "path": "/business/account/get_linked_whatsapp_account_info/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0np6;->A05(LX/0raW;)V"
+      ],
+      "disposition": "needs-context",
+      "finding": "fb_auth_token comes from PromoteData.A13, not the Instagram session. No Facebook token is available or requested.",
+      "fields": {
+        "fb_auth_token": "PromoteData.A13 String through 0465.A0N."
+      }
+    },
+    {
+      "path": "/business/account/get_profile_media/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0ggj;->A00(LX/0ojA;ZZ)V"
+      ],
+      "disposition": "corrected-read",
+      "finding": "Initial-page caller supplies user_id; refreshed context generates a random UUID using 0123.A0s. 0242.A01 decodes session_id. Test own account only with a new in-memory UUID; no page or next_media_ids.",
+      "fields": {
+        "user_id": "Caller account ID; bounded test uses verified own ID.",
+        "session_id": "Random UUID from 0123.A0s on refreshed context.",
+        "exclude_bloks_widgets": "Conditional Boolean.",
+        "page": "Pagination only; omitted.",
+        "next_media_ids": "Pagination only; omitted."
+      },
+      "correctedQuery": {
+        "user_id": {
+          "source": "verified-account-id"
+        },
+        "session_id": {
+          "source": "new-request-uuid"
+        }
+      }
+    },
+    {
+      "path": "/business/branded_content/bc_pending_tag_megaphone_for_brand/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0BYX;->A0k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "Caller sends media_id derived from a specific media context and another helper-derived key. No scoped branded-content media context available; no arbitrary media selected.",
+      "fields": {
+        "media_id": "Media context ID, split on underscore."
+      }
+    },
+    {
+      "path": "/business/eligibility/get_appeals_data/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0736;->A01(LX/0736;)V"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found. No appeal submission is attempted.",
+      "fields": {}
+    },
+    {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0736;->A01(LX/0736;)V"
+      ],
+      "disposition": "corrected-read",
+      "finding": "Caller supplies product_types using 02l6.toString. Test reviewed branded_content enum wire value; response is eligibility data, not a change or appeal.",
+      "fields": {
+        "product_types": "02l6 enum wire String; branded_content is reviewed."
+      },
+      "correctedQuery": {
+        "product_types": "branded_content"
+      }
+    },
+    {
+      "path": "/commerce/community/featured_products/merchant_management/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0QFw;->A00(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V"
+      ],
+      "disposition": "needs-context",
+      "finding": "Getter requires merchant_id from merchant context. No merchant identifier was supplied; no merchant management mutation attempted.",
+      "fields": {
+        "merchant_id": "Caller field 0QFw.A04."
+      }
+    },
+    {
+      "path": "/commerce/inbox/prototype/setting/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "Lcom/instagram/debug/devoptions/api/BundledNotificationPrototypeApiHelper;->A00(Lcom/instagram/common/session/UserSession;LX/0Pmx;)Ljava/lang/Object;"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Developer-options getter constructs no endpoint-specific parameters. Existing HTML 404; no evidence-backed correction found. Setter paths are not executed.",
+      "fields": {}
+    },
+    {
+      "path": "/commerce/product_feed/metadata/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0mFD;->A03(LX/0feI;LX/0mFD;Ljava/lang/Integer;Ljava/util/List;)LX/0xAD;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "Caller serializes compound_product_ids and supplies primary_endpoint/surface_type. Test empty products with reviewed wishlist values. No products or shopping state changed.",
+      "fields": {
+        "compound_product_ids": "JSON array String; test [].",
+        "primary_endpoint": "Caller integer mapping; reviewed wishlist.",
+        "surface_type": "Caller integer mapping; reviewed wishlist."
+      },
+      "correctedQuery": {
+        "compound_product_ids": "[]",
+        "primary_endpoint": "wishlist",
+        "surface_type": "wishlist"
+      }
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "Lcom/instagram/shopping/repository/taggingfeed/ShoppingTaggingFeedRepository;->A00(LX/0VYi;Lcom/instagram/shopping/repository/taggingfeed/ShoppingTaggingFeedRepository;Ljava/lang/String;LX/0Pmx;ZZ)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "Request depends on usage enum, prior_module, waterfall_id, serialized client_state and contextual source/product data. No coherent tagging-feed context available; no fabricated state.",
+      "fields": {
+        "query_text": "Caller tagging-feed state; server requiredness unknown.",
+        "usage": "Caller tagging-feed state; server requiredness unknown.",
+        "prior_module": "Caller tagging-feed state; server requiredness unknown.",
+        "waterfall_id": "Caller tagging-feed state; server requiredness unknown.",
+        "timezone_offset": "Caller tagging-feed state; server requiredness unknown.",
+        "client_state": "Caller tagging-feed state; server requiredness unknown.",
+        "shopnet_recommended_product_ids": "Caller tagging-feed state; server requiredness unknown.",
+        "source_type": "Caller tagging-feed state; server requiredness unknown.",
+        "source_id": "Caller tagging-feed state; server requiredness unknown.",
+        "page_type": "Caller tagging-feed state; server requiredness unknown.",
+        "product_id": "Caller tagging-feed state; server requiredness unknown."
+      }
+    },
+    {
+      "path": "/commerce/purchase_protection/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0HjI;->A00()V"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported request correction found.",
+      "fields": {}
+    },
+    {
+      "path": "/direct_v2/icebreakers/get_msgr_ibs/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "Linstagram/features/direct/fragment/icebreaker/ImportMsgrIceBreakersFragment;->A0Q()V"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed GET construction has no endpoint-specific fields. Existing HTML 404; related import/update actions are outside scope and are not run.",
+      "fields": {}
+    },
+    {
+      "path": "/direct_v2/ranked_recipients/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0PZD;->A01(Lcom/instagram/common/session/UserSession;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIZ)LX/02sG;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0Hqg.B4p selects default_no_interop for a nonempty input, passes zero result counts and show_threads=false. Test public software query using this construction; no message sent.",
+      "fields": {
+        "mode": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "query": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "show_threads": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "max_ig_results": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "max_fb_results": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "max_ig_bus_results": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "max_ai_bot_results": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "max_ibc_results": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "poster_id": "Reviewed 0PZD.A01 query field; individual server requiredness unknown.",
+        "fast_typeahead": "Reviewed 0PZD.A01 query field; individual server requiredness unknown."
+      },
+      "correctedQuery": {
+        "mode": "default_no_interop",
+        "query": "software",
+        "show_threads": "false",
+        "max_ig_results": "0",
+        "max_fb_results": "0",
+        "max_ig_bus_results": "0",
+        "max_ai_bot_results": "0"
+      }
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "priorHttpStatus": 200,
+      "callers": [
+        "LX/0P4W;->A0S()V"
+      ],
+      "disposition": "corrected-read",
+      "finding": "020R.A00(0x44d) resolves include_social_context; caller sends 1 and a target_id. Test own verified account only, with no chained IDs.",
+      "fields": {
+        "target_id": "Nonempty account ID; own-account test only.",
+        "chained_ids": "Optional joined IDs; omitted.",
+        "include_social_context": "Client literal 1."
+      },
+      "correctedQuery": {
+        "target_id": {
+          "source": "verified-account-id"
+        },
+        "include_social_context": "1"
+      }
+    },
+    {
+      "path": "/fan_club/promotional_video/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "Lcom/instagram/fanclub/api/FanClubApi;->A01(LX/042S;Ljava/lang/String;LX/0Pmx;)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "FanClubApi.A01 supplies fan_club_id from selected club context. A generic Instagram account ID is not substituted for a verified fan-club ID.",
+      "fields": {
+        "fan_club_id": "Selected fan-club context ID."
+      }
+    },
+    {
+      "path": "/fan_club/welcome_video/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "Lcom/instagram/fanclub/api/FanClubApi;->A01(LX/042S;Ljava/lang/String;LX/0Pmx;)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "FanClubApi.A01 supplies fan_club_id from selected club context. A generic Instagram account ID is not substituted for a verified fan-club ID.",
+      "fields": {
+        "fan_club_id": "Selected fan-club context ID."
+      }
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0KLc;->A00(Lcom/instagram/common/session/UserSession;Ljava/lang/String;)LX/02sG;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "Caller supplies q and literal count=20. Previous bounded test used count=3. Retest once with actual client count, keeping public software term; does not prove 20 required.",
+      "fields": {
+        "q": "Search String.",
+        "count": "Client literal 20; server requirement unknown."
+      },
+      "correctedQuery": {
+        "q": "software",
+        "count": "20"
+      }
+    },
+    {
+      "path": "/fundraiser/story_charities_search/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0JfB;->B4p(Ljava/lang/String;Ljava/lang/String;)LX/09AD;"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed search branch supplies query and optional max_id. Existing initial-page software query already matches; HTML 404 has no supported correction. No donations or pagination.",
+      "fields": {}
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages_stories/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0Teo;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "0005.A00(0x40) resolves horizon_world_id, supplied by selected world context. No world ID is available; no fabricated world or page context.",
+      "fields": {
+        "horizon_world_id": "0005.A00(0x40); selected world context ID."
+      }
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0nRz;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "0005.A00(0x40) resolves horizon_world_id, supplied by selected world context. No world ID is available; no fabricated world or page context.",
+      "fields": {
+        "horizon_world_id": "Selected world context ID.",
+        "page_type": "For page-list route: 0000.A00(0x5ff), caller context.",
+        "page_token": "For page-list route: caller pagination String."
+      }
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page_stories/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0Teo;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed branch finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found.",
+      "fields": {}
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0nRz;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "needs-context",
+      "finding": "Shared finalization requires page_type and page_token. No coherent page-list context available; empty or fabricated page tokens are not introduced.",
+      "fields": {
+        "page_type": "0000.A00(0x5ff), caller String.",
+        "page_token": "Caller page context String."
+      }
+    },
+    {
+      "path": "/music/recent_searches/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0hdt;->A01(LX/06Sv;Ljava/lang/String;Z)V"
+      ],
+      "disposition": "needs-context",
+      "finding": "Recovered product mapper and should_disable_exposures key. browse_session_id still flows from 0ZwX.A06 via 0hdt.A09; its creation is not established. No fabricated browse-session context.",
+      "fields": {
+        "product": "0JTl.A00 surface mapper.",
+        "browse_session_id": "Nonnull caller context String.",
+        "search_session_id": "Client empty String.",
+        "should_disable_exposures": "0000.A00(0x38e); true only on two enum branches."
+      }
+    },
+    {
+      "path": "/scores/bootstrap/users/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0Dlh;->A03(LX/0Dlh;)V"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0Dlh constructor initializes five literal score surfaces; A03 serializes the set under surfaces. Test those exact public literals without storing returned scores.",
+      "fields": {
+        "surfaces": "JSON array of constructor surface strings."
+      },
+      "correctedQuery": {
+        "surfaces": "[\"autocomplete_user_list\",\"coefficient_ios_section_test_bootstrap_ranking\",\"coefficient_rank_recipient_user_suggestion\",\"coefficient_direct_recipients_ranking_variant_2\",\"coefficient_besties_list_ranking\"]"
+      }
+    },
+    {
+      "path": "/stories/end_of_year/get_end_of_year_info/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0aTg;->A0A()V",
+        "LX/0ech;->A00(LX/031L;)Ljava/lang/Object;"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Both extracted caller constructions finalize without endpoint-specific fields. Existing HTML 404; no supported correction found. Seasonal availability remains unknown.",
+      "fields": {}
+    },
+    {
+      "path": "/stories/hallpass/hallpass_add_people_search/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0eAW;->B4l(Ljava/lang/String;)LX/09AD;"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Both branches use query through 0465.A0N. Existing initial-page software query already matches this GET search. No membership changes or unchanged retry.",
+      "fields": {}
+    },
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0er2;->A00(LX/0UtS;Lcom/instagram/common/session/UserSession;LX/0bkh;LX/0bMx;Ljava/lang/String;IZ)LX/02sG;"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0bkh.toString exposes trending_prompts_surface. Caller sets top_participants_media_count=0 and supplies enable_infinite_pagination. Test finite initial page without injected prompts or cursor.",
+      "fields": {
+        "caller": "0bkh enum wire String.",
+        "count": "Caller integer.",
+        "top_participants_media_count": "Client literal zero.",
+        "enable_infinite_pagination": "Caller Boolean string.",
+        "cursor": "Nullable pagination String, omitted."
+      },
+      "correctedQuery": {
+        "caller": "trending_prompts_surface",
+        "count": "3",
+        "top_participants_media_count": "0",
+        "enable_infinite_pagination": "false"
+      }
+    },
+    {
+      "path": "/survey/get/",
+      "priorHttpStatus": 400,
+      "callers": [
+        "LX/0CT3;->onActivityResult(IILandroid/content/Intent;)V",
+        "Linstagram/features/feed/genericsurvey/fragment/AdBakeOffFragment;->A01(Linstagram/features/feed/genericsurvey/fragment/AdBakeOffFragment;)V",
+        "Linstagram/features/feed/genericsurvey/fragment/GenericSurveyFragment;->A01(Linstagram/features/feed/genericsurvey/fragment/GenericSurveyFragment;)V"
+      ],
+      "disposition": "needs-context",
+      "finding": "All three extracted callers supply type plus extra_data_token from survey/ad context. No survey token exists for this test; no survey impressions, submissions or fabricated tokens.",
+      "fields": {
+        "type": "Caller type; reviewed bakeoff and landing_page_quality_survey.",
+        "extra_data_token": "Survey/ad-context String."
+      }
+    },
+    {
+      "path": "/trusted_friend/get_non_expired_requests_info/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0DYi;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V"
+      ],
+      "disposition": "security-context",
+      "finding": "Caller uses 02rr.A0A logged-out/account-recovery context rather than the verified Android user-session factory. No recovery/challenge session is initiated or substituted.",
+      "fields": {}
+    },
+    {
+      "path": "/users/featureduserinfo/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0HUK;->onCreate(Landroid/os/Bundle;)V"
+      ],
+      "disposition": "corrected-read",
+      "finding": "0241.A00 decodes username using the reviewed byte-array transform. Test only the username from the existing verified local account; never save it.",
+      "fields": {
+        "username": "Caller username; test verified own username only."
+      },
+      "correctedQuery": {
+        "username": {
+          "source": "verified-account-username"
+        }
+      }
+    },
+    {
+      "path": "/users/get_birthday_connections_info/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/0R2U;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;"
+      ],
+      "disposition": "no-supported-correction",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found. No birthdays or connections changed.",
+      "fields": {}
+    },
+    {
+      "path": "/video_call/user/",
+      "priorHttpStatus": 404,
+      "callers": [
+        "LX/01FH;->A01(LX/05BI;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V"
+      ],
+      "disposition": "needs-context",
+      "finding": "0018.A00(0x7f) resolves user_fbid. Instagram user ID is not a verified Facebook ID and is not substituted. Only lookup construction reviewed; no call initiation.",
+      "fields": {
+        "user_fbid": "Caller Facebook user ID, unavailable."
+      }
+    }
+  ]
+}

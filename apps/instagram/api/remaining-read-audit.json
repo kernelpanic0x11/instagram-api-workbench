@@ -1,0 +1,346 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Complete review of the frozen 37-operation set. An observed success is one bounded read, not a complete contract. Deferred entries retain their prior observations.",
+  "summary": {
+    "reviewed": 37,
+    "correctedRequests": 12,
+    "nowSuccessful": 4,
+    "stillUnverified": 33,
+    "deferred": 25
+  },
+  "operations": [
+    {
+      "path": "/accounts/get_controls_filtered_media/",
+      "priorHttpStatus": 400,
+      "disposition": "corrected-read",
+      "outcome": "observed-success",
+      "latestHttpStatus": 200,
+      "checkedAt": "2026-10-24T14:26:24.448850+00:00",
+      "finding": "0021.A00(0x140) resolves media_infos. Caller serializes a list as JSON objects with m_pk. Test an empty list only; no media identifiers or pagination."
+    },
+    {
+      "path": "/address_book/get_ccu_setting/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:45:35.558773+00:00",
+      "finding": "Caller combines phone_id with an Android-context-derived value and an encoded key through 0o8B.A01. Saved desktop auth does not establish that Android context. No fabricated device identifiers."
+    },
+    {
+      "path": "/api/v1/text_feed/ig_bottom_sheet_info/",
+      "priorHttpStatus": 400,
+      "disposition": "corrected-read",
+      "outcome": "observed-success",
+      "latestHttpStatus": 200,
+      "checkedAt": "2026-10-24T14:26:27.148210+00:00",
+      "finding": "0OdD recognizes prefollow_notif entrypoint; injected_actor_ids is nullable. Test this recognized entrypoint without injected accounts. Root-path flag A0N is set; the explicit /api/v1 path already preserves the root."
+    },
+    {
+      "path": "/archive/live/live_archive_settings/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:46:01.045608+00:00",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing same-path GET returned HTML 404; no evidence-backed request correction found. No claim of permanent removal."
+    },
+    {
+      "path": "/archive/reel/friends_with_history/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:46:06.266892+00:00",
+      "finding": "Reviewed initial caller finalizes without endpoint-specific fields. Existing HTML 404 provides no supported parameter or path correction."
+    },
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "priorHttpStatus": 400,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T14:26:29.659887+00:00",
+      "finding": "0BWF.A05 copies 0ECb.A05 into 0FkF.A01. 0ECb.onCreate explicitly falls back to unknown for absent entry point. Test that actual client fallback."
+    },
+    {
+      "path": "/business/account/get_linked_whatsapp_account_info/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:46:16.367938+00:00",
+      "finding": "fb_auth_token comes from PromoteData.A13, not the Instagram session. No Facebook token is available or requested."
+    },
+    {
+      "path": "/business/account/get_profile_media/",
+      "priorHttpStatus": 404,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T14:26:32.209517+00:00",
+      "finding": "Initial-page caller supplies user_id; refreshed context generates a random UUID using 0123.A0s. 0242.A01 decodes session_id. Test own account only with a new in-memory UUID; no page or next_media_ids."
+    },
+    {
+      "path": "/business/branded_content/bc_pending_tag_megaphone_for_brand/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:46:22.146358+00:00",
+      "finding": "Caller sends media_id derived from a specific media context and another helper-derived key. No scoped branded-content media context available; no arbitrary media selected."
+    },
+    {
+      "path": "/business/eligibility/get_appeals_data/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:46:39.686341+00:00",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found. No appeal submission is attempted."
+    },
+    {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "priorHttpStatus": 404,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T14:26:34.895528+00:00",
+      "finding": "Caller supplies product_types using 02l6.toString. Test reviewed branded_content enum wire value; response is eligibility data, not a change or appeal."
+    },
+    {
+      "path": "/commerce/community/featured_products/merchant_management/",
+      "priorHttpStatus": 404,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:46:50.078670+00:00",
+      "finding": "Getter requires merchant_id from merchant context. No merchant identifier was supplied; no merchant management mutation attempted."
+    },
+    {
+      "path": "/commerce/inbox/prototype/setting/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:46:52.559281+00:00",
+      "finding": "Developer-options getter constructs no endpoint-specific parameters. Existing HTML 404; no evidence-backed correction found. Setter paths are not executed."
+    },
+    {
+      "path": "/commerce/product_feed/metadata/",
+      "priorHttpStatus": 404,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T14:26:37.441228+00:00",
+      "finding": "Caller serializes compound_product_ids and supplies primary_endpoint/surface_type. Test empty products with reviewed wishlist values. No products or shopping state changed."
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:46:57.623487+00:00",
+      "finding": "Request depends on usage enum, prior_module, waterfall_id, serialized client_state and contextual source/product data. No coherent tagging-feed context available; no fabricated state."
+    },
+    {
+      "path": "/commerce/purchase_protection/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:47:00.095368+00:00",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported request correction found."
+    },
+    {
+      "path": "/direct_v2/icebreakers/get_msgr_ibs/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:47:07.839183+00:00",
+      "finding": "Reviewed GET construction has no endpoint-specific fields. Existing HTML 404; related import/update actions are outside scope and are not run."
+    },
+    {
+      "path": "/direct_v2/ranked_recipients/",
+      "priorHttpStatus": 400,
+      "disposition": "corrected-read",
+      "outcome": "observed-success",
+      "latestHttpStatus": 200,
+      "checkedAt": "2026-10-24T14:26:42.395364+00:00",
+      "finding": "0Hqg.B4p selects default_no_interop for a nonempty input, passes zero result counts and show_threads=false. Test public software query using this construction; no message sent."
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "priorHttpStatus": 200,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 200,
+      "checkedAt": "2026-10-24T14:26:44.816751+00:00",
+      "finding": "020R.A00(0x44d) resolves include_social_context; caller sends 1 and a target_id. Test own verified account only, with no chained IDs."
+    },
+    {
+      "path": "/fan_club/promotional_video/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:47:18.838200+00:00",
+      "finding": "FanClubApi.A01 supplies fan_club_id from selected club context. A generic Instagram account ID is not substituted for a verified fan-club ID."
+    },
+    {
+      "path": "/fan_club/welcome_video/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:47:35.663278+00:00",
+      "finding": "FanClubApi.A01 supplies fan_club_id from selected club context. A generic Instagram account ID is not substituted for a verified fan-club ID."
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "priorHttpStatus": 400,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T14:26:47.379852+00:00",
+      "finding": "Caller supplies q and literal count=20. Previous bounded test used count=3. Retest once with actual client count, keeping public software term; does not prove 20 required."
+    },
+    {
+      "path": "/fundraiser/story_charities_search/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T05:11:36.797570+00:00",
+      "finding": "Reviewed search branch supplies query and optional max_id. Existing initial-page software query already matches; HTML 404 has no supported correction. No donations or pagination."
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages_stories/",
+      "priorHttpStatus": 404,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T05:12:10.207840+00:00",
+      "finding": "0005.A00(0x40) resolves horizon_world_id, supplied by selected world context. No world ID is available; no fabricated world or page context."
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages/",
+      "priorHttpStatus": 404,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T05:12:12.624530+00:00",
+      "finding": "0005.A00(0x40) resolves horizon_world_id, supplied by selected world context. No world ID is available; no fabricated world or page context."
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page_stories/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T05:12:15.119298+00:00",
+      "finding": "Reviewed branch finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found."
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page/",
+      "priorHttpStatus": 404,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T05:13:24.564738+00:00",
+      "finding": "Shared finalization requires page_type and page_token. No coherent page-list context available; empty or fabricated page tokens are not introduced."
+    },
+    {
+      "path": "/music/recent_searches/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:48:00.196390+00:00",
+      "finding": "Recovered product mapper and should_disable_exposures key. browse_session_id still flows from 0ZwX.A06 via 0hdt.A09; its creation is not established. No fabricated browse-session context."
+    },
+    {
+      "path": "/scores/bootstrap/users/",
+      "priorHttpStatus": 400,
+      "disposition": "corrected-read",
+      "outcome": "observed-success",
+      "latestHttpStatus": 200,
+      "checkedAt": "2026-10-24T14:26:50.502895+00:00",
+      "finding": "0Dlh constructor initializes five literal score surfaces; A03 serializes the set under surfaces. Test those exact public literals without storing returned scores."
+    },
+    {
+      "path": "/stories/end_of_year/get_end_of_year_info/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:48:12.912297+00:00",
+      "finding": "Both extracted caller constructions finalize without endpoint-specific fields. Existing HTML 404; no supported correction found. Seasonal availability remains unknown."
+    },
+    {
+      "path": "/stories/hallpass/hallpass_add_people_search/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T05:11:39.301565+00:00",
+      "finding": "Both branches use query through 0465.A0N. Existing initial-page software query already matches this GET search. No membership changes or unchanged retry."
+    },
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "priorHttpStatus": 404,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T14:26:53.028257+00:00",
+      "finding": "0bkh.toString exposes trending_prompts_surface. Caller sets top_participants_media_count=0 and supplies enable_infinite_pagination. Test finite initial page without injected prompts or cursor."
+    },
+    {
+      "path": "/survey/get/",
+      "priorHttpStatus": 400,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 400,
+      "checkedAt": "2026-10-24T04:48:15.350079+00:00",
+      "finding": "All three extracted callers supply type plus extra_data_token from survey/ad context. No survey token exists for this test; no survey impressions, submissions or fabricated tokens."
+    },
+    {
+      "path": "/trusted_friend/get_non_expired_requests_info/",
+      "priorHttpStatus": 404,
+      "disposition": "security-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:48:20.322441+00:00",
+      "finding": "Caller uses 02rr.A0A logged-out/account-recovery context rather than the verified Android user-session factory. No recovery/challenge session is initiated or substituted."
+    },
+    {
+      "path": "/users/featureduserinfo/",
+      "priorHttpStatus": 404,
+      "disposition": "corrected-read",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T14:26:55.503387+00:00",
+      "finding": "0241.A00 decodes username using the reviewed byte-array transform. Test only the username from the existing verified local account; never save it."
+    },
+    {
+      "path": "/users/get_birthday_connections_info/",
+      "priorHttpStatus": 404,
+      "disposition": "no-supported-correction",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:49:07.178579+00:00",
+      "finding": "Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found. No birthdays or connections changed."
+    },
+    {
+      "path": "/video_call/user/",
+      "priorHttpStatus": 404,
+      "disposition": "needs-context",
+      "outcome": "not-verified",
+      "latestHttpStatus": 404,
+      "checkedAt": "2026-10-24T04:49:14.710620+00:00",
+      "finding": "0018.A00(0x7f) resolves user_fbid. Instagram user ID is not a verified Facebook ID and is not substituted. Only lookup construction reviewed; no call initiation."
+    }
+  ]
+}

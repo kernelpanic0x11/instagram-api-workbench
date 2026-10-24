@@ -1,10 +1,14 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import {createMobileFetch} from './mobile-transport.mjs';
 import {createProxy} from './proxy.mjs';
 const root=import.meta.dirname, port=Number(process.env.PORT||8766);
 const origin=`http://127.0.0.1:${port}`;
-const proxy=createProxy({origin});
+const mobilePython=path.resolve(root,'../../../tools/instagrapi-venv/bin/python');
+const mobileFetch=fs.existsSync(mobilePython)?createMobileFetch({python:mobilePython}):fetch;
+const fetchByProfile=(url,options)=>new URL(url).origin==='https://i.instagram.com'?mobileFetch(url,options):fetch(url,options);
+const proxy=createProxy({origin,fetchImpl:fetchByProfile});
 http.createServer(async(req,res)=>{
  if(req.headers.host!==new URL(origin).host){res.writeHead(403).end('Invalid local host');return;}
  if(await proxy(req,res))return;

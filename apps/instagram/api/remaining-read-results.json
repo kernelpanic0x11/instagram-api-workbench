@@ -1,0 +1,297 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "One attempt per evidence-backed read correction from the frozen 37-operation review. No login, mutations, pagination or automatic retries. Only query keys and allowlisted response types retained.",
+  "targetPaths": [
+    "/accounts/get_controls_filtered_media/",
+    "/api/v1/text_feed/ig_bottom_sheet_info/",
+    "/business/account/get_content_inspiration_medias/",
+    "/business/account/get_profile_media/",
+    "/business/eligibility/get_product_violations_render_data/",
+    "/commerce/product_feed/metadata/",
+    "/direct_v2/ranked_recipients/",
+    "/discover/fetch_suggestion_details/",
+    "/fbsearch/profile_link_search/",
+    "/scores/bootstrap/users/",
+    "/stories/prompt_stickers/trending_prompts/",
+    "/users/featureduserinfo/"
+  ],
+  "checks": [
+    {
+      "path": "/accounts/get_controls_filtered_media/",
+      "method": "get",
+      "queryKeys": [
+        "media_infos"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:24.448850+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/api/v1/text_feed/ig_bottom_sheet_info/",
+      "method": "get",
+      "queryKeys": [
+        "entrypoint"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:27.148210+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "cta_type": "string",
+        "facepile_users": "array",
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "facepile_users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "method": "get",
+      "queryKeys": [
+        "entry_point"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:29.659887+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_profile_media/",
+      "method": "get",
+      "queryKeys": [
+        "session_id",
+        "user_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:32.209517+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "method": "get",
+      "queryKeys": [
+        "product_types"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:34.895528+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/product_feed/metadata/",
+      "method": "get",
+      "queryKeys": [
+        "compound_product_ids",
+        "primary_endpoint",
+        "surface_type"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:37.441228+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/direct_v2/ranked_recipients/",
+      "method": "get",
+      "queryKeys": [
+        "max_ai_bot_results",
+        "max_fb_results",
+        "max_ig_bus_results",
+        "max_ig_results",
+        "mode",
+        "query",
+        "show_threads"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:42.395364+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "filtered": "boolean",
+        "inform_module": "null",
+        "rank_token": "string",
+        "ranked_recipients": "array",
+        "request_id": "string",
+        "section_order": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "ranked_recipients": [
+          "object"
+        ],
+        "section_order": [
+          "string"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "method": "get",
+      "queryKeys": [
+        "include_social_context",
+        "target_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:44.816751+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:47.379852+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/scores/bootstrap/users/",
+      "method": "get",
+      "queryKeys": [
+        "surfaces"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:50.502895+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "keywords": "array",
+        "status": "string",
+        "surfaces": "array",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "keywords": [
+          "object"
+        ],
+        "surfaces": [
+          "object"
+        ],
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "method": "get",
+      "queryKeys": [
+        "caller",
+        "count",
+        "enable_infinite_pagination",
+        "top_participants_media_count"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:53.028257+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/featureduserinfo/",
+      "method": "get",
+      "queryKeys": [
+        "username"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T14:26:55.503387+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    }
+  ]
+}

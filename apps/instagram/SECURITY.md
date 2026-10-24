@@ -15,3 +15,10 @@ only on Instagram in that window. API requests remain on www.instagram.com;
 Disconnect closes the browser. Browser dependencies require npm ci; Chrome
 login acceptance is controlled by Instagram. Manual session inputs remain an
 advanced alternative. Do not commit browser profiles or authentication state.
+
+The optional instagrapi adapter reads credentials from a local secrets file and
+stores reusable session settings outside the repository with owner-only file
+permissions. The MFA form accepts codes on loopback only, keeps them in memory,
+and disables request logging. Local commit/push checks can be enabled with
+`git config core.hooksPath .githooks`; CI also scans publishable artifacts.
+Git hooks can be bypassed and pattern scans are bounded safeguards.

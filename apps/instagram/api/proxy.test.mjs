@@ -81,3 +81,16 @@ test('disconnect during browser launch closes the stale browser',async()=>{
  await f.request('/api/disconnect',{method:'POST',headers:{'x-local-token':token}});resolve({close:async()=>{closed=true}});
  assert.equal((await pending).status,409);assert.equal(closed,true);assert.equal((await f.request('/api/status')).json().connected,false);
 });
+
+test('preserves SDK session and integrity headers without allowing host or transport framing overrides',async()=>{
+ const captured=[];const f=fixture(async(url,options)=>{captured.push(options);return new Response('{"status":"ok"}',{headers:{'content-type':'application/json'}})});
+ const token=await f.connect({bearer:'synthetic-token',headers:{'IG-U-DS-USER-ID':'123','IG-U-RUR':'synthetic-route','X-Meta-Usdid':'synthetic-integrity','Accept-Language':'en-US','X-Tigon-Is-Retry':'False'}});
+ await f.request('/proxy/notifications/get_notification_settings/?enable_ig_new_settings=false',{headers:{'x-local-token':token}});
+ assert.equal(captured[0].headers['ig-u-rur'],'synthetic-route');
+ assert.equal(captured[0].headers['x-meta-usdid'],'synthetic-integrity');
+ assert.equal(captured[0].headers['accept-language'],'en-US');
+ for(const name of ['Host','Connection','Content-Length','Transfer-Encoding','Accept-Encoding','Authorization','Cookie']){
+  const result=await f.request('/api/connect',{method:'POST',headers:{'x-local-token':token},body:{bearer:'synthetic',headers:{[name]:'synthetic'}}});
+  assert.equal(result.status,400);
+ }
+});

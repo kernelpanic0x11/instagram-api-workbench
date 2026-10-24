@@ -1,0 +1,85 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Evidence-backed read corrections; query keys and response types only. Original failures retained separately.",
+  "checks": [
+    {
+      "path": "/dynamic_onboarding/get_direct_empty_state/",
+      "method": "get",
+      "queryKeys": [
+        "should_contain_combined_unit",
+        "should_contain_message_unit",
+        "should_contain_pending_follow_request_unit",
+        "user_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:20:13.123544+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/api/v1/fan_club/category_members/",
+      "method": "get",
+      "queryKeys": [
+        "category",
+        "limit",
+        "should_include_restricted_countries",
+        "should_include_unconnected"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:20:16.815947+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "category_description": "string",
+        "category_name": "string",
+        "connected_member_count": "integer",
+        "members": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "members": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/media/sticker_tray_section/",
+      "method": "get",
+      "queryKeys": [
+        "section_name",
+        "surface"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:20:19.527450+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "has_next_page": "boolean",
+        "show_search": "boolean",
+        "status": "string",
+        "stickers": "array"
+      },
+      "arrayItemTypes": {
+        "stickers": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    }
+  ],
+  "localPreflightFailures": 1
+}

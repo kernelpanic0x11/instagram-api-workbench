@@ -42,3 +42,6 @@ apps/instagram/api/target.json
 run-log.txt
 
 .playwright-mcp/
+
+.secrets
+.secrets.*

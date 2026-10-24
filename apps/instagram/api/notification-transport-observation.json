@@ -1,0 +1,35 @@
+{
+  "scope": "Same saved session, same GET URL and parameters, two header policies. No login, raw responses, headers values or account values saved.",
+  "checkedAt": "2026-10-24T04:36:47.843701+00:00",
+  "addedHeaderNames": [
+    "accept-language",
+    "ig-u-ds-user-id",
+    "ig-u-ig-direct-region-hint",
+    "ig-u-rur",
+    "ig-u-shbid",
+    "ig-u-shbts",
+    "priority",
+    "x-meta-usdid",
+    "x-tigon-is-retry"
+  ],
+  "checks": [
+    {
+      "variant": "legacy-header-policy",
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "recognizedHtmlCategory": "unclassified",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false
+    },
+    {
+      "variant": "preserved-session-headers",
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "recognizedHtmlCategory": "unclassified",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false
+    }
+  ]
+}

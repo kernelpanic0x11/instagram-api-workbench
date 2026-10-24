@@ -1,0 +1,51 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Evidence-backed read corrections; query keys and response types only. Original failures retained separately.",
+  "checks": [
+    {
+      "path": "/notifications/get_notification_settings/",
+      "method": "get",
+      "queryKeys": [
+        "enable_ig_new_settings"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:30:29.946633+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_suggested_hashtags/",
+      "method": "get",
+      "queryKeys": [
+        "used_hashtags"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:30:32.141313+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/map/search_null_state/",
+      "method": "get",
+      "queryKeys": [
+        "signed_body"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:30:34.247720+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    }
+  ]
+}

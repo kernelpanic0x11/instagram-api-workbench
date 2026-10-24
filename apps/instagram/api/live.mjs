@@ -1,4 +1,5 @@
 import {describeResponse} from './response-summary.mjs';
+import {mountCoverage} from './coverage-ui.mjs';
 let localToken='';
 async function status(){const r=await fetch('/api/status',{cache:'no-store'});if(!r.ok)throw new Error('Local proxy unavailable.');const s=await r.json();localToken=s.token;return s;}
 async function localCall(path,data){if(!localToken)await status();const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json','X-Local-Token':localToken},body:JSON.stringify(data)});const s=await r.json();if(!r.ok)throw new Error(s.error||r.statusText);return s;}
@@ -27,7 +28,7 @@ function mountTools(){
  }
  $('manual-send').onclick=async()=>{try{await send($('manual-method').value,$('manual-path').value.trim(),$('manual-body').value,$('manual-type').value)}catch(e){show(e.message)}};
  $('test-session').onclick=async()=>{const button=$('test-session');button.disabled=true;$('connection-status').textContent='Verifying with Instagram…';try{await status();const result=await localCall('/api/verify',{});$('connection-status').textContent=result.verified?`Verified @${result.account.username} at ${result.checkedAt}`:'Not verified';show(result.message+'\nChecked: '+result.checkedAt+'\nEndpoint: '+result.endpoint+(result.account?.id?'\nAccount ID: '+result.account.id:''));$('raw-result').hidden=true;}catch(e){$('connection-status').textContent='Not verified';show(e.message)}finally{button.disabled=false}};
- window.useRoute=(path)=>{$('manual-path').value=path;$('manual-method').value='';$('manual-body').value='';$('manual-request').open=true;$('manual-request').scrollIntoView({behavior:'smooth'});$('manual-method').focus();};
+ window.useRoute=(path,method='')=>{$('manual-path').value=path;$('manual-method').value=method;$('manual-body').value='';$('manual-request').open=true;$('manual-request').scrollIntoView({behavior:'smooth'});$('manual-method').focus();};
 }
 async function mountUnresolved(){
  if(document.querySelector('#unresolved-routes'))return;
@@ -41,4 +42,4 @@ async function mountUnresolved(){
  function renderNames(){const q=panel.querySelector('.name-catalog input').value.toLowerCase(),matches=names.filter(e=>e.raw.toLowerCase().includes(q)),results=panel.querySelector('.name-results');results.replaceChildren(element('p',{},`${matches.length} matching names`));for(const e of matches.slice(0,nameCount)){const d=element('details');d.append(element('summary',{},e.label+' · '+e.raw),element('pre',{},JSON.stringify(e.evidence,null,2)));results.append(d)}panel.querySelector('.name-more').hidden=nameCount>=matches.length;}
  panel.querySelector('.name-catalog input').oninput=()=>{nameCount=50;renderNames()};panel.querySelector('.name-more').onclick=()=>{nameCount+=100;renderNames()};renderNames();
 }
-window.onload=()=>{window.ui=SwaggerUIBundle({url:'openapi.json',dom_id:'#swagger-ui',deepLinking:true,presets:[SwaggerUIBundle.presets.apis,SwaggerUIStandalonePreset],plugins:[SwaggerUIBundle.plugins.DownloadUrl],layout:'StandaloneLayout',filter:true,docExpansion:'none',supportedSubmitMethods:['get','post','put','patch','delete','head','options'],validatorUrl:null,persistAuthorization:false,requestInterceptor:intercept,onComplete:()=>{mountTools();mountUnresolved();}})};
+window.onload=()=>{window.ui=SwaggerUIBundle({url:'openapi.json',dom_id:'#swagger-ui',deepLinking:true,presets:[SwaggerUIBundle.presets.apis,SwaggerUIStandalonePreset],plugins:[SwaggerUIBundle.plugins.DownloadUrl],layout:'StandaloneLayout',filter:true,docExpansion:'none',supportedSubmitMethods:['get','post','put','patch','delete','head','options'],validatorUrl:null,persistAuthorization:false,requestInterceptor:intercept,onComplete:()=>{mountTools();mountCoverage().catch(()=>{});mountUnresolved();}})};

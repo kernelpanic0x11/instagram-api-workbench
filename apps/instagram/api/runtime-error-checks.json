@@ -1,0 +1,41 @@
+{
+  "scope": "Anonymous read-only probes with a public synthetic client profile. Only allowlisted status enums and field types are retained; no raw responses, cookies, headers or personal values saved.",
+  "checks": [
+    {
+      "path": "/accounts/current_user/",
+      "method": "get",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "credentialsSent": false,
+      "redirectFollowed": false,
+      "checkedAt": "2026-10-24T03:41:34.128358+00:00",
+      "bodyKind": "json-object",
+      "fieldTypes": {
+        "status": "string",
+        "message": "string"
+      },
+      "instagramStatus": "fail",
+      "authenticatedIdentityPresent": false,
+      "rawResponseSaved": false,
+      "personalValuesSaved": false
+    },
+    {
+      "path": "/accounts/get_comment_filter_keywords/",
+      "method": "get",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "credentialsSent": false,
+      "redirectFollowed": false,
+      "checkedAt": "2026-10-24T03:41:34.285576+00:00",
+      "bodyKind": "json-object",
+      "fieldTypes": {
+        "status": "string",
+        "message": "string"
+      },
+      "instagramStatus": "fail",
+      "authenticatedIdentityPresent": false,
+      "rawResponseSaved": false,
+      "personalValuesSaved": false
+    }
+  ]
+}

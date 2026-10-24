@@ -44,13 +44,29 @@ Existing signed_body payloads can be entered in the manual editor.
 
 COVERAGE
 1,456 normalized paths; 679 GET/POST operations with traced client configuration;
-777 unresolved-method paths; five partial schemas. Additional GraphQL/Bloks name
+777 unresolved-method paths; five curated schemas and 399 partial logical request
+models (788 field names by operation). Additional GraphQL/Bloks name
 catalogs appear on the SAME Swagger page. Unknown verbs are visibly UNKNOWN and
 never invented in the OpenAPI document. Manual method selection is user input.
 676 method/path pairs came from conservative same-receiver basic-block tracing
 (826 observations), plus prior individually traced operations. These prove that
 client code configures a request at a point, not dispatch or server availability.
 Generic request-body editors are NOT recovered request schemas.
+Operation coverage lists every traced operation and its remaining request,
+response and live-verification gaps. Download coverage.json from that panel.
+Recovered field names appear in operation descriptions and request models;
+server requiredness remains unknown. Final query/body encoding and envelope rules
+are traced for 298 operations; 626 have separate error-parser bindings.
+Shared message models record client acceptance rules without asserting server
+requiredness. Anonymous reads observed HTTP 200 with JSON status fail.
+Read validation records successful reads and unverified attempts separately.
+Use Operation coverage filters or api/read-validation-results.json; see
+../docs/READ-VALIDATION.md for the paced read-validation workflow.
+603 normalized operations have response-parser bindings; 550 have partial
+response models. Parser key comparisons, the shared response-field dispatcher,
+and bounded forwarding-parser chains are traced. These models preserve unknown
+wire types and requiredness rather than inventing constraints. No complete
+request/response contract is claimed for any operation.
 
 Source: com.instagram.android 451.0.0.53.80; base.apk SHA256:
 4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b
@@ -63,6 +79,9 @@ openapi.json / openapi.yaml: equivalent validated OpenAPI 3.1 documents.
 index.html / live.mjs / live.css: standard Swagger UI plus connection/manual tools.
 server.mjs / proxy.mjs: local JavaScript server and request forwarding.
 bulk-trace/operations.json: static configuration evidence and limitations.
+bulk-trace/request-fields.json: bounded request-field and setter evidence.
+bulk-trace/response-contracts.json: parser bindings and response-key evidence.
+coverage.json: complete operation ledger with separate evidence/readiness levels.
 extraction/catalog.json: full candidate ledger with original strings and offsets.
 schema-evidence/schemas.json: partial schemas with source excerpts.
 evidence/: REA/JADX method evidence. Other referenced evidence lives in the parent
@@ -71,6 +90,8 @@ investigation directory; full extraction reproduction needs its APK/string corpu
 REPRODUCE FROM THE ORIGINAL INVESTIGATION DIRECTORY
 python3 extraction/extract.py
 python3 bulk-trace/extract.py
+python3 bulk-trace/trace-request-fields.py
+python3 bulk-trace/trace-response-contracts.py
 npm ci --ignore-scripts
 python3 make-operations.py
 npm run build

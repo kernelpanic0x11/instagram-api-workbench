@@ -1,0 +1,5 @@
+{
+  "description": "Additional Instagram headers accepted at local input boundaries. Authorization and Cookie use separate credential fields. Host, framing and encoding remain controlled by the HTTP client.",
+  "names": ["accept", "accept-language", "content-type", "user-agent", "x-requested-with", "x-csrftoken", "x-mid", "ig-intended-user-id", "ig-u-ds-user-id", "ig-u-ig-direct-region-hint", "ig-u-rur", "ig-u-shbid", "ig-u-shbts", "x-meta-usdid", "x-tigon-is-retry", "priority"],
+  "prefixes": ["x-ig-", "x-fb-", "x-bloks-", "x-pigeon-"]
+}

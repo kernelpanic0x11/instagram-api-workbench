@@ -7,7 +7,7 @@
     "build": "node build.mjs",
     "validate": "node validate.mjs",
     "start": "node server.mjs",
-    "test": "node --test proxy.test.mjs auth-check.test.mjs response-summary.test.mjs browser-session.test.mjs"
+    "test": "node --test proxy.test.mjs auth-check.test.mjs response-summary.test.mjs browser-session.test.mjs operation-coverage.test.mjs response-models.test.mjs contract-details.test.mjs comment-keywords-contract.test.mjs read-validation.test.mjs read-repairs.test.mjs mobile-transport.test.mjs online-validation-audit.test.mjs remaining-read-review.test.mjs"
   },
   "keywords": [],
   "author": "",

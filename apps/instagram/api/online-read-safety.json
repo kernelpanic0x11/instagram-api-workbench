@@ -1,0 +1,13 @@
+{
+  "scope": "Online execution is read-only. A GET verb is insufficient: each plan still requires manual semantic review. Explicitly blocked routes may alter data, undo moderation, start security flows, or have ambiguous change semantics.",
+  "blockedRoutes": [
+    "/accounts/delete_music/",
+    "/authenticity/proactive_id_verification/trigger_user_restriction/",
+    "/creatives/clear_unlockable_stickers/",
+    "/discover/explore_report_undo/",
+    "/insights/reset_stories_opt_in/",
+    "/media/unmark_as_spam_viewer/",
+    "/trusted_friend/get_recovery_request_challenge/",
+    "/upcoming_events/add_event_list/"
+  ]
+}

@@ -51,6 +51,9 @@ def main():
   (out/'evidence').mkdir();(out/'api/schema-evidence').mkdir()
   (out/'api/schema-evidence/schemas.json').write_text(json.dumps({'components':{'schemas':{}}})+'\n')
   (out/'api/operations.json').write_text('[]\n')
+  (out/'api/bulk-trace/request-fields.json').write_text(json.dumps({'source_apk_sha256':base_sha,'operations':[],'note':'No validated request-field mappings applied to this input.'})+'\n')
+  (out/'api/bulk-trace/response-contracts.json').write_text(json.dumps({'source_apk_sha256':base_sha,'operations':[],'parsers':{},'note':'No validated response mappings applied to this input.'})+'\n')
+  (out/'api/bulk-trace/shared-contracts.json').write_text(json.dumps({'source_apk_sha256':base_sha,'rules':None,'note':'No validated shared mappings applied to this input.'})+'\n')
   (out/'REPORT.txt').unlink(missing_ok=True)
   for relative in ['api/helper-scan','api/method-scan']:
    for file in (out/relative).glob('*.json*'):file.unlink()
@@ -72,6 +75,32 @@ def main():
  if a.routes_only:(out/'api/bulk-trace/operations.json').write_text(json.dumps({'operations':[],'stats':{},'note':'Route-only extraction. No version-specific method mappings applied.'})+'\n')
  else:run([sys.executable,'api/bulk-trace/extract.py','--apk','apks/base.apk','--profile','api/bulk-trace/profiles/run-profile.json'])
  if reference_traces:run([sys.executable,'api/make-operations.py'])
+ if reference_traces:run([sys.executable,'api/bulk-trace/trace-request-fields.py','--apk','apks/base.apk'])
+ if reference_traces:run([sys.executable,'api/bulk-trace/trace-response-contracts.py','--apk','apks/base.apk'])
+ if reference_traces:run([sys.executable,'api/bulk-trace/trace-shared-contracts.py','--apk','apks/base.apk'])
+ for endpoint in ('comment','post'):
+  if reference_traces:run([sys.executable,'api/bulk-trace/trace-comment-keywords.py','--endpoint',endpoint])
+  else:(out/('api/bulk-trace/'+endpoint+'-keywords-evidence.json')).unlink(missing_ok=True)
+  (out/('api/'+endpoint+'-keywords-observation.json')).unlink(missing_ok=True)
+ (out/'api/read-validation-results.json').unlink(missing_ok=True)
+ (out/'api/mobile-retest-results.json').unlink(missing_ok=True)
+ (out/'api/additional-read-results.json').unlink(missing_ok=True)
+ (out/'api/online-read-results.json').unlink(missing_ok=True)
+ (out/'api/second-read-repair-results.json').unlink(missing_ok=True)
+ (out/'api/remaining-read-results.json').unlink(missing_ok=True)
+ (out/'api/read-repair-results.json').unlink(missing_ok=True)
+ for filename in ('transport-validation-results.json','notification-transport-observation.json','notification-sdk-transport-observation.json','notification-http-transport-comparison.json'):
+  (out/'api'/filename).unlink(missing_ok=True)
+ if reference_traces:run([sys.executable,'api/bulk-trace/trace-read-repairs.py']);run([sys.executable,'api/bulk-trace/trace-remaining-reads.py'])
+ else:
+  (out/'api/remaining-read-review.json').unlink(missing_ok=True)
+  (out/'api/remaining-read-audit.json').unlink(missing_ok=True)
+  (out/'api/bulk-trace/remaining-read-evidence.json').unlink(missing_ok=True)
+  (out/'api/read-repair-contracts.json').unlink(missing_ok=True)
+  (out/'api/bulk-trace/read-repair-evidence.json').unlink(missing_ok=True)
+ # An offline reproduction must never inherit the reference session's live checks.
+ (out/'api/runtime-checks.json').write_text(json.dumps({'checks':[],'note':'Offline reproduction; no runtime requests made.'})+'\n')
+ (out/'api/runtime-error-checks.json').write_text(json.dumps({'checks':[],'note':'Offline reproduction; no runtime requests made.'})+'\n')
  run(['node','api/build.mjs']);run(['node','api/validate.mjs'])
  spec=json.loads((out/'api/openapi.json').read_text());manifest={'completed_at':datetime.now(timezone.utc).isoformat(),'target':target,'inputs':identities,'mode':'route-only'if a.routes_only else 'profile-traced','mapping_profile_sha256':digest(out/'api/bulk-trace/profiles/run-profile.json')if profile else None,'reference_manual_traces_included':reference_traces,'reference_inputs_sha256':reference_inputs,'paths':len(spec['paths']),'operations':spec['x-coverage']['documentedOperations'],'tooling_sha256':{name:digest(out/name)for name in ['inventory.py','index_strings.py','scripts/reproduce.py','api/extraction/extract.py','api/bulk-trace/extract.py','api/build.mjs','api/validate.mjs']},'decode_errors':json.loads((out/'api/bulk-trace/operations.json').read_text()).get('stats',{}).get('errors',0),'tool_versions':{'python':sys.version.split()[0],'node':subprocess.check_output(['node','--version'],text=True).strip()},'outputs':{name:digest(out/name)for name in ['api/openapi.json','api/openapi.yaml','api/extraction/catalog.json','api/bulk-trace/operations.json']},'limitations':['Static configuration is not server behavior. No account requests made.','Only standard root classes*.dex members are indexed; packed/native/JS code is outside this pipeline.','Manifest labels on unknown APKs are user-supplied, not independently decoded.']}
  (out/'run-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');(out/'RUN_REPORT.md').write_text('# Offline extraction result\n\nMode: '+manifest['mode']+'\n\nBase SHA-256: '+base_sha+'\n\nPaths: '+str(manifest['paths'])+'; traced operations: '+str(manifest['operations'])+'.\n\nSee run-manifest.json for input hashes, tool versions, output hashes and limits.\n')

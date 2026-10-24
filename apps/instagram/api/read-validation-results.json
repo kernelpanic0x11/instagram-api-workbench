@@ -1,0 +1,2038 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Paced authenticated GET observations. Field names allowlisted from static parser evidence; types only. No response values, raw bodies, headers, credentials or personal values saved. Success means one HTTP-200 JSON status-ok response, not a complete contract or all feature permissions.",
+  "checks": [
+    {
+      "path": "/accounts/current_user/",
+      "method": "get",
+      "queryKeys": [
+        "edit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:39.360840+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "user": "object"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/accounts/get_comment_filter_keywords/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:41.810680+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "disabled": "integer",
+        "keywords": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "keywords": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/accounts/get_post_filter_keywords/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:43.906125+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "disabled": "integer",
+        "keywords": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "keywords": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/accounts/get_controls_filtered_media/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:45.993993+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/address_book/get_ccu_setting/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:48.068157+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/aed/current/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:50.135647+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/accounts/get_embeds_opt_out/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:52.222233+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/accounts/last_password_change_timestamp/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:54.335746+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/creators/collaboration/settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:56.443790+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/creators/user_pay/insights/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:16:58.554078+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/fan_club/blocked_members/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:17:58.456144+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/fan_club/categories_metadata/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:00.693489+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "categories": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "categories": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/api/v1/fan_club/creators_subscribed_to/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:02.866651+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/fan_club/followed_creators_to_susbcribe_to/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:04.968932+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/fan_club/unconnected_creators_to_susbcribe_to/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:07.068902+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/text_feed/ig_bottom_sheet_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:09.160555+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/archive/live/live_archive_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:11.267129+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/archive/live/lives_archived/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:13.362074+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/archive/reel/day_shells_paginated/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:15.468895+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "max_id": "string",
+        "memories": "object",
+        "more_available": "boolean",
+        "num_results": "integer",
+        "oldest_media_ts": "integer",
+        "status": "string",
+        "total_num_archive_media": "integer"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/archive/reel/friends_with_history/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:17.924707+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_boost_guidance_content/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:20.080039+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_business_objectives_connection_methods/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:22.194641+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "connection_methods": "array",
+        "objective_sections": "array",
+        "objectives": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "connection_methods": [
+          "object"
+        ],
+        "objective_sections": [
+          "object"
+        ],
+        "objectives": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:24.297105+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_invite_friends_subitems/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:26.410224+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_linked_whatsapp_account_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:28.513788+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_professional_conversion_nux_configuration/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:30.726113+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "should_show_edit_contact_info_step": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/business/account/get_profile_media/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:32.806106+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/account/get_suggested_hashtags/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:34.893854+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/branded_content/bc_pending_tag_megaphone_for_brand/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:37.005892+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/branded_content/get_pending_approval_requests_for_brand/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:39.134728+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/branded_content/get_pending_approval_requests_for_creator/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:53.809139+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/branded_content/get_whitelist_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:55.955108+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/branded_content/get_whitelist_sponsors/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:18:58.063613+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/eligibility/get_appeals_data/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:00.166621+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/business/eligibility/get_monetization_products_onboarding_eligibility_data/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:02.259677+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "response": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "response": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:04.463348+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/clips/autoplay_configs/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:06.661931+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "explore_diagonal_customizations": "array",
+        "explore_low_diagonal_customizations": "array",
+        "global_config": "object",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "explore_diagonal_customizations": [
+          "object"
+        ],
+        "explore_low_diagonal_customizations": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/clips/clips_info_for_creation/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:08.816644+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/clips/user/share_to_fb_config/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:10.960409+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "default_share_to_fb_enabled": "boolean",
+        "oa_reuse_on_fb_enabled": "boolean",
+        "share_to_fb_unavailable": "boolean",
+        "show_bonus_prompt_in_creation": "boolean",
+        "show_share_to_fb_prompt_in_creation_flow": "boolean",
+        "show_share_to_fb_prompt_in_media_viewer": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/collections/list/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:13.030932+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "items": "array",
+        "next_max_id": "null",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "items": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/commerce/bag/count/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:15.103845+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/bag/index/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:17.253656+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/community/featured_products/merchant_management/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:19.363616+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/inbox/prototype/setting/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:21.456933+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/product_feed/metadata/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:23.544615+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:25.638868+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/commerce/purchase_protection/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:27.735153+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/content_scheduling/get_scheduled_content/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:29.822944+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "scheduled_media": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "scheduled_media": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/creatives/avatar_profile_pic/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:31.950672+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/creatives/avatar_sticker_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:19:34.020598+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/creatives/get_unlockable_sticker_nux/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:13.210667+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/creatives/nav_bar_camera_destination/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:15.471881+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/creators/content_appreciation/async_get_content_appreciation_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:17.606549+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/creators/content_appreciation/async_get_gifts_view/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:19.697748+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/creators/user_pay/user_pay_summary/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:21.806135+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "formatted_total_amount_earned": "string",
+        "has_onboarded_milestone_incentives": "boolean",
+        "is_temporarily_demonetized": "boolean",
+        "mes_status": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/get_folders/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:24.135414+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "custom_folders": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "custom_folders": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/icebreakers/get_msgr_ibs/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:26.677064+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/direct_v2/icebreakers/get/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:28.811093+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "enabled": "boolean",
+        "icebreakers": "array",
+        "persistent_menu_enabled": "boolean",
+        "status": "string",
+        "undisplayed_icebreakers": "array"
+      },
+      "arrayItemTypes": {
+        "icebreakers": [],
+        "undisplayed_icebreakers": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/selectable_themes/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:30.915701+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "themes": "array"
+      },
+      "arrayItemTypes": {
+        "themes": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/should_show_ad_responses_tab/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:33.272814+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "is_active_advertiser": "boolean",
+        "should_show_ad_responses_tab": "boolean",
+        "status": "string",
+        "suggested_promotable_media_igid": "integer"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/suggested_blocks/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:36.062238+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "suggested_blocks": "array"
+      },
+      "arrayItemTypes": {
+        "suggested_blocks": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/welcome_message/get/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:38.204344+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "emoji": "null",
+        "enabled": "null",
+        "status": "string",
+        "welcome_message_text": "null"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:40.324744+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/discover/non_profiled/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:42.420804+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/dyi/check_data_state/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:44.852032+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fan_club/content_preview_ids/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:46.976395+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fan_club/promotional_video/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:49.089416+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fan_club/welcome_video/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:51.187569+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fb_dating/linked_fb_dating_account/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:53.300523+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fbsearch/nullstate_dynamic_sections/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:20:55.447745+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "sections": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "sections": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/fbsearch/recent_searches/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:08.177793+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "recent": "array",
+        "skw_mappings": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "recent": [
+          "object"
+        ],
+        "skw_mappings": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/feed/liked/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:10.576930+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/feed/only_me_feed/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:15.283217+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/feed/saved/audio/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:17.385825+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "page_info": "object",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/feed/saved/clips/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:19.717986+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "items": "array",
+        "items_with_ads": "array",
+        "paging_info": "object",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "items": [
+          "object"
+        ],
+        "items_with_ads": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/friendships/feed_favorites_suggestions/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:23.037154+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "pre_selected_suggestions": "array",
+        "status": "string",
+        "suggestions": "array"
+      },
+      "arrayItemTypes": {
+        "pre_selected_suggestions": [],
+        "suggestions": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/friendships/feed_favorites/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:25.252490+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/friendships/pending_follow_requests_count/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:27.432923+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/friendships/recent_followers/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:29.518067+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fundraiser/can_create_personal_fundraisers/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:31.625140+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/ig_fb_xposting/xposting/disclosures/status/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:33.737824+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/igtv/igtv_creation_tools/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:35.808735+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/interest_nux/user_interests/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:37.923526+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/loom/fetch_config/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:40.098945+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/map/all_saved_locations/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:42.379538+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/map/map_center_fallback/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:44.583582+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/map/search_null_state/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:46.710437+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/media/blocked/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:48.810400+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "media_ids": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "media_ids": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/media/comment/filtering/get_filter_setting/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:50.885142+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/media/story_countdowns/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:21:52.984836+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "countdowns": "array",
+        "max_id": "null",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "countdowns": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/mental_well_being/get_daily_limit_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:15.431438+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/mental_well_being/get_time_tools_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:18.706000+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "is_supervised_or_in_cooldown": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/music/recent_searches/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:20.817828+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/notifications/get_notification_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:22.906001+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/notifications/whitelisted_react_native_routes_from_notif/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:25.003785+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/pro_home/badge_pro_home_entry_point/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:27.114198+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/pro_home/pro_dash_entrypoint_content/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:29.213600+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/restrict_action/get_restricted_users/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:31.307568+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/scores/bootstrap/users/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:33.395158+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/stories/birthday_highlights/birthday_highlights_media/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:35.480465+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "media_items": "object",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/stories/end_of_year/get_end_of_year_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:38.315442+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/stories/hallpass/suggested_users/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:40.419597+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "suggested_users": "array"
+      },
+      "arrayItemTypes": {
+        "suggested_users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/supervision/guardians/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:42.843418+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "guardians": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "guardians": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/survey/get/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:44.939130+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/text_feed/ig_text_post_app_new_activity_feed_count/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:47.032450+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/trusted_friend/get_non_expired_requests_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:49.130799+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/upcoming_events/get_event_chaining/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:51.214244+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/upcoming_events/list_story_taggable_events/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:53.317023+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/blocked_list/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:55.499865+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/users/featureduserinfo/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:22:57.592455+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/get_birthday_connections_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:04.109982+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/get_birthday_visibility_setting/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:06.364302+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "visibility_setting": "integer"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/users/get_is_eligible_restrict_message_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:08.439330+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/get_limited_interactions_reminder/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:10.555885+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "duration": "integer",
+        "show_limited_interactions_reminder": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/users/get_limited_interactions_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:12.630879+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "is_enabled": "boolean",
+        "limited_categories": "object",
+        "limited_features": "object",
+        "reminder_date": "integer",
+        "start_date": "integer",
+        "status": "string",
+        "version": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/users/get_message_settings_v2/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:14.727597+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/get_recommendation_status_nudge/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:16.833215+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/users/live_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:18.926262+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/users/reel_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:21.038833+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "allow_story_reshare": "boolean",
+        "besties": "object",
+        "blocked_reels": "object",
+        "blocked_reels_count": "integer",
+        "message_prefs": "string",
+        "save_to_camera_roll": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/video_call/retrieve_user_call_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:23.131985+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "allow_list_data": "array",
+        "setting_type": "string",
+        "status": "string",
+        "suggested_users": "array"
+      },
+      "arrayItemTypes": {
+        "allow_list_data": [],
+        "suggested_users": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/video_call/user/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:23:25.233840+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    }
+  ]
+}

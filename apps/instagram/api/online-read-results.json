@@ -1,0 +1,518 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Paced authenticated GET observations. Field names allowlisted from static parser evidence; types only. No response values, raw bodies, headers, credentials or personal values saved. Success means one HTTP-200 JSON status-ok response, not a complete contract or all feature permissions.",
+  "checks": [
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "top_participants_media_count"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:22.549691+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/live/get_live_chaining/",
+      "method": "get",
+      "queryKeys": [
+        "include_post_lives"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:25.005098+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "broadcasts": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "broadcasts": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/map/search/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:27.407317+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/fbsearch/reels_serp/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:31.420434+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "has_more": "boolean",
+        "page_index": "integer",
+        "rank_token": "string",
+        "reels_max_id": "string",
+        "reels_serp_modules": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "reels_serp_modules": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/fundraiser/story_charities_search/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:36.797570+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/stories/hallpass/hallpass_add_people_search/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:39.301565+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fbsearch/account_serp/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:41.725335+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/fbsearch/non_profiled_serp/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:45.075782+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/dynamic_onboarding/get_direct_empty_state/",
+      "method": "get",
+      "queryKeys": [
+        "should_contain_combined_unit",
+        "should_contain_message_unit",
+        "should_contain_pending_follow_request_unit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:47.977953+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/fan_club/members/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:50.386889+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "members": "array",
+        "members_info": "array",
+        "more_available": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "members": [],
+        "members_info": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/api/v1/fan_club/category_members/",
+      "method": "get",
+      "queryKeys": [
+        "limit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:52.919328+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/api/v1/stories/private_stories/friend_lists/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:55.291228+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/ranked_recipients/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:11:57.731458+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/friendships/followers_you_follow_back/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:00.260837+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/friendships/pending_spam/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:02.729911+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "has_more": "boolean",
+        "page_size": "integer",
+        "status": "string",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/interest_nux/list_all/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:05.341279+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "sub_interests": "array"
+      },
+      "arrayItemTypes": {
+        "sub_interests": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/media/sticker_tray_section/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:07.735805+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages_stories/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:10.207840+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:12.624530+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page_stories/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:12:15.119298+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:13:24.564738+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/stories/private_stories/members/",
+      "method": "get",
+      "queryKeys": [
+        "is_list_creation"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:13:26.972844+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "fb_close_friends_count": "integer",
+        "members": "array",
+        "status": "string",
+        "suggested_users": "array"
+      },
+      "arrayItemTypes": {
+        "members": [],
+        "suggested_users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/stories/hallpass/share_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:13:30.676360+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "hallpasses": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "hallpasses": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/video_call/cowatch/clips_media_feed/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T05:13:33.202006+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "items": "array",
+        "paging_info": "object",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "items": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    }
+  ]
+}

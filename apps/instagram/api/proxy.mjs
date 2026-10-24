@@ -1,3 +1,4 @@
+import {allowedAdditionalHeader} from './request-headers.mjs';
 import {startBrowserSession} from './browser-session.mjs';
 import {randomBytes,timingSafeEqual} from 'node:crypto';
 import {expectedAccountId,checkAuthentication} from './auth-check.mjs';
@@ -5,7 +6,7 @@ export function createProxy({origin,fetchImpl=fetch,browserFactory=startBrowserS
  const token=randomBytes(32).toString('hex');let credentials=null,browserSession=null;let profile='android';let expectedId=null,verification=null,generation=0,verificationRun=0;
  const hosts={android:'https://i.instagram.com',browser:'https://www.instagram.com'};
  const methods=new Set(['GET','POST','PUT','PATCH','DELETE','HEAD','OPTIONS']);
- const allowed=/^(accept|content-type|user-agent|x-requested-with|x-csrftoken|x-ig-[a-z0-9-]+|x-fb-[a-z0-9-]+|x-bloks-[a-z0-9-]+|x-mid|ig-intended-user-id|x-pigeon-[a-z0-9-]+)$/i;
+
  const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
  async function body(req,max=10*1024*1024){let n=0,chunks=[];for await(const c of req){n+=c.length;if(n>max)throw new Error('Request body exceeds size limit');chunks.push(c)}return Buffer.concat(chunks)}
  function validToken(req){const given=req.headers['x-local-token'];return typeof given==='string'&&/^[a-f0-9]{64}$/.test(given)&&timingSafeEqual(Buffer.from(given),Buffer.from(token));}
@@ -25,7 +26,7 @@ export function createProxy({origin,fetchImpl=fetch,browserFactory=startBrowserS
  }
  if(path==='/api/connect'&&req.method==='POST'){
   const input=JSON.parse((await body(req,65536)).toString());const nextProfile=input.profile||'android';if(!Object.hasOwn(hosts,nextProfile))throw new Error('Choose browser or Android profile');const headers={};
-  for(const [k,v] of Object.entries(input.headers||{})){if(!allowed.test(k)||typeof v!=='string'||/[\r\n]/.test(v))throw new Error('Unsupported additional header');headers[k.toLowerCase()]=v;}
+  for(const [k,v] of Object.entries(input.headers||{})){if(!allowedAdditionalHeader(k)||typeof v!=='string'||/[\r\n]/.test(v))throw new Error('Unsupported additional header');headers[k.toLowerCase()]=v;}
   if(input.cookie){if(typeof input.cookie!=='string'||/[\r\n]/.test(input.cookie))throw new Error('Invalid cookie');headers.cookie=input.cookie.includes('=')?input.cookie:'sessionid='+input.cookie;const csrf=headers.cookie.match(/(?:^|;\s*)csrftoken=([^;]+)/);if(csrf&&!headers['x-csrftoken'])headers['x-csrftoken']=csrf[1];}
   if(input.bearer){if(typeof input.bearer!=='string'||/[\r\n]/.test(input.bearer))throw new Error('Invalid bearer token');headers.authorization=/^Bearer /i.test(input.bearer)?input.bearer:'Bearer '+input.bearer;}
   if(!headers.cookie&&!headers.authorization)throw new Error('Enter a session cookie or bearer token.');
@@ -47,7 +48,7 @@ export function createProxy({origin,fetchImpl=fetch,browserFactory=startBrowserS
  let route=req.url.slice('/proxy/'.length);if(!route||route.startsWith('/')||route.includes('://')||route.includes('\\'))throw new Error('Use an Instagram relative API path.');
  if(!/^(api\/|graphql(?:\/|\?|$)|rupload_)/.test(route))route='api/v1/'+route;
  const upstream=new URL('/'+route,hosts[profile]);if(upstream.origin!==hosts[profile])throw new Error('Invalid upstream');
- const headers={...credentials};for(const [k,v] of Object.entries(req.headers))if(allowed.test(k)&&typeof v==='string'&&!['user-agent','accept'].includes(k))headers[k]=v;
+ const headers={...credentials};for(const [k,v] of Object.entries(req.headers))if(allowedAdditionalHeader(k)&&typeof v==='string'&&!['user-agent','accept'].includes(k))headers[k]=v;
  const payload=await body(req);const response=await (browserSession?browserSession.fetch.bind(browserSession):fetchImpl)(upstream,{method:req.method,headers,body:['GET','HEAD'].includes(req.method)||!payload.length?undefined:payload,redirect:'manual',signal:AbortSignal.timeout(30000)});
  if(response.status>=300&&response.status<400){json(res,502,{error:'Instagram returned a redirect; credentials were not forwarded to another location.',upstreamStatus:response.status});return true;}
  const chunks=[];let size=0;if(response.body)for await(const c of response.body){size+=c.length;if(size>32*1024*1024)throw new Error('Upstream response exceeds size limit');chunks.push(c)}

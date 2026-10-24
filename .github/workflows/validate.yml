@@ -34,12 +34,28 @@ jobs:
       - name: Test local connection and proxy behavior
         run: npm test --prefix apps/instagram/api
       - name: Test DEX extraction with synthetic fixtures
-        run: python3 apps/instagram/api/bulk-trace/test_extract.py
+        run: |
+          python3 apps/instagram/api/bulk-trace/test_extract.py
+          python3 apps/instagram/api/bulk-trace/test_response_contracts.py
+          python3 apps/instagram/api/bulk-trace/test_shared_contracts.py
       - name: Test isolated APK reproduction with synthetic fixtures
         run: python3 apps/instagram/scripts/test_reproduce.py
       - name: Test multi-app annotation discovery with synthetic fixtures
         run: python3 scripts/test_analyze_apks.py
       - name: Test ARM64 references and APK hash binding
         run: python3 scripts/test_deep_traces.py
+      - name: Test private authentication adapter and offline APK snapshots
+        run: |
+          python3 apps/instagram/scripts/test_connect_instagrapi.py
+          python3 apps/instagram/scripts/test_mfa_form.py
+          python3 apps/instagram/scripts/test_probe_comment_keywords.py
+          python3 apps/instagram/scripts/test_validate_read_endpoints.py
+          python3 apps/instagram/scripts/test_retest_read_repairs.py
+          python3 apps/instagram/scripts/test_retest_remaining_reads.py
+          python3 apps/instagram/api/bulk-trace/test_remaining_read_evidence.py
+          python3 apps/instagram/scripts/test_mobile_http_transport.py
+          python3 scripts/test_apk_inputs.py
       - name: Scan publishable files for excluded artifacts and credential patterns
         run: python3 scripts/check-public.py
+      - name: Test staged and historical credential protections
+        run: python3 scripts/test_public_guard.py

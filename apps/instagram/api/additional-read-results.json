@@ -1,0 +1,210 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Paced authenticated GET observations. Field names allowlisted from static parser evidence; types only. No response values, raw bodies, headers, credentials or personal values saved. Success means one HTTP-200 JSON status-ok response, not a complete contract or all feature permissions.",
+  "checks": [
+    {
+      "path": "/users/search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:20.100531+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "has_more": "boolean",
+        "rank_token": "string",
+        "status": "string",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/tags/search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:23.215158+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "has_more": "boolean",
+        "results": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "results": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:26.056399+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "outcome": "not-verified"
+    },
+    {
+      "path": "/direct_v2/search_secondary/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:28.608933+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message_search_results": "object",
+        "reshared_content_results": "object",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/get_presence/",
+      "method": "get",
+      "queryKeys": [
+        "suggested_followers_limit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:31.199853+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "user_presence": "object"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/get_presence_active_now/",
+      "method": "get",
+      "queryKeys": [
+        "recent_thread_limit",
+        "suggested_followers_limit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:35.514946+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "user_presence": "object"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/threads/broadcast/activity/",
+      "method": "get",
+      "queryKeys": [
+        "thread_limit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:38.178300+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "broadcast_chats": "array",
+        "cursor_thread_id": "integer",
+        "cursor_timestamp_seconds": "integer",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "broadcast_chats": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/direct_v2/search_gen_ai_bots/",
+      "method": "get",
+      "queryKeys": [
+        "num_ai_bots"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T04:52:40.933367+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "thread_search_results": "array",
+        "user_search_results": "array"
+      },
+      "arrayItemTypes": {
+        "thread_search_results": [],
+        "user_search_results": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    }
+  ]
+}

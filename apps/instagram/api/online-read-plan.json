@@ -1,0 +1,156 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Manually reviewed finite GET searches, catalogs, configuration and lists. Public software query and small result limits only. No message/inbox preview reads, mutations, challenge requests, private identifiers, location values, automatic retries or pagination. Omitted parameters remain an explicit test limitation.",
+  "targets": [
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "method": "get",
+      "query": {
+        "count": "3",
+        "top_participants_media_count": "1"
+      }
+    },
+    {
+      "path": "/live/get_live_chaining/",
+      "method": "get",
+      "query": {
+        "include_post_lives": "false"
+      }
+    },
+    {
+      "path": "/map/search/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/fbsearch/reels_serp/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/fundraiser/story_charities_search/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/stories/hallpass/hallpass_add_people_search/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/fbsearch/account_serp/",
+      "method": "get",
+      "query": {
+        "query": "software",
+        "count": "3"
+      }
+    },
+    {
+      "path": "/fbsearch/non_profiled_serp/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/dynamic_onboarding/get_direct_empty_state/",
+      "method": "get",
+      "query": {
+        "should_contain_combined_unit": "false",
+        "should_contain_message_unit": "false",
+        "should_contain_pending_follow_request_unit": "false"
+      }
+    },
+    {
+      "path": "/fan_club/members/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/api/v1/fan_club/category_members/",
+      "method": "get",
+      "query": {
+        "limit": "3"
+      }
+    },
+    {
+      "path": "/api/v1/stories/private_stories/friend_lists/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/direct_v2/ranked_recipients/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/friendships/followers_you_follow_back/",
+      "method": "get",
+      "query": {
+        "query": "software"
+      }
+    },
+    {
+      "path": "/friendships/pending_spam/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/interest_nux/list_all/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/media/sticker_tray_section/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages_stories/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/metaverse_bridges/get_horizon_world_pages/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page_stories/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/stories/private_stories/members/",
+      "method": "get",
+      "query": {
+        "is_list_creation": "false"
+      }
+    },
+    {
+      "path": "/stories/hallpass/share_info/",
+      "method": "get",
+      "query": {}
+    },
+    {
+      "path": "/video_call/cowatch/clips_media_feed/",
+      "method": "get",
+      "query": {}
+    }
+  ]
+}

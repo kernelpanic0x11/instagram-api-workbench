@@ -48,7 +48,7 @@ Open **http://127.0.0.1:8766/**. Vendored browser assets and the server's built-
 2. Use **Filter by tag** to find an area such as `accounts`, then expand the tag and an operation.
 3. Read the operation description and evidence references. Method badges describe recovered client configuration; generic request editors are not recovered payload schemas.
 4. Explore without connecting an account. **Try it out** opens an editor; **Execute** sends a request. Mutating requests can change an account when authenticated.
-5. If you want authenticated execution, follow the [Instagram connection guide](apps/instagram/README.md#run). Browser login additionally requires Google Chrome and `npm ci` run in `apps/instagram/api`. Sign in only in the separate Instagram window.
+5. If you want authenticated execution, follow the [Instagram connection guide](apps/instagram/README.md#run). Optional direct mobile login uses instagrapi without a browser or APK. The alternative browser login requires Google Chrome and `npm ci` run in `apps/instagram/api`.
 
 The [Instagram guide](apps/instagram/README.md) covers manual sessions, extraction counts, limitations, and development. Keep the local server on your own machine; see [security notes](apps/instagram/SECURITY.md).
 
@@ -118,5 +118,7 @@ python3 scripts/check-public.py
 ```
 
 The original Instagram reverse-engineering work used [REA (Reverse Engineer Anything)](https://github.com/morluto/rea) by [morluto and contributors](https://github.com/morluto/rea/graphs/contributors), alongside JADX and custom DEX analysis scripts. Credit to the REA project for the analysis tooling that supported this research.
+
+Optional browser-free Instagram authentication uses [instagrapi](https://github.com/subzeroid/instagrapi) (MIT). Credit to its maintainers for the mobile authentication and session implementation. See [authentication setup](apps/instagram/api/AUTHENTICATION.txt).
 
 Original code is MIT licensed; app evidence and bundled dependencies retain their own rights. See [LICENSE](LICENSE) and each app's notices.

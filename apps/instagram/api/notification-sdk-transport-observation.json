@@ -1,0 +1,16 @@
+{
+  "transport": "curl",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "rawResponseSaved": false,
+  "personalValuesSaved": false,
+  "checkedAt": "2026-10-24T04:37:59.380789+00:00",
+  "applicationHeaders": "Same allowed connection headers plus explicit Authorization and Cookie as temporary proxy; HTTP client manages framing and encoding.",
+  "bodyKind": "object",
+  "fieldTypes": {
+    "status": "string"
+  },
+  "arrayItemTypes": {},
+  "instagramStatus": "ok",
+  "stoppedBecause": null
+}
