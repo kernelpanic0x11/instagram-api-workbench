@@ -37,6 +37,49 @@ Confirmed in the pinned instructions:
   does not prove that a session belongs to a particular account; the adapter
   checks the authenticated username, and the workbench verifies the numeric ID.
 
+## Offline password-fallback validation
+
+The evidence-bound harness verifies exact instruction fingerprints and selected
+reviewed data-flow anchors before evaluating a narrow, manually transcribed
+model with a fixed synthetic sentinel. It accepts no password, username,
+session, cookie or authorization value. By default it uses the checked-in trace:
+
+```sh
+python3 scripts/validate-instagram-password-fallback.py
+```
+
+With the ignored pinned APK available locally, regenerate the selected trace in
+memory before running the same model:
+
+```sh
+python3 scripts/validate-instagram-password-fallback.py \
+  --apk apps/instagram/apks/base.apk \
+  --scenario all
+```
+
+The APK-backed mode additionally verifies that `LX/0009;->A0N` maps to integer 3,
+which selects `#PWD_INSTAGRAM`. The checked-in trace does not include that
+initializer, so default output labels the exact tag selection as a model
+assumption.
+
+The output redacts the fixed sentinel by default. `--show-synthetic-field`
+exposes only that built-in fixture in the modeled pre-dispatch field snapshot.
+The four deterministic cases are:
+
+- missing public key: version 0, sentinel present once in `enc_password`;
+- forced native-encryption exception: version 0, sentinel present once;
+- `PLAINTEXT_WITH_TAGGING` key state: encryption attempted, result discarded,
+  `#PWD_TRANSIENT` version 0, sentinel present once; and
+- synthetic success control: version 4, opaque payload, sentinel absent.
+
+The CLI installs an audit guard that blocks socket and child-process activity.
+There is no dispatch function, and the result reports zero network requests.
+Regression coverage is part of `python3 scripts/test_deep_traces.py`.
+
+This strengthens the static data-flow finding only. The harness does not execute
+the original Android method, load `CryptoPubNative`, establish production branch
+reachability, or test server acceptance.
+
 Native encryption is not fully traced here. The APK stores many native
 libraries inside `assets/lib/libs.spo`; the DEX JNI boundary does not establish
 the native binary's entire algorithm. A local experimental compatibility
