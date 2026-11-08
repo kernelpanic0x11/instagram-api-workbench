@@ -73,7 +73,10 @@ def main():
  if not dependencies.exists():run(['npm','ci','--ignore-scripts','--prefix','api'])
  run([sys.executable,'inventory.py']);run([sys.executable,'index_strings.py']);run([sys.executable,'api/extraction/extract.py'])
  if a.routes_only:(out/'api/bulk-trace/operations.json').write_text(json.dumps({'operations':[],'stats':{},'note':'Route-only extraction. No version-specific method mappings applied.'})+'\n')
- else:run([sys.executable,'api/bulk-trace/extract.py','--apk','apks/base.apk','--profile','api/bulk-trace/profiles/run-profile.json'])
+ else:
+  trace_command=[sys.executable,'api/bulk-trace/extract.py','--apk','apks/base.apk','--profile','api/bulk-trace/profiles/run-profile.json']
+  if reference_traces:trace_command.append('--reviewed-contracts')
+  run(trace_command)
  if reference_traces:run([sys.executable,'api/make-operations.py'])
  if reference_traces:run([sys.executable,'api/bulk-trace/trace-request-fields.py','--apk','apks/base.apk'])
  if reference_traces:run([sys.executable,'api/bulk-trace/trace-response-contracts.py','--apk','apks/base.apk'])
@@ -88,16 +91,21 @@ def main():
  (out/'api/online-read-results.json').unlink(missing_ok=True)
  (out/'api/second-read-repair-results.json').unlink(missing_ok=True)
  (out/'api/remaining-read-results.json').unlink(missing_ok=True)
+ (out/'api/context-read-repair-results.json').unlink(missing_ok=True)
  (out/'api/read-repair-results.json').unlink(missing_ok=True)
  for filename in ('transport-validation-results.json','notification-transport-observation.json','notification-sdk-transport-observation.json','notification-http-transport-comparison.json'):
   (out/'api'/filename).unlink(missing_ok=True)
- if reference_traces:run([sys.executable,'api/bulk-trace/trace-read-repairs.py']);run([sys.executable,'api/bulk-trace/trace-remaining-reads.py'])
+ if reference_traces:
+  run([sys.executable,'api/bulk-trace/trace-read-repairs.py'])
+  run([sys.executable,'api/bulk-trace/trace-remaining-reads.py'])
+  run([sys.executable,'api/bulk-trace/trace-reviewed-read-evidence.py'])
  else:
   (out/'api/remaining-read-review.json').unlink(missing_ok=True)
   (out/'api/remaining-read-audit.json').unlink(missing_ok=True)
   (out/'api/bulk-trace/remaining-read-evidence.json').unlink(missing_ok=True)
   (out/'api/read-repair-contracts.json').unlink(missing_ok=True)
   (out/'api/bulk-trace/read-repair-evidence.json').unlink(missing_ok=True)
+  (out/'api/bulk-trace/reviewed-read-evidence.json').unlink(missing_ok=True)
  # An offline reproduction must never inherit the reference session's live checks.
  (out/'api/runtime-checks.json').write_text(json.dumps({'checks':[],'note':'Offline reproduction; no runtime requests made.'})+'\n')
  (out/'api/runtime-error-checks.json').write_text(json.dumps({'checks':[],'note':'Offline reproduction; no runtime requests made.'})+'\n')

@@ -26,3 +26,16 @@ test('audit uses live evidence rather than treating an HTTP 200 failure as succe
  assert.equal(remainingReadAudit(paths,review).summary.nowSuccessful,1);
  assert.equal(remainingReadAudit(paths,review).operations[0].outcome,'not-verified');
 });
+test('attempted context corrections replace historical deferrals, while metadata alone and diagnostics do not',()=>{
+ const {paths,review,evidence}=fixture();applyRemainingReadReview(paths,review,evidence,'apk');
+ for (let i=1;i<=3;i++) paths[`/read/${i}/`].get['x-context-read-repairs']=[{id:'repair',purpose:i===3?'diagnostic-only':'request-correction'}];
+ paths['/read/1/'].get['x-read-validation-history']=[{correction:'repair',outcome:'not-verified'}];
+ paths['/read/3/'].get['x-read-validation-history']=[{correction:'repair',outcome:'not-verified'}];
+ const audit=remainingReadAudit(paths,review);
+ assert.equal(audit.operations[1].initialDisposition,'needs-context');
+ assert.equal(audit.operations[1].disposition,'corrected-read');
+ assert.equal(audit.operations[2].disposition,'needs-context');
+ assert.equal(audit.operations[3].disposition,'needs-context');
+ assert.equal(audit.summary.correctedRequests,2);
+ assert.equal(audit.summary.deferred,35);
+});

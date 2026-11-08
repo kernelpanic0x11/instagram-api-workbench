@@ -5,7 +5,7 @@ from pathlib import Path
 JADX_SHA='6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75'
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--android',action='store_true',help='Also require adb, a full JDK 17+, and the pinned JADX engine');a=parser.parse_args()
- checks=[{'name':'Python 3.10+','ok':sys.version_info>=(3,10)}]
+ checks=[{'name':'Python 3.11+','ok':sys.version_info>=(3,11)}]
  for name,args,minimum in [('node',['--version'],20),('npm',['--version'],None)]+([('adb',['version'],None),('java',['-version'],17),('javac',['-version'],17)] if a.android else []):
   executable=shutil.which(name);version='';success=False
   if executable:

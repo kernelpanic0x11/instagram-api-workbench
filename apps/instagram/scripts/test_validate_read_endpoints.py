@@ -9,6 +9,12 @@ spec.loader.exec_module(reads)
 
 
 class ReadValidationTests(unittest.TestCase):
+    def test_redirect_cannot_forward_local_authorization(self):
+        request = reads.urllib.request.Request(reads.ORIGIN + '/proxy/read/', headers={'X-Local-Token':'synthetic-local-token'})
+        for status in (301, 302, 303, 307, 308):
+            with self.assertRaises(OSError):
+                reads.RejectRedirects().redirect_request(request, None, status, '', {}, 'https://example.invalid/')
+
     def test_only_allowlisted_names_and_types_survive(self):
         result = reads.shape_metadata({'status':'ok','user':{'pk':123,'username':'private-fixture'},'unknown-private-key':'private-fixture','items':[{'id':123},'private-fixture'], 'message':'private-fixture'}, {'status','user','items','message'})
         self.assertNotIn('private-fixture', json.dumps(result))
@@ -59,6 +65,23 @@ class ReadValidationTests(unittest.TestCase):
         for path in reads.BLOCKED_READ_ROUTES:
             with self.assertRaises(ValueError):
                 reads.load_plan({'targets':[{'path':path,'method':'get','query':{}}]}, {'paths':{path:{'get':{}}}})
+
+    def test_empty_signed_query_requires_finalized_query_evidence(self):
+        variant = {'status':'client-finalization-traced','parameter_location':'query','envelope':'signed'}
+        operation = {'x-request-transport':[variant], 'x-reviewed-read-plan':{
+            'status':'static-input-reviewed','path':'/read/','method':'get','query':{'signed_body':'SIGNATURE.{}'}}}
+        spec = {'paths':{'/read/':{'get':operation}}}
+        target = {'path':'/read/','method':'get','query':{'signed_body':'SIGNATURE.{}'}}
+        self.assertEqual(reads.load_plan({'targets':[target]},spec,True),[target])
+        for query in ({'signed_body':'SIGNATURE.{"user_id":"123"}'}, {'signed_body':'SIGNATURE.{}','q':'software'}, {'signed_body':'{}'}):
+            with self.assertRaises(ValueError):
+                reads.load_plan({'targets':[{**target,'query':query}]},spec,True)
+        for invalid in ({}, {**variant,'parameter_location':'form-body'}, {**variant,'envelope':'plain'}, {**variant,'status':'unresolved'}):
+            operation['x-request-transport'] = [invalid]
+            with self.assertRaises(ValueError):reads.load_plan({'targets':[target]},spec,True)
+        operation['x-request-transport'] = [variant]
+        operation.pop('x-reviewed-read-plan')
+        with self.assertRaises(ValueError):reads.load_plan({'targets':[target]},spec,True)
 
 
 if __name__ == '__main__':

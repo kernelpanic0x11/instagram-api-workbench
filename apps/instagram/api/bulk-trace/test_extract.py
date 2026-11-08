@@ -97,8 +97,8 @@ class TransportTests(unittest.TestCase):
   self.assertNotIn('request_transport',self.trace([0x2071,6,0x0010])[0])
  def test_unknown_call_stops_transport_inference(self):
   self.assertNotIn('request_transport',self.trace([0x1071,2,0,0x106e,4,0])[0])
- def test_other_builder_flag_stops_transport_inference(self):
-  self.assertNotIn('request_transport',self.trace([0x1112,0x015c,3,0x106e,4,0])[0])
+ def test_unknown_body_wrapper_flag_stops_transport_inference(self):
+  self.assertNotIn('request_transport',self.trace([0x015c,3,0x106e,4,0])[0])
  def test_direct_signing_flag_is_preserved(self):
   self.assertEqual(self.trace([0x1112,0x015c,4,0x106e,4,0])[0]['request_transport']['envelope'],'signed')
  def test_method_override_does_not_finalize_the_old_method(self):
@@ -164,4 +164,150 @@ class TransportTests(unittest.TestCase):
   self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
  def test_control_flow_boundary_stops_transport_inference(self):
   self.assertNotIn('request_transport',self.trace([0x0138,2,0x106e,4,0])[0])
+class ParameterHelperTests(unittest.TestCase):
+ fixture = TransportTests.fixture
+ def helper_fixture(self,helper,suffix):
+  value=self.fixture(suffix);value.methods.append(helper);value.strings.extend(['literal_key','next/route/'])
+  return value
+ def test_timezone_helper_adds_two_fields_and_keeps_finalization(self):
+  value=self.helper_fixture(('LX/0586;','A1M','(LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'),[0x011a,1,0x3071,7,0x0310,0x106e,4,0])
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual([f['name'] for f in result['request_fields']],['literal_key','timezone_offset'])
+  self.assertEqual(result['request_fields'][1]['client_serialization'],'long-to-string')
+  self.assertEqual(result['request_transport']['envelope'],'plain')
+ def test_primitive_helper_keeps_logical_type_without_values(self):
+  for helper,logical in [(('LX/0BY8;','A1T','(LX/04x6;Ljava/lang/String;I)V'),'integer'),(('LX/0BY8;','A1S','(LX/04x6;Ljava/lang/String;D)V'),'number')]:
+   value=self.helper_fixture(helper,[0x011a,1,0x4071,7,0x3210,0x106e,4,0])
+   field=scan(value,0,16,include_request_fields=True)[0]['request_fields'][0]
+   self.assertEqual(field['logical_type'],logical)
+   self.assertNotIn('value',field)
+ def test_context_helper_uses_second_argument_as_receiver(self):
+  value=self.helper_fixture(('LX/0227;','A0v','(Landroid/content/Context;LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'),[0x021a,1,0x4071,7,0x3206,0x106e,4,0])
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual([f['name'] for f in result['request_fields']],['literal_key','device_id','guid'])
+  self.assertIn('request_transport',result)
+ def test_context_builder_alias_invalidates_tracking(self):
+  value=self.helper_fixture(('LX/0227;','A0v','(Landroid/content/Context;LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'),[0x021a,1,0x4071,7,0x3200,0x106e,4,0])
+  self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
+ def test_route_helper_does_not_attach_new_fields_or_transport_to_old_route(self):
+  value=self.helper_fixture(('LX/0C87;','A1M','(LX/04x6;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V'),[0x011a,2,0x4071,7,0x3210,0x106e,4,0])
+  result=scan(value,0,16,include_request_fields=True)
+  self.assertNotIn('request_transport',result[0]);self.assertEqual(result[0]['request_fields'],[])
+  self.assertEqual(result[-1]['path'],'/next/route/')
+  self.assertEqual([f['name'] for f in result[-1]['request_fields']],['media_id','fb_auth_token'])
+ def test_unknown_route_helper_argument_never_finalizes_old_route(self):
+  value=self.helper_fixture(('LX/0222;','A1P','(LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'),[0x3071,7,0x0430,0x106e,4,0])
+  self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
+ def test_helper_nonbuilder_return_cannot_be_used_as_request_receiver(self):
+  value=self.helper_fixture(('LX/021X;','A0R','(LX/04x6;LX/05Dd;Ljava/lang/String;Ljava/lang/String;)LX/02df;'),[0x021a,1,0x4071,7,0x3260,0x000c,0x106e,4,0])
+  self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
+ def test_unreviewed_descriptor_is_not_treated_as_a_parameter_helper(self):
+  value=self.helper_fixture(('LX/0586;','A1M','(LX/04x6;Ljava/lang/String;I)V'),[0x011a,1,0x3071,7,0x0310,0x106e,4,0])
+  self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
+
+class RootPathEncodingTests(unittest.TestCase):
+ def fixture(self,suffix):
+  value=TransportTests.fixture(self,suffix)
+  value.fields.append(('LX/04x6;','A0N','Z'))
+  return value
+ def test_root_path_flag_preserves_encoding_without_inventing_a_default_base_path(self):
+  for flag,expected in [(0x1112,True),(0x0112,False)]:
+   value=self.fixture([flag,0x015c,6,0x106e,4,0])
+   transport=scan(value,0,16,include_request_fields=True)[0]['request_transport']
+   self.assertEqual(transport['root_path_override'],expected)
+   self.assertEqual(transport['parameter_location'],'form-body')
+   self.assertNotIn('base_path',transport)
+ def test_unknown_root_flag_stops_inference(self):
+  self.assertNotIn('request_transport',scan(self.fixture([0x015c,6,0x106e,4,0]),0,16,include_request_fields=True)[0])
+
+class GzipBodyTests(unittest.TestCase):
+ def test_known_gzip_flag_preserves_form_encoding_and_signing_separately(self):
+  for finalizer,envelope in [(4,'plain'),(5,'signed')]:
+   value=TransportTests.fixture(self,[0x1112,0x015c,3,0x1071,finalizer,0])
+   transport=scan(value,0,16,include_request_fields=True)[0]['request_transport']
+   self.assertEqual(transport['content_encoding'],'gzip')
+   self.assertEqual(transport['envelope'],envelope)
+   self.assertEqual(transport['content_type'],'application/x-www-form-urlencoded; charset=UTF-8')
+ def test_false_gzip_flag_and_get_do_not_claim_content_encoding(self):
+  for suffix in [[0x0112,0x015c,3,0x106e,4,0],[0x1112,0x015c,3,0x0162,5,0x206e,1,0x0010,0x106e,4,0]]:
+   result=scan(TransportTests.fixture(self,suffix),0,16,include_request_fields=True)
+   self.assertNotIn('content_encoding',result[-1]['request_transport'])
+ def test_phone_id_finalizer_requires_known_compression_flag(self):
+  for words,expected in [([0x1412],'gzip'),([0x0412],None),([],False)]:
+   value=TransportTests.fixture(self,[0x021a,1]+words+[0x5471,7,0x3260])
+   value.strings.append('literal_key')
+   value.methods.append(('LX/0o8B;','A01','(LX/04x5;LX/05Dd;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;'))
+   result=scan(value,0,16,include_request_fields=True)[0]
+   self.assertEqual({field['name'] for field in result['request_fields']},{'phone_id','literal_key'})
+   if expected is False:self.assertNotIn('request_transport',result)
+   else:self.assertEqual(result['request_transport'].get('content_encoding'),expected)
+ def test_boost_finalizer_adds_parameters_without_claiming_success(self):
+  value=TransportTests.fixture(self,[0x5471,7,0x3250])
+  value.methods.append(('LX/0nRB;','A00','(LX/04x5;LX/0nRB;LX/05BI;Ljava/lang/String;Ljava/lang/String;)V'))
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual([field['name'] for field in result['request_fields']],['flow_id','boosted_id'])
+  self.assertEqual(result['request_transport']['envelope'],'plain')
+  self.assertFalse(result['dispatch_verified'])
+
+class ReviewedCacheConfigurationTests(unittest.TestCase):
+ def test_cache_fields_preserve_encoding_but_do_not_claim_dispatch_or_export_values(self):
+  for field,opcode in [('A0C',0x5b),('A09',0x5b),('A00',0x5a),('A01',0x5a)]:
+   descriptor='Ljava/lang/String;' if field=='A0C' else 'Ljava/lang/Integer;' if field=='A09' else 'J'
+   value=TransportTests.fixture(self,[0x011a,1,0x0100|opcode,6,0x106e,4,0])
+   value.strings.append('synthetic-private-cache-key')
+   value.fields.append(('LX/04x6;',field,descriptor))
+   transport=scan(value,0,16,include_request_fields=True)[0]['request_transport']
+   self.assertEqual(transport['parameter_location'],'form-body')
+   self.assertIn('unverified',transport['client_policy_status'])
+   self.assertEqual(transport['client_policy_overrides'][0]['evidence']['field'],'LX/04x6;->'+field+descriptor)
+   self.assertNotIn('synthetic-private-cache-key',str(transport))
+ def test_unreviewed_cache_like_field_still_blocks_encoding(self):
+  value=TransportTests.fixture(self,[0x015b,6,0x106e,4,0])
+  value.fields.append(('LX/04x6;','A0C','Ljava/lang/Object;'))
+  self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
+ def test_assigning_tracked_builder_as_cache_value_invalidates_tracking(self):
+  value=TransportTests.fixture(self,[0x005b,6,0x106e,4,0])
+  value.fields.append(('LX/04x6;','A0C','Ljava/lang/String;'))
+  self.assertNotIn('request_transport',scan(value,0,16,include_request_fields=True)[0])
+
+class AdditionalParameterHelperTests(unittest.TestCase):
+ def test_phone_id_helper_tracks_second_argument_and_both_context_aliases(self):
+  helper=('LX/0221;','A1L','(LX/02dl;LX/04x6;LX/02df;)V')
+  for arguments,expected in [(0x506,True),(0x500,False),(0x006,False)]:
+   value=TransportTests.fixture(self,[0x3071,7,arguments,0x106e,4,0]);value.methods.append(helper)
+   result=scan(value,0,16,include_request_fields=True)[0]
+   self.assertEqual('request_transport' in result,expected)
+   if expected:self.assertEqual(result['request_fields'][0]['name'],'phone_id')
+ def test_device_id_helper_records_only_literal_key(self):
+  value=TransportTests.fixture(self,[0x2071,7,0x0006,0x106e,4,0])
+  value.methods.append(('LX/0225;','A18','(Landroid/content/Context;LX/04x6;)V'))
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual([field['name'] for field in result['request_fields']],['device_id'])
+  self.assertIn('request_transport',result)
+ def test_messaging_destinations_stays_conditional(self):
+  value=TransportTests.fixture(self,[0x2071,7,0x0010,0x106e,4,0])
+  value.methods.append(('LX/0C9W;','A1Q','(LX/04x6;Ljava/lang/String;)V'))
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual(result['request_fields'][0]['client_presence'],'omitted-if-null-or-blank')
+  self.assertEqual(result['request_fields'][0]['required_status'],'unknown')
+  self.assertIn('request_transport',result)
+ def test_user_journey_instance_helper_preserves_conditional_field(self):
+  value=TransportTests.fixture(self,[0x406e,7,0x3506,0x106e,4,0])
+  value.methods.append(('LX/03oc;','A00','(LX/04x6;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)LX/0Jaf;'))
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual(result['request_fields'][0]['name'],'user_journey')
+  self.assertEqual(result['request_fields'][0]['client_presence'],'conditional-on-feature-and-serialized-journey')
+  self.assertIn('request_transport',result)
+ def test_audio_page_helper_recovers_branch_keys_without_enabling_num_clips(self):
+  value=TransportTests.fixture(self,[0x4071,7,0x3506,0x106e,4,0])
+  value.methods.append(('LX/0Sie;','A03','(LX/0CqC;LX/04x6;Lcom/instagram/clips/audio/model/AudioPageAssetModel;Ljava/lang/String;)V'))
+  result=scan(value,0,16,include_request_fields=True)[0]
+  self.assertEqual({field['name'] for field in result['request_fields']},{
+   'music_canonical_id','music_canonical_segment_id','referrer_media_id',
+   'audio_asset_id','audio_cluster_id','original_sound_audio_asset_id','max_id','tab_type'})
+  # A03 passes false for A02's include-count argument; it cannot emit num_clips.
+  self.assertNotIn('num_clips',[field['name'] for field in result['request_fields']])
+  self.assertTrue(all(field['required_status']=='unknown' for field in result['request_fields']))
+  self.assertIn('request_transport',result)
+
 if __name__=='__main__':unittest.main()

@@ -68,13 +68,17 @@ shape metadata. The user ID never enters the result artifact or public plan.
 ## Complete review of the remaining 37
 
 All 37 previously unverified GET operations have now been reviewed against pinned
-caller bytecode. Twelve evidence-backed corrections were retested once: four
-succeeded, two returned 400, five returned 404 and one returned HTTP 200 with
-status fail. Twenty-five remain deferred with per-operation reasons. The current
-aggregate is 120 successful reads and 33 tested/unverified operations. No
-rate-limit, authentication, protection or transport stop occurred in this batch.
+caller bytecode. The initial twelve corrections repaired four reads. A subsequent
+context-repair pass fixed contact-setting lookup, dashboard content inspiration,
+and suggestion details; a bounded follow-up also fixed both fan-club video getters using an existing recommended creator club. A further caller-backed correction fixed recent music searches with music_first and a fresh browse-session UUID. The current aggregate is **128 successful reads and 27
+tested/unverified operations**; ten successes are in this frozen set of 37.
+The follow-up resolved saved device IDs, real recommendation IDs, and an explicit
+interop user ID only in memory. Missing own-club context caused initial skips; the later selected-club reads succeeded.
+No rate-limit, authentication, protection or transport stop occurred in these batches.
 
 See [REMAINING-READS.md](REMAINING-READS.md), api/remaining-read-review.json and the
-generated api/remaining-read-audit.json. Historical counts above describe earlier
+generated api/remaining-read-audit.json. The follow-up's public constructions and
+sanitized observations are in api/context-read-repair-plan.json and
+api/context-read-repair-results.json. Historical counts above describe earlier
 batches. Retesting a corrected request does not prove individual requiredness or
 full contracts, and a 404 does not establish permanent route removal.

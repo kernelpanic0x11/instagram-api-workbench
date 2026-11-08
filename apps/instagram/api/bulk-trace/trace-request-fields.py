@@ -11,6 +11,7 @@ import json
 import re
 import zipfile
 from pathlib import Path
+from literal_keys import load_literal_decoders
 from extract import Dex, PARAMETER_SETTERS, load_profile, scan, sig, DEFAULT_PROFILE
 
 DIRECTORY = Path(__file__).resolve().parent
@@ -24,6 +25,7 @@ def collect(apk, operations):
         raise ValueError('APK differs from the validated mapping profile')
     if operations.get('source_apk_sha256', digest) != digest:
         raise ValueError('Route observations differ from the supplied APK')
+    literal_decoders = load_literal_decoders(apk, digest)
     callers = {(evidence['dex'], evidence['caller']) for operation in operations['operations'] for evidence in operation['evidence']}
     known_pairs = {(operation['method'], operation['path']) for operation in operations['operations']}
     recovered, setter_evidence, dex_sources, transports = {}, [], [], {}
@@ -45,7 +47,7 @@ def collect(apk, operations):
                 if (name, sig(method)) not in callers:
                     continue
                 used = True
-                for observation in scan(dex, method_index, code, include_request_fields=True):
+                for observation in scan(dex, method_index, code, include_request_fields=True, literal_decoders=literal_decoders):
                     key = observation['method'], observation['path']
                     if key not in known_pairs:
                         continue
@@ -77,7 +79,7 @@ def collect(apk, operations):
             'setter_evidence': setter_evidence, 'operations': results,
             'transports': [{'method': method, 'path': path, 'variants': variants} for (method, path), variants in sorted(transports.items())],
             'stats': {'operations_with_fields': len(results), 'field_names_by_operation': sum(len(item['fields']) for item in results), 'operations_with_finalized_transport': len(transports)},
-            'limitations': ['Only known method/route callers and literal keys on a shared receiver within one basic block.',
+            'limitations': ['Only known method/route callers and literal or reviewed switch-decoded keys on a shared receiver within one basic block.',
                            'Unknown calls, branches, receiver escapes and dynamic keys limit recovery. Missing fields are not evidence of a parameterless endpoint.',
                            'Setters populate a string parameter collection. Encoding is recorded only at verified finalizers; server requiredness and response schemas remain unresolved.',
                            'Values are deliberately omitted. No account credentials or runtime requests are used.']}

@@ -6,9 +6,11 @@ import {onlineValidationAudit} from './online-validation-audit.mjs';
 import {coverageLedger} from './operation-coverage.mjs';
 import {applyResponseModels} from './response-models.mjs';
 import {applyRequestTransports} from './request-transports.mjs';
+import {applyReviewedReadPlan} from './reviewed-read-plan.mjs';
 import {applyKeywordFilterContract} from './comment-keywords-contract.mjs';
 import {applyReadRepairs} from './read-repairs.mjs';
 import {applyReadValidation} from './read-validation.mjs';
+import {applyContextReadRepairs,applyContextReadRepairExamples} from './context-read-repairs.mjs';
 import {applySharedModels} from './shared-models.mjs';
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
 const catalog=read('extraction/catalog.json'), schemas=read('schema-evidence/schemas.json');
@@ -79,6 +81,9 @@ for(const [path,item] of Object.entries(paths))for(const method of ['get','post'
  if(['post','put','patch','delete'].includes(method)&&!op.requestBody)op.requestBody={description:'Manual payload editor. This is NOT a recovered request schema; choose the encoding and fields required by this endpoint. Some endpoints require a signed_body envelope.',required:false,content:{'application/json':{schema:{},example:{}},'application/x-www-form-urlencoded':{schema:{type:'object',additionalProperties:{type:'string'}},example:{}}}};
 }
 applyRequestTransports(paths,requestFields.transports??[],normalize);
+if(fs.existsSync(new URL('bulk-trace/reviewed-read-evidence.json',import.meta.url))) {
+ applyReviewedReadPlan(paths,read('online-read-plan.json'),read('bulk-trace/reviewed-read-evidence.json'),target.sha256);
+}
 for(const endpoint of ['comment','post']){
  const evidenceFile='bulk-trace/'+endpoint+'-keywords-evidence.json';
  if(fs.existsSync(new URL(evidenceFile,import.meta.url))){
@@ -115,7 +120,14 @@ if(fs.existsSync(new URL('second-read-repair-results.json',import.meta.url)))app
 if(fs.existsSync(new URL('remaining-read-review.json',import.meta.url))){
  const review=read('remaining-read-review.json');
  applyRemainingReadReview(paths,review,read('bulk-trace/remaining-read-evidence.json'),target.sha256);
+ const contextPlan=fs.existsSync(new URL('context-read-repair-plan.json',import.meta.url))?read('context-read-repair-plan.json'):null;
+ if(contextPlan)applyContextReadRepairs(paths,contextPlan,review,read('online-read-safety.json'),target.sha256);
  if(fs.existsSync(new URL('remaining-read-results.json',import.meta.url)))applyReadValidation(paths,schemas.components,read('remaining-read-results.json'),target.sha256);
+ if(fs.existsSync(new URL('context-read-repair-results.json',import.meta.url))){
+  const contextResults=read('context-read-repair-results.json');
+  applyReadValidation(paths,schemas.components,contextResults,target.sha256);
+  if(contextPlan)applyContextReadRepairExamples(paths,contextPlan,contextResults,target.sha256);
+ }
  fs.writeFileSync(new URL('remaining-read-audit.json',import.meta.url),JSON.stringify(remainingReadAudit(paths,review),null,2)+'\n');
 }
 

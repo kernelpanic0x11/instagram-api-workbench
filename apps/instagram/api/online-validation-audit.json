@@ -1,12 +1,12 @@
 {
   "scope": "Audit of every documented operation. Historical observations and this pass are not all fresh tests. Unknown-method candidates are not executable. No write-capable or explicitly blocked GET routes executed.",
   "summary": {
-    "documentedOperations": 679,
-    "observedSuccessfulReads": 120,
-    "testedNotVerified": 33,
-    "skippedWriteCapable": 424,
+    "documentedOperations": 718,
+    "observedSuccessfulReads": 128,
+    "testedNotVerified": 27,
+    "skippedWriteCapable": 453,
     "skippedSideEffectOrSecurityRisk": 8,
-    "skippedUnreviewedReads": 94
+    "skippedUnreviewedReads": 102
   },
   "operations": [
     {
@@ -56,6 +56,12 @@
     },
     {
       "path": "/accounts/delete_smb_partner/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/accounts/disable_sms_two_factor/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -112,6 +118,15 @@
       "successCheckedAt": "2026-10-24T04:16:43.906125+00:00"
     },
     {
+      "path": "/accounts/get_presence_disabled/",
+      "method": "get",
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T15:31:19.843243+00:00",
+      "successCheckedAt": "2026-10-24T15:31:19.843243+00:00"
+    },
+    {
       "path": "/accounts/initiate_phone_number_confirmation/",
       "method": "post",
       "state": "skipped-write-capable",
@@ -148,7 +163,19 @@
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/accounts/regen_backup_codes/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/accounts/remove_bio_links/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/accounts/remove_profile_action_button/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -167,6 +194,12 @@
     },
     {
       "path": "/accounts/send_confirm_email/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/accounts/send_password_reset_link/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -238,6 +271,12 @@
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/accounts/set_private/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/accounts/update_bio_links/",
       "method": "post",
       "state": "skipped-write-capable",
@@ -300,10 +339,11 @@
     {
       "path": "/address_book/get_ccu_setting/",
       "method": "get",
-      "state": "tested-not-verified",
-      "reason": "Recorded read did not meet the application-success check.",
-      "httpStatus": 400,
-      "checkedAt": "2026-10-24T04:45:35.558773+00:00"
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T15:58:50.748490+00:00",
+      "successCheckedAt": "2026-10-24T15:58:50.748490+00:00"
     },
     {
       "path": "/address_book/get_contact_hashes/",
@@ -336,7 +376,19 @@
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/ads/ads_manager/delete_promotion_v2/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/ads/ads_manager/edit_budget_and_duration_v2/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/ads/ads_manager/end_promotion_v2/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -361,6 +413,18 @@
     },
     {
       "path": "/ads/ads_manager/get_or_enroll_coupon/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/ads/ads_manager/pause_promotion_v2/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/ads/ads_manager/resume_promotion_v2/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -426,13 +490,31 @@
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/ads/promote/available_audiences_v2/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/ads/promote/budget_recommendation_v2/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/ads/promote/create_appeal/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/ads/promote/create_audience_v2/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/ads/promote/create_draft_promotion_v2/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -547,6 +629,12 @@
       "httpStatus": 200,
       "checkedAt": "2026-10-24T04:45:38.020718+00:00",
       "successCheckedAt": "2026-10-24T04:45:38.020718+00:00"
+    },
+    {
+      "path": "/age_platform/age_verification/resume/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
       "path": "/android_modules/download/",
@@ -770,7 +858,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:46:01.045608+00:00"
+      "checkedAt": "2026-10-24T16:45:10.749685+00:00"
     },
     {
       "path": "/archive/live/lives_archived/",
@@ -796,13 +884,19 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:46:06.266892+00:00"
+      "checkedAt": "2026-10-24T16:45:13.137911+00:00"
     },
     {
       "path": "/archive/reel/location_media/",
       "method": "get",
       "state": "skipped-unreviewed-read",
       "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
+    },
+    {
+      "path": "/archive/reel/schedule_bulk_deletion_for_corrupted_archive_media/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
       "path": "/attestation/create_android_keystore/",
@@ -885,10 +979,11 @@
     {
       "path": "/business/account/get_content_inspiration_medias/",
       "method": "get",
-      "state": "tested-not-verified",
-      "reason": "Recorded read did not meet the application-success check.",
-      "httpStatus": 400,
-      "checkedAt": "2026-10-24T14:26:29.659887+00:00"
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T15:56:31.492299+00:00",
+      "successCheckedAt": "2026-10-24T15:56:31.492299+00:00"
     },
     {
       "path": "/business/account/get_invite_friends_subitems/",
@@ -906,6 +1001,15 @@
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 400,
       "checkedAt": "2026-10-24T04:46:16.367938+00:00"
+    },
+    {
+      "path": "/business/account/get_meta_verified_for_business_info/",
+      "method": "get",
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T15:31:24.672142+00:00",
+      "successCheckedAt": "2026-10-24T15:31:24.672142+00:00"
     },
     {
       "path": "/business/account/get_onboarding_checklist/",
@@ -928,7 +1032,13 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T14:26:32.209517+00:00"
+      "checkedAt": "2026-10-24T16:42:26.885579+00:00"
+    },
+    {
+      "path": "/business/account/get_ranked_media/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
     },
     {
       "path": "/business/account/get_suggested_hashtags/",
@@ -968,6 +1078,12 @@
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/business/account/validate_share_business_profile_via_story/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
     },
     {
       "path": "/business/branded_content/bc_pending_tag_megaphone_for_brand/",
@@ -1055,7 +1171,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:46:39.686341+00:00"
+      "checkedAt": "2026-10-24T16:45:15.536350+00:00"
     },
     {
       "path": "/business/eligibility/get_monetization_products_eligibility_data/",
@@ -1078,7 +1194,13 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T14:26:34.895528+00:00"
+      "checkedAt": "2026-10-24T16:42:29.272452+00:00"
+    },
+    {
+      "path": "/business/instant_experience/get_donation_button_partners_bundle/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
     },
     {
       "path": "/business/instant_experience/smb_validate_url/",
@@ -1088,6 +1210,12 @@
     },
     {
       "path": "/business/profile_action_buttons/get_all_cta_categories_info/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/business_conversion/reset_activity_feed_reminder_data/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -1521,6 +1649,12 @@
       "checkedAt": "2026-10-24T04:46:50.078670+00:00"
     },
     {
+      "path": "/commerce/community/featured_products/merchant_management/approved/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
+    },
+    {
       "path": "/commerce/inbox/prototype/",
       "method": "post",
       "state": "skipped-write-capable",
@@ -1532,7 +1666,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:46:52.559281+00:00"
+      "checkedAt": "2026-10-24T16:45:17.931959+00:00"
     },
     {
       "path": "/commerce/media_for_product/",
@@ -1566,7 +1700,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 400,
-      "checkedAt": "2026-10-24T04:46:57.623487+00:00"
+      "checkedAt": "2026-10-24T16:48:26.376080+00:00"
     },
     {
       "path": "/commerce/purchase_protection/",
@@ -1574,7 +1708,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:47:00.095368+00:00"
+      "checkedAt": "2026-10-24T16:45:20.377935+00:00"
     },
     {
       "path": "/commerce/reconsideration/dismiss_recently_viewed_product/",
@@ -1692,6 +1826,12 @@
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/creatives/story_media_search_keyed_format/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
     },
     {
       "path": "/creatives/write_supported_capabilities/",
@@ -1859,6 +1999,12 @@
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/direct_v2/add_to_inbox/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/direct_v2/async_get_pending_requests_preview/",
       "method": "get",
       "state": "skipped-unreviewed-read",
@@ -1872,6 +2018,12 @@
     },
     {
       "path": "/direct_v2/click_to_direct_ad_interaction_trigger/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/collection/grid_view_items/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -1908,6 +2060,18 @@
     },
     {
       "path": "/direct_v2/delivery_receipt/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/demote_collaborators_from_broadcast_chat/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/demote_moderators_from_channel/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -2056,7 +2220,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:47:07.839183+00:00"
+      "checkedAt": "2026-10-24T16:47:58.178049+00:00"
     },
     {
       "path": "/direct_v2/icebreakers/import/",
@@ -2101,6 +2265,24 @@
       "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
     },
     {
+      "path": "/direct_v2/invite_collaborators_to_broadcast_chat/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/invite_moderators_to_channel/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/join_pinned_subscriber_social_channel/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/direct_v2/join_thread_via_group_link/",
       "method": "post",
       "state": "skipped-write-capable",
@@ -2108,6 +2290,12 @@
     },
     {
       "path": "/direct_v2/join_thread_via_story_join_chat/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/message_delivered_trigger/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -2144,6 +2332,12 @@
       "httpStatus": 200,
       "checkedAt": "2026-10-24T14:26:42.395364+00:00",
       "successCheckedAt": "2026-10-24T14:26:42.395364+00:00"
+    },
+    {
+      "path": "/direct_v2/remove_invites_from_channel/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
       "path": "/direct_v2/remove_thread_reminder/",
@@ -2267,6 +2461,12 @@
     },
     {
       "path": "/direct_v2/threads/broadcast/create_prompt/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/direct_v2/threads/broadcast/delete_collection/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -2434,6 +2634,12 @@
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
     },
     {
+      "path": "/direct_v2/threads/broadcast/update_prompt_response/add/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/direct_v2/threads/broadcast/update_prompt_response/delete/",
       "method": "post",
       "state": "skipped-write-capable",
@@ -2589,10 +2795,11 @@
     {
       "path": "/discover/fetch_suggestion_details/",
       "method": "get",
-      "state": "tested-not-verified",
-      "reason": "Recorded read did not meet the application-success check.",
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
       "httpStatus": 200,
-      "checkedAt": "2026-10-24T14:26:44.816751+00:00"
+      "checkedAt": "2026-10-24T16:00:14.741835+00:00",
+      "successCheckedAt": "2026-10-24T16:00:14.741835+00:00"
     },
     {
       "path": "/discover/injected_chaining_explore_media/",
@@ -2720,10 +2927,11 @@
     {
       "path": "/fan_club/promotional_video/",
       "method": "get",
-      "state": "tested-not-verified",
-      "reason": "Recorded read did not meet the application-success check.",
-      "httpStatus": 400,
-      "checkedAt": "2026-10-24T04:47:18.838200+00:00"
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T16:33:15.086349+00:00",
+      "successCheckedAt": "2026-10-24T16:33:15.086349+00:00"
     },
     {
       "path": "/fan_club/subscription_next_steps_recommendations/",
@@ -2740,10 +2948,11 @@
     {
       "path": "/fan_club/welcome_video/",
       "method": "get",
-      "state": "tested-not-verified",
-      "reason": "Recorded read did not meet the application-success check.",
-      "httpStatus": 400,
-      "checkedAt": "2026-10-24T04:47:35.663278+00:00"
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T16:33:17.901702+00:00",
+      "successCheckedAt": "2026-10-24T16:33:17.901702+00:00"
     },
     {
       "path": "/fast_and_safe/server_configs_test/",
@@ -2835,7 +3044,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 400,
-      "checkedAt": "2026-10-24T14:26:47.379852+00:00"
+      "checkedAt": "2026-10-24T16:42:21.638062+00:00"
     },
     {
       "path": "/fbsearch/recent_searches/",
@@ -3164,7 +3373,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T05:11:36.797570+00:00"
+      "checkedAt": "2026-10-24T16:48:00.623765+00:00"
     },
     {
       "path": "/fundraiser/untag_fundraiser_in_feed_media/",
@@ -3622,7 +3831,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T05:12:15.119298+00:00"
+      "checkedAt": "2026-10-24T16:48:03.071187+00:00"
     },
     {
       "path": "/multiple_accounts/get_account_family/",
@@ -3693,10 +3902,11 @@
     {
       "path": "/music/recent_searches/",
       "method": "get",
-      "state": "tested-not-verified",
-      "reason": "Recorded read did not meet the application-success check.",
-      "httpStatus": 400,
-      "checkedAt": "2026-10-24T04:48:00.196390+00:00"
+      "state": "observed-success",
+      "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T16:39:56.668698+00:00",
+      "successCheckedAt": "2026-10-24T16:39:56.668698+00:00"
     },
     {
       "path": "/music/rename_original_audio/",
@@ -3718,6 +3928,30 @@
     },
     {
       "path": "/music/suggested_audio_pill/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/music/top_trends/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
+      "path": "/music/track/{arg1}/beats/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
+    },
+    {
+      "path": "/music/track/{arg1}/lyrics/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
+    },
+    {
+      "path": "/music/track/{arg1}/lyrics/report/",
       "method": "post",
       "state": "skipped-write-capable",
       "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
@@ -3941,7 +4175,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:48:12.912297+00:00"
+      "checkedAt": "2026-10-24T16:48:05.603501+00:00"
     },
     {
       "path": "/stories/hallpass/bulk_update_members/",
@@ -3961,7 +4195,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T05:11:39.301565+00:00"
+      "checkedAt": "2026-10-24T16:48:08.142602+00:00"
     },
     {
       "path": "/stories/hallpass/remove_self/",
@@ -4020,7 +4254,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T14:26:53.028257+00:00"
+      "checkedAt": "2026-10-24T16:48:28.843664+00:00"
     },
     {
       "path": "/stories/stories_high_intent_discovery_ads/",
@@ -4174,6 +4408,18 @@
       "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
     },
     {
+      "path": "/users/{arg1}/usernameinfo/",
+      "method": "get",
+      "state": "skipped-unreviewed-read",
+      "reason": "Request inputs or side effects not sufficiently reviewed; fixture/context may be needed."
+    },
+    {
+      "path": "/users/accept_insights_terms/",
+      "method": "post",
+      "state": "skipped-write-capable",
+      "reason": "Read-only scope: no writes, messages, deletions or other account changes authorized."
+    },
+    {
       "path": "/users/blocked_list/",
       "method": "get",
       "state": "observed-success",
@@ -4200,7 +4446,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T14:26:55.503387+00:00"
+      "checkedAt": "2026-10-24T16:42:31.666238+00:00"
     },
     {
       "path": "/users/get_birthday_connections_info/",
@@ -4208,7 +4454,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:49:07.178579+00:00"
+      "checkedAt": "2026-10-24T16:46:48.645139+00:00"
     },
     {
       "path": "/users/get_birthday_visibility_setting/",
@@ -4261,8 +4507,8 @@
       "state": "observed-success",
       "reason": "One recorded HTTP-200 JSON status-ok read; not a complete contract or continuing guarantee.",
       "httpStatus": 200,
-      "checkedAt": "2026-10-24T04:23:16.833215+00:00",
-      "successCheckedAt": "2026-10-24T04:23:16.833215+00:00"
+      "checkedAt": "2026-10-24T15:31:22.263402+00:00",
+      "successCheckedAt": "2026-10-24T15:31:22.263402+00:00"
     },
     {
       "path": "/users/live_settings/",
@@ -4465,7 +4711,7 @@
       "state": "tested-not-verified",
       "reason": "Recorded read did not meet the application-success check.",
       "httpStatus": 404,
-      "checkedAt": "2026-10-24T04:49:14.710620+00:00"
+      "checkedAt": "2026-10-24T15:59:19.483628+00:00"
     },
     {
       "path": "/zr/dual_tokens/",

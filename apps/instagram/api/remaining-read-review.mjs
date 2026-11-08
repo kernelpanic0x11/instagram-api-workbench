@@ -21,7 +21,12 @@ export function applyRemainingReadReview(paths, review, evidence, apkHash) {
 export function remainingReadAudit(paths, review) {
   const operations = review.operations.map(entry => {
     const operation = paths[entry.path].get;
-    return {path: entry.path, priorHttpStatus: entry.priorHttpStatus, disposition: entry.disposition,
+    const corrections = operation['x-context-read-repairs'] ?? [];
+    const attemptedCorrection = (operation['x-read-validation-history'] ?? []).some(check =>
+      corrections.some(correction => correction.id === check.correction && correction.purpose === 'request-correction'));
+    return {path: entry.path, priorHttpStatus: entry.priorHttpStatus,
+      initialDisposition: entry.disposition,
+      disposition: attemptedCorrection ? 'corrected-read' : entry.disposition,
       outcome: operation['x-live-check'] ? 'observed-success' : 'not-verified',
       latestHttpStatus: operation['x-read-validation']?.httpStatus ?? null,
       checkedAt: operation['x-read-validation']?.checkedAt ?? null, finding: entry.finding};

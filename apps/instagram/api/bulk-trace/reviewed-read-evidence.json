@@ -1,0 +1,8095 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Static construction and client response handling for three bounded GET reads. No runtime data or account values.",
+  "reviewed_routes": [
+    "/accounts/get_presence_disabled/",
+    "/users/get_recommendation_status_nudge/",
+    "/business/account/get_meta_verified_for_business_info/"
+  ],
+  "methods": {
+    "LX/0HKd;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V": {
+      "dex": "classes11.dex",
+      "dex_sha256": "63dad2e07431424df9786492aa8f868fddea820c74e908bed8ab20962f7a8bc4",
+      "method": "LX/0HKd;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V",
+      "code_item_byte_offset": 5762828,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 5762844,
+          "code_units": [
+            1032,
+            21
+          ]
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 5762848,
+          "code_units": [
+            776,
+            23
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 5762852,
+          "code_units": [
+            16466,
+            13037
+          ],
+          "field": "LX/0HKd;->$tI"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 5762856,
+          "code_units": [
+            2312,
+            22
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 5762860,
+          "code_units": [
+            43,
+            612,
+            0
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "dex_byte_offset": 5762866,
+          "code_units": [
+            12399,
+            6865,
+            916
+          ],
+          "callee": "LX/0Ah1;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 5762872,
+          "code_units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 15,
+          "dex_byte_offset": 5762874,
+          "code_units": [
+            20,
+            40247,
+            231
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "dex_byte_offset": 5762880,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 21,
+          "dex_byte_offset": 5762886,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 5762888,
+          "code_units": [
+            276,
+            33568,
+            42812
+          ]
+        },
+        {
+          "code_unit_offset": 25,
+          "dex_byte_offset": 5762894,
+          "code_units": [
+            12401,
+            2541,
+            913
+          ],
+          "callee": "LX/0252;->A01(ILjava/lang/Object;Ljava/lang/Object;)I"
+        },
+        {
+          "code_unit_offset": 28,
+          "dex_byte_offset": 5762900,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 29,
+          "dex_byte_offset": 5762902,
+          "code_units": [
+            12399,
+            6865,
+            916
+          ],
+          "callee": "LX/0Ah1;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 5762908,
+          "code_units": [
+            16724,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 5762912,
+          "code_units": [
+            287,
+            2000
+          ]
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 5762916,
+          "code_units": [
+            8302,
+            4864,
+            49
+          ],
+          "callee": "LX/05BI;->A0k(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 39,
+          "dex_byte_offset": 5762922,
+          "code_units": [
+            276,
+            57749,
+            8331
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 5762928,
+          "code_units": [
+            8305,
+            5028,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 5762934,
+          "code_units": [
+            276,
+            10750,
+            57606
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 5762940,
+          "code_units": [
+            41,
+            564
+          ]
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 5762944,
+          "code_units": [
+            20,
+            57756,
+            6787
+          ]
+        },
+        {
+          "code_unit_offset": 53,
+          "dex_byte_offset": 5762950,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 5762956,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 57,
+          "dex_byte_offset": 5762958,
+          "code_units": [
+            276,
+            37869,
+            20661
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 5762964,
+          "code_units": [
+            12401,
+            2541,
+            913
+          ],
+          "callee": "LX/0252;->A01(ILjava/lang/Object;Ljava/lang/Object;)I"
+        },
+        {
+          "code_unit_offset": 63,
+          "dex_byte_offset": 5762970,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 64,
+          "dex_byte_offset": 5762972,
+          "code_units": [
+            12399,
+            6865,
+            916
+          ],
+          "callee": "LX/0Ah1;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 5762978,
+          "code_units": [
+            16724,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 5762982,
+          "code_units": [
+            287,
+            2000
+          ]
+        },
+        {
+          "code_unit_offset": 71,
+          "dex_byte_offset": 5762986,
+          "code_units": [
+            8302,
+            4864,
+            49
+          ],
+          "callee": "LX/05BI;->A0k(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 74,
+          "dex_byte_offset": 5762992,
+          "code_units": [
+            276,
+            8402,
+            54063
+          ]
+        },
+        {
+          "code_unit_offset": 77,
+          "dex_byte_offset": 5762998,
+          "code_units": [
+            8305,
+            5028,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 80,
+          "dex_byte_offset": 5763004,
+          "code_units": [
+            276,
+            51425,
+            59041
+          ]
+        },
+        {
+          "code_unit_offset": 83,
+          "dex_byte_offset": 5763010,
+          "code_units": [
+            41,
+            529
+          ]
+        },
+        {
+          "code_unit_offset": 85,
+          "dex_byte_offset": 5763014,
+          "code_units": [
+            20,
+            49466,
+            31100
+          ]
+        },
+        {
+          "code_unit_offset": 88,
+          "dex_byte_offset": 5763020,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 91,
+          "dex_byte_offset": 5763026,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "dex_byte_offset": 5763028,
+          "code_units": [
+            276,
+            6708,
+            58072
+          ]
+        },
+        {
+          "code_unit_offset": 95,
+          "dex_byte_offset": 5763034,
+          "code_units": [
+            12401,
+            2541,
+            913
+          ],
+          "callee": "LX/0252;->A01(ILjava/lang/Object;Ljava/lang/Object;)I"
+        },
+        {
+          "code_unit_offset": 98,
+          "dex_byte_offset": 5763040,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 99,
+          "dex_byte_offset": 5763042,
+          "code_units": [
+            12399,
+            6865,
+            916
+          ],
+          "callee": "LX/0Ah1;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 102,
+          "dex_byte_offset": 5763048,
+          "code_units": [
+            16724,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 104,
+          "dex_byte_offset": 5763052,
+          "code_units": [
+            287,
+            2000
+          ]
+        },
+        {
+          "code_unit_offset": 106,
+          "dex_byte_offset": 5763056,
+          "code_units": [
+            8302,
+            4864,
+            49
+          ],
+          "callee": "LX/05BI;->A0k(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 109,
+          "dex_byte_offset": 5763062,
+          "code_units": [
+            276,
+            29102,
+            38145
+          ]
+        },
+        {
+          "code_unit_offset": 112,
+          "dex_byte_offset": 5763068,
+          "code_units": [
+            8305,
+            5028,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 115,
+          "dex_byte_offset": 5763074,
+          "code_units": [
+            276,
+            59560,
+            8541
+          ]
+        },
+        {
+          "code_unit_offset": 118,
+          "dex_byte_offset": 5763080,
+          "code_units": [
+            41,
+            494
+          ]
+        },
+        {
+          "code_unit_offset": 120,
+          "dex_byte_offset": 5763084,
+          "code_units": [
+            20,
+            29040,
+            13866
+          ]
+        },
+        {
+          "code_unit_offset": 123,
+          "dex_byte_offset": 5763090,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 126,
+          "dex_byte_offset": 5763096,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 127,
+          "dex_byte_offset": 5763098,
+          "code_units": [
+            276,
+            7031,
+            58218
+          ]
+        },
+        {
+          "code_unit_offset": 130,
+          "dex_byte_offset": 5763104,
+          "code_units": [
+            12401,
+            2541,
+            913
+          ],
+          "callee": "LX/0252;->A01(ILjava/lang/Object;Ljava/lang/Object;)I"
+        },
+        {
+          "code_unit_offset": 133,
+          "dex_byte_offset": 5763110,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 134,
+          "dex_byte_offset": 5763112,
+          "code_units": [
+            12399,
+            6865,
+            916
+          ],
+          "callee": "LX/0Ah1;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 137,
+          "dex_byte_offset": 5763118,
+          "code_units": [
+            16724,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 139,
+          "dex_byte_offset": 5763122,
+          "code_units": [
+            287,
+            15085
+          ]
+        },
+        {
+          "code_unit_offset": 141,
+          "dex_byte_offset": 5763126,
+          "code_units": [
+            312,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 143,
+          "dex_byte_offset": 5763130,
+          "code_units": [
+            4210,
+            35855,
+            1
+          ],
+          "callee": "LX/0Uvo;->onSuccess()V"
+        },
+        {
+          "code_unit_offset": 146,
+          "dex_byte_offset": 5763136,
+          "code_units": [
+            276,
+            34369,
+            37109
+          ]
+        },
+        {
+          "code_unit_offset": 149,
+          "dex_byte_offset": 5763142,
+          "code_units": [
+            8305,
+            5028,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 152,
+          "dex_byte_offset": 5763148,
+          "code_units": [
+            276,
+            3388,
+            31087
+          ]
+        },
+        {
+          "code_unit_offset": 155,
+          "dex_byte_offset": 5763154,
+          "code_units": [
+            41,
+            457
+          ]
+        },
+        {
+          "code_unit_offset": 157,
+          "dex_byte_offset": 5763158,
+          "code_units": [
+            20,
+            53303,
+            27848
+          ]
+        },
+        {
+          "code_unit_offset": 160,
+          "dex_byte_offset": 5763164,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 163,
+          "dex_byte_offset": 5763170,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 164,
+          "dex_byte_offset": 5763172,
+          "code_units": [
+            799,
+            6655
+          ]
+        },
+        {
+          "code_unit_offset": 166,
+          "dex_byte_offset": 5763176,
+          "code_units": [
+            276,
+            42832,
+            31378
+          ]
+        },
+        {
+          "code_unit_offset": 169,
+          "dex_byte_offset": 5763182,
+          "code_units": [
+            12401,
+            2541,
+            913
+          ],
+          "callee": "LX/0252;->A01(ILjava/lang/Object;Ljava/lang/Object;)I"
+        },
+        {
+          "code_unit_offset": 172,
+          "dex_byte_offset": 5763188,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 173,
+          "dex_byte_offset": 5763190,
+          "code_units": [
+            12628,
+            12877
+          ],
+          "field": "LX/0HIE;->A02LX/0EdA;"
+        },
+        {
+          "code_unit_offset": 175,
+          "dex_byte_offset": 5763194,
+          "code_units": [
+            312,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 177,
+          "dex_byte_offset": 5763198,
+          "code_units": [
+            8305,
+            2624,
+            25
+          ],
+          "callee": "LX/0252;->A1M(Lcom/instagram/common/session/UserSession;LX/09h1;)V"
+        },
+        {
+          "code_unit_offset": 180,
+          "dex_byte_offset": 5763204,
+          "code_units": [
+            16724,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 182,
+          "dex_byte_offset": 5763208,
+          "code_units": [
+            287,
+            11639
+          ]
+        },
+        {
+          "code_unit_offset": 184,
+          "dex_byte_offset": 5763212,
+          "code_units": [
+            4209,
+            26455,
+            1
+          ],
+          "callee": "LX/0PkI;->A02(LX/0PkI;)V"
+        },
+        {
+          "code_unit_offset": 187,
+          "dex_byte_offset": 5763218,
+          "code_units": [
+            276,
+            40646,
+            60753
+          ]
+        },
+        {
+          "code_unit_offset": 190,
+          "dex_byte_offset": 5763224,
+          "code_units": [
+            8305,
+            5028,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 193,
+          "dex_byte_offset": 5763230,
+          "code_units": [
+            276,
+            48030,
+            56336
+          ]
+        },
+        {
+          "code_unit_offset": 196,
+          "dex_byte_offset": 5763236,
+          "code_units": [
+            41,
+            416
+          ]
+        },
+        {
+          "code_unit_offset": 198,
+          "dex_byte_offset": 5763240,
+          "code_units": [
+            20,
+            18451,
+            6236
+          ]
+        },
+        {
+          "code_unit_offset": 201,
+          "dex_byte_offset": 5763246,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 204,
+          "dex_byte_offset": 5763252,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 205,
+          "dex_byte_offset": 5763254,
+          "code_units": [
+            799,
+            5800
+          ]
+        },
+        {
+          "code_unit_offset": 207,
+          "dex_byte_offset": 5763258,
+          "code_units": [
+            276,
+            44081,
+            48283
+          ]
+        },
+        {
+          "code_unit_offset": 210,
+          "dex_byte_offset": 5763264,
+          "code_units": [
+            4209,
+            5023,
+            1
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 213,
+          "dex_byte_offset": 5763270,
+          "code_units": [
+            1802
+          ]
+        },
+        {
+          "code_unit_offset": 214,
+          "dex_byte_offset": 5763272,
+          "code_units": [
+            8305,
+            5229,
+            57
+          ],
+          "callee": "LX/05s2;->A0q(Ljava/lang/Object;Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 217,
+          "dex_byte_offset": 5763278,
+          "code_units": [
+            2058
+          ]
+        },
+        {
+          "code_unit_offset": 218,
+          "dex_byte_offset": 5763280,
+          "code_units": [
+            532,
+            9940,
+            41471
+          ]
+        },
+        {
+          "code_unit_offset": 221,
+          "dex_byte_offset": 5763286,
+          "code_units": [
+            282,
+            33540
+          ],
+          "string": "ig4a-instagram-schema"
+        },
+        {
+          "code_unit_offset": 223,
+          "dex_byte_offset": 5763290,
+          "code_units": [
+            16497,
+            1901,
+            33299
+          ],
+          "callee": "LX/021X;->A0J(LX/0Flo;Ljava/lang/String;II)LX/0olj;"
+        },
+        {
+          "code_unit_offset": 226,
+          "dex_byte_offset": 5763296,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 227,
+          "dex_byte_offset": 5763298,
+          "code_units": [
+            276,
+            14972,
+            4134
+          ]
+        },
+        {
+          "code_unit_offset": 230,
+          "dex_byte_offset": 5763304,
+          "code_units": [
+            8306,
+            10125,
+            19
+          ],
+          "callee": "LX/0D9e;->Cuj(I)Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 233,
+          "dex_byte_offset": 5763310,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 234,
+          "dex_byte_offset": 5763312,
+          "code_units": [
+            530
+          ]
+        },
+        {
+          "code_unit_offset": 235,
+          "dex_byte_offset": 5763314,
+          "code_units": [
+            4209,
+            175,
+            1
+          ],
+          "callee": "LX/0025;->A0X(Ljava/lang/Boolean;)Z"
+        },
+        {
+          "code_unit_offset": 238,
+          "dex_byte_offset": 5763320,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 239,
+          "dex_byte_offset": 5763322,
+          "code_units": [
+            1759,
+            257
+          ]
+        },
+        {
+          "code_unit_offset": 241,
+          "dex_byte_offset": 5763326,
+          "code_units": [
+            276,
+            4692,
+            56986
+          ]
+        },
+        {
+          "code_unit_offset": 244,
+          "dex_byte_offset": 5763332,
+          "code_units": [
+            12401,
+            2243,
+            531
+          ],
+          "callee": "LX/0225;->A1Y(LX/0D9e;IZ)Z"
+        },
+        {
+          "code_unit_offset": 247,
+          "dex_byte_offset": 5763338,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 248,
+          "dex_byte_offset": 5763340,
+          "code_units": [
+            1503,
+            257
+          ]
+        },
+        {
+          "code_unit_offset": 250,
+          "dex_byte_offset": 5763344,
+          "code_units": [
+            4209,
+            3423,
+            9
+          ],
+          "callee": "LX/02gr;->A00(Lcom/instagram/common/session/UserSession;)LX/02gr;"
+        },
+        {
+          "code_unit_offset": 253,
+          "dex_byte_offset": 5763350,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 254,
+          "dex_byte_offset": 5763352,
+          "code_units": [
+            8305,
+            979,
+            97
+          ],
+          "callee": "LX/01AX;->A00(LX/02gr;Z)V"
+        },
+        {
+          "code_unit_offset": 257,
+          "dex_byte_offset": 5763358,
+          "code_units": [
+            8305,
+            1860,
+            137
+          ],
+          "callee": "LX/021R;->A0e(Lcom/instagram/common/session/UserSession;I)LX/02gr;"
+        },
+        {
+          "code_unit_offset": 260,
+          "dex_byte_offset": 5763364,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 261,
+          "dex_byte_offset": 5763366,
+          "code_units": [
+            610,
+            446
+          ],
+          "field": "LX/01AX;->A00LX/0GAZ;"
+        },
+        {
+          "code_unit_offset": 263,
+          "dex_byte_offset": 5763370,
+          "code_units": [
+            354,
+            447
+          ],
+          "field": "LX/01AX;->A01[LX/0Jop;"
+        },
+        {
+          "code_unit_offset": 265,
+          "dex_byte_offset": 5763374,
+          "code_units": [
+            21873,
+            1056,
+            33059
+          ],
+          "callee": "LX/01F4;->A1C(Ljava/lang/Object;LX/0GAZ;[LX/0Jop;IZ)V"
+        },
+        {
+          "code_unit_offset": 268,
+          "dex_byte_offset": 5763380,
+          "code_units": [
+            16724,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 270,
+          "dex_byte_offset": 5763384,
+          "code_units": [
+            287,
+            7944
+          ]
+        },
+        {
+          "code_unit_offset": 272,
+          "dex_byte_offset": 5763388,
+          "code_units": [
+            312,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 274,
+          "dex_byte_offset": 5763392,
+          "code_units": [
+            4436,
+            17316
+          ],
+          "field": "LX/0JQA;->A00LX/0Uyo;"
+        },
+        {
+          "code_unit_offset": 276,
+          "dex_byte_offset": 5763396,
+          "code_units": [
+            12402,
+            35891,
+            1377
+          ],
+          "callee": "LX/0Uyo;->GHn(ZZ)V"
+        },
+        {
+          "code_unit_offset": 279,
+          "dex_byte_offset": 5763402,
+          "code_units": [
+            276,
+            17982,
+            42272
+          ]
+        },
+        {
+          "code_unit_offset": 282,
+          "dex_byte_offset": 5763408,
+          "code_units": [
+            8305,
+            5028,
+            113
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 285,
+          "dex_byte_offset": 5763414,
+          "code_units": [
+            276,
+            39636,
+            51208
+          ]
+        },
+        {
+          "code_unit_offset": 288,
+          "dex_byte_offset": 5763420,
+          "code_units": [
+            41,
+            324
+          ]
+        },
+        {
+          "code_unit_offset": 290,
+          "dex_byte_offset": 5763424,
+          "code_units": [
+            20,
+            18683,
+            964
+          ]
+        },
+        {
+          "code_unit_offset": 293,
+          "dex_byte_offset": 5763430,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 296,
+          "dex_byte_offset": 5763436,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 297,
+          "dex_byte_offset": 5763438,
+          "code_units": [
+            799,
+            3342
+          ]
+        },
+        {
+          "code_unit_offset": 299,
+          "dex_byte_offset": 5763442,
+          "code_units": [
+            276,
+            59455,
+            37119
+          ]
+        },
+        {
+          "code_unit_offset": 302,
+          "dex_byte_offset": 5763448,
+          "code_units": [
+            4209,
+            5023,
+            1
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 305,
+          "dex_byte_offset": 5763454,
+          "code_units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 306,
+          "dex_byte_offset": 5763456,
+          "code_units": [
+            8305,
+            5229,
+            57
+          ],
+          "callee": "LX/05s2;->A0q(Ljava/lang/Object;Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 309,
+          "dex_byte_offset": 5763462,
+          "code_units": [
+            1546
+          ]
+        },
+        {
+          "code_unit_offset": 310,
+          "dex_byte_offset": 5763464,
+          "code_units": [
+            16980,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 312,
+          "dex_byte_offset": 5763468,
+          "code_units": [
+            543,
+            11024
+          ]
+        },
+        {
+          "code_unit_offset": 314,
+          "dex_byte_offset": 5763472,
+          "code_units": [
+            8532,
+            25296
+          ],
+          "field": "LX/0PED;->A00LX/05B6;"
+        },
+        {
+          "code_unit_offset": 316,
+          "dex_byte_offset": 5763476,
+          "code_units": [
+            4206,
+            38727,
+            1
+          ],
+          "callee": "Landroidx/fragment/app/Fragment;->isAdded()Z"
+        },
+        {
+          "code_unit_offset": 319,
+          "dex_byte_offset": 5763482,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 320,
+          "dex_byte_offset": 5763484,
+          "code_units": [
+            312,
+            61
+          ]
+        },
+        {
+          "code_unit_offset": 322,
+          "dex_byte_offset": 5763488,
+          "code_units": [
+            8532,
+            25300
+          ],
+          "field": "LX/0PED;->A04LX/0Jzl;"
+        },
+        {
+          "code_unit_offset": 324,
+          "dex_byte_offset": 5763492,
+          "code_units": [
+            4210,
+            20451,
+            1
+          ],
+          "callee": "LX/0Jzl;->getValue()Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 327,
+          "dex_byte_offset": 5763498,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 328,
+          "dex_byte_offset": 5763500,
+          "code_units": [
+            287,
+            7029
+          ]
+        },
+        {
+          "code_unit_offset": 330,
+          "dex_byte_offset": 5763504,
+          "code_units": [
+            8302,
+            17443,
+            97
+          ],
+          "callee": "LX/0Hxg;->A12(Z)V"
+        },
+        {
+          "code_unit_offset": 333,
+          "dex_byte_offset": 5763510,
+          "code_units": [
+            10324,
+            25297
+          ],
+          "field": "LX/0PED;->A01LX/0Eto;"
+        },
+        {
+          "code_unit_offset": 335,
+          "dex_byte_offset": 5763514,
+          "code_units": [
+            113,
+            815,
+            0
+          ],
+          "callee": "LX/0123;->A0s()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 338,
+          "dex_byte_offset": 5763520,
+          "code_units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 339,
+          "dex_byte_offset": 5763522,
+          "code_units": [
+            1890,
+            21986
+          ],
+          "field": "LX/0N1c;->A06LX/0N1c;"
+        },
+        {
+          "code_unit_offset": 341,
+          "dex_byte_offset": 5763526,
+          "code_units": [
+            15444,
+            6058
+          ],
+          "field": "LX/0BB0;->A06Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 343,
+          "dex_byte_offset": 5763530,
+          "code_units": [
+            3354,
+            35291
+          ],
+          "string": "new"
+        },
+        {
+          "code_unit_offset": 345,
+          "dex_byte_offset": 5763534,
+          "code_units": [
+            2834
+          ]
+        },
+        {
+          "code_unit_offset": 346,
+          "dex_byte_offset": 5763536,
+          "code_units": [
+            1911,
+            4943,
+            7
+          ],
+          "callee": "LX/05FI;->A09(LX/0N1c;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 349,
+          "dex_byte_offset": 5763542,
+          "code_units": [
+            8532,
+            25300
+          ],
+          "field": "LX/0PED;->A04LX/0Jzl;"
+        },
+        {
+          "code_unit_offset": 351,
+          "dex_byte_offset": 5763546,
+          "code_units": [
+            4210,
+            20451,
+            1
+          ],
+          "callee": "LX/0Jzl;->getValue()Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 354,
+          "dex_byte_offset": 5763552,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 355,
+          "dex_byte_offset": 5763554,
+          "code_units": [
+            287,
+            7029
+          ]
+        },
+        {
+          "code_unit_offset": 357,
+          "dex_byte_offset": 5763558,
+          "code_units": [
+            14164,
+            6058
+          ],
+          "field": "LX/0BB0;->A06Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 359,
+          "dex_byte_offset": 5763562,
+          "code_units": [
+            5716,
+            15633
+          ],
+          "field": "LX/0Hxg;->A00LX/0ynL;"
+        },
+        {
+          "code_unit_offset": 361,
+          "dex_byte_offset": 5763566,
+          "code_units": [
+            4210,
+            37798,
+            6
+          ],
+          "callee": "LX/0ynL;->getValue()Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 364,
+          "dex_byte_offset": 5763572,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 365,
+          "dex_byte_offset": 5763574,
+          "code_units": [
+            287,
+            6116
+          ]
+        },
+        {
+          "code_unit_offset": 367,
+          "dex_byte_offset": 5763578,
+          "code_units": [
+            5205,
+            11279
+          ],
+          "field": "LX/0GLc;->A02Z"
+        },
+        {
+          "code_unit_offset": 369,
+          "dex_byte_offset": 5763582,
+          "code_units": [
+            4948,
+            11278
+          ],
+          "field": "LX/0GLc;->A01Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 371,
+          "dex_byte_offset": 5763586,
+          "code_units": [
+            4693,
+            11280
+          ],
+          "field": "LX/0GLc;->A03Z"
+        },
+        {
+          "code_unit_offset": 373,
+          "dex_byte_offset": 5763590,
+          "code_units": [
+            290,
+            6116
+          ]
+        },
+        {
+          "code_unit_offset": 375,
+          "dex_byte_offset": 5763594,
+          "code_units": [
+            21104,
+            11662,
+            29505
+          ],
+          "callee": "LX/0GLc;-><init>(ZLjava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 378,
+          "dex_byte_offset": 5763600,
+          "code_units": [
+            8306,
+            37797,
+            22
+          ],
+          "callee": "LX/0ynL;->HUn(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 381,
+          "dex_byte_offset": 5763606,
+          "code_units": [
+            276,
+            2351,
+            46900
+          ]
+        },
+        {
+          "code_unit_offset": 384,
+          "dex_byte_offset": 5763612,
+          "code_units": [
+            8305,
+            5028,
+            81
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 387,
+          "dex_byte_offset": 5763618,
+          "code_units": [
+            276,
+            34592,
+            22317
+          ]
+        },
+        {
+          "code_unit_offset": 390,
+          "dex_byte_offset": 5763624,
+          "code_units": [
+            41,
+            222
+          ]
+        },
+        {
+          "code_unit_offset": 392,
+          "dex_byte_offset": 5763628,
+          "code_units": [
+            20,
+            35872,
+            12779
+          ]
+        },
+        {
+          "code_unit_offset": 395,
+          "dex_byte_offset": 5763634,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 398,
+          "dex_byte_offset": 5763640,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 399,
+          "dex_byte_offset": 5763642,
+          "code_units": [
+            799,
+            3678
+          ]
+        },
+        {
+          "code_unit_offset": 401,
+          "dex_byte_offset": 5763646,
+          "code_units": [
+            276,
+            38915,
+            45151
+          ]
+        },
+        {
+          "code_unit_offset": 404,
+          "dex_byte_offset": 5763652,
+          "code_units": [
+            8305,
+            1038,
+            19
+          ],
+          "callee": "LX/01F4;->A0A(Ljava/lang/Object;I)I"
+        },
+        {
+          "code_unit_offset": 407,
+          "dex_byte_offset": 5763658,
+          "code_units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 408,
+          "dex_byte_offset": 5763660,
+          "code_units": [
+            17492,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 410,
+          "dex_byte_offset": 5763664,
+          "code_units": [
+            1055,
+            12256
+          ]
+        },
+        {
+          "code_unit_offset": 412,
+          "dex_byte_offset": 5763668,
+          "code_units": [
+            4206,
+            8786,
+            3
+          ],
+          "callee": "LX/0Bjt;->getItems()Ljava/util/List;"
+        },
+        {
+          "code_unit_offset": 415,
+          "dex_byte_offset": 5763674,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 416,
+          "dex_byte_offset": 5763676,
+          "code_units": [
+            16731,
+            28839
+          ],
+          "field": "LX/0QGc;->A0QLjava/util/List;"
+        },
+        {
+          "code_unit_offset": 418,
+          "dex_byte_offset": 5763680,
+          "code_units": [
+            16980,
+            28831
+          ],
+          "field": "LX/0QGc;->A0ILX/0I6O;"
+        },
+        {
+          "code_unit_offset": 420,
+          "dex_byte_offset": 5763684,
+          "code_units": [
+            4209,
+            28415,
+            4
+          ],
+          "callee": "LX/0QGc;->A01(LX/0QGc;)Ljava/util/ArrayList;"
+        },
+        {
+          "code_unit_offset": 423,
+          "dex_byte_offset": 5763690,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 424,
+          "dex_byte_offset": 5763692,
+          "code_units": [
+            8302,
+            17548,
+            18
+          ],
+          "callee": "LX/0I6O;->A0z(Ljava/util/List;)V"
+        },
+        {
+          "code_unit_offset": 427,
+          "dex_byte_offset": 5763698,
+          "code_units": [
+            276,
+            19224,
+            49226
+          ]
+        },
+        {
+          "code_unit_offset": 430,
+          "dex_byte_offset": 5763704,
+          "code_units": [
+            8305,
+            5028,
+            81
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 433,
+          "dex_byte_offset": 5763710,
+          "code_units": [
+            276,
+            59964,
+            3625
+          ]
+        },
+        {
+          "code_unit_offset": 436,
+          "dex_byte_offset": 5763716,
+          "code_units": [
+            41,
+            176
+          ]
+        },
+        {
+          "code_unit_offset": 438,
+          "dex_byte_offset": 5763720,
+          "code_units": [
+            20,
+            26478,
+            43471
+          ]
+        },
+        {
+          "code_unit_offset": 441,
+          "dex_byte_offset": 5763726,
+          "code_units": [
+            4209,
+            5023,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 444,
+          "dex_byte_offset": 5763732,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 445,
+          "dex_byte_offset": 5763734,
+          "code_units": [
+            799,
+            5221
+          ]
+        },
+        {
+          "code_unit_offset": 447,
+          "dex_byte_offset": 5763738,
+          "code_units": [
+            276,
+            43349,
+            33908
+          ]
+        },
+        {
+          "code_unit_offset": 450,
+          "dex_byte_offset": 5763744,
+          "code_units": [
+            8305,
+            1038,
+            19
+          ],
+          "callee": "LX/01F4;->A0A(Ljava/lang/Object;I)I"
+        },
+        {
+          "code_unit_offset": 453,
+          "dex_byte_offset": 5763750,
+          "code_units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 454,
+          "dex_byte_offset": 5763752,
+          "code_units": [
+            12628,
+            9530
+          ],
+          "field": "LX/0EdA;->A00LX/01pW;"
+        },
+        {
+          "code_unit_offset": 456,
+          "dex_byte_offset": 5763756,
+          "code_units": [
+            312,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 458,
+          "dex_byte_offset": 5763760,
+          "code_units": [
+            4692,
+            3605
+          ],
+          "field": "LX/05Ga;->A0WLX/01rv;"
+        },
+        {
+          "code_unit_offset": 460,
+          "dex_byte_offset": 5763764,
+          "code_units": [
+            354,
+            1312
+          ],
+          "field": "LX/01rv;->A0CLX/01rv;"
+        },
+        {
+          "code_unit_offset": 462,
+          "dex_byte_offset": 5763768,
+          "code_units": [
+            4659,
+            52
+          ]
+        },
+        {
+          "code_unit_offset": 464,
+          "dex_byte_offset": 5763772,
+          "code_units": [
+            4206,
+            10528,
+            3
+          ],
+          "callee": "LX/0EdA;->EEQ()Z"
+        },
+        {
+          "code_unit_offset": 467,
+          "dex_byte_offset": 5763778,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 468,
+          "dex_byte_offset": 5763780,
+          "code_units": [
+            313,
+            46
+          ]
+        },
+        {
+          "code_unit_offset": 470,
+          "dex_byte_offset": 5763784,
+          "code_units": [
+            5906
+          ]
+        },
+        {
+          "code_unit_offset": 471,
+          "dex_byte_offset": 5763786,
+          "code_units": [
+            17492,
+            13038
+          ],
+          "field": "LX/0HKd;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 473,
+          "dex_byte_offset": 5763790,
+          "code_units": [
+            1055,
+            6959
+          ]
+        },
+        {
+          "code_unit_offset": 475,
+          "dex_byte_offset": 5763794,
+          "code_units": [
+            13908,
+            6058
+          ],
+          "field": "LX/0BB0;->A06Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 477,
+          "dex_byte_offset": 5763798,
+          "code_units": [
+            4209,
+            5220,
+            6
+          ],
+          "callee": "LX/05s2;->A0T(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 480,
+          "dex_byte_offset": 5763804,
+          "code_units": [
+            15188,
+            6059
+          ],
+          "field": "LX/0BB0;->A07Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 482,
+          "dex_byte_offset": 5763808,
+          "code_units": [
+            4209,
+            5220,
+            11
+          ],
+          "callee": "LX/05s2;->A0T(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 485,
+          "dex_byte_offset": 5763814,
+          "code_units": [
+            15701,
+            5302
+          ],
+          "field": "LX/09h1;->A20Z"
+        },
+        {
+          "code_unit_offset": 487,
+          "dex_byte_offset": 5763818,
+          "code_units": [
+            16724,
+            15062
+          ],
+          "field": "LX/0Hqg;->A01LX/0QFy;"
+        },
+        {
+          "code_unit_offset": 489,
+          "dex_byte_offset": 5763822,
+          "code_units": [
+            312,
+            48
+          ]
+        },
+        {
+          "code_unit_offset": 491,
+          "dex_byte_offset": 5763826,
+          "code_units": [
+            4206,
+            6879,
+            4
+          ],
+          "callee": "LX/0Aiy;->getSession()Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 494,
+          "dex_byte_offset": 5763832,
+          "code_units": [
+            4108
+          ]
+        },
+        {
+          "code_unit_offset": 495,
+          "dex_byte_offset": 5763834,
+          "code_units": [
+            4206,
+            4811,
+            4
+          ],
+          "callee": "LX/05B6;->getAnalyticsModule()LX/0Eto;"
+        },
+        {
+          "code_unit_offset": 498,
+          "dex_byte_offset": 5763840,
+          "code_units": [
+            3852
+          ]
+        },
+        {
+          "code_unit_offset": 499,
+          "dex_byte_offset": 5763842,
+          "code_units": [
+            17236,
+            15068
+          ],
+          "field": "LX/0Hqg;->A07Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 501,
+          "dex_byte_offset": 5763846,
+          "code_units": [
+            274
+          ]
+        },
+        {
+          "code_unit_offset": 502,
+          "dex_byte_offset": 5763848,
+          "code_units": [
+            825,
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 504,
+          "dex_byte_offset": 5763852,
+          "code_units": [
+            26,
+            37273
+          ],
+          "string": "sessionId"
+        },
+        {
+          "code_unit_offset": 506,
+          "dex_byte_offset": 5763856,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05s2;->A0a(Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 509,
+          "dex_byte_offset": 5763862,
+          "code_units": [
+            113,
+            1,
+            0
+          ],
+          "callee": "LX/0002;->createAndThrow()LX/0002;"
+        },
+        {
+          "code_unit_offset": 512,
+          "dex_byte_offset": 5763868,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 513,
+          "dex_byte_offset": 5763870,
+          "code_units": [
+            39
+          ]
+        },
+        {
+          "code_unit_offset": 514,
+          "dex_byte_offset": 5763872,
+          "code_units": [
+            1810
+          ]
+        },
+        {
+          "code_unit_offset": 515,
+          "dex_byte_offset": 5763874,
+          "code_units": [
+            54312
+          ]
+        },
+        {
+          "code_unit_offset": 516,
+          "dex_byte_offset": 5763876,
+          "code_units": [
+            16980,
+            15062
+          ],
+          "field": "LX/0Hqg;->A01LX/0QFy;"
+        },
+        {
+          "code_unit_offset": 518,
+          "dex_byte_offset": 5763880,
+          "code_units": [
+            568,
+            4
+          ]
+        },
+        {
+          "code_unit_offset": 520,
+          "dex_byte_offset": 5763884,
+          "code_units": [
+            8532,
+            28793
+          ],
+          "field": "LX/0QFy;->A0FLjava/lang/String;"
+        },
+        {
+          "code_unit_offset": 522,
+          "dex_byte_offset": 5763888,
+          "code_units": [
+            20052,
+            15061
+          ],
+          "field": "LX/0Hqg;->A00LX/0N1c;"
+        },
+        {
+          "code_unit_offset": 524,
+          "dex_byte_offset": 5763892,
+          "code_units": [
+            1848,
+            92
+          ]
+        },
+        {
+          "code_unit_offset": 526,
+          "dex_byte_offset": 5763896,
+          "code_units": [
+            5146,
+            35291
+          ],
+          "string": "new"
+        },
+        {
+          "code_unit_offset": 528,
+          "dex_byte_offset": 5763900,
+          "code_units": [
+            4360,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 530,
+          "dex_byte_offset": 5763904,
+          "code_units": [
+            4616,
+            1
+          ]
+        },
+        {
+          "code_unit_offset": 532,
+          "dex_byte_offset": 5763908,
+          "code_units": [
+            4872,
+            6
+          ]
+        },
+        {
+          "code_unit_offset": 534,
+          "dex_byte_offset": 5763912,
+          "code_units": [
+            1911,
+            4943,
+            14
+          ],
+          "callee": "LX/05FI;->A09(LX/0N1c;LX/0Eto;Lcom/instagram/common/session/UserSession;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 537,
+          "dex_byte_offset": 5763918,
+          "code_units": [
+            4206,
+            38715,
+            4
+          ],
+          "callee": "Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;"
+        },
+        {
+          "code_unit_offset": 540,
+          "dex_byte_offset": 5763924,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 541,
+          "dex_byte_offset": 5763926,
+          "code_units": [
+            312,
+            62
+          ]
+        },
+        {
+          "code_unit_offset": 543,
+          "dex_byte_offset": 5763930,
+          "code_units": [
+            16724,
+            15074
+          ],
+          "field": "LX/0Hqg;->A0DLjava/util/ArrayList;"
+        },
+        {
+          "code_unit_offset": 545,
+          "dex_byte_offset": 5763934,
+          "code_units": [
+            4209,
+            26176,
+            1
+          ],
+          "callee": "LX/0Pg5;->A02(Ljava/util/List;)Ljava/util/List;"
+        },
+        {
+          "code_unit_offset": 548,
+          "dex_byte_offset": 5763940,
+          "code_units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 549,
+          "dex_byte_offset": 5763942,
+          "code_units": [
+            4209,
+            2078,
+            6
+          ],
+          "callee": "LX/0222;->A0Z(Ljava/lang/String;)LX/00RW;"
+        },
+        {
+          "code_unit_offset": 552,
+          "dex_byte_offset": 5763948,
+          "code_units": [
+            2060
+          ]
+        },
+        {
+          "code_unit_offset": 553,
+          "dex_byte_offset": 5763950,
+          "code_units": [
+            1810
+          ]
+        },
+        {
+          "code_unit_offset": 554,
+          "dex_byte_offset": 5763952,
+          "code_units": [
+            1570,
+            17844
+          ]
+        },
+        {
+          "code_unit_offset": 556,
+          "dex_byte_offset": 5763956,
+          "code_units": [
+            30983
+          ]
+        },
+        {
+          "code_unit_offset": 557,
+          "dex_byte_offset": 5763958,
+          "code_units": [
+            31239
+          ]
+        },
+        {
+          "code_unit_offset": 558,
+          "dex_byte_offset": 5763960,
+          "code_units": [
+            2166,
+            40687,
+            6
+          ],
+          "callee": "Lcom/instagram/model/direct/DirectShareTarget;-><init>(LX/0PBt;LX/0qqz;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/String;Ljava/util/List;Z)V"
+        },
+        {
+          "code_unit_offset": 561,
+          "dex_byte_offset": 5763966,
+          "code_units": [
+            546,
+            16944
+          ]
+        },
+        {
+          "code_unit_offset": 563,
+          "dex_byte_offset": 5763970,
+          "code_units": [
+            4208,
+            37901,
+            2
+          ],
+          "callee": "Landroid/content/Intent;-><init>()V"
+        },
+        {
+          "code_unit_offset": 566,
+          "dex_byte_offset": 5763976,
+          "code_units": [
+            282,
+            30449
+          ],
+          "string": "bundle_extra_share_target"
+        },
+        {
+          "code_unit_offset": 568,
+          "dex_byte_offset": 5763980,
+          "code_units": [
+            12398,
+            37917,
+            1554
+          ],
+          "callee": "Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;"
+        },
+        {
+          "code_unit_offset": 571,
+          "dex_byte_offset": 5763986,
+          "code_units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 572,
+          "dex_byte_offset": 5763988,
+          "code_units": [
+            4209,
+            5205,
+            6
+          ],
+          "callee": "LX/05s2;->A0C(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 575,
+          "dex_byte_offset": 5763994,
+          "code_units": [
+            17236,
+            15062
+          ],
+          "field": "LX/0Hqg;->A01LX/0QFy;"
+        },
+        {
+          "code_unit_offset": 577,
+          "dex_byte_offset": 5763998,
+          "code_units": [
+            824,
+            13
+          ]
+        },
+        {
+          "code_unit_offset": 579,
+          "dex_byte_offset": 5764002,
+          "code_units": [
+            275,
+            684
+          ],
+          "integer": 684
+        },
+        {
+          "code_unit_offset": 581,
+          "dex_byte_offset": 5764006,
+          "code_units": [
+            4209,
+            0,
+            1
+          ],
+          "callee": "LX/0000;->A00(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 584,
+          "dex_byte_offset": 5764012,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 585,
+          "dex_byte_offset": 5764014,
+          "code_units": [
+            12628,
+            28794
+          ],
+          "field": "LX/0QFy;->A0GLjava/lang/String;"
+        },
+        {
+          "code_unit_offset": 587,
+          "dex_byte_offset": 5764018,
+          "code_units": [
+            12398,
+            37919,
+            294
+          ],
+          "callee": "Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;"
+        },
+        {
+          "code_unit_offset": 590,
+          "dex_byte_offset": 5764024,
+          "code_units": [
+            4206,
+            38715,
+            4
+          ],
+          "callee": "Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;"
+        },
+        {
+          "code_unit_offset": 593,
+          "dex_byte_offset": 5764030,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 594,
+          "dex_byte_offset": 5764032,
+          "code_units": [
+            568,
+            6
+          ]
+        },
+        {
+          "code_unit_offset": 596,
+          "dex_byte_offset": 5764036,
+          "code_units": [
+            61714
+          ]
+        },
+        {
+          "code_unit_offset": 597,
+          "dex_byte_offset": 5764038,
+          "code_units": [
+            12398,
+            37855,
+            1554
+          ],
+          "callee": "Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V"
+        },
+        {
+          "code_unit_offset": 600,
+          "dex_byte_offset": 5764044,
+          "code_units": [
+            4209,
+            2188,
+            4
+          ],
+          "callee": "LX/0224;->A1I(Landroidx/fragment/app/Fragment;)V"
+        },
+        {
+          "code_unit_offset": 603,
+          "dex_byte_offset": 5764050,
+          "code_units": [
+            276,
+            42986,
+            13338
+          ]
+        },
+        {
+          "code_unit_offset": 606,
+          "dex_byte_offset": 5764056,
+          "code_units": [
+            8305,
+            5028,
+            81
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 609,
+          "dex_byte_offset": 5764062,
+          "code_units": [
+            276,
+            54489,
+            7050
+          ]
+        },
+        {
+          "code_unit_offset": 612,
+          "dex_byte_offset": 5764068,
+          "code_units": [
+            8305,
+            5028,
+            1
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 615,
+          "dex_byte_offset": 5764074,
+          "code_units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 616,
+          "dex_byte_offset": 5764076,
+          "code_units": [
+            5146,
+            32187
+          ],
+          "string": "existing"
+        },
+        {
+          "code_unit_offset": 618,
+          "dex_byte_offset": 5764080,
+          "code_units": [
+            42536
+          ]
+        },
+        {
+          "code_unit_offset": 619,
+          "dex_byte_offset": 5764082,
+          "code_units": [
+            0
+          ]
+        },
+        {
+          "code_unit_offset": 620,
+          "dex_byte_offset": 5764084,
+          "code_units": [
+            256,
+            11,
+            0,
+            0,
+            7,
+            0,
+            42,
+            0,
+            77,
+            0,
+            3,
+            0,
+            112,
+            0,
+            149,
+            0,
+            190,
+            0,
+            3,
+            0,
+            282,
+            0,
+            384,
+            0,
+            430,
+            0
+          ]
+        }
+      ],
+      "method_index": 13795,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0dja;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;": {
+      "dex": "classes18.dex",
+      "dex_sha256": "9a747dc2b520c213bcb377533a1e4178a6faf9c9883ec2e670b89ab306230947",
+      "method": "LX/0dja;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_item_byte_offset": 4899136,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4899152,
+          "code_units": [
+            4209,
+            3710,
+            8
+          ],
+          "callee": "LX/05Bj;->A3r(LX/04s3;)LX/01yl;"
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4899158,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 4899160,
+          "code_units": [
+            98,
+            632
+          ],
+          "field": "LX/01yl;->A0DLX/01yl;"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 4899164,
+          "code_units": [
+            1298
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 4899166,
+          "code_units": [
+            306,
+            6
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 4899170,
+          "code_units": [
+            4206,
+            3502,
+            8
+          ],
+          "callee": "LX/04s3;->A1f()V"
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 4899176,
+          "code_units": [
+            1297
+          ]
+        },
+        {
+          "code_unit_offset": 13,
+          "dex_byte_offset": 4899178,
+          "code_units": [
+            113,
+            6270,
+            0
+          ],
+          "callee": "LX/0C56;->A0M()LX/01y9;"
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 4899184,
+          "code_units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 4899186,
+          "code_units": [
+            21255
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "dex_byte_offset": 4899188,
+          "code_units": [
+            20999
+          ]
+        },
+        {
+          "code_unit_offset": 19,
+          "dex_byte_offset": 4899190,
+          "code_units": [
+            4206,
+            3495,
+            8
+          ],
+          "callee": "LX/04s3;->A1N()LX/01yl;"
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 4899196,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 23,
+          "dex_byte_offset": 4899198,
+          "code_units": [
+            98,
+            630
+          ],
+          "field": "LX/01yl;->A09LX/01yl;"
+        },
+        {
+          "code_unit_offset": 25,
+          "dex_byte_offset": 4899202,
+          "code_units": [
+            306,
+            76
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "dex_byte_offset": 4899206,
+          "code_units": [
+            4209,
+            1508,
+            8
+          ],
+          "callee": "LX/01yt;->A08(LX/04s3;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 4899212,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "dex_byte_offset": 4899214,
+          "code_units": [
+            4206,
+            60605,
+            1
+          ],
+          "callee": "Ljava/lang/String;->hashCode()I"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 4899220,
+          "code_units": [
+            1546
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 4899222,
+          "code_units": [
+            20,
+            4692,
+            56986
+          ]
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 4899228,
+          "code_units": [
+            1586,
+            42
+          ]
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 4899232,
+          "code_units": [
+            20,
+            14972,
+            4134
+          ]
+        },
+        {
+          "code_unit_offset": 43,
+          "dex_byte_offset": 4899238,
+          "code_units": [
+            1586,
+            24
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 4899242,
+          "code_units": [
+            20,
+            33355,
+            23609
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 4899248,
+          "code_units": [
+            1587,
+            49
+          ]
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 4899252,
+          "code_units": [
+            27,
+            455,
+            1
+          ],
+          "string": "thread_presence_disabled"
+        },
+        {
+          "code_unit_offset": 53,
+          "dex_byte_offset": 4899258,
+          "code_units": [
+            8302,
+            60600,
+            1
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 4899264,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 57,
+          "dex_byte_offset": 4899266,
+          "code_units": [
+            56,
+            40
+          ]
+        },
+        {
+          "code_unit_offset": 59,
+          "dex_byte_offset": 4899270,
+          "code_units": [
+            4209,
+            165,
+            8
+          ],
+          "callee": "LX/0025;->A0D(LX/04s3;)Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 4899276,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 63,
+          "dex_byte_offset": 4899278,
+          "code_units": [
+            4206,
+            3502,
+            8
+          ],
+          "callee": "LX/04s3;->A1f()V"
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 4899284,
+          "code_units": [
+            53544
+          ]
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 4899286,
+          "code_units": [
+            26,
+            55438
+          ],
+          "string": "disabled"
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 4899290,
+          "code_units": [
+            8302,
+            60600,
+            1
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 4899296,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 73,
+          "dex_byte_offset": 4899298,
+          "code_units": [
+            56,
+            24
+          ]
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 4899302,
+          "code_units": [
+            4209,
+            165,
+            8
+          ],
+          "callee": "LX/0025;->A0D(LX/04s3;)Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 4899308,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 79,
+          "dex_byte_offset": 4899310,
+          "code_units": [
+            61480
+          ]
+        },
+        {
+          "code_unit_offset": 80,
+          "dex_byte_offset": 4899312,
+          "code_units": [
+            19,
+            178
+          ],
+          "integer": 178
+        },
+        {
+          "code_unit_offset": 82,
+          "dex_byte_offset": 4899316,
+          "code_units": [
+            4209,
+            1553,
+            0
+          ],
+          "callee": "LX/020R;->A00(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 85,
+          "dex_byte_offset": 4899322,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 86,
+          "dex_byte_offset": 4899324,
+          "code_units": [
+            8302,
+            60600,
+            1
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 89,
+          "dex_byte_offset": 4899330,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 90,
+          "dex_byte_offset": 4899332,
+          "code_units": [
+            56,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "dex_byte_offset": 4899336,
+          "code_units": [
+            4209,
+            165,
+            8
+          ],
+          "callee": "LX/0025;->A0D(LX/04s3;)Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 95,
+          "dex_byte_offset": 4899342,
+          "code_units": [
+            1292
+          ]
+        },
+        {
+          "code_unit_offset": 96,
+          "dex_byte_offset": 4899344,
+          "code_units": [
+            57128
+          ]
+        },
+        {
+          "code_unit_offset": 97,
+          "dex_byte_offset": 4899346,
+          "code_units": [
+            12401,
+            1397,
+            328
+          ],
+          "callee": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 100,
+          "dex_byte_offset": 4899352,
+          "code_units": [
+            56104
+          ]
+        },
+        {
+          "code_unit_offset": 101,
+          "dex_byte_offset": 4899354,
+          "code_units": [
+            26,
+            49601
+          ],
+          "string": "XDTGetPresenceDisabledResponse"
+        },
+        {
+          "code_unit_offset": 103,
+          "dex_byte_offset": 4899358,
+          "code_units": [
+            290,
+            9670
+          ]
+        },
+        {
+          "code_unit_offset": 105,
+          "dex_byte_offset": 4899362,
+          "code_units": [
+            8304,
+            3568,
+            1
+          ],
+          "callee": "LX/04y0;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 108,
+          "dex_byte_offset": 4899368,
+          "code_units": [
+            5467,
+            14448
+          ],
+          "field": "LX/0aqz;->A00Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 110,
+          "dex_byte_offset": 4899372,
+          "code_units": [
+            4955,
+            14449
+          ],
+          "field": "LX/0aqz;->A01Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 112,
+          "dex_byte_offset": 4899376,
+          "code_units": [
+            4699,
+            14450
+          ],
+          "field": "LX/0aqz;->A02Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 114,
+          "dex_byte_offset": 4899380,
+          "code_units": [
+            8305,
+            6566,
+            20
+          ],
+          "callee": "LX/0C9W;->A1R(LX/01y9;LX/01y9;)V"
+        },
+        {
+          "code_unit_offset": 117,
+          "dex_byte_offset": 4899386,
+          "code_units": [
+            16468,
+            623
+          ],
+          "field": "LX/01y9;->A09Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 119,
+          "dex_byte_offset": 4899390,
+          "code_units": [
+            12401,
+            3713,
+            65
+          ],
+          "callee": "LX/05Bj;->A3v(LX/01y9;LX/01y9;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 122,
+          "dex_byte_offset": 4899396,
+          "code_units": [
+            8305,
+            3711,
+            20
+          ],
+          "callee": "LX/05Bj;->A3t(LX/01y9;LX/01y9;)V"
+        },
+        {
+          "code_unit_offset": 125,
+          "dex_byte_offset": 4899402,
+          "code_units": [
+            273
+          ]
+        }
+      ],
+      "method_index": 24279,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0dmv;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;": {
+      "dex": "classes18.dex",
+      "dex_sha256": "9a747dc2b520c213bcb377533a1e4178a6faf9c9883ec2e670b89ab306230947",
+      "method": "LX/0dmv;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_item_byte_offset": 4926816,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4926832,
+          "code_units": [
+            4209,
+            3710,
+            6
+          ],
+          "callee": "LX/05Bj;->A3r(LX/04s3;)LX/01yl;"
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4926838,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 4926840,
+          "code_units": [
+            98,
+            632
+          ],
+          "field": "LX/01yl;->A0DLX/01yl;"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 4926844,
+          "code_units": [
+            1042
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 4926846,
+          "code_units": [
+            306,
+            6
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 4926850,
+          "code_units": [
+            4206,
+            3502,
+            6
+          ],
+          "callee": "LX/04s3;->A1f()V"
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 4926856,
+          "code_units": [
+            1041
+          ]
+        },
+        {
+          "code_unit_offset": 13,
+          "dex_byte_offset": 4926858,
+          "code_units": [
+            113,
+            6270,
+            0
+          ],
+          "callee": "LX/0C56;->A0M()LX/01y9;"
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 4926864,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 4926866,
+          "code_units": [
+            4206,
+            3495,
+            6
+          ],
+          "callee": "LX/04s3;->A1N()LX/01yl;"
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 4926872,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "dex_byte_offset": 4926874,
+          "code_units": [
+            98,
+            630
+          ],
+          "field": "LX/01yl;->A09LX/01yl;"
+        },
+        {
+          "code_unit_offset": 23,
+          "dex_byte_offset": 4926878,
+          "code_units": [
+            282,
+            65115
+          ],
+          "string": "show_recommendation_status_nudge"
+        },
+        {
+          "code_unit_offset": 25,
+          "dex_byte_offset": 4926882,
+          "code_units": [
+            562,
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "dex_byte_offset": 4926886,
+          "code_units": [
+            16497,
+            6515,
+            5174
+          ],
+          "callee": "LX/0C9W;->A0c(LX/04s3;LX/01y9;Ljava/lang/Boolean;Ljava/lang/String;)Ljava/lang/Boolean;"
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 4926892,
+          "code_units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "dex_byte_offset": 4926894,
+          "code_units": [
+            4206,
+            3502,
+            6
+          ],
+          "callee": "LX/04s3;->A1f()V"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 4926900,
+          "code_units": [
+            61224
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 4926902,
+          "code_units": [
+            1080,
+            27
+          ]
+        },
+        {
+          "code_unit_offset": 37,
+          "dex_byte_offset": 4926906,
+          "code_units": [
+            4206,
+            60458,
+            4
+          ],
+          "callee": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 4926912,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 4926914,
+          "code_units": [
+            26,
+            49776
+          ],
+          "string": "XDTRecommendationStatusNudgeResponse"
+        },
+        {
+          "code_unit_offset": 43,
+          "dex_byte_offset": 4926918,
+          "code_units": [
+            290,
+            9688
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 4926922,
+          "code_units": [
+            8304,
+            3568,
+            1
+          ],
+          "callee": "LX/04y0;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 4926928,
+          "code_units": [
+            4700,
+            14503
+          ],
+          "field": "LX/0asV;->A00Z"
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 4926932,
+          "code_units": [
+            8305,
+            6566,
+            19
+          ],
+          "callee": "LX/0C9W;->A1R(LX/01y9;LX/01y9;)V"
+        },
+        {
+          "code_unit_offset": 53,
+          "dex_byte_offset": 4926938,
+          "code_units": [
+            12372,
+            623
+          ],
+          "field": "LX/01y9;->A09Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 55,
+          "dex_byte_offset": 4926942,
+          "code_units": [
+            12401,
+            3713,
+            49
+          ],
+          "callee": "LX/05Bj;->A3v(LX/01y9;LX/01y9;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 58,
+          "dex_byte_offset": 4926948,
+          "code_units": [
+            8305,
+            3711,
+            19
+          ],
+          "callee": "LX/05Bj;->A3t(LX/01y9;LX/01y9;)V"
+        },
+        {
+          "code_unit_offset": 61,
+          "dex_byte_offset": 4926954,
+          "code_units": [
+            273
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 4926956,
+          "code_units": [
+            26,
+            45297
+          ],
+          "string": "RecommendationStatusNudgeResponseImpl"
+        },
+        {
+          "code_unit_offset": 64,
+          "dex_byte_offset": 4926960,
+          "code_units": [
+            8305,
+            1514,
+            1
+          ],
+          "callee": "LX/01yt;->A0H(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 4926966,
+          "code_units": [
+            113,
+            1,
+            0
+          ],
+          "callee": "LX/0002;->createAndThrow()LX/0002;"
+        },
+        {
+          "code_unit_offset": 70,
+          "dex_byte_offset": 4926972,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 71,
+          "dex_byte_offset": 4926974,
+          "code_units": [
+            39
+          ]
+        }
+      ],
+      "method_index": 24387,
+      "instruction_scope": "complete-method"
+    },
+    "LX/02rr;->A03(LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;": {
+      "dex": "classes2.dex",
+      "dex_sha256": "c894fc060b55c817baa0120cf947f090b2fa1fd9cfc11bed78bf2e30f5966b79",
+      "method": "LX/02rr;->A03(LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;",
+      "code_item_byte_offset": 6234768,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 6234784,
+          "code_units": [
+            57362
+          ]
+        },
+        {
+          "code_unit_offset": 1,
+          "dex_byte_offset": 6234786,
+          "code_units": [
+            16494,
+            15735,
+            801
+          ],
+          "callee": "LX/02rr;->A04(LX/0Wvm;Lcom/instagram/common/session/UserSession;I)LX/02sB;"
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 6234792,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 6234794,
+          "code_units": [
+            17
+          ]
+        }
+      ],
+      "method_index": 15734,
+      "instruction_scope": "complete-method"
+    },
+    "LX/02rr;->A04(LX/0Wvm;Lcom/instagram/common/session/UserSession;I)LX/02sB;": {
+      "dex": "classes2.dex",
+      "dex_sha256": "c894fc060b55c817baa0120cf947f090b2fa1fd9cfc11bed78bf2e30f5966b79",
+      "method": "LX/02rr;->A04(LX/0Wvm;Lcom/instagram/common/session/UserSession;I)LX/02sB;",
+      "code_item_byte_offset": 6234796,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 6234812,
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 1,
+          "dex_byte_offset": 6234814,
+          "code_units": [
+            41991
+          ]
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 6234816,
+          "code_units": [
+            8305,
+            29124,
+            10
+          ],
+          "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V"
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 6234822,
+          "code_units": [
+            802,
+            7797
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 6234826,
+          "code_units": [
+            8304,
+            17153,
+            163
+          ],
+          "callee": "LX/03aw;-><init>(Lcom/instagram/common/session/UserSession;)V"
+        },
+        {
+          "code_unit_offset": 10,
+          "dex_byte_offset": 6234832,
+          "code_units": [
+            34,
+            7800
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 6234836,
+          "code_units": [
+            8304,
+            17154,
+            144
+          ],
+          "callee": "LX/03az;-><init>(LX/0Wvm;)V"
+        },
+        {
+          "code_unit_offset": 15,
+          "dex_byte_offset": 6234842,
+          "code_units": [
+            610,
+            42225
+          ],
+          "field": "LX/09Wv;->A00LX/09Wv;"
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 6234846,
+          "code_units": [
+            1314,
+            6618
+          ]
+        },
+        {
+          "code_unit_offset": 19,
+          "dex_byte_offset": 6234850,
+          "code_units": [
+            16496,
+            15749,
+            12325
+          ],
+          "callee": "LX/02ry;-><init>(LX/09Wv;LX/0Enl;LX/0ols;)V"
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 6234856,
+          "code_units": [
+            354,
+            10269
+          ],
+          "field": "LX/01pP;->A00LX/01pP;"
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 6234860,
+          "code_units": [
+            34,
+            7800
+          ]
+        },
+        {
+          "code_unit_offset": 26,
+          "dex_byte_offset": 6234864,
+          "code_units": [
+            8304,
+            17154,
+            16
+          ],
+          "callee": "LX/03az;-><init>(LX/0Wvm;)V"
+        },
+        {
+          "code_unit_offset": 29,
+          "dex_byte_offset": 6234870,
+          "code_units": [
+            1570,
+            6618
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "dex_byte_offset": 6234874,
+          "code_units": [
+            16496,
+            15749,
+            12326
+          ],
+          "callee": "LX/02ry;-><init>(LX/09Wv;LX/0Enl;LX/0ols;)V"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 6234880,
+          "code_units": [
+            786
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 6234882,
+          "code_units": [
+            546,
+            6630
+          ]
+        },
+        {
+          "code_unit_offset": 37,
+          "dex_byte_offset": 6234886,
+          "code_units": [
+            46849
+          ]
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 6234888,
+          "code_units": [
+            1654,
+            25005,
+            2
+          ],
+          "callee": "LX/04x5;-><init>(LX/0opA;LX/05Dd;LX/0Ddm;LX/0Ddm;I)V"
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 6234894,
+          "code_units": [
+            529
+          ]
+        }
+      ],
+      "method_index": 15735,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;",
+      "code_item_byte_offset": 2365156,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 2365172,
+          "code_units": [
+            12398,
+            3078,
+            528
+          ],
+          "callee": "LX/02rr;->A03(LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 2365178,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 2365180,
+          "code_units": [
+            98,
+            23
+          ],
+          "field": "LX/0009;->A0NLjava/lang/Integer;"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 2365184,
+          "code_units": [
+            8302,
+            4582,
+            1
+          ],
+          "callee": "LX/04x6;->A07(Ljava/lang/Integer;)V"
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 2365190,
+          "code_units": [
+            273
+          ]
+        }
+      ],
+      "method_index": 1566,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;",
+      "code_item_byte_offset": 2368964,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 2368980,
+          "code_units": [
+            4699,
+            2081
+          ],
+          "field": "LX/04x6;->A0HLjava/lang/String;"
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 2368984,
+          "code_units": [
+            4114
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 2368986,
+          "code_units": [
+            4188,
+            2086
+          ],
+          "field": "LX/04x6;->A0UZ"
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 2368990,
+          "code_units": [
+            4206,
+            4579,
+            1
+          ],
+          "callee": "LX/04x5;->A0K()LX/02sG;"
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 2368996,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 2368998,
+          "code_units": [
+            17
+          ]
+        }
+      ],
+      "method_index": 1672,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0Enc;->A0k(Ljava/lang/Object;)V": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0Enc;->A0k(Ljava/lang/Object;)V",
+      "code_item_byte_offset": 4013524,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4013540,
+          "code_units": [
+            20,
+            995,
+            34465
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4013546,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 4013552,
+          "code_units": [
+            778
+          ]
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 4013554,
+          "code_units": [
+            3615,
+            4394
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 4013558,
+          "code_units": [
+            20,
+            9827,
+            37216
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 4013564,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 15,
+          "dex_byte_offset": 4013570,
+          "code_units": [
+            1034
+          ]
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 4013572,
+          "code_units": [
+            1554
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 4013574,
+          "code_units": [
+            8305,
+            5397,
+            110
+          ],
+          "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V"
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 4013580,
+          "code_units": [
+            54612,
+            9957
+          ],
+          "field": "LX/0Enc;->A02LX/0LDK;"
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 4013584,
+          "code_units": [
+            21076,
+            17922
+          ],
+          "field": "LX/0LDK;->A08Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 4013588,
+          "code_units": [
+            98,
+            4461
+          ],
+          "field": "LX/0CE2;->A00LX/0NkJ;"
+        },
+        {
+          "code_unit_offset": 26,
+          "dex_byte_offset": 4013592,
+          "code_units": [
+            8305,
+            1256,
+            2
+          ],
+          "callee": "LX/021R;->A0A(Lcom/instagram/common/session/UserSession;LX/0WrA;)LX/04Sh;"
+        },
+        {
+          "code_unit_offset": 29,
+          "dex_byte_offset": 4013598,
+          "code_units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 4013600,
+          "code_units": [
+            22356,
+            17916
+          ],
+          "field": "LX/0LDK;->A02Landroidx/fragment/app/FragmentActivity;"
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 4013604,
+          "code_units": [
+            4206,
+            32503,
+            7
+          ],
+          "callee": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 4013610,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 4013612,
+          "code_units": [
+            53330,
+            9955
+          ],
+          "field": "LX/0Enc;->A00I"
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 4013616,
+          "code_units": [
+            8305,
+            664,
+            1
+          ],
+          "callee": "LX/0123;->A0u(Landroid/content/res/Resources;I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 4013622,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 4013624,
+          "code_units": [
+            20820,
+            17917
+          ],
+          "field": "LX/0LDK;->A03LX/05B6;"
+        },
+        {
+          "code_unit_offset": 44,
+          "dex_byte_offset": 4013628,
+          "code_units": [
+            4206,
+            33285,
+            1
+          ],
+          "callee": "Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;"
+        },
+        {
+          "code_unit_offset": 47,
+          "dex_byte_offset": 4013634,
+          "code_units": [
+            3084
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 4013636,
+          "code_units": [
+            59733,
+            5939
+          ],
+          "field": "LX/0DEw;->A01Z"
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 4013640,
+          "code_units": [
+            59477,
+            5940
+          ],
+          "field": "LX/0DEw;->A02Z"
+        },
+        {
+          "code_unit_offset": 52,
+          "dex_byte_offset": 4013644,
+          "code_units": [
+            4209,
+            6232,
+            2
+          ],
+          "callee": "LX/07og;->A00(LX/0fan;)LX/07oh;"
+        },
+        {
+          "code_unit_offset": 55,
+          "dex_byte_offset": 4013650,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 4013652,
+          "code_units": [
+            4206,
+            6234,
+            1
+          ],
+          "callee": "LX/07oh;->A08()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 59,
+          "dex_byte_offset": 4013658,
+          "code_units": [
+            2828
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 4013660,
+          "code_units": [
+            2872,
+            34
+          ]
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 4013664,
+          "code_units": [
+            282,
+            22536
+          ],
+          "string": "MV4B"
+        },
+        {
+          "code_unit_offset": 64,
+          "dex_byte_offset": 4013668,
+          "code_units": [
+            8302,
+            37971,
+            27
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 4013674,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 68,
+          "dex_byte_offset": 4013676,
+          "code_units": [
+            313,
+            26
+          ]
+        },
+        {
+          "code_unit_offset": 70,
+          "dex_byte_offset": 4013680,
+          "code_units": [
+            282,
+            22537
+          ],
+          "string": "MV4C"
+        },
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 4013684,
+          "code_units": [
+            8302,
+            37971,
+            27
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 4013690,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 76,
+          "dex_byte_offset": 4013692,
+          "code_units": [
+            313,
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 4013696,
+          "code_units": [
+            8305,
+            987,
+            98
+          ],
+          "callee": "LX/01ox;->A02(LX/05Dd;Z)LX/0yb5;"
+        },
+        {
+          "code_unit_offset": 81,
+          "dex_byte_offset": 4013702,
+          "code_units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 82,
+          "dex_byte_offset": 4013704,
+          "code_units": [
+            280,
+            6226,
+            19,
+            1379,
+            129
+          ]
+        },
+        {
+          "code_unit_offset": 87,
+          "dex_byte_offset": 4013714,
+          "code_units": [
+            12401,
+            69,
+            534
+          ],
+          "callee": "LX/000H;->A0o(Ljava/lang/Object;J)Z"
+        },
+        {
+          "code_unit_offset": 90,
+          "dex_byte_offset": 4013720,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 91,
+          "dex_byte_offset": 4013722,
+          "code_units": [
+            5650
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "dex_byte_offset": 4013724,
+          "code_units": [
+            313,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 94,
+          "dex_byte_offset": 4013728,
+          "code_units": [
+            1554
+          ]
+        },
+        {
+          "code_unit_offset": 95,
+          "dex_byte_offset": 4013730,
+          "code_units": [
+            41556,
+            1997
+          ],
+          "field": "LX/04Sh;->A01LX/0D9e;"
+        },
+        {
+          "code_unit_offset": 97,
+          "dex_byte_offset": 4013734,
+          "code_units": [
+            276,
+            1131,
+            38752
+          ]
+        },
+        {
+          "code_unit_offset": 100,
+          "dex_byte_offset": 4013740,
+          "code_units": [
+            8306,
+            8632,
+            18
+          ],
+          "callee": "LX/0D9e;->Cux(I)LX/0D9e;"
+        },
+        {
+          "code_unit_offset": 103,
+          "dex_byte_offset": 4013746,
+          "code_units": [
+            1592,
+            44
+          ]
+        },
+        {
+          "code_unit_offset": 105,
+          "dex_byte_offset": 4013750,
+          "code_units": [
+            4206,
+            32503,
+            7
+          ],
+          "callee": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "code_unit_offset": 108,
+          "dex_byte_offset": 4013756,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 109,
+          "dex_byte_offset": 4013758,
+          "code_units": [
+            20,
+            25963,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 112,
+          "dex_byte_offset": 4013764,
+          "code_units": [
+            8305,
+            664,
+            1
+          ],
+          "callee": "LX/0123;->A0u(Landroid/content/res/Resources;I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 115,
+          "dex_byte_offset": 4013770,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 116,
+          "dex_byte_offset": 4013772,
+          "code_units": [
+            4206,
+            32503,
+            7
+          ],
+          "callee": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "code_unit_offset": 119,
+          "dex_byte_offset": 4013778,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 120,
+          "dex_byte_offset": 4013780,
+          "code_units": [
+            20,
+            32499,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 123,
+          "dex_byte_offset": 4013786,
+          "code_units": [
+            12401,
+            1793,
+            33
+          ],
+          "callee": "LX/0225;->A0k(Landroid/content/res/Resources;Ljava/lang/Object;I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 126,
+          "dex_byte_offset": 4013792,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 127,
+          "dex_byte_offset": 4013794,
+          "code_units": [
+            53842,
+            9956
+          ],
+          "field": "LX/0Enc;->A01I"
+        },
+        {
+          "code_unit_offset": 129,
+          "dex_byte_offset": 4013798,
+          "code_units": [
+            53588,
+            9958
+          ],
+          "field": "LX/0Enc;->A03Ljava/lang/Integer;"
+        },
+        {
+          "code_unit_offset": 131,
+          "dex_byte_offset": 4013802,
+          "code_units": [
+            16497,
+            21327,
+            8213
+          ],
+          "callee": "LX/0LDK;->A01(LX/0LDK;Ljava/lang/Integer;Ljava/lang/String;I)V"
+        },
+        {
+          "code_unit_offset": 134,
+          "dex_byte_offset": 4013808,
+          "code_units": [
+            20,
+            45264,
+            24598
+          ]
+        },
+        {
+          "code_unit_offset": 137,
+          "dex_byte_offset": 4013814,
+          "code_units": [
+            8305,
+            5228,
+            64
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 140,
+          "dex_byte_offset": 4013820,
+          "code_units": [
+            20,
+            37855,
+            16529
+          ]
+        },
+        {
+          "code_unit_offset": 143,
+          "dex_byte_offset": 4013826,
+          "code_units": [
+            8305,
+            5228,
+            48
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 146,
+          "dex_byte_offset": 4013832,
+          "code_units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 147,
+          "dex_byte_offset": 4013834,
+          "code_units": [
+            2360,
+            65516
+          ]
+        },
+        {
+          "code_unit_offset": 149,
+          "dex_byte_offset": 4013838,
+          "code_units": [
+            2104,
+            25
+          ]
+        },
+        {
+          "code_unit_offset": 151,
+          "dex_byte_offset": 4013842,
+          "code_units": [
+            3128,
+            23
+          ]
+        },
+        {
+          "code_unit_offset": 153,
+          "dex_byte_offset": 4013846,
+          "code_units": [
+            4206,
+            32503,
+            7
+          ],
+          "callee": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "code_unit_offset": 156,
+          "dex_byte_offset": 4013852,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 157,
+          "dex_byte_offset": 4013854,
+          "code_units": [
+            276,
+            32501,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 160,
+          "dex_byte_offset": 4013860,
+          "code_units": [
+            57426,
+            5938
+          ],
+          "field": "LX/0DEw;->A00I"
+        },
+        {
+          "code_unit_offset": 162,
+          "dex_byte_offset": 4013864,
+          "code_units": [
+            4209,
+            212,
+            0
+          ],
+          "callee": "LX/0064;->A1V(I)[Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 165,
+          "dex_byte_offset": 4013870,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 166,
+          "dex_byte_offset": 4013872,
+          "code_units": [
+            12398,
+            32620,
+            18
+          ],
+          "callee": "Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 169,
+          "dex_byte_offset": 4013878,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 170,
+          "dex_byte_offset": 4013880,
+          "code_units": [
+            4209,
+            5381,
+            0
+          ],
+          "callee": "LX/05s2;->A0C(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 173,
+          "dex_byte_offset": 4013886,
+          "code_units": [
+            53800
+          ]
+        },
+        {
+          "code_unit_offset": 174,
+          "dex_byte_offset": 4013888,
+          "code_units": [
+            4206,
+            32503,
+            7
+          ],
+          "callee": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "code_unit_offset": 177,
+          "dex_byte_offset": 4013894,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 178,
+          "dex_byte_offset": 4013896,
+          "code_units": [
+            20,
+            32500,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 181,
+          "dex_byte_offset": 4013902,
+          "code_units": [
+            8302,
+            32619,
+            1
+          ],
+          "callee": "Landroid/content/res/Resources;->getString(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 184,
+          "dex_byte_offset": 4013908,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 185,
+          "dex_byte_offset": 4013910,
+          "code_units": [
+            61736
+          ]
+        }
+      ],
+      "method_index": 13953,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0EoX;->A0k(Ljava/lang/Object;)V": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0EoX;->A0k(Ljava/lang/Object;)V",
+      "code_item_byte_offset": 5184308,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 5184324,
+          "code_units": [
+            1032,
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 5184328,
+          "code_units": [
+            776,
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 5184332,
+          "code_units": [
+            16722,
+            10033
+          ],
+          "field": "LX/0EoX;->$tI"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 5184336,
+          "code_units": [
+            312,
+            432
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 5184340,
+          "code_units": [
+            4114
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 5184342,
+          "code_units": [
+            306,
+            395
+          ]
+        },
+        {
+          "code_unit_offset": 11,
+          "dex_byte_offset": 5184346,
+          "code_units": [
+            8210
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 5184348,
+          "code_units": [
+            306,
+            235
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 5184352,
+          "code_units": [
+            20,
+            28243,
+            12927
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 5184358,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 5184364,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "dex_byte_offset": 5184366,
+          "code_units": [
+            799,
+            15187
+          ]
+        },
+        {
+          "code_unit_offset": 23,
+          "dex_byte_offset": 5184370,
+          "code_units": [
+            276,
+            23562,
+            37235
+          ]
+        },
+        {
+          "code_unit_offset": 26,
+          "dex_byte_offset": 5184376,
+          "code_units": [
+            4209,
+            5223,
+            1
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 29,
+          "dex_byte_offset": 5184382,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 5184384,
+          "code_units": [
+            1298
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "dex_byte_offset": 5184386,
+          "code_units": [
+            8305,
+            5397,
+            83
+          ],
+          "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 5184392,
+          "code_units": [
+            8303,
+            5021,
+            52
+          ],
+          "callee": "LX/05BI;->A0k(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 37,
+          "dex_byte_offset": 5184398,
+          "code_units": [
+            4210,
+            34314,
+            3
+          ],
+          "callee": "Lcom/instagram/api/schemas/ClipsItemDictIntf;->Cgb()Lcom/instagram/feed/media/Media;"
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 5184404,
+          "code_units": [
+            3852
+          ]
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 5184406,
+          "code_units": [
+            4206,
+            35364,
+            15
+          ],
+          "callee": "Lcom/instagram/feed/media/Media;->A6s()Ljava/lang/Long;"
+        },
+        {
+          "code_unit_offset": 44,
+          "dex_byte_offset": 5184412,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 5184414,
+          "code_units": [
+            2074,
+            5043
+          ],
+          "string": "IGMediaActionComposerLauncher"
+        },
+        {
+          "code_unit_offset": 47,
+          "dex_byte_offset": 5184418,
+          "code_units": [
+            312,
+            32
+          ]
+        },
+        {
+          "code_unit_offset": 49,
+          "dex_byte_offset": 5184422,
+          "code_units": [
+            282,
+            33199
+          ],
+          "string": "ig_media_action composer CTA resolved to expiring media"
+        },
+        {
+          "code_unit_offset": 51,
+          "dex_byte_offset": 5184426,
+          "code_units": [
+            8305,
+            916,
+            24
+          ],
+          "callee": "LX/01jc;->A0D(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 54,
+          "dex_byte_offset": 5184432,
+          "code_units": [
+            17492,
+            10034
+          ],
+          "field": "LX/0EoX;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 5184436,
+          "code_units": [
+            1055,
+            14622
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "dex_byte_offset": 5184440,
+          "code_units": [
+            794,
+            35190
+          ],
+          "string": "meta_ai_media_action_composer_expiring"
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 5184444,
+          "code_units": [
+            276,
+            21373,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 63,
+          "dex_byte_offset": 5184450,
+          "code_units": [
+            16497,
+            18972,
+            20788
+          ],
+          "callee": "LX/0Ir7;->A01(Landroid/content/Context;Ljava/lang/String;II)Landroid/widget/Toast;"
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 5184456,
+          "code_units": [
+            276,
+            61495,
+            59520
+          ]
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 5184462,
+          "code_units": [
+            8305,
+            5228,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 5184468,
+          "code_units": [
+            276,
+            22113,
+            8012
+          ]
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 5184474,
+          "code_units": [
+            8305,
+            5228,
+            1
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 5184480,
+          "code_units": [
+            14
+          ]
+        },
+        {
+          "code_unit_offset": 79,
+          "dex_byte_offset": 5184482,
+          "code_units": [
+            17236,
+            10037
+          ],
+          "field": "LX/0EoX;->A03Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 81,
+          "dex_byte_offset": 5184486,
+          "code_units": [
+            282,
+            37408
+          ],
+          "string": "remix"
+        },
+        {
+          "code_unit_offset": 83,
+          "dex_byte_offset": 5184490,
+          "code_units": [
+            8302,
+            37971,
+            49
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 86,
+          "dex_byte_offset": 5184496,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 87,
+          "dex_byte_offset": 5184498,
+          "code_units": [
+            312,
+            77
+          ]
+        },
+        {
+          "code_unit_offset": 89,
+          "dex_byte_offset": 5184502,
+          "code_units": [
+            276,
+            49183,
+            1
+          ]
+        },
+        {
+          "code_unit_offset": 92,
+          "dex_byte_offset": 5184508,
+          "code_units": [
+            4209,
+            933,
+            1
+          ],
+          "callee": "LX/01lf;->A01(I)Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 95,
+          "dex_byte_offset": 5184514,
+          "code_units": [
+            2316
+          ]
+        },
+        {
+          "code_unit_offset": 96,
+          "dex_byte_offset": 5184516,
+          "code_units": [
+            2335,
+            3401
+          ]
+        },
+        {
+          "code_unit_offset": 98,
+          "dex_byte_offset": 5184520,
+          "code_units": [
+            19284,
+            10034
+          ],
+          "field": "LX/0EoX;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 100,
+          "dex_byte_offset": 5184524,
+          "code_units": [
+            2847,
+            14876
+          ]
+        },
+        {
+          "code_unit_offset": 102,
+          "dex_byte_offset": 5184528,
+          "code_units": [
+            4209,
+            1709,
+            11
+          ],
+          "callee": "LX/0224;->A10(Landroidx/fragment/app/FragmentActivity;)Ljava/util/List;"
+        },
+        {
+          "code_unit_offset": 105,
+          "dex_byte_offset": 5184534,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 106,
+          "dex_byte_offset": 5184536,
+          "code_units": [
+            4209,
+            5381,
+            1
+          ],
+          "callee": "LX/05s2;->A0C(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 109,
+          "dex_byte_offset": 5184542,
+          "code_units": [
+            4209,
+            6994,
+            1
+          ],
+          "callee": "LX/0BXD;->A1N(Ljava/util/List;)Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 112,
+          "dex_byte_offset": 5184548,
+          "code_units": [
+            2572
+          ]
+        },
+        {
+          "code_unit_offset": 113,
+          "dex_byte_offset": 5184550,
+          "code_units": [
+            2591,
+            14875
+          ]
+        },
+        {
+          "code_unit_offset": 115,
+          "dex_byte_offset": 5184554,
+          "code_units": [
+            2617,
+            28
+          ]
+        },
+        {
+          "code_unit_offset": 117,
+          "dex_byte_offset": 5184558,
+          "code_units": [
+            282,
+            22783
+          ],
+          "string": "No fragment to host the remix options sheet; opening the remix camera directly"
+        },
+        {
+          "code_unit_offset": 119,
+          "dex_byte_offset": 5184562,
+          "code_units": [
+            8305,
+            916,
+            24
+          ],
+          "callee": "LX/01jc;->A0D(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 122,
+          "dex_byte_offset": 5184568,
+          "code_units": [
+            16724,
+            10036
+          ],
+          "field": "LX/0EoX;->A02Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 124,
+          "dex_byte_offset": 5184572,
+          "code_units": [
+            287,
+            8811
+          ]
+        },
+        {
+          "code_unit_offset": 126,
+          "dex_byte_offset": 5184576,
+          "code_units": [
+            4436,
+            17284
+          ],
+          "field": "LX/0KSB;->A00Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 128,
+          "dex_byte_offset": 5184580,
+          "code_units": [
+            1634,
+            3194
+          ],
+          "field": "LX/06up;->A4QLX/06up;"
+        },
+        {
+          "code_unit_offset": 130,
+          "dex_byte_offset": 5184584,
+          "code_units": [
+            2066
+          ]
+        },
+        {
+          "code_unit_offset": 131,
+          "dex_byte_offset": 5184586,
+          "code_units": [
+            37639
+          ]
+        },
+        {
+          "code_unit_offset": 132,
+          "dex_byte_offset": 5184588,
+          "code_units": [
+            46087
+          ]
+        },
+        {
+          "code_unit_offset": 133,
+          "dex_byte_offset": 5184590,
+          "code_units": [
+            46343
+          ]
+        },
+        {
+          "code_unit_offset": 134,
+          "dex_byte_offset": 5184592,
+          "code_units": [
+            5895
+          ]
+        },
+        {
+          "code_unit_offset": 135,
+          "dex_byte_offset": 5184594,
+          "code_units": [
+            63751
+          ]
+        },
+        {
+          "code_unit_offset": 136,
+          "dex_byte_offset": 5184596,
+          "code_units": [
+            1908,
+            7044,
+            3
+          ],
+          "callee": "LX/0Bca;->A00(Landroid/app/Activity;Landroid/content/Context;LX/06up;Lcom/instagram/common/session/UserSession;LX/0FT0;Lcom/instagram/feed/media/Media;)V"
+        },
+        {
+          "code_unit_offset": 139,
+          "dex_byte_offset": 5184602,
+          "code_units": [
+            276,
+            23527,
+            63351
+          ]
+        },
+        {
+          "code_unit_offset": 142,
+          "dex_byte_offset": 5184608,
+          "code_units": [
+            46888
+          ]
+        },
+        {
+          "code_unit_offset": 143,
+          "dex_byte_offset": 5184610,
+          "code_units": [
+            4115,
+            0
+          ],
+          "integer": 0
+        },
+        {
+          "code_unit_offset": 145,
+          "dex_byte_offset": 5184614,
+          "code_units": [
+            794,
+            30239
+          ],
+          "string": "direct_thread"
+        },
+        {
+          "code_unit_offset": 147,
+          "dex_byte_offset": 5184618,
+          "code_units": [
+            4370
+          ]
+        },
+        {
+          "code_unit_offset": 148,
+          "dex_byte_offset": 5184620,
+          "code_units": [
+            12401,
+            2881,
+            1299
+          ],
+          "callee": "LX/02bQ;->A01(Ljava/lang/String;ZZ)LX/02bS;"
+        },
+        {
+          "code_unit_offset": 151,
+          "dex_byte_offset": 5184626,
+          "code_units": [
+            3340
+          ]
+        },
+        {
+          "code_unit_offset": 152,
+          "dex_byte_offset": 5184628,
+          "code_units": [
+            16724,
+            10036
+          ],
+          "field": "LX/0EoX;->A02Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 154,
+          "dex_byte_offset": 5184632,
+          "code_units": [
+            287,
+            8811
+          ]
+        },
+        {
+          "code_unit_offset": 156,
+          "dex_byte_offset": 5184636,
+          "code_units": [
+            7764,
+            17284
+          ],
+          "field": "LX/0KSB;->A00Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 158,
+          "dex_byte_offset": 5184640,
+          "code_units": [
+            3170,
+            3194
+          ],
+          "field": "LX/06up;->A4QLX/06up;"
+        },
+        {
+          "code_unit_offset": 160,
+          "dex_byte_offset": 5184644,
+          "code_units": [
+            2164,
+            7045,
+            9
+          ],
+          "callee": "LX/0Bca;->A01(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/FragmentActivity;LX/06up;LX/0Eto;Lcom/instagram/common/session/UserSession;Lcom/instagram/feed/media/Media;Ljava/lang/Integer;)V"
+        },
+        {
+          "code_unit_offset": 163,
+          "dex_byte_offset": 5184650,
+          "code_units": [
+            59432
+          ]
+        },
+        {
+          "code_unit_offset": 164,
+          "dex_byte_offset": 5184652,
+          "code_units": [
+            282,
+            39183
+          ],
+          "string": "template"
+        },
+        {
+          "code_unit_offset": 166,
+          "dex_byte_offset": 5184656,
+          "code_units": [
+            8302,
+            37971,
+            49
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 169,
+          "dex_byte_offset": 5184662,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 170,
+          "dex_byte_offset": 5184664,
+          "code_units": [
+            312,
+            65505
+          ]
+        },
+        {
+          "code_unit_offset": 172,
+          "dex_byte_offset": 5184668,
+          "code_units": [
+            18772,
+            10036
+          ],
+          "field": "LX/0EoX;->A02Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 174,
+          "dex_byte_offset": 5184672,
+          "code_units": [
+            2335,
+            8811
+          ]
+        },
+        {
+          "code_unit_offset": 176,
+          "dex_byte_offset": 5184676,
+          "code_units": [
+            1556,
+            3024,
+            20884
+          ]
+        },
+        {
+          "code_unit_offset": 179,
+          "dex_byte_offset": 5184682,
+          "code_units": [
+            282,
+            34378
+          ],
+          "string": "itas-android"
+        },
+        {
+          "code_unit_offset": 181,
+          "dex_byte_offset": 5184686,
+          "code_units": [
+            12398,
+            35392,
+            1567
+          ],
+          "callee": "Lcom/instagram/feed/media/Media;->AU4(Ljava/lang/String;I)LX/0D9e;"
+        },
+        {
+          "code_unit_offset": 184,
+          "dex_byte_offset": 5184692,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 185,
+          "dex_byte_offset": 5184694,
+          "code_units": [
+            16497,
+            1666,
+            25875
+          ],
+          "callee": "LX/0224;->A0J(Ljava/lang/Object;Ljava/lang/String;II)LX/02Az;"
+        },
+        {
+          "code_unit_offset": 188,
+          "dex_byte_offset": 5184700,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 189,
+          "dex_byte_offset": 5184702,
+          "code_units": [
+            1826,
+            3526
+          ]
+        },
+        {
+          "code_unit_offset": 191,
+          "dex_byte_offset": 5184706,
+          "code_units": [
+            12400,
+            4398,
+            791
+          ],
+          "callee": "LX/04Sh;-><init>(LX/02Az;LX/0D9e;)V"
+        },
+        {
+          "code_unit_offset": 194,
+          "dex_byte_offset": 5184712,
+          "code_units": [
+            18004,
+            10038
+          ],
+          "field": "LX/0EoX;->A04Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 196,
+          "dex_byte_offset": 5184716,
+          "code_units": [
+            17492,
+            10034
+          ],
+          "field": "LX/0EoX;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 198,
+          "dex_byte_offset": 5184720,
+          "code_units": [
+            1055,
+            14622
+          ]
+        },
+        {
+          "code_unit_offset": 200,
+          "dex_byte_offset": 5184724,
+          "code_units": [
+            37716,
+            17284
+          ],
+          "field": "LX/0KSB;->A00Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 202,
+          "dex_byte_offset": 5184728,
+          "code_units": [
+            282,
+            267
+          ],
+          "string": "0"
+        },
+        {
+          "code_unit_offset": 204,
+          "dex_byte_offset": 5184732,
+          "code_units": [
+            8305,
+            4297,
+            19
+          ],
+          "callee": "LX/049D;->A02(Lcom/instagram/common/session/UserSession;Ljava/lang/String;)Z"
+        },
+        {
+          "code_unit_offset": 207,
+          "dex_byte_offset": 5184738,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 208,
+          "dex_byte_offset": 5184740,
+          "code_units": [
+            313,
+            16
+          ]
+        },
+        {
+          "code_unit_offset": 210,
+          "dex_byte_offset": 5184744,
+          "code_units": [
+            282,
+            33200
+          ],
+          "string": "ig_media_action template CTA needs Edits installed"
+        },
+        {
+          "code_unit_offset": 212,
+          "dex_byte_offset": 5184748,
+          "code_units": [
+            8305,
+            916,
+            24
+          ],
+          "callee": "LX/01jc;->A0D(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 215,
+          "dex_byte_offset": 5184754,
+          "code_units": [
+            794,
+            35192
+          ],
+          "string": "meta_ai_media_action_template_no_edits"
+        },
+        {
+          "code_unit_offset": 217,
+          "dex_byte_offset": 5184758,
+          "code_units": [
+            276,
+            21373,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 220,
+          "dex_byte_offset": 5184764,
+          "code_units": [
+            16497,
+            18972,
+            20788
+          ],
+          "callee": "LX/0Ir7;->A01(Landroid/content/Context;Ljava/lang/String;II)Landroid/widget/Toast;"
+        },
+        {
+          "code_unit_offset": 223,
+          "dex_byte_offset": 5184770,
+          "code_units": [
+            44072
+          ]
+        },
+        {
+          "code_unit_offset": 224,
+          "dex_byte_offset": 5184772,
+          "code_units": [
+            29524,
+            1997
+          ],
+          "field": "LX/04Sh;->A01LX/0D9e;"
+        },
+        {
+          "code_unit_offset": 226,
+          "dex_byte_offset": 5184776,
+          "code_units": [
+            275,
+            168
+          ],
+          "integer": 168
+        },
+        {
+          "code_unit_offset": 228,
+          "dex_byte_offset": 5184780,
+          "code_units": [
+            12401,
+            192,
+            371
+          ],
+          "callee": "LX/0064;->A0g(LX/0D9e;Ljava/lang/Object;I)Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 231,
+          "dex_byte_offset": 5184786,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 232,
+          "dex_byte_offset": 5184788,
+          "code_units": [
+            287,
+            16185
+          ]
+        },
+        {
+          "code_unit_offset": 234,
+          "dex_byte_offset": 5184792,
+          "code_units": [
+            312,
+            3
+          ]
+        },
+        {
+          "code_unit_offset": 236,
+          "dex_byte_offset": 5184796,
+          "code_units": [
+            5639
+          ]
+        },
+        {
+          "code_unit_offset": 237,
+          "dex_byte_offset": 5184798,
+          "code_units": [
+            354,
+            3194
+          ],
+          "field": "LX/06up;->A4QLX/06up;"
+        },
+        {
+          "code_unit_offset": 239,
+          "dex_byte_offset": 5184802,
+          "code_units": [
+            8305,
+            4296,
+            97
+          ],
+          "callee": "LX/049D;->A00(LX/06up;Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 242,
+          "dex_byte_offset": 5184808,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 243,
+          "dex_byte_offset": 5184810,
+          "code_units": [
+            12401,
+            20492,
+            1300
+          ],
+          "callee": "LX/0KV0;->A0I(Landroid/content/Context;Ljava/lang/String;Z)Z"
+        },
+        {
+          "code_unit_offset": 246,
+          "dex_byte_offset": 5184816,
+          "code_units": [
+            38184
+          ]
+        },
+        {
+          "code_unit_offset": 247,
+          "dex_byte_offset": 5184818,
+          "code_units": [
+            20,
+            35795,
+            47808
+          ]
+        },
+        {
+          "code_unit_offset": 250,
+          "dex_byte_offset": 5184824,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 253,
+          "dex_byte_offset": 5184830,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 254,
+          "dex_byte_offset": 5184832,
+          "code_units": [
+            799,
+            5978
+          ]
+        },
+        {
+          "code_unit_offset": 256,
+          "dex_byte_offset": 5184836,
+          "code_units": [
+            276,
+            11295,
+            37852
+          ]
+        },
+        {
+          "code_unit_offset": 259,
+          "dex_byte_offset": 5184842,
+          "code_units": [
+            4209,
+            5223,
+            1
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 262,
+          "dex_byte_offset": 5184848,
+          "code_units": [
+            1290
+          ]
+        },
+        {
+          "code_unit_offset": 263,
+          "dex_byte_offset": 5184850,
+          "code_units": [
+            1810
+          ]
+        },
+        {
+          "code_unit_offset": 264,
+          "dex_byte_offset": 5184852,
+          "code_units": [
+            8305,
+            5397,
+            115
+          ],
+          "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V"
+        },
+        {
+          "code_unit_offset": 267,
+          "dex_byte_offset": 5184858,
+          "code_units": [
+            18004,
+            10034
+          ],
+          "field": "LX/0EoX;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 269,
+          "dex_byte_offset": 5184862,
+          "code_units": [
+            1567,
+            15353
+          ]
+        },
+        {
+          "code_unit_offset": 271,
+          "dex_byte_offset": 5184866,
+          "code_units": [
+            113,
+            3819,
+            0
+          ],
+          "callee": "LX/03dR;->A00()LX/03dR;"
+        },
+        {
+          "code_unit_offset": 274,
+          "dex_byte_offset": 5184872,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 275,
+          "dex_byte_offset": 5184874,
+          "code_units": [
+            282,
+            35469
+          ],
+          "string": "network_request_success"
+        },
+        {
+          "code_unit_offset": 277,
+          "dex_byte_offset": 5184878,
+          "code_units": [
+            2068,
+            8498,
+            5918
+          ]
+        },
+        {
+          "code_unit_offset": 280,
+          "dex_byte_offset": 5184884,
+          "code_units": [
+            12398,
+            4472,
+            386
+          ],
+          "callee": "LX/04e4;->markerPoint(ILjava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 283,
+          "dex_byte_offset": 5184890,
+          "code_units": [
+            532,
+            22754,
+            32309
+          ]
+        },
+        {
+          "code_unit_offset": 286,
+          "dex_byte_offset": 5184896,
+          "code_units": [
+            282,
+            32929
+          ],
+          "string": "ig4a-instagram-schema"
+        },
+        {
+          "code_unit_offset": 288,
+          "dex_byte_offset": 5184900,
+          "code_units": [
+            16497,
+            1365,
+            29203
+          ],
+          "callee": "LX/021X;->A0J(LX/0Flo;Ljava/lang/String;II)LX/0olj;"
+        },
+        {
+          "code_unit_offset": 291,
+          "dex_byte_offset": 5184906,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 292,
+          "dex_byte_offset": 5184908,
+          "code_units": [
+            10514
+          ]
+        },
+        {
+          "code_unit_offset": 293,
+          "dex_byte_offset": 5184910,
+          "code_units": [
+            276,
+            27410,
+            34209
+          ]
+        },
+        {
+          "code_unit_offset": 296,
+          "dex_byte_offset": 5184916,
+          "code_units": [
+            8306,
+            8633,
+            18
+          ],
+          "callee": "LX/0D9e;->DGk(I)Z"
+        },
+        {
+          "code_unit_offset": 299,
+          "dex_byte_offset": 5184922,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 300,
+          "dex_byte_offset": 5184924,
+          "code_units": [
+            313,
+            42
+          ]
+        },
+        {
+          "code_unit_offset": 302,
+          "dex_byte_offset": 5184928,
+          "code_units": [
+            610,
+            2485
+          ],
+          "field": "LX/05Nh;->A6YLX/05Ng;"
+        },
+        {
+          "code_unit_offset": 304,
+          "dex_byte_offset": 5184932,
+          "code_units": [
+            16724,
+            10035
+          ],
+          "field": "LX/0EoX;->A01Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 306,
+          "dex_byte_offset": 5184936,
+          "code_units": [
+            287,
+            14622
+          ]
+        },
+        {
+          "code_unit_offset": 308,
+          "dex_byte_offset": 5184940,
+          "code_units": [
+            8302,
+            5200,
+            18
+          ],
+          "callee": "LX/05Ng;->A01(Landroid/content/Context;)LX/05Nh;"
+        },
+        {
+          "code_unit_offset": 311,
+          "dex_byte_offset": 5184946,
+          "code_units": [
+            1804
+          ]
+        },
+        {
+          "code_unit_offset": 312,
+          "dex_byte_offset": 5184948,
+          "code_units": [
+            29524,
+            2464
+          ],
+          "field": "LX/05Nh;->A2MLX/0GAZ;"
+        },
+        {
+          "code_unit_offset": 314,
+          "dex_byte_offset": 5184952,
+          "code_units": [
+            610,
+            2487
+          ],
+          "field": "LX/05Nh;->A6a[LX/0Jop;"
+        },
+        {
+          "code_unit_offset": 316,
+          "dex_byte_offset": 5184956,
+          "code_units": [
+            275,
+            175
+          ],
+          "integer": 175
+        },
+        {
+          "code_unit_offset": 318,
+          "dex_byte_offset": 5184960,
+          "code_units": [
+            16497,
+            700,
+            4663
+          ],
+          "callee": "LX/0127;->A1Y(Ljava/lang/Object;LX/0GAZ;[LX/0Jop;I)Z"
+        },
+        {
+          "code_unit_offset": 321,
+          "dex_byte_offset": 5184966,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 322,
+          "dex_byte_offset": 5184968,
+          "code_units": [
+            313,
+            20
+          ]
+        },
+        {
+          "code_unit_offset": 324,
+          "dex_byte_offset": 5184972,
+          "code_units": [
+            113,
+            3819,
+            0
+          ],
+          "callee": "LX/03dR;->A00()LX/03dR;"
+        },
+        {
+          "code_unit_offset": 327,
+          "dex_byte_offset": 5184978,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 328,
+          "dex_byte_offset": 5184980,
+          "code_units": [
+            12398,
+            4469,
+            2433
+          ],
+          "callee": "LX/04e4;->markerEnd(IS)V"
+        },
+        {
+          "code_unit_offset": 331,
+          "dex_byte_offset": 5184986,
+          "code_units": [
+            276,
+            21758,
+            44033
+          ]
+        },
+        {
+          "code_unit_offset": 334,
+          "dex_byte_offset": 5184992,
+          "code_units": [
+            8305,
+            5228,
+            81
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 337,
+          "dex_byte_offset": 5184998,
+          "code_units": [
+            276,
+            38957,
+            3644
+          ]
+        },
+        {
+          "code_unit_offset": 340,
+          "dex_byte_offset": 5185004,
+          "code_units": [
+            41,
+            65271
+          ]
+        },
+        {
+          "code_unit_offset": 342,
+          "dex_byte_offset": 5185008,
+          "code_units": [
+            18772,
+            10036
+          ],
+          "field": "LX/0EoX;->A02Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 344,
+          "dex_byte_offset": 5185012,
+          "code_units": [
+            2335,
+            1540
+          ]
+        },
+        {
+          "code_unit_offset": 346,
+          "dex_byte_offset": 5185016,
+          "code_units": [
+            17236,
+            10037
+          ],
+          "field": "LX/0EoX;->A03Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 348,
+          "dex_byte_offset": 5185020,
+          "code_units": [
+            1818,
+            26600
+          ],
+          "string": "app_start"
+        },
+        {
+          "code_unit_offset": 350,
+          "dex_byte_offset": 5185024,
+          "code_units": [
+            17492,
+            10038
+          ],
+          "field": "LX/0EoX;->A04Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 352,
+          "dex_byte_offset": 5185028,
+          "code_units": [
+            4209,
+            962,
+            9
+          ],
+          "callee": "LX/01oK;->A01(Landroidx/fragment/app/Fragment;)Z"
+        },
+        {
+          "code_unit_offset": 355,
+          "dex_byte_offset": 5185034,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 356,
+          "dex_byte_offset": 5185036,
+          "code_units": [
+            312,
+            65511
+          ]
+        },
+        {
+          "code_unit_offset": 358,
+          "dex_byte_offset": 5185040,
+          "code_units": [
+            113,
+            3819,
+            0
+          ],
+          "callee": "LX/03dR;->A00()LX/03dR;"
+        },
+        {
+          "code_unit_offset": 361,
+          "dex_byte_offset": 5185046,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 362,
+          "dex_byte_offset": 5185048,
+          "code_units": [
+            282,
+            35661
+          ],
+          "string": "nudge_will_show"
+        },
+        {
+          "code_unit_offset": 364,
+          "dex_byte_offset": 5185052,
+          "code_units": [
+            12398,
+            4472,
+            386
+          ],
+          "callee": "LX/04e4;->markerPoint(ILjava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 367,
+          "dex_byte_offset": 5185058,
+          "code_units": [
+            282,
+            34745
+          ],
+          "string": "location"
+        },
+        {
+          "code_unit_offset": 369,
+          "dex_byte_offset": 5185062,
+          "code_units": [
+            8305,
+            57,
+            49
+          ],
+          "callee": "LX/000H;->A0Z(Ljava/lang/Object;Ljava/lang/Object;)LX/05nX;"
+        },
+        {
+          "code_unit_offset": 372,
+          "dex_byte_offset": 5185068,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 373,
+          "dex_byte_offset": 5185070,
+          "code_units": [
+            282,
+            26344
+          ],
+          "string": "analytics_module"
+        },
+        {
+          "code_unit_offset": 375,
+          "dex_byte_offset": 5185074,
+          "code_units": [
+            8305,
+            57,
+            113
+          ],
+          "callee": "LX/000H;->A0Z(Ljava/lang/Object;Ljava/lang/Object;)LX/05nX;"
+        },
+        {
+          "code_unit_offset": 378,
+          "dex_byte_offset": 5185080,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 379,
+          "dex_byte_offset": 5185082,
+          "code_units": [
+            113,
+            2216,
+            0
+          ],
+          "callee": "LX/0234;->A00()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 382,
+          "dex_byte_offset": 5185088,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 383,
+          "dex_byte_offset": 5185090,
+          "code_units": [
+            16497,
+            1808,
+            9025
+          ],
+          "callee": "LX/0225;->A0z(Ljava/lang/Object;Ljava/lang/Object;LX/05nX;LX/05nX;)Ljava/util/Map;"
+        },
+        {
+          "code_unit_offset": 386,
+          "dex_byte_offset": 5185096,
+          "code_units": [
+            3340
+          ]
+        },
+        {
+          "code_unit_offset": 387,
+          "dex_byte_offset": 5185098,
+          "code_units": [
+            2850,
+            8255
+          ]
+        },
+        {
+          "code_unit_offset": 389,
+          "dex_byte_offset": 5185102,
+          "code_units": [
+            8304,
+            19373,
+            107
+          ],
+          "callee": "LX/0JQr;-><init>(Lcom/instagram/common/session/UserSession;)V"
+        },
+        {
+          "code_unit_offset": 392,
+          "dex_byte_offset": 5185108,
+          "code_units": [
+            2082,
+            1713
+          ]
+        },
+        {
+          "code_unit_offset": 394,
+          "dex_byte_offset": 5185112,
+          "code_units": [
+            8304,
+            5455,
+            104
+          ],
+          "callee": "LX/05uB;-><init>(Lcom/instagram/common/session/UserSession;)V"
+        },
+        {
+          "code_unit_offset": 397,
+          "dex_byte_offset": 5185118,
+          "code_units": [
+            2578
+          ]
+        },
+        {
+          "code_unit_offset": 398,
+          "dex_byte_offset": 5185120,
+          "code_units": [
+            3098,
+            29127
+          ],
+          "string": "com.bloks.www.ig.account_status.nudge.async"
+        },
+        {
+          "code_unit_offset": 400,
+          "dex_byte_offset": 5185124,
+          "code_units": [
+            1652,
+            5456,
+            8
+          ],
+          "callee": "LX/05uB;->A00(LX/05B6;LX/0MvL;LX/0JQr;Ljava/lang/String;Ljava/util/Map;)V"
+        },
+        {
+          "code_unit_offset": 403,
+          "dex_byte_offset": 5185130,
+          "code_units": [
+            47144
+          ]
+        },
+        {
+          "code_unit_offset": 404,
+          "dex_byte_offset": 5185132,
+          "code_units": [
+            20,
+            23964,
+            8956
+          ]
+        },
+        {
+          "code_unit_offset": 407,
+          "dex_byte_offset": 5185138,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 410,
+          "dex_byte_offset": 5185144,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 411,
+          "dex_byte_offset": 5185146,
+          "code_units": [
+            276,
+            2060,
+            43977
+          ]
+        },
+        {
+          "code_unit_offset": 414,
+          "dex_byte_offset": 5185152,
+          "code_units": [
+            8305,
+            31,
+            19
+          ],
+          "callee": "LX/000H;->A02(Ljava/lang/Object;I)I"
+        },
+        {
+          "code_unit_offset": 417,
+          "dex_byte_offset": 5185158,
+          "code_units": [
+            522
+          ]
+        },
+        {
+          "code_unit_offset": 418,
+          "dex_byte_offset": 5185160,
+          "code_units": [
+            16724,
+            10034
+          ],
+          "field": "LX/0EoX;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 420,
+          "dex_byte_offset": 5185164,
+          "code_units": [
+            287,
+            1547
+          ]
+        },
+        {
+          "code_unit_offset": 422,
+          "dex_byte_offset": 5185168,
+          "code_units": [
+            312,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 424,
+          "dex_byte_offset": 5185172,
+          "code_units": [
+            8302,
+            5021,
+            49
+          ],
+          "callee": "LX/05BI;->A0k(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 427,
+          "dex_byte_offset": 5185178,
+          "code_units": [
+            276,
+            37998,
+            34461
+          ]
+        },
+        {
+          "code_unit_offset": 430,
+          "dex_byte_offset": 5185184,
+          "code_units": [
+            8305,
+            5228,
+            33
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 433,
+          "dex_byte_offset": 5185190,
+          "code_units": [
+            276,
+            61923,
+            28674
+          ]
+        },
+        {
+          "code_unit_offset": 436,
+          "dex_byte_offset": 5185196,
+          "code_units": [
+            41,
+            65175
+          ]
+        },
+        {
+          "code_unit_offset": 438,
+          "dex_byte_offset": 5185200,
+          "code_units": [
+            20,
+            47274,
+            60638
+          ]
+        },
+        {
+          "code_unit_offset": 441,
+          "dex_byte_offset": 5185206,
+          "code_units": [
+            4209,
+            5223,
+            0
+          ],
+          "callee": "LX/05VE;->A03(I)I"
+        },
+        {
+          "code_unit_offset": 444,
+          "dex_byte_offset": 5185212,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 445,
+          "dex_byte_offset": 5185214,
+          "code_units": [
+            799,
+            13412
+          ]
+        },
+        {
+          "code_unit_offset": 447,
+          "dex_byte_offset": 5185218,
+          "code_units": [
+            276,
+            35940,
+            62121
+          ]
+        },
+        {
+          "code_unit_offset": 450,
+          "dex_byte_offset": 5185224,
+          "code_units": [
+            8305,
+            31,
+            19
+          ],
+          "callee": "LX/000H;->A02(Ljava/lang/Object;I)I"
+        },
+        {
+          "code_unit_offset": 453,
+          "dex_byte_offset": 5185230,
+          "code_units": [
+            1546
+          ]
+        },
+        {
+          "code_unit_offset": 454,
+          "dex_byte_offset": 5185232,
+          "code_units": [
+            14676,
+            24414
+          ],
+          "field": "LX/0aui;->A00LX/0kGw;"
+        },
+        {
+          "code_unit_offset": 456,
+          "dex_byte_offset": 5185236,
+          "code_units": [
+            2335,
+            1322
+          ]
+        },
+        {
+          "code_unit_offset": 458,
+          "dex_byte_offset": 5185240,
+          "code_units": [
+            37204,
+            1995
+          ],
+          "field": "LX/04Sf;->innerDataLX/0olj;"
+        },
+        {
+          "code_unit_offset": 460,
+          "dex_byte_offset": 5185244,
+          "code_units": [
+            532,
+            6976,
+            20312
+          ]
+        },
+        {
+          "code_unit_offset": 463,
+          "dex_byte_offset": 5185250,
+          "code_units": [
+            8306,
+            8639,
+            33
+          ],
+          "callee": "LX/0D9e;->DH2(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 466,
+          "dex_byte_offset": 5185256,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 467,
+          "dex_byte_offset": 5185258,
+          "code_units": [
+            4206,
+            37977,
+            1
+          ],
+          "callee": "Ljava/lang/String;->length()I"
+        },
+        {
+          "code_unit_offset": 470,
+          "dex_byte_offset": 5185264,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 471,
+          "dex_byte_offset": 5185266,
+          "code_units": [
+            4209,
+            106,
+            1
+          ],
+          "callee": "LX/0020;->A1Y(I)Z"
+        },
+        {
+          "code_unit_offset": 474,
+          "dex_byte_offset": 5185272,
+          "code_units": [
+            2058
+          ]
+        },
+        {
+          "code_unit_offset": 475,
+          "dex_byte_offset": 5185274,
+          "code_units": [
+            18260,
+            10036
+          ],
+          "field": "LX/0EoX;->A02Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 477,
+          "dex_byte_offset": 5185278,
+          "code_units": [
+            1823,
+            12692
+          ]
+        },
+        {
+          "code_unit_offset": 479,
+          "dex_byte_offset": 5185282,
+          "code_units": [
+            2104,
+            77
+          ]
+        },
+        {
+          "code_unit_offset": 481,
+          "dex_byte_offset": 5185286,
+          "code_units": [
+            37204,
+            1995
+          ],
+          "field": "LX/04Sf;->innerDataLX/0olj;"
+        },
+        {
+          "code_unit_offset": 483,
+          "dex_byte_offset": 5185290,
+          "code_units": [
+            8306,
+            8639,
+            33
+          ],
+          "callee": "LX/0D9e;->DH2(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 486,
+          "dex_byte_offset": 5185296,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 487,
+          "dex_byte_offset": 5185298,
+          "code_units": [
+            16980,
+            10037
+          ],
+          "field": "LX/0EoX;->A03Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 489,
+          "dex_byte_offset": 5185302,
+          "code_units": [
+            16724,
+            10038
+          ],
+          "field": "LX/0EoX;->A04Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 491,
+          "dex_byte_offset": 5185306,
+          "code_units": [
+            5394
+          ]
+        },
+        {
+          "code_unit_offset": 492,
+          "dex_byte_offset": 5185308,
+          "code_units": [
+            21873,
+            31037,
+            4663
+          ],
+          "callee": "LX/0RIG;->A02(LX/0RIG;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V"
+        },
+        {
+          "code_unit_offset": 495,
+          "dex_byte_offset": 5185314,
+          "code_units": [
+            2104,
+            53
+          ]
+        },
+        {
+          "code_unit_offset": 497,
+          "dex_byte_offset": 5185318,
+          "code_units": [
+            4206,
+            33315,
+            7
+          ],
+          "callee": "Landroidx/fragment/app/Fragment;->requireContext()Landroid/content/Context;"
+        },
+        {
+          "code_unit_offset": 500,
+          "dex_byte_offset": 5185324,
+          "code_units": [
+            1036
+          ]
+        },
+        {
+          "code_unit_offset": 501,
+          "dex_byte_offset": 5185326,
+          "code_units": [
+            37460,
+            1995
+          ],
+          "field": "LX/04Sf;->innerDataLX/0olj;"
+        },
+        {
+          "code_unit_offset": 503,
+          "dex_byte_offset": 5185330,
+          "code_units": [
+            276,
+            33947,
+            43164
+          ]
+        },
+        {
+          "code_unit_offset": 506,
+          "dex_byte_offset": 5185336,
+          "code_units": [
+            8306,
+            8639,
+            18
+          ],
+          "callee": "LX/0D9e;->DH2(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 509,
+          "dex_byte_offset": 5185342,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 510,
+          "dex_byte_offset": 5185344,
+          "code_units": [
+            37460,
+            1995
+          ],
+          "field": "LX/04Sf;->innerDataLX/0olj;"
+        },
+        {
+          "code_unit_offset": 512,
+          "dex_byte_offset": 5185348,
+          "code_units": [
+            276,
+            56714,
+            31331
+          ]
+        },
+        {
+          "code_unit_offset": 515,
+          "dex_byte_offset": 5185354,
+          "code_units": [
+            8306,
+            8639,
+            18
+          ],
+          "callee": "LX/0D9e;->DH2(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 518,
+          "dex_byte_offset": 5185360,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 519,
+          "dex_byte_offset": 5185362,
+          "code_units": [
+            8305,
+            5397,
+            83
+          ],
+          "callee": "LX/05s2;->A0V(Ljava/lang/Object;I)V"
+        },
+        {
+          "code_unit_offset": 522,
+          "dex_byte_offset": 5185368,
+          "code_units": [
+            4209,
+            5386,
+            1
+          ],
+          "callee": "LX/05s2;->A0J(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 525,
+          "dex_byte_offset": 5185374,
+          "code_units": [
+            12401,
+            1681,
+            788
+          ],
+          "callee": "LX/0224;->A0Y(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/String;)LX/0IIp;"
+        },
+        {
+          "code_unit_offset": 528,
+          "dex_byte_offset": 5185380,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 529,
+          "dex_byte_offset": 5185382,
+          "code_units": [
+            354,
+            18209
+          ],
+          "field": "LX/0LHG;->A00LX/0LHG;"
+        },
+        {
+          "code_unit_offset": 531,
+          "dex_byte_offset": 5185386,
+          "code_units": [
+            8302,
+            18617,
+            18
+          ],
+          "callee": "LX/0IIp;->A0D(Landroid/content/DialogInterface$OnClickListener;)V"
+        },
+        {
+          "code_unit_offset": 534,
+          "dex_byte_offset": 5185392,
+          "code_units": [
+            4209,
+            1434,
+            2
+          ],
+          "callee": "LX/021X;->A1Q(LX/0IIp;)V"
+        },
+        {
+          "code_unit_offset": 537,
+          "dex_byte_offset": 5185398,
+          "code_units": [
+            276,
+            8793,
+            248
+          ]
+        },
+        {
+          "code_unit_offset": 540,
+          "dex_byte_offset": 5185404,
+          "code_units": [
+            8305,
+            5228,
+            97
+          ],
+          "callee": "LX/05VE;->A0A(II)V"
+        },
+        {
+          "code_unit_offset": 543,
+          "dex_byte_offset": 5185410,
+          "code_units": [
+            276,
+            15674,
+            48044
+          ]
+        },
+        {
+          "code_unit_offset": 546,
+          "dex_byte_offset": 5185416,
+          "code_units": [
+            41,
+            65065
+          ]
+        },
+        {
+          "code_unit_offset": 548,
+          "dex_byte_offset": 5185420,
+          "code_units": [
+            16724,
+            10034
+          ],
+          "field": "LX/0EoX;->A00Ljava/lang/Object;"
+        },
+        {
+          "code_unit_offset": 550,
+          "dex_byte_offset": 5185424,
+          "code_units": [
+            287,
+            12147
+          ]
+        },
+        {
+          "code_unit_offset": 552,
+          "dex_byte_offset": 5185428,
+          "code_units": [
+            4210,
+            30056,
+            1
+          ],
+          "callee": "LX/0OtX;->GSf()V"
+        },
+        {
+          "code_unit_offset": 555,
+          "dex_byte_offset": 5185434,
+          "code_units": [
+            60968
+          ]
+        },
+        {
+          "code_unit_offset": 556,
+          "dex_byte_offset": 5185436,
+          "code_units": [
+            786
+          ]
+        },
+        {
+          "code_unit_offset": 557,
+          "dex_byte_offset": 5185438,
+          "code_units": [
+            47656
+          ]
+        }
+      ],
+      "method_index": 14005,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0Ew3;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0Ew3;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+      "code_item_byte_offset": 3075172,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 3075188,
+          "code_units": [
+            4209,
+            5394,
+            5
+          ],
+          "callee": "LX/05s2;->A0R(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 3075194,
+          "code_units": [
+            802,
+            4394
+          ]
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 3075198,
+          "code_units": [
+            4208,
+            5023,
+            3
+          ],
+          "callee": "LX/05BK;-><init>()V"
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 3075204,
+          "code_units": [
+            4206,
+            4548,
+            5
+          ],
+          "callee": "LX/04s3;->A1d()LX/01yl;"
+        },
+        {
+          "code_unit_offset": 11,
+          "dex_byte_offset": 3075210,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 3075212,
+          "code_units": [
+            98,
+            574
+          ],
+          "field": "LX/01yl;->A0DLX/01yl;"
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 3075216,
+          "code_units": [
+            306,
+            7
+          ]
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 3075220,
+          "code_units": [
+            4206,
+            4549,
+            5
+          ],
+          "callee": "LX/04s3;->A1f()V"
+        },
+        {
+          "code_unit_offset": 19,
+          "dex_byte_offset": 3075226,
+          "code_units": [
+            18
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 3075228,
+          "code_units": [
+            17
+          ]
+        },
+        {
+          "code_unit_offset": 21,
+          "dex_byte_offset": 3075230,
+          "code_units": [
+            4206,
+            4541,
+            5
+          ],
+          "callee": "LX/04s3;->A1N()LX/01yl;"
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 3075236,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 25,
+          "dex_byte_offset": 3075238,
+          "code_units": [
+            98,
+            572
+          ],
+          "field": "LX/01yl;->A09LX/01yl;"
+        },
+        {
+          "code_unit_offset": 27,
+          "dex_byte_offset": 3075242,
+          "code_units": [
+            306,
+            77
+          ]
+        },
+        {
+          "code_unit_offset": 29,
+          "dex_byte_offset": 3075246,
+          "code_units": [
+            4209,
+            1108,
+            5
+          ],
+          "callee": "LX/01yt;->A08(LX/04s3;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 32,
+          "dex_byte_offset": 3075252,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 33,
+          "dex_byte_offset": 3075254,
+          "code_units": [
+            4206,
+            37976,
+            2
+          ],
+          "callee": "Ljava/lang/String;->hashCode()I"
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 3075260,
+          "code_units": [
+            266
+          ]
+        },
+        {
+          "code_unit_offset": 37,
+          "dex_byte_offset": 3075262,
+          "code_units": [
+            20,
+            19216,
+            42442
+          ]
+        },
+        {
+          "code_unit_offset": 40,
+          "dex_byte_offset": 3075268,
+          "code_units": [
+            306,
+            45
+          ]
+        },
+        {
+          "code_unit_offset": 42,
+          "dex_byte_offset": 3075272,
+          "code_units": [
+            20,
+            36713,
+            63663
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 3075278,
+          "code_units": [
+            306,
+            25
+          ]
+        },
+        {
+          "code_unit_offset": 47,
+          "dex_byte_offset": 3075282,
+          "code_units": [
+            20,
+            46084,
+            15835
+          ]
+        },
+        {
+          "code_unit_offset": 50,
+          "dex_byte_offset": 3075288,
+          "code_units": [
+            307,
+            50
+          ]
+        },
+        {
+          "code_unit_offset": 52,
+          "dex_byte_offset": 3075292,
+          "code_units": [
+            26,
+            34217
+          ],
+          "string": "is_eligible_for_mv4b_rollback_grace_period"
+        },
+        {
+          "code_unit_offset": 54,
+          "dex_byte_offset": 3075296,
+          "code_units": [
+            8302,
+            37971,
+            2
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 57,
+          "dex_byte_offset": 3075302,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 58,
+          "dex_byte_offset": 3075304,
+          "code_units": [
+            56,
+            42
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 3075308,
+          "code_units": [
+            4206,
+            4540,
+            5
+          ],
+          "callee": "LX/04s3;->A12()Z"
+        },
+        {
+          "code_unit_offset": 63,
+          "dex_byte_offset": 3075314,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 64,
+          "dex_byte_offset": 3075316,
+          "code_units": [
+            12380,
+            5940
+          ],
+          "field": "LX/0DEw;->A02Z"
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 3075320,
+          "code_units": [
+            4206,
+            4549,
+            5
+          ],
+          "callee": "LX/04s3;->A1f()V"
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 3075326,
+          "code_units": [
+            53288
+          ]
+        },
+        {
+          "code_unit_offset": 70,
+          "dex_byte_offset": 3075328,
+          "code_units": [
+            26,
+            35340
+          ],
+          "string": "mv4b_rollback_grace_period_expiry_in_days"
+        },
+        {
+          "code_unit_offset": 72,
+          "dex_byte_offset": 3075332,
+          "code_units": [
+            8302,
+            37971,
+            2
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 3075338,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 76,
+          "dex_byte_offset": 3075340,
+          "code_units": [
+            56,
+            24
+          ]
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 3075344,
+          "code_units": [
+            4206,
+            4546,
+            5
+          ],
+          "callee": "LX/04s3;->A1b()I"
+        },
+        {
+          "code_unit_offset": 81,
+          "dex_byte_offset": 3075350,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 82,
+          "dex_byte_offset": 3075352,
+          "code_units": [
+            12377,
+            5938
+          ],
+          "field": "LX/0DEw;->A00I"
+        },
+        {
+          "code_unit_offset": 84,
+          "dex_byte_offset": 3075356,
+          "code_units": [
+            60968
+          ]
+        },
+        {
+          "code_unit_offset": 85,
+          "dex_byte_offset": 3075358,
+          "code_units": [
+            26,
+            32163
+          ],
+          "string": "has_active_meta_verfied_application"
+        },
+        {
+          "code_unit_offset": 87,
+          "dex_byte_offset": 3075362,
+          "code_units": [
+            8302,
+            37971,
+            2
+          ],
+          "callee": "Ljava/lang/String;->equals(Ljava/lang/Object;)Z"
+        },
+        {
+          "code_unit_offset": 90,
+          "dex_byte_offset": 3075368,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 91,
+          "dex_byte_offset": 3075370,
+          "code_units": [
+            56,
+            9
+          ]
+        },
+        {
+          "code_unit_offset": 93,
+          "dex_byte_offset": 3075374,
+          "code_units": [
+            4206,
+            4540,
+            5
+          ],
+          "callee": "LX/04s3;->A12()Z"
+        },
+        {
+          "code_unit_offset": 96,
+          "dex_byte_offset": 3075380,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 97,
+          "dex_byte_offset": 3075382,
+          "code_units": [
+            12380,
+            5939
+          ],
+          "field": "LX/0DEw;->A01Z"
+        },
+        {
+          "code_unit_offset": 99,
+          "dex_byte_offset": 3075386,
+          "code_units": [
+            57128
+          ]
+        },
+        {
+          "code_unit_offset": 100,
+          "dex_byte_offset": 3075388,
+          "code_units": [
+            12401,
+            991,
+            565
+          ],
+          "callee": "LX/01pP;->A01(LX/04s3;LX/01y9;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 103,
+          "dex_byte_offset": 3075394,
+          "code_units": [
+            56104
+          ]
+        },
+        {
+          "code_unit_offset": 104,
+          "dex_byte_offset": 3075396,
+          "code_units": [
+            785
+          ]
+        }
+      ],
+      "method_index": 14332,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0IoB;->A00(Lcom/instagram/common/session/UserSession;LX/0JQA;)LX/02sG;": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0IoB;->A00(Lcom/instagram/common/session/UserSession;LX/0JQA;)LX/02sG;",
+      "code_item_byte_offset": 3701376,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 3701392,
+          "code_units": [
+            354,
+            1091
+          ],
+          "field": "LX/02rm;->A01LX/02rr;"
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 3701396,
+          "code_units": [
+            98,
+            24633
+          ],
+          "field": "LX/0dja;->A00LX/0dja;"
+        },
+        {
+          "code_unit_offset": 4,
+          "dex_byte_offset": 3701400,
+          "code_units": [
+            12401,
+            1566,
+            769
+          ],
+          "callee": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+        },
+        {
+          "code_unit_offset": 7,
+          "dex_byte_offset": 3701406,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 3701408,
+          "code_units": [
+            26,
+            25875
+          ],
+          "string": "accounts/get_presence_disabled/"
+        },
+        {
+          "code_unit_offset": 10,
+          "dex_byte_offset": 3701412,
+          "code_units": [
+            8305,
+            1672,
+            1
+          ],
+          "callee": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;"
+        },
+        {
+          "code_unit_offset": 13,
+          "dex_byte_offset": 3701418,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 3701420,
+          "code_units": [
+            24850
+          ]
+        },
+        {
+          "code_unit_offset": 15,
+          "dex_byte_offset": 3701422,
+          "code_units": [
+            34,
+            6965
+          ]
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 3701426,
+          "code_units": [
+            16496,
+            18126,
+            5168
+          ],
+          "callee": "LX/0HKd;-><init>(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;I)V"
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 3701432,
+          "code_units": [
+            8283,
+            1094
+          ],
+          "field": "LX/02sG;->A00LX/05BI;"
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 3701436,
+          "code_units": [
+            529
+          ]
+        }
+      ],
+      "method_index": 18944,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+      "code_item_byte_offset": 4356984,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4357000,
+          "code_units": [
+            794,
+            26600
+          ],
+          "string": "app_start"
+        },
+        {
+          "code_unit_offset": 2,
+          "dex_byte_offset": 4357004,
+          "code_units": [
+            46087
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4357006,
+          "code_units": [
+            4209,
+            5394,
+            11
+          ],
+          "callee": "LX/05s2;->A0R(Ljava/lang/Object;)V"
+        },
+        {
+          "code_unit_offset": 6,
+          "dex_byte_offset": 4357012,
+          "code_units": [
+            113,
+            663,
+            0
+          ],
+          "callee": "LX/0123;->A0t()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 4357018,
+          "code_units": [
+            1804
+          ]
+        },
+        {
+          "code_unit_offset": 10,
+          "dex_byte_offset": 4357020,
+          "code_units": [
+            98,
+            24577
+          ],
+          "field": "LX/0dIe;->A07LX/0dIe;"
+        },
+        {
+          "code_unit_offset": 12,
+          "dex_byte_offset": 4357024,
+          "code_units": [
+            4206,
+            37957,
+            0
+          ],
+          "callee": "Ljava/lang/Object;->toString()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 15,
+          "dex_byte_offset": 4357030,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 16,
+          "dex_byte_offset": 4357032,
+          "code_units": [
+            4209,
+            1599,
+            0
+          ],
+          "callee": "LX/0221;->A0r(Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 19,
+          "dex_byte_offset": 4357038,
+          "code_units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 4357040,
+          "code_units": [
+            113,
+            3819,
+            0
+          ],
+          "callee": "LX/03dR;->A00()LX/03dR;"
+        },
+        {
+          "code_unit_offset": 23,
+          "dex_byte_offset": 4357046,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 4357048,
+          "code_units": [
+            532,
+            8498,
+            5918
+          ]
+        },
+        {
+          "code_unit_offset": 27,
+          "dex_byte_offset": 4357054,
+          "code_units": [
+            8302,
+            4474,
+            32
+          ],
+          "callee": "LX/04e4;->markerStart(I)V"
+        },
+        {
+          "code_unit_offset": 30,
+          "dex_byte_offset": 4357060,
+          "code_units": [
+            113,
+            3819,
+            0
+          ],
+          "callee": "LX/03dR;->A00()LX/03dR;"
+        },
+        {
+          "code_unit_offset": 33,
+          "dex_byte_offset": 4357066,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 4357068,
+          "code_units": [
+            26,
+            34745
+          ],
+          "string": "location"
+        },
+        {
+          "code_unit_offset": 36,
+          "dex_byte_offset": 4357072,
+          "code_units": [
+            16494,
+            4465,
+            24609
+          ],
+          "callee": "LX/04e4;->markerAnnotate(ILjava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 39,
+          "dex_byte_offset": 4357078,
+          "code_units": [
+            26,
+            26344
+          ],
+          "string": "analytics_module"
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 4357082,
+          "code_units": [
+            16494,
+            4465,
+            12321
+          ],
+          "callee": "LX/04e4;->markerAnnotate(ILjava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 44,
+          "dex_byte_offset": 4357088,
+          "code_units": [
+            113,
+            2216,
+            0
+          ],
+          "callee": "LX/0234;->A00()Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 47,
+          "dex_byte_offset": 4357094,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 4357096,
+          "code_units": [
+            16494,
+            4465,
+            28705
+          ],
+          "callee": "LX/04e4;->markerAnnotate(ILjava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "code_unit_offset": 51,
+          "dex_byte_offset": 4357102,
+          "code_units": [
+            354,
+            1091
+          ],
+          "field": "LX/02rm;->A01LX/02rr;"
+        },
+        {
+          "code_unit_offset": 53,
+          "dex_byte_offset": 4357106,
+          "code_units": [
+            98,
+            24655
+          ],
+          "field": "LX/0dmv;->A00LX/0dmv;"
+        },
+        {
+          "code_unit_offset": 55,
+          "dex_byte_offset": 4357110,
+          "code_units": [
+            50439
+          ]
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 4357112,
+          "code_units": [
+            12401,
+            1566,
+            3073
+          ],
+          "callee": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+        },
+        {
+          "code_unit_offset": 59,
+          "dex_byte_offset": 4357118,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 4357120,
+          "code_units": [
+            26,
+            39914
+          ],
+          "string": "users/get_recommendation_status_nudge/"
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 4357124,
+          "code_units": [
+            8305,
+            1672,
+            1
+          ],
+          "callee": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;"
+        },
+        {
+          "code_unit_offset": 65,
+          "dex_byte_offset": 4357130,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 4357132,
+          "code_units": [
+            10258
+          ]
+        },
+        {
+          "code_unit_offset": 67,
+          "dex_byte_offset": 4357134,
+          "code_units": [
+            546,
+            5433
+          ]
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 4357138,
+          "code_units": [
+            41735
+          ]
+        },
+        {
+          "code_unit_offset": 70,
+          "dex_byte_offset": 4357140,
+          "code_units": [
+            1910,
+            14001,
+            2
+          ],
+          "callee": "LX/0EoX;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;I)V"
+        },
+        {
+          "code_unit_offset": 73,
+          "dex_byte_offset": 4357146,
+          "code_units": [
+            603,
+            1094
+          ],
+          "field": "LX/02sG;->A00LX/05BI;"
+        },
+        {
+          "code_unit_offset": 75,
+          "dex_byte_offset": 4357150,
+          "code_units": [
+            4209,
+            3150,
+            0
+          ],
+          "callee": "LX/02uh;->A03(LX/0oke;)V"
+        },
+        {
+          "code_unit_offset": 78,
+          "dex_byte_offset": 4357156,
+          "code_units": [
+            14
+          ]
+        }
+      ],
+      "method_index": 20962,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0LDK;->A01(LX/0LDK;Ljava/lang/Integer;Ljava/lang/String;I)V": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0LDK;->A01(LX/0LDK;Ljava/lang/Integer;Ljava/lang/String;I)V",
+      "code_item_byte_offset": 4395816,
+      "instructions": [
+        {
+          "code_unit_offset": 0,
+          "dex_byte_offset": 4395832,
+          "code_units": [
+            788,
+            32528,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 3,
+          "dex_byte_offset": 4395838,
+          "code_units": [
+            16468,
+            17922
+          ],
+          "field": "LX/0LDK;->A08Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 5,
+          "dex_byte_offset": 4395842,
+          "code_units": [
+            4209,
+            986,
+            0
+          ],
+          "callee": "LX/01ox;->A01(LX/05Dd;)LX/0yb5;"
+        },
+        {
+          "code_unit_offset": 8,
+          "dex_byte_offset": 4395848,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 9,
+          "dex_byte_offset": 4395850,
+          "code_units": [
+            24,
+            6217,
+            8,
+            1379,
+            129
+          ]
+        },
+        {
+          "code_unit_offset": 14,
+          "dex_byte_offset": 4395860,
+          "code_units": [
+            12401,
+            69,
+            258
+          ],
+          "callee": "LX/000H;->A0o(Ljava/lang/Object;J)Z"
+        },
+        {
+          "code_unit_offset": 17,
+          "dex_byte_offset": 4395866,
+          "code_units": [
+            10
+          ]
+        },
+        {
+          "code_unit_offset": 18,
+          "dex_byte_offset": 4395868,
+          "code_units": [
+            56,
+            21
+          ]
+        },
+        {
+          "code_unit_offset": 20,
+          "dex_byte_offset": 4395872,
+          "code_units": [
+            538,
+            17
+          ],
+          "string": " "
+        },
+        {
+          "code_unit_offset": 22,
+          "dex_byte_offset": 4395876,
+          "code_units": [
+            16468,
+            17916
+          ],
+          "field": "LX/0LDK;->A02Landroidx/fragment/app/FragmentActivity;"
+        },
+        {
+          "code_unit_offset": 24,
+          "dex_byte_offset": 4395880,
+          "code_units": [
+            4206,
+            32503,
+            0
+          ],
+          "callee": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "code_unit_offset": 27,
+          "dex_byte_offset": 4395886,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 28,
+          "dex_byte_offset": 4395888,
+          "code_units": [
+            20,
+            32502,
+            32531
+          ]
+        },
+        {
+          "code_unit_offset": 31,
+          "dex_byte_offset": 4395894,
+          "code_units": [
+            8302,
+            32619,
+            1
+          ],
+          "callee": "Landroid/content/res/Resources;->getString(I)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 34,
+          "dex_byte_offset": 4395900,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 35,
+          "dex_byte_offset": 4395902,
+          "code_units": [
+            12401,
+            13,
+            38
+          ],
+          "callee": "LX/0003;->A0a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "code_unit_offset": 38,
+          "dex_byte_offset": 4395908,
+          "code_units": [
+            1548
+          ]
+        },
+        {
+          "code_unit_offset": 39,
+          "dex_byte_offset": 4395910,
+          "code_units": [
+            16468,
+            17916
+          ],
+          "field": "LX/0LDK;->A02Landroidx/fragment/app/FragmentActivity;"
+        },
+        {
+          "code_unit_offset": 41,
+          "dex_byte_offset": 4395914,
+          "code_units": [
+            4209,
+            1174,
+            0
+          ],
+          "callee": "LX/020p;->A0U(Landroid/app/Activity;)LX/0IIp;"
+        },
+        {
+          "code_unit_offset": 44,
+          "dex_byte_offset": 4395920,
+          "code_units": [
+            268
+          ]
+        },
+        {
+          "code_unit_offset": 45,
+          "dex_byte_offset": 4395922,
+          "code_units": [
+            8302,
+            18614,
+            113
+          ],
+          "callee": "LX/0IIp;->A0A(I)V"
+        },
+        {
+          "code_unit_offset": 48,
+          "dex_byte_offset": 4395928,
+          "code_units": [
+            8302,
+            18644,
+            97
+          ],
+          "callee": "LX/0IIp;->A0m(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "code_unit_offset": 51,
+          "dex_byte_offset": 4395934,
+          "code_units": [
+            19,
+            58
+          ],
+          "integer": 58
+        },
+        {
+          "code_unit_offset": 53,
+          "dex_byte_offset": 4395938,
+          "code_units": [
+            8305,
+            22002,
+            4
+          ],
+          "callee": "LX/0LJq;->A00(Ljava/lang/Object;I)LX/0LJq;"
+        },
+        {
+          "code_unit_offset": 56,
+          "dex_byte_offset": 4395944,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 57,
+          "dex_byte_offset": 4395946,
+          "code_units": [
+            16494,
+            18626,
+            13569
+          ],
+          "callee": "LX/0IIp;->A0P(Landroid/content/DialogInterface$OnClickListener;Ljava/lang/Integer;I)V"
+        },
+        {
+          "code_unit_offset": 60,
+          "dex_byte_offset": 4395952,
+          "code_units": [
+            19,
+            59
+          ],
+          "integer": 59
+        },
+        {
+          "code_unit_offset": 62,
+          "dex_byte_offset": 4395956,
+          "code_units": [
+            8305,
+            22002,
+            4
+          ],
+          "callee": "LX/0LJq;->A00(Ljava/lang/Object;I)LX/0LJq;"
+        },
+        {
+          "code_unit_offset": 65,
+          "dex_byte_offset": 4395962,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 66,
+          "dex_byte_offset": 4395964,
+          "code_units": [
+            8305,
+            1721,
+            16
+          ],
+          "callee": "LX/0224;->A1C(Landroid/content/DialogInterface$OnClickListener;LX/0IIp;)V"
+        },
+        {
+          "code_unit_offset": 69,
+          "dex_byte_offset": 4395970,
+          "code_units": [
+            14
+          ]
+        }
+      ],
+      "method_index": 21327,
+      "instruction_scope": "complete-method"
+    },
+    "LX/0LMw;->onClick(Landroid/view/View;)V": {
+      "dex": "classes9.dex",
+      "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b",
+      "method": "LX/0LMw;->onClick(Landroid/view/View;)V",
+      "code_item_byte_offset": 5447192,
+      "instructions": [
+        {
+          "code_unit_offset": 855,
+          "dex_byte_offset": 5448918,
+          "code_units": [
+            1122,
+            33
+          ],
+          "field": "LX/0009;->A0YLjava/lang/Integer;"
+        },
+        {
+          "code_unit_offset": 857,
+          "dex_byte_offset": 5448922,
+          "code_units": [
+            866,
+            1091
+          ],
+          "field": "LX/02rm;->A01LX/02rr;"
+        },
+        {
+          "code_unit_offset": 859,
+          "dex_byte_offset": 5448926,
+          "code_units": [
+            21076,
+            17922
+          ],
+          "field": "LX/0LDK;->A08Lcom/instagram/common/session/UserSession;"
+        },
+        {
+          "code_unit_offset": 861,
+          "dex_byte_offset": 5448930,
+          "code_units": [
+            98,
+            10250
+          ],
+          "field": "LX/0Ew3;->A00LX/0Ew3;"
+        },
+        {
+          "code_unit_offset": 863,
+          "dex_byte_offset": 5448934,
+          "code_units": [
+            12401,
+            1566,
+            515
+          ],
+          "callee": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;"
+        },
+        {
+          "code_unit_offset": 866,
+          "dex_byte_offset": 5448940,
+          "code_units": [
+            524
+          ]
+        },
+        {
+          "code_unit_offset": 867,
+          "dex_byte_offset": 5448942,
+          "code_units": [
+            26,
+            28503
+          ],
+          "string": "business/account/get_meta_verified_for_business_info/"
+        },
+        {
+          "code_unit_offset": 869,
+          "dex_byte_offset": 5448946,
+          "code_units": [
+            8305,
+            1672,
+            2
+          ],
+          "callee": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;"
+        },
+        {
+          "code_unit_offset": 872,
+          "dex_byte_offset": 5448952,
+          "code_units": [
+            780
+          ]
+        },
+        {
+          "code_unit_offset": 873,
+          "dex_byte_offset": 5448954,
+          "code_units": [
+            34,
+            5422
+          ]
+        },
+        {
+          "code_unit_offset": 875,
+          "dex_byte_offset": 5448958,
+          "code_units": [
+            22128,
+            13949,
+            29776
+          ],
+          "callee": "LX/0Enc;-><init>(LX/0LDK;Ljava/lang/Integer;II)V"
+        },
+        {
+          "code_unit_offset": 878,
+          "dex_byte_offset": 5448964,
+          "code_units": [
+            12379,
+            1094
+          ],
+          "field": "LX/02sG;->A00LX/05BI;"
+        },
+        {
+          "code_unit_offset": 880,
+          "dex_byte_offset": 5448968,
+          "code_units": [
+            21076,
+            17917
+          ],
+          "field": "LX/0LDK;->A03LX/05B6;"
+        },
+        {
+          "code_unit_offset": 882,
+          "dex_byte_offset": 5448972,
+          "code_units": [
+            4206,
+            33285,
+            2
+          ],
+          "callee": "Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;"
+        },
+        {
+          "code_unit_offset": 885,
+          "dex_byte_offset": 5448978,
+          "code_units": [
+            12
+          ]
+        },
+        {
+          "code_unit_offset": 886,
+          "dex_byte_offset": 5448980,
+          "code_units": [
+            56,
+            5
+          ]
+        },
+        {
+          "code_unit_offset": 888,
+          "dex_byte_offset": 5448984,
+          "code_units": [
+            8305,
+            1824,
+            50
+          ],
+          "callee": "LX/0225;->A1F(Landroidx/fragment/app/Fragment;LX/0oke;)V"
+        },
+        {
+          "code_unit_offset": 891,
+          "dex_byte_offset": 5448990,
+          "code_units": [
+            20,
+            5307,
+            13675
+          ]
+        },
+        {
+          "code_unit_offset": 894,
+          "dex_byte_offset": 5448996,
+          "code_units": [
+            41,
+            64694
+          ]
+        }
+      ],
+      "method_index": 22201,
+      "instruction_scope": "reviewed-request-block-only",
+      "code_unit_ranges": [
+        {
+          "start": 855,
+          "end_exclusive": 895
+        }
+      ]
+    }
+  },
+  "literal_keys": [
+    {
+      "value": "copresence_disabled",
+      "proof": {
+        "dex": "classes9.dex",
+        "method": "LX/020R;->A00(I)Ljava/lang/String;",
+        "method_index": 1139,
+        "code_item_byte_offset": 2337720,
+        "input_index": 178,
+        "switch_code_units": [
+          43,
+          4086,
+          0
+        ],
+        "payload_byte_offset": 2345908,
+        "payload_header_code_units": [
+          256,
+          1360,
+          0,
+          0
+        ],
+        "entry_byte_offset": 2346628,
+        "entry_code_units": [
+          3549,
+          0
+        ],
+        "target_code_unit_offset": 3549,
+        "literal_byte_offset": 2344834,
+        "literal_code_units": [
+          26,
+          29731
+        ],
+        "string_index": 29731,
+        "return_code_unit": 17,
+        "dex_sha256": "37824d89b3678e4938bd2067c73c723313a62b4891283f0be0d628ff5e435b7b"
+      }
+    }
+  ],
+  "shared_finalization_evidence": "shared-contracts.json",
+  "limitations": [
+    "Client construction does not establish exhaustive server behavior or requiredness.",
+    "Shared optional device configuration and authenticated transport context may affect requests.",
+    "Callback side effects are inspected as context; the direct HTTP probe executes no client callback, Bloks request or confirmation action.",
+    "Only the identified request block of the large shared onClick method is included."
+  ]
+}

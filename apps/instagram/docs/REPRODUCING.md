@@ -7,7 +7,7 @@ This guide starts with a Git checkout and your own APK inputs. It does not requi
 | Task | Tools |
 | --- | --- |
 | Browse Swagger or run the manual proxy | Node.js 20.11 or later; no npm install needed |
-| Rebuild extraction/OpenAPI, run analysis tests | Python 3.10+, Git, Node.js 20.11+, npm |
+| Rebuild extraction/OpenAPI, run analysis tests | Python 3.11+, Git, Node.js 20.11+, npm |
 | Copy installed APKs from your own phone | Android SDK Platform Tools (`adb`) |
 | Decompile and inspect methods | Full JDK 17+ including `javac`, REA 6.5.0, headless JADX MCP 0.7.1 |
 | Optional local browser login/API testing | Google Chrome plus the optional Playwright npm dependency |
@@ -71,7 +71,7 @@ python3 scripts/reproduce.py --apk-dir apks --output runs/reference
 
 Allow roughly 1 GB of free disk space per reference-sized run, plus the optional decompiler heap. The output directory must not already exist. The script copies the inputs and source into an isolated workspace, inventories/indexes APKs, extracts lexical candidates, traces method/path configuration, combines matching reference traces, and builds and validates OpenAPI JSON/YAML. It makes no account/API requests. It records input hashes, mapping-profile hash, relevant tooling hashes, Python/Node versions, decoder errors and output hashes in `run-manifest.json`.
 
-On the original 13-APK snapshot, the expected landmarks are 1,178,767 DEX strings; 23 standard DEX files; 807,462 decoded methods; 826 configuration observations; 676 bulk method/path pairs; and 679 documented operations across 1,456 paths after the three individually traced operations are included. A different split set may change inventory totals even when the base matches. Do not use these counts as pass criteria for another version.
+On the original 13-APK snapshot, the expected landmarks are 1,178,767 DEX strings; 23 standard DEX files; 807,462 decoded methods; 1,222 configuration observations; 716 bulk method/path pairs; and 718 documented operations across 1,456 paths after normalization and individually traced operations are included. A different split set may change inventory totals even when the base matches. Do not use these counts as pass criteria for another version.
 
 ### Start with a different Instagram version
 
@@ -85,19 +85,30 @@ Follow [PORTING.md](PORTING.md) to validate a new profile. Then run another new 
 
 ## 4. Understand the command sequence
 
-The wrapper runs these stages inside the new workspace:
+For the exact reference APK, the wrapper runs these stages inside the new workspace.
+Other validated profiles omit `--reviewed-contracts` and the pinned contract traces:
 
 ```sh
 python3 inventory.py
 python3 index_strings.py
 python3 api/extraction/extract.py
-python3 api/bulk-trace/extract.py --apk apks/base.apk --profile api/bulk-trace/profiles/run-profile.json
+python3 api/bulk-trace/extract.py --apk apks/base.apk --profile api/bulk-trace/profiles/run-profile.json --reviewed-contracts
 python3 api/make-operations.py
+python3 api/bulk-trace/trace-request-fields.py
+python3 api/bulk-trace/trace-response-contracts.py
+python3 api/bulk-trace/trace-shared-contracts.py
+python3 api/bulk-trace/trace-comment-keywords.py --endpoint comment
+python3 api/bulk-trace/trace-comment-keywords.py --endpoint post
+python3 api/bulk-trace/trace-read-repairs.py
+python3 api/bulk-trace/trace-remaining-reads.py
+python3 api/bulk-trace/trace-reviewed-read-evidence.py
 node api/build.mjs
 node api/validate.mjs
 ```
 
-`bulk-trace/extract.py` is skipped for route-only runs. `make-operations.py` adds three manually traced reference operations and is used **only** for the original digest; do not run it against an unrelated APK. New profiles initially contribute only their newly traced bulk operations. Both inventory/index scripts fail before writing anything when no APK inputs exist.
+`--reviewed-contracts` adds pinned helper summaries, literal-switch proofs and
+symbolic route templates. Formatting argument values are never exported.
+`bulk-trace/extract.py` is skipped for route-only runs. `make-operations.py` adds focused reference operations and is used **only** for the original digest; do not run it against an unrelated APK. New profiles initially contribute only their newly traced bulk operations. Both inventory/index scripts fail before writing anything when no APK inputs exist.
 
 | Output in the run directory | Meaning |
 | --- | --- |

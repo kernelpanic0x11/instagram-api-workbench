@@ -7,14 +7,23 @@ import re
 import struct
 import zipfile
 from pathlib import Path
-from extract import Dex, DEFAULT_PROFILE, FINALIZERS, OBJECT_STRING_HELPER, PARAMETER_SETTERS, load_profile, sig
+from extract import Dex, DEFAULT_PROFILE, FINALIZERS, OBJECT_STRING_HELPER, PARAMETER_SETTERS, PARAMETER_HELPERS, load_profile, sig
 
 DIRECTORY = Path(__file__).resolve().parent
 SELECTORS = {
     ('LX/04x6;', '<init>', '(LX/05Dd;)V'), ('LX/04x6;', 'A02', '()LX/02uC;'),
     ('LX/04x5;', 'A0K', '()LX/02sG;'),
     ('LX/03ao;', 'A00', '(Z)LX/0Plr;'), ('LX/03ao;', 'A01', '(Ljava/lang/String;)Ljava/lang/String;'),
+    ('LX/03ao;', 'A02', '(Ljava/lang/String;Z)Ljava/lang/String;'),
     ('LX/03ao;', 'A05', '(Ljava/lang/String;Ljava/lang/String;)V'),
+    ('LX/01Af;', 'A00', '()LX/01xD;'), ('LX/01Af;', 'A02', '(Ljava/lang/Integer;)V'),
+    ('LX/03gQ;', '<clinit>', '()V'), ('LX/03gQ;', '<init>', '(LX/0Plr;)V'),
+    ('LX/03gQ;', 'A00', '()V'), ('LX/03gQ;', 'BnT', '()LX/03be;'),
+    ('LX/03gQ;', 'Bnm', '()LX/03be;'), ('LX/03gQ;', 'GYu', '()Ljava/io/InputStream;'),
+    ('LX/0Sie;', 'A02', '(LX/0CqC;Lcom/instagram/clips/audio/model/AudioPageAssetModel;Ljava/lang/String;IZ)Ljava/util/HashMap;'),
+    ('LX/000H;', 'A0U', '(Ljava/util/AbstractMap;)Ljava/util/Iterator;'),
+    ('LX/0020;', 'A0e', '()Ljava/util/HashMap;'),
+    ('LX/0586;', 'A1N', '(LX/04x6;Ljava/util/Iterator;)V'),
     ('LX/03gP;', '<init>', '(Ljava/util/List;Z)V'),
     ('LX/02sL;', 'A00', '(Ljava/util/List;)Ljava/lang/String;'),
     ('LX/01k4;', 'A00', '(LX/03ao;Ljava/util/Map;Ljava/util/Set;)Ljava/lang/String;'),
@@ -25,7 +34,7 @@ SELECTORS = {
     ('LX/02sE;', 'call', '()Ljava/lang/Object;'),
     ('LX/041Z;', 'A00', '(LX/01Jp;LX/05Dd;LX/0Ddm;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;'),
     ('LX/0Kbr;', 'unsafeParseFromJson', '(LX/04s3;)Ljava/lang/Object;'),
-} | {OBJECT_STRING_HELPER} | set(FINALIZERS) | {('LX/04x6;', name, descriptor) for name, (descriptor, _) in PARAMETER_SETTERS.items()}
+} | {OBJECT_STRING_HELPER} | set(PARAMETER_HELPERS) | {('LX/0242;', name, descriptor) for name,descriptor in [('<clinit>','()V'),('A04','()Ljava/lang/String;'),('A05','(III)Ljava/lang/String;')]} | set(FINALIZERS) | {('LX/04x6;', name, descriptor) for name, (descriptor, _) in PARAMETER_SETTERS.items()}
 
 
 def arguments(dex, instruction):
@@ -122,6 +131,16 @@ def collect(apk):
             'encoding': {'get': 'The shared finalizer serializes the active parameter collection into the URL query.',
                          'post': 'Non-streaming parameters use UTF-8 application/x-www-form-urlencoded; a streaming parameter selects the multipart path.',
                          'scope': 'Shared client path. Per-operation applicability requires a receiver trace through finalization.'},
+            'cache_configuration': {'key_format': 'A0C is formatted by LX/03ao.A02 with removal disabled. It does not remove query/body parameters.',
+                                    'policy': 'A09 selects cache policy. A00 and A01 pass to the downstream request metadata after the HTTP request is constructed.',
+                                    'encoding': 'These exact assignments leave parameter encoding unchanged; caller values are not exported.',
+                                    'dispatch': 'Cache policy, key and session must be consistent. The finalizer can throw for invalid combinations; an explicit timeout is valid only for the timeout-based cache policy.',
+                                    'scope': 'Encoding evidence does not prove these checks pass or that a network request is sent.'},
+            'body_compression': {'condition': 'A0Y is true and the POST encoder produced a request body.',
+                                 'content_encoding': 'gzip', 'content_type': 'Preserved from the inner body encoder.',
+                                 'implementation': 'LX/03gQ copies the inner input stream through GZIPOutputStream and exposes Content-Encoding: gzip.',
+                                 'get': 'The GET URL-query branch does not apply the body wrapper.',
+                                 'scope': 'Recorded per operation only when the caller flag is known. This is separate from signing-envelope selection.'},
             'signing': {'condition': 'LX/04x6;->A0U is true at finalization', 'field': 'signed_body',
                         'prefix': 'SIGNATURE.', 'payload': 'The parameter collection and separate value map pass through LX/01k4;->A00. An exclusion set can leave parameters outside the envelope.',
                         'cryptography': 'This observed branch prepends a literal placeholder; it does not calculate a cryptographic signature. Other integrity/authentication mechanisms are not ruled out.'},

@@ -20,7 +20,7 @@ Each app owns its tooling, dependencies, documentation, evidence, and local anal
 | --- | --- | --- |
 | Browse the API catalog | [Open the hosted Swagger catalog](https://ig.beehivewebstudio.com/swagger.html) | A browser; no account or installation |
 | Run the Instagram workbench locally | Follow the commands below | Git and Node.js 20.11+ |
-| Analyze my own APK | [APK reproduction guide](apps/instagram/docs/REPRODUCING.md) and [version porting guide](apps/instagram/docs/PORTING.md) | Python 3.10+, Node.js/npm, your own APKs; additional tools for device acquisition or decompilation |
+| Analyze my own APK | [APK reproduction guide](apps/instagram/docs/REPRODUCING.md) and [version porting guide](apps/instagram/docs/PORTING.md) | Python 3.11+, Node.js/npm, your own APKs; additional tools for device acquisition or decompilation |
 
 See the [multi-app research notes](docs/DEEP_ANALYSIS.md) for findings, tool requirements and current limits. Discord's Hermes results remain provisional because of the decoder compatibility warning. APKs are not distributed; reproducing analysis requires your own matching inputs.
 
@@ -63,6 +63,10 @@ The [Instagram guide](apps/instagram/README.md) covers manual sessions, extracti
 | An API request fails | Review authentication, app version, request context, and operation evidence. A recovered route may require unsupported headers, signing, permissions, or challenge completion. |
 
 The [REA web application](web/README.md) lives in `web/`: an AstroWind interface, Cognito-backed service, isolated analysis worker, and AWS templates. Its setup and verification status are documented separately from the app-specific research workbenches.
+
+## Device traffic research
+
+[Phone Home](tools/phone-home/README.md) is an optional standalone capture companion for an authorized phone, including Raspberry Pi capture hosts. It complements the API catalog with packet and limited proxy metadata; it is not integrated into the API server. See [Instagram observations and visibility limits](apps/instagram/docs/PHONE-HOME.md).
 
 ## Contribute or get help
 

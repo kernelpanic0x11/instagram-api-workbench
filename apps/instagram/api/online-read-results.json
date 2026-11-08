@@ -513,6 +513,75 @@
       },
       "instagramStatus": "ok",
       "outcome": "observed-success"
+    },
+    {
+      "path": "/accounts/get_presence_disabled/",
+      "method": "get",
+      "queryKeys": [
+        "signed_body"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:31:19.843243+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "copresence_disabled": "boolean",
+        "disabled": "boolean",
+        "status": "string",
+        "thread_presence_disabled": "boolean"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/users/get_recommendation_status_nudge/",
+      "method": "get",
+      "queryKeys": [
+        "signed_body"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:31:22.263402+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "show_recommendation_status_nudge": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/business/account/get_meta_verified_for_business_info/",
+      "method": "get",
+      "queryKeys": [
+        "signed_body"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:31:24.672142+00:00",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "transport": "mobile-http2-worker",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "has_active_meta_verfied_application": "boolean",
+        "is_eligible_for_mv4b_rollback_grace_period": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
     }
   ]
 }

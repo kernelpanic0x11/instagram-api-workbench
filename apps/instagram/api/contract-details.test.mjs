@@ -41,6 +41,23 @@ test('multiple observed envelopes remain alternatives and invalid evidence is re
   assert.throws(() => applyRequestTransports({'/example/': {get: operation()}}, [invalid], normalize), /Invalid transport/);
 });
 
+test('gzip describes compression of form bytes without pretending the editor compresses them', () => {
+  const op = operation(), compressed = transport('POST', 'signed');
+  compressed.variants[0].content_encoding = 'gzip';
+  compressed.variants[0].client_policy_overrides = [{purpose: 'cache-key-format', evidence: {}}];
+  applyRequestTransports({'/example/': {post: op}}, [compressed, transport('POST', 'plain')], normalize);
+  assert.deepEqual(op.requestBody['x-client-content-encodings'], ['gzip', 'identity']);
+  assert.match(op.description, /before compression/);
+  assert.match(op.description, /do not automatically compress/);
+  assert.match(op.description, /dispatch eligibility remain unverified/);
+  assert.equal(op.parameters?.some(parameter => parameter.name === 'Content-Encoding') ?? false, false);
+  for (const [method, encoding] of [['GET', 'gzip'], ['POST', 'unknown']]) {
+    const invalid = transport(method, 'plain');
+    invalid.variants[0].content_encoding = encoding;
+    assert.throws(() => applyRequestTransports({'/example/': {[method.toLowerCase()]: operation()}}, [invalid], normalize), /Invalid transport/);
+  }
+});
+
 test('message rules distinguish client-required item fields from server-required fields', () => {
   const common = {'x-parser-method': 'LX/01pP;->unsafeParseFromJson', properties: {message: {}, _messages: {}}};
   const components = {schemas: {Common: common}};

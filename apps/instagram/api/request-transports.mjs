@@ -14,8 +14,12 @@ export function applyRequestTransports(paths, entries, normalize) {
     grouped.get(operation).variants.push(...entry.variants);
   }
   for (const [operation, {method, variants}] of grouped) {
-    if (!variants.length || !['get', 'post'].includes(method) || variants.some(variant => variant.status !== 'client-finalization-traced' || !['plain', 'signed'].includes(variant.envelope) || variant.parameter_location !== (method === 'get' ? 'query' : 'form-body'))) throw new Error('Invalid transport evidence');
+    if (!variants.length || !['get', 'post'].includes(method) || variants.some(variant => variant.status !== 'client-finalization-traced' || !['plain', 'signed'].includes(variant.envelope) || variant.parameter_location !== (method === 'get' ? 'query' : 'form-body') || variant.content_encoding !== undefined && (variant.content_encoding !== 'gzip' || method !== 'post'))) throw new Error('Invalid transport evidence');
     operation['x-request-transport'] = variants;
+    if (variants.some(variant => variant.root_path_override === true)) operation.description += '\n\n**Client URL routing:** a reviewed variant enables a root-relative path rather than the default API prefix. Inspect root_path_override and its evidence; the proxy does not automatically reproduce every client base-path policy.';
+    const gzip = variants.some(variant => variant.content_encoding === 'gzip');
+    if (gzip) operation.description += '\n\n**Client body compression:** a reviewed POST variant gzip-compresses the encoded form body and sends Content-Encoding: gzip. The signed_body envelope, when present, is constructed before compression. Swagger and the local proxy do not automatically compress the form editor payload; setting a header alone does not reproduce this variant.';
+    if (variants.some(variant => variant.client_policy_overrides?.length)) operation.description += '\n\n**Client cache policy:** reviewed cache-key, policy, or duration assignments preserve parameter encoding. Cache consistency checks and dispatch eligibility remain unverified; a finalized encoding trace does not prove the request was sent.';
     const fields = operation['x-recovered-request-fields'] ?? [];
     const signed = variants.some(variant => variant.envelope === 'signed');
     const plain = variants.some(variant => variant.envelope === 'plain');
@@ -34,6 +38,10 @@ export function applyRequestTransports(paths, entries, normalize) {
         description: 'Client-finalization-traced UTF-8 form encoding. This is a partial client construction, not a complete server contract. Requiredness and unobserved fields remain unknown. For a signed envelope, place logical fields inside the signed_body JSON payload. Distinct plain/signed variants reflect separate observed constructions.',
         'x-contract-scope': 'client-construction',
         content: {'application/x-www-form-urlencoded': {schema: schemas.length === 1 ? schemas[0] : {anyOf: schemas}}}};
+    }
+    if (gzip && operation.requestBody) {
+      operation.requestBody['x-client-content-encodings'] = [...new Set(variants.map(variant => variant.content_encoding ?? 'identity'))];
+      operation.requestBody.description += ' Recorded gzip variants additionally compress these form bytes; the editor does not perform that compression.';
     }
     operation.description += '\n\n**Client encoding traced through finalization:** ' + [...new Set(variants.map(variant => variant.parameter_location + ' / ' + variant.envelope))].join('; ') + '. Requiredness remains unverified on the server. Traces are bounded to the recorded construction paths.';
   }

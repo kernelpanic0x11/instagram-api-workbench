@@ -52,12 +52,20 @@ class ReproductionTests(unittest.TestCase):
   self.assertEqual(r.returncode,0,r.stderr);body=(output/'acquisition.json').read_text();manifest=json.loads(body);self.assertEqual(len(manifest['files']),2);self.assertTrue(all(f['remote_sha256_verified']for f in manifest['files']));self.assertNotIn('fixture-device',body);self.assertNotIn('/fixture/install',body)
  def test_route_only_pipeline_is_isolated_and_does_not_invent_methods(self):
   if not (ROOT/'api/node_modules/yaml').exists():self.skipTest('Install api build dependencies to run the integrated pipeline check')
+  # Include a real-looking live artifact in the archive fixture. Its reference
+  # digest and success must never reach this unrelated offline reproduction.
+  relative='api/context-read-repair-results.json';live=self.copy/relative
+  live.write_text(json.dumps({'source_apk_sha256':'4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b','checks':[{'path':'/users/example/','method':'get','outcome':'observed-success','httpStatus':200,'instagramStatus':'ok'}]}))
+  export_path=self.copy/'PUBLIC_EXPORT.json';export=json.loads(export_path.read_text())
+  export['files']=[entry for entry in export['files']if entry['path']!=relative]+[{'path':relative,'sha256':hashlib.sha256(live.read_bytes()).hexdigest(),'bytes':live.stat().st_size}]
+  export_path.write_text(json.dumps(export))
   # Minimal parser fixture: one DEX string, no methods/classes; not an installable APK.
   inputs=Path(self.directory.name)/'inputs';inputs.mkdir();route=b'users/example/';dex=bytearray(116+1+len(route)+1);dex[:8]=b'dex\n035\0';struct.pack_into('<II',dex,56,1,112);struct.pack_into('<I',dex,112,116);dex[116:]=bytes([len(route)])+route+b'\0'
   with zipfile.ZipFile(inputs/'base.apk','w')as z:z.writestr('classes.dex',dex)
   output=Path(self.directory.name)/'route-only'
   r=self.run_script('scripts/reproduce.py','--apk-dir',str(inputs),'--output',str(output),'--routes-only','--package','example.fixture','--version','fixture');self.assertEqual(r.returncode,0,r.stdout+r.stderr)
   manifest=json.loads((output/'run-manifest.json').read_text());spec=json.loads((output/'api/openapi.json').read_text())
+  self.assertFalse((output/relative).exists());self.assertEqual(spec['x-coverage']['liveSuccessObservations'],0)
   self.assertEqual(manifest['operations'],0);self.assertEqual(manifest['paths'],1);self.assertFalse(manifest['reference_manual_traces_included']);self.assertEqual(spec['x-source']['sha256'],hashlib.sha256((inputs/'base.apk').read_bytes()).hexdigest());self.assertEqual(spec['info']['version'],'fixture');self.assertEqual(spec['components']['schemas'],{});self.assertFalse((output/'visibility').exists())
   hosted=Path(self.directory.name)/'hosted-fixture';r=subprocess.run(['node','api/build-hosted.mjs',str(hosted)],cwd=output,capture_output=True,text=True);self.assertEqual(r.returncode,0,r.stderr);self.assertIn('0 traced operations',(hosted/'hosted.mjs').read_text());self.assertNotIn('679 traced operations',(hosted/'hosted.mjs').read_text());r=subprocess.run(['node','--check',str(hosted/'hosted.mjs')],capture_output=True,text=True);self.assertEqual(r.returncode,0,r.stderr)
   again=self.run_script('scripts/reproduce.py','--apk-dir',str(inputs),'--output',str(output),'--routes-only');self.assertNotEqual(again.returncode,0);self.assertIn('Nothing overwritten',again.stderr)

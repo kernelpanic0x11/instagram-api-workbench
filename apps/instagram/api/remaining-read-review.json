@@ -24,10 +24,19 @@
         "LX/0o8B;->A08(J)V"
       ],
       "disposition": "needs-context",
-      "finding": "Caller combines phone_id with an Android-context-derived value and an encoded key through 0o8B.A01. Saved desktop auth does not establish that Android context. No fabricated device identifiers.",
+      "finding": "0R73.A00(0,9,0x19) decodes device_id. 05Ee.A03 returns the installation GUID; 0o8B.A01 separately obtains the unique phone ID from 02df.A04(02dl.A1n). A bounded GET may reuse the existing authenticated SDK profile's UUID and phone_id, corresponding to X-IG-Device-ID and X-IG-Family-Device-ID. Do not substitute the android-prefixed Android ID or generate missing identifiers. Availability of both existing identifiers remains a runtime precondition; the contact-upload callback is not executed.",
       "fields": {
-        "phone_id": "Session/device-derived String; additional encoded device key unresolved."
-      }
+        "device_id": "Existing installation GUID: saved SDK uuids.uuid / authenticated X-IG-Device-ID. Not uuids.android_device_id. Required for this reviewed bounded request; server requiredness unproven.",
+        "phone_id": "Existing unique phone ID: saved SDK uuids.phone_id / authenticated X-IG-Family-Device-ID. Fail closed if unavailable; do not generate a replacement."
+      },
+      "evidenceRefs": [
+        "LX/0o8B;->A01(LX/04x5;LX/05Dd;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;",
+        "LX/0R73;-><clinit>()V",
+        "LX/0R73;->A00(III)Ljava/lang/String;",
+        "LX/05Ee;->A03(Landroid/content/Context;)Ljava/lang/String;",
+        "LX/05Ed;->A01(Ljava/io/File;Ljava/io/File;)Ljava/lang/String;",
+        "LX/02df;->A04(LX/02dl;)Ljava/lang/String;"
+      ]
     },
     {
       "path": "/api/v1/text_feed/ig_bottom_sheet_info/",
@@ -72,9 +81,9 @@
         "LX/0FkF;->A02()LX/00fh;"
       ],
       "disposition": "corrected-read",
-      "finding": "0BWF.A05 copies 0ECb.A05 into 0FkF.A01. 0ECb.onCreate explicitly falls back to unknown for absent entry point. Test that actual client fallback.",
+      "finding": "The original correction used fallback entry_point unknown. 0ECb.onCreate also recognizes pro_dash, copied by 0BWF.A05 to 0FkF.A01 and then entry_point. The follow-up context plan tests this dashboard construction.",
       "fields": {
-        "entry_point": "Nonnull caller String; reviewed fallback unknown."
+        "entry_point": "Client entry-point String: recognized pro_dash dashboard value or unknown fallback; server requiredness unknown."
       },
       "correctedQuery": {
         "entry_point": "unknown"
@@ -123,9 +132,10 @@
         "LX/0BYX;->A0k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
       ],
       "disposition": "needs-context",
-      "finding": "Caller sends media_id derived from a specific media context and another helper-derived key. No scoped branded-content media context available; no arbitrary media selected.",
+      "finding": "LX/0BYX;->A0k(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; constructs this GET in classes12.dex, code item byte offset 2414648: route at PC94, decoded username key at PC98, and media_id key at PC119. LX/0367;->A01()Ljava/lang/String; calls A02(III)Ljava/lang/String; with (31, 8, 49); the class initializer's eight bytes at index31 decode to username. LX/0JLG;->onCreate(Landroid/os/Bundle;)V supplies A04 from the username bundle argument and A06 from ARGUMENT_MEDIA_ID. Both belong to the selected branded-content media context. No verified pending-tag context is available, so no arbitrary media or username is substituted.",
       "fields": {
-        "media_id": "Media context ID, split on underscore."
+        "media_id": "Selected branded-content media context from 0JLG.A06, split on underscore and taking the first component; 0BYX.A0k PC119 names the field.",
+        "username": "Username associated with that media context from 0JLG.A04; 0BYX.A0k PC98 calls 0367.A01, whose byte-array decoder resolves this exact key. A verified own username alone does not establish the required media context."
       }
     },
     {
@@ -201,19 +211,20 @@
         "Lcom/instagram/shopping/repository/taggingfeed/ShoppingTaggingFeedRepository;->A00(LX/0VYi;Lcom/instagram/shopping/repository/taggingfeed/ShoppingTaggingFeedRepository;Ljava/lang/String;LX/0Pmx;ZZ)Ljava/lang/Object;"
       ],
       "disposition": "needs-context",
-      "finding": "Request depends on usage enum, prior_module, waterfall_id, serialized client_state and contextual source/product data. No coherent tagging-feed context available; no fabricated state.",
+      "finding": "Recovered an initial read construction: 0C5K.G6h selects story_sticker with eleven empty client-state lists; 0aCY.A01 sets an empty waterfall_id and a new session_id via UUID helper 0123.A0s. NewsfeedYouComposeFragment's 0BSU case 8 supplies newsfeed_you when no insights context exists, through 0BwH, 0C5K and 0465.A0r. The factory leaves prefilled query/source/product fields null. Repository.A03 starts with an empty search; A00 uses the null initial query and omits query_text through A0F. A bounded GET may use these exact initial defaults plus the current local timezone offset in seconds. It fetches suggestions only; do not execute product-tagging or navigation callbacks. Server eligibility, requiredness and acceptance remain unproven.",
       "fields": {
-        "query_text": "Caller tagging-feed state; server requiredness unknown.",
-        "usage": "Caller tagging-feed state; server requiredness unknown.",
-        "prior_module": "Caller tagging-feed state; server requiredness unknown.",
-        "waterfall_id": "Caller tagging-feed state; server requiredness unknown.",
-        "timezone_offset": "Caller tagging-feed state; server requiredness unknown.",
-        "client_state": "Caller tagging-feed state; server requiredness unknown.",
-        "shopnet_recommended_product_ids": "Caller tagging-feed state; server requiredness unknown.",
-        "source_type": "Caller tagging-feed state; server requiredness unknown.",
-        "source_id": "Caller tagging-feed state; server requiredness unknown.",
-        "page_type": "Caller tagging-feed state; server requiredness unknown.",
-        "product_id": "Caller tagging-feed state; server requiredness unknown."
+        "query_text": "Omitted in reviewed initial fetch: 0aCY.A01 leaves arguments.A0J null; 0o9z copies it to repository.A07; A03 starts an empty search and A00 uses the null prefill.",
+        "usage": "0bfb.A0C wire literal story_sticker, selected by 0C5K.G6h.",
+        "prior_module": "newsfeed_you from 0BSU case 8's no-insights branch, passed through the actual newsfeed controller construction.",
+        "waterfall_id": "Client factory 0aCY.A01 literal empty String.",
+        "session_id": "06Rj.A00 decodes session_id; 0aCY.A01 creates a fresh UUID via 0123.A0s. Generate in memory, do not substitute an authenticated device ID.",
+        "timezone_offset": "03ld.A00 returns the current local timezone offset in seconds: TimeZone.getDefault().getOffset(currentTimeMillis()) / 1000.",
+        "client_state": "JSON object serialized by 0RNE.A00; reviewed initial state has exactly eleven empty arrays: tagged_products, tagged_collections, tagged_merchants, branded_content_partners, tagged_users, suggested_products, mentioned_merchants, recently_added_products, suggested_products_v2, recently_viewed_urls, recently_viewed_collection_snapshots.",
+        "shopnet_recommended_product_ids": "Null in reviewed factory; omitted by A0F.",
+        "source_type": "Null in reviewed factory; omitted by A0F.",
+        "source_id": "Null in reviewed factory; omitted by A0F.",
+        "page_type": "Null in reviewed factory; omitted by A0F.",
+        "product_id": "Null in reviewed factory; omitted by A0F."
       }
     },
     {
@@ -273,10 +284,10 @@
         "LX/0P4W;->A0S()V"
       ],
       "disposition": "corrected-read",
-      "finding": "020R.A00(0x44d) resolves include_social_context; caller sends 1 and a target_id. Test own verified account only, with no chained IDs.",
+      "finding": "020R.A00(0x44d) resolves include_social_context (literal 1). 0P4W.A0S sends a nonempty target_id and comma-joined chained_ids when supplied. The follow-up plan combines the verified own-account target with real suggestions from recent_followers.suggested_users.suggestions[].user; the empty-target variant remains separately recorded.",
       "fields": {
-        "target_id": "Nonempty account ID; own-account test only.",
-        "chained_ids": "Optional joined IDs; omitted.",
+        "target_id": "Nonempty target account ID when supplied; the tested construction uses the verified own account.",
+        "chained_ids": "Comma-joined suggested user IDs from existing recommendation context, resolved only in memory.",
         "include_social_context": "Client literal 1."
       },
       "correctedQuery": {
@@ -293,9 +304,9 @@
         "Lcom/instagram/fanclub/api/FanClubApi;->A01(LX/042S;Ljava/lang/String;LX/0Pmx;)Ljava/lang/Object;"
       ],
       "disposition": "needs-context",
-      "finding": "FanClubApi.A01 supplies fan_club_id from selected club context. A generic Instagram account ID is not substituted for a verified fan-club ID.",
+      "finding": "FanClubPromoAndWelcomeVideoApi.A01 obtains the current user's FanClubInfoDict through User.A0r, then C9p, before calling FanClubApi.A01 with that club ID. A bounded retry may use an existing nonempty user.fan_club_info.fan_club_id from the current-user read. If absent, skip; do not substitute the account ID, create a club, enroll, or execute the separate GraphQL fallback.",
       "fields": {
-        "fan_club_id": "Selected fan-club context ID."
+        "fan_club_id": "Existing own-account user.fan_club_info.fan_club_id. User.A0r selects fan_club_info; ImmutablePandoFanClubInfoDict.C9p selects hash 0x58dd7818 (fan_club_id). Resolve only in memory and skip if absent."
       }
     },
     {
@@ -305,9 +316,9 @@
         "Lcom/instagram/fanclub/api/FanClubApi;->A01(LX/042S;Ljava/lang/String;LX/0Pmx;)Ljava/lang/Object;"
       ],
       "disposition": "needs-context",
-      "finding": "FanClubApi.A01 supplies fan_club_id from selected club context. A generic Instagram account ID is not substituted for a verified fan-club ID.",
+      "finding": "FanClubPromoAndWelcomeVideoApi.A01 obtains the current user's FanClubInfoDict through User.A0r, then C9p, before calling FanClubApi.A01 with that club ID. A bounded retry may use an existing nonempty user.fan_club_info.fan_club_id from the current-user read. If absent, skip; do not substitute the account ID, create a club, enroll, or execute the separate GraphQL fallback.",
       "fields": {
-        "fan_club_id": "Selected fan-club context ID."
+        "fan_club_id": "Existing own-account user.fan_club_info.fan_club_id. User.A0r selects fan_club_info; ImmutablePandoFanClubInfoDict.C9p selects hash 0x58dd7818 (fan_club_id). Resolve only in memory and skip if absent."
       }
     },
     {
@@ -335,7 +346,9 @@
       ],
       "disposition": "no-supported-correction",
       "finding": "Reviewed search branch supplies query and optional max_id. Existing initial-page software query already matches; HTML 404 has no supported correction. No donations or pagination.",
-      "fields": {}
+      "fields": {
+        "query": "Caller search String through 0JfB.B4p; optional max_id omitted for the initial page."
+      }
     },
     {
       "path": "/metaverse_bridges/get_horizon_world_pages_stories/",
@@ -393,10 +406,10 @@
         "LX/0hdt;->A01(LX/06Sv;Ljava/lang/String;Z)V"
       ],
       "disposition": "needs-context",
-      "finding": "Recovered product mapper and should_disable_exposures key. browse_session_id still flows from 0ZwX.A06 via 0hdt.A09; its creation is not established. No fabricated browse-session context.",
+      "finding": "0F4v.Co4 invokes 0D2x case 12, which reads music_browse_session_id with an empty-string fallback. The value passes unchanged through 0F4w.A0Q, bundle browse_session_full_id, 0YQE.onCreate, 0ZwX.A06, and 0hdt.A09. The request asserts nonnull but does not reject empty. A bounded retry may use that exact empty fallback, product story_camera_music_overlay_post_capture (06Sv.A0F), empty search_session_id, and should_disable_exposures=true. Server acceptance and requiredness are unproven; no invented session UUID. The alternative 0SEz.A00 launcher generates a fresh browse UUID (classes12 PC52 byte4363876) and selects MUSIC_FIRST (PC56 byte4363884), passing both to0F4v.A00 atPC120 byte4364012. Its product is music_first and it omits should_disable_exposures. This coherent caller is recorded in the follow-up plan.",
       "fields": {
-        "product": "0JTl.A00 surface mapper.",
-        "browse_session_id": "Nonnull caller context String.",
+        "product": "0JTl.A00 maps 06Sv.A0F to story_camera_music_overlay_post_capture.",
+        "browse_session_id": "Client bundle default is empty String; flows unchanged to AQE and finalization. Nonnull does not establish server requiredness.",
         "search_session_id": "Client empty String.",
         "should_disable_exposures": "0000.A00(0x38e); true only on two enum branches."
       }
@@ -435,7 +448,9 @@
       ],
       "disposition": "no-supported-correction",
       "finding": "Both branches use query through 0465.A0N. Existing initial-page software query already matches this GET search. No membership changes or unchanged retry.",
-      "fields": {}
+      "fields": {
+        "query": "Caller search String supplied by both 0eAW.B4l branches through 0465.A0N."
+      }
     },
     {
       "path": "/stories/prompt_stickers/trending_prompts/",
@@ -518,9 +533,9 @@
         "LX/01FH;->A01(LX/05BI;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V"
       ],
       "disposition": "needs-context",
-      "finding": "0018.A00(0x7f) resolves user_fbid. Instagram user ID is not a verified Facebook ID and is not substituted. Only lookup construction reviewed; no call initiation.",
+      "finding": "LX/01FH;->A01(LX/05BI;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)V in classes4.dex, code item byte offset 4821592, decodes user_fbid through 0018.A00(0x7f) at PC23 and writes it at PC27. LX/01FG;->GeO(LX/0FaK;LX/04Qu;Ljava/util/List;Ljava/util/Map;LX/0ymj;LX/0ymj;Lkotlin/jvm/functions/Function3;Z)LX/0FdQ; obtains User.A7Y() at PC241 and passes the decimal ID to 01FH.A01 at PC267. Lcom/instagram/user/model/User;->A7Y()Ljava/lang/String; reads 02A5.A7O, falling back to LiveTree key hash -0x27f57c32. LX/05wo;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object; maps interop_messaging_user_fbid to this same A7O field at PC14372. A previously successful accounts/current_user GET can supply this exact field in memory after its returned user ID matches the verified own account. Availability is not established by static tracing; missing context remains blocked. Only lookup construction is reviewed; no call initiation.",
       "fields": {
-        "user_fbid": "Caller Facebook user ID, unavailable."
+        "user_fbid": "Existing positive user.interop_messaging_user_fbid from an ownership-verified accounts/current_user response. The APK source is User.A7Y -> 02A5.A7O, not Instagram pk/id or fbid_v2; none of those other identifiers may be substituted."
       }
     }
   ]

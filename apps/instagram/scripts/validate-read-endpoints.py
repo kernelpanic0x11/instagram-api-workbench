@@ -24,6 +24,12 @@ KINDS = {str: 'string', bool: 'boolean', int: 'integer', float: 'number',
 STOP_MESSAGES = {'challenge_required', 'checkpoint_required', 'login_required', 'feedback_required', 'Please wait a few minutes before you try again.'}
 
 
+class RejectRedirects(urllib.request.HTTPRedirectHandler):
+    """Keep the local authorization token on the fixed loopback origin."""
+    def redirect_request(self, request, file, code, message, headers, new_url):
+        raise OSError('Redirect rejected')
+
+
 def shape_metadata(value, allowed_fields):
     """Never save response strings, numeric values, arbitrary keys or array items."""
     result = {'bodyKind': KINDS[type(value)], 'fieldTypes': {}, 'arrayItemTypes': {}}
@@ -66,7 +72,22 @@ def load_plan(plan, spec, allow_recovered_query_fields=False):
         if target['method'] != 'get' or path in seen or 'get' not in spec['paths'].get(path, {}) or not re.fullmatch(r'/[A-Za-z0-9_/-]+/', path):
             raise ValueError('Invalid reviewed GET target')
         if allow_recovered_query_fields:
-            recovered = {field['name'] for field in spec['paths'][path]['get'].get('x-recovered-request-fields', [])}
+            operation = spec['paths'][path]['get']
+            recovered = {field['name'] for field in operation.get('x-recovered-request-fields', [])}
+            # The only envelope accepted by this finite read plan contains no
+            # fields or credentials. Its exact query placement and signing
+            # branch must have been traced to client finalization.
+            if 'signed_body' in target['query']:
+                signed_query = any(variant.get('status') == 'client-finalization-traced' and
+                                   variant.get('parameter_location') == 'query' and
+                                   variant.get('envelope') == 'signed'
+                                   for variant in operation.get('x-request-transport', []))
+                reviewed = operation.get('x-reviewed-read-plan') or {}
+                if not signed_query or target['query'] != {'signed_body': 'SIGNATURE.{}'} or \
+                        reviewed.get('status') != 'static-input-reviewed' or reviewed.get('path') != path or \
+                        reviewed.get('method') != 'get' or reviewed.get('query') != target['query']:
+                    raise ValueError('Only an empty, traced signed query envelope is reviewed')
+                recovered.add('signed_body')
             if not set(target['query']) <= recovered or any(not isinstance(value,str) or len(value)>80 or '\r' in value or '\n' in value for value in target['query'].values()):
                 raise ValueError('Query differs from recovered parameter keys or reviewed value bounds')
         elif target['query'] != ({'edit': 'true'} if path == '/accounts/current_user/' else {}):
@@ -117,8 +138,9 @@ def main():
         raise SystemExit('Previous batch stopped for account/transport protection; no automatic resume.')
     if results['source_apk_sha256'] != spec['x-source']['sha256']:
         raise SystemExit('Input provenance changed; no requests made.')
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), RejectRedirects())
     try:
-        with urllib.request.urlopen(ORIGIN + '/api/status', timeout=5) as response:
+        with opener.open(ORIGIN + '/api/status', timeout=5) as response:
             state = json.load(response)
     except (OSError, ValueError):
         raise SystemExit('Local session unavailable; no requests made.') from None
@@ -148,7 +170,7 @@ def main():
         try:
             request = urllib.request.Request(url, headers={'X-Local-Token': state['token']})
             try:
-                response = urllib.request.urlopen(request, timeout=35)
+                response = opener.open(request, timeout=35)
             except urllib.error.HTTPError as error:
                 response = error
             with response:

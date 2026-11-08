@@ -1,0 +1,867 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Finite corrected read variants from the frozen remaining-read review. Private session context and response values stay in memory. No login, callbacks, mutations, pagination or automatic retries.",
+  "checks": [
+    {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "method": "get",
+      "queryKeys": [
+        "entry_point"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:56:31.492299+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "sections": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "sections": []
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success",
+      "correction": "professional-dashboard-entry"
+    },
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "method": "get",
+      "queryKeys": [
+        "caller",
+        "count",
+        "enable_infinite_pagination",
+        "top_participants_media_count"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:56:33.880317+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "correction": "trending-loader-page-size"
+    },
+    {
+      "path": "/address_book/get_ccu_setting/",
+      "method": "get",
+      "queryKeys": [
+        "device_id",
+        "phone_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:58:50.748490+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success",
+      "correction": "saved-installation-context"
+    },
+    {
+      "path": "/music/recent_searches/",
+      "method": "get",
+      "queryKeys": [
+        "browse_session_id",
+        "product",
+        "search_session_id",
+        "should_disable_exposures"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:58:53.115777+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "outcome": "not-verified",
+      "correction": "music-overlay-empty-browse-fallback"
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "method": "get",
+      "queryKeys": [
+        "chained_ids",
+        "include_social_context"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:58:55.502390+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "missing"
+      ],
+      "outcome": "not-verified",
+      "correction": "existing-suggested-users"
+    },
+    {
+      "path": "/video_call/user/",
+      "method": "get",
+      "queryKeys": [
+        "user_fbid"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:59:19.483628+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "correction": "own-interop-user"
+    },
+    {
+      "path": "/discover/fetch_suggestion_details/",
+      "method": "get",
+      "queryKeys": [
+        "chained_ids",
+        "include_social_context",
+        "target_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:00:14.741835+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "follow_ranking_token": "string",
+        "items": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "items": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success",
+      "correction": "own-target-with-existing-suggestions"
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:00:17.275176+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "correction": "own-username-profile-link-search"
+    },
+    {
+      "path": "/music/recent_searches/",
+      "method": "get",
+      "queryKeys": [
+        "browse_session_id",
+        "product",
+        "search_session_id",
+        "should_disable_exposures"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:03:00.567346+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "again",
+        "something",
+        "try",
+        "wrong"
+      ],
+      "outcome": "not-verified",
+      "correction": "music-server-diagnostic"
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:03:02.959602+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "correction": "profile-link-server-diagnostic"
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "method": "get",
+      "queryKeys": [
+        "client_state",
+        "prior_module",
+        "session_id",
+        "timezone_offset",
+        "usage",
+        "waterfall_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:05:06.598157+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "correction": "initial-story-sticker-tagging-feed"
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "method": "get",
+      "queryKeys": [
+        "client_state",
+        "prior_module",
+        "session_id",
+        "timezone_offset",
+        "usage",
+        "waterfall_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:06:13.143657+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "correction": "tagging-auth-diagnostic"
+    },
+    {
+      "path": "/fan_club/promotional_video/",
+      "method": "get",
+      "queryKeys": [
+        "fan_club_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:33:15.086349+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success",
+      "correction": "selected-club-promotion"
+    },
+    {
+      "path": "/fan_club/welcome_video/",
+      "method": "get",
+      "queryKeys": [
+        "fan_club_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:33:17.901702+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success",
+      "correction": "selected-club-welcome"
+    },
+    {
+      "path": "/music/recent_searches/",
+      "method": "get",
+      "queryKeys": [
+        "browse_session_id",
+        "product",
+        "search_session_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:39:56.668698+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "alacorn_session_id": "string",
+        "items": "array",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "items": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success",
+      "correction": "music-first-generated-browse"
+    },
+    {
+      "path": "/fbsearch/profile_link_search/",
+      "method": "get",
+      "queryKeys": [
+        "count",
+        "q"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:42:21.638062+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-profile-link-search"
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "method": "get",
+      "queryKeys": [
+        "client_state",
+        "prior_module",
+        "session_id",
+        "timezone_offset",
+        "usage",
+        "waterfall_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:42:24.349930+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-profile-tagging-feed"
+    },
+    {
+      "path": "/business/account/get_profile_media/",
+      "method": "get",
+      "queryKeys": [
+        "session_id",
+        "user_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:42:26.885579+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-profile-media"
+    },
+    {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "method": "get",
+      "queryKeys": [
+        "product_types"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:42:29.272452+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-product-violations"
+    },
+    {
+      "path": "/users/featureduserinfo/",
+      "method": "get",
+      "queryKeys": [
+        "username"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:42:31.666238+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-featured-user"
+    },
+    {
+      "path": "/archive/live/live_archive_settings/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:45:10.749685+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-1"
+    },
+    {
+      "path": "/archive/reel/friends_with_history/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:45:13.137911+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-2"
+    },
+    {
+      "path": "/business/eligibility/get_appeals_data/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:45:15.536350+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-3"
+    },
+    {
+      "path": "/commerce/inbox/prototype/setting/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:45:17.931959+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-4"
+    },
+    {
+      "path": "/commerce/purchase_protection/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:45:20.377935+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-5"
+    },
+    {
+      "path": "/users/get_birthday_connections_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:46:48.645139+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-11"
+    },
+    {
+      "path": "/direct_v2/icebreakers/get_msgr_ibs/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:47:58.178049+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-6"
+    },
+    {
+      "path": "/fundraiser/story_charities_search/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:48:00.623765+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-7"
+    },
+    {
+      "path": "/metaverse_bridges/get_meta_horizon_page_stories/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:48:03.071187+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-8"
+    },
+    {
+      "path": "/stories/end_of_year/get_end_of_year_info/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:48:05.603501+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-9"
+    },
+    {
+      "path": "/stories/hallpass/hallpass_add_people_search/",
+      "method": "get",
+      "queryKeys": [
+        "query"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:48:08.142602+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "appProfile": "pinned-apk-451.0.0.53.80",
+      "correction": "pinned-read-10"
+    },
+    {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "method": "get",
+      "queryKeys": [
+        "client_state",
+        "prior_module",
+        "query_text",
+        "session_id",
+        "timezone_offset",
+        "usage",
+        "waterfall_id"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:48:26.376080+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 400,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "message": "string",
+        "status": "string"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "fail",
+      "failureCategory": "unclassified",
+      "messageSignals": [
+        "not"
+      ],
+      "outcome": "not-verified",
+      "correction": "tagging-search-query"
+    },
+    {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "method": "get",
+      "queryKeys": [
+        "caller",
+        "count",
+        "enable_infinite_pagination",
+        "top_participants_media_count"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:48:28.843664+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 404,
+      "contentType": "text/html",
+      "bodyKind": "non-json",
+      "outcome": "not-verified",
+      "correction": "story-netego-prompts"
+    }
+  ],
+  "contextChecks": [
+    {
+      "path": "/friendships/recent_followers/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:58:48.364324+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "suggested_users": "object",
+        "truncate_users_at_index": "integer",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/accounts/current_user/",
+      "method": "get",
+      "queryKeys": [
+        "edit"
+      ],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T15:59:16.942495+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "user": "object"
+      },
+      "arrayItemTypes": {},
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/friendships/recent_followers/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:00:11.592828+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "status": "string",
+        "suggested_users": "object",
+        "truncate_users_at_index": "integer",
+        "users": "array"
+      },
+      "arrayItemTypes": {
+        "users": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    },
+    {
+      "path": "/api/v1/fan_club/followed_creators_to_susbcribe_to/",
+      "method": "get",
+      "queryKeys": [],
+      "requestBodySent": false,
+      "checkedAt": "2026-10-24T16:33:12.669370+00:00",
+      "transport": "mobile-http2-worker",
+      "rawResponseSaved": false,
+      "personalValuesSaved": false,
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "bodyKind": "object",
+      "fieldTypes": {
+        "creators": "array",
+        "max_id": "null",
+        "more_available": "boolean",
+        "status": "string"
+      },
+      "arrayItemTypes": {
+        "creators": [
+          "object"
+        ]
+      },
+      "instagramStatus": "ok",
+      "outcome": "observed-success"
+    }
+  ],
+  "skipped": [
+    {
+      "correction": "own-club-promotion",
+      "path": "/fan_club/promotional_video/",
+      "reason": "required-context-unavailable"
+    },
+    {
+      "correction": "own-club-welcome",
+      "path": "/fan_club/welcome_video/",
+      "reason": "required-context-unavailable"
+    }
+  ]
+}

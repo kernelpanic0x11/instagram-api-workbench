@@ -1,0 +1,353 @@
+{
+  "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
+  "scope": "Finite APK-backed read corrections. Context source descriptors are resolved in memory and are never sent literally. A supported construction does not guarantee server acceptance.",
+  "corrections": {
+    "saved-installation-context": {
+      "path": "/address_book/get_ccu_setting/",
+      "query": {
+        "device_id": {
+          "source": "saved-installation-uuid"
+        },
+        "phone_id": {
+          "source": "saved-phone-uuid"
+        }
+      },
+      "evidence": "0o8B.A08 -> 05Ee.A03 installation GUID; 0o8B.A01 -> 02df.A04 unique phone ID. Only the getter runs; no contact-upload callback."
+    },
+    "professional-dashboard-entry": {
+      "path": "/business/account/get_content_inspiration_medias/",
+      "query": {
+        "entry_point": "pro_dash"
+      },
+      "evidence": "0ECb.onCreate PCs126/160 recognizes pro_dash; 0BWF.A05 copies A05 into 0FkF.A01; 0FkF.A02 sends entry_point."
+    },
+    "trending-loader-page-size": {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "query": {
+        "caller": "trending_prompts_surface",
+        "count": "10",
+        "top_participants_media_count": "0",
+        "enable_infinite_pagination": "false"
+      },
+      "evidence": "0ntB.invokeSuspend PC454 supplies count10 to 0er2.A00. The separate stories_netego call uses count3. Server requiredness is unproven."
+    },
+    "existing-suggested-users": {
+      "path": "/discover/fetch_suggestion_details/",
+      "query": {
+        "include_social_context": "1",
+        "chained_ids": {
+          "source": "suggested-user-chain"
+        }
+      },
+      "evidence": "0P4W.onCreate uses empty target fallback; A0S joins supplied chained IDs with commas. 0IvI -> 0Caw -> 0Hj9 -> 02aC parses recent_followers.suggested_users.suggestions[].user."
+    },
+    "own-target-with-existing-suggestions": {
+      "path": "/discover/fetch_suggestion_details/",
+      "query": {
+        "include_social_context": "1",
+        "target_id": {
+          "source": "verified-account-id"
+        },
+        "chained_ids": {
+          "source": "suggested-user-chain"
+        }
+      },
+      "evidence": "0P4W.A0S supports a nonempty target plus chained IDs. Combines the verified own-account target with actual suggestions from its recent_followers response; the empty-target variant reported a missing input."
+    },
+    "own-username-profile-link-search": {
+      "path": "/fbsearch/profile_link_search/",
+      "query": {
+        "q": {
+          "source": "verified-account-username"
+        },
+        "count": "20"
+      },
+      "evidence": "0eAW.B4l forwards its search String unchanged to 0KLc.A00, which supplies count20. Search the verified username rather than the earlier generic software term; no account changes."
+    },
+    "own-club-promotion": {
+      "path": "/fan_club/promotional_video/",
+      "query": {
+        "fan_club_id": {
+          "source": "own-fan-club-id"
+        }
+      },
+      "evidence": "FanClubPromoAndWelcomeVideoApi.A01 reads current User.A0r().C9p(): user.fan_club_info.fan_club_id. No account ID substitution."
+    },
+    "own-club-welcome": {
+      "path": "/fan_club/welcome_video/",
+      "query": {
+        "fan_club_id": {
+          "source": "own-fan-club-id"
+        }
+      },
+      "evidence": "FanClubPromoAndWelcomeVideoApi.A01 reads current User.A0r().C9p(): user.fan_club_info.fan_club_id. No account ID substitution."
+    },
+    "own-interop-user": {
+      "path": "/video_call/user/",
+      "query": {
+        "user_fbid": {
+          "source": "own-interop-user-fbid"
+        }
+      },
+      "evidence": "01FG.GeO passes User.A7Y to 01FH.A01; User.A7Y accesses interop_messaging_user_fbid. Only user lookup; no call initiation."
+    },
+    "music-overlay-empty-browse-fallback": {
+      "path": "/music/recent_searches/",
+      "query": {
+        "product": "story_camera_music_overlay_post_capture",
+        "browse_session_id": "",
+        "search_session_id": "",
+        "should_disable_exposures": "true"
+      },
+      "evidence": "0D2x case12 reads music_browse_session_id with empty fallback; 0F4v -> 0F4w -> 0YQE -> 0ZwX -> 0hdt forwards unchanged. 06Sv.A0F maps to music-overlay product and disables exposures."
+    },
+    "music-server-diagnostic": {
+      "path": "/music/recent_searches/",
+      "query": {
+        "product": "story_camera_music_overlay_post_capture",
+        "browse_session_id": "",
+        "search_session_id": "",
+        "should_disable_exposures": "true"
+      },
+      "evidence": "One bounded repeat to classify the prior failure with an expanded fixed public error vocabulary. No new construction or successful repair is implied. 0D2x case12 reads music_browse_session_id with empty fallback; 0F4v -> 0F4w -> 0YQE -> 0ZwX -> 0hdt forwards unchanged. 06Sv.A0F maps to music-overlay product and disables exposures.",
+      "purpose": "diagnostic-only"
+    },
+    "profile-link-server-diagnostic": {
+      "path": "/fbsearch/profile_link_search/",
+      "query": {
+        "q": {
+          "source": "verified-account-username"
+        },
+        "count": "20"
+      },
+      "evidence": "One bounded repeat to classify the prior failure with an expanded fixed public error vocabulary. No new construction or successful repair is implied. 0eAW.B4l forwards its search String unchanged to 0KLc.A00, which supplies count20. Search the verified username rather than the earlier generic software term; no account changes.",
+      "purpose": "diagnostic-only"
+    },
+    "initial-story-sticker-tagging-feed": {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "query": {
+        "usage": "story_sticker",
+        "prior_module": "newsfeed_you",
+        "waterfall_id": "",
+        "session_id": {
+          "source": "new-request-uuid"
+        },
+        "timezone_offset": {
+          "source": "local-timezone-offset"
+        },
+        "client_state": "{\"tagged_products\":[],\"tagged_collections\":[],\"tagged_merchants\":[],\"branded_content_partners\":[],\"tagged_users\":[],\"suggested_products\":[],\"mentioned_merchants\":[],\"recently_added_products\":[],\"suggested_products_v2\":[],\"recently_viewed_urls\":[],\"recently_viewed_collection_snapshots\":[]}"
+      },
+      "evidence": "0C5K.G6h supplies story_sticker and empty client state from newsfeed_you analytics; 0aCY.A01 supplies empty waterfall and fresh UUID session. Factory initial A0J null plus repository A03 empty query causes query_text omission. Only initial GET is executed, no tagging workflow."
+    },
+    "tagging-auth-diagnostic": {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "query": {
+        "usage": "story_sticker",
+        "prior_module": "newsfeed_you",
+        "waterfall_id": "",
+        "session_id": {
+          "source": "new-request-uuid"
+        },
+        "timezone_offset": {
+          "source": "local-timezone-offset"
+        },
+        "client_state": "{\"tagged_products\":[],\"tagged_collections\":[],\"tagged_merchants\":[],\"branded_content_partners\":[],\"tagged_users\":[],\"suggested_products\":[],\"mentioned_merchants\":[],\"recently_added_products\":[],\"suggested_products_v2\":[],\"recently_viewed_urls\":[],\"recently_viewed_collection_snapshots\":[]}"
+      },
+      "evidence": "One bounded failure diagnostic distinguishes explicit authentication wording from unsupported-operation wording using only a fixed public vocabulary. No repair is implied.",
+      "purpose": "diagnostic-only"
+    },
+    "selected-club-promotion": {
+      "path": "/fan_club/promotional_video/",
+      "query": {
+        "fan_club_id": {
+          "source": "selected-fan-club-id"
+        }
+      },
+      "evidence": "0e1M.unsafeParseFromJson delegates creators items through 0226.A1R to 02aC.A04(User); existing club ID is creators[].fan_club_info.fan_club_id. FanClubApi.A01 receives a club ID, including the selected-club consideration flow. Resolve one actual recommended club only in memory; do not substitute its creator user ID. Selected welcome path: FanClubConsiderationViewModel.A14 -> 0OdB.A02 -> FanClubApi.A01(042S.A06=WELCOME). Selected promotion path: 0DTP.A00 -> 0426.invokeSuspend -> FanClubApi.A01(042S.A05=PROMOTIONAL)."
+    },
+    "selected-club-welcome": {
+      "path": "/fan_club/welcome_video/",
+      "query": {
+        "fan_club_id": {
+          "source": "selected-fan-club-id"
+        }
+      },
+      "evidence": "0e1M.unsafeParseFromJson delegates creators items through 0226.A1R to 02aC.A04(User); existing club ID is creators[].fan_club_info.fan_club_id. FanClubApi.A01 receives a club ID, including the selected-club consideration flow. Resolve one actual recommended club only in memory; do not substitute its creator user ID. Selected welcome path: FanClubConsiderationViewModel.A14 -> 0OdB.A02 -> FanClubApi.A01(042S.A06=WELCOME). Selected promotion path: 0DTP.A00 -> 0426.invokeSuspend -> FanClubApi.A01(042S.A05=PROMOTIONAL)."
+    },
+    "music-first-generated-browse": {
+      "path": "/music/recent_searches/",
+      "query": {
+        "product": "music_first",
+        "browse_session_id": {
+          "source": "new-request-uuid"
+        },
+        "search_session_id": ""
+      },
+      "evidence": "0SEz.A00 generates browse UUID through 0123.A0s and selects 06Sv.A0Q (MUSIC_FIRST, ordinal22), passing both to 0F4v.A00. 0JTl.A00 maps this surface to music_first. The shared bundle chain reaches 0hdt.A01; only A0F/A0X send should_disable_exposures, so omit it here. Exact launcher proof: classes12.dex 0SEz.A00 code item4363756; UUID PC52 byte4363876, MUSIC_FIRST load PC56 byte4363884, factory call PC120 byte4364012."
+    },
+    "pinned-profile-link-search": {
+      "path": "/fbsearch/profile_link_search/",
+      "query": {
+        "q": {
+          "source": "verified-account-username"
+        },
+        "count": "20"
+      },
+      "evidence": "0eAW.B4l forwards its search String unchanged to 0KLc.A00, which supplies count20. Search the verified username rather than the earlier generic software term; no account changes. Retry with pinned APK app_version451.0.0.53.80, version_code385713116 and Bloks hash from04x6.A02 PC1256; retain existing hardware/session identifiers.",
+      "appProfile": "pinned-apk"
+    },
+    "pinned-profile-tagging-feed": {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "query": {
+        "usage": "story_sticker",
+        "prior_module": "newsfeed_you",
+        "waterfall_id": "",
+        "session_id": {
+          "source": "new-request-uuid"
+        },
+        "timezone_offset": {
+          "source": "local-timezone-offset"
+        },
+        "client_state": "{\"tagged_products\":[],\"tagged_collections\":[],\"tagged_merchants\":[],\"branded_content_partners\":[],\"tagged_users\":[],\"suggested_products\":[],\"mentioned_merchants\":[],\"recently_added_products\":[],\"suggested_products_v2\":[],\"recently_viewed_urls\":[],\"recently_viewed_collection_snapshots\":[]}"
+      },
+      "evidence": "0C5K.G6h supplies story_sticker and empty client state from newsfeed_you analytics; 0aCY.A01 supplies empty waterfall and fresh UUID session. Factory initial A0J null plus repository A03 empty query causes query_text omission. Only initial GET is executed, no tagging workflow. Retry with pinned APK app_version451.0.0.53.80, version_code385713116 and Bloks hash from04x6.A02 PC1256; retain existing hardware/session identifiers.",
+      "appProfile": "pinned-apk"
+    },
+    "pinned-profile-media": {
+      "path": "/business/account/get_profile_media/",
+      "query": {
+        "user_id": {
+          "source": "verified-account-id"
+        },
+        "session_id": {
+          "source": "new-request-uuid"
+        }
+      },
+      "appProfile": "pinned-apk",
+      "evidence": "Initial-page caller supplies user_id; refreshed context generates a random UUID using 0123.A0s. 0242.A01 decodes session_id. Test own account only with a new in-memory UUID; no page or next_media_ids. Retry with coherent pinned APK451.0.0.53.80/version385713116/Bloks profile; no new authentication or hardware identifiers."
+    },
+    "pinned-product-violations": {
+      "path": "/business/eligibility/get_product_violations_render_data/",
+      "query": {
+        "product_types": "branded_content"
+      },
+      "appProfile": "pinned-apk",
+      "evidence": "Caller supplies product_types using 02l6.toString. Test reviewed branded_content enum wire value; response is eligibility data, not a change or appeal. Retry with coherent pinned APK451.0.0.53.80/version385713116/Bloks profile; no new authentication or hardware identifiers."
+    },
+    "pinned-featured-user": {
+      "path": "/users/featureduserinfo/",
+      "query": {
+        "username": {
+          "source": "verified-account-username"
+        }
+      },
+      "appProfile": "pinned-apk",
+      "evidence": "0241.A00 decodes username using the reviewed byte-array transform. Test only the username from the existing verified local account; never save it. Retry with coherent pinned APK451.0.0.53.80/version385713116/Bloks profile; no new authentication or hardware identifiers."
+    },
+    "pinned-read-1": {
+      "path": "/archive/live/live_archive_settings/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed caller finalizes without endpoint-specific fields. Existing same-path GET returned HTML 404; no evidence-backed request correction found. No claim of permanent removal."
+    },
+    "pinned-read-2": {
+      "path": "/archive/reel/friends_with_history/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed initial caller finalizes without endpoint-specific fields. Existing HTML 404 provides no supported parameter or path correction."
+    },
+    "pinned-read-3": {
+      "path": "/business/eligibility/get_appeals_data/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found. No appeal submission is attempted."
+    },
+    "pinned-read-4": {
+      "path": "/commerce/inbox/prototype/setting/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Developer-options getter constructs no endpoint-specific parameters. Existing HTML 404; no evidence-backed correction found. Setter paths are not executed."
+    },
+    "pinned-read-5": {
+      "path": "/commerce/purchase_protection/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported request correction found."
+    },
+    "pinned-read-6": {
+      "path": "/direct_v2/icebreakers/get_msgr_ibs/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed GET construction has no endpoint-specific fields. Existing HTML 404; related import/update actions are outside scope and are not run."
+    },
+    "pinned-read-7": {
+      "path": "/fundraiser/story_charities_search/",
+      "query": {
+        "query": "software"
+      },
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed search branch supplies query and optional max_id. Existing initial-page software query already matches; HTML 404 has no supported correction. No donations or pagination."
+    },
+    "pinned-read-8": {
+      "path": "/metaverse_bridges/get_meta_horizon_page_stories/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed branch finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found."
+    },
+    "pinned-read-9": {
+      "path": "/stories/end_of_year/get_end_of_year_info/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Both extracted caller constructions finalize without endpoint-specific fields. Existing HTML 404; no supported correction found. Seasonal availability remains unknown."
+    },
+    "pinned-read-10": {
+      "path": "/stories/hallpass/hallpass_add_people_search/",
+      "query": {
+        "query": "software"
+      },
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Both branches use query through 0465.A0N. Existing initial-page software query already matches this GET search. No membership changes or unchanged retry."
+    },
+    "pinned-read-11": {
+      "path": "/users/get_birthday_connections_info/",
+      "query": {},
+      "appProfile": "pinned-apk",
+      "evidence": "Previously reviewed GET construction retained; retry once with coherent APK451.0.0.53.80/version385713116/Bloks tuple from04x6.A02 PC1256. Reviewed caller finalizes without endpoint-specific fields. Existing HTML 404; no supported correction found. No birthdays or connections changed."
+    },
+    "story-netego-prompts": {
+      "path": "/stories/prompt_stickers/trending_prompts/",
+      "query": {
+        "caller": "stories_netego",
+        "count": "3",
+        "top_participants_media_count": "0",
+        "enable_infinite_pagination": "false"
+      },
+      "evidence": "The separate directly traced stories_netego caller invokes0er2.A00 with count3; the trending loader uses10. Test this bounded alternative surface with no cursor or pagination."
+    },
+    "tagging-search-query": {
+      "path": "/commerce/product_tagging/tagging_feed/",
+      "query": {
+        "usage": "story_sticker",
+        "prior_module": "newsfeed_you",
+        "waterfall_id": "",
+        "session_id": {
+          "source": "new-request-uuid"
+        },
+        "timezone_offset": {
+          "source": "local-timezone-offset"
+        },
+        "client_state": "{\"tagged_products\":[],\"tagged_collections\":[],\"tagged_merchants\":[],\"branded_content_partners\":[],\"tagged_users\":[],\"suggested_products\":[],\"mentioned_merchants\":[],\"recently_added_products\":[],\"suggested_products_v2\":[],\"recently_viewed_urls\":[],\"recently_viewed_collection_snapshots\":[]}",
+        "query_text": "software"
+      },
+      "evidence": "0C5K.G6h supplies story_sticker and empty client state from newsfeed_you analytics; 0aCY.A01 supplies empty waterfall and fresh UUID session. Factory initial A0J null plus repository A03 empty query causes query_text omission. Only initial GET is executed, no tagging workflow. Search-mode alternative: repository.A04 accepts a caller search String, so supply public software query via query_text instead of the initial null query."
+    }
+  },
+  "appProfiles": {
+    "pinned-apk": {
+      "appVersion": "451.0.0.53.80",
+      "versionCode": "385713116",
+      "bloksVersionId": "8f0f09df419d7d5826957c3f070997a65b6e8d025c84d1e91931768e8b59625e",
+      "evidence": "Pinned package manifest version tuple and 04x6.A02 PCs1254-1258; hardware/session identifiers are preserved. Tested in an isolated account-verified connection without login."
+    }
+  }
+}

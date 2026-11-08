@@ -128,9 +128,84 @@ FINALIZERS={
  ('LX/0221;','A0V','(LX/04x5;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;'):'parameter-argument',
  ('LX/0221;','A0U','(LX/04x5;LX/05BI;Ljava/lang/String;Ljava/lang/String;)LX/02sG;'):'callback-parameter',
  ('LX/0224;','A0P','(LX/04x5;Ljava/lang/String;)LX/02sG;'):'route-signed',
+ ('LX/0o8B;','A01','(LX/04x5;LX/05Dd;Ljava/lang/String;Ljava/lang/String;Z)LX/02sG;'):'phone-id-compression',
+ ('LX/0nRB;','A00','(LX/04x5;LX/0nRB;LX/05BI;Ljava/lang/String;Ljava/lang/String;)V'):'boost-dispatch',
 }
 
-def scan(d,mid,code,include_request_fields=False):
+
+# Each entry is independently reviewed in shared-contracts.json. Field tuples
+# identify a caller key argument or a literal injected by the helper; values are
+# deliberately not evaluated or retained. These helpers do not finalize requests.
+PARAMETER_HELPERS = {
+ ('LX/0BY8;','A1T','(LX/04x6;Ljava/lang/String;I)V'):
+  {'fields': [(1,'integer','emitted-when-helper-returns','integer-to-string')]},
+ ('LX/0BY8;','A1S','(LX/04x6;Ljava/lang/String;D)V'):
+  {'fields': [(1,'number','emitted-when-helper-returns','double-to-string')]},
+ ('LX/0465;','A1P','(LX/04x6;Ljava/lang/String;J)V'):
+  {'fields': [(1,'integer','emitted-when-helper-returns','long-to-string')]},
+ ('LX/0586;','A1M','(LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'fields': [(1,'string','omitted-if-null','string-value'),('timezone_offset','integer','emitted-when-helper-returns','long-to-string')]},
+ ('LX/0C87;','A1N','(LX/04x6;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'fields': [(1,'string','omitted-if-null','string-value'),('media_id','string','omitted-if-null','string-value')]},
+ ('LX/0C87;','A1M','(LX/04x6;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'route_argument':1,'fields': [('media_id','string','omitted-if-null','string-value'),('fb_auth_token','string','omitted-if-null','string-value')]},
+ ('LX/021X;','A0R','(LX/04x6;LX/05Dd;Ljava/lang/String;Ljava/lang/String;)LX/02df;'):
+  {'context_argument':1,'fields': [(2,'string','omitted-if-null','string-value')]},
+ ('LX/0226;','A0v','(Landroid/content/Context;LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'receiver_argument':1,'context_argument':0,'fields': [(2,'string','omitted-if-null','string-value'),('guid','string','omitted-if-null','string-value')]},
+ ('LX/0227;','A0v','(Landroid/content/Context;LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'receiver_argument':1,'context_argument':0,'fields': [(2,'string','omitted-if-null','string-value'),('device_id','string','omitted-if-null','string-value'),('guid','string','omitted-if-null','string-value')]},
+ ('LX/0226;','A1K','(LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'fields': [(1,'string','omitted-if-null','string-value'),('waterfall_id','string','omitted-if-null','string-value')]},
+ ('LX/0224;','A1P','(LX/04x6;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'fields': [(1,'string','omitted-if-null','string-value'),('device_id','string','omitted-if-null','string-value')]},
+ ('LX/0222;','A1P','(LX/04x6;Ljava/lang/String;Ljava/lang/String;)V'):
+  {'route_argument':1,'fields': [('thread_id','string','omitted-if-null','string-value')]},
+ ('LX/0221;','A1L','(LX/02dl;LX/04x6;LX/02df;)V'):
+  {'receiver_argument':1,'context_arguments':[0,2],'fields': [('phone_id','string','omitted-if-null','string-value')]},
+ ('LX/0225;','A18','(Landroid/content/Context;LX/04x6;)V'):
+  {'receiver_argument':1,'context_argument':0,'fields': [('device_id','string','omitted-if-null','string-value')]},
+ ('LX/0C9W;','A1Q','(LX/04x6;Ljava/lang/String;)V'):
+  {'context_argument':1,'fields': [('messaging_destinations','string','omitted-if-null-or-blank','string-value')]},
+ ('LX/03oc;','A00','(LX/04x6;Lcom/instagram/common/session/UserSession;Ljava/lang/String;)LX/0Jaf;'):
+  {'receiver_argument':1,'context_arguments':[0,2],'fields': [('user_journey','string','conditional-on-feature-and-serialized-journey','string-value')]},
+ ('LX/0Sie;','A03','(LX/0CqC;LX/04x6;Lcom/instagram/clips/audio/model/AudioPageAssetModel;Ljava/lang/String;)V'):
+  {'receiver_argument':1,'context_arguments':[0,2],'fields': [
+   ('music_canonical_id','string','conditional-on-nonempty-canonical-id','string-value'),
+   ('music_canonical_segment_id','string','conditional-on-canonical-id-and-nonnull-segment','string-value'),
+   ('referrer_media_id','string','conditional-on-audio-type-and-nonnull-referrer','string-value'),
+   ('audio_asset_id','string','conditional-on-audio-type-without-canonical-id','string-value'),
+   ('audio_cluster_id','string','conditional-on-audio-type-without-canonical-id','string-value'),
+   ('original_sound_audio_asset_id','string','conditional-on-original-audio-without-canonical-id','string-value'),
+   ('max_id','string','omitted-if-null','string-value'),
+   ('tab_type','string','conditional-on-nonnull-tab-and-string-result','object-toString-then-string-value')]},
+}
+
+# The complete A02 consumer was reviewed for each field. These change cache
+# configuration, not the HTTP parameter collection, URL prefix or body encoder.
+# Recording the assignment does not prove cache consistency or successful dispatch.
+CACHE_CONFIGURATION_FIELDS = {
+ ('LX/04x6;','A0C','Ljava/lang/String;'):'cache-key-format',
+ ('LX/04x6;','A09','Ljava/lang/Integer;'):'cache-policy',
+ ('LX/04x6;','A00','J'):'cache-timeout',
+ ('LX/04x6;','A01','J'):'downstream-request-metadata',
+}
+
+ROUTE_FORMATTERS = {
+ ('Ljava/lang/String;', 'format', '(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;'): 0,
+ ('Ljava/lang/String;', 'format', '(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;'): 1,
+}
+
+
+def is_route_format_template(value):
+ """Accept a fixed route prefix and only neutral string/integer placeholders."""
+ if not re.fullmatch(r'/?[A-Za-z][A-Za-z0-9_./%$-]*', value) or '/' not in value:
+  return False
+ without_placeholders = re.sub(r'%(?:[1-9][0-9]*\$)?[sd]', '', value)
+ return without_placeholders != value and '%' not in without_placeholders
+
+
+def scan(d,mid,code,include_request_fields=False,literal_decoders=None):
  instructions,bounds=d.insns(code);regs={};objs={};pending=None;out=[];block=0
  def evidence(pc,op,**kw):return {'dex':d.name,'caller':sig(d.methods[mid]),'method_index':mid,'code_unit_offset':pc,'dex_byte_offset':code+16+pc*2,'operation':op,**kw}
  def obj(r,pc):
@@ -158,6 +233,11 @@ def scan(d,mid,code,include_request_fields=False):
    'required_status':'unknown','client_presence':presence,'client_serialization':serialization,
    'encoding_status':'request parameter collection; final transport unresolved',
    'evidence':evidence(pc,'request-parameter-setter',callee=sig(method),receiver_register=receiver,key_origin=key[2])})
+ def cache_configuration(o,field,pc):
+  # Keep provenance only; cache keys and caller values can contain account data.
+  o.setdefault('client_policy_overrides',[]).append({
+   'purpose':CACHE_CONFIGURATION_FIELDS[field],
+   'evidence':evidence(pc,'reviewed-cache-configuration-assignment',field=sig(field))})
  for pc,op,lo,w,off in instructions:
   if pc in bounds:regs={};objs={};pending=None;block=pc
   prev=pending;pending=None
@@ -169,6 +249,9 @@ def scan(d,mid,code,include_request_fields=False):
   elif lo in [0x0a,0x0b,0x0c]:regs[a]=prev
   elif lo in [0x1a,0x1b]:
    idx=d.u16(off+2) if lo==0x1a else d.u32(off+2);regs[a]=('string',d.strings[idx],evidence(pc,'const-string',string_index=idx,value=d.strings[idx]))
+  elif include_request_fields and lo in (0x13,0x14):
+   number=struct.unpack_from('<h' if lo==0x13 else '<i',d.d,off+2)[0]
+   regs[a]=('integer',number)
   elif lo==0x62:
    f=d.fields[d.u16(off+2)];regs[a]=('http_method',ENUM[f],evidence(pc,'sget-object',field=sig(f),http_method=ENUM[f])) if f in ENUM else ('static_field',f,evidence(pc,'sget-object',field=sig(f))) if include_request_fields else None
   elif lo==0x22:regs[a]=('obj',f'{block}:{pc}:new')
@@ -176,7 +259,7 @@ def scan(d,mid,code,include_request_fields=False):
    src=a&15;dst=a>>4;f=d.fields[d.u16(off+2)];v=regs.get(src)
    if f==ROUTE_FIELD:
     o=obj(dst,pc)
-    if v and v[0]=='string':put(o,'path',v[1],evidence(pc,'iput-object-route',field=sig(f),receiver_register=dst,string_origin=v[2]))
+    if v and v[0] in ('string','route_template'):put(o,'path',v[1],evidence(pc,'iput-object-route',field=sig(f),receiver_register=dst,string_origin=v[2]))
     else:o.pop('path',None)
    elif f==METHOD_FIELD:
     o=obj(dst,pc)
@@ -184,7 +267,9 @@ def scan(d,mid,code,include_request_fields=False):
     else:o.pop('method',None)
    else:
     receiver=regs.get(dst)
-    if include_request_fields and receiver and receiver[0]=='obj' and receiver[1] in objs:objs[receiver[1]]['transport_safe']=False
+    if include_request_fields and receiver and receiver[0]=='obj' and receiver[1] in objs:
+     if f in CACHE_CONFIGURATION_FIELDS:cache_configuration(objs[receiver[1]],f,pc)
+     else:objs[receiver[1]]['transport_safe']=False
     if v and v[0]=='obj':objs.pop(v[1],None)
   elif include_request_fields and lo in (0x59,0x5a,0x5c,0x5d,0x5e,0x5f):
    src=a&15;dst=a>>4;field=d.fields[d.u16(off+2)];receiver=regs.get(dst)
@@ -192,13 +277,60 @@ def scan(d,mid,code,include_request_fields=False):
     o=objs[receiver[1]];value=regs.get(src)
     if field==('LX/04x6;','A0U','Z') and value and value[0]=='integer' and value[1] in (0,1):
      o['envelope']='signed' if value[1] else 'plain';o['envelope_evidence']=evidence(pc,'signing-flag-assignment',field=sig(field),enabled=bool(value[1]))
+    elif field==('LX/04x6;','A0N','Z') and value and value[0]=='integer' and value[1] in (0,1):
+     # Reviewed A02 URL-prefix selector: does not change parameter encoding.
+     # False permits other base-path selectors; it does not itself prove /api/v1.
+     o['root_path_override']=bool(value[1])
+     o['root_path_evidence']=evidence(pc,'root-path-flag-assignment',field=sig(field),enabled=bool(value[1]))
+    elif field==('LX/04x6;','A0Y','Z') and value and value[0]=='integer' and value[1] in (0,1):
+     o['gzip_body']=bool(value[1])
+     o['gzip_body_evidence']=evidence(pc,'gzip-body-flag-assignment',field=sig(field),enabled=bool(value[1]))
+    elif field in CACHE_CONFIGURATION_FIELDS:cache_configuration(o,field,pc)
     else:o['transport_safe']=False
   elif lo in range(0x6e,0x73) or lo in range(0x74,0x79):
    m=d.methods[d.u16(off+2)]
    if lo<=0x72:
     n=op>>12;tail=d.u16(off+4);args=[(tail>>(4*k))&15 for k in range(min(n,4))]+([(op>>8)&15] if n==5 else [])
    else:args=list(range(d.u16(off+4),d.u16(off+4)+a))
-   if include_request_fields and m==OBJECT_STRING_HELPER and len(args)==3:
+   if include_request_fields and m in ROUTE_FORMATTERS and lo in (0x71,0x77):
+    # Formatting arguments may call arbitrary toString implementations. Never
+    # retain prior builder facts across that call, even though its template is
+    # known. Only the symbolic template survives; argument values are omitted.
+    objs.clear()
+    template_index=ROUTE_FORMATTERS[m]
+    template=regs.get(args[template_index]) if len(args)>template_index else None
+    if template and template[0]=='string' and is_route_format_template(template[1]):
+     pending=('route_template',template[1],evidence(pc,'symbolic-route-format-template',callee=sig(m),template_origin=template[2],argument_values_retained=False))
+   elif include_request_fields and literal_decoders is not None and m in literal_decoders and len(args)==1:
+    index=regs.get(args[0])
+    decoded=literal_decoders[m].get(index[1]) if index and index[0]=='integer' else None
+    if decoded:
+     pending=('string',decoded['value'],evidence(pc,'reviewed-literal-switch-key',callee=sig(m),decoder=decoded['proof']))
+   elif include_request_fields and m in PARAMETER_HELPERS:
+    helper=PARAMETER_HELPERS[m];receiver_index=helper.get('receiver_argument',0)
+    receiver=regs.get(args[receiver_index]) if len(args)>receiver_index else None
+    # Session/context calls are reviewed, but cannot retain facts for an aliased
+    # tracked builder passed as their input.
+    context_indices=helper.get('context_arguments',[helper['context_argument']] if 'context_argument' in helper else [])
+    for context_index in context_indices:
+     context=regs.get(args[context_index]) if len(args)>context_index else None
+     if context and context[0]=='obj':objs.pop(context[1],None)
+    o=objs.get(receiver[1]) if receiver and receiver[0]=='obj' else None
+    if o is not None:
+     route_index=helper.get('route_argument')
+     if route_index is not None:
+      route=regs.get(args[route_index]) if len(args)>route_index else None
+      if route and route[0] in ('string','route_template'):put(o,'path',route[1],evidence(pc,'reviewed-helper-route-assignment',callee=sig(m),string_origin=route[2]))
+      else:
+       o.pop('path',None);o['observations']=[];o['request_fields']=[];o['transport_safe']=False
+     for key_source,logical,presence,serialization in helper['fields']:
+      key=('string',key_source,evidence(pc,'reviewed-helper-literal-key',callee=sig(m),value=key_source)) if isinstance(key_source,str) else regs.get(args[key_source]) if len(args)>key_source else None
+      if key and key[0]=='string':
+       parameter(o,key,('LX/04x6;','AQE',PARAMETER_SETTERS['AQE'][0]),pc,args[receiver_index])
+       field=o['request_fields'][-1]
+       field.update(logical_type=logical,client_presence=presence,client_serialization=serialization)
+       field['evidence'].update(operation='reviewed-parameter-helper',forwarded_setter=field['evidence']['callee'],callee=sig(m))
+   elif include_request_fields and m==OBJECT_STRING_HELPER and len(args)==3:
     receiver=regs.get(args[0]);value=regs.get(args[1]);key=regs.get(args[2])
     # A tracked builder used as the toString receiver has unknown virtual effects.
     if value and value[0]=='obj':objs.pop(value[1],None)
@@ -216,11 +348,30 @@ def scan(d,mid,code,include_request_fields=False):
       parameter(o,key,m,pc,args[0])
    elif include_request_fields and m in FINALIZERS and args:
     receiver=regs.get(args[0]);o=objs.get(receiver[1]) if receiver and receiver[0]=='obj' else None
+    if FINALIZERS[m] in ('phone-id-compression','boost-dispatch'):
+     # Reviewed helpers call session/callback objects; keep the same alias rule
+     # as ordinary parameter helpers before trusting their builder effects.
+     for index in ([1] if FINALIZERS[m]=='phone-id-compression' else [1,2]):
+      context=regs.get(args[index]) if len(args)>index else None
+      if context and context[0]=='obj':objs.pop(context[1],None)
+     o=objs.get(receiver[1]) if receiver and receiver[0]=='obj' else None
     if o:
      mode=FINALIZERS[m]
+     if mode in ('phone-id-compression','boost-dispatch'):
+      keys=[('phone_id','A0F')] if mode=='phone-id-compression' else [('flow_id','A0F'),('boosted_id','A0F')]
+      for name,setter in keys:
+       key=('string',name,evidence(pc,'reviewed-helper-literal-key',callee=sig(m),value=name))
+       parameter(o,key,('LX/04x6;',setter,PARAMETER_SETTERS[setter][0]),pc,args[0])
+       field=o['request_fields'][-1]
+       field['evidence'].update(operation='reviewed-finalizer-parameter',forwarded_setter=field['evidence']['callee'],callee=sig(m))
+      if mode=='phone-id-compression':
+       flag=regs.get(args[4]) if len(args)>4 else None
+       if flag and flag[0]=='integer' and flag[1] in (0,1):
+        o['gzip_body']=bool(flag[1]);o['gzip_body_evidence']=evidence(pc,'gzip-body-finalizer-helper',callee=sig(m),enabled=bool(flag[1]))
+       else:o['transport_safe']=False
      if mode in ('route','route-signed'):
       route=regs.get(args[1]) if len(args)>1 else None
-      if route and route[0]=='string':put(o,'path',route[1],evidence(pc,'verified-route-finalizer-helper',callee=sig(m)))
+      if route and route[0] in ('string','route_template'):put(o,'path',route[1],evidence(pc,'verified-route-finalizer-helper',callee=sig(m),string_origin=route[2]))
       else:o['transport_safe']=False
      if mode in ('signed','parameter-signed','route-signed'):o['envelope']='signed';o['envelope_evidence']=evidence(pc,'signed-finalizer-helper',callee=sig(m))
      elif mode in ('argument','parameter-argument'):
@@ -228,8 +379,8 @@ def scan(d,mid,code,include_request_fields=False):
       value=regs.get(args[flag_index]) if len(args)>flag_index else None
       o['envelope']='signed' if value and value[0]=='integer' and value[1]==1 else 'plain' if value and value[0]=='integer' and value[1]==0 else None
       o['envelope_evidence']=evidence(pc,'flag-finalizer-helper',callee=sig(m))
-     if mode in ('parameter','parameter-a0f','parameter-signed','parameter-argument','callback-parameter','max-id'):
-      key_index=2 if mode=='callback-parameter' else 1
+     if mode in ('parameter','parameter-a0f','parameter-signed','parameter-argument','callback-parameter','max-id','phone-id-compression'):
+      key_index=2 if mode in ('callback-parameter','phone-id-compression') else 1
       key=('string','max_id',evidence(pc,'reviewed-helper-literal-key',callee=sig(m),value='max_id')) if mode=='max-id' else regs.get(args[key_index]) if len(args)>key_index else None
       if key and key[0]=='string':
        setter='A0F' if mode in ('parameter-a0f','max-id') else 'AQE'
@@ -240,6 +391,15 @@ def scan(d,mid,code,include_request_fields=False):
       transport={'status':'client-finalization-traced','parameter_location':'query' if o['method']=='GET' else 'form-body',
        'envelope':o['envelope'],'content_type':None if o['method']=='GET' else 'application/x-www-form-urlencoded; charset=UTF-8',
        'server_requiredness':'unknown','evidence':[evidence(pc,'request-finalization',callee=sig(m)),o.get('envelope_evidence')]}
+      if 'root_path_override' in o:
+       transport['root_path_override']=o['root_path_override']
+       transport['evidence'].append(o['root_path_evidence'])
+      if o.get('client_policy_overrides'):
+       transport['client_policy_overrides']=o['client_policy_overrides']
+       transport['client_policy_status']='Parameter encoding traced; cache consistency and dispatch eligibility remain unverified.'
+      if 'gzip_body' in o:
+       transport['evidence'].append(o['gzip_body_evidence'])
+       if o['gzip_body'] and o['method']=='POST':transport['content_encoding']='gzip'
       for observation in o.get('observations',[]):observation['request_transport']=transport
      objs.pop(receiver[1],None)
    elif m in HELPERS:
@@ -272,7 +432,7 @@ def scan(d,mid,code,include_request_fields=False):
     o=obj(args[0],pc);put(o,'method',METHOD_HELPERS[m],evidence(pc,'verified-method-helper',callee=sig(m),receiver_register=args[0]))
    elif (m==('LX/04x6;','A0A','(Ljava/lang/String;)V') or m in PATH_HELPERS) and len(args)==2:
     o=obj(args[0],pc);v=regs.get(args[1])
-    if v and v[0]=='string':put(o,'path',v[1],evidence(pc,'verified-path-setter',callee=sig(m),receiver_register=args[0],string_origin=v[2]))
+    if v and v[0] in ('string','route_template'):put(o,'path',v[1],evidence(pc,'verified-path-setter',callee=sig(m),receiver_register=args[0],string_origin=v[2]))
     else:o.pop('path',None)
    elif m==SET_METHOD and len(args)==2:
     o=obj(args[0],pc);v=regs.get(args[1])
@@ -301,13 +461,38 @@ def scan(d,mid,code,include_request_fields=False):
    regs[wide_dest+1]=None
  return out
 
+def scan_method_routes(dex, method_index, code, literal_decoders=None):
+ """Keep method/route proofs from both traces without exporting parameter data.
+
+ The optional reviewed pass can follow helper-injected routes and literal lookup
+ tables. It retains the basic-block/receiver boundaries and never proves dispatch.
+ The baseline stays available for other validated profiles.
+ """
+ observations = scan(dex, method_index, code)
+ if literal_decoders is not None:
+  observations += scan(dex, method_index, code, include_request_fields=True,
+                       literal_decoders=literal_decoders)
+ route_keys = ('path', 'raw_path', 'method', 'confidence', 'evidence',
+               'receiver_identity', 'basic_block_start', 'dispatch_verified')
+ proofs = [{key: record[key] for key in route_keys} for record in observations]
+ return list({json.dumps(proof, sort_keys=True): proof for proof in proofs}.values())
+
+
 def main():
- parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--apk',type=Path,default=ROOT/'apks/base.apk');parser.add_argument('--profile',type=Path,default=DEFAULT_PROFILE);parser.add_argument('--output',type=Path,default=P/'operations.json');args=parser.parse_args()
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--apk',type=Path,default=ROOT/'apks/base.apk');parser.add_argument('--profile',type=Path,default=DEFAULT_PROFILE);parser.add_argument('--output',type=Path,default=P/'operations.json')
+ parser.add_argument('--reviewed-contracts',action='store_true',help='Use the additional reviewed helper and literal-decoder mappings for the pinned reference APK.')
+ args=parser.parse_args()
  if not args.apk.is_file():parser.error('Base APK not found. Supply --apk or acquire your own APKs; see docs/REPRODUCING.md.')
  try:profile=load_profile(args.profile)
  except (ValueError,KeyError,TypeError) as error:parser.error(str(error))
  digest=hashlib.sha256(args.apk.read_bytes()).hexdigest()
  if digest!=profile['apk_sha256']:parser.error('APK does not match the mapping profile. Use route-only extraction or trace a new profile; see docs/PORTING.md. No output written.')
+ literal_decoders=None
+ if args.reviewed_contracts:
+  reference=json.loads(DEFAULT_PROFILE.read_text())
+  if digest!=reference['apk_sha256']:parser.error('Reviewed contract helpers require the pinned reference APK; no output written.')
+  from literal_keys import load_literal_decoders
+  literal_decoders=load_literal_decoders(args.apk,digest)
  stats=collections.Counter();operations=[];errors=[];seen_methods=set();seen_fields=set()
  with zipfile.ZipFile(args.apk) as z:
   for name in z.namelist():
@@ -315,13 +500,15 @@ def main():
    d=Dex(z.read(name),name);stats['dex_files']+=1;seen_methods.update(d.methods);seen_fields.update(d.fields)
    for mid,code in d.codes():
     stats['methods_scanned']+=1
-    try:operations.extend(scan(d,mid,code))
+    try:operations.extend(scan_method_routes(d,mid,code,literal_decoders))
     except Exception as e:errors.append({'dex':name,'method':sig(d.methods[mid]),'error':str(e)})
    print(name,len(operations),flush=True)
  missing_methods=(set(HELPERS)|set(METHOD_HELPERS)|PATH_HELPERS|{SET_METHOD})-seen_methods;missing_fields=(set(ENUM)|{ROUTE_FIELD,METHOD_FIELD})-seen_fields
  if missing_methods or missing_fields:parser.error('Profile signatures absent from this APK. Recheck the profile; no output written. Missing methods: '+str(len(missing_methods))+'; fields: '+str(len(missing_fields)))
  unique={json.dumps(x,sort_keys=True):x for x in operations};operations=list(unique.values());stats['operation_observations']=len(operations);stats['unique_method_path_pairs']=len({(x['method'],x['path']) for x in operations});stats['errors']=len(errors)
- out={'source_apk_sha256':digest,'profile':profile['name'],'operations':operations,'stats':dict(stats),'errors':errors,'limitations':['Only same-basic-block constant strings, verified helpers and method setters; resets at every branch destination, branch fallthrough, return and handler move-exception.','Register copies preserve object identity. Register overwrites kill values. Calls receiving tracked objects invalidate configuration unless explicitly recognized.','Observations prove route and HTTP method configured on the same receiver at a point in code; later overrides, actual dispatch, server existence, authorization and success are not proven.','No string concatenation, formatting, field-loaded paths, dynamic server payloads or interprocedural recovery. No default HTTP methods assumed.','HTTP enum/helper semantics rely on REA-decompiled evidence in api/evidence. POST and GET mappings only. No network traffic generated.']}
+ out={'source_apk_sha256':digest,'profile':profile['name'],'operations':operations,'stats':dict(stats),'errors':errors,'limitations':['Only same-basic-block constant strings, verified helpers and method setters; resets at every branch destination, branch fallthrough, return and handler move-exception.','Register copies preserve object identity. Register overwrites kill values. Calls receiving tracked objects invalidate configuration unless explicitly recognized.','Observations prove route and HTTP method configured on the same receiver at a point in code; later overrides, actual dispatch, server existence, authorization and success are not proven.','No arbitrary string concatenation, field-loaded paths or dynamic server payload recovery. Symbolic String.format routes are limited to reviewed mode and retain no format argument values. No default HTTP methods assumed.','HTTP enum/helper semantics rely on REA-decompiled evidence in api/evidence. POST and GET mappings only. No network traffic generated.']}
+ out['reviewed_contract_helpers']=args.reviewed_contracts
+ if args.reviewed_contracts:out['limitations'].append('Additional helper summaries and literal-return switch proofs apply only to the pinned APK. They recover configuration, not a complete request contract or server acceptance.')
  args.output.parent.mkdir(parents=True,exist_ok=True)
  args.output.write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out['stats']))
 if __name__=='__main__':main()

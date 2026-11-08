@@ -1,6 +1,6 @@
 {
   "source_apk_sha256": "4ca96b2b4023878010c5a1dd100662f5edb8b6f05c3b7a400c0c1ba251dfc52b",
-  "scope": "Manually reviewed finite GET searches, catalogs, configuration and lists. Public software query and small result limits only. No message/inbox preview reads, mutations, challenge requests, private identifiers, location values, automatic retries or pagination. Omitted parameters remain an explicit test limitation.",
+  "scope": "Manually reviewed finite GET searches, catalogs, configuration and lists. Public software query and small result limits only. No message/inbox preview reads, mutations, challenge requests, private identifiers, location values, automatic retries or pagination. Omitted parameters remain an explicit test limitation. Three additional configuration/info reads use only a reviewed empty signed_body query envelope, with pinned caller/parser/callback proofs. No mobile UI callback or follow-up action executes.",
   "targets": [
     {
       "path": "/stories/prompt_stickers/trending_prompts/",
@@ -151,6 +151,123 @@
       "path": "/video_call/cowatch/clips_media_feed/",
       "method": "get",
       "query": {}
+    },
+    {
+      "path": "/accounts/get_presence_disabled/",
+      "method": "get",
+      "query": {
+        "signed_body": "SIGNATURE.{}"
+      },
+      "staticReview": {
+        "evidence": "bulk-trace/reviewed-read-evidence.json",
+        "endpointParameterKeys": [],
+        "construction": "Fresh authenticated GET builder; route-finalizer helper enables the signed envelope. No endpoint parameters are added. The reviewed bounded query is signed_body=SIGNATURE.{}; shared optional device configuration remains outside this profile.",
+        "sharedFinalizer": "LX/04x6;->A02()LX/02uC;",
+        "sharedFinalizationEvidence": "bulk-trace/shared-contracts.json",
+        "caller": "LX/0IoB;->A00(Lcom/instagram/common/session/UserSession;LX/0JQA;)LX/02sG;",
+        "dex": "classes9.dex",
+        "callerMethodIndex": 18944,
+        "factory": {
+          "selector": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;",
+          "codeUnitOffset": 4,
+          "dexByteOffset": 3701400
+        },
+        "routeFinalizer": {
+          "selector": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;",
+          "codeUnitOffset": 10,
+          "dexByteOffset": 3701412
+        },
+        "parser": "LX/0dja;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+        "callback": "LX/0HKd;->A0p(Lcom/instagram/common/session/UserSession;Ljava/lang/Object;)V",
+        "callbackContext": {
+          "discriminator": 6,
+          "branchCodeUnitOffset": 198
+        },
+        "recognizedResponseFields": [
+          "disabled",
+          "copresence_disabled",
+          "thread_presence_disabled"
+        ],
+        "readOnlyRationale": "Reads current presence preferences. The reviewed callback reads disabled flags into local preference/UI state and contains no account-setting request in this branch. The HTTP probe does not run that callback.",
+        "limitations": "Authentication and feature context may affect availability; Boolean client readers do not establish all wire variants."
+      }
+    },
+    {
+      "path": "/users/get_recommendation_status_nudge/",
+      "method": "get",
+      "query": {
+        "signed_body": "SIGNATURE.{}"
+      },
+      "staticReview": {
+        "evidence": "bulk-trace/reviewed-read-evidence.json",
+        "endpointParameterKeys": [],
+        "construction": "Fresh authenticated GET builder; route-finalizer helper enables the signed envelope. No endpoint parameters are added. The reviewed bounded query is signed_body=SIGNATURE.{}; shared optional device configuration remains outside this profile.",
+        "sharedFinalizer": "LX/04x6;->A02()LX/02uC;",
+        "sharedFinalizationEvidence": "bulk-trace/shared-contracts.json",
+        "caller": "LX/0L1j;->A02(Landroid/content/Context;LX/05B6;Lcom/instagram/common/session/UserSession;)V",
+        "dex": "classes9.dex",
+        "callerMethodIndex": 20962,
+        "factory": {
+          "selector": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;",
+          "codeUnitOffset": 56,
+          "dexByteOffset": 4357112
+        },
+        "routeFinalizer": {
+          "selector": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;",
+          "codeUnitOffset": 62,
+          "dexByteOffset": 4357124
+        },
+        "parser": "LX/0dmv;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+        "callback": "LX/0EoX;->A0k(Ljava/lang/Object;)V",
+        "callbackContext": {
+          "discriminator": 2,
+          "branchCodeUnitOffset": 247
+        },
+        "recognizedResponseFields": [
+          "show_recommendation_status_nudge"
+        ],
+        "readOnlyRationale": "Fetches whether account-status guidance should be shown. The client reads a Boolean result and may separately open a Bloks UI; this bounded request executes neither the Bloks follow-up nor a dismiss or account action.",
+        "limitations": "Account-status feature context may affect availability; the client requires a decoded nudge flag but this is not universal server requiredness."
+      }
+    },
+    {
+      "path": "/business/account/get_meta_verified_for_business_info/",
+      "method": "get",
+      "query": {
+        "signed_body": "SIGNATURE.{}"
+      },
+      "staticReview": {
+        "evidence": "bulk-trace/reviewed-read-evidence.json",
+        "endpointParameterKeys": [],
+        "construction": "Fresh authenticated GET builder; route-finalizer helper enables the signed envelope. No endpoint parameters are added. The reviewed bounded query is signed_body=SIGNATURE.{}; shared optional device configuration remains outside this profile.",
+        "sharedFinalizer": "LX/04x6;->A02()LX/02uC;",
+        "sharedFinalizationEvidence": "bulk-trace/shared-contracts.json",
+        "caller": "LX/0LMw;->onClick(Landroid/view/View;)V",
+        "dex": "classes9.dex",
+        "callerMethodIndex": 22201,
+        "factory": {
+          "selector": "LX/0221;->A0K(LX/02rr;LX/0Wvm;Lcom/instagram/common/session/UserSession;)LX/02sB;",
+          "codeUnitOffset": 863,
+          "dexByteOffset": 5448934
+        },
+        "routeFinalizer": {
+          "selector": "LX/0224;->A0P(LX/04x5;Ljava/lang/String;)LX/02sG;",
+          "codeUnitOffset": 869,
+          "dexByteOffset": 5448946
+        },
+        "parser": "LX/0Ew3;->unsafeParseFromJson(LX/04s3;)Ljava/lang/Object;",
+        "callback": "LX/0Enc;->A0k(Ljava/lang/Object;)V",
+        "callbackContext": {
+          "followupSelector": "LX/0LDK;->A01(LX/0LDK;Ljava/lang/Integer;Ljava/lang/String;I)V"
+        },
+        "recognizedResponseFields": [
+          "has_active_meta_verfied_application",
+          "is_eligible_for_mv4b_rollback_grace_period",
+          "mv4b_rollback_grace_period_expiry_in_days"
+        ],
+        "readOnlyRationale": "Reads verification-application and grace-period metadata before an account-type confirmation dialog. The callback selects explanatory text and installs separate dialog click listeners; this HTTP probe does not confirm switching, apply, cancel, or change verification status.",
+        "limitations": "Business-account eligibility may be required. This information request does not establish or exercise the later account-type change flow."
+      }
     }
   ]
 }

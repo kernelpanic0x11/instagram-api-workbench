@@ -7,6 +7,9 @@ __pycache__/
 !.env.example
 apks/
 tools/
+!/tools/
+/tools/*
+!/tools/phone-home/
 *.apk
 *.jar
 *.bin
