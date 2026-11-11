@@ -20,6 +20,7 @@ RES_XML_RESOURCE_MAP_TYPE = 0x0180
 RES_XML_START_ELEMENT_TYPE = 0x0102
 TYPE_INT_BOOLEAN = 0x12
 TYPE_STRING = 0x03
+TYPE_REFERENCE = 0x01
 ANDROID_DEBUGGABLE = 0x0101000F
 UTF8_FLAG = 0x00000100
 NO_INDEX = 0xFFFFFFFF
@@ -111,10 +112,11 @@ def read_string_pool(data):
     raise PatchError('manifest has no binary XML string pool')
 
 
-def replace_string_pool(data, pool, replacements):
+def replace_string_pool(data, pool, replacements=None, appended=()):
     values = list(pool['values'])
-    for index, value in replacements.items():
+    for index, value in (replacements or {}).items():
         values[index] = value
+    values.extend(appended)
     utf8 = bool(pool['flags'] & UTF8_FLAG)
     encoded = []
     for value in values:
@@ -134,9 +136,11 @@ def replace_string_pool(data, pool, replacements):
 
     offset = pool['offset']
     old_size = pool['size']
-    prefix = bytearray(data[offset:offset + pool['strings_start']])
-    struct.pack_into(f'<{len(offsets)}I', prefix, pool['header_size'], *offsets)
-    struct.pack_into('<I', prefix, 20, pool['strings_start'])
+    strings_start = pool['header_size'] + 4 * len(values)
+    prefix = bytearray(data[offset:offset + pool['header_size']])
+    prefix.extend(struct.pack(f'<{len(offsets)}I', *offsets))
+    struct.pack_into('<I', prefix, 8, len(values))
+    struct.pack_into('<I', prefix, 20, strings_start)
     struct.pack_into('<I', prefix, 24, 0)
     new_chunk = prefix + string_data
     struct.pack_into('<I', new_chunk, 4, len(new_chunk))
@@ -145,12 +149,10 @@ def replace_string_pool(data, pool, replacements):
     return rebuilt
 
 
-def clone_replacements(data, pool, clone_package):
+def clone_attribute_edits(data, pool, clone_package):
     strings = pool['values']
-    replacements = {}
     source_package = None
-    permission_elements = {'permission', 'permission-group', 'permission-tree', 'uses-permission'}
-    renamed_attributes = {'authorities', 'permission', 'readPermission', 'writePermission', 'taskAffinity'}
+    records = []
     xml_header_size = struct.unpack_from('<H', data, 2)[0]
     for offset, chunk_type, header_size, size in chunks(data, xml_header_size):
         if chunk_type != RES_XML_START_ELEMENT_TYPE:
@@ -169,21 +171,121 @@ def clone_replacements(data, pool, clone_package):
                 continue
             name = strings[name_index]
             value = strings[value_index]
+            records.append((element, name, value, attribute, raw_index, value_type))
             if element == 'manifest' and name == 'package':
                 source_package = value
-                replacements[value_index] = clone_package
-                continue
-            should_rename = name in renamed_attributes or (element in permission_elements and name == 'name')
-            if should_rename and source_package and source_package in value:
-                replacements[value_index] = value.replace(source_package, clone_package)
     if not source_package:
         raise PatchError('manifest package attribute was not found')
     if source_package == clone_package:
         raise PatchError('clone package matches the source package')
-    return replacements
+    suffix = clone_package[len(source_package):] if clone_package.startswith(source_package + '.') else '.' + clone_package.rsplit('.', 1)[-1]
+    permission_elements = {'permission', 'permission-group', 'permission-tree'}
+    defined_permissions = {
+        value for element, name, value, *_ in records if element in permission_elements and name == 'name'
+    }
+    permission_map = {
+        value: value.replace(source_package, clone_package) if source_package in value else value + suffix
+        for value in defined_permissions
+    }
+    edits = []
+    for element, name, value, attribute, raw_index, value_type in records:
+        replacement = None
+        if element == 'manifest' and name == 'package':
+            replacement = clone_package
+        elif name == 'authorities':
+            authorities = []
+            for authority in value.split(';'):
+                authorities.append(
+                    authority.replace(source_package, clone_package)
+                    if source_package in authority else authority + suffix
+                )
+            replacement = ';'.join(authorities)
+        elif element in permission_elements and name == 'name':
+            replacement = permission_map[value]
+        elif name in {'permission', 'readPermission', 'writePermission'} and value in permission_map:
+            replacement = permission_map[value]
+        elif element == 'uses-permission' and name == 'name' and value in permission_map:
+            replacement = permission_map[value]
+        elif name == 'taskAffinity' and source_package in value:
+            replacement = value.replace(source_package, clone_package)
+        if replacement is not None and replacement != value:
+            edits.append((attribute, raw_index, value_type, replacement))
+    return edits
 
 
-def patch_manifest(manifest, clone_package=None, enable_debuggable=True):
+def label_attribute_edits(data, pool, app_label):
+    strings = pool['values']
+    records = []
+    application_label_resource = None
+    xml_header_size = struct.unpack_from('<H', data, 2)[0]
+    for offset, chunk_type, header_size, _ in chunks(data, xml_header_size):
+        if chunk_type != RES_XML_START_ELEMENT_TYPE:
+            continue
+        attr_ext = offset + header_size
+        element = strings[struct.unpack_from('<I', data, attr_ext + 4)[0]]
+        attribute_start, attribute_size, attribute_count = struct.unpack_from('<HHH', data, attr_ext + 8)
+        for index in range(attribute_count):
+            attribute = attr_ext + attribute_start + index * attribute_size
+            name_index = struct.unpack_from('<I', data, attribute + 4)[0]
+            _, _, value_type, value_data = struct.unpack_from('<HBBI', data, attribute + 12)
+            name = strings[name_index]
+            records.append((element, name, attribute, value_type, value_data))
+            if element == 'application' and name == 'label' and value_type == TYPE_REFERENCE:
+                application_label_resource = value_data
+    if application_label_resource is None:
+        raise PatchError('application label resource was not found')
+    return [
+        (attribute, NO_INDEX, value_type, app_label)
+        for _, name, attribute, value_type, value_data in records
+        if name == 'label' and value_type == TYPE_REFERENCE and value_data == application_label_resource
+    ]
+
+
+def launcher_attribute_edits(data, pool, launcher_class):
+    strings = pool['values']
+    elements = []
+    xml_header_size = struct.unpack_from('<H', data, 2)[0]
+    for offset, chunk_type, header_size, _ in chunks(data, xml_header_size):
+        if chunk_type != RES_XML_START_ELEMENT_TYPE:
+            continue
+        attr_ext = offset + header_size
+        element = strings[struct.unpack_from('<I', data, attr_ext + 4)[0]]
+        attribute_start, attribute_size, attribute_count = struct.unpack_from('<HHH', data, attr_ext + 8)
+        attributes = []
+        for index in range(attribute_count):
+            attribute = attr_ext + attribute_start + index * attribute_size
+            name_index, raw_index = struct.unpack_from('<II', data, attribute + 4)
+            _, _, value_type, value_data = struct.unpack_from('<HBBI', data, attribute + 12)
+            value_index = raw_index if raw_index != NO_INDEX else value_data if value_type == TYPE_STRING else None
+            if value_index is not None and value_index < len(strings):
+                attributes.append((strings[name_index], strings[value_index], attribute, raw_index, value_type))
+        elements.append((element, attributes))
+
+    edits = []
+    replaced_activity = False
+    retargeted_alias = False
+    for element, attributes in elements:
+        values = {name: value for name, value, *_ in attributes}
+        if element == 'activity' and values.get('name') == 'com.instagram.ui.splash.alias.IgSplashAliasSmokeTestActivity':
+            for name, _, attribute, raw_index, value_type in attributes:
+                if name == 'name':
+                    edits.append((attribute, raw_index, value_type, launcher_class))
+                    replaced_activity = True
+        if element == 'activity-alias' and values.get('name') == 'com.instagram.android.activity.MainTabActivity':
+            for name, _, attribute, raw_index, value_type in attributes:
+                if name == 'targetActivity':
+                    edits.append((attribute, raw_index, value_type, launcher_class))
+                    retargeted_alias = True
+        if element == 'activity-alias' and values.get('targetActivity') == 'com.instagram.ui.splash.alias.IgSplashAliasSmokeTestActivity':
+            for name, _, attribute, raw_index, value_type in attributes:
+                if name == 'targetActivity':
+                    edits.append((attribute, raw_index, value_type, launcher_class))
+    if not replaced_activity or not retargeted_alias:
+        raise PatchError('launcher activity or primary launcher alias was not found')
+    return edits
+
+
+def patch_manifest(manifest, clone_package=None, enable_debuggable=True, app_label=None, launcher_class=None):
     data = bytearray(manifest)
     if len(data) < 8:
         raise PatchError('AndroidManifest.xml is not compiled binary XML')
@@ -240,14 +342,30 @@ def patch_manifest(manifest, clone_package=None, enable_debuggable=True):
         if old_value == 0xFFFFFFFF:
             raise PatchError('android:debuggable is already true; input was not changed')
         struct.pack_into('<I', data, value_offset, 0xFFFFFFFF)
-    if clone_package:
+    if clone_package or app_label or launcher_class:
         pool = read_string_pool(data)
-        replacements = clone_replacements(data, pool, clone_package)
-        data = replace_string_pool(data, pool, replacements)
+        edits = []
+        if clone_package:
+            edits.extend(clone_attribute_edits(data, pool, clone_package))
+        if app_label:
+            edits.extend(label_attribute_edits(data, pool, app_label))
+        if launcher_class:
+            edits.extend(launcher_attribute_edits(data, pool, launcher_class))
+        new_values = []
+        new_indexes = {}
+        for attribute, raw_index, value_type, replacement in edits:
+            if replacement not in new_indexes:
+                new_indexes[replacement] = len(pool['values']) + len(new_values)
+                new_values.append(replacement)
+            value_index = new_indexes[replacement]
+            struct.pack_into('<I', data, attribute + 8, value_index)
+            struct.pack_into('<B', data, attribute + 15, TYPE_STRING)
+            struct.pack_into('<I', data, attribute + 16, value_index)
+        data = replace_string_pool(data, pool, appended=new_values)
     return bytes(data)
 
 
-def patch_apk(source, destination, clone_package=None, enable_debuggable=True):
+def patch_apk(source, destination, clone_package=None, enable_debuggable=True, app_label=None, launcher_class=None):
     if source.resolve() == destination.resolve():
         raise PatchError('refusing to overwrite the input APK')
     if destination.exists():
@@ -256,7 +374,7 @@ def patch_apk(source, destination, clone_package=None, enable_debuggable=True):
         with zipfile.ZipFile(source, 'r') as apk:
             manifest = apk.read('AndroidManifest.xml')
             info = apk.getinfo('AndroidManifest.xml')
-            patched = patch_manifest(manifest, clone_package, enable_debuggable)
+            patched = patch_manifest(manifest, clone_package, enable_debuggable, app_label, launcher_class)
             destination.parent.mkdir(parents=True, exist_ok=True)
             with zipfile.ZipFile(destination, 'w', allowZip64=True) as output:
                 for entry in apk.infolist():
@@ -274,6 +392,8 @@ def patch_apk(source, destination, clone_package=None, enable_debuggable=True):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--clone-package')
+    parser.add_argument('--app-label')
+    parser.add_argument('--launcher-class')
     parser.add_argument('--no-debuggable', action='store_true', help='Rename only; use for split APKs')
     parser.add_argument('input_apk', type=Path)
     parser.add_argument('output_apk', type=Path)
@@ -281,7 +401,14 @@ def main():
     if args.clone_package and not re.fullmatch(r'[A-Za-z][A-Za-z0-9_]*(?:\.[A-Za-z][A-Za-z0-9_]*)+', args.clone_package):
         parser.error('--clone-package must be a dotted Android package name')
     try:
-        patch_apk(args.input_apk, args.output_apk, args.clone_package, not args.no_debuggable)
+        patch_apk(
+            args.input_apk,
+            args.output_apk,
+            args.clone_package,
+            not args.no_debuggable,
+            args.app_label,
+            args.launcher_class,
+        )
     except (OSError, zipfile.BadZipFile, PatchError) as exc:
         print(f'error: {exc}', file=sys.stderr)
         return 1

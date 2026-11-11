@@ -48,3 +48,6 @@ run-log.txt
 
 .secrets
 .secrets.*
+
+# Local APK build outputs and device captures
+/apps/instagram/build/
